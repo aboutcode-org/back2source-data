@@ -1,0 +1,1693 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "3500dd64-3014-472e-ba7f-551df6eb0c75",
+            "created_date": "2024-06-13T21:59:28.050Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "173dfe4d-2881-4cb0-a03a-c7c0ede93dc1",
+                    "filename": "anagramarama-debuginfo-0.7-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anagramarama-debuginfo-0.7-6.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 59867,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "fd1e6008-6998-4406-bf84-6906adf98d7f",
+                    "filename": "anagramarama-debugsource-0.7-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anagramarama-debugsource-0.7-6.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 26946,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "75b7a4d8-e948-4361-bf70-c0b632d7f1a2",
+                    "created_date": "2024-06-13T21:59:28.058232Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "75b7a4d8-e948-4361-bf70-c0b632d7f1a2",
+                    "task_start_date": "2024-06-13T21:59:28.081623Z",
+                    "task_end_date": "2024-06-13T22:00:00.546996Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 21:59:28.08 Pipeline [d2d] starting\n2024-06-13 21:59:28.08 Step [download_missing_inputs] starting\n2024-06-13 21:59:28.09 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anagramarama-debugsource-0.7-6.fc40.x86_64.rpm#from\n2024-06-13 21:59:29.28 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anagramarama-debuginfo-0.7-6.fc40.x86_64.rpm#to\n2024-06-13 21:59:31.94 Step [download_missing_inputs] completed in 4 seconds\n2024-06-13 21:59:31.95 Step [get_inputs] starting\n2024-06-13 21:59:31.96 Step [get_inputs] completed in 0 seconds\n2024-06-13 21:59:31.96 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 21:59:32.01 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 21:59:32.01 Step [extract_archives] starting\n2024-06-13 21:59:32.09 Step [extract_archives] completed in 0 seconds\n2024-06-13 21:59:32.10 Step [collect_and_create_codebase_resources] starting\n2024-06-13 21:59:32.12 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 21:59:32.12 Step [fingerprint_codebase_directories] starting\n2024-06-13 21:59:32.13 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 21:59:32.13 Step [flag_empty_files] starting\n2024-06-13 21:59:32.14 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 21:59:32.14 Step [flag_whitespace_files] starting\n2024-06-13 21:59:32.14 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 21:59:32.14 Step [flag_ignored_resources] starting\n2024-06-13 21:59:32.14 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 21:59:32.15 Step [map_about_files] starting\n2024-06-13 21:59:32.15 Step [map_about_files] completed in 0 seconds\n2024-06-13 21:59:32.15 Step [map_checksum] starting\n2024-06-13 21:59:32.16 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-13 21:59:32.16 Step [map_checksum] completed in 0 seconds\n2024-06-13 21:59:32.17 Step [match_archives_to_purldb] starting\n2024-06-13 21:59:32.17 PurlDB is not available. Skipping.\n2024-06-13 21:59:32.17 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 21:59:32.17 Step [find_java_packages] starting\n2024-06-13 21:59:32.18 Finding Java package for 0 .java resources.\n2024-06-13 21:59:32.18 Step [find_java_packages] completed in 0 seconds\n2024-06-13 21:59:32.19 Step [map_java_to_class] starting\n2024-06-13 21:59:32.19 Mapping 0 .class resources to .java\n2024-06-13 21:59:32.20 No .java resources to map.\n2024-06-13 21:59:32.20 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 21:59:32.20 Step [map_jar_to_source] starting\n2024-06-13 21:59:32.21 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 21:59:32.21 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 21:59:32.22 Step [map_elf] starting\n2024-06-13 21:59:32.33 Mapping 1 to/ resources using paths with 11 from/ resources.\n2024-06-13 21:59:32.33 Done building from/ resources index.\n2024-06-13 21:59:32.34 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug'\n2024-06-13 21:59:32.34 WARNING: #41 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug'\n2024-06-13 21:59:32.35 Created 11 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug'\n2024-06-13 21:59:32.35 Step [map_elf] completed in 0 seconds\n2024-06-13 21:59:32.35 Step [map_go] starting\n2024-06-13 21:59:32.36 Mapping 0 to/ resources using paths with 11 from/ resources.\n2024-06-13 21:59:32.36 Done building from/ resources index.\n2024-06-13 21:59:32.37 Step [map_go] completed in 0 seconds\n2024-06-13 21:59:32.37 Step [match_directories_to_purldb] starting\n2024-06-13 21:59:32.37 PurlDB is not available. Skipping.\n2024-06-13 21:59:32.37 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 21:59:32.37 Step [match_resources_to_purldb] starting\n2024-06-13 21:59:32.37 PurlDB is not available. Skipping.\n2024-06-13 21:59:32.38 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 21:59:32.38 Step [map_path] starting\n2024-06-13 21:59:32.38 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 21:59:32.39 Step [map_path] completed in 0 seconds\n2024-06-13 21:59:32.39 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 21:59:32.40 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 21:59:32.40 Step [perform_house_keeping_tasks] starting\n2024-06-13 21:59:32.41 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 21:59:32.41 Step [match_purldb_resources_post_process] starting\n2024-06-13 21:59:32.41 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 21:59:32.41 0 resource processed\n2024-06-13 21:59:32.41 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 21:59:32.41 Step [remove_packages_without_resources] starting\n2024-06-13 21:59:32.42 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 21:59:32.42 Step [scan_unmapped_to_files] starting\n2024-06-13 21:59:37.40 Step [scan_unmapped_to_files] completed in 5 seconds\n2024-06-13 21:59:37.41 Step [scan_mapped_from_for_files] starting\n2024-06-13 21:59:56.82 Progress: 18% (2/11) ETA: 88 seconds (1.5 minutes)\n2024-06-13 21:59:57.62 Progress: 36% (4/11) ETA: 36 seconds\n2024-06-13 21:59:58.50 Progress: 54% (6/11) ETA: 18 seconds\n2024-06-13 21:59:58.51 Progress: 72% (8/11) ETA: 8 seconds\n2024-06-13 21:59:58.93 Progress: 90% (10/11) ETA: 2 seconds\n2024-06-13 22:00:00.28 Progress: 100% (11/11)\n2024-06-13 22:00:00.52 Step [scan_mapped_from_for_files] completed in 23 seconds\n2024-06-13 22:00:00.52 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 22:00:00.53 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 22:00:00.53 Step [create_local_files_packages] starting\n2024-06-13 22:00:00.54 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 22:00:00.54 Pipeline completed in 32 seconds\n",
+                    "execution_time": 32
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2",
+            "type": "local-files",
+            "namespace": "c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64",
+            "name": "e9a218a9-d016-4b6d-9521-8875bd624be2",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2003 Colm Gallagher",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64",
+            "type": "directory",
+            "name": "anagramarama-0.7-6.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag.c",
+            "type": "file",
+            "name": "ag.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 49266,
+            "md5": "8ac96f335c488c4fd61f89c444ef85ca",
+            "sha1": "3b02a95ba5582f0fbcbdb7a9f4474f7d626715b0",
+            "sha256": "7ce36830e0f7242314fd5e99757481c1f3cb98ebd5028bacb19b813411bcd8b4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag_core.c",
+            "type": "file",
+            "name": "ag_core.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6888,
+            "md5": "2a917a3c7d08f4cd39ed9ba01384772f",
+            "sha1": "e8713368ed38b4cdcde1656830e90480297b852e",
+            "sha256": "d02dff3c20de9ddead0e983fcd2b480fb5f72f1b497924556796e1086479af9c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag.h",
+            "type": "file",
+            "name": "ag.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1919,
+            "md5": "2d95029639286dab8c37cd113103c9a5",
+            "sha1": "998dd279ef8e8f838269003c2af481b2b2051dda",
+            "sha256": "9063a780ebee225c0fb0bc6557b980832f77a0dc3480d566f9fe427fd7b5a36e",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 38.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/dlb.c",
+            "type": "file",
+            "name": "dlb.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4367,
+            "md5": "5b38c56253b50702883e91cf8daba760",
+            "sha1": "52906a5ef0113f5eb15e674379ade25aa2d8b2f2",
+            "sha256": "160235b7da90c4aa80327d07a614957bf74d0974488e2d450c6c0a6848711b0e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.02,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/dlb.h",
+            "type": "file",
+            "name": "dlb.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1371,
+            "md5": "2e6541f37b4ce190c314008c049c580d",
+            "sha1": "6fbbc935aa21f28a7fbb0a4d4855f61fe746575b",
+            "sha256": "8c431df21dba4d09dc8fb6e627d6b954659f5c3b7e1e9a54ea27cf1a205b0a61",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 52.56,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/linked.c",
+            "type": "file",
+            "name": "linked.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5176,
+            "md5": "bb093cd276913f1978eb3ebea14ad63f",
+            "sha1": "bba5899666e3f8a2c16d085e6598478cce356298",
+            "sha256": "e91416d3ff2b22f7f133f76fc84a66fbd16650d4b05f3ecb9a7d292224eecc3b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/linked.h",
+            "type": "file",
+            "name": "linked.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1314,
+            "md5": "2ce17f8f1d7da8ad6335e0ded409b6d4",
+            "sha1": "18a6c75c4190e72609f169db20aa39f85114bb5b",
+            "sha256": "1c5952abfdc6d2b45ed209dd7dd3d1cd65d5752fda9473670a348de3c2a7b2e6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 57.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sdlscale.c",
+            "type": "file",
+            "name": "sdlscale.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1661,
+            "md5": "bf967ab58300a8d88058b14c5bf7b248",
+            "sha1": "97ac8eafa34796834e9aaf75ad5e45d33b8515d9",
+            "sha256": "0b2fc0068de22fcc266617ad5195ea7097d743c3ad999a8fbf5f168541d71154",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sdlscale.h",
+            "type": "file",
+            "name": "sdlscale.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1091,
+            "md5": "d89db3a33dfe098a885cd561d3f580d5",
+            "sha1": "5d2113f4117cad6ca844c4d87a3e20ed1a864b85",
+            "sha256": "a49e373e2ea455579890eff4fa802507a947d428145ffc46047037d46fdc5386",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 66.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sprite.c",
+            "type": "file",
+            "name": "sprite.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3751,
+            "md5": "833bdd671583aa2333929a5450ff3596",
+            "sha1": "917358858187a0d14feb00b8811231f719b1364a",
+            "sha256": "272ad5c455629b790015121aac1b6e64f4d3021a4a2c17306ec745c9b8520cab",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.09,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sprite.h",
+            "type": "file",
+            "name": "sprite.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1519,
+            "md5": "bdea33b745335d9f2985a2bef3d5e938",
+            "sha1": "a4fcf570fc446fcf7b6d0710d1513690959ae94f",
+            "sha256": "2dd24c86fc5ffb6cefb79ad5f8cde1d6a522c772b7d264483f69ac92daf0586b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003 Colm Gallagher",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Colm Gallagher",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c9ba4f28-82e2-4263-a2c4-b4cc35e9aba7-3500dd64/e9a218a9-d016-4b6d-9521-8875bd624be2"
+            ],
+            "emails": [
+                {
+                    "email": "colm@coralquest.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/0a",
+            "type": "directory",
+            "name": "0a",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "type": "file",
+            "name": "anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 140192,
+            "md5": "7f388f235bad940e7666bb872dfc6793",
+            "sha1": "b5cbcb1db677a1a080b560d3f3f30a1d73e6a20a",
+            "sha256": "7cefbef5b7dfb91c5a46d09a75bcd2f6744d5d48b289335bd5a39b1cffa7dd00",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=0a7801424c9c9bb67d3511a7bc7536fe60ba4f9a, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build/<artificial>",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sdlscale.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/SDL2/SDL.h",
+                    "usr/include/SDL2/SDL_error.h",
+                    "usr/include/SDL2/SDL_events.h",
+                    "usr/include/SDL2/SDL_gesture.h",
+                    "usr/include/SDL2/SDL_image.h",
+                    "usr/include/SDL2/SDL_joystick.h",
+                    "usr/include/SDL2/SDL_keyboard.h",
+                    "usr/include/SDL2/SDL_keycode.h",
+                    "usr/include/SDL2/SDL_messagebox.h",
+                    "usr/include/SDL2/SDL_mixer.h",
+                    "usr/include/SDL2/SDL_pixels.h",
+                    "usr/include/SDL2/SDL_rect.h",
+                    "usr/include/SDL2/SDL_render.h",
+                    "usr/include/SDL2/SDL_scancode.h",
+                    "usr/include/SDL2/SDL_stdinc.h",
+                    "usr/include/SDL2/SDL_surface.h",
+                    "usr/include/SDL2/SDL_timer.h",
+                    "usr/include/SDL2/SDL_touch.h",
+                    "usr/include/SDL2/SDL_video.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/gamerzilla/gamerzilla.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag.c",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag.h",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag_core.c",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/dlb.c",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/dlb.h",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/linked.c",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/linked.h",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sdlscale.h",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sprite.c",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sprite.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/SDL2/SDL.h",
+                    "usr/include/SDL2/SDL_error.h",
+                    "usr/include/SDL2/SDL_events.h",
+                    "usr/include/SDL2/SDL_gesture.h",
+                    "usr/include/SDL2/SDL_image.h",
+                    "usr/include/SDL2/SDL_joystick.h",
+                    "usr/include/SDL2/SDL_keyboard.h",
+                    "usr/include/SDL2/SDL_keycode.h",
+                    "usr/include/SDL2/SDL_messagebox.h",
+                    "usr/include/SDL2/SDL_mixer.h",
+                    "usr/include/SDL2/SDL_pixels.h",
+                    "usr/include/SDL2/SDL_rect.h",
+                    "usr/include/SDL2/SDL_render.h",
+                    "usr/include/SDL2/SDL_scancode.h",
+                    "usr/include/SDL2/SDL_stdinc.h",
+                    "usr/include/SDL2/SDL_surface.h",
+                    "usr/include/SDL2/SDL_timer.h",
+                    "usr/include/SDL2/SDL_touch.h",
+                    "usr/include/SDL2/SDL_video.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/gamerzilla/gamerzilla.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/anagramarama-0.7-6.fc40.x86_64/redhat-linux-build/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag_core.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/ag.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/dlb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/dlb.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/linked.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/linked.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sdlscale.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sdlscale.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sprite.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/anagramarama-0.7-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/anagramarama-0.7-6.fc40.x86_64/src/sprite.h"
+        }
+    ]
+}

@@ -1,0 +1,2191 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "b626beac-6f4d-4065-95dc-5a47f42f25cd",
+            "created_date": "2024-06-17T10:36:27.259Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "957191e3-0c26-4955-a39c-f716ca747b2e",
+                    "filename": "bvi-debuginfo-1.4.2-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bvi-debuginfo-1.4.2-4.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 99952,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "66ffbcc8-9a16-415f-b953-8af7c7ef1f47",
+                    "filename": "bvi-debugsource-1.4.2-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bvi-debugsource-1.4.2-4.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 40641,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "a7cf7af0-a6d8-4f36-9671-6732e9b2342b",
+                    "created_date": "2024-06-17T10:36:27.267623Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "a7cf7af0-a6d8-4f36-9671-6732e9b2342b",
+                    "task_start_date": "2024-06-17T10:36:27.288120Z",
+                    "task_end_date": "2024-06-17T10:36:52.389882Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 10:36:27.28 Pipeline [d2d] starting\n2024-06-17 10:36:27.29 Step [download_missing_inputs] starting\n2024-06-17 10:36:27.29 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bvi-debugsource-1.4.2-4.fc40.x86_64.rpm#from\n2024-06-17 10:36:29.26 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bvi-debuginfo-1.4.2-4.fc40.x86_64.rpm#to\n2024-06-17 10:36:31.29 Step [download_missing_inputs] completed in 4 seconds\n2024-06-17 10:36:31.30 Step [get_inputs] starting\n2024-06-17 10:36:31.30 Step [get_inputs] completed in 0 seconds\n2024-06-17 10:36:31.31 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 10:36:31.35 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 10:36:31.35 Step [extract_archives] starting\n2024-06-17 10:36:31.43 Step [extract_archives] completed in 0 seconds\n2024-06-17 10:36:31.43 Step [collect_and_create_codebase_resources] starting\n2024-06-17 10:36:31.46 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 10:36:31.46 Step [fingerprint_codebase_directories] starting\n2024-06-17 10:36:31.47 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 10:36:31.48 Step [flag_empty_files] starting\n2024-06-17 10:36:31.48 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 10:36:31.48 Step [flag_whitespace_files] starting\n2024-06-17 10:36:31.48 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 10:36:31.48 Step [flag_ignored_resources] starting\n2024-06-17 10:36:31.49 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 10:36:31.49 Step [map_about_files] starting\n2024-06-17 10:36:31.49 Step [map_about_files] completed in 0 seconds\n2024-06-17 10:36:31.49 Step [map_checksum] starting\n2024-06-17 10:36:31.49 Mapping 3 to/ resources using sha1 against from/ codebase\n2024-06-17 10:36:31.50 Step [map_checksum] completed in 0 seconds\n2024-06-17 10:36:31.50 Step [match_archives_to_purldb] starting\n2024-06-17 10:36:31.50 PurlDB is not available. Skipping.\n2024-06-17 10:36:31.50 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 10:36:31.51 Step [find_java_packages] starting\n2024-06-17 10:36:31.51 Finding Java package for 0 .java resources.\n2024-06-17 10:36:31.51 Step [find_java_packages] completed in 0 seconds\n2024-06-17 10:36:31.51 Step [map_java_to_class] starting\n2024-06-17 10:36:31.52 Mapping 0 .class resources to .java\n2024-06-17 10:36:31.52 No .java resources to map.\n2024-06-17 10:36:31.52 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 10:36:31.52 Step [map_jar_to_source] starting\n2024-06-17 10:36:31.52 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 10:36:31.53 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 10:36:31.53 Step [map_elf] starting\n2024-06-17 10:36:32.88 Mapping 3 to/ resources using paths with 12 from/ resources.\n2024-06-17 10:36:32.89 Done building from/ resources index.\n2024-06-17 10:36:32.89 WARNING: #19 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/bvi-1.4.2-4.fc40.x86_64'\n2024-06-17 10:36:32.90 Created 2 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/bvi-1.4.2-4.fc40.x86_64'\n2024-06-17 10:36:32.90 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.90 WARNING: #12 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.91 Created 5 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.91 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.92 WARNING: #19 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.92 Created 9 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.92 Step [map_elf] completed in 1 seconds\n2024-06-17 10:36:32.92 Step [map_go] starting\n2024-06-17 10:36:32.94 Can not parse PosixPath('/home/tg1999/Desktop/purldb/var/projects/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/codebase/to/usr/lib/debug/usr/bin/bvi-1.4.2-4.fc40.x86_64.debug') Exception('')\n2024-06-17 10:36:32.94 Can not parse PosixPath('/home/tg1999/Desktop/purldb/var/projects/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/codebase/to/usr/lib/debug/usr/bin/bvedit-1.4.2-4.fc40.x86_64.debug') Exception('')\n2024-06-17 10:36:32.94 Mapping 2 to/ resources using paths with 12 from/ resources.\n2024-06-17 10:36:32.94 Done building from/ resources index.\n2024-06-17 10:36:32.95 No mappings using go_file_paths for: 'to/usr/lib/debug/usr/bin/bvi-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.95 No mappings using go_file_paths for: 'to/usr/lib/debug/usr/bin/bvedit-1.4.2-4.fc40.x86_64.debug'\n2024-06-17 10:36:32.95 Step [map_go] completed in 0 seconds\n2024-06-17 10:36:32.95 Step [match_directories_to_purldb] starting\n2024-06-17 10:36:32.96 PurlDB is not available. Skipping.\n2024-06-17 10:36:32.96 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 10:36:32.96 Step [match_resources_to_purldb] starting\n2024-06-17 10:36:32.96 PurlDB is not available. Skipping.\n2024-06-17 10:36:32.96 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 10:36:32.96 Step [map_path] starting\n2024-06-17 10:36:32.97 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 10:36:32.97 Step [map_path] completed in 0 seconds\n2024-06-17 10:36:32.97 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 10:36:32.98 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 10:36:32.99 Step [perform_house_keeping_tasks] starting\n2024-06-17 10:36:33.00 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 10:36:33.00 Step [match_purldb_resources_post_process] starting\n2024-06-17 10:36:33.00 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 10:36:33.01 0 resource processed\n2024-06-17 10:36:33.01 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 10:36:33.01 Step [remove_packages_without_resources] starting\n2024-06-17 10:36:33.01 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 10:36:33.01 Step [scan_unmapped_to_files] starting\n2024-06-17 10:36:36.87 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 10:36:36.88 Step [scan_mapped_from_for_files] starting\n2024-06-17 10:36:50.83 Progress: 12% (2/16) ETA: 102 seconds (1.7 minutes)\n2024-06-17 10:36:50.90 Progress: 25% (4/16) ETA: 42 seconds\n2024-06-17 10:36:51.06 Progress: 37% (6/16) ETA: 24 seconds\n2024-06-17 10:36:51.18 Progress: 50% (8/16) ETA: 14 seconds\n2024-06-17 10:36:51.28 Progress: 62% (10/16) ETA: 9 seconds\n2024-06-17 10:36:51.43 Progress: 75% (12/16) ETA: 5 seconds\n2024-06-17 10:36:51.91 Progress: 87% (14/16) ETA: 2 seconds\n2024-06-17 10:36:52.07 Progress: 100% (16/16)\n2024-06-17 10:36:52.35 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-17 10:36:52.36 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 10:36:52.36 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 10:36:52.36 Step [create_local_files_packages] starting\n2024-06-17 10:36:52.38 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 10:36:52.38 Pipeline completed in 25 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931",
+            "type": "local-files",
+            "namespace": "0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac",
+            "name": "568d7c3c-939c-454f-8981-c3e1a94ae931",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 1996-2019 by Gerhard Buergmann Gerhard.Buergmann@puon.at\nCopyright 1996-2019 by Gerhard Buergmann gerhard@puon.at\nCopyright 1996-2023 by Gerhard Buergmann gerhard@puon.at\nCopyright 1996-2022 by Gerhard Buergmann gerhard@puon.at\ncopyright (c) GPL 1996-2023",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/f25c5682-56dc-4f82-a1d9-a0ccd865362b",
+            "type": "local-files",
+            "namespace": "0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac",
+            "name": "f25c5682-56dc-4f82-a1d9-a0ccd865362b",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 1990-2023 by Gerhard Buergmann gerhard@puon.at\n(c) 1990-2022 by Gerhard Buergmann",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus AND gpl-1.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/fcde4cda-5383-41c7-94f7-9aa29b60299f",
+            "type": "local-files",
+            "namespace": "0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac",
+            "name": "fcde4cda-5383-41c7-94f7-9aa29b60299f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 1996-2019 by Gerhard Buergmann gerhard@puon.at",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64",
+            "type": "directory",
+            "name": "bvi-1.4.2-4.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bmore.c",
+            "type": "file",
+            "name": "bmore.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19952,
+            "md5": "903f34a2f7f86c8333fe8e35ff1f6455",
+            "sha1": "5d6de4393b6344898b899de61fffdb47dfe0bcde",
+            "sha256": "7fbd8eea60ab80971a89cb2fe76dc1ff550bdb7aae65501636dd7917c6fe171d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus AND gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later AND GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 18,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 53,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_23.RULE",
+                            "from_file": null,
+                            "start_line": 53,
+                            "matched_text": "char\t*copyright  = \"GPL (C) 1990-2022 by Gerhard Buergmann\";",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_23.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-a3a4be2e-73ae-9a16-90af-6094085026d4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.11,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 14,
+                    "copyright": "Copyright 1990-2023 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 13
+                },
+                {
+                    "end_line": 53,
+                    "copyright": "(c) 1990-2022 by Gerhard Buergmann",
+                    "start_line": 53
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 13,
+                    "start_line": 13
+                },
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 53,
+                    "start_line": 53
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/f25c5682-56dc-4f82-a1d9-a0ccd865362b"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 14,
+                    "start_line": 14
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bmore.h",
+            "type": "file",
+            "name": "bmore.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3870,
+            "md5": "5e8a39d2b52d92a688ed82ce7a7eab56",
+            "sha1": "7c10c1e90e89923e2638b886b21b6f2ad012e1cb",
+            "sha256": "250f1119d48503ea98bb567aa442d65ad0fb6c6ac91d98d333b4910b17b96015",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 29,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 21,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright 1996-2023 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 18
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bm_unix.c",
+            "type": "file",
+            "name": "bm_unix.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4581,
+            "md5": "18749e7c86300b64958e16d0f7c9d577",
+            "sha1": "9f82fa06da0ff6c5ad809161b070cb10a694a4ae",
+            "sha256": "8751e910138926260381db0e6779af8a9fde6db45170197f09b99ef2046e3b1e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_3.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 2, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_3.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-61c05986-6d08-4cc2-c70a-32e8c6e3f38f",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 14,
+                    "copyright": "Copyright 1996-2019 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 13
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 13,
+                    "start_line": 13
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/fcde4cda-5383-41c7-94f7-9aa29b60299f"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 14,
+                    "start_line": 14
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.c",
+            "type": "file",
+            "name": "bvi.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 22984,
+            "md5": "74ac5d64b80b1021e9656014691ef085",
+            "sha1": "927ce61e02bf698e2c06b83a79d86d3ef838a871",
+            "sha256": "44aedc90774d30237ecd073c7aef12e2602afc8c56e8b1a0e113a5c411035004",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 31,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 23,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 47,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 47,
+                    "matched_text": "char\t*copyright  = \"(C) GPL 1996-2023 by Gerhard Buergmann\";",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                }
+            ],
+            "percentage_of_license_text": 2.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 21,
+                    "copyright": "Copyright 1996-2023 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 20
+                },
+                {
+                    "end_line": 47,
+                    "copyright": "copyright (c) GPL 1996-2023",
+                    "start_line": 47
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "holder": "GPL",
+                    "end_line": 47,
+                    "start_line": 47
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h",
+            "type": "file",
+            "name": "bvi.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 7978,
+            "md5": "b000e770956d93e9eaed45cdde2838f6",
+            "sha1": "9d32cf1e6cb76f17fb3d541f541afdece28a229e",
+            "sha256": "7695439c6a7af285ae4ccaeea28e7d05012d332ec2eb64329a53ef67a2689685",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 30,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 22,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 20,
+                    "copyright": "Copyright 1996-2023 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/comm.c",
+            "type": "file",
+            "name": "comm.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20461,
+            "md5": "4572e536d8f7e6f3c4e047c24e485719",
+            "sha1": "27dd2eb1fc34edc422913b1b1a3ea9f087675189",
+            "sha256": "5d7ba11b5c0dc67b35b6a6defff96b85461cad2176c1e939786010397c3c6a62",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 32,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 24,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 22,
+                    "copyright": "Copyright 1996-2023 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 21
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/edit.c",
+            "type": "file",
+            "name": "edit.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20019,
+            "md5": "2ee4174b923c77668cd9de0839024282",
+            "sha1": "09a562dd4a98c5db891ea2dee17978c00bc001c9",
+            "sha256": "bc4dc789f13d82678b14e3dec0476d791308f65d7e72f1d9db91a3fbef5c4843",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 27,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 19,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 17,
+                    "copyright": "Copyright 1996-2019 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 16
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/io.c",
+            "type": "file",
+            "name": "io.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10392,
+            "md5": "7d1663a121c6e0f7126056935a437bd6",
+            "sha1": "707dbe02d9f23631c9df6553be5caacdb1afecc3",
+            "sha256": "17486bb6926a00f39e2a4dd03b2e41e36f6f7552711b6edeb31bc8e72ea097e5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 29,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 21,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright 1996-2022 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 18
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/re.c",
+            "type": "file",
+            "name": "re.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13867,
+            "md5": "2c4dca101c559b997a5a719a6e22c472",
+            "sha1": "d3aa5e33c657c93f20b652d45f8ccc59f38ef50a",
+            "sha256": "1621850846a80ae1714291999881b28c0edd452135cf98c91e2a5dc8f856b49e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 27,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 19,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 17,
+                    "copyright": "Copyright 1996-2023 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 16
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c",
+            "type": "file",
+            "name": "recomp.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5532,
+            "md5": "7bdc802d4b6ea5051eac1812f7bab698",
+            "sha1": "1ecabb6facad96cfd6e99813eae774973969113b",
+            "sha256": "d09bfee5c6d227e9b17a871adcacddcebfca9b2481d4bf69056bf82ed2065439",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright 1996-2019 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/set.c",
+            "type": "file",
+            "name": "set.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8701,
+            "md5": "e91e5a9e2003c1ddacc79235f0e2ecde",
+            "sha1": "c2c2994640d3f339aa728b7fd61b1d5caefb95c1",
+            "sha256": "91ed0364b81e0d936a5c3ef4cc526a28e8a1d71e2df5756855bf660cdae6b7bd",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 29,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 21,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.67,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright 1996-2019 by Gerhard Buergmann gerhard@puon.at",
+                    "start_line": 18
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "gerhard@puon.at",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/set.h",
+            "type": "file",
+            "name": "set.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2248,
+            "md5": "89dd6587f1ce184f35e1fcbd4801efda",
+            "sha1": "b9261d6ed405d77b885364d3499d92ea390622e0",
+            "sha256": "ed83390f06d62e9a9c7c72be6033da590f3056e5242a67d0b803f93ddbb94e57",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 18,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation; either version 3, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-38172246-34ab-dae5-1748-5fc630f82987",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright 1996-2019 by Gerhard Buergmann Gerhard.Buergmann@puon.at",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gerhard Buergmann",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0e76b837-1a43-40a5-aa02-2ffa0e08340f-b626beac/568d7c3c-939c-454f-8981-c3e1a94ae931"
+            ],
+            "emails": [
+                {
+                    "email": "Gerhard.Buergmann@puon.at",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000373928374899fd1b81d651b62ca026b5e",
+                "directory_structure": "0000000376a98f3ec9f5dba9f8c5d8c03b13f3e3"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000373928374899fd1b81d651b62ca026b5e",
+                "directory_structure": "000000032482e5dd35b5a47eedf34b871f78912e"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000373928374899fd1b81d651b62ca026b5e",
+                "directory_structure": "000000038824205f2f58160e3800c3fe2b0180c2"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000373928374899fd1b81d651b62ca026b5e",
+                "directory_structure": "00000003a51646d0532f5e11977abdd83fbc2653"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/7e",
+            "type": "directory",
+            "name": "7e",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/df",
+            "type": "directory",
+            "name": "df",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/bvi-1.4.2-4.fc40.x86_64",
+            "type": "file",
+            "name": "bvi-1.4.2-4.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 7319,
+            "md5": "ed0787149e51acf4dd4fbfce89d9f1e6",
+            "sha1": "bec781267ebb91df12b638b9867340c920bacc72",
+            "sha256": "89b39c9fb4735eef31e26855281193826e64981953662224d80fa6e38fb74809",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=d561dd40f184ac8bc7980884650f2dd17606d158, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000243928260808fd0b0086502020a022856",
+                "directory_structure": "000000020110102118c000890480400001680081"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000243928260808fd0b0086502020a022856",
+                "directory_structure": "0000000200118b2040235668004c080900044080"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bmore-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 62600,
+            "md5": "60329cadda49917e48602b7c09ef21d7",
+            "sha1": "b9a2f7f3a884386520716f546d225b0cfc176ce7",
+            "sha256": "f4d851f3befc3a12c44b9b10ae22b13d4294114ae5c14431af308cd6c8742ce9",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=7eac6c82f40546ecebd384dedc69e243bbcbcf75, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/term.h",
+                    "usr/include/termios.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bm_unix.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bmore.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bmore.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/term.h",
+                    "usr/include/termios.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bvedit-1.4.2-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bvedit-1.4.2-4.fc40.x86_64.debug",
+            "status": "ignored-empty-file",
+            "tag": "to",
+            "extension": ".debug",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "inode/x-empty",
+            "file_type": "empty",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bvi-1.4.2-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bvi-1.4.2-4.fc40.x86_64.debug",
+            "status": "ignored-empty-file",
+            "tag": "to",
+            "extension": ".debug",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "inode/x-empty",
+            "file_type": "empty",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 171000,
+            "md5": "b1db53dce622c12e5cc4da58442e6cc1",
+            "sha1": "1c7f9cf02fb5c1fef7fab36dbf124d6c0338c428",
+            "sha256": "7465b72571b3ca20ea753e01a30aaa6a3fe29147ee7ed9b221a399bbf2d6dde2",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=df86c8cb87c081081c44cf02a5ac97078b70f343, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/ctype.h",
+                    "usr/include/curses.h",
+                    "usr/include/errno.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/comm.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/edit.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/io.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/re.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/set.c",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/set.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/ctype.h",
+                    "usr/include/curses.h",
+                    "usr/include/errno.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/bvi-1.4.2-4.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bmore.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bmore.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bm_unix.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bvi-1.4.2-4.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/bvi.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/comm.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/edit.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/io.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/re.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bvi-1.4.2-4.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bmore-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/recomp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/set.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bview-1.4.2-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bvi-1.4.2-4.fc40.x86_64/set.h"
+        }
+    ]
+}

@@ -1,0 +1,3651 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "7f9092b8-e1c4-4e1d-9280-2ac49f0c4bbd",
+            "created_date": "2024-06-17T16:31:49.072Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "bf385a4f-f1c7-45b8-a103-4d7d84303f2a",
+                    "filename": "ck-debuginfo-0.7.1-3.fc39.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ck-debuginfo-0.7.1-3.fc39.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 95960,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "e2f60c47-7493-4afc-ab9c-b02d53375d74",
+                    "filename": "ck-debugsource-0.7.1-3.fc39.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ck-debugsource-0.7.1-3.fc39.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 69684,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "85df00ea-aaae-4458-b4e9-197d754ba050",
+                    "created_date": "2024-06-17T16:31:49.079682Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "85df00ea-aaae-4458-b4e9-197d754ba050",
+                    "task_start_date": "2024-06-17T16:31:49.103748Z",
+                    "task_end_date": "2024-06-17T16:32:16.287285Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 16:31:49.10 Pipeline [d2d] starting\n2024-06-17 16:31:49.11 Step [download_missing_inputs] starting\n2024-06-17 16:31:49.11 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ck-debugsource-0.7.1-3.fc39.x86_64.rpm#from\n2024-06-17 16:31:56.33 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ck-debuginfo-0.7.1-3.fc39.x86_64.rpm#to\n2024-06-17 16:31:58.79 Step [download_missing_inputs] completed in 10 seconds\n2024-06-17 16:31:58.79 Step [get_inputs] starting\n2024-06-17 16:31:58.80 Step [get_inputs] completed in 0 seconds\n2024-06-17 16:31:58.81 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 16:31:58.85 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 16:31:58.86 Step [extract_archives] starting\n2024-06-17 16:31:58.97 Step [extract_archives] completed in 0 seconds\n2024-06-17 16:31:58.98 Step [collect_and_create_codebase_resources] starting\n2024-06-17 16:31:59.02 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 16:31:59.03 Step [fingerprint_codebase_directories] starting\n2024-06-17 16:31:59.04 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 16:31:59.04 Step [flag_empty_files] starting\n2024-06-17 16:31:59.04 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 16:31:59.04 Step [flag_whitespace_files] starting\n2024-06-17 16:31:59.05 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 16:31:59.05 Step [flag_ignored_resources] starting\n2024-06-17 16:31:59.05 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 16:31:59.05 Step [map_about_files] starting\n2024-06-17 16:31:59.05 Step [map_about_files] completed in 0 seconds\n2024-06-17 16:31:59.06 Step [map_checksum] starting\n2024-06-17 16:31:59.06 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 16:31:59.06 Step [map_checksum] completed in 0 seconds\n2024-06-17 16:31:59.06 Step [match_archives_to_purldb] starting\n2024-06-17 16:31:59.07 PurlDB is not available. Skipping.\n2024-06-17 16:31:59.07 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 16:31:59.07 Step [find_java_packages] starting\n2024-06-17 16:31:59.07 Finding Java package for 0 .java resources.\n2024-06-17 16:31:59.07 Step [find_java_packages] completed in 0 seconds\n2024-06-17 16:31:59.08 Step [map_java_to_class] starting\n2024-06-17 16:31:59.08 Mapping 0 .class resources to .java\n2024-06-17 16:31:59.08 No .java resources to map.\n2024-06-17 16:31:59.08 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 16:31:59.08 Step [map_jar_to_source] starting\n2024-06-17 16:31:59.09 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 16:31:59.09 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 16:31:59.09 Step [map_elf] starting\n2024-06-17 16:31:59.29 Mapping 1 to/ resources using paths with 32 from/ resources.\n2024-06-17 16:31:59.29 Done building from/ resources index.\n2024-06-17 16:31:59.30 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug'\n2024-06-17 16:31:59.32 WARNING: #11 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug'\n2024-06-17 16:31:59.32 Created 32 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug'\n2024-06-17 16:31:59.32 Step [map_elf] completed in 0 seconds\n2024-06-17 16:31:59.33 Step [map_go] starting\n2024-06-17 16:31:59.33 Mapping 0 to/ resources using paths with 32 from/ resources.\n2024-06-17 16:31:59.33 Done building from/ resources index.\n2024-06-17 16:31:59.34 Step [map_go] completed in 0 seconds\n2024-06-17 16:31:59.34 Step [match_directories_to_purldb] starting\n2024-06-17 16:31:59.34 PurlDB is not available. Skipping.\n2024-06-17 16:31:59.34 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 16:31:59.35 Step [match_resources_to_purldb] starting\n2024-06-17 16:31:59.35 PurlDB is not available. Skipping.\n2024-06-17 16:31:59.35 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 16:31:59.35 Step [map_path] starting\n2024-06-17 16:31:59.35 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 16:31:59.36 Step [map_path] completed in 0 seconds\n2024-06-17 16:31:59.36 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 16:31:59.37 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 16:31:59.37 Step [perform_house_keeping_tasks] starting\n2024-06-17 16:31:59.38 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 16:31:59.38 Step [match_purldb_resources_post_process] starting\n2024-06-17 16:31:59.38 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 16:31:59.39 0 resource processed\n2024-06-17 16:31:59.39 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 16:31:59.39 Step [remove_packages_without_resources] starting\n2024-06-17 16:31:59.39 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 16:31:59.39 Step [scan_unmapped_to_files] starting\n2024-06-17 16:32:02.02 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 16:32:02.02 Step [scan_mapped_from_for_files] starting\n2024-06-17 16:32:13.90 Progress: 12% (4/32) ETA: 87 seconds (1.4 minutes)\n2024-06-17 16:32:14.00 Progress: 25% (8/32) ETA: 36 seconds\n2024-06-17 16:32:14.31 Progress: 37% (12/32) ETA: 21 seconds\n2024-06-17 16:32:14.47 Progress: 50% (16/32) ETA: 12 seconds\n2024-06-17 16:32:14.64 Progress: 62% (20/32) ETA: 8 seconds\n2024-06-17 16:32:14.85 Progress: 75% (24/32) ETA: 4 seconds\n2024-06-17 16:32:15.35 Progress: 87% (28/32) ETA: 2 seconds\n2024-06-17 16:32:16.02 Progress: 100% (32/32)\n2024-06-17 16:32:16.23 Step [scan_mapped_from_for_files] completed in 14 seconds\n2024-06-17 16:32:16.24 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 16:32:16.24 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 16:32:16.24 Step [create_local_files_packages] starting\n2024-06-17 16:32:16.27 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 16:32:16.28 Pipeline completed in 27 seconds\n",
+                    "execution_time": 27
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70",
+            "type": "local-files",
+            "namespace": "165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8",
+            "name": "1ee08e06-bc59-40f6-8df3-1911dd738c70",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2009-2015 Samy Al Bahra\nCopyright 2010-2015 Samy Al Bahra\nCopyright 2010 Samy Al Bahra\nCopyright 2011-2015 Samy Al Bahra\nCopyright 2012-2015 Samy Al Bahra\nCopyright 2018 Paul Khuong, Google LLC.\nCopyright 2011 David Joseph\nCopyright 2014 Paul Khuong\nCopyright 2013-2015 Samy Al Bahra\nCopyright 2013-2014 AppNexus, Inc.\nCopyright 2014-2015 Olivier Houchard",
+            "holder": "",
+            "declared_license_expression": "bsd-simplified",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/4c93054b-5ee0-4f94-9489-4401301424ee",
+            "type": "local-files",
+            "namespace": "165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8",
+            "name": "4c93054b-5ee0-4f94-9489-4401301424ee",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2012-2015 Samy Al Bahra\nCopyright 2011-2014 AppNexus, Inc.",
+            "holder": "",
+            "declared_license_expression": "bsd-simplified AND public-domain",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/9ca1e222-d327-4895-8454-81c1e7dc9880",
+            "type": "local-files",
+            "namespace": "165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8",
+            "name": "9ca1e222-d327-4895-8454-81c1e7dc9880",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2010-2015 Samy Al Bahra\n(c) Copyright 2008, IBM Corporation",
+            "holder": "",
+            "declared_license_expression": "bsd-simplified AND apache-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64",
+            "type": "directory",
+            "name": "ck-0.7.1-3.fc39.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include",
+            "type": "directory",
+            "name": "include",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_array.h",
+            "type": "file",
+            "name": "ck_array.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3133,
+            "md5": "fc2c32ea46e2247b15340d01da2fb15b",
+            "sha1": "0d867f5ab8d715ec8302827b46cf98687eebd28d",
+            "sha256": "70738bbbae19d858e7989c90301e866cbef053e434a183581dc5534f282b5fe9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 38.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2013-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2013-2014 AppNexus, Inc.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "AppNexus, Inc.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_backoff.h",
+            "type": "file",
+            "name": "ck_backoff.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1889,
+            "md5": "b3be644cfb695a84090feb5a5c055fb7",
+            "sha1": "bb2482e0839f80af8a899d40a162b5ea13621004",
+            "sha256": "675cff922473a1ebe76c1d40fafc227634962c684ba493ef1d23ce9e57acbef8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 66.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2009-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_barrier.h",
+            "type": "file",
+            "name": "ck_barrier.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5441,
+            "md5": "c9b70d43cc764dae8a3f5fc520a09d1c",
+            "sha1": "a734b2af42c81020df2ee1f53f9be9c43f94a8ad",
+            "sha256": "9350ee20e2215a5ec709c77c32f640ad9afff2559130357fb16b11cbdf0f9342",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_cc.h",
+            "type": "file",
+            "name": "ck_cc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3799,
+            "md5": "58126d0931fc8046a1bc54fd0fee32dd",
+            "sha1": "a189c36a8b2a8cd28b78d2a3c531af6088d77c0b",
+            "sha256": "4af36a69804f504f9cf4b97e6cdfdad74fc486dc72d042ab96ea58e741a76af2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.05,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2009-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2014 Paul Khuong",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Paul Khuong",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_ec.h",
+            "type": "file",
+            "name": "ck_ec.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 30846,
+            "md5": "bae0e38c7e45f8cbf422b5e01099eee4",
+            "sha1": "d001ac3fa5383ec3e96fd0430aaf5717c9a4f446",
+            "sha256": "5e039e5c98a9bd7e7fe11b6cc9b6f605adaec6441b185bf1b31edfef2ac04849",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2018 Paul Khuong, Google LLC.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Paul Khuong, Google LLC.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "https://www.cl.cam.ac.uk/~pes20/weakmemory/cacm.pdf",
+                    "end_line": 170,
+                    "start_line": 170
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_epoch.h",
+            "type": "file",
+            "name": "ck_epoch.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 8008,
+            "md5": "2210cffd498b468d38353410cd7d3066",
+            "sha1": "4b8fa23f61c67b99c14607a0be25a60270c58af6",
+            "sha256": "79e185c86baa72c48833eae10908a13833f29ab5122c2f8ac66acb18a8ec175b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.54,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_hp.h",
+            "type": "file",
+            "name": "ck_hp.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3391,
+            "md5": "22fc6669fc04a7ae0531fc7c0ba7f312",
+            "sha1": "b4a2e7f705a0e857d8f5acbe77844569c1676a07",
+            "sha256": "031b09037e6f7250661cd8a44c4e62dc9600cd0b93e604f806f267ec6ae1ab06",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 32.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2010-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_hs.h",
+            "type": "file",
+            "name": "ck_hs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4748,
+            "md5": "17536e568eb579c8e8d90256033c3133",
+            "sha1": "657726e60fa5d572d0d0fc768c47fa577d182763",
+            "sha256": "7971f0d4dab826e5330a697fba0885c524025541acf0443571382196b2a16434",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 22.9,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_ht.h",
+            "type": "file",
+            "name": "ck_ht.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6669,
+            "md5": "1c9e06b7f606923172626bc92af37644",
+            "sha1": "592fd4d2415b9c22d73a528b79e937d7ef16780d",
+            "sha256": "c83cedcb97ee73d6ed6a566ecf81c1df3f6bd7da73a097a8bd823ee0bc4f5eb5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_malloc.h",
+            "type": "file",
+            "name": "ck_malloc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1606,
+            "md5": "84fecfb1a1c616620baa195a22b42d24",
+            "sha1": "59256dc45c127ae8df3e37b3b8639cbd87c06ee2",
+            "sha256": "569ec7a875ca6e26c3ccbaac37419b9e67936b22d415cbaaed1e3afc27d97aed",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 78.54,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_pr.h",
+            "type": "file",
+            "name": "ck_pr.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 32789,
+            "md5": "89e3305783e2fe930cdfd78f13162b41",
+            "sha1": "2eb9ee11c2e2a496beb3012487ca7600b014a0ce",
+            "sha256": "2213479a880b67e1b74c3e2d96b91e6649abf64a6654c36a2607fe48ee95c962",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.72,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2009-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_rhs.h",
+            "type": "file",
+            "name": "ck_rhs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4516,
+            "md5": "8e6f3191373b77425c1dbfe851b404c2",
+            "sha1": "7ed4e601f82fc8ed303e178c7f455f4a903004d9",
+            "sha256": "2fe022b739c48dbcbf85d7b27e7432ea4d15c018d223a742f009dea29b145b73",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_stack.h",
+            "type": "file",
+            "name": "ck_stack.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 9249,
+            "md5": "19674f5fb31e41969a7583ca1d1160b2",
+            "sha1": "62520f8d3d5380d595e8395327bbbad64dbfc1a7",
+            "sha256": "085e257f357326780f59e5077d468b37bcfd3f1030052e57bf341ef911878893",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.72,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2009-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc",
+            "type": "directory",
+            "name": "gcc",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/ck_cc.h",
+            "type": "file",
+            "name": "ck_cc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3826,
+            "md5": "e850dd607dc3c6cab7cf0d2c4578731c",
+            "sha1": "89adb763aa6601838d4350305ae0120384547f31",
+            "sha256": "d782baa52eb9b0a906fde8e2de80be8286ecd3f674a4283ab98e7fe0a77dad0f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 32.28,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2009-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2014 Paul Khuong",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Paul Khuong",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/ck_pr.h",
+            "type": "file",
+            "name": "ck_pr.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6919,
+            "md5": "6bd985a96b46842a406b2123a32bcf68",
+            "sha1": "74ef8d1d79534808255af751d641047f0fd710d5",
+            "sha256": "1915599665c68c6b16cd05201348adf8d612b22a3ced47caea96697b3109de0b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2010 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/x86_64",
+            "type": "directory",
+            "name": "x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/x86_64/ck_pr.h",
+            "type": "file",
+            "name": "ck_pr.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 16080,
+            "md5": "a788c062b8e37fe3948e65157150671a",
+            "sha1": "d59574986ac4f313df4e3293d732a4dc1eb206fc",
+            "sha256": "c3c7750b14c20c799f9ab2840442f05cae04896a65b9e9e88671dc5453123ecd",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2009-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/spinlock",
+            "type": "directory",
+            "name": "spinlock",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/spinlock/fas.h",
+            "type": "file",
+            "name": "fas.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3254,
+            "md5": "999805093e3ea65ae15690fa7c76e04b",
+            "sha1": "0ae20fb9592b3a3c06020241ab066828f4416df0",
+            "sha256": "d1e4098c9f830ac2715b4d44310f421a0215b3257b96f70c00dec9cf59507393",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 36.75,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2010-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_array.c",
+            "type": "file",
+            "name": "ck_array.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6140,
+            "md5": "f1e0735986f8b947d4e1d702aeeec175",
+            "sha1": "9d5991961105c4df8b76207840962dbf358a01c9",
+            "sha256": "a99e0844cd9cdf7825c0a591535785a9f71a2476dfdf5161c7efcd7057c45720",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.79,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2013-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2013-2014 AppNexus, Inc.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "AppNexus, Inc.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_centralized.c",
+            "type": "file",
+            "name": "ck_barrier_centralized.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2188,
+            "md5": "7937e8e81b40669c7982392f31e64d12",
+            "sha1": "ef3250b7e61d33f5ddcd4b7cdf696288b0e1d7d1",
+            "sha256": "069ddb74a22e7d9a4d1534cd2b02160a69043ab9a090d1428e948a8686d13522",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 57.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_combining.c",
+            "type": "file",
+            "name": "ck_barrier_combining.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6096,
+            "md5": "f401e93fed8f7e3d082d45094ac765fb",
+            "sha1": "42a4e724e6c94efbb5b89a91fef8e0b50eb5c046",
+            "sha256": "3fef85474844a7c23820073fb4415f6e88f8d9664c8197a6140b1352f289d144",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.75,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_dissemination.c",
+            "type": "file",
+            "name": "ck_barrier_dissemination.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4185,
+            "md5": "cb2ffd6b433728e1bf051ff9478e91b5",
+            "sha1": "04199412e05316da799508b41b38abcfd7ed464b",
+            "sha256": "966e6ff93ef96c2addfc416e744b4b3bb4d06b73f87e4f376059231123aca22d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_mcs.c",
+            "type": "file",
+            "name": "ck_barrier_mcs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4402,
+            "md5": "9d786d157d7192aed2619827726bcde0",
+            "sha1": "1d7bda2f1b13e4aa4c95d3d0751e30ba7f16f7fe",
+            "sha256": "153dcabe9b433ca5e47687ea34e5a6f7c898e25bcb3938ab97786e6d5f426347",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 28.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_tournament.c",
+            "type": "file",
+            "name": "ck_barrier_tournament.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5788,
+            "md5": "fea781540e63eb739098269cb24857ff",
+            "sha1": "ef6f0028d2b7d89e5e3a2c7ff2805d5cd904be49",
+            "sha256": "36f64782e4970176e3f4860c64442e828375c3b3708765f679e50fd94997b450",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 22.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ec.c",
+            "type": "file",
+            "name": "ck_ec.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10852,
+            "md5": "340690187bb34b743227e9b122fbbd50",
+            "sha1": "8ad58896cc9cffe7007b2bdb762503e97f892bb2",
+            "sha256": "acff27b2bc72efa681add3580ffd27931d61f4ac7151585492a68de2b2f69669",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ec_timeutil.h",
+            "type": "file",
+            "name": "ck_ec_timeutil.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3116,
+            "md5": "f3315c86cd31fa70ba025fca921e1579",
+            "sha1": "dd7d01c79b42607db58a30efd77dc55142172666",
+            "sha256": "f8a3bda8bb8ca35fd41ba16e6ead9ef59af444241f9c0d2aa3de3421d7792f08",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_epoch.c",
+            "type": "file",
+            "name": "ck_epoch.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 18073,
+            "md5": "6acf017f2c970ef5b9eb888b55a36640",
+            "sha1": "a9ff0b0b83748ad22e3f491b7810902aaefbc581",
+            "sha256": "1f03be069f5c114495a346aecffa28b6363bdd399495d71e932f7a3a6178a455",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.43,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_hp.c",
+            "type": "file",
+            "name": "ck_hp.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8299,
+            "md5": "63da0902022f3d2a0228d8916e845c25",
+            "sha1": "7446af71aa000c3a381eb3f49a64fdc7ecaa3fbe",
+            "sha256": "2c5bf7d7a229a0dff267fe05f5c458c8d9c39543b74f161bb4b2c3a5621494c3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified AND apache-2.0",
+            "detected_license_expression_spdx": "BSD-2-Clause AND Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 39,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 29,
+                            "matched_text": " * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.58,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2010-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 28,
+                    "copyright": "(c) Copyright 2008, IBM Corporation",
+                    "start_line": 28
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "IBM Corporation",
+                    "end_line": 28,
+                    "start_line": 28
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/9ca1e222-d327-4895-8454-81c1e7dc9880"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 33,
+                    "start_line": 33
+                },
+                {
+                    "url": "http://www.research.ibm.com/people/m/michael/ieeetpds-2004.pdf",
+                    "end_line": 44,
+                    "start_line": 44
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_hs.c",
+            "type": "file",
+            "name": "ck_hs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 21947,
+            "md5": "1034b3dfc40f7d87d1b1fc5c1f73d409",
+            "sha1": "fd80a30db477f28bda46c3ff9ae4ab118bf780a4",
+            "sha256": "ca21453c0be8252cff4497ba294c14b6bbcbbb4229fc51e94f5ce406cfa60960",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ht.c",
+            "type": "file",
+            "name": "ck_ht.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 25016,
+            "md5": "a074f41f59b8e60be1de10894adece0b",
+            "sha1": "ced19484905975ff5b98aadf9240fde060ec0d18",
+            "sha256": "9eb63a1730c0173fcff846682b9dd0d7b022eecec632bea12cb248b079e91976",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.58,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://code.google.com/p/nbds",
+                    "end_line": 32,
+                    "start_line": 32
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ht_hash.h",
+            "type": "file",
+            "name": "ck_ht_hash.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6828,
+            "md5": "25f837a13ab175414515ad3321aac339",
+            "sha1": "4d0a42542ce66c10fd571317e248cca23f05caca",
+            "sha256": "2fc954f6fa392c3c0e281884b76398be0a1c620225066bcf11ec3e26c5056d1c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified AND public-domain",
+            "detected_license_expression_spdx": "BSD-2-Clause AND LicenseRef-scancode-public-domain",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 39,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/public-domain_64.RULE",
+                            "from_file": null,
+                            "start_line": 38,
+                            "matched_text": "// MurmurHash3 was written by Austin Appleby, and is placed in the public\n// domain. The author hereby disclaims copyright to this source code.",
+                            "match_coverage": 100.0,
+                            "matched_length": 16,
+                            "rule_relevance": 100,
+                            "rule_identifier": "public-domain_64.RULE",
+                            "license_expression": "public-domain",
+                            "spdx_license_expression": "LicenseRef-scancode-public-domain"
+                        }
+                    ],
+                    "identifier": "public_domain-8b882e97-6eb8-aa43-768e-e616e285227e",
+                    "license_expression": "public-domain",
+                    "license_expression_spdx": "LicenseRef-scancode-public-domain"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011-2014 AppNexus, Inc.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "AppNexus, Inc.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Austin Appleby",
+                    "end_line": 31,
+                    "start_line": 31
+                },
+                {
+                    "author": "Austin Appleby",
+                    "end_line": 38,
+                    "start_line": 38
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/4c93054b-5ee0-4f94-9489-4401301424ee"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_internal.h",
+            "type": "file",
+            "name": "ck_internal.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2536,
+            "md5": "fd740c525c91526d03768c43cde68106",
+            "sha1": "97d77d3f0c6bbc667333925e8a194f7ec817f946",
+            "sha256": "47f6757052249634d8c53d30a1888e1ba8347d4bd7222b95a08874de378308cb",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.04,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2011-2015 Samy Al Bahra",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2011 David Joseph",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "David Joseph",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://graphics.stanford.edu/~seander/bithacks.html",
+                    "end_line": 29,
+                    "start_line": 29
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_rhs.c",
+            "type": "file",
+            "name": "ck_rhs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 36699,
+            "md5": "e9f73230d0ccff65f7379559b1a7409f",
+            "sha1": "1c1b634a790542c59ef08764d74c13df5648f5dc",
+            "sha256": "48657304a749911be47e45bde9fd6f5cdb1c8d4b72242e4b22bc91559bf2b2bd",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright 2014-2015 Olivier Houchard",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 2012-2015 Samy Al Bahra",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Olivier Houchard",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Samy Al Bahra",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/165a002a-bde2-41c3-9d15-7979cf921682-7f9092b8/1ee08e06-bc59-40f6-8df3-1911dd738c70"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/71",
+            "type": "directory",
+            "name": "71",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "type": "file",
+            "name": "libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 216520,
+            "md5": "8fc81c6f40593019126871fb80ab36fe",
+            "sha1": "29523d7736a5fb5ac3b6428472cb848c2854c308",
+            "sha256": "8dda3de3b42317cab617d4978eb18c50856a19e383a9448ee27b26eff4a2405b",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=71a602854e3b23c0180838e053134283f457f056, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_array.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_backoff.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_barrier.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_cc.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_ec.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_epoch.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_hp.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_hs.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_ht.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_malloc.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_pr.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_rhs.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_stack.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/ck_cc.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/ck_pr.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/x86_64/ck_pr.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/spinlock/fas.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/<built-in>",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_array.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_centralized.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_combining.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_dissemination.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_mcs.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_tournament.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ec.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ec_timeutil.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_epoch.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_hp.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_hs.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ht.c",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ht_hash.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_internal.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_rhs.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h",
+                    "usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_array.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_backoff.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_barrier.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_cc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_ec.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_epoch.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_hp.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_hs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_ht.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_malloc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_pr.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_rhs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/ck_stack.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/ck_cc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/ck_pr.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/gcc/x86_64/ck_pr.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/include/spinlock/fas.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_array.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_centralized.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_combining.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_dissemination.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_mcs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_barrier_tournament.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ec.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ec_timeutil.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_epoch.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_hp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_hs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ht.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_ht_hash.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_internal.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libck.so.0.7.1-0.7.1-3.fc39.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ck-0.7.1-3.fc39.x86_64/src/ck_rhs.c"
+        }
+    ]
+}

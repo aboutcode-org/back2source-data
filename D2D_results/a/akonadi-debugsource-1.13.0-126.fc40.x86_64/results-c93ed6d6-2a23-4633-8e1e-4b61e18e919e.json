@@ -1,0 +1,2161 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "c93ed6d6-2a23-4633-8e1e-4b61e18e919e",
+            "created_date": "2024-06-13T21:43:58.573Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "afb16f76-30ae-49d2-b696-5e012f490a2e",
+                    "filename": "akonadi-debuginfo-1.13.0-126.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-debuginfo-1.13.0-126.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 581025,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "9b6fd6a2-290e-4a0f-b50c-a3fef84bed34",
+                    "filename": "akonadi-debugsource-1.13.0-126.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-debugsource-1.13.0-126.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 28774,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "e7f81bcd-8354-4746-9e3e-510dfb31a748",
+                    "created_date": "2024-06-13T21:43:58.580955Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "e7f81bcd-8354-4746-9e3e-510dfb31a748",
+                    "task_start_date": "2024-06-13T21:43:58.607186Z",
+                    "task_end_date": "2024-06-13T21:44:34.311710Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 21:43:58.60 Pipeline [d2d] starting\n2024-06-13 21:43:58.61 Step [download_missing_inputs] starting\n2024-06-13 21:43:58.61 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-debugsource-1.13.0-126.fc40.x86_64.rpm#from\n2024-06-13 21:43:59.90 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-debuginfo-1.13.0-126.fc40.x86_64.rpm#to\n2024-06-13 21:44:10.07 Step [download_missing_inputs] completed in 11 seconds\n2024-06-13 21:44:10.07 Step [get_inputs] starting\n2024-06-13 21:44:10.08 Step [get_inputs] completed in 0 seconds\n2024-06-13 21:44:10.08 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 21:44:10.14 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 21:44:10.14 Step [extract_archives] starting\n2024-06-13 21:44:10.22 Step [extract_archives] completed in 0 seconds\n2024-06-13 21:44:10.22 Step [collect_and_create_codebase_resources] starting\n2024-06-13 21:44:10.28 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 21:44:10.28 Step [fingerprint_codebase_directories] starting\n2024-06-13 21:44:10.29 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 21:44:10.29 Step [flag_empty_files] starting\n2024-06-13 21:44:10.29 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 21:44:10.30 Step [flag_whitespace_files] starting\n2024-06-13 21:44:10.30 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 21:44:10.30 Step [flag_ignored_resources] starting\n2024-06-13 21:44:10.30 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 21:44:10.30 Step [map_about_files] starting\n2024-06-13 21:44:10.31 Step [map_about_files] completed in 0 seconds\n2024-06-13 21:44:10.31 Step [map_checksum] starting\n2024-06-13 21:44:10.31 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-13 21:44:10.31 Step [map_checksum] completed in 0 seconds\n2024-06-13 21:44:10.32 Step [match_archives_to_purldb] starting\n2024-06-13 21:44:10.32 PurlDB is not available. Skipping.\n2024-06-13 21:44:10.32 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 21:44:10.32 Step [find_java_packages] starting\n2024-06-13 21:44:10.32 Finding Java package for 0 .java resources.\n2024-06-13 21:44:10.33 Step [find_java_packages] completed in 0 seconds\n2024-06-13 21:44:10.33 Step [map_java_to_class] starting\n2024-06-13 21:44:10.33 Mapping 0 .class resources to .java\n2024-06-13 21:44:10.33 No .java resources to map.\n2024-06-13 21:44:10.33 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 21:44:10.34 Step [map_jar_to_source] starting\n2024-06-13 21:44:10.34 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 21:44:10.34 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 21:44:10.34 Step [map_elf] starting\n2024-06-13 21:44:12.55 Mapping 1 to/ resources using paths with 14 from/ resources.\n2024-06-13 21:44:12.55 Done building from/ resources index.\n2024-06-13 21:44:12.56 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug'\n2024-06-13 21:44:12.57 WARNING: #90 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug'\n2024-06-13 21:44:12.57 Created 14 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug'\n2024-06-13 21:44:12.58 Step [map_elf] completed in 2 seconds\n2024-06-13 21:44:12.58 Step [map_go] starting\n2024-06-13 21:44:12.58 Mapping 0 to/ resources using paths with 14 from/ resources.\n2024-06-13 21:44:12.59 Done building from/ resources index.\n2024-06-13 21:44:12.59 Step [map_go] completed in 0 seconds\n2024-06-13 21:44:12.59 Step [match_directories_to_purldb] starting\n2024-06-13 21:44:12.59 PurlDB is not available. Skipping.\n2024-06-13 21:44:12.59 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 21:44:12.60 Step [match_resources_to_purldb] starting\n2024-06-13 21:44:12.60 PurlDB is not available. Skipping.\n2024-06-13 21:44:12.60 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 21:44:12.60 Step [map_path] starting\n2024-06-13 21:44:12.60 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 21:44:12.61 Step [map_path] completed in 0 seconds\n2024-06-13 21:44:12.61 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 21:44:12.62 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 21:44:12.62 Step [perform_house_keeping_tasks] starting\n2024-06-13 21:44:12.63 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 21:44:12.63 Step [match_purldb_resources_post_process] starting\n2024-06-13 21:44:12.63 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 21:44:12.63 0 resource processed\n2024-06-13 21:44:12.63 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 21:44:12.64 Step [remove_packages_without_resources] starting\n2024-06-13 21:44:12.64 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 21:44:12.64 Step [scan_unmapped_to_files] starting\n2024-06-13 21:44:19.27 Step [scan_unmapped_to_files] completed in 7 seconds\n2024-06-13 21:44:19.27 Step [scan_mapped_from_for_files] starting\n2024-06-13 21:44:32.92 Progress: 14% (2/14) ETA: 84 seconds (1.4 minutes)\n2024-06-13 21:44:33.04 Progress: 28% (4/14) ETA: 35 seconds\n2024-06-13 21:44:33.18 Progress: 42% (6/14) ETA: 19 seconds\n2024-06-13 21:44:33.35 Progress: 57% (8/14) ETA: 11 seconds\n2024-06-13 21:44:33.37 Progress: 71% (10/14) ETA: 6 seconds\n2024-06-13 21:44:33.60 Progress: 85% (12/14) ETA: 3 seconds\n2024-06-13 21:44:34.00 Progress: 100% (14/14)\n2024-06-13 21:44:34.28 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-13 21:44:34.28 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 21:44:34.29 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 21:44:34.29 Step [create_local_files_packages] starting\n2024-06-13 21:44:34.30 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 21:44:34.30 Pipeline completed in 36 seconds\n",
+                    "execution_time": 35
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af",
+            "type": "local-files",
+            "namespace": "956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6",
+            "name": "7cc64a3c-39f8-4ead-8807-670d166545af",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2006 - 2007 Volker Krause <vkrause@kde.org>\nCopyright (c) 2007 by Kevin Krammer <kevin.krammer@gmx.at>\nCopyright (c) 2007 Volker Krause <vkrause@kde.org>\nCopyright (c) 2014 Daniel Vratil <dvratil@redhat.com>\nCopyright (c) 2013 Daniel Vratil <dvratil@redhat.com>",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64",
+            "type": "directory",
+            "name": "akonadi-1.13.0-126.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs",
+            "type": "directory",
+            "name": "libs",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapparser.cpp",
+            "type": "file",
+            "name": "imapparser.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 16650,
+            "md5": "bd618caa27a63e8e1d111ae3bb939f13",
+            "sha1": "36eceb6310155c7dde879491108e4c6522539e74",
+            "sha256": "0b3839df353eddd8902a63cc6fbb188d3cec858dbdae9fa2d849d90806c705af",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.77,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 - 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapparser_p.h",
+            "type": "file",
+            "name": "imapparser_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 7171,
+            "md5": "42c9c496e126f0496487e4698d4c4d5f",
+            "sha1": "20f3b9e0d688cd5de3c3bdf79e4efa844ada7994",
+            "sha256": "90546d40b53c2904f87f393a06cdbe40dd2ba1467e2acc015e91910fc1f27c66",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 - 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapset.cpp",
+            "type": "file",
+            "name": "imapset.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 4994,
+            "md5": "607cf52112b8b2de10f6f4ab7a60b414",
+            "sha1": "8aca56877fc27352235afec3aad55ec72cdfa9a9",
+            "sha256": "8a3da315744ebed87662d31093e9a4b45aec292586364529a3b6fd7256b23e8f",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapset_p.h",
+            "type": "file",
+            "name": "imapset_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5287,
+            "md5": "723b08744e1f499bd680e52153c5354c",
+            "sha1": "8444805f3a5aacf88041ef222f7d9ef3f53503b1",
+            "sha256": "edc4343ed01256760ef7b1d24cc067f71fe53b29af3a8e031b216b0662526262",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessage.cpp",
+            "type": "file",
+            "name": "notificationmessage.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 11095,
+            "md5": "6471e7e07b983a021530ad729c39d092",
+            "sha1": "b45687bef4c3a27dded7cc1341f7ee0432a8d63c",
+            "sha256": "1641ae126c6b47a758269f97ad1411e1928b90717e9648da1583350dc17f028e",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessage_p.h",
+            "type": "file",
+            "name": "notificationmessage_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3855,
+            "md5": "a7cb3c717ae72a70c216d0cd0453e48c",
+            "sha1": "3c2c04a7ebfc237bd8549fbf1506fc4a344feb44",
+            "sha256": "5c9ec9cd9137112116112b35d80bf6a79e18b53e3c4327a00a666a94412622e0",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.23,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2.cpp",
+            "type": "file",
+            "name": "notificationmessagev2.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 15380,
+            "md5": "20f4019b2446eb27dee339c9a43514ff",
+            "sha1": "cde855ffca128a003f900e64ebc3e15085e7d36e",
+            "sha256": "815be1539ee81f163094b03bfe4d2cf6abd7d0d6979e40782d586ca5706d61b1",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, UTF-8 Unicode text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2013 Daniel Vratil <dvratil@redhat.com>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Daniel Vratil",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "dvratil@redhat.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2_p.h",
+            "type": "file",
+            "name": "notificationmessagev2_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6209,
+            "md5": "dc586bb754e81a12953ecb4f827e6f4b",
+            "sha1": "b3fd648970f8ea4f6b918347b4cb53720f9b7fa3",
+            "sha256": "8cbc4a23fe899dfd1a6267e6999ecf07a9d33463a70ec22d02b301207f949c6b",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2013 Daniel Vratil <dvratil@redhat.com>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Daniel Vratil",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "dvratil@redhat.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2_p_p.h",
+            "type": "file",
+            "name": "notificationmessagev2_p_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4930,
+            "md5": "cd99691133fdbfeee73827924f1a49b0",
+            "sha1": "ed2a9c8b3b0fd68b9660181335fd5209d74ccc0b",
+            "sha256": "445b6cfcc23632172346ee0b9954b04c900903dd9d91a06af0cdac67580c4cf8",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Volker Krause <vkrause@kde.org>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Volker Krause",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "vkrause@kde.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev3.cpp",
+            "type": "file",
+            "name": "notificationmessagev3.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 6681,
+            "md5": "b5a1de87c5b7d854dd1fd3bd4d1d5421",
+            "sha1": "922c4af32a1872315a20491ae16e7611906009c2",
+            "sha256": "fb58750cd19c9629781b60bb57794afc07f28a8a89e571b19d2ba75251e28010",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.94,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2014 Daniel Vratil <dvratil@redhat.com>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Vratil",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "dvratil@redhat.com",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev3_p.h",
+            "type": "file",
+            "name": "notificationmessagev3_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2237,
+            "md5": "388251f87fbe65109a8f46bfe57b7573",
+            "sha1": "6523c2de812566cae67e671b33b22b9a75c1af84",
+            "sha256": "e22ec1f3e6a0de9d2dcade0956a5cf7e1a2d06136803d6c1563ff042c8c98327",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_23.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "    This library is free software; you can redistribute it and/or modify it\n    under the terms of the GNU Library General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or (at your\n    option) any later version.\n\n    This library is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public\n    License for more details.\n\n    You should have received a copy of the GNU Library General Public License\n    along with this library; see the file COPYING.LIB.  If not, write to the\n    Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n    02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_23.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-366125a7-5745-4a4b-2907-d3143fcf7bfa",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 49.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2014 Daniel Vratil <dvratil@redhat.com>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Vratil",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "dvratil@redhat.com",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/xdgbasedirs.cpp",
+            "type": "file",
+            "name": "xdgbasedirs.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 16675,
+            "md5": "2594f2c8177a25b7a66ffc9d0cc5b564",
+            "sha1": "45b96132dd37e2da96a5cc69ba64e191a80b2f16",
+            "sha256": "dc039a87f86952131710b0a513161164075f4c9a962089beb368c3aabd1c47a9",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.14,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_569.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify  *\n *   it under the terms of the GNU Library General Public License as       *\n *   published by the Free Software Foundation; either version 2 of the    *\n *   License, or (at your option) any later version.                       *\n *                                                                         *\n *   This program is distributed in the hope that it will be useful,       *\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *\n *   GNU General Public License for more details.                          *\n *                                                                         *\n *   You should have received a copy of the GNU Library General Public     *\n *   License along with this program; if not, write to the                 *\n *   Free Software Foundation, Inc.,                                       *\n *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *",
+                            "match_coverage": 99.14,
+                            "matched_length": 115,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_569.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-f4662eb5-f1bb-77a9-dd1b-f2d5a2c6985c",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 by Kevin Krammer <kevin.krammer@gmx.at>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Kevin Krammer",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "kevin.krammer@gmx.at",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/xdgbasedirs_p.h",
+            "type": "file",
+            "name": "xdgbasedirs_p.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 11868,
+            "md5": "ca6dbc44663ecba781ff05631f870ebf",
+            "sha1": "9356725ff50ab0be80e583b4cbc1577b52b4d838",
+            "sha256": "3a76e10e75d81c4d540045d02fae33e08920de531e700af52f046855b986c092",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.14,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_569.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify  *\n *   it under the terms of the GNU Library General Public License as       *\n *   published by the Free Software Foundation; either version 2 of the    *\n *   License, or (at your option) any later version.                       *\n *                                                                         *\n *   This program is distributed in the hope that it will be useful,       *\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *\n *   GNU General Public License for more details.                          *\n *                                                                         *\n *   You should have received a copy of the GNU Library General Public     *\n *   License along with this program; if not, write to the                 *\n *   Free Software Foundation, Inc.,                                       *\n *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *",
+                            "match_coverage": 99.14,
+                            "matched_length": 115,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_569.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-f4662eb5-f1bb-77a9-dd1b-f2d5a2c6985c",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.94,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 by Kevin Krammer <kevin.krammer@gmx.at>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Kevin Krammer",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Kevin Krammer, <kevin.krammer@gmx.at>",
+                    "end_line": 68,
+                    "start_line": 68
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/956af946-063b-4dcd-906f-fe57b21dacb4-c93ed6d6/7cc64a3c-39f8-4ead-8807-670d166545af"
+            ],
+            "emails": [
+                {
+                    "email": "kevin.krammer@gmx.at",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.freedesktop.org/wiki/Specifications/basedir-spec",
+                    "end_line": 70,
+                    "start_line": 70
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs",
+            "type": "directory",
+            "name": "libs",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/akonadiprotocolinternals_autogen",
+            "type": "directory",
+            "name": "akonadiprotocolinternals_autogen",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/akonadiprotocolinternals_autogen/mocs_compilation.cpp",
+            "type": "file",
+            "name": "mocs_compilation.cpp",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 173,
+            "md5": "0524fcd2e65dbeea6ef61584f61cd7f6",
+            "sha1": "d9f3270ddf9d31ce38b332d41832ec54428879c6",
+            "sha256": "3a980c470f20620fec75ec0a390d792f1dcc9ba7d99f4ec5fc30ff04b3b16412",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/4f",
+            "type": "directory",
+            "name": "4f",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 1839320,
+            "md5": "399be91635d56ac103c6899b3aed0233",
+            "sha1": "115c92a7ed197fac989523841535d403ded2c934",
+            "sha256": "a4b0e19add3b5030e9f39f092ec5ec667b0a994280415381fda7c3609078310c",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=4f9f7cfc2498e80d99657a1e8e660dd48648f09b, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/<artificial>",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/akonadiprotocolinternals_autogen/mocs_compilation.cpp"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/QtCore/qalgorithms.h",
+                    "usr/include/QtCore/qatomic.h",
+                    "usr/include/QtCore/qatomic_x86_64.h",
+                    "usr/include/QtCore/qbasicatomic.h",
+                    "usr/include/QtCore/qbytearray.h",
+                    "usr/include/QtCore/qchar.h",
+                    "usr/include/QtCore/qcoreapplication.h",
+                    "usr/include/QtCore/qdatetime.h",
+                    "usr/include/QtCore/qdebug.h",
+                    "usr/include/QtCore/qdir.h",
+                    "usr/include/QtCore/qfile.h",
+                    "usr/include/QtCore/qfileinfo.h",
+                    "usr/include/QtCore/qglobal.h",
+                    "usr/include/QtCore/qhash.h",
+                    "usr/include/QtCore/qiodevice.h",
+                    "usr/include/QtCore/qlist.h",
+                    "usr/include/QtCore/qlocale.h",
+                    "usr/include/QtCore/qmap.h",
+                    "usr/include/QtCore/qmetatype.h",
+                    "usr/include/QtCore/qnamespace.h",
+                    "usr/include/QtCore/qprocess.h",
+                    "usr/include/QtCore/qregexp.h",
+                    "usr/include/QtCore/qset.h",
+                    "usr/include/QtCore/qshareddata.h",
+                    "usr/include/QtCore/qsharedpointer_impl.h",
+                    "usr/include/QtCore/qstring.h",
+                    "usr/include/QtCore/qstringbuilder.h",
+                    "usr/include/QtCore/qstringlist.h",
+                    "usr/include/QtCore/qtextstream.h",
+                    "usr/include/QtCore/qvariant.h",
+                    "usr/include/QtCore/qvarlengtharray.h",
+                    "usr/include/QtCore/qvector.h",
+                    "usr/include/QtDBus/qdbusargument.h",
+                    "usr/include/QtDBus/qdbusconnection.h",
+                    "usr/include/QtDBus/qdbusextratypes.h",
+                    "usr/include/QtDBus/qdbusmetatype.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/c++/14/bits/algorithmfwd.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/move.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/uses_allocator.h",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/locale.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/wchar.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapparser.cpp",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapparser_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapset.cpp",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapset_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessage.cpp",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessage_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2.cpp",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2_p_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev3.cpp",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev3_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/xdgbasedirs.cpp",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/xdgbasedirs_p.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/QtCore/qalgorithms.h",
+                    "usr/include/QtCore/qatomic.h",
+                    "usr/include/QtCore/qatomic_x86_64.h",
+                    "usr/include/QtCore/qbasicatomic.h",
+                    "usr/include/QtCore/qbytearray.h",
+                    "usr/include/QtCore/qchar.h",
+                    "usr/include/QtCore/qcoreapplication.h",
+                    "usr/include/QtCore/qdatetime.h",
+                    "usr/include/QtCore/qdebug.h",
+                    "usr/include/QtCore/qdir.h",
+                    "usr/include/QtCore/qfile.h",
+                    "usr/include/QtCore/qfileinfo.h",
+                    "usr/include/QtCore/qglobal.h",
+                    "usr/include/QtCore/qhash.h",
+                    "usr/include/QtCore/qiodevice.h",
+                    "usr/include/QtCore/qlist.h",
+                    "usr/include/QtCore/qlocale.h",
+                    "usr/include/QtCore/qmap.h",
+                    "usr/include/QtCore/qmetatype.h",
+                    "usr/include/QtCore/qnamespace.h",
+                    "usr/include/QtCore/qprocess.h",
+                    "usr/include/QtCore/qregexp.h",
+                    "usr/include/QtCore/qset.h",
+                    "usr/include/QtCore/qshareddata.h",
+                    "usr/include/QtCore/qsharedpointer_impl.h",
+                    "usr/include/QtCore/qstring.h",
+                    "usr/include/QtCore/qstringbuilder.h",
+                    "usr/include/QtCore/qstringlist.h",
+                    "usr/include/QtCore/qtextstream.h",
+                    "usr/include/QtCore/qvariant.h",
+                    "usr/include/QtCore/qvarlengtharray.h",
+                    "usr/include/QtCore/qvector.h",
+                    "usr/include/QtDBus/qdbusargument.h",
+                    "usr/include/QtDBus/qdbusconnection.h",
+                    "usr/include/QtDBus/qdbusextratypes.h",
+                    "usr/include/QtDBus/qdbusmetatype.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/c++/14/bits/algorithmfwd.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/move.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/uses_allocator.h",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/locale.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/wchar.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapparser.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapparser_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapset.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/imapset_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessage.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessage_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev2_p_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev3.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/notificationmessagev3_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/xdgbasedirs.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/libs/xdgbasedirs_p.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libakonadiprotocolinternals.so.1.13.0-1.13.0-126.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/akonadi-1.13.0-126.fc40.x86_64/redhat-linux-build/libs/akonadiprotocolinternals_autogen/mocs_compilation.cpp"
+        }
+    ]
+}

@@ -1,0 +1,2201 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "dad63374-e395-401e-89cb-a7f1c9b5a2f7",
+            "created_date": "2024-06-17T11:58:37.127Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "e3c93694-ff89-4aea-b7bb-641c909d12ee",
+                    "filename": "btrfsd-debuginfo-0.2.0-3.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfsd-debuginfo-0.2.0-3.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 75445,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "ac3afc4e-1457-4b96-b980-8425ded0b0b4",
+                    "filename": "btrfsd-debugsource-0.2.0-3.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfsd-debugsource-0.2.0-3.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 27123,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "e4ec23e9-08ca-4d3e-90a2-808d59ee03ab",
+                    "created_date": "2024-06-17T11:58:37.135480Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "e4ec23e9-08ca-4d3e-90a2-808d59ee03ab",
+                    "task_start_date": "2024-06-17T11:58:37.160187Z",
+                    "task_end_date": "2024-06-17T11:59:12.046323Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 11:58:37.16 Pipeline [d2d] starting\n2024-06-17 11:58:37.16 Step [download_missing_inputs] starting\n2024-06-17 11:58:37.17 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfsd-debugsource-0.2.0-3.fc40.x86_64.rpm#from\n2024-06-17 11:58:39.72 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfsd-debuginfo-0.2.0-3.fc40.x86_64.rpm#to\n2024-06-17 11:58:43.19 Step [download_missing_inputs] completed in 6 seconds\n2024-06-17 11:58:43.19 Step [get_inputs] starting\n2024-06-17 11:58:43.19 Step [get_inputs] completed in 0 seconds\n2024-06-17 11:58:43.19 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 11:58:43.21 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 11:58:43.21 Step [extract_archives] starting\n2024-06-17 11:58:43.30 Step [extract_archives] completed in 0 seconds\n2024-06-17 11:58:43.30 Step [collect_and_create_codebase_resources] starting\n2024-06-17 11:58:43.33 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 11:58:43.33 Step [fingerprint_codebase_directories] starting\n2024-06-17 11:58:43.34 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 11:58:43.35 Step [flag_empty_files] starting\n2024-06-17 11:58:43.35 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 11:58:43.35 Step [flag_whitespace_files] starting\n2024-06-17 11:58:43.35 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 11:58:43.35 Step [flag_ignored_resources] starting\n2024-06-17 11:58:43.35 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 11:58:43.36 Step [map_about_files] starting\n2024-06-17 11:58:43.36 Step [map_about_files] completed in 0 seconds\n2024-06-17 11:58:43.36 Step [map_checksum] starting\n2024-06-17 11:58:43.36 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 11:58:43.37 Step [map_checksum] completed in 0 seconds\n2024-06-17 11:58:43.37 Step [match_archives_to_purldb] starting\n2024-06-17 11:58:43.37 PurlDB is not available. Skipping.\n2024-06-17 11:58:43.37 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 11:58:43.38 Step [find_java_packages] starting\n2024-06-17 11:58:43.38 Finding Java package for 0 .java resources.\n2024-06-17 11:58:43.38 Step [find_java_packages] completed in 0 seconds\n2024-06-17 11:58:43.38 Step [map_java_to_class] starting\n2024-06-17 11:58:43.38 Mapping 0 .class resources to .java\n2024-06-17 11:58:43.39 No .java resources to map.\n2024-06-17 11:58:43.39 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 11:58:43.39 Step [map_jar_to_source] starting\n2024-06-17 11:58:43.39 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 11:58:43.39 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 11:58:43.40 Step [map_elf] starting\n2024-06-17 11:58:43.52 Mapping 1 to/ resources using paths with 15 from/ resources.\n2024-06-17 11:58:43.52 Done building from/ resources index.\n2024-06-17 11:58:43.53 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug'\n2024-06-17 11:58:43.54 WARNING: #66 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug'\n2024-06-17 11:58:43.55 Created 16 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug'\n2024-06-17 11:58:43.55 Step [map_elf] completed in 0 seconds\n2024-06-17 11:58:43.55 Step [map_go] starting\n2024-06-17 11:58:43.56 Mapping 0 to/ resources using paths with 15 from/ resources.\n2024-06-17 11:58:43.56 Done building from/ resources index.\n2024-06-17 11:58:43.57 Step [map_go] completed in 0 seconds\n2024-06-17 11:58:43.57 Step [match_directories_to_purldb] starting\n2024-06-17 11:58:43.57 PurlDB is not available. Skipping.\n2024-06-17 11:58:43.57 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 11:58:43.58 Step [match_resources_to_purldb] starting\n2024-06-17 11:58:43.58 PurlDB is not available. Skipping.\n2024-06-17 11:58:43.58 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 11:58:43.58 Step [map_path] starting\n2024-06-17 11:58:43.59 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 11:58:43.60 Step [map_path] completed in 0 seconds\n2024-06-17 11:58:43.60 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 11:58:43.62 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 11:58:43.63 Step [perform_house_keeping_tasks] starting\n2024-06-17 11:58:43.65 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 11:58:43.66 Step [match_purldb_resources_post_process] starting\n2024-06-17 11:58:43.66 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 11:58:43.67 0 resource processed\n2024-06-17 11:58:43.68 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 11:58:43.68 Step [remove_packages_without_resources] starting\n2024-06-17 11:58:43.69 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 11:58:43.69 Step [scan_unmapped_to_files] starting\n2024-06-17 11:58:47.87 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 11:58:47.87 Step [scan_mapped_from_for_files] starting\n2024-06-17 11:59:10.78 Progress: 12% (2/16) ETA: 168 seconds (2.8 minutes)\n2024-06-17 11:59:11.02 Progress: 25% (4/16) ETA: 69 seconds (1.1 minutes)\n2024-06-17 11:59:11.06 Progress: 37% (6/16) ETA: 39 seconds\n2024-06-17 11:59:11.28 Progress: 50% (8/16) ETA: 23 seconds\n2024-06-17 11:59:11.36 Progress: 62% (10/16) ETA: 14 seconds\n2024-06-17 11:59:11.48 Progress: 75% (12/16) ETA: 8 seconds\n2024-06-17 11:59:11.62 Progress: 87% (14/16) ETA: 4 seconds\n2024-06-17 11:59:11.77 Progress: 100% (16/16)\n2024-06-17 11:59:12.00 Step [scan_mapped_from_for_files] completed in 24 seconds\n2024-06-17 11:59:12.01 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 11:59:12.01 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 11:59:12.02 Step [create_local_files_packages] starting\n2024-06-17 11:59:12.03 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 11:59:12.04 Pipeline completed in 35 seconds\n",
+                    "execution_time": 34
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf",
+            "type": "local-files",
+            "namespace": "cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374",
+            "name": "ee8b7334-55de-4347-a6bb-d642ca9c2ccf",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>\nCopyright (c) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64",
+            "type": "directory",
+            "name": "btrfsd-0.2.0-3.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src/btd-resources.c",
+            "type": "file",
+            "name": "btd-resources.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9385,
+            "md5": "3572bbfd1fd62d44478f78e635da8715",
+            "sha1": "be1a0dcd0270d088ce3a8678b5a684c4671ceb65",
+            "sha256": "420a6ae12015c2207061a369ac4bb0aaf29d696f1a0c815611a08e3b77d27e1e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 70,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 70,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-c4488c4083b156abb48d473de85b804fd9821f23",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 83,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_36.RULE",
+                            "from_file": null,
+                            "start_line": 72,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\t See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 106,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_36.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-6b7914e7-83c2-adca-0e39-407344ba0985",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.99,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 68,
+                    "copyright": "Copyright (c) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald",
+                    "start_line": 68
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Peter Mattis, Spencer Kimball and Josh MacDonald",
+                    "end_line": 68,
+                    "start_line": 68
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 83,
+                    "start_line": 83
+                },
+                {
+                    "url": "ftp://ftp.gtk.org/pub/gtk",
+                    "end_line": 90,
+                    "start_line": 90
+                },
+                {
+                    "url": "http://opensource.apple.com/source/OpenSSL098/OpenSSL098-35/src/fips/fips_premain.c",
+                    "end_line": 181,
+                    "start_line": 181
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src/btd-resources.h",
+            "type": "file",
+            "name": "btd-resources.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 136,
+            "md5": "1c85e3f6dc8c6bbc3e6d8c0927ad1a15",
+            "sha1": "185d9cd7cf0fd9d90de1b6dba6eae7f2cfdd638c",
+            "sha256": "fee49aca7a2e70d6076d24db0040b77476bfce29855be47ab0e303cb14d3e451",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-filesystem.c",
+            "type": "file",
+            "name": "btd-filesystem.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17285,
+            "md5": "d7ccc777dfb00c0994383ee4c4b3ae79",
+            "sha1": "22385514cc4c8c525c2af7b35eedbb348a66ca16",
+            "sha256": "fdf600ca9d8beba00b6097551fd88f9a1dd0813de6ba804b40c610f5b2d4e9f0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.32,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-filesystem.h",
+            "type": "file",
+            "name": "btd-filesystem.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1884,
+            "md5": "97aae3d26104b362895799017957b3f7",
+            "sha1": "27b13a1e9821c76c4eeab19a47a006abffd81234",
+            "sha256": "dd7aefcf322050a5c2e25483946c0c2d1a382d595a842257f13332ed29d45ac8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.9,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-fs-record.c",
+            "type": "file",
+            "name": "btd-fs-record.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10162,
+            "md5": "6445b994e4b5a0348627890b5afc4c5b",
+            "sha1": "5914dcab1531c58d7ddfb4a2f7ee33990e506e66",
+            "sha256": "3ac23d6fd3189c7c840380dc4779bf89b7f0f813ae50c09f224593e742a75c6d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-fs-record.h",
+            "type": "file",
+            "name": "btd-fs-record.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2308,
+            "md5": "844739d4b44134fd879d0f442cc79fea",
+            "sha1": "d8856ee1c53e06dc886b3aded9f0c2c26ea761a4",
+            "sha256": "e237d233370a53a17c4d6457b23ce2de277cec133b28d2c5ab2e6be272013f2c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-logging.c",
+            "type": "file",
+            "name": "btd-logging.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4121,
+            "md5": "9919f91958949a8ee9d6e59c30de2832",
+            "sha1": "afeca4b37f89d76f3ffff3c172de113f3493fa3b",
+            "sha256": "8ea814aebd4b5ee9a14599811025fadc5cfe68dab265560adbc07c2482a00d38",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-logging.h",
+            "type": "file",
+            "name": "btd-logging.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1037,
+            "md5": "5c6011f42e559f21a8d7a602e01d6aac",
+            "sha1": "c32d35a6e94a1c8812cb46a6db763b27c04b7db0",
+            "sha256": "81abc51a3548155351e4a5d9740aca0f71f91b71db1ac3f1ec1b77d298f63ebc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.11,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-mailer.c",
+            "type": "file",
+            "name": "btd-mailer.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3799,
+            "md5": "bde30cc4546ff797dbf83b47969fd0af",
+            "sha1": "584626535b64fea87e4c7d3384f319555193c726",
+            "sha256": "a647a3005565162a4f231599344aed889ba4814a882e22760d0e0b570083c81d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-mailer.h",
+            "type": "file",
+            "name": "btd-mailer.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 638,
+            "md5": "ab5e26716348eed392caacdad40c1a55",
+            "sha1": "9d865fdc44d8bc39ab4ef4c1e72433f037850f57",
+            "sha256": "67a86ce4da172764517318001920ee3ead9f71d09ba24f492fbe1b5ae2c9e13c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-scheduler.c",
+            "type": "file",
+            "name": "btd-scheduler.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20960,
+            "md5": "3698b7a1463e72f8bcf56d29c7661e44",
+            "sha1": "525b60ab5cf81298519de8d227d6957425bcc095",
+            "sha256": "ac253ffb0a254b3262d29d87b094b41dd6afeef266244ebd2ec30109cb1f4c94",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.25,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-scheduler.h",
+            "type": "file",
+            "name": "btd-scheduler.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 843,
+            "md5": "08ee81fc588dc3196f798d95b9504d49",
+            "sha1": "f21749831da548ac919a56a0fe36e6f834b8abb0",
+            "sha256": "943aa87dd5a1d77e8570dee579b8a8c62c3fd308e8765f85986ff5617b025ecf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-utils.c",
+            "type": "file",
+            "name": "btd-utils.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12325,
+            "md5": "719992c4536f737c7e305e7078c2d5d0",
+            "sha1": "795d114a70b243ee54dc29c2e5f49f3522f1e5f0",
+            "sha256": "861d471ddecedddb58842801bdffde79756cf41eb7efacd6465016c06af3df2b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.43,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-utils.h",
+            "type": "file",
+            "name": "btd-utils.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1182,
+            "md5": "f22941fc0a2f407d69935394c2e804b3",
+            "sha1": "1a6c039b7a7e9fe244c8b764fc56c90eac420c5d",
+            "sha256": "afcad1a3a09a5f780a40e14f798d3fe8c31d93d9724d017ca514762ee4e7fe75",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btrfsd.c",
+            "type": "file",
+            "name": "btrfsd.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2501,
+            "md5": "2c81845913d99c533ca62c3893120a77",
+            "sha1": "f3b5b66782248ae6ca7665c9f1de28dba7146ca0",
+            "sha256": "9d93f2a885c6756754dbe70502ac73b31afc3ac266c64e7ad33eefd292686142",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 4,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1+",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-fb67b653376821f6b76ca1db96b888f603cf13e0",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-13e43764-a240-bd88-b0fa-efa2eb7f66da",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.12,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) Matthias Klumpp <matthias@tenstral.net>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Matthias Klumpp",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cc825562-b9ee-4d0a-befe-f358aafe8b8e-dad63374/ee8b7334-55de-4347-a6bb-d642ca9c2ccf"
+            ],
+            "emails": [
+                {
+                    "email": "matthias@tenstral.net",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/84",
+            "type": "directory",
+            "name": "84",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/libexec",
+            "type": "directory",
+            "name": "libexec",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "type": "file",
+            "name": "btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 188464,
+            "md5": "efc779529f09e85bff6c66e10105b25e",
+            "sha1": "7b927df76cc35a1517d3a35c66ba8f207e71227b",
+            "sha256": "959b56bcce0fd81074d0f16e542f8592f93d54f7dece7f7f2ce6e4c8e098919c",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=84b49a7be3dee20fa3c5f183d4e9c9827edaf002, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [
+                {
+                    "email": "json_object_get_string_member@libjson-glib-1.0.so",
+                    "end_line": 1630,
+                    "start_line": 1630
+                },
+                {
+                    "email": "json_object_get_int_member@libjson-glib-1.0.so",
+                    "end_line": 1657,
+                    "start_line": 1657
+                },
+                {
+                    "email": "json_array_get_object_element@libjson-glib-1.0.so",
+                    "end_line": 1663,
+                    "start_line": 1663
+                },
+                {
+                    "email": "json_parser_new@libjson-glib-1.0.so",
+                    "end_line": 1673,
+                    "start_line": 1673
+                },
+                {
+                    "email": "json_object_get_array_member@libjson-glib-1.0.so",
+                    "end_line": 1706,
+                    "start_line": 1706
+                },
+                {
+                    "email": "json_parser_load_from_data@libjson-glib-1.0.so",
+                    "end_line": 1714,
+                    "start_line": 1714
+                },
+                {
+                    "email": "json_parser_get_root@libjson-glib-1.0.so",
+                    "end_line": 1740,
+                    "start_line": 1740
+                },
+                {
+                    "email": "json_array_get_length@libjson-glib-1.0.so",
+                    "end_line": 1764,
+                    "start_line": 1764
+                },
+                {
+                    "email": "json_node_get_object@libjson-glib-1.0.so",
+                    "end_line": 1771,
+                    "start_line": 1771
+                }
+            ],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/<artificial>",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src/btd-resources.c"
+                ],
+                "dwarf_included_paths": [
+                    "src/btd-resources.c",
+                    "src/btd-resources.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/syslog-decl.h",
+                    "usr/include/bits/syslog.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/utmp.h",
+                    "usr/include/glib-2.0/gio/gcancellable.h",
+                    "usr/include/glib-2.0/gio/gdbusconnection.h",
+                    "usr/include/glib-2.0/gio/gio-autocleanups.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gresource.h",
+                    "usr/include/glib-2.0/glib/garray.h",
+                    "usr/include/glib-2.0/glib/gbytes.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/gdatetime.h",
+                    "usr/include/glib-2.0/glib/genviron.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gfileutils.h",
+                    "usr/include/glib-2.0/glib/ghash.h",
+                    "usr/include/glib-2.0/glib/gkeyfile.h",
+                    "usr/include/glib-2.0/glib/glib-autocleanups.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/goption.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gspawn.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gstring.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gobject-autocleanups.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/json-glib-1.0/json-glib/json-parser.h",
+                    "usr/include/json-glib-1.0/json-glib/json-types.h",
+                    "usr/include/libintl.h",
+                    "usr/include/libmount/libmount.h",
+                    "usr/include/locale.h",
+                    "usr/include/stdio.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/syslog.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/systemd/sd-daemon.h",
+                    "usr/include/systemd/sd-journal.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/utmp.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-filesystem.c",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-filesystem.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-fs-record.c",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-fs-record.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-logging.c",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-logging.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-mailer.c",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-mailer.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-scheduler.c",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-scheduler.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-utils.c",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-utils.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btrfsd.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/syslog-decl.h",
+                    "usr/include/bits/syslog.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/utmp.h",
+                    "usr/include/glib-2.0/gio/gcancellable.h",
+                    "usr/include/glib-2.0/gio/gdbusconnection.h",
+                    "usr/include/glib-2.0/gio/gio-autocleanups.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gresource.h",
+                    "usr/include/glib-2.0/glib/garray.h",
+                    "usr/include/glib-2.0/glib/gbytes.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/gdatetime.h",
+                    "usr/include/glib-2.0/glib/genviron.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gfileutils.h",
+                    "usr/include/glib-2.0/glib/ghash.h",
+                    "usr/include/glib-2.0/glib/gkeyfile.h",
+                    "usr/include/glib-2.0/glib/glib-autocleanups.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/goption.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gspawn.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gstring.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gobject-autocleanups.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/json-glib-1.0/json-glib/json-parser.h",
+                    "usr/include/json-glib-1.0/json-glib/json-types.h",
+                    "usr/include/libintl.h",
+                    "usr/include/libmount/libmount.h",
+                    "usr/include/locale.h",
+                    "usr/include/stdio.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/syslog.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/systemd/sd-daemon.h",
+                    "usr/include/systemd/sd-journal.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/utmp.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src/btd-resources.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src/btd-resources.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/redhat-linux-build/src/btd-resources.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-filesystem.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-filesystem.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-fs-record.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-fs-record.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-logging.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-logging.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-mailer.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-mailer.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-scheduler.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-scheduler.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btd-utils.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/libexec/btrfsd-0.2.0-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/btrfsd-0.2.0-3.fc40.x86_64/src/btrfsd.c"
+        }
+    ]
+}

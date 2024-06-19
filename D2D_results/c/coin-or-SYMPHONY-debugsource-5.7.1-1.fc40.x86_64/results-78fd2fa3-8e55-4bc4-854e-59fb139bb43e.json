@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "78fd2fa3-8e55-4bc4-854e-59fb139bb43e",
+            "created_date": "2024-06-17T15:08:57.231Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "823aff6c-b516-41fc-853b-c2d746ee9b12",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-SYMPHONY-debugsource-5.7.1-1.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "a432a680-7cb8-4b64-ba16-8f3f2fe35590",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-SYMPHONY-debuginfo-5.7.1-1.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "2e9403a3-c195-47f9-918f-0e551e628caa",
+                    "created_date": "2024-06-17T15:08:57.239166Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "2e9403a3-c195-47f9-918f-0e551e628caa",
+                    "task_start_date": "2024-06-17T15:08:57.261765Z",
+                    "task_end_date": "2024-06-17T15:09:11.718953Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:08:57.26 Pipeline [d2d] starting\n2024-06-17 15:08:57.26 Step [download_missing_inputs] starting\n2024-06-17 15:08:57.26 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-SYMPHONY-debugsource-5.7.1-1.fc40.x86_64.rpm#from\n2024-06-17 15:09:03.77 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-SYMPHONY-debugsource-5.7.1-1.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:09:03.77 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-SYMPHONY-debuginfo-5.7.1-1.fc40.x86_64.rpm#to\n2024-06-17 15:09:11.71 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-SYMPHONY-debuginfo-5.7.1-1.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:09:11.71 Pipeline failed\n",
+                    "execution_time": 14
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

@@ -1,0 +1,3008 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "66b2864b-c201-4334-9f57-68931660646c",
+            "created_date": "2024-06-14T04:41:37.944Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "4f604e7b-70ab-4805-955e-74e78ad2aadd",
+                    "filename": "arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 285870,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "64bb14b8-68a5-4929-b9c8-ddfecbb66965",
+                    "filename": "arpage-debugsource-0.3.3-38.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debugsource-0.3.3-38.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 26405,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "c1f7f995-42d6-4dda-b5b3-727d5bc47dd6",
+                    "created_date": "2024-06-14T04:41:37.952958Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "c1f7f995-42d6-4dda-b5b3-727d5bc47dd6",
+                    "task_start_date": "2024-06-14T04:41:37.981015Z",
+                    "task_end_date": "2024-06-14T04:42:05.334726Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 04:41:37.98 Pipeline [d2d] starting\n2024-06-14 04:41:37.98 Step [download_missing_inputs] starting\n2024-06-14 04:41:37.98 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debugsource-0.3.3-38.fc40.x86_64.rpm#from\n2024-06-14 04:41:39.17 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm#to\n2024-06-14 04:41:42.76 Step [download_missing_inputs] completed in 5 seconds\n2024-06-14 04:41:42.77 Step [get_inputs] starting\n2024-06-14 04:41:42.77 Step [get_inputs] completed in 0 seconds\n2024-06-14 04:41:42.78 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 04:41:42.83 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 04:41:42.83 Step [extract_archives] starting\n2024-06-14 04:41:42.92 Step [extract_archives] completed in 0 seconds\n2024-06-14 04:41:42.92 Step [collect_and_create_codebase_resources] starting\n2024-06-14 04:41:42.96 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 04:41:42.96 Step [fingerprint_codebase_directories] starting\n2024-06-14 04:41:42.97 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 04:41:42.97 Step [flag_empty_files] starting\n2024-06-14 04:41:42.98 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 04:41:42.98 Step [flag_whitespace_files] starting\n2024-06-14 04:41:42.98 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 04:41:42.98 Step [flag_ignored_resources] starting\n2024-06-14 04:41:42.99 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 04:41:42.99 Step [map_about_files] starting\n2024-06-14 04:41:42.99 Step [map_about_files] completed in 0 seconds\n2024-06-14 04:41:42.99 Step [map_checksum] starting\n2024-06-14 04:41:42.99 Mapping 3 to/ resources using sha1 against from/ codebase\n2024-06-14 04:41:43.00 Step [map_checksum] completed in 0 seconds\n2024-06-14 04:41:43.00 Step [match_archives_to_purldb] starting\n2024-06-14 04:41:43.00 PurlDB is not available. Skipping.\n2024-06-14 04:41:43.00 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 04:41:43.01 Step [find_java_packages] starting\n2024-06-14 04:41:43.01 Finding Java package for 0 .java resources.\n2024-06-14 04:41:43.01 Step [find_java_packages] completed in 0 seconds\n2024-06-14 04:41:43.01 Step [map_java_to_class] starting\n2024-06-14 04:41:43.02 Mapping 0 .class resources to .java\n2024-06-14 04:41:43.02 No .java resources to map.\n2024-06-14 04:41:43.02 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 04:41:43.02 Step [map_jar_to_source] starting\n2024-06-14 04:41:43.02 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 04:41:43.03 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 04:41:43.03 Step [map_elf] starting\n2024-06-14 04:41:44.12 Mapping 3 to/ resources using paths with 18 from/ resources.\n2024-06-14 04:41:44.13 Done building from/ resources index.\n2024-06-14 04:41:44.13 WARNING: #90 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/arpage-0.3.3-38.fc40.x86_64'\n2024-06-14 04:41:44.13 Created 2 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/arpage-0.3.3-38.fc40.x86_64'\n2024-06-14 04:41:44.14 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug'\n2024-06-14 04:41:44.15 WARNING: #130 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug'\n2024-06-14 04:41:44.16 Created 17 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug'\n2024-06-14 04:41:44.16 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug'\n2024-06-14 04:41:44.16 WARNING: #70 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug'\n2024-06-14 04:41:44.17 Created 3 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug'\n2024-06-14 04:41:44.17 Step [map_elf] completed in 1 seconds\n2024-06-14 04:41:44.17 Step [map_go] starting\n2024-06-14 04:41:44.18 Mapping 0 to/ resources using paths with 18 from/ resources.\n2024-06-14 04:41:44.18 Done building from/ resources index.\n2024-06-14 04:41:44.18 Step [map_go] completed in 0 seconds\n2024-06-14 04:41:44.18 Step [match_directories_to_purldb] starting\n2024-06-14 04:41:44.19 PurlDB is not available. Skipping.\n2024-06-14 04:41:44.19 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 04:41:44.19 Step [match_resources_to_purldb] starting\n2024-06-14 04:41:44.19 PurlDB is not available. Skipping.\n2024-06-14 04:41:44.19 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 04:41:44.19 Step [map_path] starting\n2024-06-14 04:41:44.19 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 04:41:44.20 Step [map_path] completed in 0 seconds\n2024-06-14 04:41:44.20 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 04:41:44.21 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 04:41:44.21 Step [perform_house_keeping_tasks] starting\n2024-06-14 04:41:44.22 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 04:41:44.22 Step [match_purldb_resources_post_process] starting\n2024-06-14 04:41:44.22 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 04:41:44.22 0 resource processed\n2024-06-14 04:41:44.22 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 04:41:44.23 Step [remove_packages_without_resources] starting\n2024-06-14 04:41:44.23 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 04:41:44.23 Step [scan_unmapped_to_files] starting\n2024-06-14 04:41:49.92 Step [scan_unmapped_to_files] completed in 6 seconds\n2024-06-14 04:41:49.92 Step [scan_mapped_from_for_files] starting\n2024-06-14 04:42:04.28 Progress: 13% (3/22) ETA: 96 seconds (1.6 minutes)\n2024-06-14 04:42:04.37 Progress: 27% (6/22) ETA: 39 seconds\n2024-06-14 04:42:04.49 Progress: 40% (9/22) ETA: 22 seconds\n2024-06-14 04:42:04.59 Progress: 50% (11/22) ETA: 15 seconds\n2024-06-14 04:42:04.76 Progress: 63% (14/22) ETA: 9 seconds\n2024-06-14 04:42:04.88 Progress: 77% (17/22) ETA: 4 seconds\n2024-06-14 04:42:04.98 Progress: 90% (20/22) ETA: 2 seconds\n2024-06-14 04:42:05.00 Progress: 100% (22/22)\n2024-06-14 04:42:05.30 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-14 04:42:05.31 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 04:42:05.31 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 04:42:05.31 Step [create_local_files_packages] starting\n2024-06-14 04:42:05.32 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 04:42:05.33 Pipeline completed in 27 seconds\n",
+                    "execution_time": 27
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede",
+            "type": "local-files",
+            "namespace": "846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b",
+            "name": "b7095963-45fc-4b88-adae-e08273e22ede",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64",
+            "type": "directory",
+            "name": "arpage-0.3.3-38.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arppatt.cc",
+            "type": "file",
+            "name": "arppatt.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 8657,
+            "md5": "8069475c7dc45cfe1566068010576af7",
+            "sha1": "5f53576e91bbc12ae8a537d8f53f3718eb95e69c",
+            "sha256": "bdccb72fae25296c9e7cab733afc30d6048494b4764e1a9c0e94f24e36293cb2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arppatt.h",
+            "type": "file",
+            "name": "arppatt.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4727,
+            "md5": "7c21419e4fce0099fa376b0293689ada",
+            "sha1": "d4fc5f099dcd824fc16c667477e7eb524de11fd2",
+            "sha256": "1fa42ea3bdd75397b94ecc99e53a86bb7b2b77a98f5901478ba4f7e2d4bcb882",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arprun.cc",
+            "type": "file",
+            "name": "arprun.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 10389,
+            "md5": "991bb3bdcd45ae57f8f368754743e57e",
+            "sha1": "b152bee9171e0ee000920568506e006eb1569bca",
+            "sha256": "fb1d882fbcdb6e65bf748d8f2a2420bc26c45dd610bc2be9f30c4eff4cdd3628",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arprun.h",
+            "type": "file",
+            "name": "arprun.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 7676,
+            "md5": "38105a81fbda583cb34728b2794a11f5",
+            "sha1": "4df7ccd21067896c9960d2d5c951dbcdf747d610",
+            "sha256": "7e015dd4e9d4bc23b0f0be284e8db372bd305848cbf5b53aca6641aae0f9833a",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.75,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpstorage.cc",
+            "type": "file",
+            "name": "arpstorage.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 8438,
+            "md5": "04aed9779b4accaa6f320412846b0179",
+            "sha1": "eb3afc45b64121b5d16268cbf2ed19771549b962",
+            "sha256": "ecd0798ac880d55d8dfc399a61bf305278fe41467582cc7a2e24a0f4fb9a7c0a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arpage is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n * See the GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpstorage.h",
+            "type": "file",
+            "name": "arpstorage.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1943,
+            "md5": "4e1fb022cacea17c59d6b8ddf16536b0",
+            "sha1": "41cbe4e77841c7c4ecef297fcf14675dfaae929c",
+            "sha256": "f1164d9a63dd75a4a820893d503dca768a57081f456c75dc255ac85eb7933647",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arpage is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n * See the GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpui.cc",
+            "type": "file",
+            "name": "arpui.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 8848,
+            "md5": "4c5ab9c633bb726319c4e2e94f62ebd3",
+            "sha1": "707d88e6b29e2b94817118f9b69bfde011f33c5f",
+            "sha256": "3ba73dbc4ae8d3b4749d912a282e2ab6260d3a2af1fbc08e8b9d907c24190ff5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpui.h",
+            "type": "file",
+            "name": "arpui.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3470,
+            "md5": "f91d2b3f24f4cae525c1791d43ed876b",
+            "sha1": "d967ccf6228ac6915b0a4316e9ee9c0e70e079f0",
+            "sha256": "f3386b215cac8dd6ab80e831d258dbbe37609c8ae2e4951db6460103c69cab74",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.4,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/ccrange.h",
+            "type": "file",
+            "name": "ccrange.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1997,
+            "md5": "b7aeadbf3283b2a7264f7734430d5e6c",
+            "sha1": "d0a8fec97d15a8f9c83a0aced350dcf9153d2551",
+            "sha256": "651b4596a3247885c39678003c1e1ce58e1befbd2e72250badafa3750de2d6d3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/event_zone.cc",
+            "type": "file",
+            "name": "event_zone.cc",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 15959,
+            "md5": "067791fa178625de7c9d9cb933296f1d",
+            "sha1": "26339bfb0be5309be38350acf48944e77e00708d",
+            "sha256": "cad69198bd070857fd1a700f9e9c60e724a1eb500dd3c9a6c8eb0d5192b6cda9",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/jack_process.cc",
+            "type": "file",
+            "name": "jack_process.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 9652,
+            "md5": "7649cd45248f78b030f82cb8bc27393e",
+            "sha1": "cfe95dee2f0095a1d37041cec2327d8a20c6aa07",
+            "sha256": "33db4c8b50dd0c7f539e73fb027abc39213745a4315b235a7d2a3d853db50f5c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/jack_process.h",
+            "type": "file",
+            "name": "jack_process.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2668,
+            "md5": "189bd3e0a6610583405ca7cd30608a37",
+            "sha1": "e2ec7b1dd8cd705e008a2dbd714ae4a51ee89b0b",
+            "sha256": "7b4f94aaaab6566638fafac81d6cfeb50f88575c06bfcad92bf19e4b7c0ece9b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 43.75,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/main.cc",
+            "type": "file",
+            "name": "main.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 4949,
+            "md5": "bb8f2b973a43d2d8c2af58e7e7974577",
+            "sha1": "662a3adf255c4e8d414054db885f6175786f6f49",
+            "sha256": "a96c431ae4745c1a180ab3308c6078f27962ec935f8d06453627f13110022c03",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\n * under the terms of the GNU General Public License as published by the\n * Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arpage is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n * See the GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc",
+            "type": "file",
+            "name": "midimsg.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 1944,
+            "md5": "8b6b0420e88fc498fc2937a9564846c6",
+            "sha1": "cc4e1ebc5a5842631daf46dd23bb3eb9f6cada98",
+            "sha256": "609959836993a3a9593fdb4d363bddb386855f1c0ed2acdd65c2ef901d803b6a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h",
+            "type": "file",
+            "name": "midimsg.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3592,
+            "md5": "b1a7c59d11731f376458a972476ae988",
+            "sha1": "1dc883cf7049d122cf2ad2f6f062ac0978707ebd",
+            "sha256": "c0b4b26d2a9d7dad1edb9ff7238370c4820d4737b4bad5d3e7ac2b4fc2a309a1",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 26.34,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/pattelem.h",
+            "type": "file",
+            "name": "pattelem.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2039,
+            "md5": "a4c43c389ca42d19a0f14c071ffdfb8b",
+            "sha1": "c8508e4b06dd61bbb7e7730bb919a30e278c138e",
+            "sha256": "67a58f42aaf076978276f13c07581bf972d88cba1874891d79a39f8b54ee5aeb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/scales.cc",
+            "type": "file",
+            "name": "scales.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 3555,
+            "md5": "eeddb50c55258214261ebc7b30d7c4ae",
+            "sha1": "1372999b17d1ea14fa7a9fa581aa19ca6e8aafa7",
+            "sha256": "48295a4aeab5a78e1e06882d16ee8bf0529f57653a960cda0ecf3ff8d9226242",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/scales.h",
+            "type": "file",
+            "name": "scales.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2516,
+            "md5": "462c22186910a2548fe693e71c9adde2",
+            "sha1": "3a5ba834d14c40742ab34b4e1bfc168ec2939569",
+            "sha256": "1776a362783e8a05d21f07b36d44863de756f5323742d808a8e181f33d3e2430",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.99,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arpage is free software: you can redistribute it and/or modify it\r\n * under the terms of the GNU General Public License as published by the\r\n * Free Software Foundation, either version 3 of the License, or\r\n * (at your option) any later version.\r\n *\r\n * arpage is distributed in the hope that it will be useful, but\r\n * WITHOUT ANY WARRANTY; without even the implied warranty of\r\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n * See the GNU General Public License for more details.\r\n *\r\n * You should have received a copy of the GNU General Public License along\r\n * with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 98,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3b136da4-ea4f-04e7-9eba-ff753bfa3bd3",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 31.72,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) Mark Vitek 2009 <straypacket@gmail.com>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Mark Vitek",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/846814c8-a2b4-414d-9d0d-6a2569322e26-66b2864b/b7095963-45fc-4b88-adae-e08273e22ede"
+            ],
+            "emails": [
+                {
+                    "email": "straypacket@gmail.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003faf91de3b4fb6415b617225c21b6a3a2",
+                "directory_structure": "000000037c869d6e47a344d9eb07e54e52b75875"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003faf91de3b4fb6415b617225c21b6a3a2",
+                "directory_structure": "0000000311f9942e7ddcfe8edfdcc6bd74687c84"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003faf91de3b4fb6415b617225c21b6a3a2",
+                "directory_structure": "000000032a90afe06b0859287dde755cd41ce5a4"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003faf91de3b4fb6415b617225c21b6a3a2",
+                "directory_structure": "000000032879f206dd5fcb79d21cbb830beae355"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/35",
+            "type": "directory",
+            "name": "35",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/a1",
+            "type": "directory",
+            "name": "a1",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/arpage-0.3.3-38.fc40.x86_64",
+            "type": "file",
+            "name": "arpage-0.3.3-38.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 95095,
+            "md5": "095b98ce04366c212f9e18abd03ccd0c",
+            "sha1": "be0fff1791a301619f225f701f18dbfa38df7865",
+            "sha256": "fccfbdd5df9f032cd5eb5566d310a3bf0e5801c082c7208ba106a2d95aacd6e7",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=53141695672aba1a32802ebb012108518d412ea5, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-least.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/ctime",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ratio",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/giomm-2.4/giomm/fileinfo.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glibmm-2.4/glibmm/signalproxy.h",
+                    "usr/include/gtkmm-2.4/gtkmm/checkbutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/treeview.h",
+                    "usr/include/jack/jack.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/pangomm-1.4/pangomm/font.h",
+                    "usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/functor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot_base.h",
+                    "usr/include/sigc++-2.0/sigc++/trackable.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<built-in>",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-least.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/ctime",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ratio",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/giomm-2.4/giomm/fileinfo.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glibmm-2.4/glibmm/signalproxy.h",
+                    "usr/include/gtkmm-2.4/gtkmm/checkbutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/treeview.h",
+                    "usr/include/jack/jack.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/pangomm-1.4/pangomm/font.h",
+                    "usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/functor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot_base.h",
+                    "usr/include/sigc++-2.0/sigc++/trackable.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000218510c82841820141615001821828200",
+                "directory_structure": "0000000292c491311202812020021820180640c8"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000218510c82841820141615001821828200",
+                "directory_structure": "000000020527044434082012125c4204c0241100"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "type": "file",
+            "name": "arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 693984,
+            "md5": "4cef2980d989c47ccf7abdf8148a3bc4",
+            "sha1": "6329907db8a4ddf2fe0e9f9242496f8c63f2d8df",
+            "sha256": "6826f60e50599bfbdcef336b32c8fba8f014648ee773339c887515c01babbfe2",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=351159c9e2364d942361f4988ed85f7142ac5ee4, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<artificial>",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/atkmm-1.6/atkmm/component.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/chrono.h",
+                    "usr/include/c++/14/bits/deque.tcc",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/list.tcc",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_deque.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/cstdarg",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/cairomm-1.0/cairomm/enums.h",
+                    "usr/include/gdkmm-2.4/gdkmm/pixbuf.h",
+                    "usr/include/gdkmm-2.4/gdkmm/types.h",
+                    "usr/include/giomm-2.4/giomm/action.h",
+                    "usr/include/giomm-2.4/giomm/dbusauthobserver.h",
+                    "usr/include/giomm-2.4/giomm/fileinfo.h",
+                    "usr/include/giomm-2.4/giomm/icon.h",
+                    "usr/include/glib-2.0/glib/deprecated/gthread.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gmain.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glibmm-2.4/glibmm/containerhandle_shared.h",
+                    "usr/include/glibmm-2.4/glibmm/main.h",
+                    "usr/include/glibmm-2.4/glibmm/markup.h",
+                    "usr/include/glibmm-2.4/glibmm/miscutils.h",
+                    "usr/include/glibmm-2.4/glibmm/priorities.h",
+                    "usr/include/glibmm-2.4/glibmm/refptr.h",
+                    "usr/include/glibmm-2.4/glibmm/signalproxy.h",
+                    "usr/include/glibmm-2.4/glibmm/stringutils.h",
+                    "usr/include/glibmm-2.4/glibmm/thread.h",
+                    "usr/include/glibmm-2.4/glibmm/threads.h",
+                    "usr/include/glibmm-2.4/glibmm/unicode.h",
+                    "usr/include/glibmm-2.4/glibmm/ustring.h",
+                    "usr/include/gtkmm-2.4/gtkmm/box.h",
+                    "usr/include/gtkmm-2.4/gtkmm/builder.h",
+                    "usr/include/gtkmm-2.4/gtkmm/button.h",
+                    "usr/include/gtkmm-2.4/gtkmm/combobox.h",
+                    "usr/include/gtkmm-2.4/gtkmm/enums.h",
+                    "usr/include/gtkmm-2.4/gtkmm/image.h",
+                    "usr/include/gtkmm-2.4/gtkmm/main.h",
+                    "usr/include/gtkmm-2.4/gtkmm/menuitem.h",
+                    "usr/include/gtkmm-2.4/gtkmm/notebook.h",
+                    "usr/include/gtkmm-2.4/gtkmm/papersize.h",
+                    "usr/include/gtkmm-2.4/gtkmm/range.h",
+                    "usr/include/gtkmm-2.4/gtkmm/scale.h",
+                    "usr/include/gtkmm-2.4/gtkmm/spinbutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/table.h",
+                    "usr/include/gtkmm-2.4/gtkmm/togglebutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/window.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/transport.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/libxml++-2.6/libxml++/document.h",
+                    "usr/include/libxml++-2.6/libxml++/exceptions/exception.h",
+                    "usr/include/libxml++-2.6/libxml++/parsers/parser.h",
+                    "usr/include/libxml++-2.6/libxml++/parsers/saxparser.h",
+                    "usr/include/pangomm-1.4/pangomm/rectangle.h",
+                    "usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/connection.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/functor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/mem_fun.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot_base.h",
+                    "usr/include/sigc++-2.0/sigc++/limit_reference.h",
+                    "usr/include/sigc++-2.0/sigc++/trackable.h",
+                    "usr/include/sigc++-2.0/sigc++/type_traits.h",
+                    "usr/include/sigc++-2.0/sigc++/visit_each.h",
+                    "usr/include/stdint.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<built-in>",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arppatt.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arppatt.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arprun.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arprun.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpstorage.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpstorage.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpui.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpui.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/ccrange.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/jack_process.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/jack_process.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/main.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/pattelem.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/scales.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/scales.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/atkmm-1.6/atkmm/component.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/chrono.h",
+                    "usr/include/c++/14/bits/deque.tcc",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/list.tcc",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_deque.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/cstdarg",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/cairomm-1.0/cairomm/enums.h",
+                    "usr/include/gdkmm-2.4/gdkmm/pixbuf.h",
+                    "usr/include/gdkmm-2.4/gdkmm/types.h",
+                    "usr/include/giomm-2.4/giomm/action.h",
+                    "usr/include/giomm-2.4/giomm/dbusauthobserver.h",
+                    "usr/include/giomm-2.4/giomm/fileinfo.h",
+                    "usr/include/giomm-2.4/giomm/icon.h",
+                    "usr/include/glib-2.0/glib/deprecated/gthread.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gmain.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glibmm-2.4/glibmm/containerhandle_shared.h",
+                    "usr/include/glibmm-2.4/glibmm/main.h",
+                    "usr/include/glibmm-2.4/glibmm/markup.h",
+                    "usr/include/glibmm-2.4/glibmm/miscutils.h",
+                    "usr/include/glibmm-2.4/glibmm/priorities.h",
+                    "usr/include/glibmm-2.4/glibmm/refptr.h",
+                    "usr/include/glibmm-2.4/glibmm/signalproxy.h",
+                    "usr/include/glibmm-2.4/glibmm/stringutils.h",
+                    "usr/include/glibmm-2.4/glibmm/thread.h",
+                    "usr/include/glibmm-2.4/glibmm/threads.h",
+                    "usr/include/glibmm-2.4/glibmm/unicode.h",
+                    "usr/include/glibmm-2.4/glibmm/ustring.h",
+                    "usr/include/gtkmm-2.4/gtkmm/box.h",
+                    "usr/include/gtkmm-2.4/gtkmm/builder.h",
+                    "usr/include/gtkmm-2.4/gtkmm/button.h",
+                    "usr/include/gtkmm-2.4/gtkmm/combobox.h",
+                    "usr/include/gtkmm-2.4/gtkmm/enums.h",
+                    "usr/include/gtkmm-2.4/gtkmm/image.h",
+                    "usr/include/gtkmm-2.4/gtkmm/main.h",
+                    "usr/include/gtkmm-2.4/gtkmm/menuitem.h",
+                    "usr/include/gtkmm-2.4/gtkmm/notebook.h",
+                    "usr/include/gtkmm-2.4/gtkmm/papersize.h",
+                    "usr/include/gtkmm-2.4/gtkmm/range.h",
+                    "usr/include/gtkmm-2.4/gtkmm/scale.h",
+                    "usr/include/gtkmm-2.4/gtkmm/spinbutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/table.h",
+                    "usr/include/gtkmm-2.4/gtkmm/togglebutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/window.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/transport.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/libxml++-2.6/libxml++/document.h",
+                    "usr/include/libxml++-2.6/libxml++/exceptions/exception.h",
+                    "usr/include/libxml++-2.6/libxml++/parsers/parser.h",
+                    "usr/include/libxml++-2.6/libxml++/parsers/saxparser.h",
+                    "usr/include/pangomm-1.4/pangomm/rectangle.h",
+                    "usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/connection.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/functor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/mem_fun.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot_base.h",
+                    "usr/include/sigc++-2.0/sigc++/limit_reference.h",
+                    "usr/include/sigc++-2.0/sigc++/trackable.h",
+                    "usr/include/sigc++-2.0/sigc++/type_traits.h",
+                    "usr/include/sigc++-2.0/sigc++/visit_each.h",
+                    "usr/include/stdint.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug",
+            "type": "file",
+            "name": "zonage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 185240,
+            "md5": "ebb4851014fac187a674c84132d9ebf2",
+            "sha1": "3c364c5aa90f9aec78054757981bb575404be952",
+            "sha256": "a6436db2f5de7c16c88a4d0615e73318498296204bfe066a221cfbd22d701dd9",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=a1bcb4619a99b625d7410eeb2f56cd7bd79daef1, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<artificial>",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/atkmm-1.6/atkmm/component.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/chrono.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/list.tcc",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/cairomm-1.0/cairomm/enums.h",
+                    "usr/include/gdkmm-2.4/gdkmm/types.h",
+                    "usr/include/giomm-2.4/giomm/action.h",
+                    "usr/include/giomm-2.4/giomm/dbusauthobserver.h",
+                    "usr/include/glibmm-2.4/glibmm/containerhandle_shared.h",
+                    "usr/include/glibmm-2.4/glibmm/markup.h",
+                    "usr/include/glibmm-2.4/glibmm/refptr.h",
+                    "usr/include/glibmm-2.4/glibmm/signalproxy.h",
+                    "usr/include/glibmm-2.4/glibmm/threads.h",
+                    "usr/include/glibmm-2.4/glibmm/unicode.h",
+                    "usr/include/glibmm-2.4/glibmm/ustring.h",
+                    "usr/include/gtkmm-2.4/gtkmm/box.h",
+                    "usr/include/gtkmm-2.4/gtkmm/builder.h",
+                    "usr/include/gtkmm-2.4/gtkmm/button.h",
+                    "usr/include/gtkmm-2.4/gtkmm/enums.h",
+                    "usr/include/gtkmm-2.4/gtkmm/main.h",
+                    "usr/include/gtkmm-2.4/gtkmm/menuitem.h",
+                    "usr/include/gtkmm-2.4/gtkmm/notebook.h",
+                    "usr/include/gtkmm-2.4/gtkmm/papersize.h",
+                    "usr/include/gtkmm-2.4/gtkmm/spinbutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/table.h",
+                    "usr/include/gtkmm-2.4/gtkmm/togglebutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/widget.h",
+                    "usr/include/gtkmm-2.4/gtkmm/window.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/pangomm-1.4/pangomm/rectangle.h",
+                    "usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/connection.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/mem_fun.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot_base.h",
+                    "usr/include/sigc++-2.0/sigc++/limit_reference.h",
+                    "usr/include/sigc++-2.0/sigc++/trackable.h",
+                    "usr/include/sigc++-2.0/sigc++/type_traits.h",
+                    "usr/include/sigc++-2.0/sigc++/visit_each.h",
+                    "usr/include/stdint.h",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/event_zone.cc",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src",
+                    "usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/atkmm-1.6/atkmm/component.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/chrono.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/list.tcc",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/cairomm-1.0/cairomm/enums.h",
+                    "usr/include/gdkmm-2.4/gdkmm/types.h",
+                    "usr/include/giomm-2.4/giomm/action.h",
+                    "usr/include/giomm-2.4/giomm/dbusauthobserver.h",
+                    "usr/include/glibmm-2.4/glibmm/containerhandle_shared.h",
+                    "usr/include/glibmm-2.4/glibmm/markup.h",
+                    "usr/include/glibmm-2.4/glibmm/refptr.h",
+                    "usr/include/glibmm-2.4/glibmm/signalproxy.h",
+                    "usr/include/glibmm-2.4/glibmm/threads.h",
+                    "usr/include/glibmm-2.4/glibmm/unicode.h",
+                    "usr/include/glibmm-2.4/glibmm/ustring.h",
+                    "usr/include/gtkmm-2.4/gtkmm/box.h",
+                    "usr/include/gtkmm-2.4/gtkmm/builder.h",
+                    "usr/include/gtkmm-2.4/gtkmm/button.h",
+                    "usr/include/gtkmm-2.4/gtkmm/enums.h",
+                    "usr/include/gtkmm-2.4/gtkmm/main.h",
+                    "usr/include/gtkmm-2.4/gtkmm/menuitem.h",
+                    "usr/include/gtkmm-2.4/gtkmm/notebook.h",
+                    "usr/include/gtkmm-2.4/gtkmm/papersize.h",
+                    "usr/include/gtkmm-2.4/gtkmm/spinbutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/table.h",
+                    "usr/include/gtkmm-2.4/gtkmm/togglebutton.h",
+                    "usr/include/gtkmm-2.4/gtkmm/widget.h",
+                    "usr/include/gtkmm-2.4/gtkmm/window.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/pangomm-1.4/pangomm/rectangle.h",
+                    "usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h",
+                    "usr/include/sigc++-2.0/sigc++/connection.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/mem_fun.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot.h",
+                    "usr/include/sigc++-2.0/sigc++/functors/slot_base.h",
+                    "usr/include/sigc++-2.0/sigc++/limit_reference.h",
+                    "usr/include/sigc++-2.0/sigc++/trackable.h",
+                    "usr/include/sigc++-2.0/sigc++/type_traits.h",
+                    "usr/include/sigc++-2.0/sigc++/visit_each.h",
+                    "usr/include/stdint.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arppatt.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arppatt.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arprun.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arprun.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpstorage.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpstorage.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpui.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/arpui.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/ccrange.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/event_zone.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/jack_process.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/jack_process.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/main.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/arpage-0.3.3-38.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/arpage-0.3.3-38.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/midimsg.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/pattelem.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/scales.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/arpage-0.3.3-38.fc40.x86_64/src/scales.h"
+        }
+    ]
+}

@@ -1,0 +1,3777 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "8794867e-a514-4702-8766-7376f8cfe11c",
+            "created_date": "2024-06-17T15:37:16.172Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "0715ac1c-6329-4e95-968f-0726f2907815",
+                    "filename": "cadaver-debuginfo-0.24-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cadaver-debuginfo-0.24-5.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 116587,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "a9e36f19-bc1a-4251-bcb3-f0fca5b69040",
+                    "filename": "cadaver-debugsource-0.24-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cadaver-debugsource-0.24-5.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 76538,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "c5f58f38-0278-4d15-bd5d-a12510291271",
+                    "created_date": "2024-06-17T15:37:16.180236Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "c5f58f38-0278-4d15-bd5d-a12510291271",
+                    "task_start_date": "2024-06-17T15:37:16.204549Z",
+                    "task_end_date": "2024-06-17T15:37:41.637456Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 15:37:16.20 Pipeline [d2d] starting\n2024-06-17 15:37:16.21 Step [download_missing_inputs] starting\n2024-06-17 15:37:16.21 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cadaver-debugsource-0.24-5.fc40.x86_64.rpm#from\n2024-06-17 15:37:18.82 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cadaver-debuginfo-0.24-5.fc40.x86_64.rpm#to\n2024-06-17 15:37:20.65 Step [download_missing_inputs] completed in 4 seconds\n2024-06-17 15:37:20.65 Step [get_inputs] starting\n2024-06-17 15:37:20.66 Step [get_inputs] completed in 0 seconds\n2024-06-17 15:37:20.66 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 15:37:20.68 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 15:37:20.68 Step [extract_archives] starting\n2024-06-17 15:37:20.78 Step [extract_archives] completed in 0 seconds\n2024-06-17 15:37:20.78 Step [collect_and_create_codebase_resources] starting\n2024-06-17 15:37:20.83 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 15:37:20.83 Step [fingerprint_codebase_directories] starting\n2024-06-17 15:37:20.84 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 15:37:20.84 Step [flag_empty_files] starting\n2024-06-17 15:37:20.85 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 15:37:20.85 Step [flag_whitespace_files] starting\n2024-06-17 15:37:20.85 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 15:37:20.86 Step [flag_ignored_resources] starting\n2024-06-17 15:37:20.86 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 15:37:20.86 Step [map_about_files] starting\n2024-06-17 15:37:20.86 Step [map_about_files] completed in 0 seconds\n2024-06-17 15:37:20.87 Step [map_checksum] starting\n2024-06-17 15:37:20.87 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 15:37:20.88 Step [map_checksum] completed in 0 seconds\n2024-06-17 15:37:20.88 Step [match_archives_to_purldb] starting\n2024-06-17 15:37:20.89 PurlDB is not available. Skipping.\n2024-06-17 15:37:20.89 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 15:37:20.89 Step [find_java_packages] starting\n2024-06-17 15:37:20.90 Finding Java package for 0 .java resources.\n2024-06-17 15:37:20.91 Step [find_java_packages] completed in 0 seconds\n2024-06-17 15:37:20.91 Step [map_java_to_class] starting\n2024-06-17 15:37:20.92 Mapping 0 .class resources to .java\n2024-06-17 15:37:20.92 No .java resources to map.\n2024-06-17 15:37:20.92 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 15:37:20.93 Step [map_jar_to_source] starting\n2024-06-17 15:37:20.93 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 15:37:20.94 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 15:37:20.95 Step [map_elf] starting\n2024-06-17 15:37:21.23 Mapping 1 to/ resources using paths with 31 from/ resources.\n2024-06-17 15:37:21.23 Done building from/ resources index.\n2024-06-17 15:37:21.25 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug'\n2024-06-17 15:37:21.27 WARNING: #60 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug'\n2024-06-17 15:37:21.27 Created 49 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug'\n2024-06-17 15:37:21.28 Step [map_elf] completed in 0 seconds\n2024-06-17 15:37:21.28 Step [map_go] starting\n2024-06-17 15:37:21.28 Mapping 0 to/ resources using paths with 31 from/ resources.\n2024-06-17 15:37:21.29 Done building from/ resources index.\n2024-06-17 15:37:21.29 Step [map_go] completed in 0 seconds\n2024-06-17 15:37:21.30 Step [match_directories_to_purldb] starting\n2024-06-17 15:37:21.30 PurlDB is not available. Skipping.\n2024-06-17 15:37:21.30 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 15:37:21.30 Step [match_resources_to_purldb] starting\n2024-06-17 15:37:21.31 PurlDB is not available. Skipping.\n2024-06-17 15:37:21.31 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 15:37:21.31 Step [map_path] starting\n2024-06-17 15:37:21.32 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 15:37:21.32 Step [map_path] completed in 0 seconds\n2024-06-17 15:37:21.33 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 15:37:21.35 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 15:37:21.35 Step [perform_house_keeping_tasks] starting\n2024-06-17 15:37:21.38 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 15:37:21.39 Step [match_purldb_resources_post_process] starting\n2024-06-17 15:37:21.39 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 15:37:21.40 0 resource processed\n2024-06-17 15:37:21.41 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 15:37:21.41 Step [remove_packages_without_resources] starting\n2024-06-17 15:37:21.42 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 15:37:21.42 Step [scan_unmapped_to_files] starting\n2024-06-17 15:37:24.26 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 15:37:24.27 Step [scan_mapped_from_for_files] starting\n2024-06-17 15:37:36.34 Progress: 10% (5/49) ETA: 109 seconds (1.8 minutes)\n2024-06-17 15:37:36.51 Progress: 20% (10/49) ETA: 49 seconds\n2024-06-17 15:37:37.02 Progress: 30% (15/49) ETA: 30 seconds\n2024-06-17 15:37:38.20 Progress: 40% (20/49) ETA: 21 seconds\n2024-06-17 15:37:38.63 Progress: 51% (25/49) ETA: 14 seconds\n2024-06-17 15:37:39.29 Progress: 61% (30/49) ETA: 10 seconds\n2024-06-17 15:37:40.06 Progress: 71% (35/49) ETA: 6 seconds\n2024-06-17 15:37:40.38 Progress: 81% (40/49) ETA: 4 seconds\n2024-06-17 15:37:40.81 Progress: 91% (45/49) ETA: 2 seconds\n2024-06-17 15:37:41.58 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-17 15:37:41.58 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 15:37:41.59 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 15:37:41.59 Step [create_local_files_packages] starting\n2024-06-17 15:37:41.63 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 15:37:41.63 Pipeline completed in 25 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/030356fe-26dd-4850-9402-767bb2fd415e",
+            "type": "local-files",
+            "namespace": "ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e",
+            "name": "030356fe-26dd-4850-9402-767bb2fd415e",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/13e97364-9719-4c6c-bb77-0d7bcbacb19d",
+            "type": "local-files",
+            "namespace": "ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e",
+            "name": "13e97364-9719-4c6c-bb77-0d7bcbacb19d",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1991,92,93,94,95,96,97,98,99 Free Software Foundation, Inc.\nCopyright (c) 1991, 92, 95, 96, 97, 98 Free Software Foundation, Inc.\nCopyright (c) 1998, 1999, 2001 Free Software Foundation, Inc.",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/8b94c7c8-3942-4384-a93b-2f3854f3297d",
+            "type": "local-files",
+            "namespace": "ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e",
+            "name": "8b94c7c8-3942-4384-a93b-2f3854f3297d",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1991-1999, 2000, 2001 Free Software Foundation, Inc.",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a",
+            "type": "local-files",
+            "namespace": "ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e",
+            "name": "ad4ccbbe-f083-47df-9729-ebe11715896a",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1991, 1992, 1993 Free Software Foundation, Inc.\nCopyright (c) 1989,90,91,92,93,94,96,97 Free Software Foundation, Inc.\nCopyright (c) 1990, 1998, 1999 Free Software Foundation, Inc.\nCopyright (c) 1990, 1998 Free Software Foundation, Inc.\nCopyright (c) 1996, 1998 Free Software Foundation, Inc.\nCopyright (c) 1996, Free Software Foundation, Inc. Gordon Matzigkeit <gord@gnu.ai.mit.edu> , 1996\nCopyright (c) 1998-2001, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 1998-2005, Joe Orton <joe@orton.demon.co.uk>\nCopyright (c) 1999-2001, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 1999-2001, Joe Orton <joe@orton.demon.co.uk>\nCopyright (c) 1999-2005, 2008, Joe Orton <joe@orton.demon.co.uk>\nCopyright (c) 1999-2007, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 1999-2008, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 2000-2004, 2006, 2008, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 85, 88, 90, 91, 1995-1999 Free Software Foundation, Inc.\n(c) 1995 Mike Gleason, (mgleason@NcFTP.com)\nCopyright (c) 2003-2006, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 2002-2003, GRASE Lab\nCopyright (c) 2004-2006, Joe Orton <joe@manyfish.co.uk>\nCopyright (c) 2002, GRASE Lab",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/cce1e7b5-4c5b-44cb-941e-593c70748a95",
+            "type": "local-files",
+            "namespace": "ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e",
+            "name": "cce1e7b5-4c5b-44cb-941e-593c70748a95",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "",
+            "holder": "",
+            "declared_license_expression": "unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64",
+            "type": "directory",
+            "name": "cadaver-0.24-5.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/basename.c",
+            "type": "file",
+            "name": "basename.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1681,
+            "md5": "e3b79c804e54ecac072cb15ad33e3b47",
+            "sha1": "2b1b490f487e22161983883086c4ec2f41aeac3c",
+            "sha256": "e1ee1f9a96ea2b49a67a4277c1018e9de923b69e0b0855397b4f64cb408e1fb1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_49.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2, or (at your option)\n   any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software Foundation,\n   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_49.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-b667db31-5904-1242-0ead-dd00d99c07c5",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 45.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 1990, 1998, 1999 Free Software Foundation, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/basename.h",
+            "type": "file",
+            "name": "basename.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 37,
+            "md5": "c9d772060c37271b0f01e72f6b97acb1",
+            "sha1": "feabfc21b06f8782032b78d34e77f6c1efa0a757",
+            "sha256": "2ba12d0464ece13d46c65e22a2997a9ed17e25302d32a539f1f2ed9cc0b69dc9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/dirname.c",
+            "type": "file",
+            "name": "dirname.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2184,
+            "md5": "9c6d137036e88513a55c0ba7eb3809d7",
+            "sha1": "99e52d2133203b4de6bafb52f8c7e996b19d11df",
+            "sha256": "8a0c2a7894b2f97f97c8e6c285fde5765ba6e6b61729f0bc292fdcca250a5967",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_49.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2, or (at your option)\n   any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software Foundation,\n   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_49.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-b667db31-5904-1242-0ead-dd00d99c07c5",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 38.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 1990, 1998 Free Software Foundation, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/fnmatch.h",
+            "type": "file",
+            "name": "fnmatch.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2436,
+            "md5": "bffbff8de016305f051803e0da7efe83",
+            "sha1": "a61257223914ad46cb637e3102290174b571f8d6",
+            "sha256": "8bf50551d282ab94aaa016e8d963100897bc1a8a0a5123e54dd34e9cb0d359f7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_49.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "This program is free software; you can redistribute it and/or modify it\nunder the terms of the GNU General Public License as published by the\nFree Software Foundation; either version 2, or (at your option) any\nlater version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software Foundation,\nInc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_49.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-b667db31-5904-1242-0ead-dd00d99c07c5",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.89,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright (c) 1991, 1992, 1993 Free Software Foundation, Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "bug-glibc@prep.ai.mit.edu",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getopt.h",
+            "type": "file",
+            "name": "getopt.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4599,
+            "md5": "c86058b31e10fc8e2f6f8b2097e07d51",
+            "sha1": "f99970a7579bfb84289e57e6cfe63df9f3b2003c",
+            "sha256": "13cb1ba9d05bf0e502a2cc9b7c7093d16c2219836a5c4ff21336238147046da2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 20,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_49.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify it\n   under the terms of the GNU General Public License as published by the\n   Free Software Foundation; either version 2, or (at your option) any\n   later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n   USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_49.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-b667db31-5904-1242-0ead-dd00d99c07c5",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 1989,90,91,92,93,94,96,97 Free Software Foundation, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "bug-glibc@prep.ai.mit.edu",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getpass.c",
+            "type": "file",
+            "name": "getpass.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4462,
+            "md5": "b1a5f109cfd7ff7c5a954f1845ffbd09",
+            "sha1": "d4a34637369aae7659985584cf76072ed77c4796",
+            "sha256": "1107138c145f7f41cf90ddc059efd1f0668a864522ca701092147dc8e30ea48c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 2,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_58.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * For license terms, see the file COPYING in this directory.",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_58.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-e289a896-7457-4bcb-272c-4e19243bad50",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.68,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/cce1e7b5-4c5b-44cb-941e-593c70748a95"
+            ],
+            "emails": [
+                {
+                    "email": "ceharris@mal.com",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getpass.h",
+            "type": "file",
+            "name": "getpass.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 129,
+            "md5": "cef53383d992e2095a97f195b95531fa",
+            "sha1": "1440479cd4155c6d652745c7191bdab797c4af5a",
+            "sha256": "52f0a64df05aeae6b5288dd38bd9ac66ad86f9ab861d34897fb2c8b9219ab91a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/glob.c",
+            "type": "file",
+            "name": "glob.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 35707,
+            "md5": "ed4fd2b58a63ac48014c63999aacc8d3",
+            "sha1": "64100de14e89d58b926e6b7bb2e236ebefbc48dc",
+            "sha256": "5878b8a1e807186b51af73580403fc8041cfaf96c663aaa1d84346786c697945",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_48.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "   This library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Library General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   This library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Library General Public License for more details.\n\n   You should have received a copy of the GNU Library General Public\n   License along with this library; see the file COPYING.LIB.  If not,\n   write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n   Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 121,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_48.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-149aaea5-fb98-92ec-bb4f-ba9a24873071",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright (c) 1991,92,93,94,95,96,97,98,99 Free Software Foundation, Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/13e97364-9719-4c6c-bb77-0d7bcbacb19d"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/glob.h",
+            "type": "file",
+            "name": "glob.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 7037,
+            "md5": "9e0876df1fae33314c6a5419413f489d",
+            "sha1": "fd48256b93459710b591564cd3761446d57ad1a5",
+            "sha256": "8adf781a2dd76060b5acb59caf630e594c55947245077ef79d02cc2a409fc449",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_3.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "   The GNU C Library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Library General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   The GNU C Library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Library General Public License for more details.\n\n   You should have received a copy of the GNU Library General Public\n   License along with the GNU C Library; see the file COPYING.LIB.  If not,\n   write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n   Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 127,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_3.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-debe1d6b-3524-d7f0-df9e-815f342a56f3",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright (c) 1991, 92, 95, 96, 97, 98 Free Software Foundation, Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/13e97364-9719-4c6c-bb77-0d7bcbacb19d"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/mkstemp.c",
+            "type": "file",
+            "name": "mkstemp.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1368,
+            "md5": "2f1d167d61fba6e413bc958a30f57b73",
+            "sha1": "d49a8614006bfdbaf3188d1d78156c4334742ab3",
+            "sha256": "aa18f55b1f8e81d8e1ff4c55b7c55308ce6fe06970235a7c7a0f887e5fca95e7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_3.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   The GNU C Library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Library General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   The GNU C Library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Library General Public License for more details.\n\n   You should have received a copy of the GNU Library General Public\n   License along with the GNU C Library; see the file COPYING.LIB.  If not,\n   write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n   Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 127,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_3.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-debe1d6b-3524-d7f0-df9e-815f342a56f3",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 59.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright (c) 1998, 1999, 2001 Free Software Foundation, Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/13e97364-9719-4c6c-bb77-0d7bcbacb19d"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/netrc.c",
+            "type": "file",
+            "name": "netrc.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8808,
+            "md5": "37b2231f030ae32c185999285fccebc7",
+            "sha1": "c8a3065303a07a1075c39dda8b1c8fcdf2f69a82",
+            "sha256": "be8dceba6918293bc637194a32b2ee28fc1f068d106c3203506643ffb539712e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND unknown-license-reference",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_58.RULE",
+                            "from_file": null,
+                            "start_line": 19,
+                            "matched_text": "   For license terms, see the file COPYING in this directory.",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_58.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-e289a896-7457-4bcb-272c-4e19243bad50",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.21,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/030356fe-26dd-4850-9402-767bb2fd415e"
+            ],
+            "emails": [
+                {
+                    "email": "gord@gnu.ai.mit.edu",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/netrc.h",
+            "type": "file",
+            "name": "netrc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2106,
+            "md5": "6f8d16904d53f707a386989e0c677320",
+            "sha1": "f68a125907f8a08fe77082bc3dfd6a8e01c8d562",
+            "sha256": "9b06a2dda6cd21123bd399bacfd7693482c104029ddb79bd30adda43dd1d47af",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 35.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1996, Free Software Foundation, Inc. Gordon Matzigkeit <gord@gnu.ai.mit.edu> , 1996",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc. Gordon Matzigkeit",
+                    "end_line": 3,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "gord@gnu.ai.mit.edu",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/rpmatch.c",
+            "type": "file",
+            "name": "rpmatch.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2400,
+            "md5": "b5734008ffdbbfa547961a622ecfaac1",
+            "sha1": "a7de6956a8540fe2e06c1c799c797728880669bd",
+            "sha256": "a03ee3581917be842287090c428e15ad350870cef75a827c19160c61b3c4b532",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_49.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2, or (at your option)\n   any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software Foundation,\n   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_49.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-b667db31-5904-1242-0ead-dd00d99c07c5",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 32.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1996, 1998 Free Software Foundation, Inc.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/tempname.c",
+            "type": "file",
+            "name": "tempname.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9333,
+            "md5": "cb99f1484e2bc4b164b8a48943b43fca",
+            "sha1": "b18baa0050cbf4a4f2978c09f346d67a2d10d88e",
+            "sha256": "313ea8eb8e7712aeacb5ff6a63b2a8e042cff48265b12f3cfeaa8072f7c78183",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_9.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   The GNU C Library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Lesser General Public\n   License as published by the Free Software Foundation; either\n   version 2.1 of the License, or (at your option) any later version.\n\n   The GNU C Library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Lesser General Public License for more details.\n\n   You should have received a copy of the GNU Lesser General Public\n   License along with the GNU C Library; if not, write to the Free\n   Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA\n   02111-1307 USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 123,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_9.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-4726760e-eb77-1a7f-78ef-40dd35ef2cfd",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright (c) 1991-1999, 2000, 2001 Free Software Foundation, Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/8b94c7c8-3942-4384-a93b-2f3854f3297d"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/yesno.c",
+            "type": "file",
+            "name": "yesno.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1592,
+            "md5": "ea7ae79a5c577d794b8900b97a048b78",
+            "sha1": "c90cf52af145f410204b1f40ac50fef85edb6815",
+            "sha256": "ab81098d58e3c77bce34eb7464fe670a68e20b7517295850b7e1e86c32ac1dac",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_49.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2, or (at your option)\n   any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software Foundation,\n   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_49.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-b667db31-5904-1242-0ead-dd00d99c07c5",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 1990, 1998 Free Software Foundation, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cadaver.c",
+            "type": "file",
+            "name": "cadaver.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 29156,
+            "md5": "db8c3e31a7dfe46778ab2a0a6756facf",
+            "sha1": "320f9b7e4b7dc329d59db1092516c67d4b6e70bc",
+            "sha256": "e8ff5a804bf0457a372af46cfa0cda16ab3aa19e0578d9f16163efaae6dee8a0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.99,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2007, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 1020,
+                    "copyright": "(c) 1995 Mike Gleason, (mgleason@NcFTP.com)",
+                    "start_line": 1020
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Mike Gleason",
+                    "end_line": 1020,
+                    "start_line": 1020
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "mgleason@NcFTP.com",
+                    "end_line": 1020,
+                    "start_line": 1020
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://webdav.org/cadaver/custom-properties/",
+                    "end_line": 79,
+                    "start_line": 79
+                },
+                {
+                    "url": "https://github.com/notroj/cadaver",
+                    "end_line": 136,
+                    "start_line": 136
+                },
+                {
+                    "url": "http://ftp.com/",
+                    "end_line": 1020,
+                    "start_line": 1020
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cadaver.h",
+            "type": "file",
+            "name": "cadaver.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5567,
+            "md5": "d77522bd5aae4f4bde895f2029b0cb2d",
+            "sha1": "b415979247f8cb590f10061f2c18e4c781139dec",
+            "sha256": "398dcca056b7ddf27f3501367fb1b8ca5043b41de48c73fe407b99ed181ea22c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.78,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2005, 2008, Joe Orton <joe@orton.demon.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@orton.demon.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cmdline.c",
+            "type": "file",
+            "name": "cmdline.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9596,
+            "md5": "2d7078397ed3208221860214813d1764",
+            "sha1": "227cd84f33f9713c6370260c11ab10c843260447",
+            "sha256": "660fb65f1113012ce249b1c550620a227954efd9349dea7aaa91e503314e0893",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.28,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cmdline.h",
+            "type": "file",
+            "name": "cmdline.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 990,
+            "md5": "d52d00659342fcb10dac01313a70692a",
+            "sha1": "b5072ab5d62a96ab9b96f3e47e2bb52849341ae1",
+            "sha256": "416eb7c4441473e3fed9ae463926d64d6679dc2227ea31f980ff995c1e0b68b5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 76.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@orton.demon.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@orton.demon.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/commands.c",
+            "type": "file",
+            "name": "commands.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 39945,
+            "md5": "931d31153ffbac29bf026655f85fef2e",
+            "sha1": "ada029a97fb8af8082e8694648a75f61e9807c47",
+            "sha256": "21258879de3a200fce6e1738ae32d1579f4392fdf9486d8b55b18347f3d07f78",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.03,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2007, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://apache.org/dav/props/",
+                    "end_line": 1112,
+                    "start_line": 1112
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/commands.h",
+            "type": "file",
+            "name": "commands.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1867,
+            "md5": "7b15f31e2384c5a0faa59253ba2eb64c",
+            "sha1": "fcb867f9edcd7e811022bd36db65c4834e491316",
+            "sha256": "4bcf06da8fd022e750a412c21422a0a81f271a17c9a996b0e5309ed37716279e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.89,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@orton.demon.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@orton.demon.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/common.c",
+            "type": "file",
+            "name": "common.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1426,
+            "md5": "77cf5f056cdf289b8723ff15d63f1ac7",
+            "sha1": "a12a8b1b45ef7c3b866ccbd37db966bd888e2e15",
+            "sha256": "9625907ac8b5fe8a701eef5c0898620c3fc0d69eb6281754990f012e3d5cf78c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 54.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1998-2001, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/common.h",
+            "type": "file",
+            "name": "common.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1712,
+            "md5": "1e9a84ad8e7d7975024b47a5fb3bc9d6",
+            "sha1": "da11d9c3c7835ec25ea28db0395c2eae599349b7",
+            "sha256": "8b6b995170fdf8c20d23d4bbb1b927dd4e78ea673541c4666816cb596d65a4f6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1998-2005, Joe Orton <joe@orton.demon.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@orton.demon.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/edit.c",
+            "type": "file",
+            "name": "edit.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6628,
+            "md5": "4108b58206889ea680dd5dde79782f33",
+            "sha1": "56e1b736a0a3937851d78f1b58997b076a67dfc6",
+            "sha256": "666d27d5130070697fde72c048f562a721070825b9fe8b19b871b10fe99b3cc9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.79,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2008, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/ls.c",
+            "type": "file",
+            "name": "ls.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8851,
+            "md5": "b91179b731ca89b467fbe4161e733aba",
+            "sha1": "5396c996f290085f24b0daa6ef17d808239392bd",
+            "sha256": "f4805b94793c6465eb19aaa3b5a0ddfb6c8b5381094bd5c539dc352b28c16618",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2004, 2006, 2008, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://apache.org/dav/props/",
+                    "end_line": 54,
+                    "start_line": 54
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/options.c",
+            "type": "file",
+            "name": "options.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11525,
+            "md5": "5daaf182af94b7a9a80c09d9bea0d344",
+            "sha1": "805f743edde0063787b98f9ec85ea23f561d5f48",
+            "sha256": "655580052bf624b6ebe16cead193f2363c363459c51737b51b6e68d610d14c46",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/options.h",
+            "type": "file",
+            "name": "options.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1896,
+            "md5": "9f845bdd4f0ab80c4713ed327a6ad30e",
+            "sha1": "49be4721bd6edcde0c89918b1393adfef1fa8d01",
+            "sha256": "046e2e95e49603828c665fc39d4c64b9e14fab2003e882e3220e5ed1bf0681f8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.04,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@orton.demon.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@orton.demon.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/search.c",
+            "type": "file",
+            "name": "search.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 44742,
+            "md5": "f160dca2b265e253beccaeaef0a2fce7",
+            "sha1": "36950f8e5dbb929eacb4380235e44328a727f7f7",
+            "sha256": "274b705224369f22cb6475249f2c5dbbe89d67b1d018007e3ec21fd2688eac95",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004-2006, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2002, GRASE Lab",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "GRASE Lab",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "grase@cse.ucsc.edu",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/utils.c",
+            "type": "file",
+            "name": "utils.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2832,
+            "md5": "d05c95c4f0969854ad5c63a6a2199b76",
+            "sha1": "ba3b6b5e405cce57ff40130989af8c9ab77db9c7",
+            "sha256": "d1ee0f29e2854569a0d9c635b796b1bce0517f2b1f97ff21fd9300c58d4ca848",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 85, 88, 90, 91, 1995-1999 Free Software Foundation, Inc.",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/utils.h",
+            "type": "file",
+            "name": "utils.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1147,
+            "md5": "1df5be4c9d0ee4eeaba313d2a24cf54d",
+            "sha1": "8ff7ec305854342717372a5dc6b954ee39fb9b4e",
+            "sha256": "713a6ca714a7641c55f93375fb076ee41bd9e1a5be9f380027f717a759c72f08",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 67.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999-2001, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/version.c",
+            "type": "file",
+            "name": "version.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12755,
+            "md5": "d1d42440add0d9d8e69f6e23f8dc2f55",
+            "sha1": "81ee517f016b5b29f520811d0b382c75b6628d39",
+            "sha256": "beccb74bd6745eda8e4c0b17c467b20a523620f846f2f395cb0b7dce4020a34e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify\n   it under the terms of the GNU General Public License as published by\n   the Free Software Foundation; either version 2 of the License, or\n   (at your option) any later version.\n  \n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n  \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2006, Joe Orton <joe@manyfish.co.uk>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2002-2003, GRASE Lab",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Joe Orton",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "GRASE Lab",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ad00f608-a3e5-46a4-94c4-959eee106d9b-8794867e/ad4ccbbe-f083-47df-9729-ebe11715896a"
+            ],
+            "emails": [
+                {
+                    "email": "joe@manyfish.co.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "grase@cse.ucsc.edu",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/61",
+            "type": "directory",
+            "name": "61",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 276192,
+            "md5": "57f0baef6a989e24d3a1fae9b487fd09",
+            "sha1": "60e2e689027c7788cb766ec64c2148188a35775f",
+            "sha256": "e37992633fb6102330bace411d7343bcbc9d0b0b4249431ba90e8dc995581388",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=61adaf4456040e7de162e975feb1724fcf81c605, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/<artificial>",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/basename.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/dirname.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getpass.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/glob.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/mkstemp.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/netrc.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/rpmatch.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/tempname.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/yesno.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cadaver.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cmdline.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/commands.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/common.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/edit.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/ls.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/options.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/search.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/utils.c",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/version.c"
+                ],
+                "dwarf_included_paths": [
+                    "lib/basename.c",
+                    "lib/basename.h",
+                    "lib/dirname.c",
+                    "lib/fnmatch.h",
+                    "lib/getopt.h",
+                    "lib/getpass.c",
+                    "lib/getpass.h",
+                    "lib/glob.c",
+                    "lib/glob.h",
+                    "lib/mkstemp.c",
+                    "lib/netrc.c",
+                    "lib/netrc.h",
+                    "lib/rpmatch.c",
+                    "lib/tempname.c",
+                    "lib/yesno.c",
+                    "src/cadaver.c",
+                    "src/cadaver.h",
+                    "src/cmdline.c",
+                    "src/cmdline.h",
+                    "src/commands.c",
+                    "src/commands.h",
+                    "src/common.h",
+                    "src/edit.c",
+                    "src/ls.c",
+                    "src/options.c",
+                    "src/options.h",
+                    "src/search.c",
+                    "src/utils.c",
+                    "src/utils.h",
+                    "src/version.c",
+                    "usr/include/assert.h",
+                    "usr/include/bits/dirent.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/dirent.h",
+                    "usr/include/errno.h",
+                    "usr/include/neon/ne_207.h",
+                    "usr/include/neon/ne_alloc.h",
+                    "usr/include/neon/ne_auth.h",
+                    "usr/include/neon/ne_basic.h",
+                    "usr/include/neon/ne_dates.h",
+                    "usr/include/neon/ne_defs.h",
+                    "usr/include/neon/ne_locks.h",
+                    "usr/include/neon/ne_props.h",
+                    "usr/include/neon/ne_redirect.h",
+                    "usr/include/neon/ne_request.h",
+                    "usr/include/neon/ne_session.h",
+                    "usr/include/neon/ne_socket.h",
+                    "usr/include/neon/ne_ssl.h",
+                    "usr/include/neon/ne_string.h",
+                    "usr/include/neon/ne_uri.h",
+                    "usr/include/neon/ne_utils.h",
+                    "usr/include/neon/ne_xml.h",
+                    "usr/include/pwd.h",
+                    "usr/include/readline/history.h",
+                    "usr/include/readline/readline.h",
+                    "usr/include/readline/rltypedefs.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/termios.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/dirent.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/dirent.h",
+                    "usr/include/errno.h",
+                    "usr/include/neon/ne_207.h",
+                    "usr/include/neon/ne_alloc.h",
+                    "usr/include/neon/ne_auth.h",
+                    "usr/include/neon/ne_basic.h",
+                    "usr/include/neon/ne_dates.h",
+                    "usr/include/neon/ne_defs.h",
+                    "usr/include/neon/ne_locks.h",
+                    "usr/include/neon/ne_props.h",
+                    "usr/include/neon/ne_redirect.h",
+                    "usr/include/neon/ne_request.h",
+                    "usr/include/neon/ne_session.h",
+                    "usr/include/neon/ne_socket.h",
+                    "usr/include/neon/ne_ssl.h",
+                    "usr/include/neon/ne_string.h",
+                    "usr/include/neon/ne_uri.h",
+                    "usr/include/neon/ne_utils.h",
+                    "usr/include/neon/ne_xml.h",
+                    "usr/include/pwd.h",
+                    "usr/include/readline/history.h",
+                    "usr/include/readline/readline.h",
+                    "usr/include/readline/rltypedefs.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/termios.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/cadaver-0.24-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/basename.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/basename.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/basename.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/dirname.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/dirname.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/fnmatch.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getopt.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getpass.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getpass.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/getpass.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/glob.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/glob.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/glob.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/mkstemp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/mkstemp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/netrc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/netrc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/netrc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/rpmatch.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/rpmatch.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/tempname.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/tempname.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/yesno.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/lib/yesno.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cadaver.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cadaver.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cadaver.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cmdline.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cmdline.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/cmdline.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/commands.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/commands.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/commands.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/common.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/common.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/edit.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/edit.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/ls.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/ls.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/options.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/options.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/options.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/search.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/search.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/utils.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/version.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/cadaver-0.24-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/cadaver-0.24-5.fc40.x86_64/src/version.c"
+        }
+    ]
+}

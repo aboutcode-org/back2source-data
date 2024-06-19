@@ -1,0 +1,1769 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "c65431ed-e5ef-4630-9f74-e6d6d8994571",
+            "created_date": "2024-06-13T10:16:08.557Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "1c95d654-29d1-4bf7-bb44-0b64bc4fcd7a",
+                    "filename": "4th-debuginfo-3.62.5-16.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4th-debuginfo-3.62.5-16.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 71897,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "2b2c3e9e-bcbe-49ad-a37b-c2064c8d69b3",
+                    "filename": "4th-debugsource-3.62.5-16.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4th-debugsource-3.62.5-16.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 53995,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "28f89de0-f21f-4761-b98c-5a9da2e0c5da",
+                    "created_date": "2024-06-13T10:16:08.565629Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "28f89de0-f21f-4761-b98c-5a9da2e0c5da",
+                    "task_start_date": "2024-06-13T10:16:08.591425Z",
+                    "task_end_date": "2024-06-13T10:16:33.746589Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 10:16:08.59 Pipeline [d2d] starting\n2024-06-13 10:16:08.59 Step [download_missing_inputs] starting\n2024-06-13 10:16:08.60 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4th-debugsource-3.62.5-16.fc40.x86_64.rpm#from\n2024-06-13 10:16:10.26 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4th-debuginfo-3.62.5-16.fc40.x86_64.rpm#to\n2024-06-13 10:16:13.26 Step [download_missing_inputs] completed in 5 seconds\n2024-06-13 10:16:13.26 Step [get_inputs] starting\n2024-06-13 10:16:13.27 Step [get_inputs] completed in 0 seconds\n2024-06-13 10:16:13.27 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 10:16:13.31 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 10:16:13.31 Step [extract_archives] starting\n2024-06-13 10:16:13.40 Step [extract_archives] completed in 0 seconds\n2024-06-13 10:16:13.41 Step [collect_and_create_codebase_resources] starting\n2024-06-13 10:16:13.43 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 10:16:13.44 Step [fingerprint_codebase_directories] starting\n2024-06-13 10:16:13.45 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 10:16:13.45 Step [flag_empty_files] starting\n2024-06-13 10:16:13.46 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 10:16:13.46 Step [flag_whitespace_files] starting\n2024-06-13 10:16:13.46 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 10:16:13.47 Step [flag_ignored_resources] starting\n2024-06-13 10:16:13.47 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 10:16:13.47 Step [map_about_files] starting\n2024-06-13 10:16:13.47 Step [map_about_files] completed in 0 seconds\n2024-06-13 10:16:13.47 Step [map_checksum] starting\n2024-06-13 10:16:13.48 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-13 10:16:13.48 Step [map_checksum] completed in 0 seconds\n2024-06-13 10:16:13.48 Step [match_archives_to_purldb] starting\n2024-06-13 10:16:13.49 PurlDB is not available. Skipping.\n2024-06-13 10:16:13.49 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 10:16:13.49 Step [find_java_packages] starting\n2024-06-13 10:16:13.49 Finding Java package for 0 .java resources.\n2024-06-13 10:16:13.50 Step [find_java_packages] completed in 0 seconds\n2024-06-13 10:16:13.50 Step [map_java_to_class] starting\n2024-06-13 10:16:13.50 Mapping 0 .class resources to .java\n2024-06-13 10:16:13.50 No .java resources to map.\n2024-06-13 10:16:13.50 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 10:16:13.51 Step [map_jar_to_source] starting\n2024-06-13 10:16:13.51 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 10:16:13.51 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 10:16:13.52 Step [map_elf] starting\n2024-06-13 10:16:13.63 Mapping 1 to/ resources using paths with 13 from/ resources.\n2024-06-13 10:16:13.63 Done building from/ resources index.\n2024-06-13 10:16:13.64 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug'\n2024-06-13 10:16:13.65 WARNING: #23 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug'\n2024-06-13 10:16:13.66 Created 13 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug'\n2024-06-13 10:16:13.66 Step [map_elf] completed in 0 seconds\n2024-06-13 10:16:13.66 Step [map_go] starting\n2024-06-13 10:16:13.67 Mapping 0 to/ resources using paths with 13 from/ resources.\n2024-06-13 10:16:13.67 Done building from/ resources index.\n2024-06-13 10:16:13.68 Step [map_go] completed in 0 seconds\n2024-06-13 10:16:13.68 Step [match_directories_to_purldb] starting\n2024-06-13 10:16:13.69 PurlDB is not available. Skipping.\n2024-06-13 10:16:13.69 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 10:16:13.69 Step [match_resources_to_purldb] starting\n2024-06-13 10:16:13.69 PurlDB is not available. Skipping.\n2024-06-13 10:16:13.69 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 10:16:13.70 Step [map_path] starting\n2024-06-13 10:16:13.70 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 10:16:13.71 Step [map_path] completed in 0 seconds\n2024-06-13 10:16:13.71 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 10:16:13.73 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 10:16:13.74 Step [perform_house_keeping_tasks] starting\n2024-06-13 10:16:13.76 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 10:16:13.77 Step [match_purldb_resources_post_process] starting\n2024-06-13 10:16:13.77 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 10:16:13.78 0 resource processed\n2024-06-13 10:16:13.78 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 10:16:13.79 Step [remove_packages_without_resources] starting\n2024-06-13 10:16:13.79 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 10:16:13.80 Step [scan_unmapped_to_files] starting\n2024-06-13 10:16:17.09 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-13 10:16:17.09 Step [scan_mapped_from_for_files] starting\n2024-06-13 10:16:28.94 Progress: 15% (2/13) ETA: 67 seconds (1.1 minutes)\n2024-06-13 10:16:29.12 Progress: 30% (4/13) ETA: 28 seconds\n2024-06-13 10:16:29.33 Progress: 46% (6/13) ETA: 14 seconds\n2024-06-13 10:16:29.47 Progress: 61% (8/13) ETA: 8 seconds\n2024-06-13 10:16:29.53 Progress: 76% (10/13) ETA: 4 seconds\n2024-06-13 10:16:30.78 Progress: 92% (12/13) ETA: 1 seconds\n2024-06-13 10:16:33.71 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-13 10:16:33.72 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 10:16:33.72 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 10:16:33.72 Step [create_local_files_packages] starting\n2024-06-13 10:16:33.74 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 10:16:33.74 Pipeline completed in 25 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3",
+            "type": "local-files",
+            "namespace": "84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed",
+            "name": "3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) J.L. Bezemer 1994,2012\nCopyright (c) J.L. Bezemer 1994,2017\nCopyright (c) 2011, 2017 J.L. Bezemer\nCopyright (c) 1997,2003 J.L. Bezemer\nCopyright (c) 1996,2017 J.L. Bezemer\nCopyright (c) 1994,2017 J.L. Bezemer\nCopyright (c) 1997,2017 J.L. Bezemer\nCopyright 1997,2010 by J.L. Bezemer",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64",
+            "type": "directory",
+            "name": "4th-3.62.5-16.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources",
+            "type": "directory",
+            "name": "sources",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/4th.h",
+            "type": "file",
+            "name": "4th.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3996,
+            "md5": "3bce2e62bccfc16386451429d0efa985",
+            "sha1": "0e744d8680c09313b1809a076a4b8f19353020d8",
+            "sha256": "eda04ee1e2e9e2aa2928511af3e131fbd876244eef7b35e9831ff8b6bd0f3776",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 22,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 10,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) J.L. Bezemer 1994,2017",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/cgen_4th.c",
+            "type": "file",
+            "name": "cgen_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9750,
+            "md5": "297f97372e583985ef3577d8752f95ef",
+            "sha1": "30582793e2fdef18258460956320347f1f62fed8",
+            "sha256": "55a4ae1c6f0e059905a8c5c915d44d4a21a8cbaa67a7338c09b834b328a5c7a9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 43,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 31,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 27,
+                    "copyright": "Copyright (c) 1997,2017 J.L. Bezemer",
+                    "start_line": 27
+                },
+                {
+                    "end_line": 103,
+                    "copyright": "Copyright 1997,2010 by J.L. Bezemer",
+                    "start_line": 103
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 27,
+                    "start_line": 27
+                },
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 103,
+                    "start_line": 103
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/cmds_4th.h",
+            "type": "file",
+            "name": "cmds_4th.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4762,
+            "md5": "cdcde3ad7cc39af3096ff39ab9c1a439",
+            "sha1": "9369bc0bb7b1b4f4d3f391a1bc20ac9e15561990",
+            "sha256": "28e6151e353495152b37e4628a1bc298b27c7117bd87139c7139efcb07ed5431",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 22,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 10,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) J.L. Bezemer 1994,2012",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/comp_4th.c",
+            "type": "file",
+            "name": "comp_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 106185,
+            "md5": "9bb918d8bb3dcf517c1e2c27c04378b9",
+            "sha1": "9b2658da94f5188de51ffd0f8b65236f95fa7990",
+            "sha256": "95fe9a3f5de08a35cfe2679c4d497a1d0020cb4a16e6769a11f74450c0dfb1a1",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 369,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 357,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.94,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 353,
+                    "copyright": "Copyright (c) 1994,2017 J.L. Bezemer",
+                    "start_line": 353
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 353,
+                    "start_line": 353
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/dump_4th.c",
+            "type": "file",
+            "name": "dump_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10134,
+            "md5": "28098119982d964d688d60e854be1ef6",
+            "sha1": "7d969691c50f81ca3f38174c1c99871b20ae92b3",
+            "sha256": "3e621e52de89d6cca0229f4e15f869b0d1cd1aa23b7047a71f5424595952d8fb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 98,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 86,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 82,
+                    "copyright": "Copyright (c) 1997,2017 J.L. Bezemer",
+                    "start_line": 82
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 82,
+                    "start_line": 82
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/errs_4th.c",
+            "type": "file",
+            "name": "errs_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4165,
+            "md5": "edc1d7a049892950e8b0cf9f8d82a66a",
+            "sha1": "687c26355fda7b599782e4829ed977674df56451",
+            "sha256": "6572755fee12336f59c1c1095eebfe2d9fe64d385d3bd0c3cbed3baaa411d739",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 52,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 40,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.09,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 36,
+                    "copyright": "Copyright (c) 1994,2017 J.L. Bezemer",
+                    "start_line": 36
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 36,
+                    "start_line": 36
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/exec_4th.c",
+            "type": "file",
+            "name": "exec_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 61211,
+            "md5": "f965954ca0310a60f993c3828c294c07",
+            "sha1": "e1dd35f0fbd989ca319572c2619e68a1e63a47c0",
+            "sha256": "8289550de6c3fd360cc4f8856866d953dfa05388c611be9dd33625d2c20d7c0d",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 248,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 236,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 232,
+                    "copyright": "Copyright (c) 1994,2017 J.L. Bezemer",
+                    "start_line": 232
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 232,
+                    "start_line": 232
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/free_4th.c",
+            "type": "file",
+            "name": "free_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3666,
+            "md5": "b0712f16287af12ca9a7d21df4231282",
+            "sha1": "8617fcd527bc9368b5e24b706601df2d290bc90b",
+            "sha256": "bc10d7af7c8e968ad0185d4c79def042c98486760214983c122328f722466f40",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 38,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 26,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.32,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 22,
+                    "copyright": "Copyright (c) 1997,2003 J.L. Bezemer",
+                    "start_line": 22
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/load_4th.c",
+            "type": "file",
+            "name": "load_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 15959,
+            "md5": "51086fc9ccbc2d83a3502e921810cdc4",
+            "sha1": "b6e04000650061e5844778af0939fcd3b8e56c11",
+            "sha256": "0d85b1fc19e6bcc7a1a071b476a62f5e6a70a60744a11c5dc4270f5876f4123c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 77,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 65,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 61,
+                    "copyright": "Copyright (c) 1997,2017 J.L. Bezemer",
+                    "start_line": 61
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 61,
+                    "start_line": 61
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/name_4th.c",
+            "type": "file",
+            "name": "name_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6184,
+            "md5": "d5e4e069af53c39d2f8204f97a0c1eeb",
+            "sha1": "6c39d1a96b5bddf31169b1ecca39a78b7b5e7518",
+            "sha256": "bf1f45c2aaccd16191dd58c385e75850d465a302c4dd170afa347b31e8d46ce5",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 69,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 57,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 53,
+                    "copyright": "Copyright (c) 1997,2017 J.L. Bezemer",
+                    "start_line": 53
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 53,
+                    "start_line": 53
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/open_4th.c",
+            "type": "file",
+            "name": "open_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3665,
+            "md5": "1eb2b126a46c355ef13b562b5bb1e88d",
+            "sha1": "0de4a31fd98ad10b6bf77f2dcad4bd037795adf5",
+            "sha256": "06fa918158dbfe242b2e77185cb1f8969af03abcd3b9987e41f68c12af32f1d3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 39,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 27,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 28.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 1996,2017 J.L. Bezemer",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/save_4th.c",
+            "type": "file",
+            "name": "save_4th.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13808,
+            "md5": "4bb9bb9642b662ea334cbb91f1bbe504",
+            "sha1": "5318886d8612e51ad5fb2c8e4b1f1a480d3d09f2",
+            "sha256": "b1aa2fc7db97ac5577f3a3b233d043f39325ca078bef26ae2f7fa5bf80da4405",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 70,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 58,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 54,
+                    "copyright": "Copyright (c) 1997,2017 J.L. Bezemer",
+                    "start_line": 54
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 54,
+                    "start_line": 54
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/str2cell.c",
+            "type": "file",
+            "name": "str2cell.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4481,
+            "md5": "3b80e5ea0844d37d822011d3cab57403",
+            "sha1": "da5e5bf1f1ba76a883ea0955a4e65cdcc1e63d3d",
+            "sha256": "8c805422b37ce504b81927778b6cf166c4f49419d6c39773071d5cb50fa44a70",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.07,
+                            "matcher": "3-seq",
+                            "end_line": 34,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_198.RULE",
+                            "from_file": null,
+                            "start_line": 22,
+                            "matched_text": "  4tH is free software; you can redistribute it and/or\n  modify it under the terms of the GNU General Public License\n  as published by the Free Software Foundation; either version 3\n  of the License, or (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License\n  along with this program; if not, write to the Free Software\n  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 99.07,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_198.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-796bfc60-430f-1f1d-ae1e-7a7ba8b075ef",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2011, 2017 J.L. Bezemer",
+                    "start_line": 18
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "J.L. Bezemer",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/84e7ed01-5271-4b36-8ffc-8dffc050ed58-c65431ed/3ddb2cf8-b49f-46dd-b11b-25d47abe4ca3"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/b3",
+            "type": "directory",
+            "name": "b3",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "type": "file",
+            "name": "lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 172576,
+            "md5": "6fce41b2cf41e16f7702858fb8f2e1ca",
+            "sha1": "c2a0e0c4c34773a4e019045f253781c3b923f11b",
+            "sha256": "da0872cc2156f9b00961cb59aa81cfefcc70ad6b7c77361ff236a8a190cd3a93",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=b3f8486776baea961607094eabf0b3160568e85c, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/<artificial>",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/errs_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/free_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/name_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/str2cell.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/4th.h",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/<built-in>",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/cgen_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/cmds_4th.h",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/comp_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/dump_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/exec_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/load_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/open_4th.c",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/save_4th.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/4th.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/cgen_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/cmds_4th.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/comp_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/dump_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/errs_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/exec_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/free_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/load_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/name_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/open_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/save_4th.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/lib4th.so.3.62.4-3.62.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/4th-3.62.5-16.fc40.x86_64/sources/str2cell.c"
+        }
+    ]
+}

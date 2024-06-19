@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "5d11e2a0-6b2a-4c10-87e2-952afc0e9f06",
+            "created_date": "2024-06-17T14:16:13.969Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "4f36184a-3178-4431-929b-4fa712a468ea",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/crossfire-client-debugsource-1.75.2-9.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "7d81e833-f1aa-46ae-979a-fe9deaac5e18",
+                    "filename": "crossfire-client-debuginfo-1.75.2-9.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/crossfire-client-debuginfo-1.75.2-9.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 348805,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "dc6d61ee-4c15-434e-8856-c6e26d7c035f",
+                    "created_date": "2024-06-17T14:16:13.978253Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "dc6d61ee-4c15-434e-8856-c6e26d7c035f",
+                    "task_start_date": "2024-06-17T14:16:13.998986Z",
+                    "task_end_date": "2024-06-17T14:16:26.382165Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 14:16:14.00 Pipeline [d2d] starting\n2024-06-17 14:16:14.00 Step [download_missing_inputs] starting\n2024-06-17 14:16:14.00 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/crossfire-client-debugsource-1.75.2-9.fc40.x86_64.rpm#from\n2024-06-17 14:16:22.34 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/crossfire-client-debugsource-1.75.2-9.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 14:16:22.35 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/crossfire-client-debuginfo-1.75.2-9.fc40.x86_64.rpm#to\n2024-06-17 14:16:26.37 Pipeline failed\n",
+                    "execution_time": 12
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

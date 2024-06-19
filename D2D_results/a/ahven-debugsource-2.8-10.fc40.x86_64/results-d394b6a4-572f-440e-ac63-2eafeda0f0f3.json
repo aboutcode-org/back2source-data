@@ -1,0 +1,3391 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "d394b6a4-572f-440e-ac63-2eafeda0f0f3",
+            "created_date": "2024-06-14T04:18:26.014Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "0d625b5a-09a9-4015-8544-9e2144bda230",
+                    "filename": "ahven-debuginfo-2.8-10.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/ahven-debuginfo-2.8-10.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 158033,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "f27344ec-f2a5-4345-80f6-c0c021928b6c",
+                    "filename": "ahven-debugsource-2.8-10.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/ahven-debugsource-2.8-10.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 43850,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "03688fb7-d538-409c-84a4-df07566a40dd",
+                    "created_date": "2024-06-14T04:18:26.016454Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "03688fb7-d538-409c-84a4-df07566a40dd",
+                    "task_start_date": "2024-06-14T04:18:26.072040Z",
+                    "task_end_date": "2024-06-14T04:19:04.846256Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 04:18:26.07 Pipeline [d2d] starting\n2024-06-14 04:18:26.07 Step [download_missing_inputs] starting\n2024-06-14 04:18:26.08 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/ahven-debugsource-2.8-10.fc40.x86_64.rpm#from\n2024-06-14 04:18:27.65 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/ahven-debuginfo-2.8-10.fc40.x86_64.rpm#to\n2024-06-14 04:18:30.38 Step [download_missing_inputs] completed in 4 seconds\n2024-06-14 04:18:30.38 Step [get_inputs] starting\n2024-06-14 04:18:30.39 Step [get_inputs] completed in 0 seconds\n2024-06-14 04:18:30.40 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 04:18:30.46 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 04:18:30.46 Step [extract_archives] starting\n2024-06-14 04:18:30.67 Step [extract_archives] completed in 0 seconds\n2024-06-14 04:18:30.68 Step [collect_and_create_codebase_resources] starting\n2024-06-14 04:18:30.73 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 04:18:30.73 Step [fingerprint_codebase_directories] starting\n2024-06-14 04:18:30.74 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 04:18:30.74 Step [flag_empty_files] starting\n2024-06-14 04:18:30.74 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 04:18:30.75 Step [flag_whitespace_files] starting\n2024-06-14 04:18:30.75 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 04:18:30.75 Step [flag_ignored_resources] starting\n2024-06-14 04:18:30.75 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 04:18:30.75 Step [map_about_files] starting\n2024-06-14 04:18:30.76 Step [map_about_files] completed in 0 seconds\n2024-06-14 04:18:30.76 Step [map_checksum] starting\n2024-06-14 04:18:30.76 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-14 04:18:30.77 Step [map_checksum] completed in 0 seconds\n2024-06-14 04:18:30.77 Step [match_archives_to_purldb] starting\n2024-06-14 04:18:30.77 PurlDB is not available. Skipping.\n2024-06-14 04:18:30.78 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 04:18:30.78 Step [find_java_packages] starting\n2024-06-14 04:18:30.78 Finding Java package for 0 .java resources.\n2024-06-14 04:18:30.79 Step [find_java_packages] completed in 0 seconds\n2024-06-14 04:18:30.79 Step [map_java_to_class] starting\n2024-06-14 04:18:30.80 Mapping 0 .class resources to .java\n2024-06-14 04:18:30.80 No .java resources to map.\n2024-06-14 04:18:30.81 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 04:18:30.81 Step [map_jar_to_source] starting\n2024-06-14 04:18:30.82 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 04:18:30.82 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 04:18:30.83 Step [map_elf] starting\n2024-06-14 04:18:31.12 Mapping 1 to/ resources using paths with 30 from/ resources.\n2024-06-14 04:18:31.13 Done building from/ resources index.\n2024-06-14 04:18:31.13 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug'\n2024-06-14 04:18:31.15 WARNING: #42 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug'\n2024-06-14 04:18:31.16 Created 30 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug'\n2024-06-14 04:18:31.16 Step [map_elf] completed in 0 seconds\n2024-06-14 04:18:31.16 Step [map_go] starting\n2024-06-14 04:18:31.17 Mapping 0 to/ resources using paths with 30 from/ resources.\n2024-06-14 04:18:31.17 Done building from/ resources index.\n2024-06-14 04:18:31.18 Step [map_go] completed in 0 seconds\n2024-06-14 04:18:31.18 Step [match_directories_to_purldb] starting\n2024-06-14 04:18:31.18 PurlDB is not available. Skipping.\n2024-06-14 04:18:31.18 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 04:18:31.18 Step [match_resources_to_purldb] starting\n2024-06-14 04:18:31.19 PurlDB is not available. Skipping.\n2024-06-14 04:18:31.19 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 04:18:31.19 Step [map_path] starting\n2024-06-14 04:18:31.19 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 04:18:31.20 Step [map_path] completed in 0 seconds\n2024-06-14 04:18:31.20 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 04:18:31.21 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 04:18:31.21 Step [perform_house_keeping_tasks] starting\n2024-06-14 04:18:31.22 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 04:18:31.22 Step [match_purldb_resources_post_process] starting\n2024-06-14 04:18:31.22 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 04:18:31.22 0 resource processed\n2024-06-14 04:18:31.23 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 04:18:31.23 Step [remove_packages_without_resources] starting\n2024-06-14 04:18:31.23 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 04:18:31.23 Step [scan_unmapped_to_files] starting\n2024-06-14 04:18:39.63 Step [scan_unmapped_to_files] completed in 8 seconds\n2024-06-14 04:18:39.63 Step [scan_mapped_from_for_files] starting\n2024-06-14 04:19:02.88 Progress: 10% (3/30) ETA: 209 seconds (3.5 minutes)\n2024-06-14 04:19:03.05 Progress: 20% (6/30) ETA: 94 seconds (1.6 minutes)\n2024-06-14 04:19:03.26 Progress: 30% (9/30) ETA: 55 seconds\n2024-06-14 04:19:03.35 Progress: 40% (12/30) ETA: 36 seconds\n2024-06-14 04:19:03.52 Progress: 50% (15/30) ETA: 24 seconds\n2024-06-14 04:19:03.69 Progress: 60% (18/30) ETA: 16 seconds\n2024-06-14 04:19:03.84 Progress: 70% (21/30) ETA: 10 seconds\n2024-06-14 04:19:03.94 Progress: 80% (24/30) ETA: 6 seconds\n2024-06-14 04:19:03.99 Progress: 90% (27/30) ETA: 3 seconds\n2024-06-14 04:19:04.51 Progress: 100% (30/30)\n2024-06-14 04:19:04.82 Step [scan_mapped_from_for_files] completed in 25 seconds\n2024-06-14 04:19:04.82 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 04:19:04.82 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 04:19:04.83 Step [create_local_files_packages] starting\n2024-06-14 04:19:04.84 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 04:19:04.84 Pipeline completed in 39 seconds\n",
+                    "execution_time": 38
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c",
+            "type": "local-files",
+            "namespace": "03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4",
+            "name": "1d16eae9-260b-45a6-85db-2913f6b0fd7c",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2007, 2008, 2010 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2007-2016 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2008-2009 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2008-2015 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2008 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2010 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2011 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2012 Tero Koskinen <tero.koskinen@iki.fi>\nCopyright (c) 2015 Tero Koskinen <tero.koskinen@iki.fi>",
+            "holder": "",
+            "declared_license_expression": "isc",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64",
+            "type": "directory",
+            "name": "ahven-2.8-10.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux",
+            "type": "directory",
+            "name": "gnat_linux",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj",
+            "type": "directory",
+            "name": "obj",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64",
+            "type": "directory",
+            "name": "x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/b__ahven.adb",
+            "type": "file",
+            "name": "b__ahven.adb",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 20970,
+            "md5": "d81c023c571c91c7530cce4c44c15e12",
+            "sha1": "179574bbf82e1a642c9003194138ae03c62fa1d8",
+            "sha256": "db8372f026a90ff16661a5036d3ad676ff83b6138cfc19d697e6ba4116931e8f",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/b__ahven.ads",
+            "type": "file",
+            "name": "b__ahven.ads",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 11487,
+            "md5": "165beb8ffdfe3ba8b85536041d58906c",
+            "sha1": "58e6daef03948fbcb156d47d5427d80af9e72bbe",
+            "sha256": "7e756bfe01960aba773f9f6bb8b9c07cff063954e63183a345ed8c141e69a5b8",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven.adb",
+            "type": "file",
+            "name": "ahven.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 1649,
+            "md5": "ef28fb1b8917f662fa3fd7fffaa2c0ac",
+            "sha1": "416c148f1fc2a80c98b80b0708fc1a6d02e053c2",
+            "sha256": "334500f9dd59698e12d0e23095d74c6fbbc8118d6ae14c4d1a23a3505edec99a",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 51.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven.ads",
+            "type": "file",
+            "name": "ahven.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 2167,
+            "md5": "ab75f3e0823a171cec64122379458c46",
+            "sha1": "61f7a0c8d32e5fff6832481e78ac0d82cb7563ed",
+            "sha256": "0ba116b2d402141532d97b06ab609b1fb4393ef7d3267b3e51d4973182a96ec2",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 37.76,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-astrings.ads",
+            "type": "file",
+            "name": "ahven-astrings.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 922,
+            "md5": "9aa9c7c4cf2648459ede16a783797477",
+            "sha1": "3c37c642670148b4836f867639ea2f4b2e500535",
+            "sha256": "e8a0de1c378d72b38a5e90ed17c91e86d190315fb8de6cccdff24e1290c261d8",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 79.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2010 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-framework.adb",
+            "type": "file",
+            "name": "ahven-framework.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 27278,
+            "md5": "37626da0d0dd465f337a333de7938877",
+            "sha1": "df418cf6072fde99704682707d460552d35c5bb4",
+            "sha256": "d4f4bb949b3fdbba4d3b38ffceb81ce6ff4e2cd3a7bc9d8b3635f059edf45221",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2016 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-framework.ads",
+            "type": "file",
+            "name": "ahven-framework.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 13858,
+            "md5": "63b71b4aaf3cfdf0455415ce697cae73",
+            "sha1": "8bdacf7a5207afcf75a1ad8802d39ab33c2c5882",
+            "sha256": "64016c845f827ed10a84efa5d116d262429da2c90c77bfdbe70114ef844008ac",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners.adb",
+            "type": "file",
+            "name": "ahven-listeners.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 1206,
+            "md5": "24a2e5ee423103fac7ca2852a282878b",
+            "sha1": "31ee0f17c516911cf1fc3fe3d4d04b8a15457620",
+            "sha256": "7767b12059751b0af83809eb96e3fe25dff46d9a305829c60fcae14653a967c3",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 65.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners.ads",
+            "type": "file",
+            "name": "ahven-listeners.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 3030,
+            "md5": "8541cc5acd4fd7814303a54aee0699fa",
+            "sha1": "5d3cb04db5a2c33e4b013ebd8687bca3b7b0c9d0",
+            "sha256": "1efeabe394f166dee4f75eb6140e3e3c94eb403ee5118625c8a63c5539645205",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 28.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners-basic.adb",
+            "type": "file",
+            "name": "ahven-listeners-basic.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 7958,
+            "md5": "5e76caf2c5e845a676a4d0d0bdf89c5c",
+            "sha1": "8b8c84a5c2035c3d1dafc8410a08bc756139d43a",
+            "sha256": "22c6d23d7f9bc6439152344da18fd35e640f58c727568a1f300b8f5b509df7c1",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners-basic.ads",
+            "type": "file",
+            "name": "ahven-listeners-basic.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 3220,
+            "md5": "b2adf5643c684eb02119df71d8469bdc",
+            "sha1": "6cf6d73214824e84d7428ca06084294e3a79906e",
+            "sha256": "e61e4f9f77930d91ab76b69efa868253c35860959fe836f85b12bf254a0126aa",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 28.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-long_astrings.ads",
+            "type": "file",
+            "name": "ahven-long_astrings.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 1344,
+            "md5": "f2f0a7886a349fbf347f6acc6a8a181f",
+            "sha1": "7b50511550c4df6b207aaa91159c1f00332124c3",
+            "sha256": "e4d42f5976ed6d30d259e40c2d1c4db5d50ebdee54d001165865595e35f42343",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 56.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2012 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-name_list.ads",
+            "type": "file",
+            "name": "ahven-name_list.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 966,
+            "md5": "371f941da8835d0fca5f4ef99d54b352",
+            "sha1": "fcba1dfcf27839c14e80ed5ba3026544e7820590",
+            "sha256": "de4594f45f7f9fcd07113ca3dab1065d336f93f3622f964270eec4f8a991499d",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 76.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-parameters.adb",
+            "type": "file",
+            "name": "ahven-parameters.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 7611,
+            "md5": "efc0fde76e823796262ed101ae074210",
+            "sha1": "c7ec097077a3be9d016232f7e106d8e500ad7fac",
+            "sha256": "4a61d388b94c03b1e1f7bc9398c2c50e92b1e4ed7c8bb61a96d87c89705c8597",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008-2015 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-parameters.ads",
+            "type": "file",
+            "name": "ahven-parameters.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 3061,
+            "md5": "461cf23982a3f9c72237f7ddd3f39acf",
+            "sha1": "334106de603a315ccbba61784448300974a95860",
+            "sha256": "4781ef58125b065580ec750c2d707ddef6eb192f2e548654e7a4106d100da449",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.41,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-results.adb",
+            "type": "file",
+            "name": "ahven-results.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 13724,
+            "md5": "33bd6c6dc8c26cf76d17fc5f8de0da1b",
+            "sha1": "f272d8b463b246cbb974bb4c4204f898bdbac25b",
+            "sha256": "88305f0d38150cb023655e4cd38d8fb92a5788a1121395e300a9e46e8992af75",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.76,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-results.ads",
+            "type": "file",
+            "name": "ahven-results.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 10630,
+            "md5": "d607aefda38b7f7fe038cfd6ec011bc2",
+            "sha1": "8239436b396f9b63dd51f8d23a3db22a2cccf2be",
+            "sha256": "d746ecae528dbedc07fe215c4a37d04ecf4a03b240992a242fa9169fab494f6c",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-runner.adb",
+            "type": "file",
+            "name": "ahven-runner.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 2385,
+            "md5": "020b81344b11c4798de31a7dbbc38a86",
+            "sha1": "b45759c34a11c70f54e4e21d82b17d8c9115fa70",
+            "sha256": "2442b25af1fc637d6cf3f91586a58fc15994c7bbda56558d2f7aa2302da023a4",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 36.04,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-runner.ads",
+            "type": "file",
+            "name": "ahven-runner.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 1296,
+            "md5": "333bcfdfc9daab0ddc2871f81594e1e6",
+            "sha1": "23b3282a29ce5b7c1c0e59aa850a8e64016405e3",
+            "sha256": "e1a53abfdcac6293278a84eb93ba9afbe7886c0a54b333c62db25d74030f1fd1",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 60.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-slist.adb",
+            "type": "file",
+            "name": "ahven-slist.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 4049,
+            "md5": "0b24766d68c6d1ab1b9fdbc6225f43f2",
+            "sha1": "1d8915ef209fbc6c9fd40f6da326fa4c894f7860",
+            "sha256": "2a23d0a26f32a50cb60ce9e67d9ee5e442b3f120f40de3f46c3a4c4a75571f73",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-slist.ads",
+            "type": "file",
+            "name": "ahven-slist.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 3118,
+            "md5": "9ddae6dd115d3f785ca2740cd315456d",
+            "sha1": "734e6726a1855d696aa25b8be2743027959b9a8d",
+            "sha256": "7cdd5f49889cc8b11926a9a2d03f227f34931287ca779416f336fa7867ad82ef",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-tap_runner.adb",
+            "type": "file",
+            "name": "ahven-tap_runner.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 7343,
+            "md5": "ec0364acc1a1be460f1e15128955e378",
+            "sha1": "e1a30cb1e95d57fe7755911f5b2f57ad62195d7f",
+            "sha256": "083487cd11fd966cd79b3380cd6e3dc2c48de9919edecae06305041266a5eaa9",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-tap_runner.ads",
+            "type": "file",
+            "name": "ahven-tap_runner.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 2083,
+            "md5": "1d1acb057f0cf8f62b9a05d88c4a988b",
+            "sha1": "ee9e103b421d987a44550e126912825aad853fc7",
+            "sha256": "9b50f9d38d66479fd09dc9585ffae1c38abacb07e0629de4dfb87175f8dfbd4a",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.42,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-temporary_output.adb",
+            "type": "file",
+            "name": "ahven-temporary_output.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 2396,
+            "md5": "c6c75fa5d5a481313bfe2a5af8038557",
+            "sha1": "f170d6a33770a3f4607626cc35777b8546c78135",
+            "sha256": "fd08bfd7bafc109b5c906adc243217375981c35c6921e729dbe85daf88c01a9c",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 31.81,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-temporary_output.ads",
+            "type": "file",
+            "name": "ahven-temporary_output.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 1910,
+            "md5": "984048870bdcf8eacf9fe60ab9b2d453",
+            "sha1": "820015f7896cb9fa3b9e7726ab7172338fc3c542",
+            "sha256": "7ab9367281757903347e306898e22aae4a3ea270200758a63fbba8060082366b",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 39.93,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007, 2008, 2010 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-text_runner.adb",
+            "type": "file",
+            "name": "ahven-text_runner.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 10862,
+            "md5": "bb57b18d4e24fe6b23bb56d3bf459f3f",
+            "sha1": "d8a518b8217c46a2e56384d4b8ed5d95fc93c62c",
+            "sha256": "fe9f900be8c5d45c0425680a5ed6d30f257c39d785e85601c4eb90b572dc0cde",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-text_runner.ads",
+            "type": "file",
+            "name": "ahven-text_runner.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 1377,
+            "md5": "2e1c0eb3984f8ef739560bb0fd9f1909",
+            "sha1": "a9f3cff14eede012a836ecf004f0f0baddc7c6c4",
+            "sha256": "274c94b311c4e47bff18b1a2fe17b5243c2e1d097193136584c51dfb867ce695",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 56.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-xml_runner.adb",
+            "type": "file",
+            "name": "ahven-xml_runner.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 16081,
+            "md5": "a3fee4511f71167a5fe959faf88f8cf2",
+            "sha1": "256761bd197f5110b56d51b6803c8a1c95776838",
+            "sha256": "042968721b2e02b037c77ee493331918cea52396b4619a6ba4f3737bb2bc6c96",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.43,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-xml_runner.ads",
+            "type": "file",
+            "name": "ahven-xml_runner.ads",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".ads",
+            "size": 1577,
+            "md5": "a2a6141fad80143133495f0cce164ecd",
+            "sha1": "661818fec2a6e2e4a49ffd4292c1343a691ed231",
+            "sha256": "54dd763d9e5568955e994369e80a7d6f56ec32679cf37c6d7e1718372ea1ce10",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 51.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2009 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/unix",
+            "type": "directory",
+            "name": "unix",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/unix/ahven_compat.adb",
+            "type": "file",
+            "name": "ahven_compat.adb",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".adb",
+            "size": 990,
+            "md5": "7b3835d0f10d618d36cd8d23f6fde03f",
+            "sha1": "a50436baaf514631d6bf73d867e39d3f2b8a6060",
+            "sha256": "fca7d5a13a41215f0519246d1eb131049a13e1eeafc5aa350aaf80831749b6c5",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "isc",
+            "detected_license_expression_spdx": "ISC",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_14.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "-- Permission to use, copy, modify, and distribute this software for any\n-- purpose with or without fee is hereby granted, provided that the above\n-- copyright notice and this permission notice appear in all copies.\n--\n-- THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\n-- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\n-- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\n-- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n-- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\n-- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n-- OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 111,
+                            "rule_relevance": 100,
+                            "rule_identifier": "isc_14.RULE",
+                            "license_expression": "isc",
+                            "spdx_license_expression": "ISC"
+                        }
+                    ],
+                    "identifier": "isc-ea6c318e-91a9-413d-027a-507b2cebec2c",
+                    "license_expression": "isc",
+                    "license_expression_spdx": "ISC"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 77.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2008 Tero Koskinen <tero.koskinen@iki.fi>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Tero Koskinen",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/03a50f90-df3a-432b-98d8-3355768f6dbb-d394b6a4/1d16eae9-260b-45a6-85db-2913f6b0fd7c"
+            ],
+            "emails": [
+                {
+                    "email": "tero.koskinen@iki.fi",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/59",
+            "type": "directory",
+            "name": "59",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 513440,
+            "md5": "5395b31bbce1b4714bdc9e8e8dafe568",
+            "sha1": "f3975924516f283c6d659964033525c9e10b1d24",
+            "sha256": "83feb32af4041d12be518f066540b659dc26793a265d6abb2ed20e503f74c078",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=598ff33bbdfae78b4dd89efeb9ae460e5cad90ba, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/<artificial>",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-name_list.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/unix/ahven_compat.adb"
+                ],
+                "dwarf_included_paths": [
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-calend.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-calend.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-comlin.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-except.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-finali.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strbou.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strbou.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-stream.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-string.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strmap.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strsup.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strsup.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strunb.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strunb.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-tags.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-textio.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/i-cstrea.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-atocou.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-crtl.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-exctab.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-exctab.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-ficobl.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-finroo.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-imagef.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-imagei.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-multip.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-osinte.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-rident.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-secsta.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-soflin.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stache.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stalib.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stalib.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stausa.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stratt.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stratt.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-taprob.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-tasinf.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-taskin.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-taspri.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-valuef.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/<built-in>",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/b__ahven.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/b__ahven.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-astrings.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-framework.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-framework.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners-basic.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners-basic.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-long_astrings.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-parameters.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-parameters.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-results.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-results.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-runner.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-runner.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-slist.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-slist.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-tap_runner.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-tap_runner.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-temporary_output.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-temporary_output.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-text_runner.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-text_runner.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-xml_runner.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-xml_runner.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven.adb",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven.ads"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-calend.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-calend.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-comlin.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-except.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-finali.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strbou.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strbou.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-stream.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-string.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strmap.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strsup.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strsup.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strunb.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-strunb.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-tags.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/a-textio.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/i-cstrea.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-atocou.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-crtl.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-exctab.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-exctab.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-ficobl.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-finroo.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-imagef.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-imagei.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-multip.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-osinte.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-rident.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-secsta.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-soflin.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stache.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stalib.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stalib.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stausa.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stratt.adb",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-stratt.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-taprob.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-tasinf.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-taskin.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-taspri.ads",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/adainclude/s-valuef.ads",
+                    "usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/b__ahven.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/gnat_linux/obj/x86_64/b__ahven.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-astrings.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-framework.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-framework.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners-basic.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-listeners-basic.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-long_astrings.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-name_list.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-parameters.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-parameters.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-results.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-results.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-runner.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-runner.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-slist.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-slist.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-tap_runner.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-tap_runner.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-temporary_output.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-temporary_output.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-text_runner.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-text_runner.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-xml_runner.adb"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/ahven-xml_runner.ads"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libahven.so.28-2.8-10.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/ahven-2.8-10.fc40.x86_64/src/unix/ahven_compat.adb"
+        }
+    ]
+}

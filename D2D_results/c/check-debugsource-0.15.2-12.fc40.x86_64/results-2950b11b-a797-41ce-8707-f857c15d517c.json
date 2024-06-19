@@ -1,0 +1,2477 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "2950b11b-a797-41ce-8707-f857c15d517c",
+            "created_date": "2024-06-17T12:39:55.485Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "f7ebc557-d930-499d-a2eb-bdb0078b45a5",
+                    "filename": "check-debuginfo-0.15.2-12.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/check-debuginfo-0.15.2-12.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 63383,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "7b3fb795-517e-4445-94c9-8f245c17bd8e",
+                    "filename": "check-debugsource-0.15.2-12.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/check-debugsource-0.15.2-12.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 44799,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "ecd686f1-26d5-4579-a5bd-9c4b9ed93b6d",
+                    "created_date": "2024-06-17T12:39:55.493076Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "ecd686f1-26d5-4579-a5bd-9c4b9ed93b6d",
+                    "task_start_date": "2024-06-17T12:39:55.518517Z",
+                    "task_end_date": "2024-06-17T12:40:37.598062Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 12:39:55.52 Pipeline [d2d] starting\n2024-06-17 12:39:55.52 Step [download_missing_inputs] starting\n2024-06-17 12:39:55.52 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/check-debugsource-0.15.2-12.fc40.x86_64.rpm#from\n2024-06-17 12:39:57.08 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/check-debuginfo-0.15.2-12.fc40.x86_64.rpm#to\n2024-06-17 12:40:03.16 Step [download_missing_inputs] completed in 8 seconds\n2024-06-17 12:40:03.17 Step [get_inputs] starting\n2024-06-17 12:40:03.17 Step [get_inputs] completed in 0 seconds\n2024-06-17 12:40:03.18 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 12:40:03.23 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 12:40:03.24 Step [extract_archives] starting\n2024-06-17 12:40:03.34 Step [extract_archives] completed in 0 seconds\n2024-06-17 12:40:03.34 Step [collect_and_create_codebase_resources] starting\n2024-06-17 12:40:03.37 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 12:40:03.38 Step [fingerprint_codebase_directories] starting\n2024-06-17 12:40:03.39 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 12:40:03.39 Step [flag_empty_files] starting\n2024-06-17 12:40:03.39 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 12:40:03.39 Step [flag_whitespace_files] starting\n2024-06-17 12:40:03.39 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 12:40:03.40 Step [flag_ignored_resources] starting\n2024-06-17 12:40:03.40 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 12:40:03.40 Step [map_about_files] starting\n2024-06-17 12:40:03.40 Step [map_about_files] completed in 0 seconds\n2024-06-17 12:40:03.40 Step [map_checksum] starting\n2024-06-17 12:40:03.41 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 12:40:03.41 Step [map_checksum] completed in 0 seconds\n2024-06-17 12:40:03.41 Step [match_archives_to_purldb] starting\n2024-06-17 12:40:03.41 PurlDB is not available. Skipping.\n2024-06-17 12:40:03.42 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 12:40:03.42 Step [find_java_packages] starting\n2024-06-17 12:40:03.42 Finding Java package for 0 .java resources.\n2024-06-17 12:40:03.42 Step [find_java_packages] completed in 0 seconds\n2024-06-17 12:40:03.43 Step [map_java_to_class] starting\n2024-06-17 12:40:03.43 Mapping 0 .class resources to .java\n2024-06-17 12:40:03.43 No .java resources to map.\n2024-06-17 12:40:03.43 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 12:40:03.43 Step [map_jar_to_source] starting\n2024-06-17 12:40:03.43 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 12:40:03.44 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 12:40:03.44 Step [map_elf] starting\n2024-06-17 12:40:03.54 Mapping 1 to/ resources using paths with 19 from/ resources.\n2024-06-17 12:40:03.54 Done building from/ resources index.\n2024-06-17 12:40:03.54 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug'\n2024-06-17 12:40:03.56 WARNING: #42 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug'\n2024-06-17 12:40:03.56 Created 19 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug'\n2024-06-17 12:40:03.56 Step [map_elf] completed in 0 seconds\n2024-06-17 12:40:03.57 Step [map_go] starting\n2024-06-17 12:40:03.57 Mapping 0 to/ resources using paths with 19 from/ resources.\n2024-06-17 12:40:03.58 Done building from/ resources index.\n2024-06-17 12:40:03.58 Step [map_go] completed in 0 seconds\n2024-06-17 12:40:03.58 Step [match_directories_to_purldb] starting\n2024-06-17 12:40:03.59 PurlDB is not available. Skipping.\n2024-06-17 12:40:03.59 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 12:40:03.59 Step [match_resources_to_purldb] starting\n2024-06-17 12:40:03.59 PurlDB is not available. Skipping.\n2024-06-17 12:40:03.59 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 12:40:03.59 Step [map_path] starting\n2024-06-17 12:40:03.60 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 12:40:03.60 Step [map_path] completed in 0 seconds\n2024-06-17 12:40:03.60 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 12:40:03.61 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 12:40:03.61 Step [perform_house_keeping_tasks] starting\n2024-06-17 12:40:03.62 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 12:40:03.62 Step [match_purldb_resources_post_process] starting\n2024-06-17 12:40:03.63 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 12:40:03.63 0 resource processed\n2024-06-17 12:40:03.63 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 12:40:03.63 Step [remove_packages_without_resources] starting\n2024-06-17 12:40:03.64 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 12:40:03.64 Step [scan_unmapped_to_files] starting\n2024-06-17 12:40:08.12 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 12:40:08.12 Step [scan_mapped_from_for_files] starting\n2024-06-17 12:40:33.73 Progress: 10% (2/19) ETA: 230 seconds (3.8 minutes)\n2024-06-17 12:40:34.79 Progress: 21% (4/19) ETA: 100 seconds (1.7 minutes)\n2024-06-17 12:40:35.21 Progress: 31% (6/19) ETA: 60 seconds\n2024-06-17 12:40:35.43 Progress: 42% (8/19) ETA: 38 seconds\n2024-06-17 12:40:35.53 Progress: 52% (10/19) ETA: 25 seconds\n2024-06-17 12:40:35.57 Progress: 63% (12/19) ETA: 16 seconds\n2024-06-17 12:40:35.64 Progress: 73% (14/19) ETA: 10 seconds\n2024-06-17 12:40:35.97 Progress: 84% (16/19) ETA: 5 seconds\n2024-06-17 12:40:36.18 Progress: 94% (18/19) ETA: 2 seconds\n2024-06-17 12:40:37.55 Step [scan_mapped_from_for_files] completed in 29 seconds\n2024-06-17 12:40:37.56 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 12:40:37.56 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 12:40:37.56 Step [create_local_files_packages] starting\n2024-06-17 12:40:37.59 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 12:40:37.59 Pipeline completed in 42 seconds\n",
+                    "execution_time": 42
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b",
+            "type": "local-files",
+            "namespace": "9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b",
+            "name": "9f868fd2-84bb-42a7-a6bc-cf9a1978142b",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/c8c8fac5-6ab6-4e4f-9e7a-8aa832387c93",
+            "type": "local-files",
+            "namespace": "9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b",
+            "name": "c8c8fac5-6ab6-4e4f-9e7a-8aa832387c93",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2017, bel2125",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus AND lgpl-2.0-plus AND mit",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64",
+            "type": "directory",
+            "name": "check-0.15.2-12.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/lib/fpclassify.c",
+            "type": "file",
+            "name": "fpclassify.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1709,
+            "md5": "025e068c120e454a0ae3ecd34ce9cd1f",
+            "sha1": "04cc9ecfad62f2e1e6d70c48db50ad8279a14794",
+            "sha256": "a45e8441b4a66f1f389921f00dde012d1df258f138f69954aadbec9e395781ac",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus AND lgpl-2.0-plus AND mit",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later AND LGPL-2.0-or-later AND MIT",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        },
+                        {
+                            "score": 99.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl_33.RULE",
+                            "from_file": null,
+                            "start_line": 18,
+                            "matched_text": "/* Note: Within \"check\", this file uses the LGPL license.",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 99,
+                            "rule_identifier": "lgpl_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_126.RULE",
+                            "from_file": null,
+                            "start_line": 19,
+                            "matched_text": " * If you need only this file, you may find a MIT licensed version in",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "mit_126.RULE",
+                            "license_expression": "mit",
+                            "spdx_license_expression": "MIT"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus_and_lgpl_2_0_plus_and_mit-b76e25bd-a22f-9a60-4ef9-01c1fc3e533c",
+                    "license_expression": "lgpl-2.1-plus AND lgpl-2.0-plus AND mit",
+                    "license_expression_spdx": "LGPL-2.1-or-later AND LGPL-2.0-or-later AND MIT"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 50.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright (c) 2017, bel2125",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "bel2125",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/c8c8fac5-6ab6-4e4f-9e7a-8aa832387c93"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/check.h",
+            "type": "file",
+            "name": "check.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 72791,
+            "md5": "26ce0ef0604533e0470cb1570bfe417d",
+            "sha1": "a9cb33680ee3d6f43b40a691eff416bb3b540530",
+            "sha256": "f0b42041a958044f6bd3d5330bf902252193a69b51c49f0a1acad23c1f695b0f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "https://stackoverflow.com/questions/1936719/what-are-the-gcc-predefined-macros-for-the-compilers-version-number/1936745#1936745",
+                    "end_line": 49,
+                    "start_line": 49
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check.c",
+            "type": "file",
+            "name": "check.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14279,
+            "md5": "99724fc82fac824eb3162f0f1ae71af7",
+            "sha1": "375f11605416136453c4fd0f6e45a3b063c447be",
+            "sha256": "8cc5067f37ef163948a37f47deb1a0f7d15d331002d060fcb95750127fd3a01c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_error.c",
+            "type": "file",
+            "name": "check_error.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1983,
+            "md5": "4946c6e1e53832f7e3dd60b4e2919d5f",
+            "sha1": "4f4e25ce1f988ec12f5b160a8c48b3d69ff58be0",
+            "sha256": "7cb89a09eeaaf367c33d8182f0498d48f3c8a72dccf915e8e7a6fee42fda5c11",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_error.h",
+            "type": "file",
+            "name": "check_error.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1307,
+            "md5": "6427e14bc5b51a85d729d00c9d190890",
+            "sha1": "48e477969b52242f1dc333887a5c6e4c110ff912",
+            "sha256": "f70f419ae2a9134163ebebc4aa5aeb06587f51ea90e889b1d70523b225606874",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 58.5,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_impl.h",
+            "type": "file",
+            "name": "check_impl.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4280,
+            "md5": "aa29a1dcd3ed70f4b56633e5dea56787",
+            "sha1": "55ceb659f27f2fb4f8af3a41540bb6fa38df45ab",
+            "sha256": "d1de83ee8046eaf18a57821702f119d150308d9b79e34174e32de449ab631832",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.01,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_list.c",
+            "type": "file",
+            "name": "check_list.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3237,
+            "md5": "3dc7158aebff0b79041592bedc00d4fc",
+            "sha1": "e33c69ba70d612f2f055f564a7741fd2a8ab0c10",
+            "sha256": "a631346ddd8b0cb4168c0e1281b25441a0f3c260ced7e1acb46f881fd546ec77",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_list.h",
+            "type": "file",
+            "name": "check_list.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1846,
+            "md5": "c1d9e103e6a4359cb763b95de9e47f83",
+            "sha1": "03d6fe46d8c1341a34cd362398b374ac0dde7c47",
+            "sha256": "183dcac30ce1f179fa8beecf3f7d323278abe99f95d3495b0cb1a7cd98e64788",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 39.13,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_log.c",
+            "type": "file",
+            "name": "check_log.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13956,
+            "md5": "fdd7daf7a50f4db3a77fd87ff599328e",
+            "sha1": "da2aa2126cf8142bce2f060ee34bb705647a76b4",
+            "sha256": "ece53a27bffef96cd44e4560d86c0ea44b67af885168e33029fb7f7fe6521f75",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://check.sourceforge.net/xml/check_unittest.xslt",
+                    "end_line": 294,
+                    "start_line": 294
+                },
+                {
+                    "url": "http://check.sourceforge.net/ns",
+                    "end_line": 295,
+                    "start_line": 295
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_log.h",
+            "type": "file",
+            "name": "check_log.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2079,
+            "md5": "8d36016f8eeddc9012a11aae39c6f218",
+            "sha1": "4ac469e77a6091efbe9a3cf9320c9730cff49c08",
+            "sha256": "c31a3eade79ce5ee7884e567df4d67bf43f8b78a31a5a37f8e1f12514fff24fc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 37.03,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_msg.c",
+            "type": "file",
+            "name": "check_msg.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9777,
+            "md5": "e95a73e8fd8e7d866584f4fbad16b85f",
+            "sha1": "f8d9c84294bad84e1d8888879b36413efa131631",
+            "sha256": "18b3cb8b608af99747b6a3e6e6c481cfc3a6d5e9c44e775491d85ac014cafa6f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.03,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_msg.h",
+            "type": "file",
+            "name": "check_msg.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1280,
+            "md5": "234eed80b992d4b2093b0bec3751a0d0",
+            "sha1": "333a2118ddd433d90f3d4dd4684fe5fde3aae4cd",
+            "sha256": "257bb1b6ec4926d49322a3b45b1044fb9a48d56839986d5e29723e2c19f8ea97",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 58.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_pack.c",
+            "type": "file",
+            "name": "check_pack.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13993,
+            "md5": "149d86eb047f32af7806dc0e4959db63",
+            "sha1": "e3594eb48322cfe00abe9494a289e383cb4a3709",
+            "sha256": "2e7ad0fc78fcef5ebbb454134441c3a43703bc320cf4fdc17a6385cb21d4948c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_pack.h",
+            "type": "file",
+            "name": "check_pack.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1843,
+            "md5": "8c3951a02bb1e31e6248830274178b2a",
+            "sha1": "9e990a5272c58dfafcca635ef75733599efed813",
+            "sha256": "0a6c98c67416b911a65d9cee208a1067be352d8560cd15c7a1c9ff3c8acfb756",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 42.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_print.c",
+            "type": "file",
+            "name": "check_print.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6939,
+            "md5": "9545086227befee32788ff63a901b054",
+            "sha1": "b1f3dd7f233c89f307365f37f702cd8bc7d2ef30",
+            "sha256": "ca122c7f325dea68dbc01dc9112fc0275c3908cc8d2cd76e10b263c8b356bcea",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.42,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_print.h",
+            "type": "file",
+            "name": "check_print.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1302,
+            "md5": "371cf6b47bed75d06c6076afc4725b6b",
+            "sha1": "8337f10a2d9fb57329d48e9ebb2aea26c05a9193",
+            "sha256": "5605794b921781e110ef551cf2eebbb57e0989a83103282569681060950c05d3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 58.79,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_run.c",
+            "type": "file",
+            "name": "check_run.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24757,
+            "md5": "bb6270b940dab64e793c71313005cba3",
+            "sha1": "eddf106228780d28490fe3b2b04cbc92fd010f3d",
+            "sha256": "f11db446a95c9ca01ed35a952cf8a853c5b6afe3c3219b5e5d72fc9a16eeb366",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_str.c",
+            "type": "file",
+            "name": "check_str.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3465,
+            "md5": "003f8b664669521152807f73959a8e2c",
+            "sha1": "b2cc2254c57e6df8045b70f72c3d925875390aa4",
+            "sha256": "e6bceeb7d8e660ff3bfd2c53934b7344913d92dc74a8a05da3154abef3c1220f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 26.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_str.h",
+            "type": "file",
+            "name": "check_str.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1682,
+            "md5": "e2ff3d60969b6f56df56b4fecd10724c",
+            "sha1": "49462bae97a0b602ca768e542cbfaa0052c48398",
+            "sha256": "2356cae10ad873c50585fa7e8cd98c06913f6e88995840309f5f2547c573f722",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_107.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,\n * MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_107.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-c4095207-ddc9-8af9-2869-a8a9e858752b",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 45.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001, 2002 Arien Malec",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Arien Malec",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9beaa207-c7a4-4227-9d52-663545b1afb4-2950b11b/9f868fd2-84bb-42a7-a6bc-cf9a1978142b"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/1b",
+            "type": "directory",
+            "name": "1b",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 142000,
+            "md5": "a5bc8331c1b7f8134f5357fd6e5bf134",
+            "sha1": "a5418911f7d1946bb1f76ea2ac64d10eb3b91faf",
+            "sha256": "c34a469b9fb8f59b57c86e076beccda07648f425d05834c29dab66fb4d0b920d",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=1b0a3c97f6393cfefe3a88eed0b53683d69e1006, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/lib/fpclassify.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/clockid_t.h",
+                    "usr/include/bits/types/sigevent_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/bits/types/struct_itimerspec.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/timer_t.h",
+                    "usr/include/errno.h",
+                    "usr/include/pthread.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/subunit/child.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/<built-in>",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/check.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_error.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_error.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_impl.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_list.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_list.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_log.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_log.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_msg.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_msg.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_pack.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_pack.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_print.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_print.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_run.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_str.c",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_str.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/clockid_t.h",
+                    "usr/include/bits/types/sigevent_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/bits/types/struct_itimerspec.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/timer_t.h",
+                    "usr/include/errno.h",
+                    "usr/include/pthread.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/subunit/child.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/lib/fpclassify.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/redhat-linux-build/src/check.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_error.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_error.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_impl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_list.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_list.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_log.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_log.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_msg.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_msg.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_pack.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_pack.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_print.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_print.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_run.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_str.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcheck.so.0.15.2-0.15.2-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/check-0.15.2-12.fc40.x86_64/src/check_str.h"
+        }
+    ]
+}

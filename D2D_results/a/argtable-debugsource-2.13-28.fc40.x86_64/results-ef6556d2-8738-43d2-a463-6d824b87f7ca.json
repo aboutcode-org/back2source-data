@@ -1,0 +1,2100 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "ef6556d2-8738-43d2-a463-6d824b87f7ca",
+            "created_date": "2024-06-13T21:31:05.523Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "00a9c18f-565f-457a-b598-35063d435d72",
+                    "filename": "argtable-debuginfo-2.13-28.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argtable-debuginfo-2.13-28.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 44247,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "2250cd54-492f-4fb0-bd35-8e4ceefbf79e",
+                    "filename": "argtable-debugsource-2.13-28.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argtable-debugsource-2.13-28.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 26121,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "ae5a82a5-5f7b-4a56-869a-5181f99d9af3",
+                    "created_date": "2024-06-13T21:31:05.532482Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "ae5a82a5-5f7b-4a56-869a-5181f99d9af3",
+                    "task_start_date": "2024-06-13T21:31:05.558952Z",
+                    "task_end_date": "2024-06-13T21:31:43.461991Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 21:31:05.56 Pipeline [d2d] starting\n2024-06-13 21:31:05.56 Step [download_missing_inputs] starting\n2024-06-13 21:31:05.56 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argtable-debugsource-2.13-28.fc40.x86_64.rpm#from\n2024-06-13 21:31:06.78 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argtable-debuginfo-2.13-28.fc40.x86_64.rpm#to\n2024-06-13 21:31:08.31 Step [download_missing_inputs] completed in 3 seconds\n2024-06-13 21:31:08.32 Step [get_inputs] starting\n2024-06-13 21:31:08.33 Step [get_inputs] completed in 0 seconds\n2024-06-13 21:31:08.34 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 21:31:08.36 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 21:31:08.37 Step [extract_archives] starting\n2024-06-13 21:31:08.41 Step [extract_archives] completed in 0 seconds\n2024-06-13 21:31:08.42 Step [collect_and_create_codebase_resources] starting\n2024-06-13 21:31:08.44 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 21:31:08.44 Step [fingerprint_codebase_directories] starting\n2024-06-13 21:31:08.46 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 21:31:08.46 Step [flag_empty_files] starting\n2024-06-13 21:31:08.46 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 21:31:08.46 Step [flag_whitespace_files] starting\n2024-06-13 21:31:08.47 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 21:31:08.47 Step [flag_ignored_resources] starting\n2024-06-13 21:31:08.47 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 21:31:08.47 Step [map_about_files] starting\n2024-06-13 21:31:08.47 Step [map_about_files] completed in 0 seconds\n2024-06-13 21:31:08.48 Step [map_checksum] starting\n2024-06-13 21:31:08.48 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-13 21:31:08.49 Step [map_checksum] completed in 0 seconds\n2024-06-13 21:31:08.49 Step [match_archives_to_purldb] starting\n2024-06-13 21:31:08.49 PurlDB is not available. Skipping.\n2024-06-13 21:31:08.50 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 21:31:08.50 Step [find_java_packages] starting\n2024-06-13 21:31:08.50 Finding Java package for 0 .java resources.\n2024-06-13 21:31:08.51 Step [find_java_packages] completed in 0 seconds\n2024-06-13 21:31:08.52 Step [map_java_to_class] starting\n2024-06-13 21:31:08.52 Mapping 0 .class resources to .java\n2024-06-13 21:31:08.53 No .java resources to map.\n2024-06-13 21:31:08.53 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 21:31:08.53 Step [map_jar_to_source] starting\n2024-06-13 21:31:08.54 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 21:31:08.54 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 21:31:08.55 Step [map_elf] starting\n2024-06-13 21:31:08.64 Mapping 1 to/ resources using paths with 12 from/ resources.\n2024-06-13 21:31:08.64 Done building from/ resources index.\n2024-06-13 21:31:08.65 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug'\n2024-06-13 21:31:08.66 WARNING: #16 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug'\n2024-06-13 21:31:08.66 Created 12 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug'\n2024-06-13 21:31:08.66 Step [map_elf] completed in 0 seconds\n2024-06-13 21:31:08.66 Step [map_go] starting\n2024-06-13 21:31:08.67 Mapping 0 to/ resources using paths with 12 from/ resources.\n2024-06-13 21:31:08.67 Done building from/ resources index.\n2024-06-13 21:31:08.68 Step [map_go] completed in 0 seconds\n2024-06-13 21:31:08.68 Step [match_directories_to_purldb] starting\n2024-06-13 21:31:08.68 PurlDB is not available. Skipping.\n2024-06-13 21:31:08.68 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 21:31:08.68 Step [match_resources_to_purldb] starting\n2024-06-13 21:31:08.68 PurlDB is not available. Skipping.\n2024-06-13 21:31:08.69 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 21:31:08.69 Step [map_path] starting\n2024-06-13 21:31:08.69 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 21:31:08.69 Step [map_path] completed in 0 seconds\n2024-06-13 21:31:08.69 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 21:31:08.70 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 21:31:08.70 Step [perform_house_keeping_tasks] starting\n2024-06-13 21:31:08.71 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 21:31:08.72 Step [match_purldb_resources_post_process] starting\n2024-06-13 21:31:08.72 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 21:31:08.72 0 resource processed\n2024-06-13 21:31:08.72 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 21:31:08.72 Step [remove_packages_without_resources] starting\n2024-06-13 21:31:08.73 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 21:31:08.73 Step [scan_unmapped_to_files] starting\n2024-06-13 21:31:13.90 Step [scan_unmapped_to_files] completed in 5 seconds\n2024-06-13 21:31:13.90 Step [scan_mapped_from_for_files] starting\n2024-06-13 21:31:40.68 Progress: 16% (2/12) ETA: 141 seconds (2.4 minutes)\n2024-06-13 21:31:41.23 Progress: 33% (4/12) ETA: 55 seconds\n2024-06-13 21:31:41.41 Progress: 50% (6/12) ETA: 28 seconds\n2024-06-13 21:31:41.54 Progress: 66% (8/12) ETA: 14 seconds\n2024-06-13 21:31:41.87 Progress: 83% (10/12) ETA: 6 seconds\n2024-06-13 21:31:43.20 Progress: 100% (12/12)\n2024-06-13 21:31:43.43 Step [scan_mapped_from_for_files] completed in 30 seconds\n2024-06-13 21:31:43.43 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 21:31:43.44 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 21:31:43.44 Step [create_local_files_packages] starting\n2024-06-13 21:31:43.45 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 21:31:43.46 Pipeline completed in 38 seconds\n",
+                    "execution_time": 37
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/59f0c046-51dd-468b-93b8-efb55dcb90ae",
+            "type": "local-files",
+            "namespace": "26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2",
+            "name": "59f0c046-51dd-468b-93b8-efb55dcb90ae",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1989,90,91,92,93,94,96,97 Free Software Foundation, Inc.\nCopyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d",
+            "type": "local-files",
+            "namespace": "26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2",
+            "name": "d091e079-b7ed-4b11-a614-c64e1f71795d",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64",
+            "type": "directory",
+            "name": "argtable-2.13-28.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_date.c",
+            "type": "file",
+            "name": "arg_date.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6363,
+            "md5": "31eceddc59d7721318cd6b0ef83be5e4",
+            "sha1": "08b6e7f32ab336747943e10c19dcb3001a5451f9",
+            "sha256": "b559821b974247655cb2a0e918d736e6a316a9865a48b13c185d5a8c42adbdef",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_dbl.c",
+            "type": "file",
+            "name": "arg_dbl.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6111,
+            "md5": "f93dba5d7e94d66feba98da36ce1041a",
+            "sha1": "294334b6991b65f83bd9b8768e77f5bcb77f87be",
+            "sha256": "cd5acc785a1fa4a0d57d1067481544eb0764a938de3df7f00927c77433f531f4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.28,
+                            "matcher": "3-seq",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.\n\nThis software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 98.28,
+                            "matched_length": 114,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-9715b268-ce10-8af6-81f4-5b04942c93a1",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 16.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/59f0c046-51dd-468b-93b8-efb55dcb90ae"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_end.c",
+            "type": "file",
+            "name": "arg_end.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4077,
+            "md5": "07de2a2d14fa095d6ed87991fe18f737",
+            "sha1": "cb61f0bd4fd5258595c1836d9bd5d6bead6f0663",
+            "sha256": "9052b54937510c95bf46b5ea2d7ad50c391dc82a993b397cfd642e149d32945f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_file.c",
+            "type": "file",
+            "name": "arg_file.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8064,
+            "md5": "0c596b1960489ef6159c90d83cc6d2c8",
+            "sha1": "5880c4aa748147cb862378b17d4d295800f6f614",
+            "sha256": "0fc9b39ba4a6fee4e0e0bfb94d5698c75b16b3b000560a6dc0793143f01766b1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_int.c",
+            "type": "file",
+            "name": "arg_int.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11131,
+            "md5": "31bd3fcf616ef3c81063a05367bcd386",
+            "sha1": "f4e600a2a8bb95bf79e46de4ea3cca25ffec6213",
+            "sha256": "20a9b9c727fbcebe410c1350dcccd7b3855336f999986f00ab698fd69425e567",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.28,
+                            "matcher": "3-seq",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.\n\nThis software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 98.28,
+                            "matched_length": 114,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-9715b268-ce10-8af6-81f4-5b04942c93a1",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.42,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/59f0c046-51dd-468b-93b8-efb55dcb90ae"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_lit.c",
+            "type": "file",
+            "name": "arg_lit.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4164,
+            "md5": "25835b2f9996d95f829bc6ab3f93c88c",
+            "sha1": "82f216bf9f15b8f45a764222ef1d70665e52ad05",
+            "sha256": "1b7e0e495fded13ddf9d8559617db9b0e5b8645dbdddbdb2a32c1ea685cb163e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.28,
+                            "matcher": "3-seq",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.\n\nThis software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 98.28,
+                            "matched_length": 114,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-9715b268-ce10-8af6-81f4-5b04942c93a1",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.7,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/59f0c046-51dd-468b-93b8-efb55dcb90ae"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_rem.c",
+            "type": "file",
+            "name": "arg_rem.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1947,
+            "md5": "1c78265d768a0520646679d56c54e202",
+            "sha1": "d11e645367cbe2ac80bfa61f46735abb269e9b2e",
+            "sha256": "fb415e06e3995a784cc5d60217cdedfd549ee490c154c27ca3b78feb00738edc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_rex.c",
+            "type": "file",
+            "name": "arg_rex.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8134,
+            "md5": "93d7638339b7ff7df04a69877b07acbf",
+            "sha1": "9aeac52153539056fc839f81d49239f15a5ed1ff",
+            "sha256": "ec1889965395fb29258ad8606d147f9381a8f581127a46fdd8a125af17927dc9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.99,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_str.c",
+            "type": "file",
+            "name": "arg_str.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5247,
+            "md5": "590cff94228f32bbd094b63534edf57a",
+            "sha1": "5884eea5d800614888f52ece1a1c155357583476",
+            "sha256": "28099e9ea8b56d0b2b552151c2aed0916b85f4ce426833a9c65501b2fa71a312",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 98.28,
+                            "matcher": "3-seq",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.\n\nThis software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 98.28,
+                            "matched_length": 114,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-9715b268-ce10-8af6-81f4-5b04942c93a1",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.29,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/59f0c046-51dd-468b-93b8-efb55dcb90ae"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/argtable2.c",
+            "type": "file",
+            "name": "argtable2.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 35756,
+            "md5": "a6fd54761f91bb0863c775acb4a49026",
+            "sha1": "1233896fd66bfe7756c1e9cca3cff0c6daceda67",
+            "sha256": "69ddd3178eb406a37cbd4e1cbdc92580680aabf3877fb68807b54f07e6d4c94f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Uli Fouquet",
+                    "end_line": 953,
+                    "start_line": 953
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/argtable2.h",
+            "type": "file",
+            "name": "argtable2.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 12243,
+            "md5": "8886088f3731af4c13cd29e02b778b98",
+            "sha1": "d92873057afa1923d44790c88d5200a154056623",
+            "sha256": "cb4bc1e09b8d7c6b63f7591d667d885249cd8f707f1bc5e31c718655c12ae422",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus AND other-copyleft",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.73,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_579.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "The argtable2 library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Library General Public License as\npublished by the Free Software Foundation; either version 2 of the\nLicense, or (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 43,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_579.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_403.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": "This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLibrary General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_403.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_215.RULE",
+                            "from_file": null,
+                            "start_line": 16,
+                            "matched_text": "You should have received a copy of the GNU Library General Public\nLicense along with this library; if not, write to the Free Software",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_215.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/other-copyleft_fsf_address_3.RULE",
+                            "from_file": null,
+                            "start_line": 17,
+                            "matched_text": "License along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\nUSA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 14,
+                            "rule_relevance": 90,
+                            "rule_identifier": "other-copyleft_fsf_address_3.RULE",
+                            "license_expression": "other-copyleft",
+                            "spdx_license_expression": "LicenseRef-scancode-other-copyleft"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus_and_other_copyleft-05b982ab-6c1d-42ba-ad9a-74c4671981a7",
+                    "license_expression": "lgpl-2.0-plus AND other-copyleft",
+                    "license_expression_spdx": "LGPL-2.0-or-later AND LicenseRef-scancode-other-copyleft"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998-2001,2003-2011 Stewart Heitmann sheitmann@users.sourceforge.net",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Stewart Heitmann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/d091e079-b7ed-4b11-a614-c64e1f71795d"
+            ],
+            "emails": [
+                {
+                    "email": "sheitmann@users.sourceforge.net",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/getopt.h",
+            "type": "file",
+            "name": "getopt.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4710,
+            "md5": "84be0cfc97e4a14e733392422d13e738",
+            "sha1": "9fbe73328fd031d5aabfcef8d783f2b9a88cf422",
+            "sha256": "1a019058e04c17e80220772adf4d1c47db3e223990681c0a9d19cf2d39c2cb6d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 20,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_3.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "   The GNU C Library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Library General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   The GNU C Library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Library General Public License for more details.\n\n   You should have received a copy of the GNU Library General Public\n   License along with the GNU C Library; see the file COPYING.LIB.  If not,\n   write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n   Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 127,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_3.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-debe1d6b-3524-d7f0-df9e-815f342a56f3",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 1989,90,91,92,93,94,96,97 Free Software Foundation, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/26d71589-cef8-4fa5-b199-69545eadca35-ef6556d2/59f0c046-51dd-468b-93b8-efb55dcb90ae"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/a4",
+            "type": "directory",
+            "name": "a4",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 94784,
+            "md5": "838fb37d0e4af0a42e4804f71614b88b",
+            "sha1": "4ec34cd5d339935b22d32d056063b11651bad0b5",
+            "sha256": "e3e6f5329f4412541b9543140b2b3a0f1a839c5484aaff73f1f2888b9a7045e8",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=a47db6327685d7800daa5e96b99d373893a31ef1, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/<artificial>",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_rem.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/strings_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/ctype.h",
+                    "usr/include/regex.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/<built-in>",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_date.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_dbl.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_end.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_file.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_int.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_lit.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_rex.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_str.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/argtable2.c",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/argtable2.h",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/getopt.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/strings_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/ctype.h",
+                    "usr/include/regex.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/argtable-2.13-28.fc40.x86_64/src/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_date.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_dbl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_end.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_file.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_int.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_lit.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_rem.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_rex.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/arg_str.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/argtable2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/argtable2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libargtable2.so.0.1.8-2.13-28.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argtable-2.13-28.fc40.x86_64/src/getopt.h"
+        }
+    ]
+}

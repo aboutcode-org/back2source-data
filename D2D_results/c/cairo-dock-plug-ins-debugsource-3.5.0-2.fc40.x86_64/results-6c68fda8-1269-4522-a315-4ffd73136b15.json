@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "6c68fda8-1269-4522-a315-4ffd73136b15",
+            "created_date": "2024-06-17T15:55:13.905Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "caff1d15-b4d9-4f22-aaf5-2ce3b079e9a3",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cairo-dock-plug-ins-debugsource-3.5.0-2.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "62534c35-55d3-4d21-af32-8096a3eb77fd",
+                    "filename": "cairo-dock-plug-ins-debuginfo-3.5.0-2.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cairo-dock-plug-ins-debuginfo-3.5.0-2.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 76880,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "687817dd-b911-47d7-bacd-1f0be983c2bd",
+                    "created_date": "2024-06-17T15:55:13.913216Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "687817dd-b911-47d7-bacd-1f0be983c2bd",
+                    "task_start_date": "2024-06-17T15:55:13.938374Z",
+                    "task_end_date": "2024-06-17T15:55:28.146696Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:55:13.94 Pipeline [d2d] starting\n2024-06-17 15:55:13.94 Step [download_missing_inputs] starting\n2024-06-17 15:55:13.94 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cairo-dock-plug-ins-debugsource-3.5.0-2.fc40.x86_64.rpm#from\n2024-06-17 15:55:20.85 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cairo-dock-plug-ins-debugsource-3.5.0-2.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:55:20.85 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cairo-dock-plug-ins-debuginfo-3.5.0-2.fc40.x86_64.rpm#to\n2024-06-17 15:55:28.14 Pipeline failed\n",
+                    "execution_time": 14
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

@@ -1,0 +1,2604 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "82498c2d-9007-4d52-ba75-9240f1888583",
+            "created_date": "2024-06-17T12:30:43.798Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "e3c4693f-e50d-4d50-9f82-0ecb026a83b2",
+                    "filename": "bastet-debuginfo-0.43.2-9.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bastet-debuginfo-0.43.2-9.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 746446,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "fa0f11ff-adca-434e-a4d1-fd94779b14f1",
+                    "filename": "bastet-debugsource-0.43.2-9.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bastet-debugsource-0.43.2-9.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 23123,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "ac47d70d-0801-4a57-b81a-c5bde6ea9790",
+                    "created_date": "2024-06-17T12:30:43.805620Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "ac47d70d-0801-4a57-b81a-c5bde6ea9790",
+                    "task_start_date": "2024-06-17T12:30:43.826739Z",
+                    "task_end_date": "2024-06-17T12:32:01.752730Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 12:30:43.82 Pipeline [d2d] starting\n2024-06-17 12:30:43.83 Step [download_missing_inputs] starting\n2024-06-17 12:30:43.83 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bastet-debugsource-0.43.2-9.fc40.x86_64.rpm#from\n2024-06-17 12:30:45.03 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bastet-debuginfo-0.43.2-9.fc40.x86_64.rpm#to\n2024-06-17 12:30:51.70 Step [download_missing_inputs] completed in 8 seconds\n2024-06-17 12:30:51.71 Step [get_inputs] starting\n2024-06-17 12:30:51.71 Step [get_inputs] completed in 0 seconds\n2024-06-17 12:30:51.71 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 12:30:51.77 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 12:30:51.78 Step [extract_archives] starting\n2024-06-17 12:30:51.84 Step [extract_archives] completed in 0 seconds\n2024-06-17 12:30:51.84 Step [collect_and_create_codebase_resources] starting\n2024-06-17 12:30:51.88 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 12:30:51.88 Step [fingerprint_codebase_directories] starting\n2024-06-17 12:30:51.89 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 12:30:51.89 Step [flag_empty_files] starting\n2024-06-17 12:30:51.89 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 12:30:51.90 Step [flag_whitespace_files] starting\n2024-06-17 12:30:51.90 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 12:30:51.90 Step [flag_ignored_resources] starting\n2024-06-17 12:30:51.90 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 12:30:51.91 Step [map_about_files] starting\n2024-06-17 12:30:51.91 Step [map_about_files] completed in 0 seconds\n2024-06-17 12:30:51.91 Step [map_checksum] starting\n2024-06-17 12:30:51.92 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 12:30:51.92 Step [map_checksum] completed in 0 seconds\n2024-06-17 12:30:51.93 Step [match_archives_to_purldb] starting\n2024-06-17 12:30:51.93 PurlDB is not available. Skipping.\n2024-06-17 12:30:51.93 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 12:30:51.93 Step [find_java_packages] starting\n2024-06-17 12:30:51.94 Finding Java package for 0 .java resources.\n2024-06-17 12:30:51.95 Step [find_java_packages] completed in 0 seconds\n2024-06-17 12:30:51.95 Step [map_java_to_class] starting\n2024-06-17 12:30:51.96 Mapping 0 .class resources to .java\n2024-06-17 12:30:51.96 No .java resources to map.\n2024-06-17 12:30:51.96 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 12:30:51.97 Step [map_jar_to_source] starting\n2024-06-17 12:30:51.97 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 12:30:51.98 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 12:30:51.98 Step [map_elf] starting\n2024-06-17 12:30:54.48 Mapping 1 to/ resources using paths with 15 from/ resources.\n2024-06-17 12:30:54.49 Done building from/ resources index.\n2024-06-17 12:30:54.49 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug'\n2024-06-17 12:30:54.50 WARNING: #293 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug'\n2024-06-17 12:30:54.51 Created 15 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug'\n2024-06-17 12:30:54.51 Step [map_elf] completed in 3 seconds\n2024-06-17 12:30:54.51 Step [map_go] starting\n2024-06-17 12:30:54.52 Mapping 0 to/ resources using paths with 15 from/ resources.\n2024-06-17 12:30:54.52 Done building from/ resources index.\n2024-06-17 12:30:54.53 Step [map_go] completed in 0 seconds\n2024-06-17 12:30:54.53 Step [match_directories_to_purldb] starting\n2024-06-17 12:30:54.53 PurlDB is not available. Skipping.\n2024-06-17 12:30:54.53 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 12:30:54.53 Step [match_resources_to_purldb] starting\n2024-06-17 12:30:54.54 PurlDB is not available. Skipping.\n2024-06-17 12:30:54.54 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 12:30:54.54 Step [map_path] starting\n2024-06-17 12:30:54.54 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 12:30:54.55 Step [map_path] completed in 0 seconds\n2024-06-17 12:30:54.55 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 12:30:54.56 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 12:30:54.57 Step [perform_house_keeping_tasks] starting\n2024-06-17 12:30:54.60 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 12:30:54.60 Step [match_purldb_resources_post_process] starting\n2024-06-17 12:30:54.61 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 12:30:54.61 0 resource processed\n2024-06-17 12:30:54.62 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 12:30:54.62 Step [remove_packages_without_resources] starting\n2024-06-17 12:30:54.63 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 12:30:54.63 Step [scan_unmapped_to_files] starting\n2024-06-17 12:31:46.31 Step [scan_unmapped_to_files] completed in 52 seconds\n2024-06-17 12:31:46.31 Step [scan_mapped_from_for_files] starting\n2024-06-17 12:32:00.44 Progress: 13% (2/15) ETA: 95 seconds (1.6 minutes)\n2024-06-17 12:32:00.47 Progress: 26% (4/15) ETA: 40 seconds\n2024-06-17 12:32:00.80 Progress: 40% (6/15) ETA: 22 seconds\n2024-06-17 12:32:00.82 Progress: 53% (8/15) ETA: 13 seconds\n2024-06-17 12:32:00.87 Progress: 66% (10/15) ETA: 7 seconds\n2024-06-17 12:32:01.02 Progress: 80% (12/15) ETA: 4 seconds\n2024-06-17 12:32:01.03 Progress: 93% (14/15) ETA: 1 seconds\n2024-06-17 12:32:01.72 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-17 12:32:01.73 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 12:32:01.73 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 12:32:01.73 Step [create_local_files_packages] starting\n2024-06-17 12:32:01.74 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 12:32:01.75 Pipeline completed in 78 seconds (1.3 minutes)\n",
+                    "execution_time": 77
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b",
+            "type": "local-files",
+            "namespace": "326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d",
+            "name": "2d4b8d56-984e-4951-88fc-88e83dd0a08b",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64",
+            "type": "directory",
+            "name": "bastet-0.43.2-9.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BastetBlockChooser.cpp",
+            "type": "file",
+            "name": "BastetBlockChooser.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 7557,
+            "md5": "058b366dc4019839833458c72914bc28",
+            "sha1": "cb411f254d9e54d71e704472607bd2e3e4d26f17",
+            "sha256": "9a4a85275b7ccd89ac6dea87c026fbdb06c6d3bee1c9afc6b39b8866fa32d3c4",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.82,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BastetBlockChooser.hpp",
+            "type": "file",
+            "name": "BastetBlockChooser.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 3959,
+            "md5": "77643b9a1ba3b430221cb5791977ea53",
+            "sha1": "685f7bb651d7ed0065ca8f806af836ef68cc151d",
+            "sha256": "c9e2af699c8755f2ee8c5c0ad0d5e5fcf806abccf14c69e4bda114e5bf44d766",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockChooser.cpp",
+            "type": "file",
+            "name": "BlockChooser.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 1344,
+            "md5": "1f7b3cb52dbaa84aa2166505b4ba3992",
+            "sha1": "f993600a9a9491bf0ff463c0e3b055a33d91b0f6",
+            "sha256": "3c32ddcfda916e17b2f921847da6ce5f4c718e6a466fe460e74b1f4990a68b6a",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 60.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockChooser.hpp",
+            "type": "file",
+            "name": "BlockChooser.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 1665,
+            "md5": "d423332286bce4a56d8260ce9b6f8b38",
+            "sha1": "eac25638a85483890ef79571076fd7531d4b9b8e",
+            "sha256": "94094a51009f4ff49484d845c1389dfcaf40d415013e0b7dbd9d1857cd81d89e",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.44,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Block.cpp",
+            "type": "file",
+            "name": "Block.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 3511,
+            "md5": "cfd14c49763b966ab20cc96c0841964a",
+            "sha1": "dc7818c5a5cf37ae29a59e81cd0c63250e3afc6b",
+            "sha256": "2470209436655bcd5a1f5e47879c61d07f37d22e1f4e9c92d79368be7d82aa53",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.54,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Block.hpp",
+            "type": "file",
+            "name": "Block.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 3254,
+            "md5": "946fc21755670c6f319119ba5d62296c",
+            "sha1": "c63f9209acdd95bf4af04d604667eae079475be7",
+            "sha256": "19d13500a8c892cba9fce095395ff52bbaf46b92bfc0bfebcecd6cb8569bf4fb",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.13,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockPosition.cpp",
+            "type": "file",
+            "name": "BlockPosition.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2013,
+            "md5": "5c4382ed9d7729d7ca1b88b40a301ab1",
+            "sha1": "1d2b87e1251d4b78c5c5f8970077d43c4ddfd05f",
+            "sha256": "39120b1cb7c9c547163079abed2cedc4b3e9993e1b70f0269a942fafbf7f937f",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 38.93,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockPosition.hpp",
+            "type": "file",
+            "name": "BlockPosition.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 1927,
+            "md5": "1692be4467c987aff8da3268f4594c74",
+            "sha1": "62b8aff223c703d3587350fd454e6054f1cf1fee",
+            "sha256": "dfdf66244fb033ed97f0a16e157d30e48b434466e2cf98e1065f8a4fcbcc2c8a",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 38.78,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Config.cpp",
+            "type": "file",
+            "name": "Config.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 7140,
+            "md5": "2a7fc40f1d7ff7a80bc3c31cfa26a6b4",
+            "sha1": "fd5adec123b2a2506a27651c26debee464afb307",
+            "sha256": "e8023aa55c1901bcab48f8f7d42d04ee3437217543d9194124658ecf6c440127",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Config.hpp",
+            "type": "file",
+            "name": "Config.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 2259,
+            "md5": "64311a73fd682d28f61d0431177df919",
+            "sha1": "b5eb9012231f476e3bcf94d83d7124c15512ef83",
+            "sha256": "d64f703f214b1807ac199d1af27fbc8750ff33c46ceb28621b8e6065e673d452",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 34.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/main.cpp",
+            "type": "file",
+            "name": "main.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 1876,
+            "md5": "3d553091f68885f97dfca74eb5bffa91",
+            "sha1": "f21d52f321b7a772fb974d41efe58c134e9a2fee",
+            "sha256": "1629e5f2502d9915dfe012042c170ec6d907a91151d88a7ca09ba41bd254c83d",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 42.5,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Ui.cpp",
+            "type": "file",
+            "name": "Ui.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 14200,
+            "md5": "dbbe86b4083efcc5e5015f03befa0706",
+            "sha1": "76e94570bbc7f66f1bc7d317715c3d633960df43",
+            "sha256": "df50061f182f021862984f146517b965b910af80ae10bdb06b63bb0a893cb952",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.58,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Ui.hpp",
+            "type": "file",
+            "name": "Ui.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 3162,
+            "md5": "a018ce2050f21507c2c6cfcf5098cd98",
+            "sha1": "0942dae4a937f36eeba61edc04bbb18e50dda3f1",
+            "sha256": "21437f652cf66fa22cd30422af52c2f0b7bceee42aef3a9e76f81d90d3887231",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Well.cpp",
+            "type": "file",
+            "name": "Well.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2656,
+            "md5": "3ff840f7a78bbb789a64ac4be9cb4f8f",
+            "sha1": "90002a4376411cc113f24f0594452b2d50c5cc05",
+            "sha256": "c7ff273e5c0fe96abfa47cf4191a72ad7de42958d41ce9f3e1349d113de3e70a",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Well.hpp",
+            "type": "file",
+            "name": "Well.hpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".hpp",
+            "size": 3051,
+            "md5": "68d40557ac3f14d30ce00d2771166a41",
+            "sha1": "7c932f2c97b8124fbe537c65cb3b8d1ad90ac158",
+            "sha256": "6c4a8eb1e81f7197186e2d4d14e3b5bce2aa5bb0b8b09f388007b23f96138136",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "(c) 2005-2009 Federico Poloni <f.polonithirtyseven@sns.it>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Federico Poloni",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/326b1625-cb80-4855-9179-92c00a35a0e9-82498c2d/2d4b8d56-984e-4951-88fc-88e83dd0a08b"
+            ],
+            "emails": [
+                {
+                    "email": "f.polonithirtyseven@sns.it",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/ff",
+            "type": "directory",
+            "name": "ff",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 3115520,
+            "md5": "cd30bd5789febe21756d7c2f511d8ef1",
+            "sha1": "3cd767c2a201677b95a7c934de71e7714bd22ff1",
+            "sha256": "281399a5b3c22fb1d0d15efd70f281cc389b66f51d2c8e24e771d9cb36e787f5",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=fff54573a61a22c15dc37ce87d34e383c86e4700, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockChooser.cpp"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-least.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/boost/algorithm/string/classification.hpp",
+                    "usr/include/boost/algorithm/string/compare.hpp",
+                    "usr/include/boost/algorithm/string/constants.hpp",
+                    "usr/include/boost/algorithm/string/detail/classification.hpp",
+                    "usr/include/boost/algorithm/string/detail/find_iterator.hpp",
+                    "usr/include/boost/algorithm/string/detail/finder.hpp",
+                    "usr/include/boost/algorithm/string/detail/trim.hpp",
+                    "usr/include/boost/algorithm/string/detail/util.hpp",
+                    "usr/include/boost/algorithm/string/find_iterator.hpp",
+                    "usr/include/boost/algorithm/string/finder.hpp",
+                    "usr/include/boost/algorithm/string/iter_find.hpp",
+                    "usr/include/boost/algorithm/string/predicate_facade.hpp",
+                    "usr/include/boost/algorithm/string/split.hpp",
+                    "usr/include/boost/algorithm/string/yes_no_type.hpp",
+                    "usr/include/boost/any.hpp",
+                    "usr/include/boost/any/bad_any_cast.hpp",
+                    "usr/include/boost/any/detail/placeholder.hpp",
+                    "usr/include/boost/any/fwd.hpp",
+                    "usr/include/boost/array.hpp",
+                    "usr/include/boost/assert/source_location.hpp",
+                    "usr/include/boost/assign/list_inserter.hpp",
+                    "usr/include/boost/assign/list_of.hpp",
+                    "usr/include/boost/concept/detail/backward_compatibility.hpp",
+                    "usr/include/boost/concept/detail/has_constraints.hpp",
+                    "usr/include/boost/config/detail/suffix.hpp",
+                    "usr/include/boost/container/container_fwd.hpp",
+                    "usr/include/boost/container_hash/hash.hpp",
+                    "usr/include/boost/container_hash/hash_fwd.hpp",
+                    "usr/include/boost/container_hash/is_range.hpp",
+                    "usr/include/boost/core/addressof.hpp",
+                    "usr/include/boost/core/allocator_access.hpp",
+                    "usr/include/boost/core/cmath.hpp",
+                    "usr/include/boost/core/demangle.hpp",
+                    "usr/include/boost/core/detail/sp_thread_pause.hpp",
+                    "usr/include/boost/core/enable_if.hpp",
+                    "usr/include/boost/core/noncopyable.hpp",
+                    "usr/include/boost/core/pointer_traits.hpp",
+                    "usr/include/boost/core/snprintf.hpp",
+                    "usr/include/boost/core/swap.hpp",
+                    "usr/include/boost/core/typeinfo.hpp",
+                    "usr/include/boost/core/use_default.hpp",
+                    "usr/include/boost/cstdint.hpp",
+                    "usr/include/boost/current_function.hpp",
+                    "usr/include/boost/describe/detail/void_t.hpp",
+                    "usr/include/boost/describe/modifiers.hpp",
+                    "usr/include/boost/detail/indirect_traits.hpp",
+                    "usr/include/boost/exception/exception.hpp",
+                    "usr/include/boost/foreach.hpp",
+                    "usr/include/boost/foreach_fwd.hpp",
+                    "usr/include/boost/format/alt_sstream.hpp",
+                    "usr/include/boost/format/alt_sstream_impl.hpp",
+                    "usr/include/boost/format/detail/compat_workarounds.hpp",
+                    "usr/include/boost/format/detail/config_macros.hpp",
+                    "usr/include/boost/format/exceptions.hpp",
+                    "usr/include/boost/format/feed_args.hpp",
+                    "usr/include/boost/format/format_class.hpp",
+                    "usr/include/boost/format/format_fwd.hpp",
+                    "usr/include/boost/format/format_implementation.hpp",
+                    "usr/include/boost/format/free_funcs.hpp",
+                    "usr/include/boost/format/internals.hpp",
+                    "usr/include/boost/format/parsing.hpp",
+                    "usr/include/boost/function/function_base.hpp",
+                    "usr/include/boost/function/function_template.hpp",
+                    "usr/include/boost/iterator/advance.hpp",
+                    "usr/include/boost/iterator/detail/enable_if.hpp",
+                    "usr/include/boost/iterator/detail/facade_iterator_category.hpp",
+                    "usr/include/boost/iterator/distance.hpp",
+                    "usr/include/boost/iterator/is_iterator.hpp",
+                    "usr/include/boost/iterator/iterator_adaptor.hpp",
+                    "usr/include/boost/iterator/iterator_categories.hpp",
+                    "usr/include/boost/iterator/iterator_facade.hpp",
+                    "usr/include/boost/iterator/iterator_traits.hpp",
+                    "usr/include/boost/iterator/transform_iterator.hpp",
+                    "usr/include/boost/lexical_cast.hpp",
+                    "usr/include/boost/lexical_cast/bad_lexical_cast.hpp",
+                    "usr/include/boost/lexical_cast/detail/converter_lexical.hpp",
+                    "usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp",
+                    "usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp",
+                    "usr/include/boost/lexical_cast/try_lexical_convert.hpp",
+                    "usr/include/boost/move/core.hpp",
+                    "usr/include/boost/move/detail/meta_utils.hpp",
+                    "usr/include/boost/move/utility_core.hpp",
+                    "usr/include/boost/mp11/detail/mp_is_list.hpp",
+                    "usr/include/boost/mp11/detail/mp_value.hpp",
+                    "usr/include/boost/mpl/assert.hpp",
+                    "usr/include/boost/mpl/aux_/adl_barrier.hpp",
+                    "usr/include/boost/mpl/aux_/na_fwd.hpp",
+                    "usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp",
+                    "usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp",
+                    "usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp",
+                    "usr/include/boost/mpl/aux_/value_wknd.hpp",
+                    "usr/include/boost/mpl/bool.hpp",
+                    "usr/include/boost/mpl/bool_fwd.hpp",
+                    "usr/include/boost/mpl/eval_if.hpp",
+                    "usr/include/boost/mpl/if.hpp",
+                    "usr/include/boost/mpl/integral_c_tag.hpp",
+                    "usr/include/boost/mpl/void.hpp",
+                    "usr/include/boost/mpl/void_fwd.hpp",
+                    "usr/include/boost/none_t.hpp",
+                    "usr/include/boost/numeric/conversion/cast.hpp",
+                    "usr/include/boost/numeric/conversion/converter_policies.hpp",
+                    "usr/include/boost/numeric/conversion/detail/meta.hpp",
+                    "usr/include/boost/optional/detail/optional_aligned_storage.hpp",
+                    "usr/include/boost/optional/optional.hpp",
+                    "usr/include/boost/program_options/cmdline.hpp",
+                    "usr/include/boost/program_options/detail/cmdline.hpp",
+                    "usr/include/boost/program_options/detail/value_semantic.hpp",
+                    "usr/include/boost/program_options/errors.hpp",
+                    "usr/include/boost/program_options/option.hpp",
+                    "usr/include/boost/program_options/options_description.hpp",
+                    "usr/include/boost/program_options/parsers.hpp",
+                    "usr/include/boost/program_options/value_semantic.hpp",
+                    "usr/include/boost/program_options/variables_map.hpp",
+                    "usr/include/boost/range/algorithm/equal.hpp",
+                    "usr/include/boost/range/as_literal.hpp",
+                    "usr/include/boost/range/begin.hpp",
+                    "usr/include/boost/range/const_iterator.hpp",
+                    "usr/include/boost/range/detail/safe_bool.hpp",
+                    "usr/include/boost/range/detail/sfinae.hpp",
+                    "usr/include/boost/range/distance.hpp",
+                    "usr/include/boost/range/end.hpp",
+                    "usr/include/boost/range/iterator_range_core.hpp",
+                    "usr/include/boost/range/mutable_iterator.hpp",
+                    "usr/include/boost/smart_ptr/detail/operator_bool.hpp",
+                    "usr/include/boost/smart_ptr/detail/shared_count.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp",
+                    "usr/include/boost/smart_ptr/shared_ptr.hpp",
+                    "usr/include/boost/throw_exception.hpp",
+                    "usr/include/boost/tuple/detail/tuple_basic.hpp",
+                    "usr/include/boost/tuple/tuple.hpp",
+                    "usr/include/boost/type_index.hpp",
+                    "usr/include/boost/type_index/stl_type_index.hpp",
+                    "usr/include/boost/type_index/type_index_facade.hpp",
+                    "usr/include/boost/type_traits/add_rvalue_reference.hpp",
+                    "usr/include/boost/type_traits/conditional.hpp",
+                    "usr/include/boost/type_traits/decay.hpp",
+                    "usr/include/boost/type_traits/detail/has_binary_operator.hpp",
+                    "usr/include/boost/type_traits/detail/is_function_cxx_11.hpp",
+                    "usr/include/boost/type_traits/detail/yes_no_type.hpp",
+                    "usr/include/boost/type_traits/enable_if.hpp",
+                    "usr/include/boost/type_traits/integral_constant.hpp",
+                    "usr/include/boost/type_traits/is_abstract.hpp",
+                    "usr/include/boost/type_traits/is_array.hpp",
+                    "usr/include/boost/type_traits/make_unsigned.hpp",
+                    "usr/include/boost/type_traits/remove_const.hpp",
+                    "usr/include/boost/type_traits/remove_cv.hpp",
+                    "usr/include/boost/type_traits/remove_reference.hpp",
+                    "usr/include/boost/type_traits/type_with_alignment.hpp",
+                    "usr/include/boost/utility/base_from_member.hpp",
+                    "usr/include/c++/14/backward/binders.h",
+                    "usr/include/c++/14/bit",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/cxxabi_forced.h",
+                    "usr/include/c++/14/bits/deque.tcc",
+                    "usr/include/c++/14/bits/enable_special_members.h",
+                    "usr/include/c++/14/bits/exception.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/hashtable.h",
+                    "usr/include/c++/14/bits/hashtable_policy.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/locale_classes.tcc",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/move.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/node_handle.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/sstream.tcc",
+                    "usr/include/c++/14/bits/stl_algo.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_bvector.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_deque.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_heap.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_set.h",
+                    "usr/include/c++/14/bits/stl_tempbuf.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/unordered_set.h",
+                    "usr/include/c++/14/bits/uses_allocator.h",
+                    "usr/include/c++/14/bits/utility.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/bitset",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/ctime",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/cxxabi.h",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/sstream",
+                    "usr/include/c++/14/stdexcept",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/typeinfo",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/ctype_base.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/ctype_inline.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/curses.h",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BastetBlockChooser.cpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BastetBlockChooser.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Block.cpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Block.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockChooser.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockPosition.cpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockPosition.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Config.cpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Config.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Ui.cpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Ui.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Well.cpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Well.hpp",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/main.cpp"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-least.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/boost/algorithm/string/classification.hpp",
+                    "usr/include/boost/algorithm/string/compare.hpp",
+                    "usr/include/boost/algorithm/string/constants.hpp",
+                    "usr/include/boost/algorithm/string/detail/classification.hpp",
+                    "usr/include/boost/algorithm/string/detail/find_iterator.hpp",
+                    "usr/include/boost/algorithm/string/detail/finder.hpp",
+                    "usr/include/boost/algorithm/string/detail/trim.hpp",
+                    "usr/include/boost/algorithm/string/detail/util.hpp",
+                    "usr/include/boost/algorithm/string/find_iterator.hpp",
+                    "usr/include/boost/algorithm/string/finder.hpp",
+                    "usr/include/boost/algorithm/string/iter_find.hpp",
+                    "usr/include/boost/algorithm/string/predicate_facade.hpp",
+                    "usr/include/boost/algorithm/string/split.hpp",
+                    "usr/include/boost/algorithm/string/yes_no_type.hpp",
+                    "usr/include/boost/any.hpp",
+                    "usr/include/boost/any/bad_any_cast.hpp",
+                    "usr/include/boost/any/detail/placeholder.hpp",
+                    "usr/include/boost/any/fwd.hpp",
+                    "usr/include/boost/array.hpp",
+                    "usr/include/boost/assert/source_location.hpp",
+                    "usr/include/boost/assign/list_inserter.hpp",
+                    "usr/include/boost/assign/list_of.hpp",
+                    "usr/include/boost/concept/detail/backward_compatibility.hpp",
+                    "usr/include/boost/concept/detail/has_constraints.hpp",
+                    "usr/include/boost/config/detail/suffix.hpp",
+                    "usr/include/boost/container/container_fwd.hpp",
+                    "usr/include/boost/container_hash/hash.hpp",
+                    "usr/include/boost/container_hash/hash_fwd.hpp",
+                    "usr/include/boost/container_hash/is_range.hpp",
+                    "usr/include/boost/core/addressof.hpp",
+                    "usr/include/boost/core/allocator_access.hpp",
+                    "usr/include/boost/core/cmath.hpp",
+                    "usr/include/boost/core/demangle.hpp",
+                    "usr/include/boost/core/detail/sp_thread_pause.hpp",
+                    "usr/include/boost/core/enable_if.hpp",
+                    "usr/include/boost/core/noncopyable.hpp",
+                    "usr/include/boost/core/pointer_traits.hpp",
+                    "usr/include/boost/core/snprintf.hpp",
+                    "usr/include/boost/core/swap.hpp",
+                    "usr/include/boost/core/typeinfo.hpp",
+                    "usr/include/boost/core/use_default.hpp",
+                    "usr/include/boost/cstdint.hpp",
+                    "usr/include/boost/current_function.hpp",
+                    "usr/include/boost/describe/detail/void_t.hpp",
+                    "usr/include/boost/describe/modifiers.hpp",
+                    "usr/include/boost/detail/indirect_traits.hpp",
+                    "usr/include/boost/exception/exception.hpp",
+                    "usr/include/boost/foreach.hpp",
+                    "usr/include/boost/foreach_fwd.hpp",
+                    "usr/include/boost/format/alt_sstream.hpp",
+                    "usr/include/boost/format/alt_sstream_impl.hpp",
+                    "usr/include/boost/format/detail/compat_workarounds.hpp",
+                    "usr/include/boost/format/detail/config_macros.hpp",
+                    "usr/include/boost/format/exceptions.hpp",
+                    "usr/include/boost/format/feed_args.hpp",
+                    "usr/include/boost/format/format_class.hpp",
+                    "usr/include/boost/format/format_fwd.hpp",
+                    "usr/include/boost/format/format_implementation.hpp",
+                    "usr/include/boost/format/free_funcs.hpp",
+                    "usr/include/boost/format/internals.hpp",
+                    "usr/include/boost/format/parsing.hpp",
+                    "usr/include/boost/function/function_base.hpp",
+                    "usr/include/boost/function/function_template.hpp",
+                    "usr/include/boost/iterator/advance.hpp",
+                    "usr/include/boost/iterator/detail/enable_if.hpp",
+                    "usr/include/boost/iterator/detail/facade_iterator_category.hpp",
+                    "usr/include/boost/iterator/distance.hpp",
+                    "usr/include/boost/iterator/is_iterator.hpp",
+                    "usr/include/boost/iterator/iterator_adaptor.hpp",
+                    "usr/include/boost/iterator/iterator_categories.hpp",
+                    "usr/include/boost/iterator/iterator_facade.hpp",
+                    "usr/include/boost/iterator/iterator_traits.hpp",
+                    "usr/include/boost/iterator/transform_iterator.hpp",
+                    "usr/include/boost/lexical_cast.hpp",
+                    "usr/include/boost/lexical_cast/bad_lexical_cast.hpp",
+                    "usr/include/boost/lexical_cast/detail/converter_lexical.hpp",
+                    "usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp",
+                    "usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp",
+                    "usr/include/boost/lexical_cast/try_lexical_convert.hpp",
+                    "usr/include/boost/move/core.hpp",
+                    "usr/include/boost/move/detail/meta_utils.hpp",
+                    "usr/include/boost/move/utility_core.hpp",
+                    "usr/include/boost/mp11/detail/mp_is_list.hpp",
+                    "usr/include/boost/mp11/detail/mp_value.hpp",
+                    "usr/include/boost/mpl/assert.hpp",
+                    "usr/include/boost/mpl/aux_/adl_barrier.hpp",
+                    "usr/include/boost/mpl/aux_/na_fwd.hpp",
+                    "usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp",
+                    "usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp",
+                    "usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp",
+                    "usr/include/boost/mpl/aux_/value_wknd.hpp",
+                    "usr/include/boost/mpl/bool.hpp",
+                    "usr/include/boost/mpl/bool_fwd.hpp",
+                    "usr/include/boost/mpl/eval_if.hpp",
+                    "usr/include/boost/mpl/if.hpp",
+                    "usr/include/boost/mpl/integral_c_tag.hpp",
+                    "usr/include/boost/mpl/void.hpp",
+                    "usr/include/boost/mpl/void_fwd.hpp",
+                    "usr/include/boost/none_t.hpp",
+                    "usr/include/boost/numeric/conversion/cast.hpp",
+                    "usr/include/boost/numeric/conversion/converter_policies.hpp",
+                    "usr/include/boost/numeric/conversion/detail/meta.hpp",
+                    "usr/include/boost/optional/detail/optional_aligned_storage.hpp",
+                    "usr/include/boost/optional/optional.hpp",
+                    "usr/include/boost/program_options/cmdline.hpp",
+                    "usr/include/boost/program_options/detail/cmdline.hpp",
+                    "usr/include/boost/program_options/detail/value_semantic.hpp",
+                    "usr/include/boost/program_options/errors.hpp",
+                    "usr/include/boost/program_options/option.hpp",
+                    "usr/include/boost/program_options/options_description.hpp",
+                    "usr/include/boost/program_options/parsers.hpp",
+                    "usr/include/boost/program_options/value_semantic.hpp",
+                    "usr/include/boost/program_options/variables_map.hpp",
+                    "usr/include/boost/range/algorithm/equal.hpp",
+                    "usr/include/boost/range/as_literal.hpp",
+                    "usr/include/boost/range/begin.hpp",
+                    "usr/include/boost/range/const_iterator.hpp",
+                    "usr/include/boost/range/detail/safe_bool.hpp",
+                    "usr/include/boost/range/detail/sfinae.hpp",
+                    "usr/include/boost/range/distance.hpp",
+                    "usr/include/boost/range/end.hpp",
+                    "usr/include/boost/range/iterator_range_core.hpp",
+                    "usr/include/boost/range/mutable_iterator.hpp",
+                    "usr/include/boost/smart_ptr/detail/operator_bool.hpp",
+                    "usr/include/boost/smart_ptr/detail/shared_count.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp",
+                    "usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp",
+                    "usr/include/boost/smart_ptr/shared_ptr.hpp",
+                    "usr/include/boost/throw_exception.hpp",
+                    "usr/include/boost/tuple/detail/tuple_basic.hpp",
+                    "usr/include/boost/tuple/tuple.hpp",
+                    "usr/include/boost/type_index.hpp",
+                    "usr/include/boost/type_index/stl_type_index.hpp",
+                    "usr/include/boost/type_index/type_index_facade.hpp",
+                    "usr/include/boost/type_traits/add_rvalue_reference.hpp",
+                    "usr/include/boost/type_traits/conditional.hpp",
+                    "usr/include/boost/type_traits/decay.hpp",
+                    "usr/include/boost/type_traits/detail/has_binary_operator.hpp",
+                    "usr/include/boost/type_traits/detail/is_function_cxx_11.hpp",
+                    "usr/include/boost/type_traits/detail/yes_no_type.hpp",
+                    "usr/include/boost/type_traits/enable_if.hpp",
+                    "usr/include/boost/type_traits/integral_constant.hpp",
+                    "usr/include/boost/type_traits/is_abstract.hpp",
+                    "usr/include/boost/type_traits/is_array.hpp",
+                    "usr/include/boost/type_traits/make_unsigned.hpp",
+                    "usr/include/boost/type_traits/remove_const.hpp",
+                    "usr/include/boost/type_traits/remove_cv.hpp",
+                    "usr/include/boost/type_traits/remove_reference.hpp",
+                    "usr/include/boost/type_traits/type_with_alignment.hpp",
+                    "usr/include/boost/utility/base_from_member.hpp",
+                    "usr/include/c++/14/backward/binders.h",
+                    "usr/include/c++/14/bit",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/cxxabi_forced.h",
+                    "usr/include/c++/14/bits/deque.tcc",
+                    "usr/include/c++/14/bits/enable_special_members.h",
+                    "usr/include/c++/14/bits/exception.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/hashtable.h",
+                    "usr/include/c++/14/bits/hashtable_policy.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/locale_classes.tcc",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/move.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/node_handle.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/sstream.tcc",
+                    "usr/include/c++/14/bits/stl_algo.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_bvector.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_deque.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_heap.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_set.h",
+                    "usr/include/c++/14/bits/stl_tempbuf.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/unordered_set.h",
+                    "usr/include/c++/14/bits/uses_allocator.h",
+                    "usr/include/c++/14/bits/utility.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/bitset",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/ctime",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/cxxabi.h",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/sstream",
+                    "usr/include/c++/14/stdexcept",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/typeinfo",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/ctype_base.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/ctype_inline.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/curses.h",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bastet-0.43.2-9.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BastetBlockChooser.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BastetBlockChooser.hpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockChooser.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockChooser.hpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Block.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Block.hpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockPosition.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/BlockPosition.hpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Config.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Config.hpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/main.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Ui.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Ui.hpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Well.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bastet-0.43.2-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bastet-0.43.2-9.fc40.x86_64/Well.hpp"
+        }
+    ]
+}

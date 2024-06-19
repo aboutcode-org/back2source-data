@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "10c50a5f-e165-4a62-ad66-6694634a659a",
+            "created_date": "2024-06-17T12:47:07.646Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "2aee69bf-7108-4d81-9e81-1a13692c1afb",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clevis-pin-tpm2-debuginfo-0.5.3-5.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "d6aee20d-5262-489e-818b-ef18a95b8d73",
+                    "filename": "clevis-pin-tpm2-debugsource-0.5.3-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clevis-pin-tpm2-debugsource-0.5.3-5.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 47127,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "a2e57927-a0c5-4f1e-97cc-aa787443807b",
+                    "created_date": "2024-06-17T12:47:07.654947Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "a2e57927-a0c5-4f1e-97cc-aa787443807b",
+                    "task_start_date": "2024-06-17T12:47:07.680927Z",
+                    "task_end_date": "2024-06-17T12:47:30.527242Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 12:47:07.68 Pipeline [d2d] starting\n2024-06-17 12:47:07.68 Step [download_missing_inputs] starting\n2024-06-17 12:47:07.69 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clevis-pin-tpm2-debugsource-0.5.3-5.fc40.x86_64.rpm#from\n2024-06-17 12:47:09.21 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clevis-pin-tpm2-debuginfo-0.5.3-5.fc40.x86_64.rpm#to\n2024-06-17 12:47:30.51 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clevis-pin-tpm2-debuginfo-0.5.3-5.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 12:47:30.52 Pipeline failed\n",
+                    "execution_time": 22
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

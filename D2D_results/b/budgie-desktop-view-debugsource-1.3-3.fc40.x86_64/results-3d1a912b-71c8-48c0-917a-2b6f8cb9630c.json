@@ -1,0 +1,2644 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "3d1a912b-71c8-48c0-917a-2b6f8cb9630c",
+            "created_date": "2024-06-17T10:19:41.268Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "b3af6890-5ad3-4cb6-b8c8-40293774193f",
+                    "filename": "budgie-desktop-view-debuginfo-1.3-3.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/budgie-desktop-view-debuginfo-1.3-3.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 219846,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "4a26a877-7154-4700-8bf2-d79bb0a12ced",
+                    "filename": "budgie-desktop-view-debugsource-1.3-3.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/budgie-desktop-view-debugsource-1.3-3.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 86079,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "02723817-352f-4a92-b6da-a980c04a574e",
+                    "created_date": "2024-06-17T10:19:41.277388Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "02723817-352f-4a92-b6da-a980c04a574e",
+                    "task_start_date": "2024-06-17T10:19:41.302118Z",
+                    "task_end_date": "2024-06-17T10:20:15.123790Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 10:19:41.30 Pipeline [d2d] starting\n2024-06-17 10:19:41.30 Step [download_missing_inputs] starting\n2024-06-17 10:19:41.31 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/budgie-desktop-view-debugsource-1.3-3.fc40.x86_64.rpm#from\n2024-06-17 10:19:43.73 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/budgie-desktop-view-debuginfo-1.3-3.fc40.x86_64.rpm#to\n2024-06-17 10:19:49.44 Step [download_missing_inputs] completed in 8 seconds\n2024-06-17 10:19:49.45 Step [get_inputs] starting\n2024-06-17 10:19:49.46 Step [get_inputs] completed in 0 seconds\n2024-06-17 10:19:49.46 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 10:19:49.52 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 10:19:49.52 Step [extract_archives] starting\n2024-06-17 10:19:49.63 Step [extract_archives] completed in 0 seconds\n2024-06-17 10:19:49.63 Step [collect_and_create_codebase_resources] starting\n2024-06-17 10:19:49.68 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 10:19:49.68 Step [fingerprint_codebase_directories] starting\n2024-06-17 10:19:49.70 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 10:19:49.70 Step [flag_empty_files] starting\n2024-06-17 10:19:49.70 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 10:19:49.70 Step [flag_whitespace_files] starting\n2024-06-17 10:19:49.71 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 10:19:49.71 Step [flag_ignored_resources] starting\n2024-06-17 10:19:49.71 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 10:19:49.72 Step [map_about_files] starting\n2024-06-17 10:19:49.72 Step [map_about_files] completed in 0 seconds\n2024-06-17 10:19:49.72 Step [map_checksum] starting\n2024-06-17 10:19:49.73 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 10:19:49.74 Step [map_checksum] completed in 0 seconds\n2024-06-17 10:19:49.74 Step [match_archives_to_purldb] starting\n2024-06-17 10:19:49.74 PurlDB is not available. Skipping.\n2024-06-17 10:19:49.75 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 10:19:49.75 Step [find_java_packages] starting\n2024-06-17 10:19:49.75 Finding Java package for 0 .java resources.\n2024-06-17 10:19:49.77 Step [find_java_packages] completed in 0 seconds\n2024-06-17 10:19:49.77 Step [map_java_to_class] starting\n2024-06-17 10:19:49.78 Mapping 0 .class resources to .java\n2024-06-17 10:19:49.78 No .java resources to map.\n2024-06-17 10:19:49.78 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 10:19:49.79 Step [map_jar_to_source] starting\n2024-06-17 10:19:49.79 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 10:19:49.80 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 10:19:49.80 Step [map_elf] starting\n2024-06-17 10:19:50.50 Mapping 1 to/ resources using paths with 17 from/ resources.\n2024-06-17 10:19:50.50 Done building from/ resources index.\n2024-06-17 10:19:50.51 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug'\n2024-06-17 10:19:50.54 WARNING: #122 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug'\n2024-06-17 10:19:50.55 Created 25 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug'\n2024-06-17 10:19:50.55 Step [map_elf] completed in 1 seconds\n2024-06-17 10:19:50.56 Step [map_go] starting\n2024-06-17 10:19:50.57 Mapping 0 to/ resources using paths with 17 from/ resources.\n2024-06-17 10:19:50.57 Done building from/ resources index.\n2024-06-17 10:19:50.58 Step [map_go] completed in 0 seconds\n2024-06-17 10:19:50.58 Step [match_directories_to_purldb] starting\n2024-06-17 10:19:50.58 PurlDB is not available. Skipping.\n2024-06-17 10:19:50.58 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 10:19:50.58 Step [match_resources_to_purldb] starting\n2024-06-17 10:19:50.59 PurlDB is not available. Skipping.\n2024-06-17 10:19:50.59 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 10:19:50.59 Step [map_path] starting\n2024-06-17 10:19:50.59 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 10:19:50.60 Step [map_path] completed in 0 seconds\n2024-06-17 10:19:50.60 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 10:19:50.61 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 10:19:50.61 Step [perform_house_keeping_tasks] starting\n2024-06-17 10:19:50.62 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 10:19:50.62 Step [match_purldb_resources_post_process] starting\n2024-06-17 10:19:50.63 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 10:19:50.64 0 resource processed\n2024-06-17 10:19:50.64 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 10:19:50.64 Step [remove_packages_without_resources] starting\n2024-06-17 10:19:50.65 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 10:19:50.65 Step [scan_unmapped_to_files] starting\n2024-06-17 10:19:54.68 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 10:19:54.69 Step [scan_mapped_from_for_files] starting\n2024-06-17 10:20:09.20 Progress: 12% (3/25) ETA: 106 seconds (1.8 minutes)\n2024-06-17 10:20:09.83 Progress: 24% (6/25) ETA: 48 seconds\n2024-06-17 10:20:10.27 Progress: 36% (9/25) ETA: 28 seconds\n2024-06-17 10:20:10.71 Progress: 48% (12/25) ETA: 17 seconds\n2024-06-17 10:20:11.06 Progress: 60% (15/25) ETA: 11 seconds\n2024-06-17 10:20:11.42 Progress: 72% (18/25) ETA: 7 seconds\n2024-06-17 10:20:12.10 Progress: 84% (21/25) ETA: 3 seconds\n2024-06-17 10:20:14.28 Progress: 96% (24/25) ETA: 1 seconds\n2024-06-17 10:20:15.08 Step [scan_mapped_from_for_files] completed in 20 seconds\n2024-06-17 10:20:15.09 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 10:20:15.09 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 10:20:15.10 Step [create_local_files_packages] starting\n2024-06-17 10:20:15.11 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 10:20:15.12 Pipeline completed in 34 seconds\n",
+                    "execution_time": 33
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/72491c2f-4e13-41f1-b39c-83c9c78f4339",
+            "type": "local-files",
+            "namespace": "0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b",
+            "name": "72491c2f-4e13-41f1-b39c-83c9c78f4339",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737",
+            "type": "local-files",
+            "namespace": "0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b",
+            "name": "f14e067c-6b4b-4fef-bee8-98f42f67e737",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright Buddies of Budgie",
+            "holder": "",
+            "declared_license_expression": "apache-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64",
+            "type": "directory",
+            "name": "budgie-desktop-view-1.3-3.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/budgie-desktop-view-resources.c",
+            "type": "file",
+            "name": "budgie-desktop-view-resources.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10137,
+            "md5": "b50bdc3350dcd2cdb1e0fc8244f630f7",
+            "sha1": "7101547a8ad236fe372f03ee78f5938c07c3fe8d",
+            "sha256": "862edcd587f4726ad7362bb682ea5ad278efbe858ecd87806dc5580ec7f0cb3b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 78,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 78,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-2.1-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1_plus-c4488c4083b156abb48d473de85b804fd9821f23",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 91,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_36.RULE",
+                            "from_file": null,
+                            "start_line": 80,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\t See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 106,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_36.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-6b7914e7-83c2-adca-0e39-407344ba0985",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 76,
+                    "copyright": "Copyright (c) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald",
+                    "start_line": 76
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Peter Mattis, Spencer Kimball and Josh MacDonald",
+                    "end_line": 76,
+                    "start_line": 76
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/72491c2f-4e13-41f1-b39c-83c9c78f4339"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 91,
+                    "start_line": 91
+                },
+                {
+                    "url": "ftp://ftp.gtk.org/pub/gtk",
+                    "end_line": 98,
+                    "start_line": 98
+                },
+                {
+                    "url": "http://opensource.apple.com/source/OpenSSL098/OpenSSL098-35/src/fips/fips_premain.c",
+                    "end_line": 189,
+                    "start_line": 189
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p",
+            "type": "directory",
+            "name": "org.buddiesofbudgie.budgie-desktop-view.p",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".p",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/application.c",
+            "type": "file",
+            "name": "application.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7782,
+            "md5": "6baf9a321a740f50491cf812407ae533",
+            "sha1": "c8127b88153f7e4a53635d5e2606ea57060cee8f",
+            "sha256": "68f1dc94542c149f13b6a4571b1130f1454bdb8cc2c387866d9fa9a0476d2409",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.42,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/budgie_desktop_view.c",
+            "type": "file",
+            "name": "budgie_desktop_view.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 280634,
+            "md5": "658c72a93a39c2f11762b2a0f91cdc70",
+            "sha1": "f81277b79ad3e04050da345b7cba48ee34c52d15",
+            "sha256": "588c4244ac53187ae0d5e67373392338909f3697afb9d0cc02922cebce6c04b4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 89.58,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1089.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "modify */\n\n/*\nCopyright Buddies of Budgie\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 89.58,
+                            "matched_length": 86,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_1089.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-807ea7d0-e2e1-6284-7f9d-fec2d27922be",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_item.c",
+            "type": "file",
+            "name": "desktop_item.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 47563,
+            "md5": "5c3259fd2c82a48200b8026e505b722c",
+            "sha1": "e7c08811b33d7e447645eabb47b568b8c68c1399",
+            "sha256": "2b2398359fe72536570dc187a0dcc80e6f314446f856f8fe6192921825c5ff25",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 89.58,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1089.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * generated from desktop_item.vala, do not modify */\n\n/*\nCopyright Buddies of Budgie\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 89.58,
+                            "matched_length": 86,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_1089.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-807ea7d0-e2e1-6284-7f9d-fec2d27922be",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_menu.c",
+            "type": "file",
+            "name": "desktop_menu.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13627,
+            "md5": "631b91ad5ccbd32bcc81c7c73a05960e",
+            "sha1": "1626155964c9c3e4b6e43fc9d5be53f356dbfe88",
+            "sha256": "784a8c0b58670f7cfd5c43d25888c9dd0bd4c21235945d6e29f17bdaa9f77b83",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_item.c",
+            "type": "file",
+            "name": "file_item.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 111911,
+            "md5": "2df068afe01c1e50fbf05a658dc5cfea",
+            "sha1": "e3134b78d2f603212e3bf1c07a37a91215668d0e",
+            "sha256": "76387a07180ad28f472cdfb6e15aaac195ea1c1e402411cb3e7022c93d53df3e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.56,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "https://github.com/BuddiesOfBudgie/budgie",
+                    "end_line": 2212,
+                    "start_line": 2212
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_menu.c",
+            "type": "file",
+            "name": "file_menu.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 25159,
+            "md5": "8ca37f540adf2d3e158cb8308114d9eb",
+            "sha1": "1e82172ae406a1894337193b887695aaa37d1008",
+            "sha256": "6c9d53037cf3f7f26b490af158a761b4a08fc66b31eba8176930494bc0631668",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.41,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/mount_item.c",
+            "type": "file",
+            "name": "mount_item.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 42292,
+            "md5": "8b319b34d604fc430ca9dc83ec3e343a",
+            "sha1": "60f13ceb8de08f3d545151124d48ba4d7ff58804",
+            "sha256": "f3161811445cd7e5dcc0c55a4d1d288ac093e95b121048e081550d09f54737d0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/unified_props.c",
+            "type": "file",
+            "name": "unified_props.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 26066,
+            "md5": "fff1ea1108157e1faaa8bede5b8b8298",
+            "sha1": "966fa6ee58d0aa62e999b62bd8f3a832e3f65694",
+            "sha256": "d9d90c548e07a4b09877d95edd060d1c6ad05851b346af0da395bf5f14931af2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 89.58,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1089.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "modify */\n\n/*\nCopyright Buddies of Budgie\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 89.58,
+                            "matched_length": 86,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_1089.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-807ea7d0-e2e1-6284-7f9d-fec2d27922be",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.51,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/application.vala",
+            "type": "file",
+            "name": "application.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 1051,
+            "md5": "a2609e4dd5b831d56af5ea559bf39020",
+            "sha1": "1eb332b40bd9b19b37543ab24dd546dd340f37ae",
+            "sha256": "56f476652c994e5d7d2de72aef443aed32d1cf6686d341b99c8314060f1ef7a9",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 59.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/budgie_desktop_view.vala",
+            "type": "file",
+            "name": "budgie_desktop_view.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 40609,
+            "md5": "40c5b19ffbfc0248e04f9ba546320fbc",
+            "sha1": "a61c536ce154259e0e3048fe8a8d64591a78e4a1",
+            "sha256": "a219cc3bd5ba493c388b57845f0571e97037f5babb47c49cf136b10af4d9a7e4",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.48,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/desktop_item.vala",
+            "type": "file",
+            "name": "desktop_item.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 7189,
+            "md5": "a91cf6c9039bb11efeeb0ce07cf4ea17",
+            "sha1": "e30ff7fa564dc122256cf8c10b1880a3525574d6",
+            "sha256": "22252804b3d5f31bedaab61c0dc96d1da0f0faaf89329ba61823186ae3ac7424",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/desktop_menu.vala",
+            "type": "file",
+            "name": "desktop_menu.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 2229,
+            "md5": "43355228ca216fae56c8bcdc81f3fa85",
+            "sha1": "fb9f14cb5e9366af263d8960f52c8afbe9d9ccba",
+            "sha256": "a591effebb9fccf2397e75b911a701bd427105c4f3d38f9116114f41289d1b48",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.78,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/file_item.vala",
+            "type": "file",
+            "name": "file_item.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 13690,
+            "md5": "663f018c1be8a1b9280f202bc53593f3",
+            "sha1": "a9c07fc515b733f67de17f86692a98e27b4c0cb7",
+            "sha256": "037c1584bbe29917c62b0b7f18d1da0416936f7afd684020ba9f3a7dadf8015e",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "url": "https://github.com/BuddiesOfBudgie/budgie-desktop-view",
+                    "end_line": 219,
+                    "start_line": 219
+                },
+                {
+                    "url": "https://github.com/BuddiesOfBudgie/budgie-desktop-view/wiki",
+                    "end_line": 220,
+                    "start_line": 220
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/file_menu.vala",
+            "type": "file",
+            "name": "file_menu.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 3653,
+            "md5": "1d5a0273747cacd2ca7c64dd77a034e5",
+            "sha1": "33e342113c5da6e566548bd6dc6881de1d8001d6",
+            "sha256": "22a4152921b06b5c13c4c0e7d463f757547378a72a3726644203400133aad538",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 16.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/mount_item.vala",
+            "type": "file",
+            "name": "mount_item.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 5024,
+            "md5": "4d9e049ecaaa26b917c60d5544b43d72",
+            "sha1": "ff81d8d744850311f9a51d3e1dc866e0437de675",
+            "sha256": "1417cb52a29d8c7a0145772b6bd29f945f7abcb5df3800acdd5a98573585eeb7",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.6,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/unified_props.vala",
+            "type": "file",
+            "name": "unified_props.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 3702,
+            "md5": "40774f2d005cd952bd8cd0e05866cfeb",
+            "sha1": "85074d8a2a506e982d487844e627e18041bba5c9",
+            "sha256": "c607106f69f85302976359cf481c4d542be33611a595660a96ebbed95b797517",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright Buddies of Budgie",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Buddies of Budgie",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0b0ef529-3a93-43be-b81e-a425f4c58bd4-3d1a912b/f14e067c-6b4b-4fef-bee8-98f42f67e737"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/a0",
+            "type": "directory",
+            "name": "a0",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "type": "file",
+            "name": "org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 598992,
+            "md5": "fb5309376ec6c3ce24a017af40370a33",
+            "sha1": "e691a8f9ab9b50fce03f9cb1c7c671e17f78b42a",
+            "sha256": "3609becc4ee5b9e96a9f1c00128de54f2dbfcfeeeb1426537472e7d60d120ce7",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=a0a7342be82a921cec9e107c0734d54210c3d22d, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/<artificial>",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/budgie-desktop-view-resources.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/application.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/budgie_desktop_view.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_item.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_menu.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_item.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_menu.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/mount_item.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/unified_props.c"
+                ],
+                "dwarf_included_paths": [
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/application.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/budgie_desktop_view.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_item.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_menu.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/file_item.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/file_menu.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/mount_item.c",
+                    "src/org.buddiesofbudgie.budgie-desktop-view.p/unified_props.c",
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/atk-1.0/atk/atkobject.h",
+                    "usr/include/atk-1.0/atk/atkrelationset.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/cairo/cairo.h",
+                    "usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h",
+                    "usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h",
+                    "usr/include/gio-unix-2.0/gio/gdesktopappinfo.h",
+                    "usr/include/glib-2.0/gio/gappinfo.h",
+                    "usr/include/glib-2.0/gio/gapplication.h",
+                    "usr/include/glib-2.0/gio/gapplicationcommandline.h",
+                    "usr/include/glib-2.0/gio/gasyncinitable.h",
+                    "usr/include/glib-2.0/gio/gasyncresult.h",
+                    "usr/include/glib-2.0/gio/gcancellable.h",
+                    "usr/include/glib-2.0/gio/gdbusconnection.h",
+                    "usr/include/glib-2.0/gio/gdbusintrospection.h",
+                    "usr/include/glib-2.0/gio/gdbusmessage.h",
+                    "usr/include/glib-2.0/gio/gdbusmethodinvocation.h",
+                    "usr/include/glib-2.0/gio/gdbusnamewatching.h",
+                    "usr/include/glib-2.0/gio/gdbusproxy.h",
+                    "usr/include/glib-2.0/gio/gdrive.h",
+                    "usr/include/glib-2.0/gio/gfile.h",
+                    "usr/include/glib-2.0/gio/gfileenumerator.h",
+                    "usr/include/glib-2.0/gio/gfileinfo.h",
+                    "usr/include/glib-2.0/gio/gfilemonitor.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gmount.h",
+                    "usr/include/glib-2.0/gio/gresource.h",
+                    "usr/include/glib-2.0/gio/gsettings.h",
+                    "usr/include/glib-2.0/gio/gtask.h",
+                    "usr/include/glib-2.0/gio/gthemedicon.h",
+                    "usr/include/glib-2.0/gio/gvolume.h",
+                    "usr/include/glib-2.0/gio/gvolumemonitor.h",
+                    "usr/include/glib-2.0/glib/garray.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/genviron.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gfileutils.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/ghash.h",
+                    "usr/include/glib-2.0/glib/gkeyfile.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmain.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gregex.h",
+                    "usr/include/glib-2.0/glib/gscanner.h",
+                    "usr/include/glib-2.0/glib/gslice.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gspawn.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gboxed.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/genums.h",
+                    "usr/include/glib-2.0/gobject/gmarshal.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/gtk-3.0/gdk/deprecated/gdkcolor.h",
+                    "usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h",
+                    "usr/include/gtk-3.0/gdk/gdkcursor.h",
+                    "usr/include/gtk-3.0/gdk/gdkdisplay.h",
+                    "usr/include/gtk-3.0/gdk/gdkdnd.h",
+                    "usr/include/gtk-3.0/gdk/gdkevents.h",
+                    "usr/include/gtk-3.0/gdk/gdkmonitor.h",
+                    "usr/include/gtk-3.0/gdk/gdkrectangle.h",
+                    "usr/include/gtk-3.0/gdk/gdkscreen.h",
+                    "usr/include/gtk-3.0/gdk/gdktypes.h",
+                    "usr/include/gtk-3.0/gdk/gdkwindow.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11property.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkrc.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkstyle.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplication.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplicationwindow.h",
+                    "usr/include/gtk-3.0/gtk/gtkbin.h",
+                    "usr/include/gtk-3.0/gtk/gtkbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkcontainer.h",
+                    "usr/include/gtk-3.0/gtk/gtkcssprovider.h",
+                    "usr/include/gtk-3.0/gtk/gtkdnd.h",
+                    "usr/include/gtk-3.0/gtk/gtkdragdest.h",
+                    "usr/include/gtk-3.0/gtk/gtkenums.h",
+                    "usr/include/gtk-3.0/gtk/gtkeventbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkflowbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkicontheme.h",
+                    "usr/include/gtk-3.0/gtk/gtkimage.h",
+                    "usr/include/gtk-3.0/gtk/gtklabel.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenu.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenuitem.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenushell.h",
+                    "usr/include/gtk-3.0/gtk/gtkorientable.h",
+                    "usr/include/gtk-3.0/gtk/gtkselection.h",
+                    "usr/include/gtk-3.0/gtk/gtksettings.h",
+                    "usr/include/gtk-3.0/gtk/gtkstylecontext.h",
+                    "usr/include/gtk-3.0/gtk/gtkstyleprovider.h",
+                    "usr/include/gtk-3.0/gtk/gtktypes.h",
+                    "usr/include/gtk-3.0/gtk/gtkwidget.h",
+                    "usr/include/gtk-3.0/gtk/gtkwindow.h",
+                    "usr/include/harfbuzz/hb-common.h",
+                    "usr/include/pango-1.0/pango/pango-font.h",
+                    "usr/include/pango-1.0/pango/pango-layout.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/application.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/budgie_desktop_view.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/desktop_item.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/desktop_menu.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/file_item.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/file_menu.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/glib-2.0.vapi",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/mount_item.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/unified_props.c",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/application.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/budgie_desktop_view.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/desktop_item.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/desktop_menu.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/file_item.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/file_menu.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/mount_item.vala",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/unified_props.vala"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/atk-1.0/atk/atkobject.h",
+                    "usr/include/atk-1.0/atk/atkrelationset.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/cairo/cairo.h",
+                    "usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h",
+                    "usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h",
+                    "usr/include/gio-unix-2.0/gio/gdesktopappinfo.h",
+                    "usr/include/glib-2.0/gio/gappinfo.h",
+                    "usr/include/glib-2.0/gio/gapplication.h",
+                    "usr/include/glib-2.0/gio/gapplicationcommandline.h",
+                    "usr/include/glib-2.0/gio/gasyncinitable.h",
+                    "usr/include/glib-2.0/gio/gasyncresult.h",
+                    "usr/include/glib-2.0/gio/gcancellable.h",
+                    "usr/include/glib-2.0/gio/gdbusconnection.h",
+                    "usr/include/glib-2.0/gio/gdbusintrospection.h",
+                    "usr/include/glib-2.0/gio/gdbusmessage.h",
+                    "usr/include/glib-2.0/gio/gdbusmethodinvocation.h",
+                    "usr/include/glib-2.0/gio/gdbusnamewatching.h",
+                    "usr/include/glib-2.0/gio/gdbusproxy.h",
+                    "usr/include/glib-2.0/gio/gdrive.h",
+                    "usr/include/glib-2.0/gio/gfile.h",
+                    "usr/include/glib-2.0/gio/gfileenumerator.h",
+                    "usr/include/glib-2.0/gio/gfileinfo.h",
+                    "usr/include/glib-2.0/gio/gfilemonitor.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gmount.h",
+                    "usr/include/glib-2.0/gio/gresource.h",
+                    "usr/include/glib-2.0/gio/gsettings.h",
+                    "usr/include/glib-2.0/gio/gtask.h",
+                    "usr/include/glib-2.0/gio/gthemedicon.h",
+                    "usr/include/glib-2.0/gio/gvolume.h",
+                    "usr/include/glib-2.0/gio/gvolumemonitor.h",
+                    "usr/include/glib-2.0/glib/garray.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/genviron.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gfileutils.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/ghash.h",
+                    "usr/include/glib-2.0/glib/gkeyfile.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmain.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gregex.h",
+                    "usr/include/glib-2.0/glib/gscanner.h",
+                    "usr/include/glib-2.0/glib/gslice.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gspawn.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gboxed.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/genums.h",
+                    "usr/include/glib-2.0/gobject/gmarshal.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/gtk-3.0/gdk/deprecated/gdkcolor.h",
+                    "usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h",
+                    "usr/include/gtk-3.0/gdk/gdkcursor.h",
+                    "usr/include/gtk-3.0/gdk/gdkdisplay.h",
+                    "usr/include/gtk-3.0/gdk/gdkdnd.h",
+                    "usr/include/gtk-3.0/gdk/gdkevents.h",
+                    "usr/include/gtk-3.0/gdk/gdkmonitor.h",
+                    "usr/include/gtk-3.0/gdk/gdkrectangle.h",
+                    "usr/include/gtk-3.0/gdk/gdkscreen.h",
+                    "usr/include/gtk-3.0/gdk/gdktypes.h",
+                    "usr/include/gtk-3.0/gdk/gdkwindow.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11property.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkrc.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkstyle.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplication.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplicationwindow.h",
+                    "usr/include/gtk-3.0/gtk/gtkbin.h",
+                    "usr/include/gtk-3.0/gtk/gtkbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkcontainer.h",
+                    "usr/include/gtk-3.0/gtk/gtkcssprovider.h",
+                    "usr/include/gtk-3.0/gtk/gtkdnd.h",
+                    "usr/include/gtk-3.0/gtk/gtkdragdest.h",
+                    "usr/include/gtk-3.0/gtk/gtkenums.h",
+                    "usr/include/gtk-3.0/gtk/gtkeventbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkflowbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkicontheme.h",
+                    "usr/include/gtk-3.0/gtk/gtkimage.h",
+                    "usr/include/gtk-3.0/gtk/gtklabel.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenu.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenuitem.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenushell.h",
+                    "usr/include/gtk-3.0/gtk/gtkorientable.h",
+                    "usr/include/gtk-3.0/gtk/gtkselection.h",
+                    "usr/include/gtk-3.0/gtk/gtksettings.h",
+                    "usr/include/gtk-3.0/gtk/gtkstylecontext.h",
+                    "usr/include/gtk-3.0/gtk/gtkstyleprovider.h",
+                    "usr/include/gtk-3.0/gtk/gtktypes.h",
+                    "usr/include/gtk-3.0/gtk/gtkwidget.h",
+                    "usr/include/gtk-3.0/gtk/gtkwindow.h",
+                    "usr/include/harfbuzz/hb-common.h",
+                    "usr/include/pango-1.0/pango/pango-font.h",
+                    "usr/include/pango-1.0/pango/pango-layout.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/glib-2.0.vapi"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/budgie-desktop-view-resources.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/application.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/application.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/budgie_desktop_view.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/budgie_desktop_view.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_menu.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/desktop_menu.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_menu.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/file_menu.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/mount_item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/mount_item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/unified_props.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/redhat-linux-build/src/org.buddiesofbudgie.budgie-desktop-view.p/unified_props.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/application.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/budgie_desktop_view.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/desktop_item.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/desktop_menu.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/file_item.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/file_menu.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/mount_item.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/org.buddiesofbudgie.budgie-desktop-view-1.3-3.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/budgie-desktop-view-1.3-3.fc40.x86_64/src/unified_props.vala"
+        }
+    ]
+}

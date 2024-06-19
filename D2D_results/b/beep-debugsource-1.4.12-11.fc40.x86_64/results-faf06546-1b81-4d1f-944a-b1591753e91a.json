@@ -1,0 +1,1837 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "faf06546-1b81-4d1f-944a-b1591753e91a",
+            "created_date": "2024-06-17T12:05:03.894Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "1cc7339a-40c6-4eaf-bfd8-0838052838ac",
+                    "filename": "beep-debuginfo-1.4.12-11.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debuginfo-1.4.12-11.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 28155,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "e43a9981-6941-4d3d-abfe-27b348a1b480",
+                    "filename": "beep-debugsource-1.4.12-11.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debugsource-1.4.12-11.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 21716,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "bb1c9bab-ec5d-49a2-9dbe-9cd872ee8b19",
+                    "created_date": "2024-06-17T12:05:03.902363Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "bb1c9bab-ec5d-49a2-9dbe-9cd872ee8b19",
+                    "task_start_date": "2024-06-17T12:05:03.929177Z",
+                    "task_end_date": "2024-06-17T12:05:24.085775Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 12:05:03.93 Pipeline [d2d] starting\n2024-06-17 12:05:03.93 Step [download_missing_inputs] starting\n2024-06-17 12:05:03.94 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debugsource-1.4.12-11.fc40.x86_64.rpm#from\n2024-06-17 12:05:06.97 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debuginfo-1.4.12-11.fc40.x86_64.rpm#to\n2024-06-17 12:05:08.50 Step [download_missing_inputs] completed in 5 seconds\n2024-06-17 12:05:08.51 Step [get_inputs] starting\n2024-06-17 12:05:08.51 Step [get_inputs] completed in 0 seconds\n2024-06-17 12:05:08.52 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 12:05:08.56 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 12:05:08.57 Step [extract_archives] starting\n2024-06-17 12:05:08.64 Step [extract_archives] completed in 0 seconds\n2024-06-17 12:05:08.65 Step [collect_and_create_codebase_resources] starting\n2024-06-17 12:05:08.67 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 12:05:08.67 Step [fingerprint_codebase_directories] starting\n2024-06-17 12:05:08.68 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 12:05:08.69 Step [flag_empty_files] starting\n2024-06-17 12:05:08.69 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 12:05:08.69 Step [flag_whitespace_files] starting\n2024-06-17 12:05:08.69 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 12:05:08.69 Step [flag_ignored_resources] starting\n2024-06-17 12:05:08.70 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 12:05:08.70 Step [map_about_files] starting\n2024-06-17 12:05:08.70 Step [map_about_files] completed in 0 seconds\n2024-06-17 12:05:08.71 Step [map_checksum] starting\n2024-06-17 12:05:08.71 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 12:05:08.72 Step [map_checksum] completed in 0 seconds\n2024-06-17 12:05:08.72 Step [match_archives_to_purldb] starting\n2024-06-17 12:05:08.72 PurlDB is not available. Skipping.\n2024-06-17 12:05:08.72 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 12:05:08.72 Step [find_java_packages] starting\n2024-06-17 12:05:08.72 Finding Java package for 0 .java resources.\n2024-06-17 12:05:08.73 Step [find_java_packages] completed in 0 seconds\n2024-06-17 12:05:08.73 Step [map_java_to_class] starting\n2024-06-17 12:05:08.73 Mapping 0 .class resources to .java\n2024-06-17 12:05:08.73 No .java resources to map.\n2024-06-17 12:05:08.73 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 12:05:08.74 Step [map_jar_to_source] starting\n2024-06-17 12:05:08.74 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 12:05:08.74 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 12:05:08.74 Step [map_elf] starting\n2024-06-17 12:05:08.78 Mapping 1 to/ resources using paths with 13 from/ resources.\n2024-06-17 12:05:08.78 Done building from/ resources index.\n2024-06-17 12:05:08.79 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug'\n2024-06-17 12:05:08.80 WARNING: #32 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug'\n2024-06-17 12:05:08.80 Created 13 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug'\n2024-06-17 12:05:08.81 Step [map_elf] completed in 0 seconds\n2024-06-17 12:05:08.81 Step [map_go] starting\n2024-06-17 12:05:08.82 Mapping 0 to/ resources using paths with 13 from/ resources.\n2024-06-17 12:05:08.82 Done building from/ resources index.\n2024-06-17 12:05:08.83 Step [map_go] completed in 0 seconds\n2024-06-17 12:05:08.83 Step [match_directories_to_purldb] starting\n2024-06-17 12:05:08.83 PurlDB is not available. Skipping.\n2024-06-17 12:05:08.84 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 12:05:08.84 Step [match_resources_to_purldb] starting\n2024-06-17 12:05:08.84 PurlDB is not available. Skipping.\n2024-06-17 12:05:08.84 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 12:05:08.85 Step [map_path] starting\n2024-06-17 12:05:08.85 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 12:05:08.85 Step [map_path] completed in 0 seconds\n2024-06-17 12:05:08.85 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 12:05:08.86 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 12:05:08.86 Step [perform_house_keeping_tasks] starting\n2024-06-17 12:05:08.87 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 12:05:08.87 Step [match_purldb_resources_post_process] starting\n2024-06-17 12:05:08.88 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 12:05:08.88 0 resource processed\n2024-06-17 12:05:08.88 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 12:05:08.88 Step [remove_packages_without_resources] starting\n2024-06-17 12:05:08.88 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 12:05:08.89 Step [scan_unmapped_to_files] starting\n2024-06-17 12:05:11.66 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 12:05:11.66 Step [scan_mapped_from_for_files] starting\n2024-06-17 12:05:21.59 Progress: 15% (2/13) ETA: 56 seconds\n2024-06-17 12:05:22.94 Progress: 30% (4/13) ETA: 26 seconds\n2024-06-17 12:05:23.02 Progress: 46% (6/13) ETA: 13 seconds\n2024-06-17 12:05:23.19 Progress: 61% (8/13) ETA: 7 seconds\n2024-06-17 12:05:23.27 Progress: 76% (10/13) ETA: 4 seconds\n2024-06-17 12:05:23.39 Progress: 92% (12/13) ETA: 1 seconds\n2024-06-17 12:05:24.05 Step [scan_mapped_from_for_files] completed in 12 seconds\n2024-06-17 12:05:24.05 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 12:05:24.06 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 12:05:24.06 Step [create_local_files_packages] starting\n2024-06-17 12:05:24.07 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 12:05:24.08 Pipeline completed in 20 seconds\n",
+                    "execution_time": 20
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2",
+            "type": "local-files",
+            "namespace": "66894aaa-6e89-4437-8332-e55ea0258810-faf06546",
+            "name": "23032b51-d169-4cab-ac42-b07bc6c309f2",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2018-2019 Hans Ulrich Niedermann\nCopyright (c) 2019 Hans Ulrich Niedermann\nCopyright (c) 2022 Hans Ulrich Niedermann\nCopyright (c) 2000-2010 Johnathan Nightingale\nCopyright (c) 2010-2013 Gerfried Fuchs\nCopyright (c) 2013-2018 Hans Ulrich Niedermann\nCopyright (c) 2013-2022 Hans Ulrich Niedermann\nCopyright (c) 2002-2016 Johnathan Nightingale",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64",
+            "type": "directory",
+            "name": "beep-1.4.12-11.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver-console.c",
+            "type": "file",
+            "name": "beep-driver-console.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4803,
+            "md5": "813f27393234bd857b7296dbb4a9f661",
+            "sha1": "d7a85b607d36f4ec7893464c82205dd2f1948b56",
+            "sha256": "decff0e9c8f2b3ec3ce01275463c3479910c04fcaa5dc8a76c36d644822ad7b3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2010 Johnathan Nightingale",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2010-2013 Gerfried Fuchs",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Johnathan Nightingale",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Gerfried Fuchs",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver-evdev.c",
+            "type": "file",
+            "name": "beep-driver-evdev.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4167,
+            "md5": "b7a6e67532c1841cd3d49c1d9ec17506",
+            "sha1": "e3f5231c204438b9b9173a1435357220406dcc29",
+            "sha256": "00f902fd1554b30f79a87388d3c1cb3c86b153ef011d7fe56cb7abb52265d3bb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2010 Johnathan Nightingale",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2010-2013 Gerfried Fuchs",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Johnathan Nightingale",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Gerfried Fuchs",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver.h",
+            "type": "file",
+            "name": "beep-driver.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3109,
+            "md5": "6b73b36d3a3d674dbc08115df5386b07",
+            "sha1": "bed137b08a9e1a15b6933237e3280dfd67f36085",
+            "sha256": "e6cdca2098a28afe4736c102d80969ff0f0af179b2c81fa987cff58a57b047fb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2022 Hans Ulrich Niedermann",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-drivers.c",
+            "type": "file",
+            "name": "beep-drivers.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2523,
+            "md5": "f732f398f22557f21eaec4bb1835c9df",
+            "sha1": "6e5d5070eb17eaf58b21ae53227ed9023414e309",
+            "sha256": "5e246221c933216a2f5a7f3da73ab7b90af6a22beddc7db55ffe0b0ad2f7ce5b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 33.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-drivers.h",
+            "type": "file",
+            "name": "beep-drivers.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2506,
+            "md5": "f498cef86fabb39854322a1860890299",
+            "sha1": "4b3d1e313577592dc2eda4619ee9d688e8be401f",
+            "sha256": "18a7c97422a91fc51cbeeb09d4b9be4e12b1527bd21dd25df4d3d0a0848cf1f0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 32.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-library.c",
+            "type": "file",
+            "name": "beep-library.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3325,
+            "md5": "63d74ba0e4f8670c1b3896b71eb6dcba",
+            "sha1": "3233db4a689d97d9a8007284aa95dd9340bf1c5f",
+            "sha256": "fd9b3d064c636b299a455453dc10344bbd5fabc9950c684161a73f3b873c2753",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.73,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-library.h",
+            "type": "file",
+            "name": "beep-library.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1680,
+            "md5": "eaab82929f46170a9ddf9214eea482c1",
+            "sha1": "20c560715d027d6b1df9f74a60c95289247ecbb9",
+            "sha256": "9a89663db10a20b49b796227d390010a8062c0baa6d58ceeac54b574db18ac68",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 48.09,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-log.c",
+            "type": "file",
+            "name": "beep-log.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6057,
+            "md5": "7e9d2189897646ff901635360f1e8e39",
+            "sha1": "7f8ffc17d8524eccbcf56505934205c33421b730",
+            "sha256": "953a4ac9bf0fc372bc62cc7720dd94af8f304d55ab57b00a0ccbd75f2020fde7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.6,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2018-2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-log.h",
+            "type": "file",
+            "name": "beep-log.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2735,
+            "md5": "0e5f8539e086f2a9cae3dc7e7d9f442f",
+            "sha1": "eae88493f3b81e5db92d3e53d7d779c276c30c4c",
+            "sha256": "af4c9724530a9bbaa65a4af512238b03052f0d7ba879913ee9d9be0b11abeda0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.43,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2018-2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-main.c",
+            "type": "file",
+            "name": "beep-main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19044,
+            "md5": "9635affd2d20b8def51c9cafc4f627ba",
+            "sha1": "7d7f1bb83b5bebd54cdb3179d5b0affb14744e00",
+            "sha256": "8c7486a2da99618060ca71c68fada198adf439bc85339da19d336b61f495fb27",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 91.94,
+                            "matcher": "3-seq",
+                            "end_line": 27,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_431.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n *\n *\n * \\defgroup beep_main The main program\n *\n * For more documentation on using `beep`, see the `beep-usage.txt` and\n * `beep.1.in` files.\n *\n * More general information can be found in the `README.md`,",
+                            "match_coverage": 91.94,
+                            "matched_length": 114,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_431.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-352353b7-ccbb-1612-4119-d4f6ac131c5d",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 76,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 76,
+                    "matched_text": "    \"Use and Distribution subject to GPL. \"",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                }
+            ],
+            "percentage_of_license_text": 4.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2010 Johnathan Nightingale",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2010-2013 Gerfried Fuchs",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2022 Hans Ulrich Niedermann",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 74,
+                    "copyright": "Copyright (c) 2002-2016 Johnathan Nightingale",
+                    "start_line": 74
+                },
+                {
+                    "end_line": 75,
+                    "copyright": "Copyright (c) 2013-2022 Hans Ulrich Niedermann",
+                    "start_line": 75
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Johnathan Nightingale",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Gerfried Fuchs",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Johnathan Nightingale",
+                    "end_line": 74,
+                    "start_line": 74
+                },
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 75,
+                    "start_line": 75
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/copyleft",
+                    "end_line": 77,
+                    "start_line": 77
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-types.h",
+            "type": "file",
+            "name": "beep-types.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1386,
+            "md5": "2ae14a8fc74afcc8f8d85412e4d19be9",
+            "sha1": "8913d7141aa4f5972b892623568cf66b3163fe4f",
+            "sha256": "9c2e64124e07057346e04a3310443cdd1b3c24664301ce0a8bc65b42790ea09f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 20,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 53.81,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2000-2010 Johnathan Nightingale",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2010-2013 Gerfried Fuchs",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2013-2018 Hans Ulrich Niedermann",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Johnathan Nightingale",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Gerfried Fuchs",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-usage.c",
+            "type": "file",
+            "name": "beep-usage.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2032,
+            "md5": "d08d91afe677dda7c6a801118b02385d",
+            "sha1": "a86151f0d4f5c8a946cce37a4e7ff9e694e01d33",
+            "sha256": "6f223961ed18995b722bbb61001e1259502828e3c43c8d5f9f3f311f1f98fef2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-usage.h",
+            "type": "file",
+            "name": "beep-usage.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1256,
+            "md5": "823fc429e8639eea88e5d7f616670c61",
+            "sha1": "05c2ff8d84418f36689c1fa53b47f43ec4791738",
+            "sha256": "31d70d03782165380cc9478b3a48b7584fadb5bf1a7530416c81c27afe38d845",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License along\n * with this program; if not, write to the Free Software Foundation, Inc.,\n * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 59.79,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2018-2019 Hans Ulrich Niedermann",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hans Ulrich Niedermann",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/66894aaa-6e89-4437-8332-e55ea0258810-faf06546/23032b51-d169-4cab-ac42-b07bc6c309f2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/33",
+            "type": "directory",
+            "name": "33",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "type": "file",
+            "name": "beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 54888,
+            "md5": "fd635e45ec9a8c4135315de87f106d18",
+            "sha1": "95b9812c304646fefd4084bfeaa1ee4640c08752",
+            "sha256": "83edfa2fe9f68cb8494268ecbeb15575efd9ffab16d656492521222b7d89e32c",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=33295c9982e00194de9b021070b43d2313918724, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/<artificial>",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-usage.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/sig_atomic_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/errno.h",
+                    "usr/include/linux/input.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/<built-in>",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver-console.c",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver-evdev.c",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-drivers.c",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-drivers.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-library.c",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-library.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-log.c",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-log.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-main.c",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-types.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-usage.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/sig_atomic_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/errno.h",
+                    "usr/include/linux/input.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/beep-1.4.12-11.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver-console.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver-evdev.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-driver.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-drivers.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-drivers.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-library.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-library.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-log.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-log.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-types.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-usage.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/beep-1.4.12-11.fc40.x86_64/beep-usage.h"
+        }
+    ]
+}

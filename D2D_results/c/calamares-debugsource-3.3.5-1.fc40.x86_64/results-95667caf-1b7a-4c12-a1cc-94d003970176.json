@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "95667caf-1b7a-4c12-a1cc-94d003970176",
+            "created_date": "2024-06-17T15:28:16.310Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "46578dbf-9016-4091-91a5-b79ecfd09a70",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/calamares-debuginfo-3.3.5-1.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "cd08563c-2c62-4ca3-98f0-2214e856c73d",
+                    "filename": "calamares-debugsource-3.3.5-1.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/calamares-debugsource-3.3.5-1.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 3771473,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "99fd4644-941d-46a8-84a7-1f2c6b99f3c3",
+                    "created_date": "2024-06-17T15:28:16.318719Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "99fd4644-941d-46a8-84a7-1f2c6b99f3c3",
+                    "task_start_date": "2024-06-17T15:28:16.342451Z",
+                    "task_end_date": "2024-06-17T15:28:30.942134Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:28:16.34 Pipeline [d2d] starting\n2024-06-17 15:28:16.34 Step [download_missing_inputs] starting\n2024-06-17 15:28:16.35 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/calamares-debugsource-3.3.5-1.fc40.x86_64.rpm#from\n2024-06-17 15:28:23.26 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/calamares-debuginfo-3.3.5-1.fc40.x86_64.rpm#to\n2024-06-17 15:28:30.93 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/calamares-debuginfo-3.3.5-1.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:28:30.93 Pipeline failed\n",
+                    "execution_time": 14
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

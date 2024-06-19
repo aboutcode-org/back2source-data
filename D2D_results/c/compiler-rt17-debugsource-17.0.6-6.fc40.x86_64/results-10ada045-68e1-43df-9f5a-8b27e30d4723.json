@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "10ada045-68e1-43df-9f5a-8b27e30d4723",
+            "created_date": "2024-06-17T15:41:49.037Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "daf85a2f-1dc0-429d-ad71-bb85fbd56964",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compiler-rt17-debugsource-17.0.6-6.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "13149416-a0f7-4aff-aede-39b459496a2b",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compiler-rt17-debuginfo-17.0.6-6.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "7f596dbb-aed9-4473-b2be-c8d442945b94",
+                    "created_date": "2024-06-17T15:41:49.045101Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "7f596dbb-aed9-4473-b2be-c8d442945b94",
+                    "task_start_date": "2024-06-17T15:41:49.068389Z",
+                    "task_end_date": "2024-06-17T15:42:09.207693Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:41:49.07 Pipeline [d2d] starting\n2024-06-17 15:41:49.07 Step [download_missing_inputs] starting\n2024-06-17 15:41:49.07 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compiler-rt17-debugsource-17.0.6-6.fc40.x86_64.rpm#from\n2024-06-17 15:42:03.25 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compiler-rt17-debugsource-17.0.6-6.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:42:03.26 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compiler-rt17-debuginfo-17.0.6-6.fc40.x86_64.rpm#to\n2024-06-17 15:42:09.19 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compiler-rt17-debuginfo-17.0.6-6.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:42:09.20 Pipeline failed\n",
+                    "execution_time": 20
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "f08908d6-a980-401a-bb4a-438dc53a512c",
+            "created_date": "2024-06-17T16:39:25.881Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "ddb728bf-66a9-4a13-9170-df5034d892d3",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/docker-distribution-debugsource-2.8.1-5.gitb5ca020.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "27933e0d-d84f-4fb6-8a67-cc5fb9a91054",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/docker-distribution-debuginfo-2.8.1-5.gitb5ca020.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "6520c6d7-a3a5-45f6-82b5-3f67bd6cb0b1",
+                    "created_date": "2024-06-17T16:39:25.889249Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "6520c6d7-a3a5-45f6-82b5-3f67bd6cb0b1",
+                    "task_start_date": "2024-06-17T16:39:25.912381Z",
+                    "task_end_date": "2024-06-17T16:39:42.158776Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 16:39:25.91 Pipeline [d2d] starting\n2024-06-17 16:39:25.91 Step [download_missing_inputs] starting\n2024-06-17 16:39:25.92 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/docker-distribution-debugsource-2.8.1-5.gitb5ca020.fc40.x86_64.rpm#from\n2024-06-17 16:39:33.34 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/docker-distribution-debugsource-2.8.1-5.gitb5ca020.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 16:39:33.34 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/docker-distribution-debuginfo-2.8.1-5.gitb5ca020.fc40.x86_64.rpm#to\n2024-06-17 16:39:42.15 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/docker-distribution-debuginfo-2.8.1-5.gitb5ca020.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 16:39:42.15 Pipeline failed\n",
+                    "execution_time": 16
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

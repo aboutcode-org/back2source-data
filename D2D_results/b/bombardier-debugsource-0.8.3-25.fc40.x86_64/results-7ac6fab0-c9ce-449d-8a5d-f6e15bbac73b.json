@@ -1,0 +1,2187 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "7ac6fab0-c9ce-449d-8a5d-f6e15bbac73b",
+            "created_date": "2024-06-17T10:24:52.858Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "bd25d385-b35c-456f-838d-b8737a6d7e8e",
+                    "filename": "bombardier-debuginfo-0.8.3-25.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bombardier-debuginfo-0.8.3-25.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 30352,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "60eb7cfb-010e-4940-ad3e-060015e79b5a",
+                    "filename": "bombardier-debugsource-0.8.3-25.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bombardier-debugsource-0.8.3-25.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 16386,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "4aed508d-f779-4f79-9ebd-5df2c48e0ca9",
+                    "created_date": "2024-06-17T10:24:52.865446Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "4aed508d-f779-4f79-9ebd-5df2c48e0ca9",
+                    "task_start_date": "2024-06-17T10:24:52.890486Z",
+                    "task_end_date": "2024-06-17T10:25:12.678741Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 10:24:52.89 Pipeline [d2d] starting\n2024-06-17 10:24:52.89 Step [download_missing_inputs] starting\n2024-06-17 10:24:52.90 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bombardier-debugsource-0.8.3-25.fc40.x86_64.rpm#from\n2024-06-17 10:24:54.19 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bombardier-debuginfo-0.8.3-25.fc40.x86_64.rpm#to\n2024-06-17 10:24:55.42 Step [download_missing_inputs] completed in 3 seconds\n2024-06-17 10:24:55.42 Step [get_inputs] starting\n2024-06-17 10:24:55.42 Step [get_inputs] completed in 0 seconds\n2024-06-17 10:24:55.43 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 10:24:55.44 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 10:24:55.44 Step [extract_archives] starting\n2024-06-17 10:24:55.52 Step [extract_archives] completed in 0 seconds\n2024-06-17 10:24:55.52 Step [collect_and_create_codebase_resources] starting\n2024-06-17 10:24:55.55 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 10:24:55.55 Step [fingerprint_codebase_directories] starting\n2024-06-17 10:24:55.56 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 10:24:55.56 Step [flag_empty_files] starting\n2024-06-17 10:24:55.57 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 10:24:55.57 Step [flag_whitespace_files] starting\n2024-06-17 10:24:55.57 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 10:24:55.58 Step [flag_ignored_resources] starting\n2024-06-17 10:24:55.58 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 10:24:55.58 Step [map_about_files] starting\n2024-06-17 10:24:55.58 Step [map_about_files] completed in 0 seconds\n2024-06-17 10:24:55.59 Step [map_checksum] starting\n2024-06-17 10:24:55.59 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 10:24:55.59 Step [map_checksum] completed in 0 seconds\n2024-06-17 10:24:55.60 Step [match_archives_to_purldb] starting\n2024-06-17 10:24:55.60 PurlDB is not available. Skipping.\n2024-06-17 10:24:55.60 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 10:24:55.60 Step [find_java_packages] starting\n2024-06-17 10:24:55.60 Finding Java package for 0 .java resources.\n2024-06-17 10:24:55.61 Step [find_java_packages] completed in 0 seconds\n2024-06-17 10:24:55.61 Step [map_java_to_class] starting\n2024-06-17 10:24:55.61 Mapping 0 .class resources to .java\n2024-06-17 10:24:55.61 No .java resources to map.\n2024-06-17 10:24:55.61 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 10:24:55.62 Step [map_jar_to_source] starting\n2024-06-17 10:24:55.62 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 10:24:55.62 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 10:24:55.62 Step [map_elf] starting\n2024-06-17 10:24:55.67 Mapping 1 to/ resources using paths with 14 from/ resources.\n2024-06-17 10:24:55.67 Done building from/ resources index.\n2024-06-17 10:24:55.68 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug'\n2024-06-17 10:24:55.69 WARNING: #26 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug'\n2024-06-17 10:24:55.69 Created 14 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug'\n2024-06-17 10:24:55.69 Step [map_elf] completed in 0 seconds\n2024-06-17 10:24:55.70 Step [map_go] starting\n2024-06-17 10:24:55.70 Mapping 0 to/ resources using paths with 14 from/ resources.\n2024-06-17 10:24:55.71 Done building from/ resources index.\n2024-06-17 10:24:55.72 Step [map_go] completed in 0 seconds\n2024-06-17 10:24:55.72 Step [match_directories_to_purldb] starting\n2024-06-17 10:24:55.72 PurlDB is not available. Skipping.\n2024-06-17 10:24:55.72 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 10:24:55.73 Step [match_resources_to_purldb] starting\n2024-06-17 10:24:55.73 PurlDB is not available. Skipping.\n2024-06-17 10:24:55.73 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 10:24:55.73 Step [map_path] starting\n2024-06-17 10:24:55.74 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 10:24:55.75 Step [map_path] completed in 0 seconds\n2024-06-17 10:24:55.75 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 10:24:55.77 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 10:24:55.77 Step [perform_house_keeping_tasks] starting\n2024-06-17 10:24:55.80 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 10:24:55.81 Step [match_purldb_resources_post_process] starting\n2024-06-17 10:24:55.81 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 10:24:55.82 0 resource processed\n2024-06-17 10:24:55.82 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 10:24:55.83 Step [remove_packages_without_resources] starting\n2024-06-17 10:24:55.84 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 10:24:55.84 Step [scan_unmapped_to_files] starting\n2024-06-17 10:24:58.77 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 10:24:58.77 Step [scan_mapped_from_for_files] starting\n2024-06-17 10:25:10.54 Progress: 14% (2/14) ETA: 72 seconds (1.2 minutes)\n2024-06-17 10:25:11.78 Progress: 28% (4/14) ETA: 33 seconds\n2024-06-17 10:25:11.88 Progress: 42% (6/14) ETA: 18 seconds\n2024-06-17 10:25:11.95 Progress: 57% (8/14) ETA: 10 seconds\n2024-06-17 10:25:12.01 Progress: 71% (10/14) ETA: 5 seconds\n2024-06-17 10:25:12.13 Progress: 85% (12/14) ETA: 2 seconds\n2024-06-17 10:25:12.35 Progress: 100% (14/14)\n2024-06-17 10:25:12.61 Step [scan_mapped_from_for_files] completed in 14 seconds\n2024-06-17 10:25:12.61 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 10:25:12.62 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 10:25:12.62 Step [create_local_files_packages] starting\n2024-06-17 10:25:12.67 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 10:25:12.67 Pipeline completed in 20 seconds\n",
+                    "execution_time": 19
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/0f3c6ff7-bec3-4526-aa03-6dbcc532775f",
+            "type": "local-files",
+            "namespace": "ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0",
+            "name": "0f3c6ff7-bec3-4526-aa03-6dbcc532775f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can\n(c) Gergely Risko <gergely@risko.hu>",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0 AND gpl-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/3b5f94f2-f848-4d68-9726-997e17f681d0",
+            "type": "local-files",
+            "namespace": "ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0",
+            "name": "3b5f94f2-f848-4d68-9726-997e17f681d0",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4",
+            "type": "local-files",
+            "namespace": "ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0",
+            "name": "475c31f7-46d7-467d-83a2-1d9d744afdc4",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+            "holder": "",
+            "declared_license_expression": "unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/5c77582c-54f3-4109-925f-fbbc842bca6f",
+            "type": "local-files",
+            "namespace": "ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0",
+            "name": "5c77582c-54f3-4109-925f-fbbc842bca6f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND gpl-3.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64",
+            "type": "directory",
+            "name": "bombardier-0.8.3-25.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/bombardier.c",
+            "type": "file",
+            "name": "bombardier.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6417,
+            "md5": "56d69c7f0bf996fd1f674aad179c9886",
+            "sha1": "dea201dbcfbabaf8ec253346df08797f077aabd1",
+            "sha256": "b14951f393780c014825d03a35f52da3a20cef662bd2db17e44917069f7dd2f2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND gpl-3.0",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND GPL-3.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 93.1,
+                            "matcher": "3-seq",
+                            "end_line": 14,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_527.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "/* The GNU Bombing utility */\n/* Copyright (C) 2001, 2009 Gergely Risko */\n/* Can be licensed under the terms of GPL v3 or above */\n\n/* This program is free software: you can redistribute it and/or modify */\n/* it under the terms of the GNU General Public License as published by */\n/* the Free Software Foundation, either version 3 of the License, or */\n/* (at your option) any later version. */\n\n/* This program is distributed in the hope that it will be useful, */\n/* but WITHOUT ANY WARRANTY; without even the implied warranty of */\n/* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */\n/* GNU General Public License for more details. */",
+                            "match_coverage": 93.1,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_527.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-afb02e93-2a75-8cfc-223f-389777f516db",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0_76.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0_76.RULE",
+                            "license_expression": "gpl-3.0",
+                            "spdx_license_expression": "GPL-3.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_3_0-9b9a545b-8f66-e46d-03f1-fc516502180f",
+                    "license_expression": "gpl-3.0",
+                    "license_expression_spdx": "GPL-3.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/5c77582c-54f3-4109-925f-fbbc842bca6f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/date.c",
+            "type": "file",
+            "name": "date.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 466,
+            "md5": "63805e9b3bea0fcba57c8c23766cdf40",
+            "sha1": "56f2c7158510c412b87be3b629dac203a4b8dd33",
+            "sha256": "d1a27c40f57af057844c9066e3095026f779e171272b4f383d2fdb86172be1f7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 10.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/date.h",
+            "type": "file",
+            "name": "date.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 168,
+            "md5": "472976f1f1045f1e4e3d4c24f7fcbe4b",
+            "sha1": "61de4583a6bc033faf5b22fbe886b7815dbea62f",
+            "sha256": "b635b8ff69201b8e12bfe896818d8c0884d8ec00fde58588bdf947b0aff18b9f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 29.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/display.c",
+            "type": "file",
+            "name": "display.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7606,
+            "md5": "744410c012a3e6f0e389d2ff059b206b",
+            "sha1": "26a7ef3cd61759d566dc7669526c1e076ad14c9a",
+            "sha256": "feea1d5a06b5a91ac8d7146d0c9fc4d847a807971e4b63f4f51381bbb7f168bc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0 AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-3.0-only AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0_76.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0_76.RULE",
+                            "license_expression": "gpl-3.0",
+                            "spdx_license_expression": "GPL-3.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_3_0-9b9a545b-8f66-e46d-03f1-fc516502180f",
+                    "license_expression": "gpl-3.0",
+                    "license_expression_spdx": "GPL-3.0-only"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 57.89,
+                            "matcher": "3-seq",
+                            "end_line": 93,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_1421.RULE",
+                            "from_file": null,
+                            "start_line": 91,
+                            "matched_text": "        mvprintw(gy(12),gx(0),\"              |This program is free software. Can be licensed|\");\n        mvprintw(gy(13),gx(0),\"              |   under the terms of the GNU General Public  |\");\n        mvprintw(gy(14),gx(0),\"              |             License v2 or above.             |\");",
+                            "match_coverage": 100.0,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_1421.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-b7b73311-dff5-e53a-becb-54d6117360ac",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 88,
+                    "copyright": "(c) Gergely Risko <gergely@risko.hu>",
+                    "start_line": 88
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Gergely Risko",
+                    "end_line": 88,
+                    "start_line": 88
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/0f3c6ff7-bec3-4526-aa03-6dbcc532775f"
+            ],
+            "emails": [
+                {
+                    "email": "gergely@risko.hu",
+                    "end_line": 88,
+                    "start_line": 88
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/extern.h",
+            "type": "file",
+            "name": "extern.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 173,
+            "md5": "19b19eb4ae4a45c081d5f3956607a94b",
+            "sha1": "36dd45355351cf220cd4c4c1687407d711bf0ad4",
+            "sha256": "5ac5941896bcb22d54fe5d1d044826e8507d34e88f88b1adcb6ffc7c92ee5f04",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 26.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/fdgetline.c",
+            "type": "file",
+            "name": "fdgetline.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 602,
+            "md5": "06a78129e2f3084534c0a8fe7b3d5f88",
+            "sha1": "3ccc2de24b833451d0b41b9fd277f0be045e72b2",
+            "sha256": "41a29382daa2c3f634df30a92b8d7ef3da4dfa86a68f335e7c7a94cf89cd7122",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0",
+            "detected_license_expression_spdx": "GPL-3.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0_76.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0_76.RULE",
+                            "license_expression": "gpl-3.0",
+                            "spdx_license_expression": "GPL-3.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_3_0-9b9a545b-8f66-e46d-03f1-fc516502180f",
+                    "license_expression": "gpl-3.0",
+                    "license_expression_spdx": "GPL-3.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.64,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/3b5f94f2-f848-4d68-9726-997e17f681d0"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/funcs.h",
+            "type": "file",
+            "name": "funcs.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 974,
+            "md5": "a28d7beb614ffa9bbdb965710227340c",
+            "sha1": "b137f82b31ff6efab497ee6a05195fe58fdebae7",
+            "sha256": "c88b0cf14ecfb40914dd8b5a3610e914cee9b2613228a2aac749d67ec1519eb7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 4.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/gcurses.c",
+            "type": "file",
+            "name": "gcurses.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 271,
+            "md5": "02e720af784d0f72875dc445f358b519",
+            "sha1": "776499c207540f3b92705d2745656300d117159e",
+            "sha256": "161872746fd3e42fec84b3eacb6e32a5a6e383d7cb4433e132df052635ce91e1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 17.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/hof.c",
+            "type": "file",
+            "name": "hof.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5545,
+            "md5": "42b8ce54cba7d65ff82e20ff6f90961d",
+            "sha1": "5c26bd4f0684d2c6dd65b045becb3f9665b69489",
+            "sha256": "d300cd5fa83066b61e5154cb1c664ce26b99a0ed0c5c7fdd63e5cdf16b88a7e0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 1.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/randomhouse.c",
+            "type": "file",
+            "name": "randomhouse.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1263,
+            "md5": "bfa39b723c5016fb45c2cad8de095866",
+            "sha1": "a7ac3f211335d39b96612950767c1ca3d20c847f",
+            "sha256": "4bbb7ac877fbc5dce8038b19cca43d57086014cf78c0416a87e3873340e8e9c4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0",
+            "detected_license_expression_spdx": "GPL-3.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0_76.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0_76.RULE",
+                            "license_expression": "gpl-3.0",
+                            "spdx_license_expression": "GPL-3.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_3_0-9b9a545b-8f66-e46d-03f1-fc516502180f",
+                    "license_expression": "gpl-3.0",
+                    "license_expression_spdx": "GPL-3.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/3b5f94f2-f848-4d68-9726-997e17f681d0"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/signal.c",
+            "type": "file",
+            "name": "signal.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 498,
+            "md5": "88bef8a855318c1929810e765f96bc4c",
+            "sha1": "c16edf98f89de40d1eeacbf59ffb65f65fd60f8d",
+            "sha256": "e96f6ed07ed9e5bcd7baebb67e70c7e670e4a5d4f28251bb8df29ea0e4acac18",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 12.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/step.c",
+            "type": "file",
+            "name": "step.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1567,
+            "md5": "28b56839009af1005a4bf45ab731ac54",
+            "sha1": "e71db0015578b67dacc0bc12603209f5ffcc0ac3",
+            "sha256": "9e7c7835001d4e3d6af4d79b9202a38d22976f08eade218b4569caf649028caf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 3.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/structs.h",
+            "type": "file",
+            "name": "structs.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 761,
+            "md5": "e3a933d0ab986c18288837b8a748d44e",
+            "sha1": "f377047de12241ca8b31616d47ae3205a7b97b0b",
+            "sha256": "536ce2f2e7e6feba27d3425f63df40ac9111f03993411fddb1d06b80569d6f27",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_20.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_20.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-b2daa3b2-4db7-eb66-6f15-0bc728e3900a",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 12.5,
+                    "matcher": "3-seq",
+                    "end_line": 4,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_or_gpl-3.0_14.RULE",
+                    "from_file": null,
+                    "start_line": 4,
+                    "matched_text": "/* Can be licensed under the terms of GPL v3 or above */",
+                    "match_coverage": 12.5,
+                    "matched_length": 4,
+                    "rule_relevance": 100,
+                    "rule_identifier": "gpl-2.0_or_gpl-3.0_14.RULE",
+                    "license_expression": "gpl-2.0 OR gpl-3.0",
+                    "spdx_license_expression": "GPL-2.0-only OR GPL-3.0-only"
+                }
+            ],
+            "percentage_of_license_text": 7.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001, 2009 Gergely Risko Can",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Gergely Risko Can",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ed3b8b37-ac66-4897-9b19-db14c875458d-7ac6fab0/475c31f7-46d7-467d-83a2-1d9d744afdc4"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/texts.h",
+            "type": "file",
+            "name": "texts.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1472,
+            "md5": "7719c06463bd1adf905b409197816080",
+            "sha1": "4ea41ab3c99e49f4b3f505046164c09cb8cefd23",
+            "sha256": "8e230c71483b17c1d811c221cf25a0400a91100b1deca109b6aeda6be5e25611",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.atom.hu/~risko/bombardier",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/f7",
+            "type": "directory",
+            "name": "f7",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 62448,
+            "md5": "8862437ac44d420e8a71560cede532d5",
+            "sha1": "cc293abfa7da63d1b3e1615fee4faf1be4a9aff7",
+            "sha256": "1fca0661291440d67dc485bc7687cc9fe9e129fbef96de53b1cf341962ff1c78",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=f739be9d6b99662a1076476cae4ef94009c187b2, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/gcurses.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/randomhouse.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/signal.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/fcntl.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/curses.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/bombardier.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/date.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/date.h",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/display.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/extern.h",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/fdgetline.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/funcs.h",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/hof.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/step.c",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/structs.h",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/texts.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/fcntl.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/curses.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/bombardier.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/date.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/date.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/display.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/extern.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/fdgetline.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/funcs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/gcurses.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/hof.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/randomhouse.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/signal.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/step.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/structs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bombardier-0.8.3-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bombardier-0.8.3-25.fc40.x86_64/texts.h"
+        }
+    ]
+}

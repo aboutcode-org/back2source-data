@@ -1,0 +1,2870 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "8bd29bae-4877-46cd-bf4e-714533b6e2a3",
+            "created_date": "2024-06-14T04:41:05.540Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "be9a6025-d57a-4fdf-92d8-dbb0597ac612",
+                    "filename": "amtk-debuginfo-5.6.1-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtk-debuginfo-5.6.1-6.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 80684,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "b9350180-81e5-4101-834b-3897df16b317",
+                    "filename": "amtk-debugsource-5.6.1-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtk-debugsource-5.6.1-6.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 38907,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "a7ba2d0a-03e4-4ca4-9ce0-6c4b6f94f12e",
+                    "created_date": "2024-06-14T04:41:05.549069Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "a7ba2d0a-03e4-4ca4-9ce0-6c4b6f94f12e",
+                    "task_start_date": "2024-06-14T04:41:05.574154Z",
+                    "task_end_date": "2024-06-14T04:41:32.465022Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 04:41:05.57 Pipeline [d2d] starting\n2024-06-14 04:41:05.58 Step [download_missing_inputs] starting\n2024-06-14 04:41:05.58 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtk-debugsource-5.6.1-6.fc40.x86_64.rpm#from\n2024-06-14 04:41:07.22 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtk-debuginfo-5.6.1-6.fc40.x86_64.rpm#to\n2024-06-14 04:41:11.12 Step [download_missing_inputs] completed in 6 seconds\n2024-06-14 04:41:11.12 Step [get_inputs] starting\n2024-06-14 04:41:11.13 Step [get_inputs] completed in 0 seconds\n2024-06-14 04:41:11.13 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 04:41:11.19 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 04:41:11.20 Step [extract_archives] starting\n2024-06-14 04:41:11.28 Step [extract_archives] completed in 0 seconds\n2024-06-14 04:41:11.29 Step [collect_and_create_codebase_resources] starting\n2024-06-14 04:41:11.47 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 04:41:11.47 Step [fingerprint_codebase_directories] starting\n2024-06-14 04:41:11.48 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 04:41:11.49 Step [flag_empty_files] starting\n2024-06-14 04:41:11.49 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 04:41:11.49 Step [flag_whitespace_files] starting\n2024-06-14 04:41:11.49 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 04:41:11.49 Step [flag_ignored_resources] starting\n2024-06-14 04:41:11.50 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 04:41:11.50 Step [map_about_files] starting\n2024-06-14 04:41:11.50 Step [map_about_files] completed in 0 seconds\n2024-06-14 04:41:11.50 Step [map_checksum] starting\n2024-06-14 04:41:11.51 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-14 04:41:11.51 Step [map_checksum] completed in 0 seconds\n2024-06-14 04:41:11.51 Step [match_archives_to_purldb] starting\n2024-06-14 04:41:11.51 PurlDB is not available. Skipping.\n2024-06-14 04:41:11.52 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 04:41:11.52 Step [find_java_packages] starting\n2024-06-14 04:41:11.52 Finding Java package for 0 .java resources.\n2024-06-14 04:41:11.53 Step [find_java_packages] completed in 0 seconds\n2024-06-14 04:41:11.53 Step [map_java_to_class] starting\n2024-06-14 04:41:11.54 Mapping 0 .class resources to .java\n2024-06-14 04:41:11.54 No .java resources to map.\n2024-06-14 04:41:11.54 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 04:41:11.54 Step [map_jar_to_source] starting\n2024-06-14 04:41:11.55 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 04:41:11.55 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 04:41:11.56 Step [map_elf] starting\n2024-06-14 04:41:12.42 Mapping 1 to/ resources using paths with 22 from/ resources.\n2024-06-14 04:41:12.43 Done building from/ resources index.\n2024-06-14 04:41:12.43 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug'\n2024-06-14 04:41:12.45 WARNING: #82 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug'\n2024-06-14 04:41:12.45 Created 23 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug'\n2024-06-14 04:41:12.46 Step [map_elf] completed in 1 seconds\n2024-06-14 04:41:12.46 Step [map_go] starting\n2024-06-14 04:41:12.46 Mapping 0 to/ resources using paths with 22 from/ resources.\n2024-06-14 04:41:12.47 Done building from/ resources index.\n2024-06-14 04:41:12.47 Step [map_go] completed in 0 seconds\n2024-06-14 04:41:12.47 Step [match_directories_to_purldb] starting\n2024-06-14 04:41:12.47 PurlDB is not available. Skipping.\n2024-06-14 04:41:12.48 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 04:41:12.48 Step [match_resources_to_purldb] starting\n2024-06-14 04:41:12.48 PurlDB is not available. Skipping.\n2024-06-14 04:41:12.48 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 04:41:12.48 Step [map_path] starting\n2024-06-14 04:41:12.48 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 04:41:12.49 Step [map_path] completed in 0 seconds\n2024-06-14 04:41:12.49 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 04:41:12.50 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 04:41:12.50 Step [perform_house_keeping_tasks] starting\n2024-06-14 04:41:12.51 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 04:41:12.51 Step [match_purldb_resources_post_process] starting\n2024-06-14 04:41:12.51 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 04:41:12.52 0 resource processed\n2024-06-14 04:41:12.52 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 04:41:12.52 Step [remove_packages_without_resources] starting\n2024-06-14 04:41:12.52 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 04:41:12.52 Step [scan_unmapped_to_files] starting\n2024-06-14 04:41:16.24 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-14 04:41:16.24 Step [scan_mapped_from_for_files] starting\n2024-06-14 04:41:30.50 Progress: 13% (3/23) ETA: 95 seconds (1.6 minutes)\n2024-06-14 04:41:30.58 Progress: 26% (6/23) ETA: 41 seconds\n2024-06-14 04:41:30.78 Progress: 39% (9/23) ETA: 23 seconds\n2024-06-14 04:41:30.90 Progress: 52% (12/23) ETA: 14 seconds\n2024-06-14 04:41:30.96 Progress: 65% (15/23) ETA: 8 seconds\n2024-06-14 04:41:31.13 Progress: 78% (18/23) ETA: 4 seconds\n2024-06-14 04:41:31.40 Progress: 91% (21/23) ETA: 1 seconds\n2024-06-14 04:41:32.43 Step [scan_mapped_from_for_files] completed in 16 seconds\n2024-06-14 04:41:32.44 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 04:41:32.44 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 04:41:32.44 Step [create_local_files_packages] starting\n2024-06-14 04:41:32.46 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 04:41:32.46 Pipeline completed in 27 seconds\n",
+                    "execution_time": 26
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323",
+            "type": "local-files",
+            "namespace": "9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae",
+            "name": "8b08a033-d295-4c4c-82d7-23b65d7d8323",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2016, 2017 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2017, 2018, 2020 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2017, 2018 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2017, 2020 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2017-2020 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2017-2022 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2017 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2018 - Sebastien Wilmet <swilmet@gnome.org>\nCopyright 2011, 2013 Canonical Limited",
+            "holder": "",
+            "declared_license_expression": "lgpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/f4938455-57af-4004-a3b8-1c45f81850d2",
+            "type": "local-files",
+            "namespace": "9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae",
+            "name": "f4938455-57af-4004-a3b8-1c45f81850d2",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64",
+            "type": "directory",
+            "name": "amtk-5.6.1-6.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk",
+            "type": "directory",
+            "name": "amtk",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info.c",
+            "type": "file",
+            "name": "amtk-action-info.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9462,
+            "md5": "52632ad60a1557a51af33f077f98d819",
+            "sha1": "7ffac9042969b3feef079e36396b17fd3555865a",
+            "sha256": "15602b46b073f3a4f2cf3ecb72aad51b384679e43f008a642ed85987c7092996",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.6,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017, 2018, 2020 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-central-store.c",
+            "type": "file",
+            "name": "amtk-action-info-central-store.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4486,
+            "md5": "a64ef4b6dd863269b63337d85431b488",
+            "sha1": "5fcf1deb4e99de9f2652702c358f130ba3568b58",
+            "sha256": "275343ac345e9e3d10999d0fa09e8ea358a8033bfd90739713d6d9f1045e8339",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.41,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-central-store.h",
+            "type": "file",
+            "name": "amtk-action-info-central-store.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2323,
+            "md5": "e89da176e0afa9b0d36aef22a3aa5c37",
+            "sha1": "056b38494f2889dc5e1e15d0f1e34dda97a1eb63",
+            "sha256": "b6846c36925c0c15df3165ce898b4f71ed391c07f357671565518137adace484",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info.h",
+            "type": "file",
+            "name": "amtk-action-info.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3263,
+            "md5": "b7b3d56977fd682320d4641564a49398",
+            "sha1": "6a8a12445f227aa466bb9a01b13164e70d27b47b",
+            "sha256": "6750e79176d752701a3574a4aa1273f1eecaef70cb49a063bd001c453f861e65",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.78,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017, 2020 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-store.c",
+            "type": "file",
+            "name": "amtk-action-info-store.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9027,
+            "md5": "457ade4e3f72f5801d41e46f208514c2",
+            "sha1": "aa65cff468b5e13629f84e1e2a7834b7550b8fa1",
+            "sha256": "8bf507791c641631cf97f7a887452b7eb8dbff1108cc3565bb03cf85a82ea9c7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017, 2018 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-store.h",
+            "type": "file",
+            "name": "amtk-action-info-store.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2439,
+            "md5": "3924ca294ee562ce9a9f2f2e87d88cbb",
+            "sha1": "ac4c241f004d6bfdeef791f498ebd901b7170170",
+            "sha256": "b12ffe1a31124b8d2fc8fa1f957280aca3116c6efd3356b5e7c78665bc513cf7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.72,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017, 2018 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-map.c",
+            "type": "file",
+            "name": "amtk-action-map.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2622,
+            "md5": "38f28e9cfe63ebb1b02159bb4dbf5922",
+            "sha1": "35e5c497940dbdb861eac833f5a46d6c7a7f0a79",
+            "sha256": "503e46ec073b4aba6f413d668d4215aecd04b45dc8e1c80f69953c67843aba36",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-application-window.c",
+            "type": "file",
+            "name": "amtk-application-window.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 18669,
+            "md5": "8797f4a8f97633a7ceff819a22c4adda",
+            "sha1": "2f34932668c2a3c1a60258dbfb5a7d06cd50b6b6",
+            "sha256": "ca4c9632a406683e922a9f5bf59eaa98c2930f49f980cdfd43c30e93060ef6e3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-application-window.h",
+            "type": "file",
+            "name": "amtk-application-window.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2835,
+            "md5": "5ad38535cdd0942eecb1c94eef0dab3a",
+            "sha1": "621c93c3ae76d7a62f1556e90854be29fe4cd1e9",
+            "sha256": "2f8c6bf39d7659f8112abfef5fb342706db91c6c95457a5dbc14917cf042f255",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.52,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-factory.c",
+            "type": "file",
+            "name": "amtk-factory.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 31091,
+            "md5": "85e177a46f769e4ebbf4efaa3c798bdd",
+            "sha1": "316d2cba3691d63a9ceee812dccf6c2890f5089a",
+            "sha256": "73a7a617cac6fe702c5609adfedac3ada959fd3b42e83cb6af6a7f60f480b531",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017, 2018, 2020 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-factory.h",
+            "type": "file",
+            "name": "amtk-factory.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5362,
+            "md5": "651a4d68c18ee00e89b0df3867170fa7",
+            "sha1": "f2cddcb0959a4c8d0bf5f5c8b25c7d6848e6174a",
+            "sha256": "e29de1b74d044b9f4c1cf0f8168562936be3b27a84758a140822bb56e761ff61",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017, 2018, 2020 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-gmenu.c",
+            "type": "file",
+            "name": "amtk-gmenu.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1356,
+            "md5": "e5158350f938011a48c97a81ddc8923e",
+            "sha1": "20a128fa90c0190bb762a48ded9bb8821db9679d",
+            "sha256": "d2c89da56b00b218aae100a1878d390a290d746c8431f1b71f34d8c458984cde",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2018 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-init.c",
+            "type": "file",
+            "name": "amtk-init.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2493,
+            "md5": "5a2d317694fced633b9a3101c6e484e5",
+            "sha1": "a75d49e12923abb7cf32c4cdf29c072ec95b3e65",
+            "sha256": "bf698e2fba882ea5e07c73deaa35954af1736be8502b5e606bba19a536d88794",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017-2020 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://gitlab.gnome.org/GNOME/gtksourceview/commit/e761de9c2bee90c232875bbc41e6e73e1f63e145",
+                    "end_line": 75,
+                    "start_line": 75
+                },
+                {
+                    "url": "https://github.com/danni/gobject-list",
+                    "end_line": 78,
+                    "start_line": 78
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-item.c",
+            "type": "file",
+            "name": "amtk-menu-item.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3988,
+            "md5": "4d08a5d8170694f13f9a381af38bdfa7",
+            "sha1": "7df7821c3859ece7abbe35d176e663d38a91cf2a",
+            "sha256": "423e8ace6ea74424965bf067ab07f6bac42f2003a450fd00ae733dbaccb7de34",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                },
+                {
+                    "end_line": 77,
+                    "copyright": "Copyright 2011, 2013 Canonical Limited",
+                    "start_line": 77
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                },
+                {
+                    "holder": "Canonical Limited",
+                    "end_line": 77,
+                    "start_line": 77
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-item.h",
+            "type": "file",
+            "name": "amtk-menu-item.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 700,
+            "md5": "961b84a39639b622ffcde3828e175c40",
+            "sha1": "da8030cf09ef48d235127d8dcc3474d445586810",
+            "sha256": "81c8007ac4fd3d395f66a69a3328a8357318e2101ee70142180ae08dfa3b1315",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-shell.c",
+            "type": "file",
+            "name": "amtk-menu-shell.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9675,
+            "md5": "9a4f10fdb9020844785a71c1e9f7680c",
+            "sha1": "3b66ba6c662cc1db6f561932d846cc1051b05941",
+            "sha256": "e5435a4d0feda42a7ba254ea7b35825f0ebcce5b18c08b0c3186d1efaeb38ed4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016, 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-shell.h",
+            "type": "file",
+            "name": "amtk-menu-shell.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1831,
+            "md5": "a173e7070875650fdfb24931dfcd1c0c",
+            "sha1": "342ef9f179767809a8794e51e95f8784a8dbc88d",
+            "sha256": "e37074fa3216e713d6bb378a7fd136ddfd048b4ba4a28051b0fc5e8151bb99a5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-shortcuts.c",
+            "type": "file",
+            "name": "amtk-shortcuts.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2201,
+            "md5": "910295b29cb48a1197ac94e2760e4e41",
+            "sha1": "3f9aa59371a74cb02842239d0807911e6364514f",
+            "sha256": "ee085815ace2d1d4ca9042294c66bfec476c3c7cc5bd121d524bfb482e29baaf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2018 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-utils.c",
+            "type": "file",
+            "name": "amtk-utils.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13939,
+            "md5": "fabdaae5c83cbe7ae4c501838851615d",
+            "sha1": "00f334b34994853921eb4916d8cb31c244096adf",
+            "sha256": "ebf2638b5553fb9af97896723a9057f4d5d3c39860600ebe72878d3f268abf88",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.4,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017-2022 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-utils.h",
+            "type": "file",
+            "name": "amtk-utils.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1362,
+            "md5": "bd039a790df95ac919857a6589c2f837",
+            "sha1": "80a63799586465eed3c446099c1e770594a383c9",
+            "sha256": "5dc70d142b764f7a54424f1ac28ee3397212da0193420b7202c5449505012e43",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 2,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": " * SPDX-License-Identifier: LGPL-3.0-or-later",
+                            "match_coverage": 100.0,
+                            "matched_length": 8,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_3_0_plus-1e593b985577f21052d311139930667ebd1599cd",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-924c8f13-bbd9-a1ab-251b-57a13805470d",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 - Sebastien Wilmet <swilmet@gnome.org>",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sebastien Wilmet",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/8b08a033-d295-4c4c-82d7-23b65d7d8323"
+            ],
+            "emails": [
+                {
+                    "email": "swilmet@gnome.org",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk",
+            "type": "directory",
+            "name": "amtk",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk/amtk-enum-types.c",
+            "type": "file",
+            "name": "amtk-enum-types.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1922,
+            "md5": "071c67a48fcd88edf6b2c4a7bc6cda69",
+            "sha1": "35c9d3b12f4f9c30475b845ccd8168dc5c76e190",
+            "sha256": "43dc0c4b67ac32ae4968ee7060a8343d4ba170dde9eb11db95888e0b851e1917",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 2,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_26.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "/* This file is generated by glib-mkenums, do not modify it. This code is licensed under the same license as the containing project. Note that it links to GLib, so must comply with the LGPL linking clauses. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_26.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 75.0,
+                            "matcher": "2-aho",
+                            "end_line": 2,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl_bare_single_word.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "/* This file is generated by glib-mkenums, do not modify it. This code is licensed under the same license as the containing project. Note that it links to GLib, so must comply with the LGPL linking clauses. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 75,
+                            "rule_identifier": "lgpl_bare_single_word.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-3bd45ec4-cdcd-17a3-debb-d0a48b2b45f8",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.41,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/f4938455-57af-4004-a3b8-1c45f81850d2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk/amtk-enum-types.h",
+            "type": "file",
+            "name": "amtk-enum-types.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 534,
+            "md5": "4d021d1423a7b5a39439cc27fca1a132",
+            "sha1": "fbb5123b928eba86477d4b5a203db7ed1fdb9ade",
+            "sha256": "00cf3101cd46c90423466cba339dd3494eb9dc76630fb9408aea4731cf031982",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 2,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_26.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "/* This file is generated by glib-mkenums, do not modify it. This code is licensed under the same license as the containing project. Note that it links to GLib, so must comply with the LGPL linking clauses. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_26.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 75.0,
+                            "matcher": "2-aho",
+                            "end_line": 2,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl_bare_single_word.RULE",
+                            "from_file": null,
+                            "start_line": 2,
+                            "matched_text": "/* This file is generated by glib-mkenums, do not modify it. This code is licensed under the same license as the containing project. Note that it links to GLib, so must comply with the LGPL linking clauses. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 75,
+                            "rule_identifier": "lgpl_bare_single_word.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-3bd45ec4-cdcd-17a3-debb-d0a48b2b45f8",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.94,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9a36f61f-6767-46e7-b5ba-34deaa2b01a3-8bd29bae/f4938455-57af-4004-a3b8-1c45f81850d2"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/c8",
+            "type": "directory",
+            "name": "c8",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 209728,
+            "md5": "518e983faac67f076c5cbacceffe9575",
+            "sha1": "c2301e4a45ffb74d5daa22d1da34889537e4c1a5",
+            "sha256": "415938cd07f83e6a083c5b994c8485f436b9421a27148add9103ec6c26da4731",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=c8397a4a4ee32d6aaa3d6de6063117f07ddb9157, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-shortcuts.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/<artificial>",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk/amtk-enum-types.c"
+                ],
+                "dwarf_included_paths": [
+                    "amtk/amtk-enum-types.c",
+                    "amtk/amtk-enum-types.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/glib-2.0/gio/gaction.h",
+                    "usr/include/glib-2.0/gio/gactionmap.h",
+                    "usr/include/glib-2.0/gio/gapplication.h",
+                    "usr/include/glib-2.0/gio/gfile.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gmenu.h",
+                    "usr/include/glib-2.0/gio/gmenumodel.h",
+                    "usr/include/glib-2.0/gio/gthemedicon.h",
+                    "usr/include/glib-2.0/glib/gconvert.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/ghash.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gscanner.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gbinding.h",
+                    "usr/include/glib-2.0/gobject/gboxed.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/genums.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/gtk-3.0/gdk/gdktypes.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkaction.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkactiongroup.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h",
+                    "usr/include/gtk-3.0/gtk/gtkaccelgroup.h",
+                    "usr/include/gtk-3.0/gtk/gtkaccellabel.h",
+                    "usr/include/gtk-3.0/gtk/gtkactionable.h",
+                    "usr/include/gtk-3.0/gtk/gtkadjustment.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplication.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplicationwindow.h",
+                    "usr/include/gtk-3.0/gtk/gtkbin.h",
+                    "usr/include/gtk-3.0/gtk/gtkbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkcheckmenuitem.h",
+                    "usr/include/gtk-3.0/gtk/gtkcontainer.h",
+                    "usr/include/gtk-3.0/gtk/gtkenums.h",
+                    "usr/include/gtk-3.0/gtk/gtkimage.h",
+                    "usr/include/gtk-3.0/gtk/gtklabel.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenu.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenubar.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenuitem.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenushell.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenutoolbutton.h",
+                    "usr/include/gtk-3.0/gtk/gtkpaned.h",
+                    "usr/include/gtk-3.0/gtk/gtkrecentchooser.h",
+                    "usr/include/gtk-3.0/gtk/gtkrecentchoosermenu.h",
+                    "usr/include/gtk-3.0/gtk/gtkrecentfilter.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutsgroup.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutssection.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutsshortcut.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutswindow.h",
+                    "usr/include/gtk-3.0/gtk/gtkstatusbar.h",
+                    "usr/include/gtk-3.0/gtk/gtktoolbutton.h",
+                    "usr/include/gtk-3.0/gtk/gtktoolitem.h",
+                    "usr/include/gtk-3.0/gtk/gtktypes.h",
+                    "usr/include/gtk-3.0/gtk/gtkviewport.h",
+                    "usr/include/gtk-3.0/gtk/gtkwidget.h",
+                    "usr/include/gtk-3.0/gtk/gtkwindow.h",
+                    "usr/include/harfbuzz/hb-common.h",
+                    "usr/include/libintl.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-central-store.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-central-store.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-store.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-store.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-map.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-application-window.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-application-window.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-factory.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-factory.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-gmenu.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-init.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-item.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-item.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-shell.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-shell.h",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-utils.c",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-utils.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/glib-2.0/gio/gaction.h",
+                    "usr/include/glib-2.0/gio/gactionmap.h",
+                    "usr/include/glib-2.0/gio/gapplication.h",
+                    "usr/include/glib-2.0/gio/gfile.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gmenu.h",
+                    "usr/include/glib-2.0/gio/gmenumodel.h",
+                    "usr/include/glib-2.0/gio/gthemedicon.h",
+                    "usr/include/glib-2.0/glib/gconvert.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/ghash.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gscanner.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gbinding.h",
+                    "usr/include/glib-2.0/gobject/gboxed.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/genums.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/gtk-3.0/gdk/gdktypes.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkaction.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkactiongroup.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h",
+                    "usr/include/gtk-3.0/gtk/gtkaccelgroup.h",
+                    "usr/include/gtk-3.0/gtk/gtkaccellabel.h",
+                    "usr/include/gtk-3.0/gtk/gtkactionable.h",
+                    "usr/include/gtk-3.0/gtk/gtkadjustment.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplication.h",
+                    "usr/include/gtk-3.0/gtk/gtkapplicationwindow.h",
+                    "usr/include/gtk-3.0/gtk/gtkbin.h",
+                    "usr/include/gtk-3.0/gtk/gtkbox.h",
+                    "usr/include/gtk-3.0/gtk/gtkcheckmenuitem.h",
+                    "usr/include/gtk-3.0/gtk/gtkcontainer.h",
+                    "usr/include/gtk-3.0/gtk/gtkenums.h",
+                    "usr/include/gtk-3.0/gtk/gtkimage.h",
+                    "usr/include/gtk-3.0/gtk/gtklabel.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenu.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenubar.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenuitem.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenushell.h",
+                    "usr/include/gtk-3.0/gtk/gtkmenutoolbutton.h",
+                    "usr/include/gtk-3.0/gtk/gtkpaned.h",
+                    "usr/include/gtk-3.0/gtk/gtkrecentchooser.h",
+                    "usr/include/gtk-3.0/gtk/gtkrecentchoosermenu.h",
+                    "usr/include/gtk-3.0/gtk/gtkrecentfilter.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutsgroup.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutssection.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutsshortcut.h",
+                    "usr/include/gtk-3.0/gtk/gtkshortcutswindow.h",
+                    "usr/include/gtk-3.0/gtk/gtkstatusbar.h",
+                    "usr/include/gtk-3.0/gtk/gtktoolbutton.h",
+                    "usr/include/gtk-3.0/gtk/gtktoolitem.h",
+                    "usr/include/gtk-3.0/gtk/gtktypes.h",
+                    "usr/include/gtk-3.0/gtk/gtkviewport.h",
+                    "usr/include/gtk-3.0/gtk/gtkwidget.h",
+                    "usr/include/gtk-3.0/gtk/gtkwindow.h",
+                    "usr/include/harfbuzz/hb-common.h",
+                    "usr/include/libintl.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-central-store.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-central-store.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-store.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-info-store.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-action-map.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-application-window.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-application-window.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-factory.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-factory.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-gmenu.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-init.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-item.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-item.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-shell.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-menu-shell.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-shortcuts.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/amtk/amtk-utils.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk/amtk-enum-types.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk/amtk-enum-types.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libamtk-5.so.0-5.6.1-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/amtk-5.6.1-6.fc40.x86_64/redhat-linux-build/amtk/amtk-enum-types.h"
+        }
+    ]
+}

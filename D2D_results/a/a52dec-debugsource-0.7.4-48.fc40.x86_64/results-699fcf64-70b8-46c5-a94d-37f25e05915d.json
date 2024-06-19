@@ -1,0 +1,2983 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "699fcf64-70b8-46c5-a94d-37f25e05915d",
+            "created_date": "2024-06-13T11:08:51.461Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "20944029-f01a-414c-a037-30cf62a09267",
+                    "filename": "a52dec-debuginfo-0.7.4-48.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a52dec-debuginfo-0.7.4-48.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 44952,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "eff68908-37f2-4a15-a4e4-5230d1052679",
+                    "filename": "a52dec-debugsource-0.7.4-48.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a52dec-debugsource-0.7.4-48.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 47776,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "30d2f08f-540b-4694-86c9-f2edd03c080c",
+                    "created_date": "2024-06-13T11:08:51.469263Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "30d2f08f-540b-4694-86c9-f2edd03c080c",
+                    "task_start_date": "2024-06-13T11:08:51.495213Z",
+                    "task_end_date": "2024-06-13T11:09:22.535515Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 11:08:51.49 Pipeline [d2d] starting\n2024-06-13 11:08:51.50 Step [download_missing_inputs] starting\n2024-06-13 11:08:51.50 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a52dec-debugsource-0.7.4-48.fc40.x86_64.rpm#from\n2024-06-13 11:08:53.38 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a52dec-debuginfo-0.7.4-48.fc40.x86_64.rpm#to\n2024-06-13 11:08:55.02 Step [download_missing_inputs] completed in 4 seconds\n2024-06-13 11:08:55.03 Step [get_inputs] starting\n2024-06-13 11:08:55.03 Step [get_inputs] completed in 0 seconds\n2024-06-13 11:08:55.03 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 11:08:55.06 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 11:08:55.06 Step [extract_archives] starting\n2024-06-13 11:08:55.15 Step [extract_archives] completed in 0 seconds\n2024-06-13 11:08:55.15 Step [collect_and_create_codebase_resources] starting\n2024-06-13 11:08:55.20 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 11:08:55.20 Step [fingerprint_codebase_directories] starting\n2024-06-13 11:08:55.21 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 11:08:55.22 Step [flag_empty_files] starting\n2024-06-13 11:08:55.22 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 11:08:55.22 Step [flag_whitespace_files] starting\n2024-06-13 11:08:55.22 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 11:08:55.23 Step [flag_ignored_resources] starting\n2024-06-13 11:08:55.23 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 11:08:55.23 Step [map_about_files] starting\n2024-06-13 11:08:55.23 Step [map_about_files] completed in 0 seconds\n2024-06-13 11:08:55.23 Step [map_checksum] starting\n2024-06-13 11:08:55.24 Mapping 3 to/ resources using sha1 against from/ codebase\n2024-06-13 11:08:55.24 Step [map_checksum] completed in 0 seconds\n2024-06-13 11:08:55.25 Step [match_archives_to_purldb] starting\n2024-06-13 11:08:55.25 PurlDB is not available. Skipping.\n2024-06-13 11:08:55.25 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 11:08:55.25 Step [find_java_packages] starting\n2024-06-13 11:08:55.25 Finding Java package for 0 .java resources.\n2024-06-13 11:08:55.26 Step [find_java_packages] completed in 0 seconds\n2024-06-13 11:08:55.26 Step [map_java_to_class] starting\n2024-06-13 11:08:55.26 Mapping 0 .class resources to .java\n2024-06-13 11:08:55.26 No .java resources to map.\n2024-06-13 11:08:55.27 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 11:08:55.27 Step [map_jar_to_source] starting\n2024-06-13 11:08:55.27 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 11:08:55.27 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 11:08:55.27 Step [map_elf] starting\n2024-06-13 11:08:55.35 Mapping 3 to/ resources using paths with 24 from/ resources.\n2024-06-13 11:08:55.35 Done building from/ resources index.\n2024-06-13 11:08:55.36 WARNING: #13 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/a52dec-0.7.4-48.fc40.x86_64'\n2024-06-13 11:08:55.36 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/a52dec-0.7.4-48.fc40.x86_64'\n2024-06-13 11:08:55.37 WARNING: #3 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug'\n2024-06-13 11:08:55.38 WARNING: #16 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug'\n2024-06-13 11:08:55.38 Created 19 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug'\n2024-06-13 11:08:55.38 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/extract_a52-0.7.4-48.fc40.x86_64.debug'\n2024-06-13 11:08:55.39 WARNING: #1 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/extract_a52-0.7.4-48.fc40.x86_64.debug'\n2024-06-13 11:08:55.39 Created 2 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/extract_a52-0.7.4-48.fc40.x86_64.debug'\n2024-06-13 11:08:55.39 Step [map_elf] completed in 0 seconds\n2024-06-13 11:08:55.39 Step [map_go] starting\n2024-06-13 11:08:55.40 Mapping 0 to/ resources using paths with 24 from/ resources.\n2024-06-13 11:08:55.40 Done building from/ resources index.\n2024-06-13 11:08:55.41 Step [map_go] completed in 0 seconds\n2024-06-13 11:08:55.41 Step [match_directories_to_purldb] starting\n2024-06-13 11:08:55.42 PurlDB is not available. Skipping.\n2024-06-13 11:08:55.42 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 11:08:55.42 Step [match_resources_to_purldb] starting\n2024-06-13 11:08:55.42 PurlDB is not available. Skipping.\n2024-06-13 11:08:55.42 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 11:08:55.42 Step [map_path] starting\n2024-06-13 11:08:55.43 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 11:08:55.43 Step [map_path] completed in 0 seconds\n2024-06-13 11:08:55.43 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 11:08:55.44 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 11:08:55.44 Step [perform_house_keeping_tasks] starting\n2024-06-13 11:08:55.46 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 11:08:55.46 Step [match_purldb_resources_post_process] starting\n2024-06-13 11:08:55.46 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 11:08:55.46 0 resource processed\n2024-06-13 11:08:55.46 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 11:08:55.47 Step [remove_packages_without_resources] starting\n2024-06-13 11:08:55.47 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 11:08:55.47 Step [scan_unmapped_to_files] starting\n2024-06-13 11:09:00.49 Step [scan_unmapped_to_files] completed in 5 seconds\n2024-06-13 11:09:00.50 Step [scan_mapped_from_for_files] starting\n2024-06-13 11:09:19.66 Progress: 13% (3/22) ETA: 128 seconds (2.1 minutes)\n2024-06-13 11:09:19.86 Progress: 27% (6/22) ETA: 52 seconds\n2024-06-13 11:09:19.93 Progress: 40% (9/22) ETA: 29 seconds\n2024-06-13 11:09:20.04 Progress: 50% (11/22) ETA: 20 seconds\n2024-06-13 11:09:20.08 Progress: 63% (14/22) ETA: 12 seconds\n2024-06-13 11:09:20.30 Progress: 77% (17/22) ETA: 6 seconds\n2024-06-13 11:09:20.74 Progress: 90% (20/22) ETA: 2 seconds\n2024-06-13 11:09:22.15 Progress: 100% (22/22)\n2024-06-13 11:09:22.48 Step [scan_mapped_from_for_files] completed in 22 seconds\n2024-06-13 11:09:22.49 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 11:09:22.49 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 11:09:22.49 Step [create_local_files_packages] starting\n2024-06-13 11:09:22.52 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 11:09:22.53 Pipeline completed in 31 seconds\n",
+                    "execution_time": 31
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/747b2c2d-fb63-4098-859f-29f742a4245e",
+            "type": "local-files",
+            "namespace": "ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64",
+            "name": "747b2c2d-fb63-4098-859f-29f742a4245e",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1989,90,91,92,93,94,96,97,98 Free Software Foundation, Inc.\nCopyright (c) 1987, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 2000 Free Software Foundation, Inc.",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb",
+            "type": "local-files",
+            "namespace": "ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64",
+            "name": "93ac41d2-53f9-48b6-8319-5e90472011bb",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>\nCopyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64",
+            "type": "directory",
+            "name": "a52dec-0.7.4-48.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include",
+            "type": "directory",
+            "name": "include",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/a52.h",
+            "type": "file",
+            "name": "a52.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1895,
+            "md5": "d6cdf33963e55ee28cd1d4f5a4aa8f69",
+            "sha1": "a80025f313f6f278c0a5a78cbd9f63e7411d644f",
+            "sha256": "80a527c36bcd3a6f31fdadb05b57c81b31028a24135c998ed1378244983b24dc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 34.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/audio_out.h",
+            "type": "file",
+            "name": "audio_out.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2047,
+            "md5": "cf6e2124b5a2a2af61d368fd9eefe341",
+            "sha1": "1ab451d097c2d32f244ad70a6867946634edacd5",
+            "sha256": "666bbb2e10603f9b9ac45905ae6e0428e9d123b9efb126474abd5428750bf999",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 35.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52",
+            "type": "directory",
+            "name": "liba52",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/a52_internal.h",
+            "type": "file",
+            "name": "a52_internal.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4282,
+            "md5": "bc469cc9f27e6645b4fd444e45367206",
+            "sha1": "e7597fc1fc254cf8eb8f9236f3397588d1ca094f",
+            "sha256": "13ab9ab084af2fb9d5402dcc1262403a92d64938edfca0db5e67e6d5f4457905",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/bit_allocate.c",
+            "type": "file",
+            "name": "bit_allocate.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9485,
+            "md5": "542e3c21e535640ea68ffa368071f902",
+            "sha1": "8805d9279c5d0d7e7b45b75dc603b844f4f4fce1",
+            "sha256": "c22414e372f819632863cf8ea2c0c25474921ec321e65d0b3ffa26ec32137e8c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/bitstream.c",
+            "type": "file",
+            "name": "bitstream.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2531,
+            "md5": "5e582c218772623ccbb173e878bc9647",
+            "sha1": "16363d9b28043e9429098da223b278704e9b633d",
+            "sha256": "1a4e6ef9136d11031db96743b31dd20109e99fc674a602bbd72196546cc153d0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/bitstream.h",
+            "type": "file",
+            "name": "bitstream.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2285,
+            "md5": "96696c880a6433b6c20bbe8d9487ac91",
+            "sha1": "fa4b12eded362910e0a68855f143da6294205b6d",
+            "sha256": "57c4b8f144b6158d98d56b8dbccd61055dfa82b0fe44f78cb402b226eda34edc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/downmix.c",
+            "type": "file",
+            "name": "downmix.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16394,
+            "md5": "a348a3719eed57bcf4ef44d2b53bcd77",
+            "sha1": "4705e33a9f6085db6b6eb0192489dbba4ec9b264",
+            "sha256": "5aff3ecfb0a1f0f6cfc9374af789b40198a88304800dccd0ba923bc3d1f3623b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/imdct.c",
+            "type": "file",
+            "name": "imdct.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11671,
+            "md5": "f82dfe49a85d0f69a8dc55c167b9ffe3",
+            "sha1": "5127feac7e365d7584f7b52bcd005bff4dcde119",
+            "sha256": "1e90c68f8eef45acecf1911b75c66417cf4dbb00470d490bbd1ed506ed5e2c09",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/parse.c",
+            "type": "file",
+            "name": "parse.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 22388,
+            "md5": "5b7c2a74482d14f9a4fb4995223b687e",
+            "sha1": "730319a684d61ce0f2a6b3413136c607ff00830f",
+            "sha256": "eda3fe93024a8f9a9a0d90dd143d8a3bb2d6c0056167122b40d41301c06e08a0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/liba52/tables.h",
+            "type": "file",
+            "name": "tables.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 9666,
+            "md5": "cb0387f5a2efe674dbaa69c2ae74afb1",
+            "sha1": "ef3515fd98aa4cedc51723d947fcddc8a947c010",
+            "sha256": "97023a97e67a32dea43220a10446e1fbb5904a52adb0b8e158cd51dba5230d55",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao",
+            "type": "directory",
+            "name": "libao",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_aif.c",
+            "type": "file",
+            "name": "audio_out_aif.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3924,
+            "md5": "a820d7d08793a35339b8a0fe1727e4b5",
+            "sha1": "a2a6c2628579b879d29c6f3d23c6f65bff8cf308",
+            "sha256": "e234c40c1104aeee0ca9e0238a2424d0a7c6b07544b9b30fbcfa28a6345adcd5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out.c",
+            "type": "file",
+            "name": "audio_out.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2701,
+            "md5": "648b3ee114e70de93535b7191e1b4368",
+            "sha1": "26591d9c874efacb6d1cb3fc0c6b3f110317c14c",
+            "sha256": "1e142762f798a4f990cbff26d5eed45fc36851a90ec213cc9a7ca358090844f0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_float.c",
+            "type": "file",
+            "name": "audio_out_float.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1807,
+            "md5": "ef814d9e64c54f35e6fdcd2ac4750e25",
+            "sha1": "97de8e5db34278e550b152bc3f97e83fe2109de8",
+            "sha256": "a35f2a82b11429758392470aa8d5c3c2083835f3a8a9a2788d53cacf00963a5d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_internal.h",
+            "type": "file",
+            "name": "audio_out_internal.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1494,
+            "md5": "bfc2e5e356556d329187a33ff6ccb205",
+            "sha1": "92df75f76d96193be68e6fac8302678cbbaaf93a",
+            "sha256": "f1fea6f173608fc05cbcfcf82c0a74fa6457a3cdd32282cd504ccf7e9fdb0ae2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 45.99,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_null.c",
+            "type": "file",
+            "name": "audio_out_null.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2025,
+            "md5": "f8c7a4029f39ed0e62e48aabb6e09c10",
+            "sha1": "85137eb7a7b329eb2739375b4d2ba40d70fc6a64",
+            "sha256": "dab2d01be7da1ea7024943904e11c97790cb3c5362447aa1f8122742c58a1f79",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 36.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_oss.c",
+            "type": "file",
+            "name": "audio_out_oss.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4774,
+            "md5": "95bf432f1202433b3cbaedf6af077ce8",
+            "sha1": "06100ea401c38fc1a2ea3178ddc4721dc1b4ed07",
+            "sha256": "6e2b43b3a34b7b9b1325b9df9e0183628c398031719ed5051f0088033b6fe17c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.96,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_peak.c",
+            "type": "file",
+            "name": "audio_out_peak.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1607,
+            "md5": "ec29d40e17118ffb50fa6b6d5c907d45",
+            "sha1": "f5c2f38574aa159eb7db8f6f901232203a04fe32",
+            "sha256": "a6b5d0d926f84d72643400acc8005586b0a17af8a1a9f4edf305593b87b8b129",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_wav.c",
+            "type": "file",
+            "name": "audio_out_wav.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3777,
+            "md5": "09d26c43b01e1877ce7264d8e7d96d8c",
+            "sha1": "640951ac65513ea064b014afccb3ffb99f3a6f89",
+            "sha256": "d145d7f86c7fa1eebe3edd935faa9bb7613984a9caf9eee19ef6624a2acddd7e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/float2s16.c",
+            "type": "file",
+            "name": "float2s16.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4366,
+            "md5": "48e466d86b06d5694f0af37e8e579b57",
+            "sha1": "3d84dec39325442db5a1bc166b9b798ca197f4dc",
+            "sha256": "81eb1944f2e6545b6021935de7a2a7d75e1d192e96b252c62149995bf57625b9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/a52dec.c",
+            "type": "file",
+            "name": "a52dec.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14376,
+            "md5": "0f1515a538864013fa74bba771dd327a",
+            "sha1": "0bb9ce3f646b3a11a58b811c94c7e8ffd95144d4",
+            "sha256": "75da8fa890c0e4f9c2b8d39b2d58cf5f6b1aa70e50da2f006cbd38b4680d5933",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/extract_a52.c",
+            "type": "file",
+            "name": "extract_a52.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8829,
+            "md5": "aa541f7035c5a6846be09155c00cd740",
+            "sha1": "9215c3a38d06cd153180e97b902e964d62f76ab9",
+            "sha256": "278e065148112fd0dda1e90fad398b7c55b0aa0dc5ac730e75a577bc008c8505",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * a52dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * a52dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-e425ecda-d6b8-530a-c41b-7ab510d82666",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://liba52.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.c",
+            "type": "file",
+            "name": "getopt.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 30212,
+            "md5": "1f944f0520e4f36116fef5b7a1a23013",
+            "sha1": "141862fab7a4002aa88bf350cda422be583cded9",
+            "sha256": "c321664453bfd73b90f5670fb04b5708231f5688cd28fb0e37748e05fca5d6b5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 22,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_3.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "   The GNU C Library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Library General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   The GNU C Library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Library General Public License for more details.\n\n   You should have received a copy of the GNU Library General Public\n   License along with the GNU C Library; see the file COPYING.LIB.  If not,\n   write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n   Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 127,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_3.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-debe1d6b-3524-d7f0-df9e-815f342a56f3",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.05,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1987, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 2000 Free Software Foundation, Inc.",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/747b2c2d-fb63-4098-859f-29f742a4245e"
+            ],
+            "emails": [
+                {
+                    "email": "drepper@gnu.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.h",
+            "type": "file",
+            "name": "getopt.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5861,
+            "md5": "f2808bcbaa3cba567accc39972127242",
+            "sha1": "e45a594b0352e9c1eb835238c12e2680b71e4379",
+            "sha256": "cd05e82437c58cf0ae5bcb5326d28a90d13ba6742ad899227020ecfd33edb6fe",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_3.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "   The GNU C Library is free software; you can redistribute it and/or\n   modify it under the terms of the GNU Library General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   The GNU C Library is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   Library General Public License for more details.\n\n   You should have received a copy of the GNU Library General Public\n   License along with the GNU C Library; see the file COPYING.LIB.  If not,\n   write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n   Boston, MA 02111-1307, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 127,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_3.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-debe1d6b-3524-d7f0-df9e-815f342a56f3",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 1989,90,91,92,93,94,96,97,98 Free Software Foundation, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/747b2c2d-fb63-4098-859f-29f742a4245e"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/gettimeofday.c",
+            "type": "file",
+            "name": "gettimeofday.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1259,
+            "md5": "19283e7ea0df450c8b314afadf178fbb",
+            "sha1": "f3c45fbbb6168741c5196b780fe252ec11d6201e",
+            "sha256": "5d48dfc1e286946730b6c48996c5dd069c0a890ccd3ac15de0e74e749f3f18ad",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.09,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_654.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * mpeg2dec is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * mpeg2dec is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 109,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_654.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-88f2bc2d-8634-b216-2733-8fde007b64ea",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 57.67,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2000-2002 Michel Lespinasse <walken@zoy.org>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michel Lespinasse",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Aaron Holtzman",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/ea78035e-2bc5-480a-a726-09ea754ca754-699fcf64/93ac41d2-53f9-48b6-8319-5e90472011bb"
+            ],
+            "emails": [
+                {
+                    "email": "walken@zoy.org",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "aholtzma@ess.engr.uvic.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://libmpeg2.sourceforge.net/",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003154cbfccb5f24fd7286cc0d30a0b92bd",
+                "directory_structure": "000000033d8aba413731f0683984cb3753a3e17c"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003154cbfccb5f24fd7286cc0d30a0b92bd",
+                "directory_structure": "000000039429d6c068a67ec1ec280812a87e9a95"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003154cbfccb5f24fd7286cc0d30a0b92bd",
+                "directory_structure": "00000003e3e5e8a5c479a766ead2a44d0a36c2fb"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003154cbfccb5f24fd7286cc0d30a0b92bd",
+                "directory_structure": "0000000339622e9015d7f4493b4e9f767638ecd1"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/2e",
+            "type": "directory",
+            "name": "2e",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/6a",
+            "type": "directory",
+            "name": "6a",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/a52dec-0.7.4-48.fc40.x86_64",
+            "type": "file",
+            "name": "a52dec-0.7.4-48.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 4799,
+            "md5": "7f708197920177f105c9a6ae0de47339",
+            "sha1": "3948894efdf458c05ade21774279e084966da255",
+            "sha256": "dae4702b4005da95f95f30da06d537f1906b977df357028e9d4bc5173ac97635",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=4597e905f3675058c44f8611394254af2cf9882e, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/errno.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/errno.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000021148aa00a4a204c4282cc0410a0b822c",
+                "directory_structure": "0000000208a89608891405020b0002402c0c2610"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000021148aa00a4a204c4282cc0410a0b822c",
+                "directory_structure": "0000000206c00082280448304011408004510820"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "type": "file",
+            "name": "a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 79088,
+            "md5": "c2cf0d47faa5da18b1c678b4d4ae4e3a",
+            "sha1": "12a76d84e087568cb540d94aa88d286b854f8e27",
+            "sha256": "26a324a1d762a6e19d78afd62facb374058891022e713266055c4b095e278b17",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=2e1f02e93d6b9a04bc4b1149c22d1c8f47a436a4, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_aif.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_float.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_null.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_oss.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_peak.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_wav.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/float2s16.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<artificial>",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/gettimeofday.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/a52.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/a52.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/audio_out.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/audio_out.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_aif.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_internal.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_oss.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_peak.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_wav.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/float2s16.c",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<built-in>",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/a52dec.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/extract_a52-0.7.4-48.fc40.x86_64.debug",
+            "type": "file",
+            "name": "extract_a52-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 33896,
+            "md5": "4ee381ecc66f92a6b589f6a42acc5a08",
+            "sha1": "872750851f75f0ace46a80fb02ab17c399249e09",
+            "sha256": "023c16e441bab51aa126089e63265dd76e9aa71c245a6a3d824f61017a68744b",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=6aff22519edf08237c5e1a795e21f873c0f47834, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<artificial>",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<built-in>",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/extract_a52.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src",
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/a52.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/include/audio_out.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_aif.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_aif.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_float.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_internal.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_null.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_oss.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_oss.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_peak.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_peak.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_wav.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/audio_out_wav.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/float2s16.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/libao/float2s16.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/a52dec.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/extract_a52-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/extract_a52.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/extract_a52-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/a52dec-0.7.4-48.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/getopt.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a52dec-0.7.4-48.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/a52dec-0.7.4-48.fc40.x86_64/src/gettimeofday.c"
+        }
+    ]
+}

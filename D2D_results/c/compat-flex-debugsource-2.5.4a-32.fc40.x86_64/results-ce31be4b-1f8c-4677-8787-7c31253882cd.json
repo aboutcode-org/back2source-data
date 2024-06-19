@@ -1,0 +1,2010 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "ce31be4b-1f8c-4677-8787-7c31253882cd",
+            "created_date": "2024-06-17T14:40:52.547Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "0300d406-587d-4115-ab80-6335110c00e9",
+                    "filename": "compat-flex-debuginfo-2.5.4a-32.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compat-flex-debuginfo-2.5.4a-32.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 114076,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "009ca1c5-4f25-47e9-88a6-1b8b6d165cad",
+                    "filename": "compat-flex-debugsource-2.5.4a-32.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compat-flex-debugsource-2.5.4a-32.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 96469,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "da1fdb40-99d2-4cde-ad00-fb30dfe779b0",
+                    "created_date": "2024-06-17T14:40:52.555947Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "da1fdb40-99d2-4cde-ad00-fb30dfe779b0",
+                    "task_start_date": "2024-06-17T14:40:52.580273Z",
+                    "task_end_date": "2024-06-17T14:41:17.521247Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 14:40:52.58 Pipeline [d2d] starting\n2024-06-17 14:40:52.58 Step [download_missing_inputs] starting\n2024-06-17 14:40:52.59 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compat-flex-debugsource-2.5.4a-32.fc40.x86_64.rpm#from\n2024-06-17 14:40:54.49 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/compat-flex-debuginfo-2.5.4a-32.fc40.x86_64.rpm#to\n2024-06-17 14:40:56.95 Step [download_missing_inputs] completed in 4 seconds\n2024-06-17 14:40:56.95 Step [get_inputs] starting\n2024-06-17 14:40:56.96 Step [get_inputs] completed in 0 seconds\n2024-06-17 14:40:56.96 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 14:40:57.01 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 14:40:57.01 Step [extract_archives] starting\n2024-06-17 14:40:57.09 Step [extract_archives] completed in 0 seconds\n2024-06-17 14:40:57.10 Step [collect_and_create_codebase_resources] starting\n2024-06-17 14:40:57.13 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 14:40:57.13 Step [fingerprint_codebase_directories] starting\n2024-06-17 14:40:57.14 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 14:40:57.14 Step [flag_empty_files] starting\n2024-06-17 14:40:57.15 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 14:40:57.15 Step [flag_whitespace_files] starting\n2024-06-17 14:40:57.15 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 14:40:57.15 Step [flag_ignored_resources] starting\n2024-06-17 14:40:57.16 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 14:40:57.16 Step [map_about_files] starting\n2024-06-17 14:40:57.16 Step [map_about_files] completed in 0 seconds\n2024-06-17 14:40:57.16 Step [map_checksum] starting\n2024-06-17 14:40:57.17 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 14:40:57.18 Step [map_checksum] completed in 0 seconds\n2024-06-17 14:40:57.18 Step [match_archives_to_purldb] starting\n2024-06-17 14:40:57.18 PurlDB is not available. Skipping.\n2024-06-17 14:40:57.18 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 14:40:57.19 Step [find_java_packages] starting\n2024-06-17 14:40:57.19 Finding Java package for 0 .java resources.\n2024-06-17 14:40:57.20 Step [find_java_packages] completed in 0 seconds\n2024-06-17 14:40:57.20 Step [map_java_to_class] starting\n2024-06-17 14:40:57.21 Mapping 0 .class resources to .java\n2024-06-17 14:40:57.22 No .java resources to map.\n2024-06-17 14:40:57.22 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 14:40:57.23 Step [map_jar_to_source] starting\n2024-06-17 14:40:57.23 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 14:40:57.23 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 14:40:57.23 Step [map_elf] starting\n2024-06-17 14:40:57.49 Mapping 1 to/ resources using paths with 16 from/ resources.\n2024-06-17 14:40:57.49 Done building from/ resources index.\n2024-06-17 14:40:57.50 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug'\n2024-06-17 14:40:57.51 WARNING: #14 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug'\n2024-06-17 14:40:57.51 Created 16 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug'\n2024-06-17 14:40:57.52 Step [map_elf] completed in 0 seconds\n2024-06-17 14:40:57.52 Step [map_go] starting\n2024-06-17 14:40:57.53 Mapping 0 to/ resources using paths with 16 from/ resources.\n2024-06-17 14:40:57.53 Done building from/ resources index.\n2024-06-17 14:40:57.53 Step [map_go] completed in 0 seconds\n2024-06-17 14:40:57.54 Step [match_directories_to_purldb] starting\n2024-06-17 14:40:57.54 PurlDB is not available. Skipping.\n2024-06-17 14:40:57.54 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 14:40:57.54 Step [match_resources_to_purldb] starting\n2024-06-17 14:40:57.54 PurlDB is not available. Skipping.\n2024-06-17 14:40:57.54 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 14:40:57.55 Step [map_path] starting\n2024-06-17 14:40:57.55 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 14:40:57.56 Step [map_path] completed in 0 seconds\n2024-06-17 14:40:57.56 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 14:40:57.58 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 14:40:57.58 Step [perform_house_keeping_tasks] starting\n2024-06-17 14:40:57.61 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 14:40:57.61 Step [match_purldb_resources_post_process] starting\n2024-06-17 14:40:57.62 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 14:40:57.62 0 resource processed\n2024-06-17 14:40:57.63 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 14:40:57.63 Step [remove_packages_without_resources] starting\n2024-06-17 14:40:57.64 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 14:40:57.64 Step [scan_unmapped_to_files] starting\n2024-06-17 14:41:00.55 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 14:41:00.55 Step [scan_mapped_from_for_files] starting\n2024-06-17 14:41:13.90 Progress: 12% (2/16) ETA: 98 seconds (1.6 minutes)\n2024-06-17 14:41:14.01 Progress: 25% (4/16) ETA: 40 seconds\n2024-06-17 14:41:14.82 Progress: 37% (6/16) ETA: 24 seconds\n2024-06-17 14:41:15.51 Progress: 50% (8/16) ETA: 15 seconds\n2024-06-17 14:41:15.74 Progress: 62% (10/16) ETA: 9 seconds\n2024-06-17 14:41:15.85 Progress: 75% (12/16) ETA: 5 seconds\n2024-06-17 14:41:15.95 Progress: 87% (14/16) ETA: 2 seconds\n2024-06-17 14:41:17.27 Progress: 100% (16/16)\n2024-06-17 14:41:17.49 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-17 14:41:17.49 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 14:41:17.50 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 14:41:17.50 Step [create_local_files_packages] starting\n2024-06-17 14:41:17.51 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 14:41:17.51 Pipeline completed in 25 seconds\n",
+                    "execution_time": 24
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe",
+            "type": "local-files",
+            "namespace": "c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b",
+            "name": "aad51eb6-1b89-4a10-bae1-9b576ae00bbe",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1990 The Regents of the University of California",
+            "holder": "",
+            "declared_license_expression": "flex-2.5",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64",
+            "type": "directory",
+            "name": "compat-flex-2.5.4a-32.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/ccl.c",
+            "type": "file",
+            "name": "ccl.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3734,
+            "md5": "47f61758363818fdf2fd296fee2bd785",
+            "sha1": "84f1bb45de7559e424f741ab77295612a0c18aa2",
+            "sha256": "727df430dc3cfec236c11bfa7396a255ebb33acca02c023009f04b28d2205a9a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/dfa.c",
+            "type": "file",
+            "name": "dfa.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 25961,
+            "md5": "557dcb787a64bf268cbd0c4e36546704",
+            "sha1": "4e325af97f5724a8cfa77e4e018407de641c39bf",
+            "sha256": "a9752846863e0244b763ea23dde92dc2bd665855be7554ae4c16a4d752ff27fa",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/ecs.c",
+            "type": "file",
+            "name": "ecs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5679,
+            "md5": "0275eaf11694225d72a4bff3f7af2dfc",
+            "sha1": "27668e88930945bd99134fb3341bf50c18df7dc9",
+            "sha256": "d35ba07f083cea26c188070926f7a155c41fea219667105898d209bdcc826800",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.89,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/flexdef.h",
+            "type": "file",
+            "name": "flexdef.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 36162,
+            "md5": "4539df577db37ca595e1dd105251d5c2",
+            "sha1": "24214205c4313276581dbfca06f14015eb55b27f",
+            "sha256": "19c9111d3bcf4b858a91a91bb5ce4157e9b45d585aa835167fa69804b9c1fef6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/gen.c",
+            "type": "file",
+            "name": "gen.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 37182,
+            "md5": "7f34b4e4ddad63b20f6ca2a877bc4bf9",
+            "sha1": "34954c0044240fbb2072ee6a19aa21a977c5250b",
+            "sha256": "a5bf3c96f4399dd45eb3ec65b1d0e612acef0db88e274ce38fe00386e6c28200",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/main.c",
+            "type": "file",
+            "name": "main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 28785,
+            "md5": "efe410ecda852f58fb6301133ce3c0bc",
+            "sha1": "f9ebfb129d68610fcc01eeebb04907f8e8c96270",
+            "sha256": "a6c7f59a0b0ec09d019c630aeb301a968d0dc0b641324df96d0d1ed04d0a9194",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n *\n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 31,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 31
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 31,
+                    "start_line": 31
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/misc.c",
+            "type": "file",
+            "name": "misc.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16308,
+            "md5": "ed87d046e67b8c96cb32b2173439eb23",
+            "sha1": "d63ca64a5422a4fe00d7e2771dc550d0ae433703",
+            "sha256": "8bcc3f04c791427d96f6422a772b353f3c64792bba7e308dd361c4d429ba8ec5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.67,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/nfa.c",
+            "type": "file",
+            "name": "nfa.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17313,
+            "md5": "9fbdf0ecebc7e68bb5985ef969fe0285",
+            "sha1": "2e7249e0216b9bd7d329ab4da23e167458777b0d",
+            "sha256": "d0e11afe7e5bb5b0fd4a34e04ada1b30367c2f8912ef15fcdd6f571c8985e393",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.c",
+            "type": "file",
+            "name": "parse.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 72467,
+            "md5": "ade54d77c8d40274962df90607c5c210",
+            "sha1": "5f9264a90fb61e8b6153799173f9ac5403a553c3",
+            "sha256": "f2171afe42421956373719d4902f57ecc471f1838c73a054da44af4eff024531",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 47,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 25,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.34,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 25,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 25
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 25,
+                    "start_line": 25
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 40,
+                    "start_line": 39
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.y",
+            "type": "file",
+            "name": "parse.y",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".y",
+            "size": 17808,
+            "md5": "90c0df2e9462eeb56bb753ffb5e776da",
+            "sha1": "2cec5d32fbfccdc323e83b017a36d5c86dce7daa",
+            "sha256": "9885b7eb1ff144b435a912b4bec11ba55305884b71b76bbd8a0654645a604ca4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 33,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.81,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 11
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 26,
+                    "start_line": 25
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/scan.c",
+            "type": "file",
+            "name": "scan.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 110837,
+            "md5": "842e4736f8edd44c86885c04d3343fcc",
+            "sha1": "369513c0a5123f262515dceb2a6d49bf865970da",
+            "sha256": "c3d9a4491580728d7c1a55258a883712262c67f672a90f6f74a8b9b5d59ebb64",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 1269,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 1247,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.72,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1247,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 1247
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 1247,
+                    "start_line": 1247
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 1262,
+                    "start_line": 1261
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/scan.l",
+            "type": "file",
+            "name": "scan.l",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".l",
+            "size": 15164,
+            "md5": "3f3c48486eefbab0220e11c1c7b959ef",
+            "sha1": "a2dcdfca507588a4e5c56c3e45d59395d7399a07",
+            "sha256": "bf06ed5f80ec165982c1d73032d42c39a57825cab010740894005bebf20a93b7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 27,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.02,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 20,
+                    "start_line": 19
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/skel.c",
+            "type": "file",
+            "name": "skel.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 42179,
+            "md5": "e9310fdf027239a44ed5b2e0cc974717",
+            "sha1": "5aebca1a830f2726a8e58f1ac140984da3e3a14b",
+            "sha256": "70f4844dff6b41263bc90c731f62e0b6e46c0996a97a59e5390fd81179ba17d3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/sym.c",
+            "type": "file",
+            "name": "sym.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6265,
+            "md5": "bf1cdd183d09ba7c67c85c9f71239726",
+            "sha1": "931041f55d07b8daccfe0eb0f97982b9cc2c4fe4",
+            "sha256": "81cb1b479c70f9e2c7813b38bcaeb45bc6b0d8f8948aa5a4b67aa6b198b754df",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.7,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/tblcmp.c",
+            "type": "file",
+            "name": "tblcmp.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 23572,
+            "md5": "2f4458f9979713b12e60acb83413964e",
+            "sha1": "6cf90e940c60fbd1eb6a77c6ff71db8dcdfdf00c",
+            "sha256": "9d92687b08554e94f17a61351a96ac2ed0bffbd13fd961d8635c2f56dd6e689a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/yylex.c",
+            "type": "file",
+            "name": "yylex.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4306,
+            "md5": "745f1628cb87e935e0236ba9176958d9",
+            "sha1": "88be495a061474159a77cf55e0bc543954517112",
+            "sha256": "38ef5c92b1dfcafa75b44637e6da9758ea9bc570ccb8ca55a20290028820d8f2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "flex-2.5",
+            "detected_license_expression_spdx": "BSD-3-Clause-flex",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.0,
+                            "matcher": "3-seq",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/flex-2.5_12.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * Copyright (c) 1990 The Regents of the University of California.\n * All rights reserved.\n *\n * This code is derived from software contributed to Berkeley by\n * Vern Paxson.\n * \n * The United States Government has rights in this work pursuant\n * to contract no. DE-AC03-76SF00098 between the United States\n * Department of Energy and the University of California.\n *\n * Redistribution and use in source and binary forms with or without\n * modification are permitted provided that: (1) source distributions retain\n * this entire copyright notice and comment, and (2) distributions including\n * binaries display the following acknowledgement:  ``This product includes\n * software developed by the University of California, Berkeley and its\n * contributors'' in the documentation or other materials provided with the\n * distribution and in all advertising materials mentioning features or use\n * of this software.  Neither the name of the University nor the names of\n * its contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED\n * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\n * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 84.0,
+                            "matched_length": 126,
+                            "rule_relevance": 100,
+                            "rule_identifier": "flex-2.5_12.RULE",
+                            "license_expression": "flex-2.5",
+                            "spdx_license_expression": "BSD-3-Clause-flex"
+                        }
+                    ],
+                    "identifier": "flex_2_5-97f12f53-0bcc-cecd-0a6e-1a58cd35b55c",
+                    "license_expression": "flex-2.5",
+                    "license_expression_spdx": "BSD-3-Clause-flex"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1990 The Regents of the University of California",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Regents of the University of California",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "the University of California, Berkeley and its contributors",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c469e2f8-5f86-48fc-bfe5-fae02c914e99-ce31be4b/aad51eb6-1b89-4a10-bae1-9b576ae00bbe"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/72",
+            "type": "directory",
+            "name": "72",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "type": "file",
+            "name": "flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 287504,
+            "md5": "8961269262fbe0ea33aefe56d91a08fb",
+            "sha1": "5ccc2e7554df82ec5bc7637e8ae53ceb7478c820",
+            "sha256": "640675482fea6a4a34bdd167a36098909241b1dd9dbe239a990c8cacfc4338ba",
+            "sha512": "",
+            "mime_type": "application/x-executable",
+            "file_type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=72f503c4d5935b60d2d8414ac403e9e47f0db857, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/<artificial>",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/ecs.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/skel.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/<built-in>",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/ccl.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/dfa.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/flexdef.h",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/gen.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/main.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/misc.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/nfa.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.y",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.y",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/scan.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/scan.l",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/sym.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/tblcmp.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/y.tab.c",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/yylex.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/<built-in>",
+                    "usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/y.tab.c"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/ccl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/dfa.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/ecs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/flexdef.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/gen.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/misc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/nfa.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/parse.y"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/scan.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/scan.l"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/skel.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/sym.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/tblcmp.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/flex-2.5.4a-2.5.4a-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/compat-flex-2.5.4a-32.fc40.x86_64/yylex.c"
+        }
+    ]
+}

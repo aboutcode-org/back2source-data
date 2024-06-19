@@ -1,0 +1,2983 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "276bad9e-206f-49d5-9b74-9aa6aa69f0a8",
+            "created_date": "2024-06-13T10:56:47.978Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "220c7120-92a6-4da6-8f63-78e2d713a2fe",
+                    "filename": "adns-debuginfo-1.6.0-12.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adns-debuginfo-1.6.0-12.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 141876,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "0d7b5369-2853-4f10-992d-f8d2ac12a64f",
+                    "filename": "adns-debugsource-1.6.0-12.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adns-debugsource-1.6.0-12.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 87322,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "c723dc19-c19b-4538-b8d6-0d27b35d459e",
+                    "created_date": "2024-06-13T10:56:47.985638Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "c723dc19-c19b-4538-b8d6-0d27b35d459e",
+                    "task_start_date": "2024-06-13T10:56:48.012372Z",
+                    "task_end_date": "2024-06-13T10:57:17.293521Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 10:56:48.01 Pipeline [d2d] starting\n2024-06-13 10:56:48.01 Step [download_missing_inputs] starting\n2024-06-13 10:56:48.02 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adns-debugsource-1.6.0-12.fc40.x86_64.rpm#from\n2024-06-13 10:56:50.64 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adns-debuginfo-1.6.0-12.fc40.x86_64.rpm#to\n2024-06-13 10:56:52.87 Step [download_missing_inputs] completed in 5 seconds\n2024-06-13 10:56:52.88 Step [get_inputs] starting\n2024-06-13 10:56:52.89 Step [get_inputs] completed in 0 seconds\n2024-06-13 10:56:52.89 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 10:56:52.95 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 10:56:52.96 Step [extract_archives] starting\n2024-06-13 10:56:53.06 Step [extract_archives] completed in 0 seconds\n2024-06-13 10:56:53.06 Step [collect_and_create_codebase_resources] starting\n2024-06-13 10:56:53.10 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 10:56:53.10 Step [fingerprint_codebase_directories] starting\n2024-06-13 10:56:53.11 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 10:56:53.12 Step [flag_empty_files] starting\n2024-06-13 10:56:53.12 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 10:56:53.12 Step [flag_whitespace_files] starting\n2024-06-13 10:56:53.12 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 10:56:53.13 Step [flag_ignored_resources] starting\n2024-06-13 10:56:53.13 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 10:56:53.13 Step [map_about_files] starting\n2024-06-13 10:56:53.14 Step [map_about_files] completed in 0 seconds\n2024-06-13 10:56:53.14 Step [map_checksum] starting\n2024-06-13 10:56:53.14 Mapping 2 to/ resources using sha1 against from/ codebase\n2024-06-13 10:56:53.15 Step [map_checksum] completed in 0 seconds\n2024-06-13 10:56:53.16 Step [match_archives_to_purldb] starting\n2024-06-13 10:56:53.16 PurlDB is not available. Skipping.\n2024-06-13 10:56:53.16 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 10:56:53.16 Step [find_java_packages] starting\n2024-06-13 10:56:53.16 Finding Java package for 0 .java resources.\n2024-06-13 10:56:53.17 Step [find_java_packages] completed in 0 seconds\n2024-06-13 10:56:53.17 Step [map_java_to_class] starting\n2024-06-13 10:56:53.17 Mapping 0 .class resources to .java\n2024-06-13 10:56:53.18 No .java resources to map.\n2024-06-13 10:56:53.18 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 10:56:53.18 Step [map_jar_to_source] starting\n2024-06-13 10:56:53.18 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 10:56:53.18 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 10:56:53.19 Step [map_elf] starting\n2024-06-13 10:56:53.59 Mapping 2 to/ resources using paths with 22 from/ resources.\n2024-06-13 10:56:53.59 Done building from/ resources index.\n2024-06-13 10:56:53.60 WARNING: #27 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/adns-1.6.0-12.fc40.x86_64'\n2024-06-13 10:56:53.60 Created 2 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/adns-1.6.0-12.fc40.x86_64'\n2024-06-13 10:56:53.60 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug'\n2024-06-13 10:56:53.62 WARNING: #34 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug'\n2024-06-13 10:56:53.62 Created 14 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug'\n2024-06-13 10:56:53.62 Step [map_elf] completed in 0 seconds\n2024-06-13 10:56:53.62 Step [map_go] starting\n2024-06-13 10:56:53.63 Mapping 0 to/ resources using paths with 22 from/ resources.\n2024-06-13 10:56:53.64 Done building from/ resources index.\n2024-06-13 10:56:53.64 Step [map_go] completed in 0 seconds\n2024-06-13 10:56:53.64 Step [match_directories_to_purldb] starting\n2024-06-13 10:56:53.64 PurlDB is not available. Skipping.\n2024-06-13 10:56:53.65 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 10:56:53.65 Step [match_resources_to_purldb] starting\n2024-06-13 10:56:53.65 PurlDB is not available. Skipping.\n2024-06-13 10:56:53.65 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 10:56:53.65 Step [map_path] starting\n2024-06-13 10:56:53.66 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 10:56:53.66 Step [map_path] completed in 0 seconds\n2024-06-13 10:56:53.66 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 10:56:53.67 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 10:56:53.68 Step [perform_house_keeping_tasks] starting\n2024-06-13 10:56:53.69 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 10:56:53.69 Step [match_purldb_resources_post_process] starting\n2024-06-13 10:56:53.69 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 10:56:53.70 0 resource processed\n2024-06-13 10:56:53.70 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 10:56:53.70 Step [remove_packages_without_resources] starting\n2024-06-13 10:56:53.70 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 10:56:53.71 Step [scan_unmapped_to_files] starting\n2024-06-13 10:56:57.74 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-13 10:56:57.74 Step [scan_mapped_from_for_files] starting\n2024-06-13 10:57:13.23 Progress: 12% (2/16) ETA: 114 seconds (1.9 minutes)\n2024-06-13 10:57:13.65 Progress: 25% (4/16) ETA: 48 seconds\n2024-06-13 10:57:13.80 Progress: 37% (6/16) ETA: 27 seconds\n2024-06-13 10:57:14.10 Progress: 50% (8/16) ETA: 16 seconds\n2024-06-13 10:57:14.74 Progress: 62% (10/16) ETA: 10 seconds\n2024-06-13 10:57:14.92 Progress: 75% (12/16) ETA: 6 seconds\n2024-06-13 10:57:15.13 Progress: 87% (14/16) ETA: 3 seconds\n2024-06-13 10:57:16.91 Progress: 100% (16/16)\n2024-06-13 10:57:17.25 Step [scan_mapped_from_for_files] completed in 20 seconds\n2024-06-13 10:57:17.26 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 10:57:17.26 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 10:57:17.26 Step [create_local_files_packages] starting\n2024-06-13 10:57:17.28 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 10:57:17.29 Pipeline completed in 29 seconds\n",
+                    "execution_time": 29
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828",
+            "type": "local-files",
+            "namespace": "280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e",
+            "name": "3e405d97-caba-4c7c-9f4a-18aee2c71828",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson\nCopyright (c) 2014 Mark Wooding\nCopyright (c) 1999-2000,2003,2006 Tony Finch\nCopyright (c) 1991 Massachusetts Institute of Technology",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/5cf5a83c-714c-4326-ab8f-a4834154533a",
+            "type": "local-files",
+            "namespace": "280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e",
+            "name": "5cf5a83c-714c-4326-ab8f-a4834154533a",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016 Ian Jackson\nCopyright (c) 1999-2000,2003,2006 Tony Finch\nCopyright (c) 1991 Massachusetts Institute of Technology",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus AND lgpl-2.0-plus AND gpl-1.0-plus AND unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64",
+            "type": "directory",
+            "name": "adns-1.6.0-12.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client",
+            "type": "directory",
+            "name": "client",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adh-main.c",
+            "type": "file",
+            "name": "adh-main.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7148,
+            "md5": "873400098dc26689c785af138311ca45",
+            "sha1": "cf20dab8b45a742f5d204ac26ab702bf56616f26",
+            "sha256": "e6763fb7f73dba5c740cc5cc2035056217cc60f45e0c19db7058e33f4119ade6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adh-opts.c",
+            "type": "file",
+            "name": "adh-opts.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13992,
+            "md5": "47b7a04b7a78d1d59edf13e6362d0894",
+            "sha1": "4e139e796c3af3a887aac5ce7d1a145c2a2a25b2",
+            "sha256": "540a79cd586184fd0e2b90d9098993caf61478996e3f4136ffdb72084652d2ad",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adh-query.c",
+            "type": "file",
+            "name": "adh-query.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9083,
+            "md5": "4c3d9ed9b969a5a57dcb6c192ad08ef4",
+            "sha1": "0b845625eaf6dd82df8fd20c693f78e796208f8f",
+            "sha256": "394bd806cb8375afc23553635ec5bfd1ef30232359e521983b4e5a0d55866d51",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adnsheloex.c",
+            "type": "file",
+            "name": "adnsheloex.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7539,
+            "md5": "fcc324532e2f2a083688d8bfaddd3310",
+            "sha1": "389856cd8a726a70365f913dd0402d9f29fe70a4",
+            "sha256": "8969879ceafb897bc60b1b7ada14c467465b799851cfb58866b07baddf5d9559",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adnshost.h",
+            "type": "file",
+            "name": "adnshost.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3771,
+            "md5": "81caa27b25ff5b8fe8a8d44f26453229",
+            "sha1": "88ce12543fe94f1338d23f41b97526f90d4b0c22",
+            "sha256": "e068ef5a65190b5f4dd29e6090358b4d35d70903996bb5429ae9c4a101dab088",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adnslogres.c",
+            "type": "file",
+            "name": "adnslogres.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7972,
+            "md5": "bb5887fa29b9f040ed472a7cb947e73f",
+            "sha1": "e1a71079ad7dfe73d55ab389b9bf73ac2436dc12",
+            "sha256": "2f3309920782e4b84dc57232c7a25793285de8f3c2667dc524e371b1b95a9312",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/adnsresfilter.c",
+            "type": "file",
+            "name": "adnsresfilter.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12651,
+            "md5": "9aec9464fd11423ec7b554aa172fd647",
+            "sha1": "f4ab9e9e64c1a11613225fe92b60bfd6bc7905f1",
+            "sha256": "c9188e3f01c43aa708bbd6f22304aa29f5f4ea823bc093115e4e2aa9aaf6f802",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/client.h",
+            "type": "file",
+            "name": "client.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2132,
+            "md5": "e73d4321a76aacc4169ba6f520107f41",
+            "sha1": "b94343228f7eb70ff567ccf42363c211a2c7b43c",
+            "sha256": "f7c6d239a1bf446fedba6303bdf67c1dcbdb5c1444f0cf2678f25c26cf981001",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic",
+            "type": "directory",
+            "name": "dynamic",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/addrfam.c",
+            "type": "file",
+            "name": "addrfam.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17463,
+            "md5": "0c316fa0560cac18938f5253034753ba",
+            "sha1": "e3332987192aef9a83689781de8667a8c3247c16",
+            "sha256": "f87759ee89464e2a61e54e99c8d329505a57c07967c59df5599d1c0b9554b890",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/adns.h",
+            "type": "file",
+            "name": "adns.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 43527,
+            "md5": "eb4f9b8ce3192fbdcceefdc49d224278",
+            "sha1": "e249f5dcfcd55677812cf7eeb4e082d69ee3231f",
+            "sha256": "b003fd6d28f2b6277774e2e4fce4095cf2cef190267f2ed777bc835e2dae8ca5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus AND lgpl-2.0-plus AND gpl-1.0-plus AND unknown-license-reference",
+            "detected_license_expression_spdx": "GPL-3.0-or-later AND LGPL-2.0-or-later AND GPL-1.0-or-later AND LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 20,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_384.RULE",
+                            "from_file": null,
+                            "start_line": 12,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 76,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_384.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 23,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_120.RULE",
+                            "from_file": null,
+                            "start_line": 23,
+                            "matched_text": " *  For the benefit of certain LGPL'd `omnibus' software which",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_120.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 85.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_351.RULE",
+                            "from_file": null,
+                            "start_line": 25,
+                            "matched_text": " *  make the following additional licence.  I do this because the GPL",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 85,
+                            "rule_identifier": "gpl-1.0-plus_351.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_17.RULE",
+                            "from_file": null,
+                            "start_line": 26,
+                            "matched_text": " *  would otherwise force either the omnibus software to be GPL'd or",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_17.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 33,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_400.RULE",
+                            "from_file": null,
+                            "start_line": 30,
+                            "matched_text": " *  public header file adns.h and not any other part of adns) under the\n *  terms of the GNU Library General Public License as published by the\n *  Free Software Foundation; either version 2 of the License, or (at\n *  your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_400.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 35,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_17.RULE",
+                            "from_file": null,
+                            "start_line": 35,
+                            "matched_text": " *  Note that adns itself is GPL'd.  Authors of adns-using applications",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_17.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 36,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_319.RULE",
+                            "from_file": null,
+                            "start_line": 36,
+                            "matched_text": " *  with GPL-incompatible licences, and people who distribute adns with",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "unknown-license-reference_319.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 37,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_17.RULE",
+                            "from_file": null,
+                            "start_line": 37,
+                            "matched_text": " *  applications where the whole distribution is not GPL'd, are still",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_17.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 38,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_350.RULE",
+                            "from_file": null,
+                            "start_line": 38,
+                            "matched_text": " *  likely to be in violation of the GPL.  Anyone who wants to do this",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 90,
+                            "rule_identifier": "gpl-1.0-plus_350.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 85.0,
+                            "matcher": "2-aho",
+                            "end_line": 40,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_351.RULE",
+                            "from_file": null,
+                            "start_line": 40,
+                            "matched_text": " *  people to infringe the GPL as it applies to the body of adns, Ian",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 85,
+                            "rule_identifier": "gpl-1.0-plus_351.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 42,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_221.RULE",
+                            "from_file": null,
+                            "start_line": 42,
+                            "matched_text": " *  redistribute just adns.h under the LGPL, you should retain this",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_221.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 21.9,
+                            "matcher": "3-seq",
+                            "end_line": 48,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_14.RULE",
+                            "from_file": null,
+                            "start_line": 46,
+                            "matched_text": " *  You should have received a copy of the GNU General Public License,\n *  or the GNU Library General Public License, as appropriate, along\n *  with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 21.9,
+                            "matched_length": 23,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_14.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus_and_lgpl_2_0_plus_and_gpl_1_0_plus_and_unknown_license_reference-138e8ed7-f050-44d9-e75c-c7b4cff53660",
+                    "license_expression": "gpl-3.0-plus AND lgpl-2.0-plus AND gpl-1.0-plus AND unknown-license-reference",
+                    "license_expression_spdx": "GPL-3.0-or-later AND LGPL-2.0-or-later AND GPL-1.0-or-later AND LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.23,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016 Ian Jackson",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/5cf5a83c-714c-4326-ab8f-a4834154533a"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/check.c",
+            "type": "file",
+            "name": "check.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6142,
+            "md5": "3d97046d8c372d57e6572900cb4eb57f",
+            "sha1": "acd5eb613e8f8f335a843e29e063349c11edef00",
+            "sha256": "498c826186299415e31d9d182ca06aff63532e09dca5673e89cd17a3ef8d45c6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/event.c",
+            "type": "file",
+            "name": "event.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 21797,
+            "md5": "26805e3dcb537847a494594651f2299a",
+            "sha1": "2652d60f7a965e9c69acb3a9461df287733e603a",
+            "sha256": "02ed9c7a8258d93bf8060a866819ad54bc7c3919ca9fc5a47c5382fbba8775c0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 10
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 11
+                },
+                {
+                    "end_line": 12,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 12
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 10,
+                    "start_line": 10
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/general.c",
+            "type": "file",
+            "name": "general.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10623,
+            "md5": "c2b19e8169413117e0e6c03c04c3bf21",
+            "sha1": "01207a7e8749bf792d201ecba9b932c805caf250",
+            "sha256": "248eae49702098f1645f5dea77fcc8065cd59c99b3465eba7eaafd3e451a144b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 14,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 10
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 11
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 10,
+                    "start_line": 10
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/internal.h",
+            "type": "file",
+            "name": "internal.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 35452,
+            "md5": "964c37b5f133d142ddcb90ade6f63fa1",
+            "sha1": "80c90ad0b1d9c4a1346b438b61037be55f78da0a",
+            "sha256": "cee4fe578666f37c75c7efe47814d0e0f9d675005eb0ff84b0d0ea91186b2c07",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 10
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 11
+                },
+                {
+                    "end_line": 12,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 12
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 10,
+                    "start_line": 10
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/parse.c",
+            "type": "file",
+            "name": "parse.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7705,
+            "md5": "97410a15d59dde995779659c3aff3370",
+            "sha1": "3e70b1aaac3b38ea340156fe0eca44c79614ec94",
+            "sha256": "684f60bbb5666824d5648602513c893f210e72edbd5fcd7c32386ff473dddcbb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/poll.c",
+            "type": "file",
+            "name": "poll.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3568,
+            "md5": "0e997b5ba719a5926f17efebebd3c7dc",
+            "sha1": "940d2fe585d5ea375fc440388407ff9f10efca99",
+            "sha256": "8a69c1c4ff34805598afb6bc27d2e052e182ba9e10a2d9cff9af92d79af14091",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.4,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/query.c",
+            "type": "file",
+            "name": "query.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17114,
+            "md5": "7280b8fbb6f2c510c32ddb2e54e1a003",
+            "sha1": "56cd67f2019430fd1916de3aa78aef950a48bdae",
+            "sha256": "6bfab19aded575ddb2a344ef9e104d24eabda528422205544f18aeb238f247a5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 10
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 11
+                },
+                {
+                    "end_line": 12,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 12
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 10,
+                    "start_line": 10
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/reply.c",
+            "type": "file",
+            "name": "reply.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12269,
+            "md5": "e87d5611954835845bc777dd245e0b33",
+            "sha1": "b04fd23913683c2ae7f446edf84b284cad8d7f98",
+            "sha256": "2d8da50fbe4a4202cf7b0a8c4c24226a86af0ea104600f0806edc62b588b038a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/setup.c",
+            "type": "file",
+            "name": "setup.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 23054,
+            "md5": "8452231a3e52d0dfdaa9b5d71c33e792",
+            "sha1": "af8bec1a83ca3f00db9ffefcf01a8ac1fb3d9a40",
+            "sha256": "e2aeb7888e8746917fcb54fd25391aaa138305e43ebbfdb4b8bfc04b706c334f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 14,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 10
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 11
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 10,
+                    "start_line": 10
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/transmit.c",
+            "type": "file",
+            "name": "transmit.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7432,
+            "md5": "cb1da45bd568b397ec7629bc93fc01b6",
+            "sha1": "51d3022142ca44674eb11820ca439923b4ab4c17",
+            "sha256": "58d991b672cefe1a8689eebad683e0c960bbde3fe1abec88769af4b6757b4ff2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 14,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 10
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 11
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 10,
+                    "start_line": 10
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/tvarith.h",
+            "type": "file",
+            "name": "tvarith.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1381,
+            "md5": "c75fa87d0d0d5cbb919e447f0f71e69a",
+            "sha1": "eb0f5cf28a49a0a8b9e20e333fd0a724b0ec6fe5",
+            "sha256": "52f6376e64736ebfb3d7ae571c7f06909b4a509ede2f7a40e651fc8624ef96ee",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 46.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/types.c",
+            "type": "file",
+            "name": "types.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 48445,
+            "md5": "444699543e31f02080a16bf27461c369",
+            "sha1": "4809a1e48900a1150e8598a2fe4bf96bee91a114",
+            "sha256": "43d908138cc4d1c515837d36377c5b7aebda9b0f72b759f2854d0376e8f62604",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_13.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 3, or (at your option)\n *  any later version.\n *  \n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *  \n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software Foundation.",
+                            "match_coverage": 100.0,
+                            "matched_length": 99,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_13.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-e0a158ca-85ed-36b8-8132-1116acf8f2e1",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1997-2000,2003,2006,2014-2016,2020 Ian Jackson",
+                    "start_line": 7
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2014 Mark Wooding",
+                    "start_line": 8
+                },
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1999-2000,2003,2006 Tony Finch",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 10,
+                    "copyright": "Copyright (c) 1991 Massachusetts Institute of Technology",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Ian Jackson",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "holder": "Mark Wooding",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "holder": "Tony Finch",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Massachusetts Institute of Technology",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/280c6a65-cbbb-43c9-b207-83271c8ad950-276bad9e/3e405d97-caba-4c7c-9f4a-18aee2c71828"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000020060220c22051180423c840080543395",
+                "directory_structure": "000000022040900008104108012341a120041040"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000020060220c22051180423c840080543395",
+                "directory_structure": "0000000204480180d8a801104194828489006318"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000020060220c22051180423c840080543395",
+                "directory_structure": "00000002002c05800a8508000ba0202200104213"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000020060220c22051180423c840080543395",
+                "directory_structure": "00000002943066076802118c848648b008891c10"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/26",
+            "type": "directory",
+            "name": "26",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/adns-1.6.0-12.fc40.x86_64",
+            "type": "file",
+            "name": "adns-1.6.0-12.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 14791,
+            "md5": "93e84a1be3702f3a16cbaf64761d7aa8",
+            "sha1": "5c7fbca83eb5b7b5a0299c3e0b7a9ab91fffd399",
+            "sha256": "690f7cf50b0f037c062c09d010d5eb56fdfa081daaea039e34a38bf5a0e9567e",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=2cbc3f24664868d6d3e78b08897ba82d318c7f01, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "dotdot/src/adns.h",
+                    "dotdot/src/tvarith.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/client/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 329952,
+            "md5": "50f27f4473b76572475c3dc1cb326c08",
+            "sha1": "563331fa926eb7e221b7e9c30aea736bae83f198",
+            "sha256": "ef4b1a7eced7cd8a8d24d0a86fb6b54ee86627aa170cb7172d8ea7020e084baa",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=26edb1b0f03ad3ac54d4ee1459763b9ef6d3b9d5, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/arpa/inet.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/socket2.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/clockid_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/sigset_t.h",
+                    "usr/include/bits/types/struct_iovec.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/errno.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/net/if.h",
+                    "usr/include/netdb.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/poll.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/uio.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic/<built-in>",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/addrfam.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/adns.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/check.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/event.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/general.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/internal.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/parse.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/poll.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/query.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/reply.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/setup.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/transmit.c",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/tvarith.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/types.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/arpa/inet.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/socket2.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/clockid_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/sigset_t.h",
+                    "usr/include/bits/types/struct_iovec.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/errno.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/net/if.h",
+                    "usr/include/netdb.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/poll.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/uio.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/adns-1.6.0-12.fc40.x86_64/dynamic/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/addrfam.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/adns-1.6.0-12.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/2",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/adns.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/adns.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/check.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/event.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/general.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/internal.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/parse.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/poll.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/query.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/reply.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/setup.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/transmit.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/adns-1.6.0-12.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/2",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/tvarith.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/tvarith.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libadns.so.1.6-1.6.0-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adns-1.6.0-12.fc40.x86_64/src/types.c"
+        }
+    ]
+}

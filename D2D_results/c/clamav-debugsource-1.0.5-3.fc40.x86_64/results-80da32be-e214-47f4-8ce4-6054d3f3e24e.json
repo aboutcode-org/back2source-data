@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "80da32be-e214-47f4-8ce4-6054d3f3e24e",
+            "created_date": "2024-06-17T15:22:32.351Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "d3adc197-d4c7-4550-9be6-8791012808db",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clamav-debugsource-1.0.5-3.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "e8c5ca3d-b933-492d-a7bb-428ae655b25f",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clamav-debuginfo-1.0.5-3.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "1cbfac15-92fb-460c-a6bf-50a7bfa5ec3c",
+                    "created_date": "2024-06-17T15:22:32.358834Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "1cbfac15-92fb-460c-a6bf-50a7bfa5ec3c",
+                    "task_start_date": "2024-06-17T15:22:32.380055Z",
+                    "task_end_date": "2024-06-17T15:22:48.320266Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:22:32.38 Pipeline [d2d] starting\n2024-06-17 15:22:32.38 Step [download_missing_inputs] starting\n2024-06-17 15:22:32.38 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clamav-debugsource-1.0.5-3.fc40.x86_64.rpm#from\n2024-06-17 15:22:39.70 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clamav-debugsource-1.0.5-3.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:22:39.71 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clamav-debuginfo-1.0.5-3.fc40.x86_64.rpm#to\n2024-06-17 15:22:48.31 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clamav-debuginfo-1.0.5-3.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:22:48.31 Pipeline failed\n",
+                    "execution_time": 15
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "088d26ca-20f8-49f9-8134-5e042b34eb09",
+            "created_date": "2024-06-17T16:07:33.027Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "646c1a1b-1d01-4d7e-870e-0bc301a8022a",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cppi-debugsource-1.18-22.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "10f8864b-1d23-4daf-9586-f15eb964a28c",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cppi-debuginfo-1.18-22.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "c10f9df2-599b-4cf7-a73c-d1dd1f2b4855",
+                    "created_date": "2024-06-17T16:07:33.034865Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "c10f9df2-599b-4cf7-a73c-d1dd1f2b4855",
+                    "task_start_date": "2024-06-17T16:07:33.055556Z",
+                    "task_end_date": "2024-06-17T16:07:45.616565Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out. (read timeout=5)\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 16:07:33.05 Pipeline [d2d] starting\n2024-06-17 16:07:33.06 Step [download_missing_inputs] starting\n2024-06-17 16:07:33.06 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cppi-debugsource-1.18-22.fc40.x86_64.rpm#from\n2024-06-17 16:07:40.23 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cppi-debugsource-1.18-22.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 16:07:40.23 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cppi-debuginfo-1.18-22.fc40.x86_64.rpm#to\n2024-06-17 16:07:45.60 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cppi-debuginfo-1.18-22.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 16:07:45.61 Pipeline failed\n",
+                    "execution_time": 12
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

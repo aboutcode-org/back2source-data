@@ -1,0 +1,3629 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "65ec8c87-3b72-4da8-bbd6-9a9996cd05eb",
+            "created_date": "2024-06-13T10:56:05.482Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "f9ed1092-716b-4676-806e-37e6fe91d65f",
+                    "filename": "AtomicParsley-debuginfo-0.9.5-25.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/AtomicParsley-debuginfo-0.9.5-25.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 243755,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "8179da2c-5238-4fd1-a655-ffe2796105d1",
+                    "filename": "AtomicParsley-debugsource-0.9.5-25.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/AtomicParsley-debugsource-0.9.5-25.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 167594,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "937058a3-d60e-47b3-b94e-d4c1cc538269",
+                    "created_date": "2024-06-13T10:56:05.490322Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "937058a3-d60e-47b3-b94e-d4c1cc538269",
+                    "task_start_date": "2024-06-13T10:56:05.516974Z",
+                    "task_end_date": "2024-06-13T10:56:44.055756Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 10:56:05.51 Pipeline [d2d] starting\n2024-06-13 10:56:05.52 Step [download_missing_inputs] starting\n2024-06-13 10:56:05.52 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/AtomicParsley-debugsource-0.9.5-25.fc40.x86_64.rpm#from\n2024-06-13 10:56:08.47 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/AtomicParsley-debuginfo-0.9.5-25.fc40.x86_64.rpm#to\n2024-06-13 10:56:10.78 Step [download_missing_inputs] completed in 5 seconds\n2024-06-13 10:56:10.79 Step [get_inputs] starting\n2024-06-13 10:56:10.79 Step [get_inputs] completed in 0 seconds\n2024-06-13 10:56:10.80 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 10:56:10.87 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 10:56:10.87 Step [extract_archives] starting\n2024-06-13 10:56:10.98 Step [extract_archives] completed in 0 seconds\n2024-06-13 10:56:10.98 Step [collect_and_create_codebase_resources] starting\n2024-06-13 10:56:11.13 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 10:56:11.13 Step [fingerprint_codebase_directories] starting\n2024-06-13 10:56:11.14 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 10:56:11.14 Step [flag_empty_files] starting\n2024-06-13 10:56:11.14 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 10:56:11.15 Step [flag_whitespace_files] starting\n2024-06-13 10:56:11.15 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 10:56:11.15 Step [flag_ignored_resources] starting\n2024-06-13 10:56:11.15 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 10:56:11.15 Step [map_about_files] starting\n2024-06-13 10:56:11.16 Step [map_about_files] completed in 0 seconds\n2024-06-13 10:56:11.16 Step [map_checksum] starting\n2024-06-13 10:56:11.16 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-13 10:56:11.16 Step [map_checksum] completed in 0 seconds\n2024-06-13 10:56:11.17 Step [match_archives_to_purldb] starting\n2024-06-13 10:56:11.17 PurlDB is not available. Skipping.\n2024-06-13 10:56:11.17 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 10:56:11.17 Step [find_java_packages] starting\n2024-06-13 10:56:11.17 Finding Java package for 0 .java resources.\n2024-06-13 10:56:11.18 Step [find_java_packages] completed in 0 seconds\n2024-06-13 10:56:11.18 Step [map_java_to_class] starting\n2024-06-13 10:56:11.18 Mapping 0 .class resources to .java\n2024-06-13 10:56:11.19 No .java resources to map.\n2024-06-13 10:56:11.19 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 10:56:11.19 Step [map_jar_to_source] starting\n2024-06-13 10:56:11.19 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 10:56:11.19 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 10:56:11.20 Step [map_elf] starting\n2024-06-13 10:56:11.75 Mapping 1 to/ resources using paths with 20 from/ resources.\n2024-06-13 10:56:11.76 Done building from/ resources index.\n2024-06-13 10:56:11.77 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug'\n2024-06-13 10:56:11.78 WARNING: #55 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug'\n2024-06-13 10:56:11.79 Created 32 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug'\n2024-06-13 10:56:11.79 Step [map_elf] completed in 1 seconds\n2024-06-13 10:56:11.79 Step [map_go] starting\n2024-06-13 10:56:11.80 Mapping 0 to/ resources using paths with 20 from/ resources.\n2024-06-13 10:56:11.80 Done building from/ resources index.\n2024-06-13 10:56:11.81 Step [map_go] completed in 0 seconds\n2024-06-13 10:56:11.81 Step [match_directories_to_purldb] starting\n2024-06-13 10:56:11.82 PurlDB is not available. Skipping.\n2024-06-13 10:56:11.82 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 10:56:11.82 Step [match_resources_to_purldb] starting\n2024-06-13 10:56:11.82 PurlDB is not available. Skipping.\n2024-06-13 10:56:11.82 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 10:56:11.82 Step [map_path] starting\n2024-06-13 10:56:11.83 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 10:56:11.83 Step [map_path] completed in 0 seconds\n2024-06-13 10:56:11.84 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 10:56:11.84 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 10:56:11.85 Step [perform_house_keeping_tasks] starting\n2024-06-13 10:56:11.86 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 10:56:11.86 Step [match_purldb_resources_post_process] starting\n2024-06-13 10:56:11.86 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 10:56:11.86 0 resource processed\n2024-06-13 10:56:11.86 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 10:56:11.87 Step [remove_packages_without_resources] starting\n2024-06-13 10:56:11.87 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 10:56:11.87 Step [scan_unmapped_to_files] starting\n2024-06-13 10:56:16.04 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-13 10:56:16.05 Step [scan_mapped_from_for_files] starting\n2024-06-13 10:56:33.01 Progress: 12% (4/32) ETA: 124 seconds (2.1 minutes)\n2024-06-13 10:56:33.49 Progress: 25% (8/32) ETA: 52 seconds\n2024-06-13 10:56:34.03 Progress: 37% (12/32) ETA: 31 seconds\n2024-06-13 10:56:35.65 Progress: 50% (16/32) ETA: 20 seconds\n2024-06-13 10:56:36.74 Progress: 62% (20/32) ETA: 13 seconds\n2024-06-13 10:56:37.27 Progress: 75% (24/32) ETA: 7 seconds\n2024-06-13 10:56:37.73 Progress: 87% (28/32) ETA: 3 seconds\n2024-06-13 10:56:43.63 Progress: 100% (32/32)\n2024-06-13 10:56:43.98 Step [scan_mapped_from_for_files] completed in 28 seconds\n2024-06-13 10:56:43.99 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 10:56:43.99 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 10:56:43.99 Step [create_local_files_packages] starting\n2024-06-13 10:56:44.04 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 10:56:44.05 Pipeline completed in 39 seconds\n",
+                    "execution_time": 38
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66",
+            "type": "local-files",
+            "namespace": "b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87",
+            "name": "2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005-2007\nCopyright (c) 2006-2007",
+            "holder": "",
+            "declared_license_expression": "gpl-1.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/476ea93a-bf81-44eb-b573-366d4ba3df7b",
+            "type": "local-files",
+            "namespace": "b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87",
+            "name": "476ea93a-bf81-44eb-b573-366d4ba3df7b",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005-2007\nCopyright (c) 1998-2003 Daniel Veillard",
+            "holder": "",
+            "declared_license_expression": "(gpl-1.0-plus AND gpl-2.0) AND x11-xconsortium-veillard",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1",
+            "type": "local-files",
+            "namespace": "b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87",
+            "name": "4a23f0ab-8ac1-4020-8481-97dbec19ebe1",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005-2007\nCopyright (c) 2006-2007\n(c) 2005 with a NULL\n(c) 2005\n(c) 2005 ?\nCopyright (c) 1992, 93, 96, 97, 98, 99, 2004 Free Software Foundation, Inc.",
+            "holder": "",
+            "declared_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/62c078ec-1954-43bf-bc70-09b167566c21",
+            "type": "local-files",
+            "namespace": "b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87",
+            "name": "62c078ec-1954-43bf-bc70-09b167566c21",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2000, 2001, 2003, 2004, 2005 Free Software Foundation, Inc.",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/c1a64d57-f24f-4f23-b166-db740fd747e9",
+            "type": "local-files",
+            "namespace": "b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87",
+            "name": "c1a64d57-f24f-4f23-b166-db740fd747e9",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2006-2007\nCopyright (c) 1990- 1993, 1996 Open Software Foundation, Inc.\nCopyright (c) 1989 by Hewlett-Packard Company, Palo Alto, Ca. & Digital Equipment Corporation, Maynard, Mass\nCopyright (c) 1998 Microsoft",
+            "holder": "",
+            "declared_license_expression": "(gpl-1.0-plus AND gpl-2.0) AND gpl-1.0-plus AND osf-1990",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64",
+            "type": "directory",
+            "name": "AtomicParsley-0.9.5-25.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/ap_types.h",
+            "type": "file",
+            "name": "ap_types.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 9816,
+            "md5": "2050a01525d9681846b2f79c6ad911cb",
+            "sha1": "e7654bcdd4d9b32c13393ecb2da1888f9fa2f08c",
+            "sha256": "55306a2494ed9af5b85ac218dd8b67cc34c94600ed7d79f1fc57a7def6aa15f0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 243,
+                    "copyright": "Copyright (c) 2000, 2001, 2003, 2005 Free Software Foundation, Inc.",
+                    "start_line": 243
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 243,
+                    "start_line": 243
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/arrays.cpp",
+            "type": "file",
+            "name": "arrays.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 29158,
+            "md5": "513bd738a1b5dca600667a0e74be69e2",
+            "sha1": "35d73642babad5c19b76aefd437cea59fc7ebda5",
+            "sha256": "60c6d351c28a73fe03c24043d9cac57bbd21e998d6cc6438b832f5826e267219",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, Non-ISO extended-ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2005-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://search.cpan.org/src/BILLH/LWP-UserAgent-iTMS_Client-0.16/lib/LWP/UserAgent/iTMS_Client.pm",
+                    "end_line": 124,
+                    "start_line": 124
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/AtomDefs.h",
+            "type": "file",
+            "name": "AtomDefs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 17628,
+            "md5": "3d3a2e65272e0e76f4e8c43e52ee9af8",
+            "sha1": "5bbe0f0c242b00fffb4a6e2a209c0f39c833f1d7",
+            "sha256": "fb53bcfc1d01571079db8c25727c60e8cd2b27b3f32c830640a3554de7c80d1d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/AtomicParsley.h",
+            "type": "file",
+            "name": "AtomicParsley.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 12811,
+            "md5": "4cbc2fd971401a72c076f65ec33f42fc",
+            "sha1": "1d78d60077606046c8ae1dfa588bddec4644e633",
+            "sha256": "2b9e6fea020e7085bc0cf87fa50b87c6f60decbd21390d82d295ffcd68478f75",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 8,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 12,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 21,
+                    "copyright": "Copyright (c) 2005-2007",
+                    "start_line": 21
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/CDtoc.cpp",
+            "type": "file",
+            "name": "CDtoc.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 19181,
+            "md5": "2d3576bf071d791bd4f48908035cf99c",
+            "sha1": "2e51bdd887b7842cb11bafa2045caa8c187e9c87",
+            "sha256": "d72419630ae6d7af498c52ac49e7e62bfb094c3ea133dd0a9f9f16a369b0b2b3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/CDtoc.h",
+            "type": "file",
+            "name": "CDtoc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2311,
+            "md5": "c9aa35f824c234370f4f120f7b065853",
+            "sha1": "82f823c08f0eca8c485a99f2d4b13027285e7d0a",
+            "sha256": "246ddb0e643450b078c37071a56b50983c8fcee4153ed3ffb55f8018be12902a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 64.71,
+                            "matcher": "3-seq",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_572.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.",
+                            "match_coverage": 64.71,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_572.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 60.87,
+                            "matcher": "3-seq",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_241.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.",
+                            "match_coverage": 60.87,
+                            "matched_length": 14,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_241.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_212.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_212.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-479e1b04-ec24-f255-0f50-290e2297f2a4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/compress.cpp",
+            "type": "file",
+            "name": "compress.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2752,
+            "md5": "8e279a640c7cdc9dcbefe79a2de08b33",
+            "sha1": "9826ca196379055490f371bd7c4c9eb505e0f3d2",
+            "sha256": "7d3609806c064269ebd23756e771cffab780cb75d07e0b3a9696efa853c55905",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 64.71,
+                            "matcher": "3-seq",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_572.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.",
+                            "match_coverage": 64.71,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_572.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 60.87,
+                            "matcher": "3-seq",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_241.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.",
+                            "match_coverage": 60.87,
+                            "matched_length": 14,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_241.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_212.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_212.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-479e1b04-ec24-f255-0f50-290e2297f2a4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/extracts.cpp",
+            "type": "file",
+            "name": "extracts.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 60473,
+            "md5": "b2d16ae4db32879436b29ed041b39690",
+            "sha1": "6e5364a8229ef493d2a967f3b91aa5794f0f263d",
+            "sha256": "95ffc0cfab22a7ee19d032e817fd52d6a0f0b1aeef607a3a249cd9cee1d7500a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 64.71,
+                            "matcher": "3-seq",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_572.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.",
+                            "match_coverage": 64.71,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_572.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 60.87,
+                            "matcher": "3-seq",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_241.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.",
+                            "match_coverage": 60.87,
+                            "matched_length": 14,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_241.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_212.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_212.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-479e1b04-ec24-f255-0f50-290e2297f2a4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://www.geocities.com/xhelmboyx/quicktime/formats/mp4-layout.txt",
+                    "end_line": 37,
+                    "start_line": 37
+                },
+                {
+                    "url": "http://www.mp4ra.org/object.html",
+                    "end_line": 523,
+                    "start_line": 523
+                },
+                {
+                    "url": "http://lists.mpegif.org/pipermail/mp4-tech/2006-January/006255.html",
+                    "end_line": 564,
+                    "start_line": 564
+                },
+                {
+                    "url": "http://iphome.hhi.de/suehring/tml/doc/lenc/html/configfile_8c-source.html",
+                    "end_line": 565,
+                    "start_line": 565
+                },
+                {
+                    "url": "http://www.chiariglione.org/mpeg/technologies/mp04-avc/index.htm",
+                    "end_line": 606,
+                    "start_line": 606
+                },
+                {
+                    "url": "http://en.wikipedia.org/wiki/H.264",
+                    "end_line": 606,
+                    "start_line": 606
+                },
+                {
+                    "url": "http://www.w3.org/WAI/ER/IG/ert/iso639.htm",
+                    "end_line": 1005,
+                    "start_line": 1005
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/iconv.cpp",
+            "type": "file",
+            "name": "iconv.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 29668,
+            "md5": "1eb6f8dc15a5a18c2f95d559873f80e9",
+            "sha1": "1abe9e6bf60f7132cc6e7fff4fd16d530c2f9139",
+            "sha256": "3f1757118f90acb4d445e60051136b14693d04ef3c1df264d997248d54a60bf8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "(gpl-1.0-plus AND gpl-2.0) AND x11-xconsortium-veillard",
+            "detected_license_expression_spdx": "(GPL-1.0-or-later AND GPL-2.0-only) AND LicenseRef-scancode-x11-xconsortium-veillard",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 99.0,
+                            "matcher": "2-aho",
+                            "end_line": 47,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-xconsortium-veillard_3.RULE",
+                            "from_file": null,
+                            "start_line": 28,
+                            "matched_text": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is fur-\nnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FIT-\nNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE\nDANIEL VEILLARD BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CON-\nNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Daniel Veillard shall not\nbe used in advertising or otherwise to promote the sale, use or other deal-\nings in this Software without prior written authorization from him.",
+                            "match_coverage": 100.0,
+                            "matched_length": 199,
+                            "rule_relevance": 99,
+                            "rule_identifier": "x11-xconsortium-veillard_3.RULE",
+                            "license_expression": "x11-xconsortium-veillard",
+                            "spdx_license_expression": "LicenseRef-scancode-x11-xconsortium-veillard"
+                        }
+                    ],
+                    "identifier": "x11_xconsortium_veillard-c8cd46c3-d1e8-41fb-1343-c8f95ccec0ef",
+                    "license_expression": "x11-xconsortium-veillard",
+                    "license_expression_spdx": "LicenseRef-scancode-x11-xconsortium-veillard"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 99.0,
+                            "matcher": "2-aho",
+                            "end_line": 175,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-xconsortium-veillard_3.RULE",
+                            "from_file": null,
+                            "start_line": 156,
+                            "matched_text": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is fur-\nnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FIT-\nNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE\nDANIEL VEILLARD BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CON-\nNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Daniel Veillard shall not\nbe used in advertising or otherwise to promote the sale, use or other deal-\nings in this Software without prior written authorization from him.",
+                            "match_coverage": 100.0,
+                            "matched_length": 199,
+                            "rule_relevance": 99,
+                            "rule_identifier": "x11-xconsortium-veillard_3.RULE",
+                            "license_expression": "x11-xconsortium-veillard",
+                            "spdx_license_expression": "LicenseRef-scancode-x11-xconsortium-veillard"
+                        }
+                    ],
+                    "identifier": "x11_xconsortium_veillard-c8cd46c3-d1e8-41fb-1343-c8f95ccec0ef",
+                    "license_expression": "x11-xconsortium-veillard",
+                    "license_expression_spdx": "LicenseRef-scancode-x11-xconsortium-veillard"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2005-2007",
+                    "start_line": 18
+                },
+                {
+                    "end_line": 26,
+                    "copyright": "Copyright (c) 1998-2003 Daniel Veillard",
+                    "start_line": 26
+                },
+                {
+                    "end_line": 154,
+                    "copyright": "Copyright (c) 1998-2003 Daniel Veillard",
+                    "start_line": 154
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Veillard",
+                    "end_line": 26,
+                    "start_line": 26
+                },
+                {
+                    "holder": "Daniel Veillard",
+                    "end_line": 154,
+                    "start_line": 154
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Martin J. Duerst <duerst@w3.org>",
+                    "end_line": 51,
+                    "start_line": 51
+                },
+                {
+                    "author": "Martin J. Duerst <duerst@w3.org>",
+                    "end_line": 179,
+                    "start_line": 179
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/476ea93a-bf81-44eb-b573-366d4ba3df7b"
+            ],
+            "emails": [
+                {
+                    "email": "duerst@w3.org",
+                    "end_line": 51,
+                    "start_line": 51
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2.cpp",
+            "type": "file",
+            "name": "id3v2.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 99940,
+            "md5": "68ff0b075221b8796b808150fd63ee73",
+            "sha1": "6ce8ed065cb32ebffa2aa656197c8fbf9ce9c1a0",
+            "sha256": "b3e8689c30b94ee04da7e12dcc77f4dd694f5b38250dd29e720047d73a2c82f2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text, with very long lines",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "GPL",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 64.71,
+                            "matcher": "3-seq",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_572.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "redistribute, modify & use under the terms of the GNU General\n    Public License;",
+                            "match_coverage": 64.71,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_572.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 60.87,
+                            "matcher": "3-seq",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_241.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for",
+                            "match_coverage": 60.87,
+                            "matched_length": 14,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_241.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_212.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "GNU General Public License (GPL)",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_212.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-479e1b04-ec24-f255-0f50-290e2297f2a4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.25,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2defs.h",
+            "type": "file",
+            "name": "id3v2defs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 15240,
+            "md5": "c23258d62452f0e2120166aa4c41c968",
+            "sha1": "20a8a5511b8f96726ba145140aa1f675a500741f",
+            "sha256": "d5a5df4b869fd1c35dc50a62b975aec725b90377b28c0f6fa7d2055fb496ff57",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 45.61,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_414.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 45.61,
+                            "matched_length": 26,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_414.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-2f604301-7cb2-f5ee-f878-97dd0b809d95",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.12,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2.h",
+            "type": "file",
+            "name": "id3v2.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2570,
+            "md5": "13ac5f47fddfe6769800b1881dc35885",
+            "sha1": "433d807ccf65e20169585c796e31b2a38cee24ef",
+            "sha256": "1afe3e630ded60b0becbd29d71de671221a48ed74f3433a7aa1a292e98c9017a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2types.h",
+            "type": "file",
+            "name": "id3v2types.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 8685,
+            "md5": "821812aa701dfdbfa9dc0817b1e8c9b8",
+            "sha1": "19edff721820fbbf71b143c9e12ad55e64aec565",
+            "sha256": "e338905928cd98f5a2e4b596a2bc483de27fbcad5399638e8e0fa259ec5087b9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 42.86,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_319.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 42.86,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_319.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-643db3c3-f1a1-4339-48cc-5009802cfc20",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.02,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://sourceforge.net/project/showfiles.php?group_id=979&package_id=4679",
+                    "end_line": 190,
+                    "start_line": 190
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/main.cpp",
+            "type": "file",
+            "name": "main.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 166018,
+            "md5": "4ba3895932df6da0e61b800a3e237779",
+            "sha1": "89cd1ccfdc730a513616f8dbe59ec7bd3e6f39cf",
+            "sha256": "3d10947aa83611ae8a41911292032f718e956ceef749180b02aa0beca70748a1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2005-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [
+                {
+                    "email": "look@me.org",
+                    "end_line": 770,
+                    "start_line": 770
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://www.url.net/",
+                    "end_line": 235,
+                    "start_line": 235
+                },
+                {
+                    "url": "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewMovie?id=278743714&s=143441",
+                    "end_line": 306,
+                    "start_line": 306
+                },
+                {
+                    "url": "http://www.bumperdumper.com/",
+                    "end_line": 647,
+                    "start_line": 647
+                },
+                {
+                    "url": "http://www.apple.com/itunes/podcasts/techspecs.html",
+                    "end_line": 1936,
+                    "start_line": 1936
+                },
+                {
+                    "url": "http://www.url.org/",
+                    "end_line": 2095,
+                    "start_line": 2095
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/metalist.cpp",
+            "type": "file",
+            "name": "metalist.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 67994,
+            "md5": "31e8e6d821dc70518867e7062bd3d472",
+            "sha1": "acc95b31764be2dc3fd56a2dce119c8f86d7c0cd",
+            "sha256": "92d389c5ff9e6ac1eba858e550821581deae59afe9b80735e3831fef47dcdd25",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text, with very long lines",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "GPL",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 64.71,
+                            "matcher": "3-seq",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_572.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "redistribute, modify & use under the terms of the GNU General\n    Public License;",
+                            "match_coverage": 64.71,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_572.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 60.87,
+                            "matcher": "3-seq",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_241.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for",
+                            "match_coverage": 60.87,
+                            "matched_length": 14,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_241.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_212.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "GNU General Public License (GPL)",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_212.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-479e1b04-ec24-f255-0f50-290e2297f2a4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://blogs.msdn.com/junfeng/archive/2004/02/25/79621.aspx",
+                    "end_line": 65,
+                    "start_line": 65
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/parsley.cpp",
+            "type": "file",
+            "name": "parsley.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 216816,
+            "md5": "a2a92383cf6262aea38b0593c3821d37",
+            "sha1": "f6597e11d62629a522c9081d0b9fe03048f9e87b",
+            "sha256": "2f4c781bc618729e522b883f098e739a8bc555cf197d8907ac180e7b29d85a4b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 64.71,
+                            "matcher": "3-seq",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_572.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.",
+                            "match_coverage": 64.71,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_572.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 60.87,
+                            "matcher": "3-seq",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_241.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.",
+                            "match_coverage": 60.87,
+                            "matched_length": 14,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_241.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_212.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_212.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-479e1b04-ec24-f255-0f50-290e2297f2a4",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.11,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2005-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/2fb6e91d-3e6f-40e4-88fa-dc9d69ee8c66"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://www.3gpp.org/ftp/tsg_sa/WG4_CODEC/TSGS4_25/Docs/",
+                    "end_line": 958,
+                    "start_line": 958
+                },
+                {
+                    "url": "http://www.mp4ra.org/filetype.html",
+                    "end_line": 990,
+                    "start_line": 990
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/sha1.cpp",
+            "type": "file",
+            "name": "sha1.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 13109,
+            "md5": "3c23b336a0f2c6e8d69fb9b4ee090159",
+            "sha1": "efde98c84c3465bef467878e2f8eaf87add67c6d",
+            "sha256": "682022fde449e96208ccaf40390061d538a228a3a7e7929a11aba704d4c8740c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_82.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "   This program is free software; you can redistribute it and/or modify it\n   under the terms of the GNU General Public License as published by the\n   Free Software Foundation; either version 2, or (at your option) any\n   later version.\n\n   This program is distributed in the hope that it will be useful,\n   but WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   GNU General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software Foundation,\n   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_82.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-aa92724a-e788-cf58-496e-cf6fcd31ebf2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2000, 2001, 2003, 2004, 2005 Free Software Foundation, Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Scott G. Miller Credits Robert Klep <robert@ilse.nl>",
+                    "end_line": 22,
+                    "start_line": 20
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/62c078ec-1954-43bf-bc70-09b167566c21"
+            ],
+            "emails": [
+                {
+                    "email": "robert@ilse.nl",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/software/coreutils/",
+                    "end_line": 26,
+                    "start_line": 26
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/util.cpp",
+            "type": "file",
+            "name": "util.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 32531,
+            "md5": "72fe609d18a4bda8e2c93b656865c11b",
+            "sha1": "273c202f8824ca97501ec93b3516a85939eb060c",
+            "sha256": "ef82fffd21c6fbf232dd0f5cc122c6489320a29b344b80997d11883c188c3dd4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 9.09,
+                    "matcher": "3-seq",
+                    "end_line": 353,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_2.RULE",
+                    "from_file": null,
+                    "start_line": 352,
+                    "matched_text": "/* Copyright (C) 1992, 93, 96, 97, 98, 99, 2004 Free Software Foundation, Inc.\n   This strsep function is part of the GNU C Library - v2.3.5; LGPL.",
+                    "match_coverage": 9.09,
+                    "matched_length": 7,
+                    "rule_relevance": 100,
+                    "rule_identifier": "lgpl-2.1-plus_2.RULE",
+                    "license_expression": "lgpl-2.1-plus",
+                    "spdx_license_expression": "LGPL-2.1-or-later"
+                }
+            ],
+            "percentage_of_license_text": 0.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                },
+                {
+                    "end_line": 319,
+                    "copyright": "(c) 2005 with a NULL",
+                    "start_line": 319
+                },
+                {
+                    "end_line": 319,
+                    "copyright": "(c) 2005",
+                    "start_line": 319
+                },
+                {
+                    "end_line": 319,
+                    "copyright": "(c) 2005 ?",
+                    "start_line": 319
+                },
+                {
+                    "end_line": 352,
+                    "copyright": "Copyright (c) 1992, 93, 96, 97, 98, 99, 2004 Free Software Foundation, Inc.",
+                    "start_line": 352
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "with a NULL",
+                    "end_line": 319,
+                    "start_line": 319
+                },
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 352,
+                    "start_line": 352
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://www.flipcode.com/articles/article_advstrings01.shtml",
+                    "end_line": 181,
+                    "start_line": 181
+                },
+                {
+                    "url": "http://www.w3.org/WAI/ER/IG/ert/iso639.htm",
+                    "end_line": 317,
+                    "start_line": 317
+                },
+                {
+                    "url": "http://wwwmaths.anu.edu.au/~brent/random.html",
+                    "end_line": 809,
+                    "start_line": 809
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/util.h",
+            "type": "file",
+            "name": "util.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4287,
+            "md5": "90119b0ae6ef3898df3a0327b611389b",
+            "sha1": "b06a7d3923b13af70efaaa459de6bc7f57f7f670",
+            "sha256": "59c8d29709d14d77a66ad2190f30d0d20d8e6bdd839da1c4b929b59b1f78b65a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus AND gpl-2.0",
+            "detected_license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 44.78,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_454.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 44.78,
+                            "matched_length": 30,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_454.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-213977a8-08c5-55e0-f6b6-f720d8a28f14",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                }
+            ],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/4a23f0ab-8ac1-4020-8481-97dbec19ebe1"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/uuid.cpp",
+            "type": "file",
+            "name": "uuid.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 15132,
+            "md5": "055f82d8ee2904647d5856dd7e39ed79",
+            "sha1": "e541110ae70c8b5164d41801e8ffec5483424401",
+            "sha256": "fd8e341a7db3b2d79254751b67f0bf2fe2db56ae24f1146d07f91f4b55bddaf6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "(gpl-1.0-plus AND gpl-2.0) AND gpl-1.0-plus AND osf-1990",
+            "detected_license_expression_spdx": "(GPL-1.0-or-later AND GPL-2.0-only) AND GPL-1.0-or-later AND HP-1989",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    AtomicParsley is GPL software; you can freely distribute,",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 50,
+                            "rule_identifier": "gpl_bare_word_only.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 45.61,
+                            "matcher": "3-seq",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_414.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.\n\n    AtomicParsley is distributed under the GPL \"AS IS\", without\n    any warranty; without the implied warranty of merchantability\n    or fitness for either an expressed or implied particular purpose.\n\n    Please see the included GNU General Public License (GPL) for",
+                            "match_coverage": 45.61,
+                            "matched_length": 26,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_414.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_125.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "    redistribute, modify & use under the terms of the GNU General\n    Public License; either version 2 or its successor.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl_125.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        },
+                        {
+                            "score": 22.0,
+                            "matcher": "2-aho",
+                            "end_line": 9,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_45.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": "    AtomicParsley is distributed under the GPL \"AS IS\", without",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 22,
+                            "rule_identifier": "gpl_45.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus_and_gpl_2_0-f4f6d234-5539-1287-8a92-dca0feb8dffa",
+                    "license_expression": "gpl-1.0-plus AND gpl-2.0",
+                    "license_expression_spdx": "GPL-1.0-or-later AND GPL-2.0-only"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "2-aho",
+                            "end_line": 27,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_351.RULE",
+                            "from_file": null,
+                            "start_line": 27,
+                            "matched_text": "\t  which I don't believe conflicts with or restricts the GPL.",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 85,
+                            "rule_identifier": "gpl-1.0-plus_351.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-0275ca3c-0d0c-8224-0676-9b6f2b7ff11c",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 47,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/osf-1990_8.RULE",
+                            "from_file": null,
+                            "start_line": 36,
+                            "matched_text": "\t\t\tTo anyone who acknowledges that this file is provided \"AS IS\"\n\t\t\twithout any express or implied warranty: permission to use, copy,\n\t\t\tmodify, and distribute this file for any purpose is hereby\n\t\t\tgranted without fee, provided that the above copyright notices and\n\t\t\tthis notice appears in all source code copies, and that none of\n\t\t\tthe names of Open Software Foundation, Inc., Hewlett-Packard\n\t\t\tCompany, Microsoft, or Digital Equipment Corporation be used in\n\t\t\tadvertising or publicity pertaining to distribution of the software\n\t\t\twithout specific, written prior permission. Neither Open Software\n\t\t\tFoundation, Inc., Hewlett-Packard Company, Microsoft, nor Digital\n\t\t\tEquipment Corporation makes any representations about the\n\t\t\tsuitability of this software for any purpose.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "osf-1990_8.RULE",
+                            "license_expression": "osf-1990",
+                            "spdx_license_expression": "HP-1989"
+                        }
+                    ],
+                    "identifier": "osf_1990-5fe97828-7e41-5638-928e-88161361f1f6",
+                    "license_expression": "osf-1990",
+                    "license_expression_spdx": "HP-1989"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 18,
+                    "copyright": "Copyright (c) 2006-2007",
+                    "start_line": 18
+                },
+                {
+                    "end_line": 32,
+                    "copyright": "Copyright (c) 1990- 1993, 1996 Open Software Foundation, Inc.",
+                    "start_line": 32
+                },
+                {
+                    "end_line": 34,
+                    "copyright": "Copyright (c) 1989 by Hewlett-Packard Company, Palo Alto, Ca. & Digital Equipment Corporation, Maynard, Mass",
+                    "start_line": 33
+                },
+                {
+                    "end_line": 35,
+                    "copyright": "Copyright (c) 1998 Microsoft",
+                    "start_line": 35
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Open Software Foundation, Inc.",
+                    "end_line": 32,
+                    "start_line": 32
+                },
+                {
+                    "holder": "Hewlett-Packard Company, Palo Alto, Ca. & Digital Equipment Corporation, Maynard, Mass",
+                    "end_line": 34,
+                    "start_line": 33
+                },
+                {
+                    "holder": "Microsoft",
+                    "end_line": 35,
+                    "start_line": 35
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b1706be2-ed53-4d83-81d8-426686ba9516-65ec8c87/c1a64d57-f24f-4f23-b166-db740fd747e9"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/",
+                    "end_line": 16,
+                    "start_line": 16
+                },
+                {
+                    "url": "http://www.ietf.org/rfc/rfc4122.txt",
+                    "end_line": 26,
+                    "start_line": 26
+                },
+                {
+                    "url": "http://home.famkruithof.net/guid-uuid-namebased.html",
+                    "end_line": 29,
+                    "start_line": 29
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/81",
+            "type": "directory",
+            "name": "81",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "type": "file",
+            "name": "AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 614688,
+            "md5": "021bd31d61bc6d00569a9bb18050d758",
+            "sha1": "4ad9e94708efccd2fbea9b5e6e89c7e49dfc3cb0",
+            "sha256": "3a9323a3296256d69fd3dbb20356414d75da7aeb4bd646156e31c8454a6e0e52",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=81f82625203200207d1e323f787797b12a8e04c9, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/<artificial>",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/CDtoc.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/arrays.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/compress.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/extracts.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/iconv.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/main.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/metalist.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/parsley.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/sha1.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/util.cpp",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/uuid.cpp"
+                ],
+                "dwarf_included_paths": [
+                    "src/AtomDefs.h",
+                    "src/AtomicParsley.h",
+                    "src/CDtoc.cpp",
+                    "src/CDtoc.h",
+                    "src/ap_types.h",
+                    "src/arrays.cpp",
+                    "src/compress.cpp",
+                    "src/extracts.cpp",
+                    "src/iconv.cpp",
+                    "src/id3v2.cpp",
+                    "src/id3v2.h",
+                    "src/id3v2defs.h",
+                    "src/id3v2types.h",
+                    "src/main.cpp",
+                    "src/metalist.cpp",
+                    "src/parsley.cpp",
+                    "src/sha1.cpp",
+                    "src/util.cpp",
+                    "src/util.h",
+                    "src/uuid.cpp",
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/bits/confname.h",
+                    "usr/include/bits/fcntl-linux.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__fpos64_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/bits/wchar2-decl.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/math.h",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/errno.h",
+                    "usr/include/linux/cdrom.h",
+                    "usr/include/math.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/zlib.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/bits/confname.h",
+                    "usr/include/bits/fcntl-linux.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__fpos64_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/bits/wchar2-decl.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/math.h",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/errno.h",
+                    "usr/include/linux/cdrom.h",
+                    "usr/include/math.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/include/zlib.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/ap_types.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/arrays.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/arrays.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/AtomDefs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/AtomicParsley.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/CDtoc.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/CDtoc.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/CDtoc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/compress.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/compress.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/extracts.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/extracts.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/iconv.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/iconv.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2defs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/id3v2types.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/main.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/main.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/metalist.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/metalist.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/parsley.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/parsley.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/sha1.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/sha1.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/util.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/util.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/util.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/uuid.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/AtomicParsley-0.9.5-25.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/AtomicParsley-0.9.5-25.fc40.x86_64/src/uuid.cpp"
+        }
+    ]
+}

@@ -1,0 +1,2282 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "1b00778d-0d58-4cca-81bb-d3fe46f3f2bd",
+            "created_date": "2024-06-17T10:54:32.253Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "814b1cc8-da39-4be0-9aa1-22cb519dba1e",
+                    "filename": "bloaty-debuginfo-1.1-27.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bloaty-debuginfo-1.1-27.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 364109,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "b713296a-0bc2-4ab2-be8a-83b0726d0d2a",
+                    "filename": "bloaty-debugsource-1.1-27.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bloaty-debugsource-1.1-27.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 88939,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "78ddf916-2b35-42b9-a263-1efdd853a11c",
+                    "created_date": "2024-06-17T10:54:32.260771Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "78ddf916-2b35-42b9-a263-1efdd853a11c",
+                    "task_start_date": "2024-06-17T10:54:32.284279Z",
+                    "task_end_date": "2024-06-17T10:55:10.006698Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 10:54:32.28 Pipeline [d2d] starting\n2024-06-17 10:54:32.29 Step [download_missing_inputs] starting\n2024-06-17 10:54:32.29 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bloaty-debugsource-1.1-27.fc40.x86_64.rpm#from\n2024-06-17 10:54:36.39 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bloaty-debuginfo-1.1-27.fc40.x86_64.rpm#to\n2024-06-17 10:54:39.28 Step [download_missing_inputs] completed in 7 seconds\n2024-06-17 10:54:39.28 Step [get_inputs] starting\n2024-06-17 10:54:39.29 Step [get_inputs] completed in 0 seconds\n2024-06-17 10:54:39.29 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 10:54:39.34 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 10:54:39.34 Step [extract_archives] starting\n2024-06-17 10:54:39.40 Step [extract_archives] completed in 0 seconds\n2024-06-17 10:54:39.40 Step [collect_and_create_codebase_resources] starting\n2024-06-17 10:54:39.43 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 10:54:39.43 Step [fingerprint_codebase_directories] starting\n2024-06-17 10:54:39.45 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 10:54:39.45 Step [flag_empty_files] starting\n2024-06-17 10:54:39.45 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 10:54:39.45 Step [flag_whitespace_files] starting\n2024-06-17 10:54:39.46 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 10:54:39.46 Step [flag_ignored_resources] starting\n2024-06-17 10:54:39.46 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 10:54:39.46 Step [map_about_files] starting\n2024-06-17 10:54:39.46 Step [map_about_files] completed in 0 seconds\n2024-06-17 10:54:39.47 Step [map_checksum] starting\n2024-06-17 10:54:39.47 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 10:54:39.47 Step [map_checksum] completed in 0 seconds\n2024-06-17 10:54:39.47 Step [match_archives_to_purldb] starting\n2024-06-17 10:54:39.47 PurlDB is not available. Skipping.\n2024-06-17 10:54:39.48 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 10:54:39.48 Step [find_java_packages] starting\n2024-06-17 10:54:39.48 Finding Java package for 0 .java resources.\n2024-06-17 10:54:39.48 Step [find_java_packages] completed in 0 seconds\n2024-06-17 10:54:39.49 Step [map_java_to_class] starting\n2024-06-17 10:54:39.49 Mapping 0 .class resources to .java\n2024-06-17 10:54:39.49 No .java resources to map.\n2024-06-17 10:54:39.49 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 10:54:39.49 Step [map_jar_to_source] starting\n2024-06-17 10:54:39.49 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 10:54:39.50 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 10:54:39.50 Step [map_elf] starting\n2024-06-17 10:54:40.22 Mapping 1 to/ resources using paths with 14 from/ resources.\n2024-06-17 10:54:40.22 Done building from/ resources index.\n2024-06-17 10:54:40.23 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug'\n2024-06-17 10:54:40.24 WARNING: #126 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug'\n2024-06-17 10:54:40.24 Created 14 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug'\n2024-06-17 10:54:40.24 Step [map_elf] completed in 1 seconds\n2024-06-17 10:54:40.25 Step [map_go] starting\n2024-06-17 10:54:40.25 Mapping 0 to/ resources using paths with 14 from/ resources.\n2024-06-17 10:54:40.26 Done building from/ resources index.\n2024-06-17 10:54:40.26 Step [map_go] completed in 0 seconds\n2024-06-17 10:54:40.26 Step [match_directories_to_purldb] starting\n2024-06-17 10:54:40.26 PurlDB is not available. Skipping.\n2024-06-17 10:54:40.27 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 10:54:40.27 Step [match_resources_to_purldb] starting\n2024-06-17 10:54:40.27 PurlDB is not available. Skipping.\n2024-06-17 10:54:40.27 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 10:54:40.27 Step [map_path] starting\n2024-06-17 10:54:40.27 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 10:54:40.28 Step [map_path] completed in 0 seconds\n2024-06-17 10:54:40.28 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 10:54:40.29 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 10:54:40.29 Step [perform_house_keeping_tasks] starting\n2024-06-17 10:54:40.30 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 10:54:40.30 Step [match_purldb_resources_post_process] starting\n2024-06-17 10:54:40.30 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 10:54:40.31 0 resource processed\n2024-06-17 10:54:40.31 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 10:54:40.31 Step [remove_packages_without_resources] starting\n2024-06-17 10:54:40.31 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 10:54:40.32 Step [scan_unmapped_to_files] starting\n2024-06-17 10:54:54.21 Step [scan_unmapped_to_files] completed in 14 seconds\n2024-06-17 10:54:54.21 Step [scan_mapped_from_for_files] starting\n2024-06-17 10:55:06.83 Progress: 14% (2/14) ETA: 77 seconds (1.3 minutes)\n2024-06-17 10:55:07.84 Progress: 28% (4/14) ETA: 35 seconds\n2024-06-17 10:55:07.89 Progress: 42% (6/14) ETA: 19 seconds\n2024-06-17 10:55:08.19 Progress: 57% (8/14) ETA: 11 seconds\n2024-06-17 10:55:08.47 Progress: 71% (10/14) ETA: 6 seconds\n2024-06-17 10:55:09.19 Progress: 85% (12/14) ETA: 3 seconds\n2024-06-17 10:55:09.70 Progress: 100% (14/14)\n2024-06-17 10:55:09.97 Step [scan_mapped_from_for_files] completed in 16 seconds\n2024-06-17 10:55:09.97 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 10:55:09.98 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 10:55:09.98 Step [create_local_files_packages] starting\n2024-06-17 10:55:10.00 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 10:55:10.00 Pipeline completed in 38 seconds\n",
+                    "execution_time": 37
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f",
+            "type": "local-files",
+            "namespace": "0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d",
+            "name": "35fb9c2c-6c00-4ee2-a92a-c46bc429b01f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2016 Google Inc.\nCopyright 2017 Google Inc.\nCopyright 2018 Google Inc.",
+            "holder": "",
+            "declared_license_expression": "apache-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/6f5472dc-51fb-4bd0-a79c-b04f6e318da7",
+            "type": "local-files",
+            "namespace": "0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d",
+            "name": "6f5472dc-51fb-4bd0-a79c-b04f6e318da7",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2016 Google Inc.",
+            "holder": "",
+            "declared_license_expression": "apache-2.0 AND bsd-new",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64",
+            "type": "directory",
+            "name": "bloaty-1.1-27.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src/bloaty.pb.cc",
+            "type": "file",
+            "name": "bloaty.pb.cc",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 59731,
+            "md5": "89df0bd6f2f79c0f617a4356a665ef5c",
+            "sha1": "e33398fcdc34a6aa32a57089d25aecd07d07d5c2",
+            "sha256": "5ac8005531daa3f2436192149c4e5f008e42e4400f8727b6e36be3acf41e4e40",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src/bloaty.pb.h",
+            "type": "file",
+            "name": "bloaty.pb.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 77779,
+            "md5": "73f59e06cac5ae3a402089059797d509",
+            "sha1": "9705c08d803d77b42466b5ee1f785251e47193fd",
+            "sha256": "bd3eebd45c2cf45e26916fd108d333049738ba2f577d6875e1871b838bc32cd2",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/bloaty.cc",
+            "type": "file",
+            "name": "bloaty.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 66872,
+            "md5": "66520000cbc2b31524773c5159a4d53b",
+            "sha1": "810335f50de404dc2468157f6dbf47ea3182a9f6",
+            "sha256": "089513fc5b6952185bf0278e86a57c69714dad26b33a3199179564d316d89b2b",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/bloaty.h",
+            "type": "file",
+            "name": "bloaty.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 18878,
+            "md5": "b5fa62e7aefd3d54770d788e030ac7e0",
+            "sha1": "2bb227ffd0ae0498c178e6ca8548d7358bdf1558",
+            "sha256": "36f9709163a6701dc5184e800b62c6b8fbd8e727c209971d0e2c82930a57c346",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.64,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/demangle.cc",
+            "type": "file",
+            "name": "demangle.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 62699,
+            "md5": "5fbf58085c02161d1981c0d6c173f570",
+            "sha1": "944e58090c74a47497000fcbe84046e9b703afb1",
+            "sha256": "e3a1a5a05f4040414deb47d2bd9fdb751a0f943cd71eeeadf533912b912f579e",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [
+                {
+                    "author": "satorux@google.com (Satoru Takabayashi)",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [
+                {
+                    "email": "satorux@google.com",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "url": "https://itanium-cxx-abi.github.io/cxx-abi/abi.html#mangling",
+                    "end_line": 18,
+                    "start_line": 18
+                },
+                {
+                    "url": "https://mentorembedded.github.io/cxx-abi/abi.html#mangling",
+                    "end_line": 590,
+                    "start_line": 590
+                },
+                {
+                    "url": "http://gcc.gnu.org/bugzilla/show_bug.cgi?id=31775",
+                    "end_line": 762,
+                    "start_line": 762
+                },
+                {
+                    "url": "http://gcc.gnu.org/viewcvs?view=rev&revision=124467",
+                    "end_line": 763,
+                    "start_line": 763
+                },
+                {
+                    "url": "https://github.com/gcc-mirror/gcc/blob/7ad17b583c3643bd4557f29b8391ca7ef08391f5/gcc/cp/mangle.c#L1847",
+                    "end_line": 1085,
+                    "start_line": 1085
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/demangle.h",
+            "type": "file",
+            "name": "demangle.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2567,
+            "md5": "fe8ca3d06b314cac91f9983b2d071e09",
+            "sha1": "076d495a31278d94da8aaac1561050a089eb9c38",
+            "sha256": "bd5f835aa7d318007db1b30e576850a1f75b3dab8eec0f70c05c7636b9d86e5f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2017 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [
+                {
+                    "author": "satorux@google.com (Satoru Takabayashi)",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [
+                {
+                    "email": "satorux@google.com",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/disassemble.cc",
+            "type": "file",
+            "name": "disassemble.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 6540,
+            "md5": "b0096d2c89707dd52e5b18bda0917138",
+            "sha1": "a52b55e8205cce602737732096147c1ce683c60f",
+            "sha256": "a40db36f042a476248fb0e0261d63a4f37af6fbb727e5557c105b8776b652006",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.77,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/dwarf.cc",
+            "type": "file",
+            "name": "dwarf.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 66604,
+            "md5": "cbf0f0c0cb02f49a09b206a8b6ee3827",
+            "sha1": "542bac5fc8980edf3563bc609684937dcf9f0b31",
+            "sha256": "d75ff7202d5d3a5dfa4408d6566361dd1edf0edcfd7da7d9277deacdab9ea8b0",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "url": "http://refspecs.linuxfoundation.org/LSB_5.0.0/LSB-Core-generic/LSB-Core-generic/ehframechpt.html",
+                    "end_line": 1747,
+                    "start_line": 1747
+                },
+                {
+                    "url": "https://www.airs.com/blog/archives/460",
+                    "end_line": 1748,
+                    "start_line": 1748
+                },
+                {
+                    "url": "http://www.nongnu.org/libunwind/",
+                    "end_line": 1757,
+                    "start_line": 1757
+                },
+                {
+                    "url": "https://github.com/pathscale/libunwind/blob/master/src/dwarf/Gfde.c",
+                    "end_line": 1758,
+                    "start_line": 1758
+                },
+                {
+                    "url": "https://github.com/llvm-mirror/libunwind/blob/master/src/DwarfParser.hpp",
+                    "end_line": 1760,
+                    "start_line": 1760
+                },
+                {
+                    "url": "https://github.com/gcc-mirror/gcc/blob/master/libgcc/unwind-dw2-fde.c",
+                    "end_line": 1762,
+                    "start_line": 1762
+                },
+                {
+                    "url": "http://refspecs.linuxfoundation.org/LSB_5.0.0/LSB-Core-generic/LSB-Core-generic/ehframechpt.html#EHFRAME",
+                    "end_line": 1867,
+                    "start_line": 1867
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/elf.cc",
+            "type": "file",
+            "name": "elf.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 46550,
+            "md5": "8a9d88f56cd0a9ed2eae958ca708d7c9",
+            "sha1": "952c089de3df4b7809954704204f61ae9d908690",
+            "sha256": "f457e953c9832d10e674bdacc21ddd351603bafdc4a976e234f58cf3d5535104",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0 AND bsd-new",
+            "detected_license_expression_spdx": "Apache-2.0 AND BSD-3-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 729,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-new_878.RULE",
+                            "from_file": null,
+                            "start_line": 729,
+                            "matched_text": "      THROW(\"BSD-style AR not yet implemented\");",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 90,
+                            "rule_identifier": "bsd-new_878.RULE",
+                            "license_expression": "bsd-new",
+                            "spdx_license_expression": "BSD-3-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_new-a77f8bf6-d564-f8d2-8f4e-2ff70cf207f4",
+                    "license_expression": "bsd-new",
+                    "license_expression_spdx": "BSD-3-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.62,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/6f5472dc-51fb-4bd0-a79c-b04f6e318da7"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "url": "https://docs.oracle.com/cd/E19683-01/817-3677/chapter6-94076/index.html",
+                    "end_line": 538,
+                    "start_line": 538
+                },
+                {
+                    "url": "https://en.wikipedia.org/wiki/Ar_",
+                    "end_line": 624,
+                    "start_line": 624
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/macho.cc",
+            "type": "file",
+            "name": "macho.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 23072,
+            "md5": "1682de626a2a8b2a4ccf8a6a1dd89123",
+            "sha1": "177d21d1b5e60422cec7ea65f4571d65ff5b0972",
+            "sha256": "79eec77ed3f3fff22e48948fd57c107a307210f6f69565e5d9ca81f01111418e",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "url": "https://www.macrumors.com/2017/06/06/apple-to-phase-out-32-bit-mac-apps/",
+                    "end_line": 175,
+                    "start_line": 175
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/main.cc",
+            "type": "file",
+            "name": "main.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 1380,
+            "md5": "17bc473c7a9d8d10884c6d00fd45d255",
+            "sha1": "e0c0403580f9131ee9fb2bf82ae34345a1c133ac",
+            "sha256": "0abf4b766c66e7758896b269b8e5db84a051a864cebe6466ff4e2598dfa50b36",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/range_map.cc",
+            "type": "file",
+            "name": "range_map.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 9483,
+            "md5": "dbc7c581695b6d25723345d028e48e16",
+            "sha1": "1db3de529ec72540f9eb5d0b77ca42ae9e1ffa99",
+            "sha256": "5801075af0d5937ab84d433916412eebc923a7f8541f771256a76dbba097e7c9",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/range_map.h",
+            "type": "file",
+            "name": "range_map.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 13042,
+            "md5": "1962b9a6ebbdb343db80aa6eedbed592",
+            "sha1": "f6a060c80ee40a668862356deb50fbf1ac0d9940",
+            "sha256": "fc696a584be9858dc8908fcaff7b420ba7c166ab70804a6a625855cdcf703d5d",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.58,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2016 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/webassembly.cc",
+            "type": "file",
+            "name": "webassembly.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 11103,
+            "md5": "b4350f642ba305e57cf1490c8ff2560b",
+            "sha1": "b8ea2e83cc2868cad93452b55b413e702d71f6cd",
+            "sha256": "bf3df34390c00914bf7c1385feb76753edbf3645825663a4b1252e00bd0c205e",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "apache-2.0",
+            "detected_license_expression_spdx": "Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_7.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "// Licensed under the Apache License, Version 2.0 (the \"License\");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an \"AS IS\" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.",
+                            "match_coverage": 100.0,
+                            "matched_length": 85,
+                            "rule_relevance": 100,
+                            "rule_identifier": "apache-2.0_7.RULE",
+                            "license_expression": "apache-2.0",
+                            "spdx_license_expression": "Apache-2.0"
+                        }
+                    ],
+                    "identifier": "apache_2_0-c4e30bcd-ccfd-bbc3-d2f1-196ab911e47d",
+                    "license_expression": "apache-2.0",
+                    "license_expression_spdx": "Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.64,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 1,
+                    "copyright": "Copyright 2018 Google Inc.",
+                    "start_line": 1
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Google Inc.",
+                    "end_line": 1,
+                    "start_line": 1
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/0d598a28-f1c3-4d4d-a9e5-36dad272b9b1-1b00778d/35fb9c2c-6c00-4ee2-a92a-c46bc429b01f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/68",
+            "type": "directory",
+            "name": "68",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 1651728,
+            "md5": "b82e022577a44c7a7f02344e5983b155",
+            "sha1": "faf1fc0a2958436597e243fa088aa1daa46ce95a",
+            "sha256": "4206f466613b00a9f41b37027ceb091f3ad679f25a8a0a39ca72f56dc0b21ae7",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=681453e02edaa822fcb34a51df0029cd201d378a, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/absl/numeric/bits.h",
+                    "usr/include/absl/numeric/int128.h",
+                    "usr/include/absl/numeric/internal/bits.h",
+                    "usr/include/absl/strings/ascii.h",
+                    "usr/include/absl/strings/escaping.h",
+                    "usr/include/absl/strings/internal/resize_uninitialized.h",
+                    "usr/include/absl/strings/internal/str_join_internal.h",
+                    "usr/include/absl/strings/internal/str_split_internal.h",
+                    "usr/include/absl/strings/internal/stringify_sink.h",
+                    "usr/include/absl/strings/match.h",
+                    "usr/include/absl/strings/numbers.h",
+                    "usr/include/absl/strings/str_cat.h",
+                    "usr/include/absl/strings/str_join.h",
+                    "usr/include/absl/strings/str_split.h",
+                    "usr/include/absl/strings/string_view.h",
+                    "usr/include/absl/strings/strip.h",
+                    "usr/include/absl/strings/substitute.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/c++/14/array",
+                    "usr/include/c++/14/atomic",
+                    "usr/include/c++/14/bit",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/atomic_base.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/exception.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/functional_hash.h",
+                    "usr/include/c++/14/bits/hash_bytes.h",
+                    "usr/include/c++/14/bits/hashtable.h",
+                    "usr/include/c++/14/bits/hashtable_policy.h",
+                    "usr/include/c++/14/bits/invoke.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/move.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/range_access.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/std_mutex.h",
+                    "usr/include/c++/14/bits/std_thread.h",
+                    "usr/include/c++/14/bits/stl_algo.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_heap.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/string_view.tcc",
+                    "usr/include/c++/14/bits/unique_ptr.h",
+                    "usr/include/c++/14/bits/unordered_map.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/exception",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/string_conversions.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/optional",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/stdexcept",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/capstone/capstone.h",
+                    "usr/include/errno.h",
+                    "usr/include/google/protobuf/arena.h",
+                    "usr/include/google/protobuf/arena_impl.h",
+                    "usr/include/google/protobuf/arenastring.h",
+                    "usr/include/google/protobuf/generated_message_reflection.h",
+                    "usr/include/google/protobuf/generated_message_util.h",
+                    "usr/include/google/protobuf/has_bits.h",
+                    "usr/include/google/protobuf/io/coded_stream.h",
+                    "usr/include/google/protobuf/io/zero_copy_stream.h",
+                    "usr/include/google/protobuf/io/zero_copy_stream_impl.h",
+                    "usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h",
+                    "usr/include/google/protobuf/message.h",
+                    "usr/include/google/protobuf/message_lite.h",
+                    "usr/include/google/protobuf/metadata_lite.h",
+                    "usr/include/google/protobuf/parse_context.h",
+                    "usr/include/google/protobuf/port_undef.inc",
+                    "usr/include/google/protobuf/repeated_field.h",
+                    "usr/include/google/protobuf/repeated_ptr_field.h",
+                    "usr/include/google/protobuf/stubs/logging.h",
+                    "usr/include/google/protobuf/stubs/port.h",
+                    "usr/include/google/protobuf/stubs/stringpiece.h",
+                    "usr/include/google/protobuf/text_format.h",
+                    "usr/include/google/protobuf/unknown_field_set.h",
+                    "usr/include/google/protobuf/wire_format.h",
+                    "usr/include/google/protobuf/wire_format_lite.h",
+                    "usr/include/pthread.h",
+                    "usr/include/re2/re2.h",
+                    "usr/include/re2/stringpiece.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src/bloaty.pb.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src/bloaty.pb.h",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/bloaty.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/bloaty.h",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/demangle.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/demangle.h",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/disassemble.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/dwarf.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/elf.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/macho.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/main.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/range_map.cc",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/range_map.h",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/webassembly.cc"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/absl/numeric/bits.h",
+                    "usr/include/absl/numeric/int128.h",
+                    "usr/include/absl/numeric/internal/bits.h",
+                    "usr/include/absl/strings/ascii.h",
+                    "usr/include/absl/strings/escaping.h",
+                    "usr/include/absl/strings/internal/resize_uninitialized.h",
+                    "usr/include/absl/strings/internal/str_join_internal.h",
+                    "usr/include/absl/strings/internal/str_split_internal.h",
+                    "usr/include/absl/strings/internal/stringify_sink.h",
+                    "usr/include/absl/strings/match.h",
+                    "usr/include/absl/strings/numbers.h",
+                    "usr/include/absl/strings/str_cat.h",
+                    "usr/include/absl/strings/str_join.h",
+                    "usr/include/absl/strings/str_split.h",
+                    "usr/include/absl/strings/string_view.h",
+                    "usr/include/absl/strings/strip.h",
+                    "usr/include/absl/strings/substitute.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/c++/14/array",
+                    "usr/include/c++/14/atomic",
+                    "usr/include/c++/14/bit",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/atomic_base.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/exception.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/functional_hash.h",
+                    "usr/include/c++/14/bits/hash_bytes.h",
+                    "usr/include/c++/14/bits/hashtable.h",
+                    "usr/include/c++/14/bits/hashtable_policy.h",
+                    "usr/include/c++/14/bits/invoke.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/move.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/range_access.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/std_mutex.h",
+                    "usr/include/c++/14/bits/std_thread.h",
+                    "usr/include/c++/14/bits/stl_algo.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_heap.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/string_view.tcc",
+                    "usr/include/c++/14/bits/unique_ptr.h",
+                    "usr/include/c++/14/bits/unordered_map.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/exception",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/string_conversions.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/optional",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/stdexcept",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/capstone/capstone.h",
+                    "usr/include/errno.h",
+                    "usr/include/google/protobuf/arena.h",
+                    "usr/include/google/protobuf/arena_impl.h",
+                    "usr/include/google/protobuf/arenastring.h",
+                    "usr/include/google/protobuf/generated_message_reflection.h",
+                    "usr/include/google/protobuf/generated_message_util.h",
+                    "usr/include/google/protobuf/has_bits.h",
+                    "usr/include/google/protobuf/io/coded_stream.h",
+                    "usr/include/google/protobuf/io/zero_copy_stream.h",
+                    "usr/include/google/protobuf/io/zero_copy_stream_impl.h",
+                    "usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h",
+                    "usr/include/google/protobuf/message.h",
+                    "usr/include/google/protobuf/message_lite.h",
+                    "usr/include/google/protobuf/metadata_lite.h",
+                    "usr/include/google/protobuf/parse_context.h",
+                    "usr/include/google/protobuf/port_undef.inc",
+                    "usr/include/google/protobuf/repeated_field.h",
+                    "usr/include/google/protobuf/repeated_ptr_field.h",
+                    "usr/include/google/protobuf/stubs/logging.h",
+                    "usr/include/google/protobuf/stubs/port.h",
+                    "usr/include/google/protobuf/stubs/stringpiece.h",
+                    "usr/include/google/protobuf/text_format.h",
+                    "usr/include/google/protobuf/unknown_field_set.h",
+                    "usr/include/google/protobuf/wire_format.h",
+                    "usr/include/google/protobuf/wire_format_lite.h",
+                    "usr/include/pthread.h",
+                    "usr/include/re2/re2.h",
+                    "usr/include/re2/stringpiece.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src/bloaty.pb.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/redhat-linux-build/src/bloaty.pb.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/bloaty.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/bloaty.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/demangle.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/demangle.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/disassemble.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/dwarf.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/elf.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/macho.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/main.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/range_map.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/range_map.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bloaty-1.1-27.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/bloaty-1.1-27.fc40.x86_64/src/webassembly.cc"
+        }
+    ]
+}

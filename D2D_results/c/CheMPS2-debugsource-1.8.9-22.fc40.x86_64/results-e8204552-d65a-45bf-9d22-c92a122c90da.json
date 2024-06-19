@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "e8204552-d65a-45bf-9d22-c92a122c90da",
+            "created_date": "2024-06-17T15:55:35.181Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "1b5fb936-7a22-4126-b29f-65a5b53e4a93",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CheMPS2-debugsource-1.8.9-22.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "f1f760cb-90e7-4dfb-b480-52be0f1df468",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CheMPS2-debuginfo-1.8.9-22.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "30e81ed8-4e5b-4854-86b1-e5a899c48121",
+                    "created_date": "2024-06-17T15:55:35.189118Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "30e81ed8-4e5b-4854-86b1-e5a899c48121",
+                    "task_start_date": "2024-06-17T15:55:35.215909Z",
+                    "task_end_date": "2024-06-17T15:55:50.169906Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:55:35.21 Pipeline [d2d] starting\n2024-06-17 15:55:35.22 Step [download_missing_inputs] starting\n2024-06-17 15:55:35.22 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CheMPS2-debugsource-1.8.9-22.fc40.x86_64.rpm#from\n2024-06-17 15:55:42.25 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CheMPS2-debugsource-1.8.9-22.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:55:42.25 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CheMPS2-debuginfo-1.8.9-22.fc40.x86_64.rpm#to\n2024-06-17 15:55:50.16 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CheMPS2-debuginfo-1.8.9-22.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:55:50.16 Pipeline failed\n",
+                    "execution_time": 14
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

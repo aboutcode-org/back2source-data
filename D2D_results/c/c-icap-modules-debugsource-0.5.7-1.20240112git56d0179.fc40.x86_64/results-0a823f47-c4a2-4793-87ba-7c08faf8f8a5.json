@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "0a823f47-c4a2-4793-87ba-7c08faf8f8a5",
+            "created_date": "2024-06-17T15:03:56.378Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "ff446786-7da6-4d65-ad14-9c42d421f0bd",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c-icap-modules-debuginfo-0.5.7-1.20240112git56d0179.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "e3928dc2-67a2-4a1e-8588-01869eb64494",
+                    "filename": "c-icap-modules-debugsource-0.5.7-1.20240112git56d0179.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c-icap-modules-debugsource-0.5.7-1.20240112git56d0179.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 72034,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "94e74f45-7ad4-4955-809c-07b97829f63c",
+                    "created_date": "2024-06-17T15:03:56.386406Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "94e74f45-7ad4-4955-809c-07b97829f63c",
+                    "task_start_date": "2024-06-17T15:03:56.407190Z",
+                    "task_end_date": "2024-06-17T15:04:07.556759Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:03:56.40 Pipeline [d2d] starting\n2024-06-17 15:03:56.41 Step [download_missing_inputs] starting\n2024-06-17 15:03:56.41 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c-icap-modules-debugsource-0.5.7-1.20240112git56d0179.fc40.x86_64.rpm#from\n2024-06-17 15:04:01.01 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c-icap-modules-debuginfo-0.5.7-1.20240112git56d0179.fc40.x86_64.rpm#to\n2024-06-17 15:04:07.54 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c-icap-modules-debuginfo-0.5.7-1.20240112git56d0179.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:04:07.55 Pipeline failed\n",
+                    "execution_time": 11
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

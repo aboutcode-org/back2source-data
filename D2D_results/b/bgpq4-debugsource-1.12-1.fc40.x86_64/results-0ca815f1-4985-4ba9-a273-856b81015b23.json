@@ -1,0 +1,1682 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "0ca815f1-4985-4ba9-a273-856b81015b23",
+            "created_date": "2024-06-17T10:40:44.935Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "2e69dfc6-7816-4efc-a209-bd37d2d86f53",
+                    "filename": "bgpq4-debuginfo-1.12-1.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bgpq4-debuginfo-1.12-1.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 97248,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "1c0a5047-9319-4015-b51b-a88c7577bb9c",
+                    "filename": "bgpq4-debugsource-1.12-1.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bgpq4-debugsource-1.12-1.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 33613,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "0f0e15f8-c986-4b84-b933-6a405b9242b2",
+                    "created_date": "2024-06-17T10:40:44.943625Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "0f0e15f8-c986-4b84-b933-6a405b9242b2",
+                    "task_start_date": "2024-06-17T10:40:44.966470Z",
+                    "task_end_date": "2024-06-17T10:41:05.312710Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 10:40:44.96 Pipeline [d2d] starting\n2024-06-17 10:40:44.97 Step [download_missing_inputs] starting\n2024-06-17 10:40:44.97 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bgpq4-debugsource-1.12-1.fc40.x86_64.rpm#from\n2024-06-17 10:40:46.78 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bgpq4-debuginfo-1.12-1.fc40.x86_64.rpm#to\n2024-06-17 10:40:50.94 Step [download_missing_inputs] completed in 6 seconds\n2024-06-17 10:40:50.95 Step [get_inputs] starting\n2024-06-17 10:40:50.95 Step [get_inputs] completed in 0 seconds\n2024-06-17 10:40:50.96 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 10:40:50.99 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 10:40:50.99 Step [extract_archives] starting\n2024-06-17 10:40:51.06 Step [extract_archives] completed in 0 seconds\n2024-06-17 10:40:51.06 Step [collect_and_create_codebase_resources] starting\n2024-06-17 10:40:51.09 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 10:40:51.09 Step [fingerprint_codebase_directories] starting\n2024-06-17 10:40:51.10 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 10:40:51.10 Step [flag_empty_files] starting\n2024-06-17 10:40:51.10 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 10:40:51.11 Step [flag_whitespace_files] starting\n2024-06-17 10:40:51.11 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 10:40:51.11 Step [flag_ignored_resources] starting\n2024-06-17 10:40:51.11 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 10:40:51.12 Step [map_about_files] starting\n2024-06-17 10:40:51.12 Step [map_about_files] completed in 0 seconds\n2024-06-17 10:40:51.12 Step [map_checksum] starting\n2024-06-17 10:40:51.13 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 10:40:51.14 Step [map_checksum] completed in 0 seconds\n2024-06-17 10:40:51.14 Step [match_archives_to_purldb] starting\n2024-06-17 10:40:51.14 PurlDB is not available. Skipping.\n2024-06-17 10:40:51.14 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 10:40:51.15 Step [find_java_packages] starting\n2024-06-17 10:40:51.15 Finding Java package for 0 .java resources.\n2024-06-17 10:40:51.16 Step [find_java_packages] completed in 0 seconds\n2024-06-17 10:40:51.17 Step [map_java_to_class] starting\n2024-06-17 10:40:51.17 Mapping 0 .class resources to .java\n2024-06-17 10:40:51.18 No .java resources to map.\n2024-06-17 10:40:51.18 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 10:40:51.18 Step [map_jar_to_source] starting\n2024-06-17 10:40:51.19 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 10:40:51.19 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 10:40:51.20 Step [map_elf] starting\n2024-06-17 10:40:51.38 Mapping 1 to/ resources using paths with 10 from/ resources.\n2024-06-17 10:40:51.38 Done building from/ resources index.\n2024-06-17 10:40:51.39 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug'\n2024-06-17 10:40:51.40 WARNING: #38 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug'\n2024-06-17 10:40:51.40 Created 10 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug'\n2024-06-17 10:40:51.40 Step [map_elf] completed in 0 seconds\n2024-06-17 10:40:51.40 Step [map_go] starting\n2024-06-17 10:40:51.41 Mapping 0 to/ resources using paths with 10 from/ resources.\n2024-06-17 10:40:51.41 Done building from/ resources index.\n2024-06-17 10:40:51.42 Step [map_go] completed in 0 seconds\n2024-06-17 10:40:51.42 Step [match_directories_to_purldb] starting\n2024-06-17 10:40:51.42 PurlDB is not available. Skipping.\n2024-06-17 10:40:51.42 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 10:40:51.43 Step [match_resources_to_purldb] starting\n2024-06-17 10:40:51.43 PurlDB is not available. Skipping.\n2024-06-17 10:40:51.43 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 10:40:51.43 Step [map_path] starting\n2024-06-17 10:40:51.44 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 10:40:51.45 Step [map_path] completed in 0 seconds\n2024-06-17 10:40:51.45 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 10:40:51.46 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 10:40:51.47 Step [perform_house_keeping_tasks] starting\n2024-06-17 10:40:51.49 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 10:40:51.50 Step [match_purldb_resources_post_process] starting\n2024-06-17 10:40:51.50 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 10:40:51.51 0 resource processed\n2024-06-17 10:40:51.51 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 10:40:51.52 Step [remove_packages_without_resources] starting\n2024-06-17 10:40:51.53 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 10:40:51.53 Step [scan_unmapped_to_files] starting\n2024-06-17 10:40:54.64 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 10:40:54.65 Step [scan_mapped_from_for_files] starting\n2024-06-17 10:41:05.28 Step [scan_mapped_from_for_files] completed in 11 seconds\n2024-06-17 10:41:05.28 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 10:41:05.28 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 10:41:05.29 Step [create_local_files_packages] starting\n2024-06-17 10:41:05.30 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 10:41:05.31 Pipeline completed in 20 seconds\n",
+                    "execution_time": 20
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86",
+            "type": "local-files",
+            "namespace": "a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1",
+            "name": "8d056ebd-66de-49d9-8aa4-2ffd46b79d86",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>\nCopyright (c) 2019-2020 Job Snijders <job@sobornost.net>\nCopyright (c) 2019-2021 Job Snijders <job@sobornost.net>\nCopyright (c) 2019-2022 Job Snijders <job@sobornost.net>\nCopyright (c) 2018 Peter Schoenmaker <pds@ntt.net>",
+            "holder": "",
+            "declared_license_expression": "bsd-simplified",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64",
+            "type": "directory",
+            "name": "bgpq4-1.12-1.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/expander.c",
+            "type": "file",
+            "name": "expander.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 34816,
+            "md5": "31dadae0c177349a4d2463308e361958",
+            "sha1": "593f58e1d25e5d612fe99e848f86555e7a991e0d",
+            "sha256": "b5b6c9f472c5186bb5297093853ceaa463c90f6565e75917775920f77a6053d7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 26,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019-2022 Job Snijders <job@sobornost.net>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2018 Peter Schoenmaker <pds@ntt.net>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Job Snijders",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Peter Schoenmaker",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "job@sobornost.net",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "pds@ntt.net",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/extern.h",
+            "type": "file",
+            "name": "extern.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4623,
+            "md5": "63754bfa88d7d770db994c55adb2a4fa",
+            "sha1": "596578efbe77c647415e81474a09088eddcbd804",
+            "sha256": "44e6b1eb09ba0eecc0668a0f05d0007dc42479f5c9a0290b0c2e8900523743a4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 26.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/main.c",
+            "type": "file",
+            "name": "main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 22526,
+            "md5": "b0512be64aa0cfe99ab998997b3730c7",
+            "sha1": "97ff924843dbb0e8ce1a682a6792cfd8bc7f870d",
+            "sha256": "dfc0e9ae28c27c0800b153148acad5d09885b7487eb7fe83ea0f8385744b1602",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019-2021 Job Snijders <job@sobornost.net>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Job Snijders",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "job@sobornost.net",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://github.com/bgp/bgpq4",
+                    "end_line": 114,
+                    "start_line": 114
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/printer.c",
+            "type": "file",
+            "name": "printer.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 44099,
+            "md5": "0176cd4f7b5385b09494cf1d1c84d628",
+            "sha1": "6660477a5001b2af0437073277ee1ab2acb2233a",
+            "sha256": "0911bc80dd3668b68c270b7b35545ce31a6d26b7f6b6622a55fe40a8e3a7c4a2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019-2021 Job Snijders <job@sobornost.net>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Job Snijders",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "job@sobornost.net",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_maxsockbuf.c",
+            "type": "file",
+            "name": "sx_maxsockbuf.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3135,
+            "md5": "78f8c78ba096804382c457fc98e54b41",
+            "sha1": "43733f39b4e439bb21704e39ab525a99fcf34b29",
+            "sha256": "b871c16d9f37bf14fa399b40646f7e3ac0059b3b8f8c467afe81680f7f96939f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 42.96,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019-2020 Job Snijders <job@sobornost.net>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Job Snijders",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "job@sobornost.net",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_prefix.c",
+            "type": "file",
+            "name": "sx_prefix.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 34089,
+            "md5": "1935c5673d66226a1317f86fde66e84d",
+            "sha1": "20f436533c38f5db6cdee0176878bbf60d8c124e",
+            "sha256": "2b5ccd63d6de795a14d377f7bf10b2cdef2cb84543f3bcb80fc344cf3c9486d9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019-2020 Job Snijders <job@sobornost.net>",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Job Snijders",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "job@sobornost.net",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_prefix.h",
+            "type": "file",
+            "name": "sx_prefix.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4244,
+            "md5": "9230a328ce1736b544a992d104509e28",
+            "sha1": "a4d8dca26268fb8cf55dda4d076cd0dd290086f5",
+            "sha256": "86efa051bdb91e7fe73143e9acfe088b854b9235e0fd762f880b98bdba19ae40",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.6,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_report.c",
+            "type": "file",
+            "name": "sx_report.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3119,
+            "md5": "34d268bf16652ccdf330973869f5ff16",
+            "sha1": "62ef079a8a0b29c12168c9cf1109666205a297e4",
+            "sha256": "7b21b05a4c33e07086fa826e20a686fb6153d7a2d9af44c5ae4813fe4e0fc8df",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.03,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_report.h",
+            "type": "file",
+            "name": "sx_report.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1910,
+            "md5": "25b8b300b12bd381ae076104eff2041c",
+            "sha1": "6952da3c8eb64a819c27fb4d8c01512397f4389c",
+            "sha256": "611043814166e45967e9f19ee3bf153f16aac9d0c06bd3c69942ee0f4ce80355",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 66.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_slentry.c",
+            "type": "file",
+            "name": "sx_slentry.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1895,
+            "md5": "97cc518c8482ba2421aaad5ce7fab653",
+            "sha1": "38991345b686535a2ab1ca6f527b56eea728f475",
+            "sha256": "5b0af64d32ed31f1c4e4b63030449be7922dc0cf8602f10f97b9cb706012c0ba",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-simplified",
+            "detected_license_expression_spdx": "BSD-2-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 24,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-simplified_27.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the above copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n *\n * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 183,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-simplified_27.RULE",
+                            "license_expression": "bsd-simplified",
+                            "spdx_license_expression": "BSD-2-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_simplified-24fb2214-fe65-fd01-a4db-75b7cf8d710c",
+                    "license_expression": "bsd-simplified",
+                    "license_expression_spdx": "BSD-2-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 66.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007-2019 Alexandre Snarskii <snar@snar.spb.ru>",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Alexandre Snarskii",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/a5c66aa3-d774-4549-a305-b20a06936b33-0ca815f1/8d056ebd-66de-49d9-8aa4-2ffd46b79d86"
+            ],
+            "emails": [
+                {
+                    "email": "snar@snar.spb.ru",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/5d",
+            "type": "directory",
+            "name": "5d",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 247680,
+            "md5": "68c344024817b60cff65c3b4fe4620c6",
+            "sha1": "1184ac86208b616f9dafa7600ccf76743d354610",
+            "sha256": "f66efe3783fdae80ea8f804df6b0764987e4a31fa9e66a7cd0e72ac123a43501",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=5d3939fda78c7f7a7b9460033da487d9b9c52c23, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [
+                {
+                    "email": "job@sobornost.net",
+                    "end_line": 90,
+                    "start_line": 90
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://github.com/bgp/bgpq4",
+                    "end_line": 85,
+                    "start_line": 85
+                }
+            ],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_maxsockbuf.c",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_slentry.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/arpa/inet.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/syslog-decl.h",
+                    "usr/include/bits/syslog.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/err.h",
+                    "usr/include/errno.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/netdb.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/syslog.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/expander.c",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/extern.h",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/main.c",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/printer.c",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_prefix.c",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_prefix.h",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_report.c",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_report.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/arpa/inet.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/syslog-decl.h",
+                    "usr/include/bits/syslog.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/err.h",
+                    "usr/include/errno.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/netdb.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/syslog.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bgpq4-1.12-1.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/expander.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/extern.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/printer.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_maxsockbuf.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_prefix.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_prefix.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_report.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_report.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bgpq4-1.12-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bgpq4-1.12-1.fc40.x86_64/sx_slentry.c"
+        }
+    ]
+}

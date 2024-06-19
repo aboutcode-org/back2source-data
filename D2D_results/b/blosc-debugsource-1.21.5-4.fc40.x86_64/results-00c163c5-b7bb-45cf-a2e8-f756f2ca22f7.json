@@ -1,0 +1,2682 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "00c163c5-b7bb-45cf-a2e8-f756f2ca22f7",
+            "created_date": "2024-06-17T12:07:02.370Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "51713036-6b09-4813-9425-be06a516e933",
+                    "filename": "blosc-debuginfo-1.21.5-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blosc-debuginfo-1.21.5-4.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 106308,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "de3c89e8-b4a2-48cf-a8cf-a054ebd2f348",
+                    "filename": "blosc-debugsource-1.21.5-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blosc-debugsource-1.21.5-4.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 60085,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "557f2fb7-e21a-4a89-b598-7e69e2cff735",
+                    "created_date": "2024-06-17T12:07:02.377739Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "557f2fb7-e21a-4a89-b598-7e69e2cff735",
+                    "task_start_date": "2024-06-17T12:07:02.401114Z",
+                    "task_end_date": "2024-06-17T12:07:28.358947Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 12:07:02.40 Pipeline [d2d] starting\n2024-06-17 12:07:02.40 Step [download_missing_inputs] starting\n2024-06-17 12:07:02.41 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blosc-debugsource-1.21.5-4.fc40.x86_64.rpm#from\n2024-06-17 12:07:05.91 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blosc-debuginfo-1.21.5-4.fc40.x86_64.rpm#to\n2024-06-17 12:07:07.77 Step [download_missing_inputs] completed in 5 seconds\n2024-06-17 12:07:07.78 Step [get_inputs] starting\n2024-06-17 12:07:07.78 Step [get_inputs] completed in 0 seconds\n2024-06-17 12:07:07.79 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 12:07:07.83 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 12:07:07.83 Step [extract_archives] starting\n2024-06-17 12:07:07.90 Step [extract_archives] completed in 0 seconds\n2024-06-17 12:07:07.91 Step [collect_and_create_codebase_resources] starting\n2024-06-17 12:07:07.95 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 12:07:07.95 Step [fingerprint_codebase_directories] starting\n2024-06-17 12:07:07.96 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 12:07:07.96 Step [flag_empty_files] starting\n2024-06-17 12:07:07.97 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 12:07:07.97 Step [flag_whitespace_files] starting\n2024-06-17 12:07:07.97 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 12:07:07.97 Step [flag_ignored_resources] starting\n2024-06-17 12:07:07.97 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 12:07:07.98 Step [map_about_files] starting\n2024-06-17 12:07:07.98 Step [map_about_files] completed in 0 seconds\n2024-06-17 12:07:07.98 Step [map_checksum] starting\n2024-06-17 12:07:07.98 Mapping 2 to/ resources using sha1 against from/ codebase\n2024-06-17 12:07:07.99 Step [map_checksum] completed in 0 seconds\n2024-06-17 12:07:07.99 Step [match_archives_to_purldb] starting\n2024-06-17 12:07:07.99 PurlDB is not available. Skipping.\n2024-06-17 12:07:07.99 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 12:07:07.99 Step [find_java_packages] starting\n2024-06-17 12:07:07.99 Finding Java package for 0 .java resources.\n2024-06-17 12:07:08.00 Step [find_java_packages] completed in 0 seconds\n2024-06-17 12:07:08.00 Step [map_java_to_class] starting\n2024-06-17 12:07:08.00 Mapping 0 .class resources to .java\n2024-06-17 12:07:08.00 No .java resources to map.\n2024-06-17 12:07:08.00 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 12:07:08.01 Step [map_jar_to_source] starting\n2024-06-17 12:07:08.01 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 12:07:08.01 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 12:07:08.01 Step [map_elf] starting\n2024-06-17 12:07:08.32 Mapping 2 to/ resources using paths with 21 from/ resources.\n2024-06-17 12:07:08.32 Done building from/ resources index.\n2024-06-17 12:07:08.32 WARNING: #9 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/blosc-1.21.5-4.fc40.x86_64'\n2024-06-17 12:07:08.32 No mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/blosc-1.21.5-4.fc40.x86_64'\n2024-06-17 12:07:08.33 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug'\n2024-06-17 12:07:08.34 WARNING: #25 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug'\n2024-06-17 12:07:08.34 Created 19 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug'\n2024-06-17 12:07:08.35 Step [map_elf] completed in 0 seconds\n2024-06-17 12:07:08.35 Step [map_go] starting\n2024-06-17 12:07:08.36 Can not parse PosixPath('/home/tg1999/Desktop/purldb/var/projects/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/codebase/to/usr/lib/debug/.dwz/blosc-1.21.5-4.fc40.x86_64') Exception('')\n2024-06-17 12:07:08.36 Mapping 1 to/ resources using paths with 21 from/ resources.\n2024-06-17 12:07:08.36 Done building from/ resources index.\n2024-06-17 12:07:08.37 No mappings using go_file_paths for: 'to/usr/lib/debug/.dwz/blosc-1.21.5-4.fc40.x86_64'\n2024-06-17 12:07:08.37 Step [map_go] completed in 0 seconds\n2024-06-17 12:07:08.37 Step [match_directories_to_purldb] starting\n2024-06-17 12:07:08.37 PurlDB is not available. Skipping.\n2024-06-17 12:07:08.37 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 12:07:08.37 Step [match_resources_to_purldb] starting\n2024-06-17 12:07:08.37 PurlDB is not available. Skipping.\n2024-06-17 12:07:08.38 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 12:07:08.38 Step [map_path] starting\n2024-06-17 12:07:08.38 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 12:07:08.38 Step [map_path] completed in 0 seconds\n2024-06-17 12:07:08.39 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 12:07:08.39 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 12:07:08.40 Step [perform_house_keeping_tasks] starting\n2024-06-17 12:07:08.40 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 12:07:08.41 Step [match_purldb_resources_post_process] starting\n2024-06-17 12:07:08.41 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 12:07:08.41 0 resource processed\n2024-06-17 12:07:08.41 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 12:07:08.42 Step [remove_packages_without_resources] starting\n2024-06-17 12:07:08.42 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 12:07:08.42 Step [scan_unmapped_to_files] starting\n2024-06-17 12:07:11.79 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 12:07:11.79 Step [scan_mapped_from_for_files] starting\n2024-06-17 12:07:25.04 Progress: 10% (2/19) ETA: 119 seconds (2.0 minutes)\n2024-06-17 12:07:25.61 Progress: 21% (4/19) ETA: 52 seconds\n2024-06-17 12:07:25.76 Progress: 31% (6/19) ETA: 31 seconds\n2024-06-17 12:07:25.78 Progress: 42% (8/19) ETA: 19 seconds\n2024-06-17 12:07:26.03 Progress: 52% (10/19) ETA: 13 seconds\n2024-06-17 12:07:26.22 Progress: 63% (12/19) ETA: 8 seconds\n2024-06-17 12:07:26.47 Progress: 73% (14/19) ETA: 5 seconds\n2024-06-17 12:07:26.63 Progress: 84% (16/19) ETA: 3 seconds\n2024-06-17 12:07:26.87 Progress: 94% (18/19) ETA: 1 seconds\n2024-06-17 12:07:28.31 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-17 12:07:28.32 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 12:07:28.32 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 12:07:28.33 Step [create_local_files_packages] starting\n2024-06-17 12:07:28.35 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 12:07:28.35 Pipeline completed in 26 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89",
+            "type": "local-files",
+            "namespace": "634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5",
+            "name": "30c81855-5235-4451-88d9-92f4fae3ec89",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "",
+            "holder": "",
+            "declared_license_expression": "unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/38dc9eab-44dc-4d4b-84ed-4ba21d0ec922",
+            "type": "local-files",
+            "namespace": "634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5",
+            "name": "38dc9eab-44dc-4d4b-84ed-4ba21d0ec922",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2021 The Blosc Developers <blosc@blosc.org> https://blosc.org",
+            "holder": "",
+            "declared_license_expression": "bsd-new AND unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64",
+            "type": "directory",
+            "name": "blosc-1.21.5-4.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/bench",
+            "type": "directory",
+            "name": "bench",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/bench/bench.c",
+            "type": "file",
+            "name": "bench.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 18390,
+            "md5": "764f42f26d1ff61b614026d82b9e3d4c",
+            "sha1": "a92a4ecd434d8a39bc8cda87b41d5ecff48fc7bd",
+            "sha256": "51b758d306f267ea8cd2fc26b41cf06e56891777f88a31af5c1ae267c7746932",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc",
+            "type": "directory",
+            "name": "blosc",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-avx2.c",
+            "type": "file",
+            "name": "bitshuffle-avx2.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8694,
+            "md5": "6b6ac18a21dbd5e9d9baf28c318635d7",
+            "sha1": "b7ec17df5e3f5b16350af43dc1cda47b2daabcb2",
+            "sha256": "09617a7a3ad185fb23d2efba84dffc2821f5157a344770cbdebead9d6b5c239a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Kiyoshi Masui <kiyo@physics.ubc.ca>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [
+                {
+                    "email": "kiyo@physics.ubc.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://github.com/kiyo-masui/bitshuffle",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-avx2.h",
+            "type": "file",
+            "name": "bitshuffle-avx2.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1013,
+            "md5": "0a018877cb87e20e69f5024063e852c6",
+            "sha1": "a366fb920169a3690993fd53d6a5b95664b5927a",
+            "sha256": "15c8c00bb7f3386424c5a7dcd27a5ca54c01bec487ae3d4f26ac9a07276a5c8c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.31,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-generic.c",
+            "type": "file",
+            "name": "bitshuffle-generic.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6805,
+            "md5": "77c3c5df0dab64dd4d08c18fdea36052",
+            "sha1": "d05ccdeba8ff3ff23fd4c54c5bb71ec4c0c19edd",
+            "sha256": "51aa92ca777a356f96c94a7ffe13ca84f615a5e1f81b5f9857e14a91a9f4fd41",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.51,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-generic.h",
+            "type": "file",
+            "name": "bitshuffle-generic.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6484,
+            "md5": "f9293ac7cad4f8b3af29371beb009fe1",
+            "sha1": "d330d94e3dcd89c60d1064282702e7391f3c49cc",
+            "sha256": "305b3099fd4ab9265b6302aeddcc266391111e059661487fc68590f5f032a2e4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.7,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-sse2.c",
+            "type": "file",
+            "name": "bitshuffle-sse2.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17075,
+            "md5": "413f0330a516dce4467baea6a7e9adc0",
+            "sha1": "0f9189b62977e3e6ecaaf4b413cb881bf492ed8b",
+            "sha256": "4d9c787d0743410af3342a1338b963f71014c03829d1a7ab87838d684b28c6d4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Kiyoshi Masui <kiyo@physics.ubc.ca>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [
+                {
+                    "email": "kiyo@physics.ubc.ca",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.github.com/kiyo-masui/bitshuffle",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-sse2.h",
+            "type": "file",
+            "name": "bitshuffle-sse2.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1568,
+            "md5": "8c8aea39902c9d97605a6911789dcfee",
+            "sha1": "e0e84f27b0f3973d6af0ef13c39e7a8ecdc09f20",
+            "sha256": "f11fcd6c106e78b78019bc7738b29cb03c5346542b26cbd2d766bd9294aae915",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.58,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosc.c",
+            "type": "file",
+            "name": "blosc.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 70215,
+            "md5": "890e3352525965f8fe251d3af03ec96e",
+            "sha1": "d9d19fe71971513a081a83c9e4083c375b592c09",
+            "sha256": "9bc568df143aff3d4058bb112ed27e1e30ca79778c77c91784b3d675658efc47",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.06,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://groups.google.com/forum/#!topic/lz4c/zosy90P8MQw",
+                    "end_line": 588,
+                    "start_line": 588
+                },
+                {
+                    "url": "https://pubs.opengroup.org/onlinepubs/9699919799/",
+                    "end_line": 2204,
+                    "start_line": 2204
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosc.h",
+            "type": "file",
+            "name": "blosc.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 19480,
+            "md5": "faf6f54ead5fe8b28d47612ec430652e",
+            "sha1": "f93700eb4969a2b203ca40ec88a6adad3b5d3df0",
+            "sha256": "c6d5c80bff8d98388a61b2691e1faa902fcdc655872f3391e36f98f2c9d70719",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosclz.c",
+            "type": "file",
+            "name": "blosclz.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24125,
+            "md5": "30d04cb0acb8991d0d8234bb4acbda1e",
+            "sha1": "7084840b86a218530e5fe4896f9bbdf2f1374ba5",
+            "sha256": "28f8042c7346c9f9c2ba10a1b5f3da1dc5bb76688057311d6b961506f64d8b6a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-new AND unknown-license-reference",
+            "detected_license_expression_spdx": "BSD-3-Clause AND LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-new_195.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  License: BSD 3-Clause (see LICENSE.txt)",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-new_195.RULE",
+                            "license_expression": "bsd-new",
+                            "spdx_license_expression": "BSD-3-Clause"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_46.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  License: BSD 3-Clause (see LICENSE.txt)",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_46.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 8,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "bsd_new_and_unknown_license_reference-7bcfb910-a208-c3ec-274e-e79d28bc6bd9",
+                    "license_expression": "bsd-new AND unknown-license-reference",
+                    "license_expression_spdx": "BSD-3-Clause AND LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2021 The Blosc Developers <blosc@blosc.org> https://blosc.org",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Blosc Developers",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/38dc9eab-44dc-4d4b-84ed-4ba21d0ec922"
+            ],
+            "emails": [
+                {
+                    "email": "blosc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://blosc.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "url": "https://habr.com/en/company/yandex/blog/457612/",
+                    "end_line": 615,
+                    "start_line": 615
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosclz.h",
+            "type": "file",
+            "name": "blosclz.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2268,
+            "md5": "7da28c87c0c8adb59d39a63a60b83564",
+            "sha1": "3231779f8582dc461cac660e040f19b0941e3e3d",
+            "sha256": "535f6c89f65aaecbc57446d270c95b4b88e30ee083fad8e45ccfc9d6a84973a2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-new AND unknown-license-reference",
+            "detected_license_expression_spdx": "BSD-3-Clause AND LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-new_195.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  License: BSD 3-Clause (see LICENSE.txt)",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-new_195.RULE",
+                            "license_expression": "bsd-new",
+                            "spdx_license_expression": "BSD-3-Clause"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_46.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  License: BSD 3-Clause (see LICENSE.txt)",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_46.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 8,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "bsd_new_and_unknown_license_reference-7bcfb910-a208-c3ec-274e-e79d28bc6bd9",
+                    "license_expression": "bsd-new AND unknown-license-reference",
+                    "license_expression_spdx": "BSD-3-Clause AND LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2021 The Blosc Developers <blosc@blosc.org> https://blosc.org",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Blosc Developers",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/38dc9eab-44dc-4d4b-84ed-4ba21d0ec922"
+            ],
+            "emails": [
+                {
+                    "email": "blosc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://blosc.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/fastcopy.c",
+            "type": "file",
+            "name": "fastcopy.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16589,
+            "md5": "bebc268361f295f25858152471a79770",
+            "sha1": "b6dd6f397fd125372e08f602c99cf03d8b231ac8",
+            "sha256": "abe1ec26f034ced26628007d35563087788bd883ab1b3cbc81878b1f39370257",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.22,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://github.com/zlib-ng/zlib-ng/blob/develop/zlib.h.in",
+                    "end_line": 14,
+                    "start_line": 14
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/fastcopy.h",
+            "type": "file",
+            "name": "fastcopy.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 714,
+            "md5": "b4e6cf3e08a47c79df2f202e3c5f3fd7",
+            "sha1": "0ba91919e6f50fb67c8e3d18b68d14cb99bdde10",
+            "sha256": "55323f5168eda630b7c9d05491fa4fef06aa0f30673c0506062215f0ca3473c7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.17,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-avx2.c",
+            "type": "file",
+            "name": "shuffle-avx2.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 31228,
+            "md5": "e819a3810330b7326351ea1ff97f1ae2",
+            "sha1": "8b219c6eea524d267afa4c9f4541b5c333248bae",
+            "sha256": "ed56e06d969df7f3abb05feb94f9033d8dbbf67aa0ae083af7f01aac8d7eefdd",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.11,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-avx2.h",
+            "type": "file",
+            "name": "shuffle-avx2.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1022,
+            "md5": "dcfb2eceed7f8edfe51ae7815aae5254",
+            "sha1": "9f9eb60f9ee7847b5baa67f74790596431efe4db",
+            "sha256": "abf420590c21f3cd0a407c1e387fad70acf047d273a4d91bb8ea537091587232",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.63,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle.c",
+            "type": "file",
+            "name": "shuffle.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16903,
+            "md5": "004c8ac21653b7e05b3c3bb084d5a156",
+            "sha1": "c34eff220c90b04fc932467a3d40e09b45b61825",
+            "sha256": "cec3fbe1675969c16e39016d06dc83c28fb019d0b9cc08c1c8fc84a348a96a3e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 7,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.23,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "devel@lists.fedoraproject.org",
+                    "end_line": 89,
+                    "start_line": 89
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/ZM2L65WIZEEQHHLFERZYD5FAG7QY2OGB/",
+                    "end_line": 89,
+                    "start_line": 89
+                },
+                {
+                    "url": "https://software.intel.com/en-us/articles/how-to-detect-new-instruction-support-in-the-4th-generation-intel-core-processor-family",
+                    "end_line": 159,
+                    "start_line": 159
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-generic.c",
+            "type": "file",
+            "name": "shuffle-generic.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 953,
+            "md5": "a3e8cef4ced4e393f5da7d7e30606488",
+            "sha1": "50eb1b00c60b9ea16bd67869dc898efd589cb0b1",
+            "sha256": "081c9eaece3c74c415c2c3ec1dbdc0861794519a009f297d525efeae5324b425",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.95,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-generic.h",
+            "type": "file",
+            "name": "shuffle-generic.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3604,
+            "md5": "c490c787d4231629437b46f94b518423",
+            "sha1": "a71f4981a3e83aaf38d5389032dd951a4b2fc503",
+            "sha256": "fa2197167753b308ee65e860fa7679ab81bfd207368aa1d43782dbb1cda04091",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.1,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle.h",
+            "type": "file",
+            "name": "shuffle.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2618,
+            "md5": "82d08b48bb4f5c0cdad2dbdd18366a9a",
+            "sha1": "ffcfdafcaba206ad3bff2fe6a507f1e0b4a3441f",
+            "sha256": "1fd638d9bb99e34e6a3f0b19ee39b4df8f26f7a62eb9ad68b74d9e2326339225",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.53,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-sse2.c",
+            "type": "file",
+            "name": "shuffle-sse2.c",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".c",
+            "size": 25859,
+            "md5": "853ac6645d93a2638a37de7e67b8429b",
+            "sha1": "050ced5f4d275cf2d43c7030ccf3edf134045c90",
+            "sha256": "190581944d5cb0f55d2b8c4e359f1dd42e53006ad201dd556bcbe1b506c27767",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.14,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-sse2.h",
+            "type": "file",
+            "name": "shuffle-sse2.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1025,
+            "md5": "8fb0a2e8d400f3c26eb9241480db2779",
+            "sha1": "823b4009e943cf67edd1bc9df544ee493ab508f7",
+            "sha256": "56a15cb8b2dc5803e506c7d70c3b561d3822f2a465f2a9664ff97d3c2f604f97",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 6,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_412.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": "  See LICENSE.txt for details about copyright and rights to use.",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 90,
+                            "rule_identifier": "unknown-license-reference_412.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-2ae5b0c1-d2d6-52c1-0dd3-248bae93719e",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.63,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Francesc Alted <francesc@blosc.org>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/634bcd8c-6302-4401-a9cb-399a88920ed8-00c163c5/30c81855-5235-4451-88d9-92f4fae3ec89"
+            ],
+            "emails": [
+                {
+                    "email": "francesc@blosc.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/bench",
+            "type": "directory",
+            "name": "bench",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc",
+            "type": "directory",
+            "name": "blosc",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000002800c0080180103516290013602e50141",
+                "directory_structure": "00000002c0158c10c00110009c286c010009e722"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000002800c0080180103516290013602e50141",
+                "directory_structure": "0000000202a4102100003f020030205400402a00"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000002800c0080180103516290013602e50141",
+                "directory_structure": "000000020091063421412a10282a0145c0802240"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000002800c0080180103516290013602e50141",
+                "directory_structure": "000000028b4413c5604021000810034c1464604a"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/e2",
+            "type": "directory",
+            "name": "e2",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/blosc-1.21.5-4.fc40.x86_64",
+            "type": "file",
+            "name": "blosc-1.21.5-4.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 3551,
+            "md5": "909cb9024d8b570798e2a083e5607fa2",
+            "sha1": "6dde400a490c93d2033d9c8581b3fef30001a532",
+            "sha256": "2c1f036e216abfd6e15bbe12898ab32bfe6ace6afbcd7b6c05cf1603936ec009",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=4bc986ef38b27dd4d11fff40526d388b8fbd3eac, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 264160,
+            "md5": "69a4a184d823573cecb424e6446ce24d",
+            "sha1": "802312b76cb91e01496fbb909c11db379687bdfe",
+            "sha256": "aa2242c9ffb31110b44cb105ac3c8fdcd799b6b188a7e2ea88907e8ea6756d84",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=e2404b1c16a55dd8a20810155a5034ba9336db0d, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-generic.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/lz4.h",
+                    "usr/include/lz4hc.h",
+                    "usr/include/pthread.h",
+                    "usr/include/snappy-c.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/zconf.h",
+                    "usr/include/zlib.h",
+                    "usr/include/zstd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/avx2intrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/avxintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/emmintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/mm_malloc.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/mmintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/xmmintrin.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-avx2.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-avx2.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-generic.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-generic.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-sse2.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-sse2.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosc.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosclz.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosclz.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/fastcopy.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/fastcopy.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-avx2.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-avx2.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-generic.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-sse2.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-sse2.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle.c",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/lz4.h",
+                    "usr/include/lz4hc.h",
+                    "usr/include/pthread.h",
+                    "usr/include/snappy-c.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/zconf.h",
+                    "usr/include/zlib.h",
+                    "usr/include/zstd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/avx2intrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/avxintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/emmintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/mm_malloc.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/mmintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/xmmintrin.h",
+                    "usr/src/debug/blosc-1.21.5-4.fc40.x86_64/redhat-linux-build/blosc/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-avx2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-avx2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-generic.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-generic.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-sse2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/bitshuffle-sse2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosclz.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/blosclz.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/fastcopy.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/fastcopy.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-avx2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-avx2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-generic.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-generic.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-sse2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libblosc.so.1.21.5-1.21.5-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/blosc-1.21.5-4.fc40.x86_64/blosc/shuffle-sse2.h"
+        }
+    ]
+}

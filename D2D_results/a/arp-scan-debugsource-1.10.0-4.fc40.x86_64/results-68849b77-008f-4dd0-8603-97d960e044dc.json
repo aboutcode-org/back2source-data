@@ -1,0 +1,1735 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "68849b77-008f-4dd0-8603-97d960e044dc",
+            "created_date": "2024-06-14T09:33:37.817Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "9b8efcc0-dde5-4557-a232-1c33af507504",
+                    "filename": "arp-scan-debuginfo-1.10.0-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arp-scan-debuginfo-1.10.0-4.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 73028,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "bfaf0d41-b226-4b65-80df-cec95d3c36ee",
+                    "filename": "arp-scan-debugsource-1.10.0-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arp-scan-debugsource-1.10.0-4.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 42575,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "d3b56306-4186-4a90-8fd9-0654e61f226e",
+                    "created_date": "2024-06-14T09:33:37.821158Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "d3b56306-4186-4a90-8fd9-0654e61f226e",
+                    "task_start_date": "2024-06-14T09:33:37.832228Z",
+                    "task_end_date": "2024-06-14T09:34:03.447704Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 09:33:37.83 Pipeline [d2d] starting\n2024-06-14 09:33:37.83 Step [download_missing_inputs] starting\n2024-06-14 09:33:37.83 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arp-scan-debugsource-1.10.0-4.fc40.x86_64.rpm#from\n2024-06-14 09:33:39.26 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arp-scan-debuginfo-1.10.0-4.fc40.x86_64.rpm#to\n2024-06-14 09:33:42.42 Step [download_missing_inputs] completed in 5 seconds\n2024-06-14 09:33:42.42 Step [get_inputs] starting\n2024-06-14 09:33:42.43 Step [get_inputs] completed in 0 seconds\n2024-06-14 09:33:42.43 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 09:33:42.45 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 09:33:42.45 Step [extract_archives] starting\n2024-06-14 09:33:42.49 Step [extract_archives] completed in 0 seconds\n2024-06-14 09:33:42.49 Step [collect_and_create_codebase_resources] starting\n2024-06-14 09:33:42.52 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 09:33:42.52 Step [fingerprint_codebase_directories] starting\n2024-06-14 09:33:42.53 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 09:33:42.54 Step [flag_empty_files] starting\n2024-06-14 09:33:42.54 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 09:33:42.54 Step [flag_whitespace_files] starting\n2024-06-14 09:33:42.55 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 09:33:42.55 Step [flag_ignored_resources] starting\n2024-06-14 09:33:42.55 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 09:33:42.55 Step [map_about_files] starting\n2024-06-14 09:33:42.55 Step [map_about_files] completed in 0 seconds\n2024-06-14 09:33:42.56 Step [map_checksum] starting\n2024-06-14 09:33:42.56 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-14 09:33:42.56 Step [map_checksum] completed in 0 seconds\n2024-06-14 09:33:42.57 Step [match_archives_to_purldb] starting\n2024-06-14 09:33:42.57 PurlDB is not available. Skipping.\n2024-06-14 09:33:42.57 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 09:33:42.57 Step [find_java_packages] starting\n2024-06-14 09:33:42.57 Finding Java package for 0 .java resources.\n2024-06-14 09:33:42.58 Step [find_java_packages] completed in 0 seconds\n2024-06-14 09:33:42.58 Step [map_java_to_class] starting\n2024-06-14 09:33:42.58 Mapping 0 .class resources to .java\n2024-06-14 09:33:42.58 No .java resources to map.\n2024-06-14 09:33:42.58 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 09:33:42.59 Step [map_jar_to_source] starting\n2024-06-14 09:33:42.59 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 09:33:42.59 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 09:33:42.59 Step [map_elf] starting\n2024-06-14 09:33:42.71 Mapping 1 to/ resources using paths with 9 from/ resources.\n2024-06-14 09:33:42.72 Done building from/ resources index.\n2024-06-14 09:33:42.72 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug'\n2024-06-14 09:33:42.73 WARNING: #44 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug'\n2024-06-14 09:33:42.73 Created 9 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug'\n2024-06-14 09:33:42.73 Step [map_elf] completed in 0 seconds\n2024-06-14 09:33:42.74 Step [map_go] starting\n2024-06-14 09:33:42.74 Mapping 0 to/ resources using paths with 9 from/ resources.\n2024-06-14 09:33:42.75 Done building from/ resources index.\n2024-06-14 09:33:42.75 Step [map_go] completed in 0 seconds\n2024-06-14 09:33:42.75 Step [match_directories_to_purldb] starting\n2024-06-14 09:33:42.76 PurlDB is not available. Skipping.\n2024-06-14 09:33:42.76 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 09:33:42.76 Step [match_resources_to_purldb] starting\n2024-06-14 09:33:42.76 PurlDB is not available. Skipping.\n2024-06-14 09:33:42.76 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 09:33:42.76 Step [map_path] starting\n2024-06-14 09:33:42.77 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 09:33:42.77 Step [map_path] completed in 0 seconds\n2024-06-14 09:33:42.77 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 09:33:42.78 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 09:33:42.78 Step [perform_house_keeping_tasks] starting\n2024-06-14 09:33:42.79 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 09:33:42.79 Step [match_purldb_resources_post_process] starting\n2024-06-14 09:33:42.80 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 09:33:42.80 0 resource processed\n2024-06-14 09:33:42.80 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 09:33:42.80 Step [remove_packages_without_resources] starting\n2024-06-14 09:33:42.81 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 09:33:42.81 Step [scan_unmapped_to_files] starting\n2024-06-14 09:33:46.71 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-14 09:33:46.72 Step [scan_mapped_from_for_files] starting\n2024-06-14 09:34:03.37 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-14 09:34:03.38 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 09:34:03.39 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 09:34:03.40 Step [create_local_files_packages] starting\n2024-06-14 09:34:03.43 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 09:34:03.44 Pipeline completed in 26 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/4995e6e7-53c7-4e18-a1f6-c7369cfcfb96",
+            "type": "local-files",
+            "namespace": "c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77",
+            "name": "4995e6e7-53c7-4e18-a1f6-c7369cfcfb96",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura\nCopyright (c) 2005, Mutsuo Saito",
+            "holder": "",
+            "declared_license_expression": "bsd-new",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507",
+            "type": "local-files",
+            "namespace": "c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77",
+            "name": "99bead99-34cb-4661-b987-7487c9554507",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005-2022 Roy Hills",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64",
+            "type": "directory",
+            "name": "arp-scan-1.10.0-4.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/arp-scan.c",
+            "type": "file",
+            "name": "arp-scan.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 98505,
+            "md5": "0df760db8341d1681f6720f3b5a2d6e3",
+            "sha1": "cae649e2eb5132d1dfc40275c4e626d6bbd62355",
+            "sha256": "3804aa675b66b0c76b2355cda2a949c0b745371ace65aed29d69c51cb9f33432",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.96,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_27.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 97.96,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_27.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-bacf8c93-52d6-ce8b-e32a-8b98c79fe02b",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 2177,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_63.RULE",
+                            "from_file": null,
+                            "start_line": 2175,
+                            "matched_text": "   printf(\"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html> \");\n   printf(\"This is free software: you are free to change and redistribute it. \");\n   printf(\"There is NO WARRANTY, to the extent permitted by law. \");",
+                            "match_coverage": 100.0,
+                            "matched_length": 36,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_63.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-4a55b1de-825b-baad-825c-68e7381211e8",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.05,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 2174,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2174
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2174,
+                    "start_line": 2174
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                },
+                {
+                    "url": "https://github.com/royhills/arp-scan",
+                    "end_line": 517,
+                    "start_line": 517
+                },
+                {
+                    "url": "https://gnu.org/licenses/gpl.html",
+                    "end_line": 2175,
+                    "start_line": 2175
+                },
+                {
+                    "url": "https://github.com/royhills/arp-scan/issues/3",
+                    "end_line": 2707,
+                    "start_line": 2707
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/arp-scan.h",
+            "type": "file",
+            "name": "arp-scan.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 9036,
+            "md5": "50bf840f26d69a8b1de4424d83ac9387",
+            "sha1": "37f5ef7ea675e5c93aeaf040c095a2c1195a0b40",
+            "sha256": "feaf95c51cd65d90e59f7404f27739a027374c34985fda8bd2068c148d4b9e29",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.0,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_56.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_56.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3e129abe-405b-e0bc-8fd7-77f17a0b74bc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.28,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/error.c",
+            "type": "file",
+            "name": "error.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2569,
+            "md5": "82f47f484148cd99c67a47cacc485fcc",
+            "sha1": "cc55c4d02eb487b2e60a74d02e3d7c31392ab38d",
+            "sha256": "849dca993e1a851eb1331000c2e53775c70051ba3dd8ac68f7ddb5cffb4ba366",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.0,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_56.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_56.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3e129abe-405b-e0bc-8fd7-77f17a0b74bc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/format.c",
+            "type": "file",
+            "name": "format.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3853,
+            "md5": "05f47ea02c70ae0f964f4bda36345b67",
+            "sha1": "87ade97763b75c7cf8f7f268b4d581e03e764978",
+            "sha256": "5bd28b08889405efd2f6bd49349b9abd285dc0d396ae8fbd8ffba420e55a7406",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.0,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_56.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_56.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3e129abe-405b-e0bc-8fd7-77f17a0b74bc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                },
+                {
+                    "url": "https://github.com/royhills/arp-scan",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/link-packet-socket.c",
+            "type": "file",
+            "name": "link-packet-socket.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3215,
+            "md5": "5cbf51edbab410b0de0abd994f473847",
+            "sha1": "33d3f887dbaf6bb049710aa52aafcc196802db78",
+            "sha256": "8effbcd22b4f157a5e37d77c5be4a02d0ee7801d2ad29edfa3e9d6c8d30d5fb9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.0,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_56.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_56.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3e129abe-405b-e0bc-8fd7-77f17a0b74bc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/mt19937ar.c",
+            "type": "file",
+            "name": "mt19937ar.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5914,
+            "md5": "198b2acc61285e131a2cb70d07a3a383",
+            "sha1": "55dec302f745e630091b751206c875da06956be2",
+            "sha256": "a0a7c26e2baf190609e5a6312089aeab81ca4df069a8b2e264ff52f1656fdf8f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-new",
+            "detected_license_expression_spdx": "BSD-3-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 31,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-new_4.RULE",
+                            "from_file": null,
+                            "start_line": 10,
+                            "matched_text": "   Redistribution and use in source and binary forms, with or without\n   modification, are permitted provided that the following conditions\n   are met:\n     1. Redistributions of source code must retain the above copyright\n        notice, this list of conditions and the following disclaimer.\n     2. Redistributions in binary form must reproduce the above copyright\n        notice, this list of conditions and the following disclaimer in the\n        documentation and/or other materials provided with the distribution.\n     3. The names of its contributors may not be used to endorse or promote\n        products derived from this software without specific prior written\n        permission.\n   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n   \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n   A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR\n   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\n   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 209,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-new_4.RULE",
+                            "license_expression": "bsd-new",
+                            "spdx_license_expression": "BSD-3-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_new-d5809b76-edd9-b52d-018e-53740617d531",
+                    "license_expression": "bsd-new",
+                    "license_expression_spdx": "BSD-3-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 24.42,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 2005, Mutsuo Saito",
+                    "start_line": 8
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Makoto Matsumoto and Takuji Nishimura",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Mutsuo Saito",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Takuji Nishimura and Makoto Matsumoto",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "author": "Makoto Matsumoto",
+                    "end_line": 60,
+                    "start_line": 60
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/4995e6e7-53c7-4e18-a1f6-c7369cfcfb96"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html",
+                    "end_line": 33,
+                    "start_line": 33
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/mt19937ar.h",
+            "type": "file",
+            "name": "mt19937ar.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2981,
+            "md5": "98bba301c1a3f8696226f3c650aca907",
+            "sha1": "7395da6b07e4e28d8fefe79e7c3ecc57b567fa6e",
+            "sha256": "94c8a8db2ca4a3f74a1a343fcfa79c7b2ab9ee2d94966f1ddbe3e09bd29fcdea",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "bsd-new",
+            "detected_license_expression_spdx": "BSD-3-Clause",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 34,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsd-new_4.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": "   Redistribution and use in source and binary forms, with or without\n   modification, are permitted provided that the following conditions\n   are met:\n     1. Redistributions of source code must retain the above copyright\n        notice, this list of conditions and the following disclaimer.\n     2. Redistributions in binary form must reproduce the above copyright\n        notice, this list of conditions and the following disclaimer in the\n        documentation and/or other materials provided with the distribution.\n     3. The names of its contributors may not be used to endorse or promote\n        products derived from this software without specific prior written\n        permission.\n   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n   \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n   A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR\n   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\n   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 209,
+                            "rule_relevance": 100,
+                            "rule_identifier": "bsd-new_4.RULE",
+                            "license_expression": "bsd-new",
+                            "spdx_license_expression": "BSD-3-Clause"
+                        }
+                    ],
+                    "identifier": "bsd_new-d5809b76-edd9-b52d-018e-53740617d531",
+                    "license_expression": "bsd-new",
+                    "license_expression_spdx": "BSD-3-Clause"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.94,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 9,
+                    "copyright": "Copyright (c) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura",
+                    "start_line": 9
+                },
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 2005, Mutsuo Saito",
+                    "start_line": 11
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Makoto Matsumoto and Takuji Nishimura",
+                    "end_line": 9,
+                    "start_line": 9
+                },
+                {
+                    "holder": "Mutsuo Saito",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Takuji Nishimura and Makoto Matsumoto",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/4995e6e7-53c7-4e18-a1f6-c7369cfcfb96"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html",
+                    "end_line": 36,
+                    "start_line": 36
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/utils.c",
+            "type": "file",
+            "name": "utils.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 15680,
+            "md5": "c7488e77876005879236cd50cb4a2133",
+            "sha1": "8c55498df1cf3487346ca6a5344644756ed981aa",
+            "sha256": "540546d07c66c2b1b07cbc62282e689d722f369d5bf71dfa51655560cdf864de",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.0,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_56.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_56.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3e129abe-405b-e0bc-8fd7-77f17a0b74bc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                },
+                {
+                    "url": "https://github.com/royhills/arp-scan",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "url": "http://www.snippets.org/",
+                    "end_line": 90,
+                    "start_line": 90
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/wrappers.c",
+            "type": "file",
+            "name": "wrappers.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3689,
+            "md5": "6f80016d466cf1ce20df18f339ae8723",
+            "sha1": "8a3660d5135cbcac039136e53a725b0657ca7e45",
+            "sha256": "07859935398f4fb9837b8a3304bdf4a085baf80f3b55f3f5b32e1dbfb0c9b333",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.0,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_56.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * arp-scan is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * arp-scan is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with arp-scan.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 96,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_56.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-3e129abe-405b-e0bc-8fd7-77f17a0b74bc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.25,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Roy Hills",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c66573b4-41e3-4b15-a206-c0b81c908b37-68849b77/99bead99-34cb-4661-b987-7487c9554507"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/7a",
+            "type": "directory",
+            "name": "7a",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/sbin",
+            "type": "directory",
+            "name": "sbin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 177416,
+            "md5": "3b5cbdfa4b63f6a416423b968dab87ca",
+            "sha1": "bb5a4af38bd0674b7f03a3edf18047de9785ce54",
+            "sha256": "c768f8c21a882a748c0c26e6566ee3c5ad779d58f9e151d087eddffb1fe54c2f",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=7a07dd89c8cac642bea98e1ec908dc26db5449b3, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 91.67,
+                            "matcher": "3-seq",
+                            "end_line": 30,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_63.RULE",
+                            "from_file": null,
+                            "start_line": 28,
+                            "matched_text": "PLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\nDThis is free software: you are free to change and redistribute it.\n7There is NO WARRANTY, to the extent permitted by law.",
+                            "match_coverage": 91.67,
+                            "matched_length": 33,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_63.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-1cc05b4c-de9d-86c2-641b-472aa30de1cc",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.7,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 27,
+                    "copyright": "Copyright (c) 2005-2022 Roy Hills",
+                    "start_line": 27
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Roy Hills",
+                    "end_line": 27,
+                    "start_line": 27
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "https://gnu.org/licenses/gpl.html",
+                    "end_line": 28,
+                    "start_line": 28
+                },
+                {
+                    "url": "https://github.com/royhills/arp-scan",
+                    "end_line": 221,
+                    "start_line": 221
+                }
+            ],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/arpa/inet.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/ifaddrs.h",
+                    "usr/include/net/if.h",
+                    "usr/include/netdb.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/netpacket/packet.h",
+                    "usr/include/pcap/bpf.h",
+                    "usr/include/pcap/pcap.h",
+                    "usr/include/regex.h",
+                    "usr/include/search.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/<built-in>",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/arp-scan.c",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/arp-scan.h",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/error.c",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/format.c",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/link-packet-socket.c",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/mt19937ar.c",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/mt19937ar.h",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/utils.c",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/wrappers.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/arpa/inet.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/ifaddrs.h",
+                    "usr/include/net/if.h",
+                    "usr/include/netdb.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/netpacket/packet.h",
+                    "usr/include/pcap/bpf.h",
+                    "usr/include/pcap/pcap.h",
+                    "usr/include/regex.h",
+                    "usr/include/search.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/arp-scan.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/arp-scan.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/error.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/format.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/link-packet-socket.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/mt19937ar.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/mt19937ar.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/arp-scan-1.10.0-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/arp-scan-1.10.0-4.fc40.x86_64/wrappers.c"
+        }
+    ]
+}

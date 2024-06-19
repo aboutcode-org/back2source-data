@@ -1,0 +1,3964 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "b3d92ed8-068a-404e-bce2-706143579da4",
+            "created_date": "2024-06-17T15:20:24.040Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "87f5c13b-7710-4010-be26-0948ef2c2bf7",
+                    "filename": "contractor-debuginfo-0.3.5-16.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/contractor-debuginfo-0.3.5-16.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 126159,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "7c471434-49eb-41b5-a914-05cd48734a8b",
+                    "filename": "contractor-debugsource-0.3.5-16.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/contractor-debugsource-0.3.5-16.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 58385,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "28e0e3d0-7d53-4f92-bfdb-336868228ce6",
+                    "created_date": "2024-06-17T15:20:24.048455Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "28e0e3d0-7d53-4f92-bfdb-336868228ce6",
+                    "task_start_date": "2024-06-17T15:20:24.065953Z",
+                    "task_end_date": "2024-06-17T15:20:50.540046Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 15:20:24.06 Pipeline [d2d] starting\n2024-06-17 15:20:24.07 Step [download_missing_inputs] starting\n2024-06-17 15:20:24.07 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/contractor-debugsource-0.3.5-16.fc40.x86_64.rpm#from\n2024-06-17 15:20:27.83 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/contractor-debuginfo-0.3.5-16.fc40.x86_64.rpm#to\n2024-06-17 15:20:30.61 Step [download_missing_inputs] completed in 7 seconds\n2024-06-17 15:20:30.62 Step [get_inputs] starting\n2024-06-17 15:20:30.62 Step [get_inputs] completed in 0 seconds\n2024-06-17 15:20:30.62 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 15:20:30.65 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 15:20:30.65 Step [extract_archives] starting\n2024-06-17 15:20:30.78 Step [extract_archives] completed in 0 seconds\n2024-06-17 15:20:30.78 Step [collect_and_create_codebase_resources] starting\n2024-06-17 15:20:30.83 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 15:20:30.83 Step [fingerprint_codebase_directories] starting\n2024-06-17 15:20:30.84 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 15:20:30.84 Step [flag_empty_files] starting\n2024-06-17 15:20:30.84 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 15:20:30.85 Step [flag_whitespace_files] starting\n2024-06-17 15:20:30.85 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 15:20:30.85 Step [flag_ignored_resources] starting\n2024-06-17 15:20:30.85 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 15:20:30.85 Step [map_about_files] starting\n2024-06-17 15:20:30.86 Step [map_about_files] completed in 0 seconds\n2024-06-17 15:20:30.86 Step [map_checksum] starting\n2024-06-17 15:20:30.86 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 15:20:30.86 Step [map_checksum] completed in 0 seconds\n2024-06-17 15:20:30.87 Step [match_archives_to_purldb] starting\n2024-06-17 15:20:30.87 PurlDB is not available. Skipping.\n2024-06-17 15:20:30.87 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 15:20:30.87 Step [find_java_packages] starting\n2024-06-17 15:20:30.87 Finding Java package for 0 .java resources.\n2024-06-17 15:20:30.88 Step [find_java_packages] completed in 0 seconds\n2024-06-17 15:20:30.88 Step [map_java_to_class] starting\n2024-06-17 15:20:30.88 Mapping 0 .class resources to .java\n2024-06-17 15:20:30.88 No .java resources to map.\n2024-06-17 15:20:30.88 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 15:20:30.89 Step [map_jar_to_source] starting\n2024-06-17 15:20:30.89 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 15:20:30.89 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 15:20:30.89 Step [map_elf] starting\n2024-06-17 15:20:31.17 Mapping 1 to/ resources using paths with 32 from/ resources.\n2024-06-17 15:20:31.18 Done building from/ resources index.\n2024-06-17 15:20:31.19 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug'\n2024-06-17 15:20:31.22 WARNING: #59 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug'\n2024-06-17 15:20:31.23 Created 48 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug'\n2024-06-17 15:20:31.23 Step [map_elf] completed in 0 seconds\n2024-06-17 15:20:31.23 Step [map_go] starting\n2024-06-17 15:20:31.24 Mapping 0 to/ resources using paths with 32 from/ resources.\n2024-06-17 15:20:31.24 Done building from/ resources index.\n2024-06-17 15:20:31.25 Step [map_go] completed in 0 seconds\n2024-06-17 15:20:31.25 Step [match_directories_to_purldb] starting\n2024-06-17 15:20:31.25 PurlDB is not available. Skipping.\n2024-06-17 15:20:31.25 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 15:20:31.26 Step [match_resources_to_purldb] starting\n2024-06-17 15:20:31.26 PurlDB is not available. Skipping.\n2024-06-17 15:20:31.26 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 15:20:31.26 Step [map_path] starting\n2024-06-17 15:20:31.26 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 15:20:31.27 Step [map_path] completed in 0 seconds\n2024-06-17 15:20:31.28 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 15:20:31.29 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 15:20:31.30 Step [perform_house_keeping_tasks] starting\n2024-06-17 15:20:31.32 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 15:20:31.33 Step [match_purldb_resources_post_process] starting\n2024-06-17 15:20:31.33 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 15:20:31.34 0 resource processed\n2024-06-17 15:20:31.34 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 15:20:31.35 Step [remove_packages_without_resources] starting\n2024-06-17 15:20:31.36 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 15:20:31.36 Step [scan_unmapped_to_files] starting\n2024-06-17 15:20:34.87 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 15:20:34.88 Step [scan_mapped_from_for_files] starting\n2024-06-17 15:20:47.95 Progress: 10% (5/48) ETA: 118 seconds (2.0 minutes)\n2024-06-17 15:20:48.14 Progress: 20% (10/48) ETA: 53 seconds\n2024-06-17 15:20:48.54 Progress: 31% (15/48) ETA: 30 seconds\n2024-06-17 15:20:48.84 Progress: 41% (20/48) ETA: 20 seconds\n2024-06-17 15:20:49.42 Progress: 52% (25/48) ETA: 13 seconds\n2024-06-17 15:20:49.65 Progress: 62% (30/48) ETA: 9 seconds\n2024-06-17 15:20:49.91 Progress: 72% (35/48) ETA: 6 seconds\n2024-06-17 15:20:50.04 Progress: 83% (40/48) ETA: 3 seconds\n2024-06-17 15:20:50.10 Progress: 93% (45/48) ETA: 1 seconds\n2024-06-17 15:20:50.50 Step [scan_mapped_from_for_files] completed in 16 seconds\n2024-06-17 15:20:50.51 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 15:20:50.51 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 15:20:50.51 Step [create_local_files_packages] starting\n2024-06-17 15:20:50.53 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 15:20:50.53 Pipeline completed in 26 seconds\n",
+                    "execution_time": 26
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f",
+            "type": "local-files",
+            "namespace": "1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8",
+            "name": "32d56e86-16db-45c7-8c05-31e3ee88645f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2011-2017 elementary Developers\nCopyright (c) 2013-2017 elementary Developers",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64",
+            "type": "directory",
+            "name": "contractor-0.3.5-16.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p",
+            "type": "directory",
+            "name": "contractor.p",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".p",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Application.c",
+            "type": "file",
+            "name": "Application.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24396,
+            "md5": "5791d182733716755d10e7295f83869d",
+            "sha1": "9e0b8baecccdeea0c0f413b42dc3ab4fcc9212db",
+            "sha256": "c916474b02da38427cfe84fdee324b4ca42543e1ae0942a171d10a277af293e0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.62,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Contract.c",
+            "type": "file",
+            "name": "Contract.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 46013,
+            "md5": "c0f4765c46f4255d5e78f48c731c2992",
+            "sha1": "e875413db72d9c6070a2d77548832bf8c607fd7e",
+            "sha256": "6d9cc5ee53462657547a471ccddea7a32e3db7808de3307ad26072ec5206fd45",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractDirectory.c",
+            "type": "file",
+            "name": "ContractDirectory.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 23188,
+            "md5": "80db91edcc80d8372969250816b0a67a",
+            "sha1": "39a10067c4aee6bfb19673040a1ff7c0df767522",
+            "sha256": "e4bf35b09adc849d84b4b4b97a5db0a609041e3fbb02d4d0229fef595e129bbe",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [
+                {
+                    "author": "ammonkey <am.monkeyd@gmail.com>",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [
+                {
+                    "email": "am.monkeyd@gmail.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "michael@lazarski.me",
+                    "end_line": 21,
+                    "start_line": 21
+                },
+                {
+                    "email": "voldyman666@gmail.com",
+                    "end_line": 22,
+                    "start_line": 22
+                },
+                {
+                    "email": "victoreduardm@gmail.com",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractFile.c",
+            "type": "file",
+            "name": "ContractFile.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14664,
+            "md5": "99ba9217b88fedd7213081acbfcfbf02",
+            "sha1": "5f9cfbc874d43e960f378b9cc89c3bc897395aed",
+            "sha256": "e067a0a0aee9eea10205f7d045c4c71e007a7c7eaffe0d5e8ef3df664877d34d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractKeyFile.c",
+            "type": "file",
+            "name": "ContractKeyFile.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 38901,
+            "md5": "2de3f160caf38088459bcea89b3c0319",
+            "sha1": "73095f2ad13a663cd449c3328aef77d68f48a576",
+            "sha256": "f94cdfc9f559a7810ac1030860ddae9a800fcaf86aeec0bd07bb59753ea92b31",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractMatcher.c",
+            "type": "file",
+            "name": "ContractMatcher.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19173,
+            "md5": "d216caa6c8442df7f9e9e02828a45191",
+            "sha1": "9e1644eb50ebca316d1828fd3f1a81472a5ee01a",
+            "sha256": "9d53bb4cc49a95bff1a52a5803d0f2b5de1613a5fc87a7a2b2fefd2afb77bdbc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.76,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSorter.c",
+            "type": "file",
+            "name": "ContractSorter.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4624,
+            "md5": "423c60e28ddaf5b11c4845b9d2ee6f48",
+            "sha1": "68d470dd724d4bb350578f7a41c1c6c880b4dfc1",
+            "sha256": "69f187562a6fd4ff6e2a5cf76457fcff702a109660a9183c9fd943ec36ed0be6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.96,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSource.c",
+            "type": "file",
+            "name": "ContractSource.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24272,
+            "md5": "2593d2a0b36e2dda12be5527624cd6fb",
+            "sha1": "74021a022b266fa1ab39e3a83996d1d4041d3a6c",
+            "sha256": "fe66e338c7cdd569cbc21e0197929b85f680a987338398b8a6669c40abb18560",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.73,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/DBusService.c",
+            "type": "file",
+            "name": "DBusService.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 81792,
+            "md5": "f9d72569b325817d7cf2229f226da3f3",
+            "sha1": "47b95585844234aeaba6a504903e28b645d0c0a3",
+            "sha256": "2edbdcf0767c8e40d402525644d24aa55a2b0796afa5627570b0977e6675bb0a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.13,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [
+                {
+                    "author": "ammonkey <am.monkeyd@gmail.com>",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [
+                {
+                    "email": "am.monkeyd@gmail.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "michael@lazarski.me",
+                    "end_line": 21,
+                    "start_line": 21
+                },
+                {
+                    "email": "victoreduardm@gmail.com",
+                    "end_line": 22,
+                    "start_line": 22
+                },
+                {
+                    "email": "lallenlowe@gmail.com",
+                    "end_line": 25,
+                    "start_line": 25
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileEnumerator.c",
+            "type": "file",
+            "name": "FileEnumerator.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 22906,
+            "md5": "9358051d4bf17874beb0b73a28efb5f4",
+            "sha1": "ebc2d579d6c81d0329dbfbcd711c99f71a52e62f",
+            "sha256": "2d4facef158ce910342393bfa188d59e5820c0751464125232d8af05805e112f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileService.c",
+            "type": "file",
+            "name": "FileService.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20522,
+            "md5": "aea58593f6fe2e97a386fe2c11e5fadf",
+            "sha1": "60ca97196e6f32c16a688e0099db2fc8eae80069",
+            "sha256": "af451c3a12d62b9810a1894a9e3b8249dc968c9fe4ad556483a054902532ef7a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [
+                {
+                    "author": "ammonkey <am.monkeyd@gmail.com>",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [
+                {
+                    "email": "am.monkeyd@gmail.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "michael@lazarski.me",
+                    "end_line": 21,
+                    "start_line": 21
+                },
+                {
+                    "email": "voldyman666@gmail.com",
+                    "end_line": 22,
+                    "start_line": 22
+                },
+                {
+                    "email": "victoreduardm@gmail.com",
+                    "end_line": 23,
+                    "start_line": 23
+                },
+                {
+                    "email": "lallenlowe@gmail.com",
+                    "end_line": 29,
+                    "start_line": 29
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/GenericContract.c",
+            "type": "file",
+            "name": "GenericContract.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5609,
+            "md5": "977fb163f121bef69f7360c0c90dc462",
+            "sha1": "4f80f9e6a0d9f13c8c0fe709d5c251d5998b5425",
+            "sha256": "6fa7f3bdafcdbfa7f2045aa83d27423aba97edc8177b88899a04c425179e6511",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/main.c",
+            "type": "file",
+            "name": "main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4351,
+            "md5": "712cd075a15a4ba0b51cb382539fe2f8",
+            "sha1": "db1291d535afc08a17f53aca19ae50288192e1b7",
+            "sha256": "6f5b915f8b4a48efa56a2b5196c7376db0dc31664f81c123d632db6cb85cd7c5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/MimeTypeManager.c",
+            "type": "file",
+            "name": "MimeTypeManager.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20249,
+            "md5": "7815a6f815f670a0aad49d737553c236",
+            "sha1": "79e67a52aba6430e16c1ed08a24954d4b8d88b1b",
+            "sha256": "3e09308c9c8597fadb9803b6d41f21db02422f0caf7323c61d85af02df03d049",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.02,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/String.c",
+            "type": "file",
+            "name": "String.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8542,
+            "md5": "9182e7dc76dd4f98d9fe17229df33794",
+            "sha1": "ecc87a1e6b19fa1b0e33e84be8a5acaf58cce9d2",
+            "sha256": "9a2c95379aaae505a63bf63128c1dda85a2b3f86d720c24127ca7cf9c65a73ec",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Translations.c",
+            "type": "file",
+            "name": "Translations.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 21387,
+            "md5": "33b2cd4377ab3e1eba06005f7d0b9c99",
+            "sha1": "b02c5fdf0599b5007d1cfac47fd6aab5585c0a49",
+            "sha256": "36a896ed7eedac542200f51f2622fc03512173143e5c4d0c932ff279f0361f10",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with very long lines",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.81,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Application.vala",
+            "type": "file",
+            "name": "Application.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 1808,
+            "md5": "f2c04225139847cd0fecd17b3c103b73",
+            "sha1": "b03b5c50aa993d3062a45c72d17f018bfcfdd2a3",
+            "sha256": "781fe89fc4ed1932431da47ee71549404e986670d2568c3963834e6263be6ae5",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 46.58,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractDirectory.vala",
+            "type": "file",
+            "name": "ContractDirectory.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 2160,
+            "md5": "223b1fc36e2f8a30b2966fed31a36a61",
+            "sha1": "f61a060188c892a5808f74fd9c88775157f27107",
+            "sha256": "8aa08100b91905473789919655ab63374b8964fc7c5131abbe6b4df7e4969359",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 39.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "ammonkey <am.monkeyd@gmail.com>",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [
+                {
+                    "email": "am.monkeyd@gmail.com",
+                    "end_line": 17,
+                    "start_line": 17
+                },
+                {
+                    "email": "michael@lazarski.me",
+                    "end_line": 18,
+                    "start_line": 18
+                },
+                {
+                    "email": "voldyman666@gmail.com",
+                    "end_line": 19,
+                    "start_line": 19
+                },
+                {
+                    "email": "victoreduardm@gmail.com",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractFile.vala",
+            "type": "file",
+            "name": "ContractFile.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 2599,
+            "md5": "36b87d8f88e7365c9c6a58221a94e51e",
+            "sha1": "09bd4a3c123416546ba366b213936b14f2937b98",
+            "sha256": "9c2d5e215f4a40dfa5b3ae4603d4713a0d5c2a7c455d4b174c75e73724d3468a",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 31.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractKeyFile.vala",
+            "type": "file",
+            "name": "ContractKeyFile.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 5361,
+            "md5": "548d6e1f35dfd1dbe915a971065de68f",
+            "sha1": "d231e4801fee94019060d84ed4b867af182238ce",
+            "sha256": "594b3a69afde50ddb61271f78c3b262cd6a87227d5cb4e35aa4649ffa8b0e662",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractMatcher.vala",
+            "type": "file",
+            "name": "ContractMatcher.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 3838,
+            "md5": "788c2156aecef36bd963f116e5ffc374",
+            "sha1": "9492c3921ebfe282b6015ac61e3a2ca821f0ecd9",
+            "sha256": "0e809605d725b1d8063763ffac9286fc8314fe4ccfc612dae79bb4efba464fdc",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.25,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractSorter.vala",
+            "type": "file",
+            "name": "ContractSorter.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 1014,
+            "md5": "d87c6972a6d2b5c9fc773616728e1e29",
+            "sha1": "67eeb61e15bc7d0ffce4247662b91f23b6acc5ab",
+            "sha256": "245c4917c4cf4ec097100bc3dd23e881971ff7c500bfe6e992854884dc1a2b07",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 73.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractSource.vala",
+            "type": "file",
+            "name": "ContractSource.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 2896,
+            "md5": "f7748035d20165cf44c8e1748bc59d9f",
+            "sha1": "a0c39a1f73951ef8c422a570c1a2d6874131b32a",
+            "sha256": "d585705336e5ef2025a6ed99c4c3df3e6c94bc22b9ee84093a8e58feeb254bd2",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 29.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Contract.vala",
+            "type": "file",
+            "name": "Contract.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 4935,
+            "md5": "206b82c2dcdc071bce569855bc692176",
+            "sha1": "70e99c927ec2fa4a7574d3182edcee53cfcbf661",
+            "sha256": "d51570ff8632e7eb56866f915437af24a7e1e127f7c87a053bee61e309f8622a",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.12,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/DBusService.vala",
+            "type": "file",
+            "name": "DBusService.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 6475,
+            "md5": "961530f07e26b94de23f92d496fd0152",
+            "sha1": "e7c8344d101051b9db3cdbe405470d5a0f58bf56",
+            "sha256": "9dd30df9cc3e115beab8b995e068a7a31dbab44d1f5133b7faf7e09563b677ec",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "ammonkey <am.monkeyd@gmail.com>",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [
+                {
+                    "email": "am.monkeyd@gmail.com",
+                    "end_line": 17,
+                    "start_line": 17
+                },
+                {
+                    "email": "michael@lazarski.me",
+                    "end_line": 18,
+                    "start_line": 18
+                },
+                {
+                    "email": "victoreduardm@gmail.com",
+                    "end_line": 19,
+                    "start_line": 19
+                },
+                {
+                    "email": "lallenlowe@gmail.com",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/FileEnumerator.vala",
+            "type": "file",
+            "name": "FileEnumerator.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 2179,
+            "md5": "0ed3c1c3d594dd68c7c7673d50280221",
+            "sha1": "28848243f33279c0b62c68c38312f5ecc1131d67",
+            "sha256": "ef15fc61e11931375067df4bf7f25606e99df2974a70a90583a5c138580d32d9",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/FileService.vala",
+            "type": "file",
+            "name": "FileService.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 2610,
+            "md5": "0f8f18444ef4675c1bf88173ae76fc75",
+            "sha1": "bb90a92b8b1edf5102801a1ae5a1a7083e3c1f49",
+            "sha256": "c96417edd2b6ec3cda9a822ad7c40d6254884bafbdfbe1c44d69586785a7ae2c",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 33.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "ammonkey <am.monkeyd@gmail.com>",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [
+                {
+                    "email": "am.monkeyd@gmail.com",
+                    "end_line": 17,
+                    "start_line": 17
+                },
+                {
+                    "email": "michael@lazarski.me",
+                    "end_line": 18,
+                    "start_line": 18
+                },
+                {
+                    "email": "voldyman666@gmail.com",
+                    "end_line": 19,
+                    "start_line": 19
+                },
+                {
+                    "email": "victoreduardm@gmail.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "lallenlowe@gmail.com",
+                    "end_line": 26,
+                    "start_line": 26
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/GenericContract.vala",
+            "type": "file",
+            "name": "GenericContract.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 824,
+            "md5": "1b864c1b952af136b4ec3949e2d695cf",
+            "sha1": "826e2c95ec48358d848f730f9beddca299527248",
+            "sha256": "654c4126fd60208aa9c10268589b596c0e6fd3066d2a6d7a27c3bdd06ecc61fb",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 85.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/main.vala",
+            "type": "file",
+            "name": "main.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 851,
+            "md5": "88f00be61731d9e0b1b5c0139b8fc333",
+            "sha1": "8e9ceeb82ef8b83ebf02a798a1134538b7f1313c",
+            "sha256": "ceb6697582b17a43ad489b777c29d081523935e3adce35821203f9c62a2569ba",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 83.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/MimeTypeManager.vala",
+            "type": "file",
+            "name": "MimeTypeManager.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 1966,
+            "md5": "7e2bc7ccbb4c4b9c0671d785c8c673cc",
+            "sha1": "9bede21f91dfb254312db799bb809618bce65ade",
+            "sha256": "8cc034a80ee6b71717c754e00ed045b8710687a72eba00d47e3e1def48bce7ba",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/String.vala",
+            "type": "file",
+            "name": "String.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 1702,
+            "md5": "3265ead72ba3f73a55eaabeba1d24a4e",
+            "sha1": "fad4173199372196db256978db35193215c16807",
+            "sha256": "47b4984479f97afa9a310d260174602ce32bd19b82f9071e7e39ae88d8ebc11f",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 49.28,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2013-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Translations.vala",
+            "type": "file",
+            "name": "Translations.vala",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".vala",
+            "size": 1674,
+            "md5": "6f07a43c660dbdc3581d8fd3acd794c1",
+            "sha1": "5765af343b0dd4f29d7fecdb2af85183a3991e59",
+            "sha256": "96b1d9ca52a74a68cb1ea9d02a44044f7d3a957fbac984b3ce9485554456e451",
+            "sha512": "",
+            "mime_type": "text/plain",
+            "file_type": "ASCII text",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <http://www.gnu.org/licenses/>.",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.44,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2011-2017 elementary Developers",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "elementary Developers",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/1e226f78-d0fe-4063-b2f8-95e0d440b05b-b3d92ed8/32d56e86-16db-45c7-8c05-31e3ee88645f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 15,
+                    "start_line": 15
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/54",
+            "type": "directory",
+            "name": "54",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "type": "file",
+            "name": "contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 348144,
+            "md5": "00eb1bab30e768821f3b404ead6240d2",
+            "sha1": "fb568c56b8b8158f0ed07742827393c3f4e3110a",
+            "sha256": "baf6dbd8a13ac0eda027c2132fe02a7feea82b55a8bdbc5f379e3e1b5d93c881",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=544f4ec7d309b8cab9e48b28715d3bb37465ca87, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/<artificial>",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Application.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Contract.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractDirectory.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractFile.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractKeyFile.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractMatcher.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSorter.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSource.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/DBusService.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileEnumerator.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileService.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/GenericContract.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/MimeTypeManager.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/String.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Translations.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/main.c"
+                ],
+                "dwarf_included_paths": [
+                    "src/contractor.p/Application.c",
+                    "src/contractor.p/Contract.c",
+                    "src/contractor.p/ContractDirectory.c",
+                    "src/contractor.p/ContractFile.c",
+                    "src/contractor.p/ContractKeyFile.c",
+                    "src/contractor.p/ContractMatcher.c",
+                    "src/contractor.p/ContractSorter.c",
+                    "src/contractor.p/ContractSource.c",
+                    "src/contractor.p/DBusService.c",
+                    "src/contractor.p/FileEnumerator.c",
+                    "src/contractor.p/FileService.c",
+                    "src/contractor.p/GenericContract.c",
+                    "src/contractor.p/MimeTypeManager.c",
+                    "src/contractor.p/String.c",
+                    "src/contractor.p/Translations.c",
+                    "src/contractor.p/main.c",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/gee-0.8/gee.h",
+                    "usr/include/gio-unix-2.0/gio/gdesktopappinfo.h",
+                    "usr/include/glib-2.0/gio/gappinfo.h",
+                    "usr/include/glib-2.0/gio/gcancellable.h",
+                    "usr/include/glib-2.0/gio/gcontenttype.h",
+                    "usr/include/glib-2.0/gio/gdbusconnection.h",
+                    "usr/include/glib-2.0/gio/gdbuserror.h",
+                    "usr/include/glib-2.0/gio/gdbusintrospection.h",
+                    "usr/include/glib-2.0/gio/gdbusmessage.h",
+                    "usr/include/glib-2.0/gio/gdbusmethodinvocation.h",
+                    "usr/include/glib-2.0/gio/gdbusnameowning.h",
+                    "usr/include/glib-2.0/gio/gfile.h",
+                    "usr/include/glib-2.0/gio/gfileenumerator.h",
+                    "usr/include/glib-2.0/gio/gfileinfo.h",
+                    "usr/include/glib-2.0/gio/gfilemonitor.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/gioerror.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gtask.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gfileutils.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/gkeyfile.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmain.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gregex.h",
+                    "usr/include/glib-2.0/glib/gslice.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gboxed.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/gmarshal.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluecollector.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/libintl.h",
+                    "usr/include/locale.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/Application.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/Contract.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/ContractDirectory.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/ContractFile.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/ContractKeyFile.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/ContractMatcher.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/ContractSorter.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/ContractSource.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/DBusService.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/FileEnumerator.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/FileService.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/GenericContract.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/MimeTypeManager.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/String.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/Translations.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/glib-2.0.vapi",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/main.c",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Application.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Contract.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractDirectory.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractFile.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractKeyFile.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractMatcher.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractSorter.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractSource.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/DBusService.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/FileEnumerator.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/FileService.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/GenericContract.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/MimeTypeManager.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/String.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Translations.vala",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/main.vala"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/gee-0.8/gee.h",
+                    "usr/include/gio-unix-2.0/gio/gdesktopappinfo.h",
+                    "usr/include/glib-2.0/gio/gappinfo.h",
+                    "usr/include/glib-2.0/gio/gcancellable.h",
+                    "usr/include/glib-2.0/gio/gcontenttype.h",
+                    "usr/include/glib-2.0/gio/gdbusconnection.h",
+                    "usr/include/glib-2.0/gio/gdbuserror.h",
+                    "usr/include/glib-2.0/gio/gdbusintrospection.h",
+                    "usr/include/glib-2.0/gio/gdbusmessage.h",
+                    "usr/include/glib-2.0/gio/gdbusmethodinvocation.h",
+                    "usr/include/glib-2.0/gio/gdbusnameowning.h",
+                    "usr/include/glib-2.0/gio/gfile.h",
+                    "usr/include/glib-2.0/gio/gfileenumerator.h",
+                    "usr/include/glib-2.0/gio/gfileinfo.h",
+                    "usr/include/glib-2.0/gio/gfilemonitor.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/gio/gioerror.h",
+                    "usr/include/glib-2.0/gio/giotypes.h",
+                    "usr/include/glib-2.0/gio/gtask.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/gfileutils.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/gkeyfile.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmain.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gregex.h",
+                    "usr/include/glib-2.0/glib/gslice.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gstrfuncs.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/glib/gutils.h",
+                    "usr/include/glib-2.0/glib/gvariant.h",
+                    "usr/include/glib-2.0/glib/gvarianttype.h",
+                    "usr/include/glib-2.0/gobject/gboxed.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/gmarshal.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluecollector.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/libintl.h",
+                    "usr/include/locale.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/glib-2.0.vapi"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Application.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Application.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Contract.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Contract.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractDirectory.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractDirectory.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractFile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractFile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractKeyFile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractKeyFile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractMatcher.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractMatcher.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSorter.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSorter.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSource.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/ContractSource.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/DBusService.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/DBusService.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileEnumerator.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileEnumerator.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileService.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/FileService.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/GenericContract.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/GenericContract.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/MimeTypeManager.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/MimeTypeManager.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/String.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/String.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Translations.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/redhat-linux-build/src/contractor.p/Translations.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Application.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractDirectory.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractFile.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractKeyFile.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractMatcher.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractSorter.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/ContractSource.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Contract.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/DBusService.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/FileEnumerator.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/FileService.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/GenericContract.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/main.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/MimeTypeManager.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/String.vala"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/contractor-0.3.5-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/contractor-0.3.5-16.fc40.x86_64/src/Translations.vala"
+        }
+    ]
+}

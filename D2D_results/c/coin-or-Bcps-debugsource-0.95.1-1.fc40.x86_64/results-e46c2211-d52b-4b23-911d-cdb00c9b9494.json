@@ -1,0 +1,2752 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "e46c2211-d52b-4b23-911d-cdb00c9b9494",
+            "created_date": "2024-06-17T12:35:10.012Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "6604145f-9e7c-4e28-b533-161c64b4d223",
+                    "filename": "coin-or-Bcps-debuginfo-0.95.1-1.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Bcps-debuginfo-0.95.1-1.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 177564,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "51c964e3-eb91-49d3-96d9-b2c60e2015dc",
+                    "filename": "coin-or-Bcps-debugsource-0.95.1-1.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Bcps-debugsource-0.95.1-1.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 31001,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "a3ae814c-8e5a-49af-993a-deafd42df075",
+                    "created_date": "2024-06-17T12:35:10.019891Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "a3ae814c-8e5a-49af-993a-deafd42df075",
+                    "task_start_date": "2024-06-17T12:35:10.044594Z",
+                    "task_end_date": "2024-06-17T12:35:34.296795Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 12:35:10.04 Pipeline [d2d] starting\n2024-06-17 12:35:10.05 Step [download_missing_inputs] starting\n2024-06-17 12:35:10.05 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Bcps-debugsource-0.95.1-1.fc40.x86_64.rpm#from\n2024-06-17 12:35:11.68 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Bcps-debuginfo-0.95.1-1.fc40.x86_64.rpm#to\n2024-06-17 12:35:13.93 Step [download_missing_inputs] completed in 4 seconds\n2024-06-17 12:35:13.94 Step [get_inputs] starting\n2024-06-17 12:35:13.95 Step [get_inputs] completed in 0 seconds\n2024-06-17 12:35:13.95 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 12:35:14.00 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 12:35:14.00 Step [extract_archives] starting\n2024-06-17 12:35:14.08 Step [extract_archives] completed in 0 seconds\n2024-06-17 12:35:14.08 Step [collect_and_create_codebase_resources] starting\n2024-06-17 12:35:14.12 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 12:35:14.12 Step [fingerprint_codebase_directories] starting\n2024-06-17 12:35:14.13 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 12:35:14.13 Step [flag_empty_files] starting\n2024-06-17 12:35:14.13 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 12:35:14.13 Step [flag_whitespace_files] starting\n2024-06-17 12:35:14.14 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 12:35:14.14 Step [flag_ignored_resources] starting\n2024-06-17 12:35:14.14 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 12:35:14.14 Step [map_about_files] starting\n2024-06-17 12:35:14.15 Step [map_about_files] completed in 0 seconds\n2024-06-17 12:35:14.15 Step [map_checksum] starting\n2024-06-17 12:35:14.15 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 12:35:14.16 Step [map_checksum] completed in 0 seconds\n2024-06-17 12:35:14.16 Step [match_archives_to_purldb] starting\n2024-06-17 12:35:14.16 PurlDB is not available. Skipping.\n2024-06-17 12:35:14.16 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 12:35:14.16 Step [find_java_packages] starting\n2024-06-17 12:35:14.17 Finding Java package for 0 .java resources.\n2024-06-17 12:35:14.17 Step [find_java_packages] completed in 0 seconds\n2024-06-17 12:35:14.17 Step [map_java_to_class] starting\n2024-06-17 12:35:14.17 Mapping 0 .class resources to .java\n2024-06-17 12:35:14.17 No .java resources to map.\n2024-06-17 12:35:14.18 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 12:35:14.18 Step [map_jar_to_source] starting\n2024-06-17 12:35:14.18 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 12:35:14.18 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 12:35:14.18 Step [map_elf] starting\n2024-06-17 12:35:14.93 Mapping 1 to/ resources using paths with 19 from/ resources.\n2024-06-17 12:35:14.93 Done building from/ resources index.\n2024-06-17 12:35:14.94 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug'\n2024-06-17 12:35:14.95 WARNING: #109 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug'\n2024-06-17 12:35:14.96 Created 19 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug'\n2024-06-17 12:35:14.96 Step [map_elf] completed in 1 seconds\n2024-06-17 12:35:14.96 Step [map_go] starting\n2024-06-17 12:35:14.97 Mapping 0 to/ resources using paths with 19 from/ resources.\n2024-06-17 12:35:14.97 Done building from/ resources index.\n2024-06-17 12:35:14.98 Step [map_go] completed in 0 seconds\n2024-06-17 12:35:14.98 Step [match_directories_to_purldb] starting\n2024-06-17 12:35:14.98 PurlDB is not available. Skipping.\n2024-06-17 12:35:14.98 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 12:35:14.98 Step [match_resources_to_purldb] starting\n2024-06-17 12:35:14.98 PurlDB is not available. Skipping.\n2024-06-17 12:35:14.98 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 12:35:14.99 Step [map_path] starting\n2024-06-17 12:35:14.99 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 12:35:14.99 Step [map_path] completed in 0 seconds\n2024-06-17 12:35:15.00 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 12:35:15.00 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 12:35:15.00 Step [perform_house_keeping_tasks] starting\n2024-06-17 12:35:15.01 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 12:35:15.01 Step [match_purldb_resources_post_process] starting\n2024-06-17 12:35:15.02 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 12:35:15.02 0 resource processed\n2024-06-17 12:35:15.02 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 12:35:15.02 Step [remove_packages_without_resources] starting\n2024-06-17 12:35:15.02 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 12:35:15.03 Step [scan_unmapped_to_files] starting\n2024-06-17 12:35:18.87 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 12:35:18.87 Step [scan_mapped_from_for_files] starting\n2024-06-17 12:35:32.80 Progress: 10% (2/19) ETA: 125 seconds (2.1 minutes)\n2024-06-17 12:35:32.87 Progress: 21% (4/19) ETA: 53 seconds\n2024-06-17 12:35:32.92 Progress: 31% (6/19) ETA: 31 seconds\n2024-06-17 12:35:33.00 Progress: 42% (8/19) ETA: 20 seconds\n2024-06-17 12:35:33.02 Progress: 52% (10/19) ETA: 13 seconds\n2024-06-17 12:35:33.06 Progress: 63% (12/19) ETA: 8 seconds\n2024-06-17 12:35:33.15 Progress: 73% (14/19) ETA: 5 seconds\n2024-06-17 12:35:33.27 Progress: 84% (16/19) ETA: 3 seconds\n2024-06-17 12:35:33.47 Progress: 94% (18/19) ETA: 1 seconds\n2024-06-17 12:35:34.27 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-17 12:35:34.27 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 12:35:34.28 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 12:35:34.28 Step [create_local_files_packages] starting\n2024-06-17 12:35:34.29 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 12:35:34.29 Pipeline completed in 24 seconds\n",
+                    "execution_time": 24
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b",
+            "type": "local-files",
+            "namespace": "fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211",
+            "name": "b00eb558-161b-426e-99dc-a04c76a2eb9b",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+            "holder": "",
+            "declared_license_expression": "epl-1.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64",
+            "type": "directory",
+            "name": "coin-or-Bcps-0.95.1-1.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchObject.cpp",
+            "type": "file",
+            "name": "BcpsBranchObject.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2631,
+            "md5": "844844672b4147ccb07633553d4b22ea",
+            "sha1": "0e146f62c6243a429fc058fec9cbeec7b91479fa",
+            "sha256": "f0ee86407ff4085fd2f01b4a6b1f229201486cb4af8da28d60298348965fd010",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.03,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchObject.h",
+            "type": "file",
+            "name": "BcpsBranchObject.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 8509,
+            "md5": "c6e4b49fc78d404db179d27e7dbc4f90",
+            "sha1": "067ee68f022f0a4c2e2c757e2059b7fea765a576",
+            "sha256": "6c527815f9463b6322d8e0897baa7574876ade00bcf0924c95e0ea31780e300c",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.82,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchStrategy.cpp",
+            "type": "file",
+            "name": "BcpsBranchStrategy.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 3754,
+            "md5": "123b7ff340ee9661e6f4b4d617f6ad94",
+            "sha1": "cfbca2db13f34e561748ff839eed2f5aeed00a64",
+            "sha256": "103d0f2f5ebc01a8491f9e2ed62fde0c81aaad7f9974024e239da37ba14de4d3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.73,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchStrategy.h",
+            "type": "file",
+            "name": "BcpsBranchStrategy.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5955,
+            "md5": "e4526632fab9e16f1d31dc85d9ca54fd",
+            "sha1": "05b9cdc29bade403f8b46baf7c6f9364f544247a",
+            "sha256": "950f6aa7306e4338e579bae0d44dfcbe5c1ff7677019fec2fa573ab363965f71",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.27,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/Bcps.h",
+            "type": "file",
+            "name": "Bcps.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2371,
+            "md5": "04c00fbf5220d9445f32431ec96973ad",
+            "sha1": "ee7ef59dfdbc7da25e62e4325957d6698929ca20",
+            "sha256": "fd92b8f6f7162240782deb2d2edd01ed8ef08a6cf19b3a4e3314ce2b1bc33be5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsMessage.cpp",
+            "type": "file",
+            "name": "BcpsMessage.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2938,
+            "md5": "3952ec08fffe820c7e50dedd5f07bd11",
+            "sha1": "1ed983f46d33476a0ca90f607479996521e5a386",
+            "sha256": "1b3988a053f2e03c57801ada2289ac730bbdc11d50273864f79fb68e48565785",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsMessage.h",
+            "type": "file",
+            "name": "BcpsMessage.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2391,
+            "md5": "6279c78e870a90987eaf7eddf3cd8da4",
+            "sha1": "821f31f13c0c9ea1e6d0e4cf6516cca56453d25a",
+            "sha256": "4788445e1645aba25dfc68f5d83b81accc1c4adfaa94ef9a6c806a7343af1c8c",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.23,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsModel.cpp",
+            "type": "file",
+            "name": "BcpsModel.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 3577,
+            "md5": "72068e23539531658360c2f6fa82b03b",
+            "sha1": "b1fed31a723202f973e3685b4b5aa7baaaffda18",
+            "sha256": "cfe6b7fca29c00fc8ab8f21c356fc191080db3baa38fe22eff3e44b6d6df6122",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsModel.h",
+            "type": "file",
+            "name": "BcpsModel.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4894,
+            "md5": "d02c89e277c20f84a2329ace9dd04321",
+            "sha1": "b70ef400499d9c10041d6ff4b16876849abf7fd3",
+            "sha256": "5bd249e405caaaedeb7185750d818f39f9e53aee014501c99d3dd462238cd83b",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsNodeDesc.cpp",
+            "type": "file",
+            "name": "BcpsNodeDesc.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 33347,
+            "md5": "63982dfeb2a26ddec754898fb866f6f7",
+            "sha1": "f548ec73a4174bcd9f74cbf8f4c4448eaba163c5",
+            "sha256": "8b644e0de49c9b9000390d6e8daa4fab16cd2c84ed2bf6d1760693c84d58570a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsNodeDesc.h",
+            "type": "file",
+            "name": "BcpsNodeDesc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 14236,
+            "md5": "5bd4d3b5325172a6a37116f6933515fa",
+            "sha1": "7cc19b2e658d3322543462802ee519e6d226775f",
+            "sha256": "d20961b93910baf67b04b9cc6a401ad95000bd847b660e01c2617db80dfb6375",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObject.cpp",
+            "type": "file",
+            "name": "BcpsObject.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2856,
+            "md5": "6cd4762fac5fc779c26f86978e88acb9",
+            "sha1": "280211c9bd97bf930712b3d792022bee4309fa62",
+            "sha256": "21dc9c8e63a253e1b20fc821905e1b95b0622784174bbb07d3bab75290b805fb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObject.h",
+            "type": "file",
+            "name": "BcpsObject.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 13531,
+            "md5": "9aa5701680287f178a8459a5fa491d79",
+            "sha1": "1a7eabd292f5b09eb1e9623c80f227f97b3fb11a",
+            "sha256": "dca148540307fa53760cc1c13d8df9adeb4fcd269079668c7153cbc95aab0f2f",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObjectPool.h",
+            "type": "file",
+            "name": "BcpsObjectPool.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5357,
+            "md5": "469942e684f12561a4f8ef85f8a3c114",
+            "sha1": "de9ea8217838efbc2d8b08ec58e135af14d32ebd",
+            "sha256": "3b6f1979650db020da2b3f8dd03efaceebe9a8debc926071e369c4b753533ac3",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSolution.cpp",
+            "type": "file",
+            "name": "BcpsSolution.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 3119,
+            "md5": "c65a20cb408f2bb2d05cda5eb881e009",
+            "sha1": "25dd11b36de60e33b25036f6f11fd9b055585150",
+            "sha256": "902cfdb0377021258cd840e808d07d72418a5e79deb7a9be3e050bd5c23d1761",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSolution.h",
+            "type": "file",
+            "name": "BcpsSolution.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5462,
+            "md5": "7b3a870ac0e0bb52389a4d47cea67c27",
+            "sha1": "75110d5b1d7cb4909d987cfdee3c4cccf8958c9e",
+            "sha256": "819c65e7206c4d38115885667e8a88dba2eeea771e14e4e68b847591e59760db",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSubTree.cpp",
+            "type": "file",
+            "name": "BcpsSubTree.cpp",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 374,
+            "md5": "371d17a0b809405bde18bb01bdaed0a9",
+            "sha1": "420bd02c56a913113d66926e10babad652a39eda",
+            "sha256": "f81921be02a61c105d3eb5be5a4e6242118599c7e6f03034cfb6f5398f70cb42",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsTreeNode.cpp",
+            "type": "file",
+            "name": "BcpsTreeNode.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 4717,
+            "md5": "a72e15a2c5b0964edbd8681e7c3b4e1a",
+            "sha1": "f215e86a6b4254632e43ff791064955c63531b1c",
+            "sha256": "1bd51bbb997561ddef2da89f56c4ba8ef61e1952dfd0b8ba5eea4f625b550ae4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.27,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsTreeNode.h",
+            "type": "file",
+            "name": "BcpsTreeNode.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6188,
+            "md5": "343fdd23ee59de848ee7774b9bc96820",
+            "sha1": "e22f8ed3a347b050de0efb8c1b3fe32607ce15e0",
+            "sha256": "288e07abf1885a8b13aa7bb62a4e707279ec9e8b1c33ae6389f1bd9b02d7635e",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "epl-1.0",
+            "detected_license_expression_spdx": "EPL-1.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 98.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/epl_no-version.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * BiCePS is distributed under the Eclipse Public License as part of the     *",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 98,
+                            "rule_identifier": "epl_no-version.RULE",
+                            "license_expression": "epl-1.0",
+                            "spdx_license_expression": "EPL-1.0"
+                        }
+                    ],
+                    "identifier": "epl_1_0-95bd340e-ff58-0110-260f-ee4378b3ab40",
+                    "license_expression": "epl-1.0",
+                    "license_expression_spdx": "EPL-1.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.05,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 19,
+                    "copyright": "Copyright (c) 2001-2023, Lehigh University, Yan Xu, and Ted Ralphs",
+                    "start_line": 19
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lehigh University, Yan Xu, and Ted Ralphs",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/fe2cd67c-a22b-4339-b8cc-3223a9a0ae33-e46c2211/b00eb558-161b-426e-99dc-a04c76a2eb9b"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.coin-or.org/",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/4f",
+            "type": "directory",
+            "name": "4f",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 552536,
+            "md5": "da998f47496d28d0531d9f610693218c",
+            "sha1": "141b2c97d2cdbb2e063a1b06959368cd2dd6db35",
+            "sha256": "ea3835e4dfa7d7d5b0423165a098a3ccd258840b3bf9a37e47277f456f3e60e5",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=4f24148cb875e4b49bfc6557152c620010c4a1cd, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/<artificial>",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchObject.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObject.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSubTree.cpp"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-least.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/uses_allocator.h",
+                    "usr/include/c++/14/bits/utility.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/ctime",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/coin/Alps.h",
+                    "usr/include/coin/AlpsEncoded.h",
+                    "usr/include/coin/AlpsKnowledge.h",
+                    "usr/include/coin/AlpsKnowledgeBroker.h",
+                    "usr/include/coin/AlpsKnowledgePool.h",
+                    "usr/include/coin/AlpsModel.h",
+                    "usr/include/coin/AlpsNodeDesc.h",
+                    "usr/include/coin/AlpsParameterBase.h",
+                    "usr/include/coin/AlpsSolution.h",
+                    "usr/include/coin/AlpsSubTree.h",
+                    "usr/include/coin/AlpsTreeNode.h",
+                    "usr/include/coin/CoinError.hpp",
+                    "usr/include/coin/CoinFinite.hpp",
+                    "usr/include/coin/CoinMessageHandler.hpp",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/<built-in>",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/Bcps.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchObject.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchStrategy.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchStrategy.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsMessage.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsMessage.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsModel.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsModel.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsNodeDesc.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsNodeDesc.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObject.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObjectPool.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSolution.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSolution.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsTreeNode.cpp",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsTreeNode.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-least.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/shared_ptr_base.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_map.h",
+                    "usr/include/c++/14/bits/stl_pair.h",
+                    "usr/include/c++/14/bits/stl_tree.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/uses_allocator.h",
+                    "usr/include/c++/14/bits/utility.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdint",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/ctime",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/ext/concurrence.h",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/tuple",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/coin/Alps.h",
+                    "usr/include/coin/AlpsEncoded.h",
+                    "usr/include/coin/AlpsKnowledge.h",
+                    "usr/include/coin/AlpsKnowledgeBroker.h",
+                    "usr/include/coin/AlpsKnowledgePool.h",
+                    "usr/include/coin/AlpsModel.h",
+                    "usr/include/coin/AlpsNodeDesc.h",
+                    "usr/include/coin/AlpsParameterBase.h",
+                    "usr/include/coin/AlpsSolution.h",
+                    "usr/include/coin/AlpsSubTree.h",
+                    "usr/include/coin/AlpsTreeNode.h",
+                    "usr/include/coin/CoinError.hpp",
+                    "usr/include/coin/CoinFinite.hpp",
+                    "usr/include/coin/CoinMessageHandler.hpp",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchObject.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchObject.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchStrategy.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsBranchStrategy.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/Bcps.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsMessage.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsMessage.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsModel.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsModel.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsNodeDesc.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsNodeDesc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObject.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObject.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsObjectPool.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSolution.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSolution.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsSubTree.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsTreeNode.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libBcps.so.1.8.1-0.95.1-1.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/coin-or-Bcps-0.95.1-1.fc40.x86_64/src/BcpsTreeNode.h"
+        }
+    ]
+}

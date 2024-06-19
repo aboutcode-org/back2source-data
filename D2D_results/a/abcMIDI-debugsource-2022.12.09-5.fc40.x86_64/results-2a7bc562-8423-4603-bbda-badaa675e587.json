@@ -1,0 +1,3715 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "2a7bc562-8423-4603-bbda-badaa675e587",
+            "created_date": "2024-06-14T04:00:33.247Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "95ba4156-042b-44b5-b031-142d3e1011b8",
+                    "filename": "abcMIDI-debuginfo-2022.12.09-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcMIDI-debuginfo-2022.12.09-5.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 627539,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "9d11acf4-6b7f-4955-b6af-112b7c0bfb5a",
+                    "filename": "abcMIDI-debugsource-2022.12.09-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcMIDI-debugsource-2022.12.09-5.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 212750,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "3b3c4d67-7967-49a7-b446-202e02c333ed",
+                    "created_date": "2024-06-14T04:00:33.255379Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "3b3c4d67-7967-49a7-b446-202e02c333ed",
+                    "task_start_date": "2024-06-14T04:00:33.278194Z",
+                    "task_end_date": "2024-06-14T04:01:25.821344Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 04:00:33.27 Pipeline [d2d] starting\n2024-06-14 04:00:33.28 Step [download_missing_inputs] starting\n2024-06-14 04:00:33.28 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcMIDI-debugsource-2022.12.09-5.fc40.x86_64.rpm#from\n2024-06-14 04:00:36.32 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcMIDI-debuginfo-2022.12.09-5.fc40.x86_64.rpm#to\n2024-06-14 04:00:42.95 Step [download_missing_inputs] completed in 10 seconds\n2024-06-14 04:00:42.95 Step [get_inputs] starting\n2024-06-14 04:00:42.96 Step [get_inputs] completed in 0 seconds\n2024-06-14 04:00:42.96 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 04:00:43.06 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 04:00:43.07 Step [extract_archives] starting\n2024-06-14 04:00:43.20 Step [extract_archives] completed in 0 seconds\n2024-06-14 04:00:43.20 Step [collect_and_create_codebase_resources] starting\n2024-06-14 04:00:43.38 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 04:00:43.38 Step [fingerprint_codebase_directories] starting\n2024-06-14 04:00:43.40 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 04:00:43.40 Step [flag_empty_files] starting\n2024-06-14 04:00:43.40 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 04:00:43.41 Step [flag_whitespace_files] starting\n2024-06-14 04:00:43.41 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 04:00:43.41 Step [flag_ignored_resources] starting\n2024-06-14 04:00:43.41 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 04:00:43.42 Step [map_about_files] starting\n2024-06-14 04:00:43.42 Step [map_about_files] completed in 0 seconds\n2024-06-14 04:00:43.42 Step [map_checksum] starting\n2024-06-14 04:00:43.43 Mapping 8 to/ resources using sha1 against from/ codebase\n2024-06-14 04:00:43.45 Step [map_checksum] completed in 0 seconds\n2024-06-14 04:00:43.45 Step [match_archives_to_purldb] starting\n2024-06-14 04:00:43.46 PurlDB is not available. Skipping.\n2024-06-14 04:00:43.46 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 04:00:43.46 Step [find_java_packages] starting\n2024-06-14 04:00:43.47 Finding Java package for 0 .java resources.\n2024-06-14 04:00:43.48 Step [find_java_packages] completed in 0 seconds\n2024-06-14 04:00:43.48 Step [map_java_to_class] starting\n2024-06-14 04:00:43.49 Mapping 0 .class resources to .java\n2024-06-14 04:00:43.49 No .java resources to map.\n2024-06-14 04:00:43.49 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 04:00:43.50 Step [map_jar_to_source] starting\n2024-06-14 04:00:43.50 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 04:00:43.51 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 04:00:43.51 Step [map_elf] starting\n2024-06-14 04:00:44.86 Mapping 8 to/ resources using paths with 30 from/ resources.\n2024-06-14 04:00:44.86 Done building from/ resources index.\n2024-06-14 04:00:44.87 WARNING: #13 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64'\n2024-06-14 04:00:44.88 Created 9 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64'\n2024-06-14 04:00:44.88 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.89 WARNING: #2 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.89 Created 5 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.89 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.90 WARNING: #6 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.90 Created 13 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.91 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.91 WARNING: #2 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.91 Created 6 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.92 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.92 WARNING: #2 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.92 Created 3 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.93 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.93 WARNING: #2 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.93 Created 3 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.93 WARNING: #1 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/midicopy-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.94 WARNING: #4 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/midicopy-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.94 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/midicopy-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.94 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.95 WARNING: #6 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.95 Created 14 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug'\n2024-06-14 04:00:44.96 Step [map_elf] completed in 1 seconds\n2024-06-14 04:00:44.96 Step [map_go] starting\n2024-06-14 04:00:44.96 Mapping 0 to/ resources using paths with 30 from/ resources.\n2024-06-14 04:00:44.97 Done building from/ resources index.\n2024-06-14 04:00:44.97 Step [map_go] completed in 0 seconds\n2024-06-14 04:00:44.97 Step [match_directories_to_purldb] starting\n2024-06-14 04:00:44.98 PurlDB is not available. Skipping.\n2024-06-14 04:00:44.98 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 04:00:44.98 Step [match_resources_to_purldb] starting\n2024-06-14 04:00:44.98 PurlDB is not available. Skipping.\n2024-06-14 04:00:44.98 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 04:00:44.98 Step [map_path] starting\n2024-06-14 04:00:44.98 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 04:00:44.99 Step [map_path] completed in 0 seconds\n2024-06-14 04:00:44.99 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 04:00:45.00 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 04:00:45.00 Step [perform_house_keeping_tasks] starting\n2024-06-14 04:00:45.01 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 04:00:45.01 Step [match_purldb_resources_post_process] starting\n2024-06-14 04:00:45.01 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 04:00:45.02 0 resource processed\n2024-06-14 04:00:45.02 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 04:00:45.02 Step [remove_packages_without_resources] starting\n2024-06-14 04:00:45.02 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 04:00:45.03 Step [scan_unmapped_to_files] starting\n2024-06-14 04:00:53.09 Step [scan_unmapped_to_files] completed in 8 seconds\n2024-06-14 04:00:53.09 Step [scan_mapped_from_for_files] starting\n2024-06-14 04:01:06.24 Progress: 11% (6/54) ETA: 106 seconds (1.8 minutes)\n2024-06-14 04:01:06.72 Progress: 22% (12/54) ETA: 48 seconds\n2024-06-14 04:01:08.14 Progress: 33% (18/54) ETA: 31 seconds\n2024-06-14 04:01:10.18 Progress: 44% (24/54) ETA: 22 seconds\n2024-06-14 04:01:11.21 Progress: 55% (30/54) ETA: 15 seconds\n2024-06-14 04:01:12.20 Progress: 66% (36/54) ETA: 10 seconds\n2024-06-14 04:01:14.05 Progress: 77% (42/54) ETA: 6 seconds\n2024-06-14 04:01:18.06 Progress: 87% (47/54) ETA: 4 seconds\n2024-06-14 04:01:19.36 Progress: 98% (53/54) ETA: 1 seconds\n2024-06-14 04:01:25.78 Step [scan_mapped_from_for_files] completed in 33 seconds\n2024-06-14 04:01:25.78 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 04:01:25.79 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 04:01:25.79 Step [create_local_files_packages] starting\n2024-06-14 04:01:25.81 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 04:01:25.81 Pipeline completed in 53 seconds\n",
+                    "execution_time": 52
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/02087a0b-3f04-4d1f-9cd2-6873a7a2c9d8",
+            "type": "local-files",
+            "namespace": "b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562",
+            "name": "02087a0b-3f04-4d1f-9cd2-6873a7a2c9d8",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright James Allwright 2000",
+            "holder": "",
+            "declared_license_expression": "gpl-1.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/2c80ef74-fe95-4fb4-9484-12e2e42b10a4",
+            "type": "local-files",
+            "namespace": "b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562",
+            "name": "2c80ef74-fe95-4fb4-9484-12e2e42b10a4",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1998 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND public-domain",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43",
+            "type": "local-files",
+            "namespace": "b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562",
+            "name": "73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright James Allwright 2020\nCopyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/af47e7ff-7bee-4bd6-bf27-34fa4d3a6ec7",
+            "type": "local-files",
+            "namespace": "b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562",
+            "name": "af47e7ff-7bee-4bd6-bf27-34fa4d3a6ec7",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1999 Michael Methfessel",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND gpl-1.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "type": "directory",
+            "name": "abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h",
+            "type": "file",
+            "name": "abc.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2635,
+            "md5": "0de004f0a187ec3ed2a322e17a7125b3",
+            "sha1": "6be3d07141d5210e426be3dada8a5345826c984d",
+            "sha256": "24ef28c7236f1855d332792149f19b857bd02a95c5974adf5649c7adf58a89f7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.62,
+                            "matcher": "3-seq",
+                            "end_line": 3,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_15.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": "/* may be copied under the terms of the GNU public license */",
+                            "match_coverage": 84.62,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_15.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-b5e09a3f-9c2b-328e-ae1c-ddfc3ab5f551",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.01,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright James Allwright 2000",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/02087a0b-3f04-4d1f-9cd2-6873a7a2c9d8"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abcmatch.c",
+            "type": "file",
+            "name": "abcmatch.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 42306,
+            "md5": "e161da3c387e2b7d67469c22125078b2",
+            "sha1": "75994708e9d6cfd8b19dfa419c1026c02821be32",
+            "sha256": "54c2c8349a1299c49df9aae92346771b85e130a21e6248f25dac1f8df5ded2c8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/crack.c",
+            "type": "file",
+            "name": "crack.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4370,
+            "md5": "d44e6df61de47d4f075882ed474082c8",
+            "sha1": "42f5a422ec7c512c69a2230b738c6bbf80cbb273",
+            "sha256": "9a0fe5674d9c696271b75e31440dbdb9560c9723b1887615b148f048ea03c0ab",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/debug.c",
+            "type": "file",
+            "name": "debug.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6665,
+            "md5": "df360354b879cca61d96ba254d89dbca",
+            "sha1": "27bc1948d51d6169a94146afa24efe015b78c897",
+            "sha256": "a9a225f0d538dc2e6763959476c6ce9045d6ce4ccc5fcae53df4b007985053f7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/drawtune.c",
+            "type": "file",
+            "name": "drawtune.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 95611,
+            "md5": "50d7e978e2c0fa63ccdd24a9fce2f0ac",
+            "sha1": "bd8d6bdbf1caf53ae31a577b2de0043e5b6359af",
+            "sha256": "db87de688435eb7ceba768e16d841cdbc2b0eba9159e3ce797a6c05da7cfc3a5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=890250",
+                    "end_line": 2493,
+                    "start_line": 2493
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/drawtune.h",
+            "type": "file",
+            "name": "drawtune.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1051,
+            "md5": "a884bcba3f194c391a9036118b87bf8b",
+            "sha1": "c5165e6ffeb65a46d7edf575a21fe775dc38dde1",
+            "sha256": "f4e4240fcfdc06567d1332d03e875c24d19fa73d89e26cd25334e5080e54ec67",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/genmidi.c",
+            "type": "file",
+            "name": "genmidi.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 100303,
+            "md5": "48f4c3fd623a7a1839d63eb7939e7a81",
+            "sha1": "2218892f5875761685e977237ec8fe6250b15d4a",
+            "sha256": "56a307af5d0f0494a25c4463d505147d7046c383db42e067e4eb73a02f6861fc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://home.roadrunner.com/~jgglatt/tech/midispec/rpn.htm",
+                    "end_line": 1458,
+                    "start_line": 1458
+                },
+                {
+                    "url": "http://www.2writers.com/eddie/TutNrpn.htm",
+                    "end_line": 1459,
+                    "start_line": 1459
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/genmidi.h",
+            "type": "file",
+            "name": "genmidi.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1072,
+            "md5": "fcd1834065c00d3c01e7b80006381503",
+            "sha1": "ca8a9370122374035c1c9bd3be2454f6c93291f4",
+            "sha256": "c4fe275a70519d9a9702002568fc7e0824f19593f0fb9feabf6f97ca2d491d47",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/matchsup.c",
+            "type": "file",
+            "name": "matchsup.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 45055,
+            "md5": "69a2f6bbb00f9e3fdd44879e03d4268d",
+            "sha1": "db43d0fb9e46b8ba4576a058054f033da8d7227f",
+            "sha256": "1bf1ec81514b0b8cd77c59b4613a21a69507466751955874fb1572618a602ccb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 58,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 46,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.89,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 10
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 11,
+                    "start_line": 10
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/mftext.c",
+            "type": "file",
+            "name": "mftext.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5514,
+            "md5": "5cdc6db0746f5c8b5386812f98247e8a",
+            "sha1": "ee6fb5140887f998641835763ba7aa9fdf1a61e3",
+            "sha256": "a13fc103faac2b9550225c4806baa94fa851bce1e162640dd55358f58ec74a68",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midi2abc.c",
+            "type": "file",
+            "name": "midi2abc.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 96604,
+            "md5": "3e2f5216e8143a5a45edc72a19ead65e",
+            "sha1": "3472121c55ae729fbab0ff86eaf9c1f4466ba890",
+            "sha256": "bccadae2ffba08edf70c7229395c9e5f33ba70d2d851ffb282410336ae451e83",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND public-domain",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-public-domain",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 99.0,
+                            "matcher": "2-aho",
+                            "end_line": 45,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/public-domain_98.RULE",
+                            "from_file": null,
+                            "start_line": 45,
+                            "matched_text": " * based on public domain 'midifilelib' package.",
+                            "match_coverage": 100.0,
+                            "matched_length": 4,
+                            "rule_relevance": 99,
+                            "rule_identifier": "public-domain_98.RULE",
+                            "license_expression": "public-domain",
+                            "spdx_license_expression": "LicenseRef-scancode-public-domain"
+                        }
+                    ],
+                    "identifier": "public_domain-22f00412-bd85-4317-dfbc-c675369d3f86",
+                    "license_expression": "public-domain",
+                    "license_expression_spdx": "LicenseRef-scancode-public-domain"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1998 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 3,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/2c80ef74-fe95-4fb4-9484-12e2e42b10a4"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=924947",
+                    "end_line": 314,
+                    "start_line": 314
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midicopy.c",
+            "type": "file",
+            "name": "midicopy.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 53085,
+            "md5": "1bbd290277ef3d6f586a2d1b3b2fe8d4",
+            "sha1": "0e5de29ed4fd34faf67fe67531fe467f808c0253",
+            "sha256": "a9b93a0a17d2a7e6e96879378bcf1fce7a4175cb836379ef208a348445019a1a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.jsbchorales.net/",
+                    "end_line": 1342,
+                    "start_line": 1342
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c",
+            "type": "file",
+            "name": "midifile.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 26841,
+            "md5": "96e606ccddc0c2df37767bc87feb9133",
+            "sha1": "6f4ad40613fba6b1a8f3f78a032fdbe91583dad6",
+            "sha256": "a1c40017fd24d200fbdfd11373f2fe2822b3c1b23c2e97f2ebcfba9629a1497e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.midi.org/about-midi/tuning.shtml",
+                    "end_line": 58,
+                    "start_line": 58
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h",
+            "type": "file",
+            "name": "midifile.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3426,
+            "md5": "2a6ad85782ef8d9d5417f992b07932e7",
+            "sha1": "06ce8185967a7baeac31b89fceb9893f703b6fa8",
+            "sha256": "390b0c672615b1d60de2c9a01669161b36729b216fd9cb5be28b3131f30237d2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c",
+            "type": "file",
+            "name": "music_utils.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10401,
+            "md5": "31b90128b1b2259d84cdd627922a65a2",
+            "sha1": "35f65283ba69d0008c1b92d8b31591f072863c80",
+            "sha256": "73811ec4cf4b14b2ccd9b163a47c5e11725428d8a97c12a63c9bff7d7e55bdda",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_860.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, see <https://www.gnu.org/licenses/>",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_860.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-26fbddd6-ee9f-fbfe-662b-48fea143e7a8",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright James Allwright 2020",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "https://www.gnu.org/licenses/",
+                    "end_line": 18,
+                    "start_line": 18
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.h",
+            "type": "file",
+            "name": "music_utils.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2505,
+            "md5": "231bbad776e2b093e22cb4d8e897ac11",
+            "sha1": "eef0ed14a01df316bc76caacf12cc8fe085db12e",
+            "sha256": "d791e961f30bc34e80ff13289d51bf940e38a957bbfce9e1d70e5f148407286a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 20,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_860.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, see <https://www.gnu.org/licenses/>",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_860.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-26fbddd6-ee9f-fbfe-662b-48fea143e7a8",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.56,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright James Allwright 2020",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "https://www.gnu.org/licenses/",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c",
+            "type": "file",
+            "name": "parseabc.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 82532,
+            "md5": "924b26225a1b5a55296ac4fc041daa88",
+            "sha1": "9c0e087979bb816c6c87f111cb2c7bd542818df0",
+            "sha256": "ab98321ed41b93be687bfad35d5a7f76248ca9aca3871055d024b6d087e114ed",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 22,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 10,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 8,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "email": "wil@syndesis.com",
+                    "end_line": 29,
+                    "start_line": 29
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h",
+            "type": "file",
+            "name": "parseabc.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 8031,
+            "md5": "c88dbdd7b98dfb3c6c98fc9be831c244",
+            "sha1": "c8b9e08f3b836d4a29f9b2293116192e647a9dbb",
+            "sha256": "aa06187d7e1c8d6c84c415512ae15b217edcc0f0fb44abeab1a453160801a9d8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c",
+            "type": "file",
+            "name": "parser2.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3613,
+            "md5": "34e45e95e73b406d8bf105c548f1dc0c",
+            "sha1": "97bcd91398b2cf904d9c03396bcae458438f8863",
+            "sha256": "2c84a6924aba9ab4924dfda5feb7736a0fe244fef7560c574e90a476643155e2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.h",
+            "type": "file",
+            "name": "parser2.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 489,
+            "md5": "dbe8e35bdf38adaffb970ffeb1219592",
+            "sha1": "0facd08e72ba71f99aeb435bab1c4b1f3cee05ca",
+            "sha256": "74a4d990c20b00d5696b94dbd111e7cba931a24ef58a2cb4f8678a8bbec6fa87",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/position.c",
+            "type": "file",
+            "name": "position.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11280,
+            "md5": "cf65aaf01c25526a8474a7de56100dc2",
+            "sha1": "e1549bbc758d8e0503078996b31988ac52fc3ac7",
+            "sha256": "6aaf2f63468f4c757e31c106f43738cc873a0884297061d87c8e1174377a8da5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/pslib.c",
+            "type": "file",
+            "name": "pslib.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 44793,
+            "md5": "7d9fed1e5b809fb24ba457e1b38f1f4a",
+            "sha1": "d3a89a99e5b0b708d4c3dc5c579582a24d3b2571",
+            "sha256": "ffbaee4e83c07d580b2faef838b3d104bbf2dc07c1953444e89da9fe4c421c00",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 94,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_59.RULE",
+                            "from_file": null,
+                            "start_line": 94,
+                            "matched_text": "  fprintf(f,\"%%  This Library may be re-distributed under the \");",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "license-intro_59.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 95,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 95,
+                            "matched_text": "  fprintf(f,\"%%  terms of the GNU General Public License. \");",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_33.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-e62867e2-d914-0f56-daa4-c1153aa6ec9e",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 1999 Michael Methfessel",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 93,
+                    "copyright": "Copyright (c) 1999 Michael Methfessel",
+                    "start_line": 93
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 93,
+                    "start_line": 93
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/af47e7ff-7bee-4bd6-bf27-34fa4d3a6ec7"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/queues.c",
+            "type": "file",
+            "name": "queues.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19029,
+            "md5": "738fa39d574af470cedfd409946bc825",
+            "sha1": "45073629580108996abd8ae9d29159f9d288b7f6",
+            "sha256": "9f33830d4289aa906d38246a7507649e19e5206520e5e64637db5031757815af",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/queues.h",
+            "type": "file",
+            "name": "queues.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1211,
+            "md5": "259833ee3e24a2ed4f1cd7519afc3d16",
+            "sha1": "85f956f7fd5e1dff2e1c14298d5dc1182371d0a5",
+            "sha256": "119a67d1c55a540aef7f7ed5cbd6e5a4ddfc8e2a8e770c633353e93e63e9358e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/sizes.h",
+            "type": "file",
+            "name": "sizes.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2853,
+            "md5": "a05546e2c15187cdf6704cace4e39d41",
+            "sha1": "580510a65bb80ee8731d6df0052e2e5854c7562f",
+            "sha256": "9344fbe7e9d92454413bdde60f812ccdbac1ba456e06369df7adb3054c7467c6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.62,
+                            "matcher": "3-seq",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_15.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "/* May be copied under the terms of the GNU public license */",
+                            "match_coverage": 84.62,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_15.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-b5e09a3f-9c2b-328e-ae1c-ddfc3ab5f551",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright James Allwright 2000",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/02087a0b-3f04-4d1f-9cd2-6873a7a2c9d8"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/store.c",
+            "type": "file",
+            "name": "store.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 169814,
+            "md5": "8c630653960fe65cca793e1860ccc65c",
+            "sha1": "77e4128ab951ad67c1ea0333a2a8ebad7b3733ec",
+            "sha256": "84a9e05edfbaa913d430afb56d0e04e54d501ded7c2609e7d7ee12c9304866ef",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.52,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "wil@syndesis.com",
+                    "end_line": 31,
+                    "start_line": 31
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/stresspat.c",
+            "type": "file",
+            "name": "stresspat.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 15876,
+            "md5": "c643c219b067a06aa8fdba179358cf54",
+            "sha1": "b1fa2a13bd3f5db97a04c4281b8ea9c747a6e445",
+            "sha256": "39eb1105fd7ce0c200cef8b50d04e44ef4489240194b7e4a0ba4d7eeaf90428c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/structs.h",
+            "type": "file",
+            "name": "structs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5149,
+            "md5": "e39bd3ded885a6f317fa21507631c558",
+            "sha1": "a0cfc949e7c190e1fa83e29114b162ccce4a0508",
+            "sha256": "3d8d2fe54eb8e5498a125ec983ee7a7d55e0336836d4f5e6c250f00d58165653",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 84.62,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_15.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "/* May be copied under the terms of the GNU public license */",
+                            "match_coverage": 84.62,
+                            "matched_length": 11,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_15.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-b5e09a3f-9c2b-328e-ae1c-ddfc3ab5f551",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright James Allwright 2000",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/02087a0b-3f04-4d1f-9cd2-6873a7a2c9d8"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/toabc.c",
+            "type": "file",
+            "name": "toabc.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 69496,
+            "md5": "6a5f27aa1569d3098eaa4e06d26d57e9",
+            "sha1": "9c377dd7bf61403b3987a27d921ff1a0c6660621",
+            "sha256": "259ce17cb921e8e6a05995b60db3df8cfd0806de59aef6b650d79f3a1ea89c40",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/yapstree.c",
+            "type": "file",
+            "name": "yapstree.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 69853,
+            "md5": "632155e2a24171f4227d45914c3a5990",
+            "sha1": "c35871695cc2212c5028b995e0a7373b7b21b03b",
+            "sha256": "abea3f5c46fd6f231b83604a4eb0671e25730c1dd31b965f0a1958128726eb74",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_420.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation; either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_420.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-6d91bf46-bbed-e48a-ebe9-17e7fec6b3a0",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1999 James Allwright e-mail J.R.Allwright@westminster.ac.uk",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "James Allwright e-mail",
+                    "end_line": 4,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/b9fd0859-8745-42fd-82a3-20f159a6f168-2a7bc562/73d0ba9d-7aa7-4b2d-8f02-15977d7c2e43"
+            ],
+            "emails": [
+                {
+                    "email": "J.R.Allwright@westminster.ac.uk",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000008e0a04a10411b867b40194884010a01a0",
+                "directory_structure": "000000085c4e58a6a00012070cb5cc80da510d02"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000008e0a04a10411b867b40194884010a01a0",
+                "directory_structure": "00000008aa1161c282920100802553ad010b9e42"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000008e0a04a10411b867b40194884010a01a0",
+                "directory_structure": "0000000825030262622003132d65701d79068086"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000008e0a04a10411b867b40194884010a01a0",
+                "directory_structure": "000000081012e0d12c4281a089a38b6ea8581c18"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/04",
+            "type": "directory",
+            "name": "04",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/42",
+            "type": "directory",
+            "name": "42",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/4c",
+            "type": "directory",
+            "name": "4c",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/63",
+            "type": "directory",
+            "name": "63",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/7e",
+            "type": "directory",
+            "name": "7e",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/c1",
+            "type": "directory",
+            "name": "c1",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/f1",
+            "type": "directory",
+            "name": "f1",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "type": "file",
+            "name": "abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 30479,
+            "md5": "1979bbb322a7b9971efe1b328d1d6ac0",
+            "sha1": "cb416376d5b2375ee675d1e868d4dfd4a29b560e",
+            "sha256": "7b6435a12d1ef5831819fe24cec5ee9eb55083c951ea11d94155849139791017",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=5e4b0aa53e8ea1ab36b9c7f5485e55ea56764c92, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000007e9a44a104d7b867f4c196894210a01fa",
+                "directory_structure": "00000007f22076cd9e1af0aa3dc5b9ff16982eac"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000007e9a44a104d7b867f4c196894210a01fa",
+                "directory_structure": "00000007e17d43291affa409cabc8a7a516e9ee4"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 276776,
+            "md5": "a3853bd0fb42a2c189a973328bd6d966",
+            "sha1": "57a7cc8a1b1e9da5adbbfababd8a83b1df6d503a",
+            "sha256": "4c88abf3f25b12652c8428370ea6f8e73e3aa163323fd6408f17382f2ec412ab",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=f1de30c235faf1deaebbaf699ac4d959bf4790ab, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/toabc.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 482104,
+            "md5": "bd4360b21fa15a12e66ef28604818e4e",
+            "sha1": "f2f2bdc2ae08602027a25880f6f3fcabf04c1357",
+            "sha256": "ef7c754c88a4db0076664a976f6f84540825713406e770fe69aa92a4e73c27d3",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=427558773eb546d9a513c6b2aafcffeaf2fcb227, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/genmidi.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/genmidi.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/queues.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/queues.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/store.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/stresspat.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 205016,
+            "md5": "09aa6d3e0185b2356171cdf20bd950ad",
+            "sha1": "2402107ff1493006146265ca66934cac024072c2",
+            "sha256": "6f58fdda3b7ff2ea29824ce19273fba5639d3e8d14da18c2d0273e1a6d94c131",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=4ccea6cf529bf7c3b14fec6f975e68d200f2b8ce, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abcmatch.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/matchsup.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "mftext-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 52816,
+            "md5": "fb5622e3cd513aaefaa5cb538bc40fe9",
+            "sha1": "d6f4dbad20460b999a6c5c6116f3263603f5faad",
+            "sha256": "4bb8b995b824e50fda089333143332bafbd07bdc1d70dd7131732216ec4fa7cd",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=63bafb829b155e824e47e3c615c6469fb1521280, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/crack.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/mftext.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "midi2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 145984,
+            "md5": "a82e7a13e1a149df089cb2640c78d624",
+            "sha1": "d6290dd0ad9cca7c4f2015925c9bd163fc3e535f",
+            "sha256": "20248b90ef207592a80a44b4f0edbf0ebf23973c90b86bd370cd3a1082c14e28",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=7ec394e15040d54378048cdbdaf4ae040ccfbc91, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midi2abc.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/midicopy-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "midicopy-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 71904,
+            "md5": "1f67be6e17b694008b2ff1730c13b153",
+            "sha1": "44325c98893091fb6e268c89b03ff17539d79205",
+            "sha256": "3421f5a09658137bdd5a34a23a0c7cc15256bd70ab7235cb23f81ed8fdfc8eb2",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=0486f83a9f43bc3a3dbc6e094be70163ed8a6863, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midicopy.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/stdio.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 491728,
+            "md5": "e4aec6350fcbf5d007e9f64d7fb77860",
+            "sha1": "15a1bb663085dae7a1834ccc445e15da389cd48a",
+            "sha256": "df6410898e6f6b13e54af5f6ce404dedc0d15bdce75a7e897e066e8bf7caa4d0",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=c14d285a8fd9130a82b45a24d22720e05e5ed71e, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/stdio.h",
+                    "usr/include/time.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/debug.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/drawtune.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/drawtune.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/position.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/pslib.c",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/sizes.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/structs.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/yapstree.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/stdio.h",
+                    "usr/include/time.h",
+                    "usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/abcmatch.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/crack.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/debug.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/drawtune.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/drawtune.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/genmidi.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/genmidi.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/matchsup.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/mftext.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midi2abc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/midicopy-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midicopy.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/mftext-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/midi2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/midifile.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/music_utils.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcmatch-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parseabc.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/abcMIDI-2022.12.09-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/parser2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/position.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/pslib.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/queues.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/queues.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/sizes.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/store.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2midi-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/stresspat.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/structs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abc2abc-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/toabc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/yaps-2022.12.09-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcMIDI-2022.12.09-5.fc40.x86_64/yapstree.c"
+        }
+    ]
+}

@@ -1,0 +1,3750 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "7f5020b7-49e8-4a6e-a959-d7574a8698e3",
+            "created_date": "2024-06-14T04:19:32.473Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "9cfdb859-db07-450c-a5b6-3620db2f7369",
+                    "filename": "a2jmidid-debuginfo-9-13.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debuginfo-9-13.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 75429,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "490dd968-1185-433e-9c4b-76e61aa0055e",
+                    "filename": "a2jmidid-debugsource-9-13.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debugsource-9-13.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 44165,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "bca382c8-6fa9-4b4c-bad9-0ac59a90bdd8",
+                    "created_date": "2024-06-14T04:19:32.481301Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "bca382c8-6fa9-4b4c-bad9-0ac59a90bdd8",
+                    "task_start_date": "2024-06-14T04:19:32.507169Z",
+                    "task_end_date": "2024-06-14T04:19:56.784856Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 04:19:32.50 Pipeline [d2d] starting\n2024-06-14 04:19:32.51 Step [download_missing_inputs] starting\n2024-06-14 04:19:32.51 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debugsource-9-13.fc40.x86_64.rpm#from\n2024-06-14 04:19:33.97 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debuginfo-9-13.fc40.x86_64.rpm#to\n2024-06-14 04:19:35.95 Step [download_missing_inputs] completed in 3 seconds\n2024-06-14 04:19:35.96 Step [get_inputs] starting\n2024-06-14 04:19:35.97 Step [get_inputs] completed in 0 seconds\n2024-06-14 04:19:35.97 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 04:19:36.03 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 04:19:36.04 Step [extract_archives] starting\n2024-06-14 04:19:36.14 Step [extract_archives] completed in 0 seconds\n2024-06-14 04:19:36.14 Step [collect_and_create_codebase_resources] starting\n2024-06-14 04:19:36.19 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 04:19:36.19 Step [fingerprint_codebase_directories] starting\n2024-06-14 04:19:36.21 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 04:19:36.21 Step [flag_empty_files] starting\n2024-06-14 04:19:36.21 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 04:19:36.21 Step [flag_whitespace_files] starting\n2024-06-14 04:19:36.22 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 04:19:36.22 Step [flag_ignored_resources] starting\n2024-06-14 04:19:36.22 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 04:19:36.22 Step [map_about_files] starting\n2024-06-14 04:19:36.22 Step [map_about_files] completed in 0 seconds\n2024-06-14 04:19:36.23 Step [map_checksum] starting\n2024-06-14 04:19:36.23 Mapping 4 to/ resources using sha1 against from/ codebase\n2024-06-14 04:19:36.24 Step [map_checksum] completed in 0 seconds\n2024-06-14 04:19:36.24 Step [match_archives_to_purldb] starting\n2024-06-14 04:19:36.24 PurlDB is not available. Skipping.\n2024-06-14 04:19:36.25 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 04:19:36.25 Step [find_java_packages] starting\n2024-06-14 04:19:36.25 Finding Java package for 0 .java resources.\n2024-06-14 04:19:36.26 Step [find_java_packages] completed in 0 seconds\n2024-06-14 04:19:36.26 Step [map_java_to_class] starting\n2024-06-14 04:19:36.27 Mapping 0 .class resources to .java\n2024-06-14 04:19:36.27 No .java resources to map.\n2024-06-14 04:19:36.27 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 04:19:36.28 Step [map_jar_to_source] starting\n2024-06-14 04:19:36.28 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 04:19:36.28 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 04:19:36.28 Step [map_elf] starting\n2024-06-14 04:19:36.42 Mapping 4 to/ resources using paths with 28 from/ resources.\n2024-06-14 04:19:36.43 Done building from/ resources index.\n2024-06-14 04:19:36.43 WARNING: #21 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/a2jmidid-9-13.fc40.x86_64'\n2024-06-14 04:19:36.43 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/a2jmidid-9-13.fc40.x86_64'\n2024-06-14 04:19:36.44 WARNING: #1 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/a2jmidi_bridge-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.44 WARNING: #6 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/a2jmidi_bridge-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.44 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/a2jmidi_bridge-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.44 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.46 WARNING: #50 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.46 Created 26 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.47 WARNING: #1 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/j2amidi_bridge-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.47 WARNING: #5 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/j2amidi_bridge-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.47 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/j2amidi_bridge-9-13.fc40.x86_64.debug'\n2024-06-14 04:19:36.48 Step [map_elf] completed in 0 seconds\n2024-06-14 04:19:36.48 Step [map_go] starting\n2024-06-14 04:19:36.48 Mapping 0 to/ resources using paths with 28 from/ resources.\n2024-06-14 04:19:36.49 Done building from/ resources index.\n2024-06-14 04:19:36.49 Step [map_go] completed in 0 seconds\n2024-06-14 04:19:36.49 Step [match_directories_to_purldb] starting\n2024-06-14 04:19:36.49 PurlDB is not available. Skipping.\n2024-06-14 04:19:36.50 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 04:19:36.50 Step [match_resources_to_purldb] starting\n2024-06-14 04:19:36.50 PurlDB is not available. Skipping.\n2024-06-14 04:19:36.50 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 04:19:36.50 Step [map_path] starting\n2024-06-14 04:19:36.50 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 04:19:36.51 Step [map_path] completed in 0 seconds\n2024-06-14 04:19:36.51 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 04:19:36.52 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 04:19:36.52 Step [perform_house_keeping_tasks] starting\n2024-06-14 04:19:36.53 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 04:19:36.53 Step [match_purldb_resources_post_process] starting\n2024-06-14 04:19:36.54 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 04:19:36.54 0 resource processed\n2024-06-14 04:19:36.54 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 04:19:36.54 Step [remove_packages_without_resources] starting\n2024-06-14 04:19:36.54 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 04:19:36.55 Step [scan_unmapped_to_files] starting\n2024-06-14 04:19:41.15 Step [scan_unmapped_to_files] completed in 5 seconds\n2024-06-14 04:19:41.16 Step [scan_mapped_from_for_files] starting\n2024-06-14 04:19:54.99 Progress: 10% (3/29) ETA: 124 seconds (2.1 minutes)\n2024-06-14 04:19:55.48 Progress: 20% (6/29) ETA: 57 seconds\n2024-06-14 04:19:55.62 Progress: 31% (9/29) ETA: 32 seconds\n2024-06-14 04:19:55.65 Progress: 41% (12/29) ETA: 21 seconds\n2024-06-14 04:19:55.75 Progress: 51% (15/29) ETA: 14 seconds\n2024-06-14 04:19:56.03 Progress: 62% (18/29) ETA: 9 seconds\n2024-06-14 04:19:56.07 Progress: 72% (21/29) ETA: 6 seconds\n2024-06-14 04:19:56.30 Progress: 82% (24/29) ETA: 3 seconds\n2024-06-14 04:19:56.41 Progress: 93% (27/29) ETA: 1 seconds\n2024-06-14 04:19:56.73 Step [scan_mapped_from_for_files] completed in 16 seconds\n2024-06-14 04:19:56.74 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 04:19:56.74 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 04:19:56.74 Step [create_local_files_packages] starting\n2024-06-14 04:19:56.77 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 04:19:56.78 Pipeline completed in 24 seconds\n",
+                    "execution_time": 24
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/056ca1b2-08f1-4e53-a647-08f6ce376593",
+            "type": "local-files",
+            "namespace": "5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7",
+            "name": "056ca1b2-08f1-4e53-a647-08f6ce376593",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005 Lars Luthman\nCopyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>\nCopyright (c) 2005 Sean Bolton",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/27402fa1-8ab2-4366-8e77-47ef0403fdd8",
+            "type": "local-files",
+            "namespace": "5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7",
+            "name": "27402fa1-8ab2-4366-8e77-47ef0403fdd8",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005 - 2008 Jaco Kroon",
+            "holder": "",
+            "declared_license_expression": "public-domain",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec",
+            "type": "local-files",
+            "namespace": "5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7",
+            "name": "ef82d8dc-aecb-47c2-a1a9-09480f1d97ec",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2008,2009,2010 Nedko Arnaudov <nedko@arnaudov.name>\nCopyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>\nCopyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>\nCopyright (c) 2007,2008,2009,2011 Nedko Arnaudov <nedko@arnaudov.name>\nCopyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>\nCopyright (c) 2007-2008 Juuso Alasuutari\nCopyright 2006,2007 Dmitry S. Baikov\nCopyright 2007,2008,2009,2011,2012 Nedko Arnaudov",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64",
+            "type": "directory",
+            "name": "a2jmidid-9-13.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidi_bridge.c",
+            "type": "file",
+            "name": "a2jmidi_bridge.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6550,
+            "md5": "b93fb688c2224faac31f4091538eec0d",
+            "sha1": "c8503cea67ef959ee781bd1503be694167a49c21",
+            "sha256": "dc165260018c2d63be5b02debca135dafedb787b3688f543d41aa672764c1678",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or\n * modify it under the terms of the GNU General Public License as\n * published by the Free Software Foundation; either version 2 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be\n * useful, but WITHOUT ANY WARRANTY; without even the implied\n * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR\n * PURPOSE.  See the GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public\n * License along with this program; if not, write to the Free\n * Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,\n * MA 02111-1307, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.42,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2005 Sean Bolton",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Sean Bolton",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/056ca1b2-08f1-4e53-a647-08f6ce376593"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidid.c",
+            "type": "file",
+            "name": "a2jmidid.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12379,
+            "md5": "6ad99061cc135de5908a56b5f2b16274",
+            "sha1": "ef3efd8b4126ce5b8f0653f7b14e79e8b48b073e",
+            "sha256": "d5dc32017d31d427b8692bb94f5c3d3a8063106670a4a2984b4a9cc2ab2d9f7e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2007,2008,2009,2011 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 502,
+                    "copyright": "Copyright 2006,2007 Dmitry S. Baikov",
+                    "start_line": 502
+                },
+                {
+                    "end_line": 503,
+                    "copyright": "Copyright 2007,2008,2009,2011,2012 Nedko Arnaudov",
+                    "start_line": 503
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 502,
+                    "start_line": 502
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 503,
+                    "start_line": 503
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidid.h",
+            "type": "file",
+            "name": "a2jmidid.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1326,
+            "md5": "261c92d5a141682e380424ccc5bcf971",
+            "sha1": "16551fb17a136ef9c78efc02acbd064dc30e08e7",
+            "sha256": "43ef636feb638ae7ac23476015544f6b6ff213b27ee03f7fbbd8083bb306e258",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 51.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/conf.h",
+            "type": "file",
+            "name": "conf.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1190,
+            "md5": "91f624c50ec141d2f53252f5bc591419",
+            "sha1": "0df4621347f6097f7549c50c9aeab7635ca0895d",
+            "sha256": "565c7b9d934a10b6e0b99a9c273aa873f04e9082cb895a0c68142be699e1aa31",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 58.01,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus.c",
+            "type": "file",
+            "name": "dbus.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9963,
+            "md5": "b4c68fe0736c882ded8d86f603dea988",
+            "sha1": "43fc0da21aa4f69b54972e94685ad35cb5aa057c",
+            "sha256": "d0fa545b7fe9ec26b5ac71bab4f71486ec96251534dd2888cf12b6fda839a2d9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007-2008 Juuso Alasuutari",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Juuso Alasuutari",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus.h",
+            "type": "file",
+            "name": "dbus.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1159,
+            "md5": "c9a069af9cfad69e68f070c3c8d650a6",
+            "sha1": "7a2ad084b9459e7650e862f21a5a385ed7df62dd",
+            "sha256": "595fb91e5b417dd64ae9440f911b7297247d4a038df6ac8098e540d3c308178e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 60.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_control.c",
+            "type": "file",
+            "name": "dbus_iface_control.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12667,
+            "md5": "f76a81d0f923d0093bc0147cc0325283",
+            "sha1": "1f0519b4bc6eab4c0deb2e4559fb83ff597c69a9",
+            "sha256": "be670390bcd8c2f05ea085e00f27e4d1cf51aaf264ab9ff20325f1d4894aea08",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.41,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_control.h",
+            "type": "file",
+            "name": "dbus_iface_control.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1229,
+            "md5": "a59087e1cdcd9f3428e7fed8e4d7b1df",
+            "sha1": "0966f29d08d646642079d392c16430c43174cc77",
+            "sha256": "ba4da1c12dd188f6ae0ab8ac81548c0ea4682218b2f0b41fb80d84f295652f9a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 57.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_introspectable.c",
+            "type": "file",
+            "name": "dbus_iface_introspectable.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4232,
+            "md5": "61a18f66724de40982f563c2954134f2",
+            "sha1": "8b818579e4b11e5e3cdd7084e9f805629e6bf90e",
+            "sha256": "1af25ef7048011092cf886f83e001c7dd68a42da828e8cf7a925139b963b5ef0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007-2008 Juuso Alasuutari",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Juuso Alasuutari",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_internal.h",
+            "type": "file",
+            "name": "dbus_internal.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 8791,
+            "md5": "340feb6da3357ffcef2ab4b832a7bc56",
+            "sha1": "7454dfd9b3de3dcd98d5610ded19ff42e66bb820",
+            "sha256": "8e265179f9eecdf7588b6e8493704d735cae3a141148019fdaf68c6e71a7fde1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.82,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007-2008 Juuso Alasuutari",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Juuso Alasuutari",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/j2amidi_bridge.c",
+            "type": "file",
+            "name": "j2amidi_bridge.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7163,
+            "md5": "0cb311203392a17991c9b88e4e9cea57",
+            "sha1": "f1a24aec733c487175b3233eabaaae3da6cb8102",
+            "sha256": "751e2750987dfa50fee1552860e841927734137e2a6c1ee75bbe80b44f67401a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or\n * modify it under the terms of the GNU General Public License as\n * published by the Free Software Foundation; either version 2 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be\n * useful, but WITHOUT ANY WARRANTY; without even the implied\n * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR\n * PURPOSE.  See the GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public\n * License along with this program; if not, write to the Free\n * Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,\n * MA 02111-1307, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.01,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2005 Lars Luthman",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lars Luthman",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/056ca1b2-08f1-4e53-a647-08f6ce376593"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.c",
+            "type": "file",
+            "name": "jack.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16971,
+            "md5": "4a8c035afbbeada809e82af073f87a78",
+            "sha1": "a0c3484be52b2f67d25070a13afa6d2d40faac0c",
+            "sha256": "0740c6f12715dce298d0bfd452eb803820b0abb32d0bd270a13d7124d000ee52",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.h",
+            "type": "file",
+            "name": "jack.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1271,
+            "md5": "6a9d66bf1336363eaab57427d133bedc",
+            "sha1": "ab553d39727c81a89d930fca8626ffbba33c2eda",
+            "sha256": "97e15f0cbb1c0e5f77cdb628a1e8caba0b7d9924ddf222842fc319355df53359",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 54.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/list.c",
+            "type": "file",
+            "name": "list.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3828,
+            "md5": "e7b36c9b82251f9082ddb507045690de",
+            "sha1": "b6ed975433d329d65518fde06e8a79b025d3c50d",
+            "sha256": "1ce80b1a957b8b390637400febf2a3067a99f644ea7152cdd771137e3a675580",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_95.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; version 2 of the License\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_95.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-6309381d-e5da-021f-6db4-971a8c77b461",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.55,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "mjr@znex.org",
+                    "end_line": 25,
+                    "start_line": 25
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/list.h",
+            "type": "file",
+            "name": "list.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 29523,
+            "md5": "2c0d26edd79c69a686b407c9c28c34cb",
+            "sha1": "33d5617f05a9a92982e587aabaa5bac8bfcf9fe4",
+            "sha256": "a201d8d6613a36d7ef81dc8a1bb841f39697528c801c7a3a04ac418187631b9c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 21,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_95.RULE",
+                            "from_file": null,
+                            "start_line": 10,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; version 2 of the License\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_95.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-6309381d-e5da-021f-6db4-971a8c77b461",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.38,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/log.c",
+            "type": "file",
+            "name": "log.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2920,
+            "md5": "7e82a0b5e3279d56dd76e4385a64c281",
+            "sha1": "a6d0da1cd3d970016dff766a9b4532a24dcb49e9",
+            "sha256": "dfa494191f1066c5ebe1426ed78ade0e7793fef3cab90241e7657254f4eb9580",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009,2010 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/log.h",
+            "type": "file",
+            "name": "log.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1982,
+            "md5": "f7e818878907f60ca1bcc9b3e52a76aa",
+            "sha1": "568f0c3ff9fdfd3ad7269f7a5fd87e49393ae498",
+            "sha256": "9e637c711f00e677b1684ca90e0953fba42988f96bd830021065d9b51c57a321",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 35.12,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/paths.c",
+            "type": "file",
+            "name": "paths.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3544,
+            "md5": "aebbda795c9896a8d67c1a455284ac5c",
+            "sha1": "a01fb11621d017c18897e514c6600cb27b1fc308",
+            "sha256": "46e21c99a5bab206440bbc2b79ff2d70a629237ecfff018beea3a4aad3db9af8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.55,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/paths.h",
+            "type": "file",
+            "name": "paths.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1146,
+            "md5": "dcb08da0c802d7faa6147fe7536c5ee6",
+            "sha1": "cbf8fa37aec49ba9db0af37a5f93f0d6dbbfc172",
+            "sha256": "2a676d48d2885d183fa6f4ce17d433aa19d07c77451f61c8c099a5201921df11",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 60.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port.c",
+            "type": "file",
+            "name": "port.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7294,
+            "md5": "38fe1e4783d62ea09fc61f5e5c86d1eb",
+            "sha1": "e5ec8e2c9afa3b043e46d8a349475a5200f084c9",
+            "sha256": "cb325fa5c7e8bea75a63fd2f797c7636a424344460f9a5ed1aca8a8de395e7f5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009,2011 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port.h",
+            "type": "file",
+            "name": "port.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1352,
+            "md5": "e7e574d99834d2702f03dfeb79c0b7c3",
+            "sha1": "bddafa089ea92147c1e7689ff7d6ec6c1c3cdfd5",
+            "sha256": "f971244505387fe225e503f38292f8e8ff9044aafbcbb8a5ef1d0a9d3e91cf24",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 50.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_hash.c",
+            "type": "file",
+            "name": "port_hash.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1718,
+            "md5": "1c8f8d275a1db2e73031972f0b58ccd5",
+            "sha1": "b23072d3c264c0ad9ecb1574e9775603cdf693af",
+            "sha256": "719a231bb66b3aa3b2e32ab4a1e8e94211c1efc68900304d0c18a8698645d8eb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.23,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_hash.h",
+            "type": "file",
+            "name": "port_hash.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1273,
+            "md5": "ce208ad59987623640450eca4e66a079",
+            "sha1": "e351fa7f7ab0971eb3f4f583a320249c2891766c",
+            "sha256": "9e5c9ec7f766821ca578d4d1945bf411bf48e68bd7b4def6bc965fffe3395237",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 53.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_thread.c",
+            "type": "file",
+            "name": "port_thread.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6201,
+            "md5": "1984f40097462f85136fe3551788c5af",
+            "sha1": "64794f2760f3fb361802321333ea9741b80ef343",
+            "sha256": "bdef198943b9ac6aad342634de67f31a8b8982fccc554a10a69526a1783c1f56",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_thread.h",
+            "type": "file",
+            "name": "port_thread.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1539,
+            "md5": "e39a7d0908ca1ffe64312997268e20ae",
+            "sha1": "a9592b27bca123137232be858f670c982952257a",
+            "sha256": "0924c3fa070621ba137c9d2fe5eaf95c022f992ab36a33b41835bd0aea45f2b4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.12,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build",
+            "type": "directory",
+            "name": "redhat-linux-build",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/sigsegv.c",
+            "type": "file",
+            "name": "sigsegv.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5182,
+            "md5": "2301b821014524d1bc72b3143a767a68",
+            "sha1": "bae56342ee6cefa5407b9b78d0ae416e828e780c",
+            "sha256": "cb413a206b007e5f4462fe6f677bf3533f40aa3e52af0505905ee00113b9004d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "public-domain",
+            "detected_license_expression_spdx": "LicenseRef-scancode-public-domain",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/public-domain_177.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This code is in the public domain.  Use it as you see fit, some credit",
+                            "match_coverage": 100.0,
+                            "matched_length": 7,
+                            "rule_relevance": 100,
+                            "rule_identifier": "public-domain_177.RULE",
+                            "license_expression": "public-domain",
+                            "spdx_license_expression": "LicenseRef-scancode-public-domain"
+                        }
+                    ],
+                    "identifier": "public_domain-10a0213b-a00e-440c-3aaf-925b94ef1ee5",
+                    "license_expression": "public-domain",
+                    "license_expression_spdx": "LicenseRef-scancode-public-domain"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.04,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 11,
+                    "copyright": "Copyright (c) 2005 - 2008 Jaco Kroon",
+                    "start_line": 11
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jaco Kroon",
+                    "end_line": 11,
+                    "start_line": 11
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Jaco Kroon <jaco@kroon.co.za>",
+                    "end_line": 9,
+                    "start_line": 9
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/27402fa1-8ab2-4366-8e77-47ef0403fdd8"
+            ],
+            "emails": [
+                {
+                    "email": "jaco@kroon.co.za",
+                    "end_line": 9,
+                    "start_line": 9
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/sigsegv.h",
+            "type": "file",
+            "name": "sigsegv.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 111,
+            "md5": "194f8f49dc20aed3c651d2dd24ae9d18",
+            "sha1": "6592632c9ce8b012c91d0b68156edec57dee6320",
+            "sha256": "721caf283de126a7d500dbdb9b9d31bc9b17e44663fe3ac3d86edcbaa0bbe40d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/structs.h",
+            "type": "file",
+            "name": "structs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3298,
+            "md5": "bdfc6813758e7eeb3048296edda7e9d7",
+            "sha1": "3056db33bd0561aed530a3d13428ca4cca21a75f",
+            "sha256": "7e7881c2395951dbaec563dc71d7e88c939c62ff0b7877d39121e01fa901a64a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_107.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; version 2 of the License.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 105,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_107.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-015d70fe-3369-5db0-c66d-b1819c796702",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2006,2007 Dmitry S. Baikov <c0ff@konstruktiv.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2007,2008,2009 Nedko Arnaudov <nedko@arnaudov.name>",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dmitry S. Baikov",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Nedko Arnaudov",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/5c2c3931-7001-48b8-ba09-c4619a96207a-7f5020b7/ef82d8dc-aecb-47c2-a1a9-09480f1d97ec"
+            ],
+            "emails": [
+                {
+                    "email": "c0ff@konstruktiv.org",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "nedko@arnaudov.name",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000482a91010908014655d060e0b51225c86",
+                "directory_structure": "000000043420c0e8e62304c783234365184d00d8"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000482a91010908014655d060e0b51225c86",
+                "directory_structure": "000000040024023d134400821053000070020833"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000482a91010908014655d060e0b51225c86",
+                "directory_structure": "000000042041a0c4405b2889180880d090236c0c"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000482a91010908014655d060e0b51225c86",
+                "directory_structure": "0000000452542904518c329024255630000154d4"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/2c",
+            "type": "directory",
+            "name": "2c",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/43",
+            "type": "directory",
+            "name": "43",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/63",
+            "type": "directory",
+            "name": "63",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/a2jmidid-9-13.fc40.x86_64",
+            "type": "file",
+            "name": "a2jmidid-9-13.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 11607,
+            "md5": "c8b5fc775b9e4cdab4e44a2ad3441cda",
+            "sha1": "cb8f1a6b0c71f97988788bb6043456d06e124afb",
+            "sha256": "a33a87a38e4eb008d9c88219867d0d697fa6026479228d749281aca0aec3014f",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=a26168c996dbcbe9cb5863cb5a7db7c674dabb51, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_event.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/alsa/seqmid.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/jack/jack.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/sys/poll.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_event.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/alsa/seqmid.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/jack/midiport.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/sys/poll.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003a6ad1039968ef4655fc60eaf55665da6",
+                "directory_structure": "00000003372bd349e81fb9e5d70595a2c4cd6941"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003a6ad1039968ef4655fc60eaf55665da6",
+                "directory_structure": "00000003e1966cb3335c60f73ada25ff6620dc74"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/a2jmidi_bridge-9-13.fc40.x86_64.debug",
+            "type": "file",
+            "name": "a2jmidi_bridge-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 27680,
+            "md5": "717d16e177318c7495368a66139b48dd",
+            "sha1": "f615b9e85c12a7174d40a1c063500db3efc55b67",
+            "sha256": "83176316cd0c2de7ee972d27cc1fe4891918fd962fc0362acba516053c46bce8",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=631b2640c7182ad744cc7853ba8c55cd865187fb, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/sys/poll.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidi_bridge.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/sys/poll.h"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "type": "file",
+            "name": "a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 139464,
+            "md5": "4e1a0f74d36ddb76e53a861a5ee38d49",
+            "sha1": "3a65f51f66886358b44e1e63dbc86559f875d152",
+            "sha256": "17b6af26a1cf7256762fa01a01beeca00a16c43ee02641dc5a687fc75dc2211d",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=2ce9b23001c2bb48ce6e0e6d4850be698e3c40f6, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/alsa/error.h",
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_event.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/alsa/seqmid.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/semaphore.h",
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/sigevent_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/sigset_t.h",
+                    "usr/include/bits/types/stack_t.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/dbus-1.0/dbus/dbus-bus.h",
+                    "usr/include/dbus-1.0/dbus/dbus-connection.h",
+                    "usr/include/dbus-1.0/dbus/dbus-errors.h",
+                    "usr/include/dbus-1.0/dbus/dbus-message.h",
+                    "usr/include/dbus-1.0/dbus/dbus-shared.h",
+                    "usr/include/dbus-1.0/dbus/dbus-types.h",
+                    "usr/include/dlfcn.h",
+                    "usr/include/errno.h",
+                    "usr/include/jack/jack.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/pthread.h",
+                    "usr/include/semaphore.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/poll.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/ucontext.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib64/dbus-1.0/include/dbus/dbus-arch-deps.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidid.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidid.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/conf.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_control.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_control.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_introspectable.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_internal.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/list.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/list.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/log.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/log.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/paths.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/paths.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/port.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/port.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_hash.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_hash.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_thread.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_thread.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<built-in>",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/sigsegv.c",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/sigsegv.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/structs.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/alsa/error.h",
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_event.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/alsa/seqmid.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/semaphore.h",
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/sigevent_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/sigset_t.h",
+                    "usr/include/bits/types/stack_t.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/dbus-1.0/dbus/dbus-bus.h",
+                    "usr/include/dbus-1.0/dbus/dbus-connection.h",
+                    "usr/include/dbus-1.0/dbus/dbus-errors.h",
+                    "usr/include/dbus-1.0/dbus/dbus-message.h",
+                    "usr/include/dbus-1.0/dbus/dbus-shared.h",
+                    "usr/include/dbus-1.0/dbus/dbus-types.h",
+                    "usr/include/dlfcn.h",
+                    "usr/include/errno.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/jack/types.h",
+                    "usr/include/pthread.h",
+                    "usr/include/semaphore.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/poll.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/ucontext.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib64/dbus-1.0/include/dbus/dbus-arch-deps.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/j2amidi_bridge-9-13.fc40.x86_64.debug",
+            "type": "file",
+            "name": "j2amidi_bridge-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 27080,
+            "md5": "dc42eb6dd205f04031880e194eaccef1",
+            "sha1": "f58e94d12624f5207f36e36f65c689f73f04091d",
+            "sha256": "5a6afdee973490a957d3d46cae01921e47fbbb222b05e4a5cbb02d6b644319f4",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=4374b557ab030835e93a3e277c0ada8d845d39bb, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/alsa/seqmid.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/stdlib.h",
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/j2amidi_bridge.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/a2jmidid-9-13.fc40.x86_64/redhat-linux-build/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/alsa/seq.h",
+                    "usr/include/alsa/seq_midi_event.h",
+                    "usr/include/alsa/seqmid.h",
+                    "usr/include/jack/ringbuffer.h",
+                    "usr/include/stdlib.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidi_bridge-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidi_bridge.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidid.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/a2jmidid.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/conf.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_control.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_control.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_iface_introspectable.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/dbus_internal.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/j2amidi_bridge-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/j2amidi_bridge.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/a2jmidid-9-13.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "1/3",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "1/3",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/jack.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/list.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/list.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/log.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/log.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/paths.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/paths.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_hash.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_hash.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_thread.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/port_thread.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/sigsegv.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/sigsegv.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/a2jmidid-9-13.fc40.x86_64/structs.h"
+        }
+    ]
+}

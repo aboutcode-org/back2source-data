@@ -1,0 +1,2108 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "bc810eb3-2eed-46d5-b2f5-c48aa8b9dcf1",
+            "created_date": "2024-06-17T12:30:15.328Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "1cde05d9-2411-4180-9b9e-41240064546d",
+                    "filename": "bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 113374,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "b0e046cc-2aa7-464d-8424-aa4032a5848b",
+                    "filename": "bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 38071,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "e50eafba-c75f-49b3-b9b4-f5b89898d29c",
+                    "created_date": "2024-06-17T12:30:15.336071Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "e50eafba-c75f-49b3-b9b4-f5b89898d29c",
+                    "task_start_date": "2024-06-17T12:30:15.362553Z",
+                    "task_end_date": "2024-06-17T12:30:38.886072Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 12:30:15.36 Pipeline [d2d] starting\n2024-06-17 12:30:15.36 Step [download_missing_inputs] starting\n2024-06-17 12:30:15.37 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm#from\n2024-06-17 12:30:17.99 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm#to\n2024-06-17 12:30:19.79 Step [download_missing_inputs] completed in 4 seconds\n2024-06-17 12:30:19.79 Step [get_inputs] starting\n2024-06-17 12:30:19.80 Step [get_inputs] completed in 0 seconds\n2024-06-17 12:30:19.80 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 12:30:19.86 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 12:30:19.86 Step [extract_archives] starting\n2024-06-17 12:30:19.94 Step [extract_archives] completed in 0 seconds\n2024-06-17 12:30:19.94 Step [collect_and_create_codebase_resources] starting\n2024-06-17 12:30:19.98 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 12:30:19.98 Step [fingerprint_codebase_directories] starting\n2024-06-17 12:30:19.99 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 12:30:19.99 Step [flag_empty_files] starting\n2024-06-17 12:30:20.00 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 12:30:20.00 Step [flag_whitespace_files] starting\n2024-06-17 12:30:20.00 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 12:30:20.00 Step [flag_ignored_resources] starting\n2024-06-17 12:30:20.00 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 12:30:20.01 Step [map_about_files] starting\n2024-06-17 12:30:20.01 Step [map_about_files] completed in 0 seconds\n2024-06-17 12:30:20.01 Step [map_checksum] starting\n2024-06-17 12:30:20.02 Mapping 4 to/ resources using sha1 against from/ codebase\n2024-06-17 12:30:20.03 Step [map_checksum] completed in 0 seconds\n2024-06-17 12:30:20.03 Step [match_archives_to_purldb] starting\n2024-06-17 12:30:20.03 PurlDB is not available. Skipping.\n2024-06-17 12:30:20.04 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 12:30:20.04 Step [find_java_packages] starting\n2024-06-17 12:30:20.04 Finding Java package for 0 .java resources.\n2024-06-17 12:30:20.05 Step [find_java_packages] completed in 0 seconds\n2024-06-17 12:30:20.06 Step [map_java_to_class] starting\n2024-06-17 12:30:20.06 Mapping 0 .class resources to .java\n2024-06-17 12:30:20.06 No .java resources to map.\n2024-06-17 12:30:20.07 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 12:30:20.07 Step [map_jar_to_source] starting\n2024-06-17 12:30:20.07 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 12:30:20.08 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 12:30:20.08 Step [map_elf] starting\n2024-06-17 12:30:20.42 Mapping 4 to/ resources using paths with 13 from/ resources.\n2024-06-17 12:30:20.42 Done building from/ resources index.\n2024-06-17 12:30:20.42 WARNING: #11 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/bitmap-1.0.9-12.fc40.x86_64'\n2024-06-17 12:30:20.43 No mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/bitmap-1.0.9-12.fc40.x86_64'\n2024-06-17 12:30:20.43 WARNING: #1 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/atobm-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.43 WARNING: #5 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/atobm-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.44 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/atobm-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.44 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.45 WARNING: #31 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.45 Created 11 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.45 WARNING: #1 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bmtoa-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.46 WARNING: #5 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/bmtoa-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.46 Created 1 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/bmtoa-1.0.9-12.fc40.x86_64.debug'\n2024-06-17 12:30:20.46 Step [map_elf] completed in 0 seconds\n2024-06-17 12:30:20.46 Step [map_go] starting\n2024-06-17 12:30:20.48 Can not parse PosixPath('/home/tg1999/Desktop/purldb/var/projects/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/codebase/to/usr/lib/debug/.dwz/bitmap-1.0.9-12.fc40.x86_64') Exception('')\n2024-06-17 12:30:20.48 Mapping 1 to/ resources using paths with 13 from/ resources.\n2024-06-17 12:30:20.48 Done building from/ resources index.\n2024-06-17 12:30:20.49 No mappings using go_file_paths for: 'to/usr/lib/debug/.dwz/bitmap-1.0.9-12.fc40.x86_64'\n2024-06-17 12:30:20.49 Step [map_go] completed in 0 seconds\n2024-06-17 12:30:20.50 Step [match_directories_to_purldb] starting\n2024-06-17 12:30:20.50 PurlDB is not available. Skipping.\n2024-06-17 12:30:20.50 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 12:30:20.50 Step [match_resources_to_purldb] starting\n2024-06-17 12:30:20.50 PurlDB is not available. Skipping.\n2024-06-17 12:30:20.51 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 12:30:20.51 Step [map_path] starting\n2024-06-17 12:30:20.52 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 12:30:20.54 Step [map_path] completed in 0 seconds\n2024-06-17 12:30:20.54 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 12:30:20.55 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 12:30:20.55 Step [perform_house_keeping_tasks] starting\n2024-06-17 12:30:20.56 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 12:30:20.56 Step [match_purldb_resources_post_process] starting\n2024-06-17 12:30:20.56 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 12:30:20.57 0 resource processed\n2024-06-17 12:30:20.57 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 12:30:20.57 Step [remove_packages_without_resources] starting\n2024-06-17 12:30:20.57 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 12:30:20.57 Step [scan_unmapped_to_files] starting\n2024-06-17 12:30:25.32 Step [scan_unmapped_to_files] completed in 5 seconds\n2024-06-17 12:30:25.32 Step [scan_mapped_from_for_files] starting\n2024-06-17 12:30:36.94 Progress: 15% (2/13) ETA: 66 seconds (1.1 minutes)\n2024-06-17 12:30:37.06 Progress: 30% (4/13) ETA: 27 seconds\n2024-06-17 12:30:37.21 Progress: 46% (6/13) ETA: 14 seconds\n2024-06-17 12:30:37.34 Progress: 61% (8/13) ETA: 8 seconds\n2024-06-17 12:30:37.45 Progress: 76% (10/13) ETA: 4 seconds\n2024-06-17 12:30:38.04 Progress: 92% (12/13) ETA: 1 seconds\n2024-06-17 12:30:38.85 Step [scan_mapped_from_for_files] completed in 14 seconds\n2024-06-17 12:30:38.86 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 12:30:38.86 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 12:30:38.86 Step [create_local_files_packages] starting\n2024-06-17 12:30:38.87 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 12:30:38.88 Pipeline completed in 24 seconds\n",
+                    "execution_time": 23
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f",
+            "type": "local-files",
+            "namespace": "08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3",
+            "name": "217e51f3-faf1-49c9-897d-80073d8ffe0f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 1988, 1993, 1998 The Open Group\nCopyright 1989, 1998 The Open Group",
+            "holder": "",
+            "declared_license_expression": "x11-opengroup",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64",
+            "type": "directory",
+            "name": "bitmap-1.0.9-12.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/atobm.c",
+            "type": "file",
+            "name": "atobm.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7944,
+            "md5": "4224c6d4e7107266c2ac5fd758ba3cb2",
+            "sha1": "71f2b662737d81c63c88fec6ccffc1db62d9a508",
+            "sha256": "2a9cfbd3960865b34aaa679bf3e1a8484237c0db4cd31c8a6b67cc9c4133202b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1988, 1993, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Jim Fulton",
+                    "end_line": 31,
+                    "start_line": 31
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/BitEdit.c",
+            "type": "file",
+            "name": "BitEdit.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 27091,
+            "md5": "85b3baf3d18c433a27b86896d8076c9c",
+            "sha1": "fdce55378340226282918c89cdc1b64f4dc2e8c1",
+            "sha256": "38d9c24e3976fdf899309a4ec4dde9eeb885540267a73393c5f5c6b149e43d5d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.13,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Bitmap.c",
+            "type": "file",
+            "name": "Bitmap.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 51576,
+            "md5": "336032a88dbb78ab99561ce9cf043bca",
+            "sha1": "32cc188e8f9e611def4e8caec6eaddd0c96a1568",
+            "sha256": "c3fbfc1fb63318feb24f9781a5351830a2c93e6a707d866ff3b675b1b7d9f27a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.12,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Bitmap.h",
+            "type": "file",
+            "name": "Bitmap.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 11950,
+            "md5": "49ba9545febbe484cf77e0b375be90ee",
+            "sha1": "62caa915f9ec54c158ba18bd5525d958bc8a5ee0",
+            "sha256": "c8e8ea63e497970f79c30d564795f127b5f6395631bfc4aca5d814dfafc7ba0e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.4,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/BitmapP.h",
+            "type": "file",
+            "name": "BitmapP.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6076,
+            "md5": "4478cd7f23d268cba51aac36fb53d075",
+            "sha1": "eeda1219fc34edc827d4ecceb63c86c8aa1746c2",
+            "sha256": "f7bd6d4a7fb0dc1fa3c05e2309b70afa4a594f4ad53804474b9d1106bf43e37f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.43,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/bmtoa.c",
+            "type": "file",
+            "name": "bmtoa.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4835,
+            "md5": "2890fcac284b6cd8146c2ca28a125f05",
+            "sha1": "c761f80c9fd50099b51de3a99f5e0035c64d26d3",
+            "sha256": "a4d232e95c6e03a606d6ba64c0a36a7dae7abab98306437ca2a20760f83b8274",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1988, 1993, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Jim Fulton",
+                    "end_line": 31,
+                    "start_line": 31
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/CutPaste.c",
+            "type": "file",
+            "name": "CutPaste.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5191,
+            "md5": "89dae487d2c9274a97b45a0cdd27633f",
+            "sha1": "4dd4c64da605e2becb1f1c55b0a506afb22ed046",
+            "sha256": "d39f776485259fc39c27922a5c8543238482fbcfe9c3b8e5e8fb2873a2d33c2b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 28.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Dialog.c",
+            "type": "file",
+            "name": "Dialog.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5610,
+            "md5": "98e566bc1e5d43f6cbc03e420ff3fba3",
+            "sha1": "2105df1174668384db34469234c55d4de5f58eef",
+            "sha256": "63ef7177be00ae3c2bcca7636e5c7cc82660bab08449a2c45a8d8a3bf9fd9ede",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Dialog.h",
+            "type": "file",
+            "name": "Dialog.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1740,
+            "md5": "deba94ab1190f2a4fcdce705fbd67b5d",
+            "sha1": "7f49201832c1a95bf0880d8e41d1ebf5324463fb",
+            "sha256": "e7926eefac916c2d038cf3a2cdd8f0f78764183d4cf621fdbe1478583d1be41e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 67.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Graphics.c",
+            "type": "file",
+            "name": "Graphics.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 40368,
+            "md5": "7cda7ccdd6ad19c4a18763cabb7f51f3",
+            "sha1": "fb93a9cd2f9945ddb594a7a7ffb17ba20d1ad65d",
+            "sha256": "e55d5d42454f00385e508f9fd2ecc692cb70107a5cb86098e3caa2b4f16e99c0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.02,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Handlers.c",
+            "type": "file",
+            "name": "Handlers.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17762,
+            "md5": "7e9507680aecfc53b2e95df8e27f4e05",
+            "sha1": "bf14bfdb7bdc5d4275946b27774d83d27fa2154f",
+            "sha256": "7198d06f797ce6598ccdb3660773fb1b8ebe0bfd07e99192372827a33def1666",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/ReqMach.c",
+            "type": "file",
+            "name": "ReqMach.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7509,
+            "md5": "2e0cc4938d7466304072c55be1ca8d6f",
+            "sha1": "f74bacbc95423eee00aed08f44cd5d450cea2e96",
+            "sha256": "db53b3914d48b89868ae9af46f12907f6c6d55970986d9090e6399616aead7c2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.34,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Requests.h",
+            "type": "file",
+            "name": "Requests.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3772,
+            "md5": "fa7e73f782456c9b0adf0b5e653a8b8d",
+            "sha1": "c14b48e7e75892fa59f183c604cc250ec4ec11d3",
+            "sha256": "a96976c80353fb457bdca799b7580d2d6f8a30923475e94098a6c9dc7b8f198b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "x11-opengroup",
+            "detected_license_expression_spdx": "MIT-open-group",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/x11-opengroup_1.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group shall\nnot be used in advertising or otherwise to promote the sale, use or\nother dealings in this Software without prior written authorization\nfrom The Open Group.",
+                            "match_coverage": 100.0,
+                            "matched_length": 177,
+                            "rule_relevance": 100,
+                            "rule_identifier": "x11-opengroup_1.RULE",
+                            "license_expression": "x11-opengroup",
+                            "spdx_license_expression": "MIT-open-group"
+                        }
+                    ],
+                    "identifier": "x11_opengroup-01001c85-0460-7593-ea5b-bf4eb2d7a3ee",
+                    "license_expression": "x11-opengroup",
+                    "license_expression_spdx": "MIT-open-group"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 33.4,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright 1989, 1998 The Open Group",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "The Open Group",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Davor Matic",
+                    "end_line": 30,
+                    "start_line": 30
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/08e1b33c-068d-4322-bf82-61d3502dbd9e-bc810eb3/217e51f3-faf1-49c9-897d-80073d8ffe0f"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000004552cb607238086008909b680050a2704",
+                "directory_structure": "0000000491408a0982cca0e2252285528810c822"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000004552cb607238086008909b680050a2704",
+                "directory_structure": "000000040b77014ce000e5e89446050c103b4961"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000004552cb607238086008909b680050a2704",
+                "directory_structure": "000000048049022d021126100498b3706803085b"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000004552cb607238086008909b680050a2704",
+                "directory_structure": "0000000404339905f00145050882041581203d26"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/28",
+            "type": "directory",
+            "name": "28",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/31",
+            "type": "directory",
+            "name": "31",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/f4",
+            "type": "directory",
+            "name": "f4",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/bitmap-1.0.9-12.fc40.x86_64",
+            "type": "file",
+            "name": "bitmap-1.0.9-12.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 4447,
+            "md5": "a6d01f1f8d1c53a2bd924788e1cf51d5",
+            "sha1": "733d20eb4f18c05d184b693ce8ce11f203babf2d",
+            "sha256": "1a449691ecafa0fad709abb94b13aa3b27fd90e6bc66fc116b48689af2f424b9",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=186b897cf8737abb8012a0af6c66cfb9759daad1, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/X11/Xmu/Drawing.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/stdio.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/X11/Xmu/Drawing.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/stdio.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003772cb6872bc08e42ad69fe90a70bef34",
+                "directory_structure": "000000039f25416a175d32d2d08eab78598c8148"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "00000003772cb6872bc08e42ad69fe90a70bef34",
+                "directory_structure": "00000003bb70a697b0039807953fdb25ee58f2fb"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/atobm-1.0.9-12.fc40.x86_64.debug",
+            "type": "file",
+            "name": "atobm-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 31216,
+            "md5": "7d84a46285157e579e65ab6b90407bdb",
+            "sha1": "dd568d4da4bf863fafe913e0992df55b6552da72",
+            "sha256": "6e7fe548df813e48bec88aab9996c7ac1730565cd6b61828b31a089af9800bfb",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=282d69a04ef0c1ef6b6f3679d67710d1329be5ca, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdlib.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/atobm.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdlib.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 230176,
+            "md5": "1b93dec50af547718a7aca566065f6cd",
+            "sha1": "4414f95d7fbd8befe3151f3b797983849de7e0d6",
+            "sha256": "034ee76d167b5fb7ff617fb058eb5f6735efe816e05e5aa517f37764b86a8770",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=313a477040afbe9cf808452f1f173bd399593570, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/X11/CoreP.h",
+                    "usr/include/X11/Intrinsic.h",
+                    "usr/include/X11/IntrinsicP.h",
+                    "usr/include/X11/Shell.h",
+                    "usr/include/X11/StringDefs.h",
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xaw/Box.h",
+                    "usr/include/X11/Xaw/Command.h",
+                    "usr/include/X11/Xaw/Dialog.h",
+                    "usr/include/X11/Xaw/Form.h",
+                    "usr/include/X11/Xaw/Label.h",
+                    "usr/include/X11/Xaw/MenuButton.h",
+                    "usr/include/X11/Xaw/Paned.h",
+                    "usr/include/X11/Xaw/SimpleMenu.h",
+                    "usr/include/X11/Xaw/SimpleP.h",
+                    "usr/include/X11/Xaw/SmeBSB.h",
+                    "usr/include/X11/Xaw/SmeLine.h",
+                    "usr/include/X11/Xaw/Toggle.h",
+                    "usr/include/X11/Xaw/XawInit.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/X11/Xmu/CharSet.h",
+                    "usr/include/X11/Xresource.h",
+                    "usr/include/X11/Xutil.h",
+                    "usr/include/X11/bitmaps/xlogo16",
+                    "usr/include/assert.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/BitEdit.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Bitmap.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Bitmap.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/BitmapP.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/CutPaste.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Dialog.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Dialog.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Graphics.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Handlers.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/ReqMach.c",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Requests.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/X11/CoreP.h",
+                    "usr/include/X11/Intrinsic.h",
+                    "usr/include/X11/IntrinsicP.h",
+                    "usr/include/X11/Shell.h",
+                    "usr/include/X11/StringDefs.h",
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xaw/Box.h",
+                    "usr/include/X11/Xaw/Command.h",
+                    "usr/include/X11/Xaw/Form.h",
+                    "usr/include/X11/Xaw/Label.h",
+                    "usr/include/X11/Xaw/MenuButton.h",
+                    "usr/include/X11/Xaw/Paned.h",
+                    "usr/include/X11/Xaw/SimpleMenu.h",
+                    "usr/include/X11/Xaw/SimpleP.h",
+                    "usr/include/X11/Xaw/SmeBSB.h",
+                    "usr/include/X11/Xaw/SmeLine.h",
+                    "usr/include/X11/Xaw/Toggle.h",
+                    "usr/include/X11/Xaw/XawInit.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/X11/Xmu/CharSet.h",
+                    "usr/include/X11/Xresource.h",
+                    "usr/include/X11/Xutil.h",
+                    "usr/include/X11/bitmaps/xlogo16",
+                    "usr/include/assert.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/bmtoa-1.0.9-12.fc40.x86_64.debug",
+            "type": "file",
+            "name": "bmtoa-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 23448,
+            "md5": "793b38463c78e235a68eac4d824db7cf",
+            "sha1": "e0ba1c4c6e9ea34708f2d3c1ea571db0ceb5b251",
+            "sha256": "54fe84adc3c5119acdd2debd4f13fd2f81ff2ebe846e51961c6493ed453370b7",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=f4d2924062e936ce0b5bd201cf8842b1a26825fa, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/bmtoa.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/unistd.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/atobm-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/atobm.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/BitEdit.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Bitmap.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Bitmap.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/BitmapP.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bmtoa-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/bmtoa.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/CutPaste.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Dialog.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "1/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Dialog.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Graphics.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Handlers.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/ReqMach.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bitmap-1.0.9-12.fc40.x86_64/Requests.h"
+        }
+    ]
+}

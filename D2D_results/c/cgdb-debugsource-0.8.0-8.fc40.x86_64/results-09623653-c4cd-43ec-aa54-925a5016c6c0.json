@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "09623653-c4cd-43ec-aa54-925a5016c6c0",
+            "created_date": "2024-06-17T14:17:36.394Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "9a5a8e22-bb7a-40ba-9fc2-f36659f58745",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cgdb-debugsource-0.8.0-8.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "04cf9324-0031-43bc-8c45-1da636bf0185",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cgdb-debuginfo-0.8.0-8.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "b6747034-86b0-47b3-ab6a-7503a184970e",
+                    "created_date": "2024-06-17T14:17:36.402841Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "b6747034-86b0-47b3-ab6a-7503a184970e",
+                    "task_start_date": "2024-06-17T14:17:36.426083Z",
+                    "task_end_date": "2024-06-17T14:17:49.885386Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 14:17:36.42 Pipeline [d2d] starting\n2024-06-17 14:17:36.43 Step [download_missing_inputs] starting\n2024-06-17 14:17:36.43 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cgdb-debugsource-0.8.0-8.fc40.x86_64.rpm#from\n2024-06-17 14:17:43.03 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cgdb-debugsource-0.8.0-8.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 14:17:43.04 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cgdb-debuginfo-0.8.0-8.fc40.x86_64.rpm#to\n2024-06-17 14:17:49.87 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cgdb-debuginfo-0.8.0-8.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 14:17:49.88 Pipeline failed\n",
+                    "execution_time": 13
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

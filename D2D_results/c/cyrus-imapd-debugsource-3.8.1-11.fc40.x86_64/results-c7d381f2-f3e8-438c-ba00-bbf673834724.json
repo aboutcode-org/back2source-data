@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "c7d381f2-f3e8-438c-ba00-bbf673834724",
+            "created_date": "2024-06-17T14:49:39.002Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "fc57113c-4901-4f4f-a46b-b777bd021b93",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cyrus-imapd-debugsource-3.8.1-11.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "39d09325-68b6-4610-93f5-3a9b908bf2f6",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cyrus-imapd-debuginfo-3.8.1-11.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "cca86d53-cd09-4ffb-9e51-478d863d37b4",
+                    "created_date": "2024-06-17T14:49:39.009126Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "cca86d53-cd09-4ffb-9e51-478d863d37b4",
+                    "task_start_date": "2024-06-17T14:49:39.032549Z",
+                    "task_end_date": "2024-06-17T14:49:57.948739Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 14:49:39.03 Pipeline [d2d] starting\n2024-06-17 14:49:39.03 Step [download_missing_inputs] starting\n2024-06-17 14:49:39.04 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cyrus-imapd-debugsource-3.8.1-11.fc40.x86_64.rpm#from\n2024-06-17 14:49:45.43 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cyrus-imapd-debugsource-3.8.1-11.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 14:49:45.43 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cyrus-imapd-debuginfo-3.8.1-11.fc40.x86_64.rpm#to\n2024-06-17 14:49:57.94 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cyrus-imapd-debuginfo-3.8.1-11.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 14:49:57.94 Pipeline failed\n",
+                    "execution_time": 18
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

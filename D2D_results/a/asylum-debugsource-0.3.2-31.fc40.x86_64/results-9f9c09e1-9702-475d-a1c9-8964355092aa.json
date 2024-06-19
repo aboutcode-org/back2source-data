@@ -1,0 +1,1756 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "9f9c09e1-9702-475d-a1c9-8964355092aa",
+            "created_date": "2024-06-14T04:24:40.186Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "c27c7221-ca25-4123-ad18-509d95938e94",
+                    "filename": "asylum-debuginfo-0.3.2-31.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/asylum-debuginfo-0.3.2-31.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 180288,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "480eaca9-da16-41bc-b873-8e22c69c2184",
+                    "filename": "asylum-debugsource-0.3.2-31.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/asylum-debugsource-0.3.2-31.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 55895,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "48de38fa-dd09-4de2-bf83-3563439515d9",
+                    "created_date": "2024-06-14T04:24:40.194334Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "48de38fa-dd09-4de2-bf83-3563439515d9",
+                    "task_start_date": "2024-06-14T04:24:40.218899Z",
+                    "task_end_date": "2024-06-14T04:25:05.892974Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 04:24:40.22 Pipeline [d2d] starting\n2024-06-14 04:24:40.22 Step [download_missing_inputs] starting\n2024-06-14 04:24:40.23 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/asylum-debugsource-0.3.2-31.fc40.x86_64.rpm#from\n2024-06-14 04:24:42.85 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/asylum-debuginfo-0.3.2-31.fc40.x86_64.rpm#to\n2024-06-14 04:24:46.06 Step [download_missing_inputs] completed in 6 seconds\n2024-06-14 04:24:46.06 Step [get_inputs] starting\n2024-06-14 04:24:46.07 Step [get_inputs] completed in 0 seconds\n2024-06-14 04:24:46.08 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 04:24:46.13 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 04:24:46.13 Step [extract_archives] starting\n2024-06-14 04:24:46.21 Step [extract_archives] completed in 0 seconds\n2024-06-14 04:24:46.21 Step [collect_and_create_codebase_resources] starting\n2024-06-14 04:24:46.23 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 04:24:46.24 Step [fingerprint_codebase_directories] starting\n2024-06-14 04:24:46.25 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 04:24:46.25 Step [flag_empty_files] starting\n2024-06-14 04:24:46.25 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 04:24:46.25 Step [flag_whitespace_files] starting\n2024-06-14 04:24:46.25 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 04:24:46.26 Step [flag_ignored_resources] starting\n2024-06-14 04:24:46.26 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 04:24:46.26 Step [map_about_files] starting\n2024-06-14 04:24:46.26 Step [map_about_files] completed in 0 seconds\n2024-06-14 04:24:46.27 Step [map_checksum] starting\n2024-06-14 04:24:46.27 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-14 04:24:46.28 Step [map_checksum] completed in 0 seconds\n2024-06-14 04:24:46.28 Step [match_archives_to_purldb] starting\n2024-06-14 04:24:46.28 PurlDB is not available. Skipping.\n2024-06-14 04:24:46.28 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 04:24:46.29 Step [find_java_packages] starting\n2024-06-14 04:24:46.29 Finding Java package for 0 .java resources.\n2024-06-14 04:24:46.30 Step [find_java_packages] completed in 0 seconds\n2024-06-14 04:24:46.31 Step [map_java_to_class] starting\n2024-06-14 04:24:46.31 Mapping 0 .class resources to .java\n2024-06-14 04:24:46.31 No .java resources to map.\n2024-06-14 04:24:46.32 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 04:24:46.32 Step [map_jar_to_source] starting\n2024-06-14 04:24:46.33 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 04:24:46.34 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 04:24:46.34 Step [map_elf] starting\n2024-06-14 04:24:46.61 Mapping 1 to/ resources using paths with 12 from/ resources.\n2024-06-14 04:24:46.61 Done building from/ resources index.\n2024-06-14 04:24:46.62 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug'\n2024-06-14 04:24:46.63 WARNING: #43 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug'\n2024-06-14 04:24:46.63 Created 12 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug'\n2024-06-14 04:24:46.64 Step [map_elf] completed in 0 seconds\n2024-06-14 04:24:46.64 Step [map_go] starting\n2024-06-14 04:24:46.65 Mapping 0 to/ resources using paths with 12 from/ resources.\n2024-06-14 04:24:46.65 Done building from/ resources index.\n2024-06-14 04:24:46.65 Step [map_go] completed in 0 seconds\n2024-06-14 04:24:46.65 Step [match_directories_to_purldb] starting\n2024-06-14 04:24:46.65 PurlDB is not available. Skipping.\n2024-06-14 04:24:46.66 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 04:24:46.66 Step [match_resources_to_purldb] starting\n2024-06-14 04:24:46.66 PurlDB is not available. Skipping.\n2024-06-14 04:24:46.66 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 04:24:46.66 Step [map_path] starting\n2024-06-14 04:24:46.66 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 04:24:46.67 Step [map_path] completed in 0 seconds\n2024-06-14 04:24:46.67 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 04:24:46.68 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 04:24:46.68 Step [perform_house_keeping_tasks] starting\n2024-06-14 04:24:46.69 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 04:24:46.69 Step [match_purldb_resources_post_process] starting\n2024-06-14 04:24:46.69 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 04:24:46.69 0 resource processed\n2024-06-14 04:24:46.69 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 04:24:46.70 Step [remove_packages_without_resources] starting\n2024-06-14 04:24:46.70 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 04:24:46.70 Step [scan_unmapped_to_files] starting\n2024-06-14 04:24:50.84 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-14 04:24:50.85 Step [scan_mapped_from_for_files] starting\n2024-06-14 04:25:03.56 Progress: 16% (2/12) ETA: 67 seconds (1.1 minutes)\n2024-06-14 04:25:03.60 Progress: 33% (4/12) ETA: 26 seconds\n2024-06-14 04:25:03.99 Progress: 50% (6/12) ETA: 13 seconds\n2024-06-14 04:25:04.25 Progress: 66% (8/12) ETA: 7 seconds\n2024-06-14 04:25:04.51 Progress: 83% (10/12) ETA: 3 seconds\n2024-06-14 04:25:05.61 Progress: 100% (12/12)\n2024-06-14 04:25:05.86 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-14 04:25:05.87 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 04:25:05.87 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 04:25:05.87 Step [create_local_files_packages] starting\n2024-06-14 04:25:05.88 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 04:25:05.89 Pipeline completed in 26 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2",
+            "type": "local-files",
+            "namespace": "43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1",
+            "name": "d97f1aed-4461-4581-b897-aba18ccc35e2",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright Hugh Robinson 2006-2008\nCopyright Hugh Robinson 2006-2009",
+            "holder": "",
+            "declared_license_expression": "gpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64",
+            "type": "directory",
+            "name": "asylum-0.3.2-31.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/alien.c",
+            "type": "file",
+            "name": "alien.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 50006,
+            "md5": "adc95a4c29f45893ca27ac6873c1da60",
+            "sha1": "32dac487fe9c428a4eab90eeeff6901004027a48",
+            "sha256": "ae6f82508bb8f677b2d972efa62753285622a14e3e5d75abc7a9330f6cf82dfe",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/asylum.c",
+            "type": "file",
+            "name": "asylum.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20741,
+            "md5": "abe1d23f1345f3f5190f84b85bfb00f4",
+            "sha1": "50a3da5fb215a2df59563166a678a2dcbda8dd39",
+            "sha256": "0b680d3dc38bff8f311fa41e78e5f41ede84240adc3ed8d5db54d33b21416cc7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/asylum.h",
+            "type": "file",
+            "name": "asylum.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 16652,
+            "md5": "a0c72ffe26d7302f225f4e69761d2844",
+            "sha1": "d57c38e071c95e3a783bb5d64318e505a8ec1512",
+            "sha256": "719e2ad8641c7ed6c65518138544341645e608abd9e7a977f667a57cb9a7cd14",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/bullet.c",
+            "type": "file",
+            "name": "bullet.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7465,
+            "md5": "ab1febd9e3945cb5f6727b83c76a3a6b",
+            "sha1": "5f8eacac9b9575e0b505293cc8c74eab5bf974ba",
+            "sha256": "a2db55fabcd165c5332ee25906aae1ae7c7764aea7ae60aa15898e1cdaf4c9df",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/file.c",
+            "type": "file",
+            "name": "file.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10943,
+            "md5": "6aa849564c9682aad47019a2b35e3888",
+            "sha1": "288f8d8d7826f4a53e36921745273549d474ea28",
+            "sha256": "c3544dc7fabf7581f2f04674ef92d0aa4d489f45ec307d043222a183438fc239",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/keyboard.c",
+            "type": "file",
+            "name": "keyboard.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5285,
+            "md5": "f9b108c590b29407250ee08d6db447cc",
+            "sha1": "062a8b1c521be23d62b61b2269e87fbd281a0297",
+            "sha256": "49dcfbb08e2a83a0fbdf02bd01f2cb38bab723a392fea30f88501cd98ec14c47",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/maze.c",
+            "type": "file",
+            "name": "maze.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17217,
+            "md5": "b21bd812553838d3f74d888cdeac635d",
+            "sha1": "189d15c8b84c6f44f1666e4334b8c3ce3b0c4b9b",
+            "sha256": "f52279aa753c6ee3266a881832ab817cd96026039394f6c7f58be445346a0771",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/menus.c",
+            "type": "file",
+            "name": "menus.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20441,
+            "md5": "cb6edb9f10ece119e07bb37fafc0d5b1",
+            "sha1": "ceb2a1bbe744af7c676c085ff20a5f18aaae3fd3",
+            "sha256": "b4adb1e3f84a071a71e888d56dbc2d15ac9eb37e955e95ac787c373fad3d0687",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/player.c",
+            "type": "file",
+            "name": "player.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 36639,
+            "md5": "2d83859b4933a03d906d7aa7c687f8ca",
+            "sha1": "b43b5fb4d15d05cb1e0e33ac6b8e946d33c9b049",
+            "sha256": "523ee521d8242970761b0da20f6fa335c72588d2ef36db29291a730196c9ee38",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.37,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/projectile.c",
+            "type": "file",
+            "name": "projectile.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7912,
+            "md5": "248cd243aa200bebcbace4fa54d65a60",
+            "sha1": "d98652fc94352b67dcd6f20925ba437f0350194b",
+            "sha256": "4bf2e7be698cd438893416e19e607b399b76dc8b128e4e408defd77b98e08faf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/sound.c",
+            "type": "file",
+            "name": "sound.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14078,
+            "md5": "59a2107d8e232a0acca133b6ede8b0ea",
+            "sha1": "3cf0e0a28fa47a635d8e1ad3a8580816adf15a06",
+            "sha256": "b108639a72d77ab7b66787aef390a09dad2d5c031723fbb58ab3f5eda2a8fdb3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2008",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/vdu.c",
+            "type": "file",
+            "name": "vdu.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 29948,
+            "md5": "8fcec58b6b5ce7f5baad78f940a18f02",
+            "sha1": "42a1068282c37edc1ab93d602f4cecea70341a52",
+            "sha256": "6c4dcad33400c52df4c037cf23d3725f93a56395e51a12ab6e38af8a82da58ef",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-3.0-plus",
+            "detected_license_expression_spdx": "GPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_290.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-3.0-plus_290.RULE",
+                            "license_expression": "gpl-3.0-plus",
+                            "spdx_license_expression": "GPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_3_0_plus-494d0068-7138-a14f-4cbb-fd2137263a4f",
+                    "license_expression": "gpl-3.0-plus",
+                    "license_expression_spdx": "GPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.52,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright Hugh Robinson 2006-2009",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Hugh Robinson",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/43266895-a7ca-4ddf-b85c-17bacc5db782-9f9c09e1/d97f1aed-4461-4581-b897-aba18ccc35e2"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.gnu.org/licenses/",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/c0",
+            "type": "directory",
+            "name": "c0",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "type": "file",
+            "name": "asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 435816,
+            "md5": "4873840fe616fb67e5cbc08e12d49ee5",
+            "sha1": "e326a02e1913c8fb73b39ec74d5182c6abc32943",
+            "sha256": "4c73981d1fdcfcac571c555c345bb596eee16e8d49f0c503547d7257c27022a2",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=c03c319db33e5bf67ae2f16322c5ce61edf85279, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/GL/gl.h",
+                    "usr/include/GL/glu.h",
+                    "usr/include/SDL/SDL.h",
+                    "usr/include/SDL/SDL_error.h",
+                    "usr/include/SDL/SDL_events.h",
+                    "usr/include/SDL/SDL_keyboard.h",
+                    "usr/include/SDL/SDL_keysym.h",
+                    "usr/include/SDL/SDL_mixer.h",
+                    "usr/include/SDL/SDL_mouse.h",
+                    "usr/include/SDL/SDL_rwops.h",
+                    "usr/include/SDL/SDL_stdinc.h",
+                    "usr/include/SDL/SDL_timer.h",
+                    "usr/include/SDL/SDL_video.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/type_traits.h",
+                    "usr/include/c++/14/math.h",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/math.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/<built-in>",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/alien.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/asylum.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/asylum.h",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/bullet.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/file.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/keyboard.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/maze.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/menus.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/player.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/projectile.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/sound.c",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/vdu.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/GL/gl.h",
+                    "usr/include/GL/glu.h",
+                    "usr/include/SDL/SDL.h",
+                    "usr/include/SDL/SDL_error.h",
+                    "usr/include/SDL/SDL_events.h",
+                    "usr/include/SDL/SDL_keyboard.h",
+                    "usr/include/SDL/SDL_keysym.h",
+                    "usr/include/SDL/SDL_mixer.h",
+                    "usr/include/SDL/SDL_mouse.h",
+                    "usr/include/SDL/SDL_rwops.h",
+                    "usr/include/SDL/SDL_stdinc.h",
+                    "usr/include/SDL/SDL_timer.h",
+                    "usr/include/SDL/SDL_video.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/type_traits.h",
+                    "usr/include/c++/14/math.h",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/math.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/asylum-0.3.2-31.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/alien.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/asylum.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/asylum.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/bullet.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/file.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/keyboard.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/maze.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/menus.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/player.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/projectile.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/sound.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/asylum-0.3.2-31.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/asylum-0.3.2-31.fc40.x86_64/vdu.c"
+        }
+    ]
+}

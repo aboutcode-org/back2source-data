@@ -1,0 +1,2081 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "4aa1dc2c-8c9f-45e0-a8d0-8866b8c6f1e5",
+            "created_date": "2024-06-18T05:18:30.563Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "252ece9c-7138-4b01-9a2d-9effea9360fb",
+                    "filename": "erlang-esdl-debuginfo-1.3.1-30.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/erlang-esdl-debuginfo-1.3.1-30.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 81176,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "a8955f48-7255-46c3-be82-3ca071d430f1",
+                    "filename": "erlang-esdl-debugsource-1.3.1-30.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/erlang-esdl-debugsource-1.3.1-30.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 27736,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "158df9c8-4d95-42aa-b4d8-98690550a770",
+                    "created_date": "2024-06-18T05:18:30.571171Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "158df9c8-4d95-42aa-b4d8-98690550a770",
+                    "task_start_date": "2024-06-18T05:18:30.588379Z",
+                    "task_end_date": "2024-06-18T05:18:54.832687Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-18 05:18:30.58 Pipeline [d2d] starting\n2024-06-18 05:18:30.59 Step [download_missing_inputs] starting\n2024-06-18 05:18:30.59 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/erlang-esdl-debugsource-1.3.1-30.fc40.x86_64.rpm#from\n2024-06-18 05:18:32.82 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/erlang-esdl-debuginfo-1.3.1-30.fc40.x86_64.rpm#to\n2024-06-18 05:18:36.40 Step [download_missing_inputs] completed in 6 seconds\n2024-06-18 05:18:36.40 Step [get_inputs] starting\n2024-06-18 05:18:36.41 Step [get_inputs] completed in 0 seconds\n2024-06-18 05:18:36.42 Step [extract_inputs_to_codebase_directory] starting\n2024-06-18 05:18:36.47 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-18 05:18:36.47 Step [extract_archives] starting\n2024-06-18 05:18:36.56 Step [extract_archives] completed in 0 seconds\n2024-06-18 05:18:36.56 Step [collect_and_create_codebase_resources] starting\n2024-06-18 05:18:36.59 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-18 05:18:36.59 Step [fingerprint_codebase_directories] starting\n2024-06-18 05:18:36.60 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-18 05:18:36.60 Step [flag_empty_files] starting\n2024-06-18 05:18:36.61 Step [flag_empty_files] completed in 0 seconds\n2024-06-18 05:18:36.61 Step [flag_whitespace_files] starting\n2024-06-18 05:18:36.61 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-18 05:18:36.61 Step [flag_ignored_resources] starting\n2024-06-18 05:18:36.61 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-18 05:18:36.62 Step [map_about_files] starting\n2024-06-18 05:18:36.62 Step [map_about_files] completed in 0 seconds\n2024-06-18 05:18:36.62 Step [map_checksum] starting\n2024-06-18 05:18:36.63 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-18 05:18:36.63 Step [map_checksum] completed in 0 seconds\n2024-06-18 05:18:36.63 Step [match_archives_to_purldb] starting\n2024-06-18 05:18:36.64 PurlDB is not available. Skipping.\n2024-06-18 05:18:36.64 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-18 05:18:36.64 Step [find_java_packages] starting\n2024-06-18 05:18:36.64 Finding Java package for 0 .java resources.\n2024-06-18 05:18:36.65 Step [find_java_packages] completed in 0 seconds\n2024-06-18 05:18:36.66 Step [map_java_to_class] starting\n2024-06-18 05:18:36.66 Mapping 0 .class resources to .java\n2024-06-18 05:18:36.66 No .java resources to map.\n2024-06-18 05:18:36.67 Step [map_java_to_class] completed in 0 seconds\n2024-06-18 05:18:36.67 Step [map_jar_to_source] starting\n2024-06-18 05:18:36.68 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-18 05:18:36.68 Step [map_jar_to_source] completed in 0 seconds\n2024-06-18 05:18:36.68 Step [map_elf] starting\n2024-06-18 05:18:36.81 Mapping 1 to/ resources using paths with 14 from/ resources.\n2024-06-18 05:18:36.81 Done building from/ resources index.\n2024-06-18 05:18:36.82 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug'\n2024-06-18 05:18:36.83 WARNING: #32 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug'\n2024-06-18 05:18:36.84 Created 23 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug'\n2024-06-18 05:18:36.84 Step [map_elf] completed in 0 seconds\n2024-06-18 05:18:36.84 Step [map_go] starting\n2024-06-18 05:18:36.85 Mapping 0 to/ resources using paths with 14 from/ resources.\n2024-06-18 05:18:36.85 Done building from/ resources index.\n2024-06-18 05:18:36.85 Step [map_go] completed in 0 seconds\n2024-06-18 05:18:36.86 Step [match_directories_to_purldb] starting\n2024-06-18 05:18:36.86 PurlDB is not available. Skipping.\n2024-06-18 05:18:36.86 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-18 05:18:36.86 Step [match_resources_to_purldb] starting\n2024-06-18 05:18:36.86 PurlDB is not available. Skipping.\n2024-06-18 05:18:36.86 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-18 05:18:36.86 Step [map_path] starting\n2024-06-18 05:18:36.87 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-18 05:18:36.87 Step [map_path] completed in 0 seconds\n2024-06-18 05:18:36.87 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-18 05:18:36.88 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-18 05:18:36.88 Step [perform_house_keeping_tasks] starting\n2024-06-18 05:18:36.89 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-18 05:18:36.89 Step [match_purldb_resources_post_process] starting\n2024-06-18 05:18:36.89 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-18 05:18:36.90 0 resource processed\n2024-06-18 05:18:36.90 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-18 05:18:36.90 Step [remove_packages_without_resources] starting\n2024-06-18 05:18:36.90 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-18 05:18:36.90 Step [scan_unmapped_to_files] starting\n2024-06-18 05:18:40.13 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-18 05:18:40.14 Step [scan_mapped_from_for_files] starting\n2024-06-18 05:18:52.28 Progress: 13% (3/23) ETA: 81 seconds (1.4 minutes)\n2024-06-18 05:18:52.99 Progress: 26% (6/23) ETA: 37 seconds\n2024-06-18 05:18:53.15 Progress: 39% (9/23) ETA: 20 seconds\n2024-06-18 05:18:53.42 Progress: 52% (12/23) ETA: 12 seconds\n2024-06-18 05:18:53.55 Progress: 65% (15/23) ETA: 7 seconds\n2024-06-18 05:18:53.69 Progress: 78% (18/23) ETA: 4 seconds\n2024-06-18 05:18:53.96 Progress: 91% (21/23) ETA: 1 seconds\n2024-06-18 05:18:54.80 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-18 05:18:54.81 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-18 05:18:54.81 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-18 05:18:54.81 Step [create_local_files_packages] starting\n2024-06-18 05:18:54.82 Step [create_local_files_packages] completed in 0 seconds\n2024-06-18 05:18:54.83 Pipeline completed in 24 seconds\n",
+                    "execution_time": 24
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917",
+            "type": "local-files",
+            "namespace": "db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c",
+            "name": "42f71521-7bf2-41c2-af32-85df17efe917",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001 Dan Gudmundsson\nCopyright (c) 2010 Dan Gudmundsson",
+            "holder": "",
+            "declared_license_expression": "tcl",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64",
+            "type": "directory",
+            "name": "erlang-esdl-1.3.1-30.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src",
+            "type": "directory",
+            "name": "c_src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_audio.c",
+            "type": "file",
+            "name": "esdl_audio.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6123,
+            "md5": "9205fd6f9fb3cd8f1947c50b4e4061a2",
+            "sha1": "97ee06aa9c201d4a6f2e9824f1e6cc22cb19e926",
+            "sha256": "b3272072f52cf62c343754f7171bcf1d4409695ea8f60fc32d10fb7167ce5417",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_audio.h",
+            "type": "file",
+            "name": "esdl_audio.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1732,
+            "md5": "e673c594f6008db7154fde0604fa26e0",
+            "sha1": "2e1a29444e13ae57317a8ae1bf6b800de66fe758",
+            "sha256": "c88809e74cfc39c0e6c98e2fe8a5fb17f420f1dd7b748ed7538be57acb634e61",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.56,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_driver.c",
+            "type": "file",
+            "name": "esdl_driver.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8915,
+            "md5": "c51958dafc26ec93095f910c52cb8852",
+            "sha1": "7c9623c3a2cb36154156490b479a6e1464d139eb",
+            "sha256": "4f7d8ff5e63089c6d74a279dc0b90899d64f008cbcec84184b55f36469872cb7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_events.c",
+            "type": "file",
+            "name": "esdl_events.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16289,
+            "md5": "95adceda6441549f50308c41a4f9e4cc",
+            "sha1": "bc89a295d44d11d2637cb475573875684938d738",
+            "sha256": "6a7aff5010ba3fc83b9c23ed7233d7f98c2a56e897f62dbf8ea7698e71329c2e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.73,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_events.h",
+            "type": "file",
+            "name": "esdl_events.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4339,
+            "md5": "3223bb9eb9ef3d1dd34504eba0ab0f4c",
+            "sha1": "928a5d18baa606b5a050a303d27205b224969033",
+            "sha256": "2a78df40759167c9124865bc5e02606469517481af1d69234593f007c76849b7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.05,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gen.c",
+            "type": "file",
+            "name": "esdl_gen.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 856,
+            "md5": "aa3b322abaf5d9657cf2a7588e6ed32f",
+            "sha1": "61dcbb2f9190196532e3e6d4203afa6c3ca73327",
+            "sha256": "112e136b7312b459260486255a4d433941d35edd6c1f3a7408c923c876de3188",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gl.c",
+            "type": "file",
+            "name": "esdl_gl.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10745,
+            "md5": "d49584bc954fc2970125418d70211943",
+            "sha1": "ba1f3366c66a24e0dcc6540fab8e74150f5cf95f",
+            "sha256": "5d9e2c4b76974d7bb55d82191dbe0f7980efbb8bbc44878c763f4d9019bf200e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2010 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl.h",
+            "type": "file",
+            "name": "esdl.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3012,
+            "md5": "4ec301c6cc0ec738cb87c79f8b3b6705",
+            "sha1": "ef4fce2f8ff63d61cfc1980ded211717cea39b31",
+            "sha256": "c34d44b4e4dc3aeddb1b6df0bce5974845c19dab5f6b7b1a5721f9493ad2833d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_spec.c",
+            "type": "file",
+            "name": "esdl_spec.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4325,
+            "md5": "d4355bb2cf33fb54b5a7405262d78ac2",
+            "sha1": "80016f9ac9d6f39e0011f1519676d6bfda5be5fd",
+            "sha256": "7cac32ec1e60d1333fb40bc7112c35970863f0ae8fa21724cae236c25c1989ac",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.09,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_util.c",
+            "type": "file",
+            "name": "esdl_util.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2655,
+            "md5": "a91b9034737255d7449aab42878e2d0f",
+            "sha1": "7801e6cad8d6b5f898826bd57dda85ed20afcd76",
+            "sha256": "09dcca67c39a9a5770933f9fbd414b684a236645def62199711e288de4d214ab",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_util.h",
+            "type": "file",
+            "name": "esdl_util.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1052,
+            "md5": "dad75636f83f224a0dc4073d58748bf2",
+            "sha1": "2d66135fc368c29add0e650f020aea0939c243cf",
+            "sha256": "6f9a7642bd3cc3c903837fea143a07b63b7c61fbc1ab09983bdc6413d3056130",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_video.c",
+            "type": "file",
+            "name": "esdl_video.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 26038,
+            "md5": "682e3a37535403042f6965b3844cd8d9",
+            "sha1": "5ea8087f9a826f6430dfb39c90438902bd464da5",
+            "sha256": "55d5ee889c40e7551309af76bcf4777fc21d8ff185c9c5a3560375e648441e1b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_video.h",
+            "type": "file",
+            "name": "esdl_video.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 7016,
+            "md5": "07f2050542887839b267e45d6f038acb",
+            "sha1": "895458014a1992387436d437de600d1e824c7847",
+            "sha256": "bd1a2fdfa3b8b7e5d9a45876c5239967dfe111f0dbbf10b9b1b4c624cb6996c2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.82,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_wrapper.c",
+            "type": "file",
+            "name": "esdl_wrapper.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1404,
+            "md5": "46d7326361a0992b1a9be9da9b08140d",
+            "sha1": "698c102bd3bc417de99254371bf74ccfa33fe625",
+            "sha256": "acdc2f3108b58f6d18fc1cc0d60b12515fc0b274a57135b232d87a279f58bf26",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "tcl",
+            "detected_license_expression_spdx": "TCL",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 85.0,
+                            "matcher": "3-seq",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/tcl_26.RULE",
+                            "from_file": null,
+                            "start_line": 3,
+                            "matched_text": " *  See the file \"license.terms\" for information on usage and redistribution\n *  of this file, and for a DISCLAIMER OF ALL WARRANTIES.",
+                            "match_coverage": 85.0,
+                            "matched_length": 17,
+                            "rule_relevance": 100,
+                            "rule_identifier": "tcl_26.RULE",
+                            "license_expression": "tcl",
+                            "spdx_license_expression": "TCL"
+                        }
+                    ],
+                    "identifier": "tcl-b98a16e3-ae99-78fb-f0ed-765f7b22ca54",
+                    "license_expression": "tcl",
+                    "license_expression_spdx": "TCL"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.94,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2001 Dan Gudmundsson",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dan Gudmundsson",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/db86b19a-e222-4b01-b079-3535c5276440-4aa1dc2c/42f71521-7bf2-41c2-af32-85df17efe917"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/71",
+            "type": "directory",
+            "name": "71",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/erlang",
+            "type": "directory",
+            "name": "erlang",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/erlang/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1",
+            "type": "directory",
+            "name": "esdl-1.3.1",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": ".1",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv",
+            "type": "directory",
+            "name": "priv",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "type": "file",
+            "name": "sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 184752,
+            "md5": "fc09f9e2f8932de3ed02d39818450dca",
+            "sha1": "92c29b9f545ce7988e0101701bffe96e44f955b6",
+            "sha256": "1c00d4889facaef8865d17e01ab5b483a4e6e1eb46410596d31086ba5bcc9ada",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=7182a7810ca570efb642f262a5baa76b61c63a68, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/<artificial>",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_audio.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_driver.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_events.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gen.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gl.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_spec.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_util.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_video.c",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_wrapper.c"
+                ],
+                "dwarf_included_paths": [
+                    "c_src/esdl.h",
+                    "c_src/esdl_audio.c",
+                    "c_src/esdl_audio.h",
+                    "c_src/esdl_driver.c",
+                    "c_src/esdl_events.c",
+                    "c_src/esdl_events.h",
+                    "c_src/esdl_gen.c",
+                    "c_src/esdl_gl.c",
+                    "c_src/esdl_spec.c",
+                    "c_src/esdl_util.c",
+                    "c_src/esdl_util.h",
+                    "c_src/esdl_video.c",
+                    "c_src/esdl_video.h",
+                    "c_src/esdl_wrapper.c",
+                    "usr/include/SDL/SDL.h",
+                    "usr/include/SDL/SDL_active.h",
+                    "usr/include/SDL/SDL_audio.h",
+                    "usr/include/SDL/SDL_error.h",
+                    "usr/include/SDL/SDL_events.h",
+                    "usr/include/SDL/SDL_joystick.h",
+                    "usr/include/SDL/SDL_keyboard.h",
+                    "usr/include/SDL/SDL_keysym.h",
+                    "usr/include/SDL/SDL_mouse.h",
+                    "usr/include/SDL/SDL_rwops.h",
+                    "usr/include/SDL/SDL_stdinc.h",
+                    "usr/include/SDL/SDL_syswm.h",
+                    "usr/include/SDL/SDL_version.h",
+                    "usr/include/SDL/SDL_video.h",
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/dlfcn.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/erlang/erts-14.2.1/include/erl_driver.h",
+                    "usr/lib64/erlang/erts-14.2.1/include/erl_drv_nif.h",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/SDL/SDL.h",
+                    "usr/include/SDL/SDL_active.h",
+                    "usr/include/SDL/SDL_audio.h",
+                    "usr/include/SDL/SDL_error.h",
+                    "usr/include/SDL/SDL_events.h",
+                    "usr/include/SDL/SDL_joystick.h",
+                    "usr/include/SDL/SDL_keyboard.h",
+                    "usr/include/SDL/SDL_keysym.h",
+                    "usr/include/SDL/SDL_mouse.h",
+                    "usr/include/SDL/SDL_rwops.h",
+                    "usr/include/SDL/SDL_stdinc.h",
+                    "usr/include/SDL/SDL_syswm.h",
+                    "usr/include/SDL/SDL_version.h",
+                    "usr/include/SDL/SDL_video.h",
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/dlfcn.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/lib64/erlang/erts-14.2.1/include/erl_driver.h",
+                    "usr/lib64/erlang/erts-14.2.1/include/erl_drv_nif.h",
+                    "usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_audio.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_audio.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_audio.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_driver.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_driver.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_events.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_events.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_events.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gen.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gen.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_gl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_spec.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_spec.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_util.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_util.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_util.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_video.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_video.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_video.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_wrapper.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/erlang/lib/esdl-1.3.1/priv/sdl_driver.so-1.3.1-30.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/erlang-esdl-1.3.1-30.fc40.x86_64/c_src/esdl_wrapper.c"
+        }
+    ]
+}

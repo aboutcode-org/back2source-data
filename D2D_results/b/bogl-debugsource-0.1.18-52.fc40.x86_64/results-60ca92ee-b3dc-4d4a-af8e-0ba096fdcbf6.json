@@ -1,0 +1,3044 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "60ca92ee-b3dc-4d4a-af8e-0ba096fdcbf6",
+            "created_date": "2024-06-17T10:22:00.023Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "adbf6788-01a7-4964-99e9-7e04a7cce3e2",
+                    "filename": "bogl-debuginfo-0.1.18-52.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bogl-debuginfo-0.1.18-52.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 104651,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "54136d3c-ed7e-421d-920c-dc62ad59568a",
+                    "filename": "bogl-debugsource-0.1.18-52.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bogl-debugsource-0.1.18-52.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 65388,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "bfee9c33-a330-41fc-81e6-f094723fe15a",
+                    "created_date": "2024-06-17T10:22:00.031676Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "bfee9c33-a330-41fc-81e6-f094723fe15a",
+                    "task_start_date": "2024-06-17T10:22:00.055016Z",
+                    "task_end_date": "2024-06-17T10:22:29.104123Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 10:22:00.05 Pipeline [d2d] starting\n2024-06-17 10:22:00.06 Step [download_missing_inputs] starting\n2024-06-17 10:22:00.06 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bogl-debugsource-0.1.18-52.fc40.x86_64.rpm#from\n2024-06-17 10:22:04.09 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bogl-debuginfo-0.1.18-52.fc40.x86_64.rpm#to\n2024-06-17 10:22:08.10 Step [download_missing_inputs] completed in 8 seconds\n2024-06-17 10:22:08.10 Step [get_inputs] starting\n2024-06-17 10:22:08.11 Step [get_inputs] completed in 0 seconds\n2024-06-17 10:22:08.11 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 10:22:08.17 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 10:22:08.18 Step [extract_archives] starting\n2024-06-17 10:22:08.28 Step [extract_archives] completed in 0 seconds\n2024-06-17 10:22:08.28 Step [collect_and_create_codebase_resources] starting\n2024-06-17 10:22:08.33 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 10:22:08.34 Step [fingerprint_codebase_directories] starting\n2024-06-17 10:22:08.35 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 10:22:08.35 Step [flag_empty_files] starting\n2024-06-17 10:22:08.35 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 10:22:08.36 Step [flag_whitespace_files] starting\n2024-06-17 10:22:08.36 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 10:22:08.36 Step [flag_ignored_resources] starting\n2024-06-17 10:22:08.36 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 10:22:08.37 Step [map_about_files] starting\n2024-06-17 10:22:08.37 Step [map_about_files] completed in 0 seconds\n2024-06-17 10:22:08.37 Step [map_checksum] starting\n2024-06-17 10:22:08.37 Mapping 2 to/ resources using sha1 against from/ codebase\n2024-06-17 10:22:08.38 Step [map_checksum] completed in 0 seconds\n2024-06-17 10:22:08.38 Step [match_archives_to_purldb] starting\n2024-06-17 10:22:08.38 PurlDB is not available. Skipping.\n2024-06-17 10:22:08.38 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 10:22:08.39 Step [find_java_packages] starting\n2024-06-17 10:22:08.39 Finding Java package for 0 .java resources.\n2024-06-17 10:22:08.39 Step [find_java_packages] completed in 0 seconds\n2024-06-17 10:22:08.39 Step [map_java_to_class] starting\n2024-06-17 10:22:08.40 Mapping 0 .class resources to .java\n2024-06-17 10:22:08.40 No .java resources to map.\n2024-06-17 10:22:08.40 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 10:22:08.40 Step [map_jar_to_source] starting\n2024-06-17 10:22:08.40 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 10:22:08.41 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 10:22:08.41 Step [map_elf] starting\n2024-06-17 10:22:08.66 Mapping 2 to/ resources using paths with 29 from/ resources.\n2024-06-17 10:22:08.66 Done building from/ resources index.\n2024-06-17 10:22:08.67 WARNING: #38 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64'\n2024-06-17 10:22:08.68 Created 12 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64'\n2024-06-17 10:22:08.68 WARNING: #7 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug'\n2024-06-17 10:22:08.70 WARNING: #19 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug'\n2024-06-17 10:22:08.70 Created 18 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug'\n2024-06-17 10:22:08.71 Step [map_elf] completed in 0 seconds\n2024-06-17 10:22:08.71 Step [map_go] starting\n2024-06-17 10:22:08.72 Mapping 0 to/ resources using paths with 29 from/ resources.\n2024-06-17 10:22:08.72 Done building from/ resources index.\n2024-06-17 10:22:08.73 Step [map_go] completed in 0 seconds\n2024-06-17 10:22:08.73 Step [match_directories_to_purldb] starting\n2024-06-17 10:22:08.73 PurlDB is not available. Skipping.\n2024-06-17 10:22:08.73 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 10:22:08.74 Step [match_resources_to_purldb] starting\n2024-06-17 10:22:08.74 PurlDB is not available. Skipping.\n2024-06-17 10:22:08.74 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 10:22:08.74 Step [map_path] starting\n2024-06-17 10:22:08.74 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 10:22:08.75 Step [map_path] completed in 0 seconds\n2024-06-17 10:22:08.75 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 10:22:08.76 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 10:22:08.76 Step [perform_house_keeping_tasks] starting\n2024-06-17 10:22:08.78 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 10:22:08.78 Step [match_purldb_resources_post_process] starting\n2024-06-17 10:22:08.78 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 10:22:08.79 0 resource processed\n2024-06-17 10:22:08.79 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 10:22:08.79 Step [remove_packages_without_resources] starting\n2024-06-17 10:22:08.79 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 10:22:08.80 Step [scan_unmapped_to_files] starting\n2024-06-17 10:22:12.23 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 10:22:12.23 Step [scan_mapped_from_for_files] starting\n2024-06-17 10:22:24.27 Progress: 10% (3/30) ETA: 108 seconds (1.8 minutes)\n2024-06-17 10:22:24.93 Progress: 20% (6/30) ETA: 51 seconds\n2024-06-17 10:22:25.40 Progress: 30% (9/30) ETA: 31 seconds\n2024-06-17 10:22:25.46 Progress: 40% (12/30) ETA: 20 seconds\n2024-06-17 10:22:26.25 Progress: 50% (15/30) ETA: 14 seconds\n2024-06-17 10:22:26.37 Progress: 60% (18/30) ETA: 9 seconds\n2024-06-17 10:22:26.43 Progress: 70% (21/30) ETA: 6 seconds\n2024-06-17 10:22:26.64 Progress: 80% (24/30) ETA: 4 seconds\n2024-06-17 10:22:27.26 Progress: 90% (27/30) ETA: 2 seconds\n2024-06-17 10:22:28.74 Progress: 100% (30/30)\n2024-06-17 10:22:29.05 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-17 10:22:29.06 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 10:22:29.06 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 10:22:29.07 Step [create_local_files_packages] starting\n2024-06-17 10:22:29.09 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 10:22:29.10 Pipeline completed in 29 seconds\n",
+                    "execution_time": 29
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/bf8ab059-858b-40c4-bcbf-9a888b090228",
+            "type": "local-files",
+            "namespace": "8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee",
+            "name": "bf8ab059-858b-40c4-bcbf-9a888b090228",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 1993 ajh@gec-mrc.co.uk (Andrew Haylett)\nCopyright 1994-1998 rubini@linux.it (Alessandro Rubini)\nCopyright 1997 Red Hat Software",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND gpl-1.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6",
+            "type": "local-files",
+            "namespace": "8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee",
+            "name": "d1cceff9-6af8-48d7-b4af-de5854da82f6",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "(c) Copyright Red Hat Inc 2002, <alan@redhat.com>\nCopyright (c) 1991 Free Software Foundation, Inc.",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64",
+            "type": "directory",
+            "name": "bogl-0.1.18-52.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/arrow.c",
+            "type": "file",
+            "name": "arrow.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2131,
+            "md5": "fd70401c00083bbeb708a685bfecd7c8",
+            "sha1": "e60d3197479b4c675aef12087fb230c4b14a348e",
+            "sha256": "b2ffc0934c6f002d0d769e237f504a229372bba5719a1b3bc1d0849c3efb644e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 48.71,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bdftobogl.c",
+            "type": "file",
+            "name": "bdftobogl.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7051,
+            "md5": "0efc8ed52b83df8fd174e91f146289b7",
+            "sha1": "3798c18a83b79a6b5f4001484476f5bf6bba42d2",
+            "sha256": "7ecb3cb031774d8ff07926275bd37695f0ad3f2d4c70b6e4d9f028ce3f044678",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-bgf.c",
+            "type": "file",
+            "name": "bogl-bgf.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3140,
+            "md5": "7ec311efdb2bf0bfe0cf00e1ff4dbd21",
+            "sha1": "739fd0306b474fcbe8f0dd9deeea3e80a9114ada",
+            "sha256": "f58b1cfb23426e04ff9dd76a8ce227978a11d6150227e4ceb9b4ec12d0f8fd0c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-bgf.h",
+            "type": "file",
+            "name": "bogl-bgf.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 53,
+            "md5": "40bf4fd1a76ea9dcec28b8f4bbbc19ef",
+            "sha1": "49bbdabbb490ef9ff0c3ae0d91206f0c0915ddb6",
+            "sha256": "05bc3d65470a6cdc204377e92454963425d18e48e9a721744351106acfd95aaf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.c",
+            "type": "file",
+            "name": "bogl.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16100,
+            "md5": "86372a0486cec113533829ac4acb755e",
+            "sha1": "3de6918c1098968828968ca512538d2aee2c9417",
+            "sha256": "562d254e6cf9da301c1ab916245afe581189023c99388912581eba08954d2a3a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.62,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.c",
+            "type": "file",
+            "name": "bogl-cfb.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4308,
+            "md5": "e4365fa7b77a4a8b6e420065daba9743",
+            "sha1": "691e8bb5be2b3128c6fe4bf1f01b65d6eb5218ae",
+            "sha256": "c2ddc1c151d19c22e03b9a553bfaaa2b2a0502525952fbf438821a924417cff2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.05,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 27,
+                    "copyright": "Copyright (c) 1991 Free Software Foundation, Inc.",
+                    "start_line": 27
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Free Software Foundation, Inc.",
+                    "end_line": 27,
+                    "start_line": 27
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "author": "David Huggins-Daines <dhd@debian.org>",
+                    "end_line": 24,
+                    "start_line": 24
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "dhd@debian.org",
+                    "end_line": 24,
+                    "start_line": 24
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.h",
+            "type": "file",
+            "name": "bogl-cfb.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3866,
+            "md5": "85530e8c3bc2b6799acda2b3cb360694",
+            "sha1": "e99a01131bb8587c5285e4e49b8db94a6cb9fc30",
+            "sha256": "41e6b368f9fab2e58ff144352b3bae43e0c215164e4c67724c8a2cb3dbb8a20e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.28,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "author": "David Huggins-Daines <dhd@debian.org>",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "dhd@debian.org",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.c",
+            "type": "file",
+            "name": "bogl-font.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11025,
+            "md5": "6c920ebc8f9cc0558f39eca490ea63f1",
+            "sha1": "ff5d0a9a3daaeecab0ce1de72292d46e78918abf",
+            "sha256": "594c19348c541a3d5a2338cca872f2b6c7da2d8acb358bca7e7247cd3daaa3a8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.69,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.h",
+            "type": "file",
+            "name": "bogl-font.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 970,
+            "md5": "32d1b3076820c81a6db49508f4fbdf78",
+            "sha1": "ea62448dd0f0bebc23794b00208f5c0c815a936e",
+            "sha256": "007cef35ffa9560ede91d3726a67a46ee06df6b5e6991ead93d7ba6cd46ffbbc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 73.38,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.h",
+            "type": "file",
+            "name": "bogl.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3788,
+            "md5": "7e31f373153f751ae4ac78697374aedb",
+            "sha1": "3e8fc6648d436435eb17754b8b27814a3e95eb3b",
+            "sha256": "e1df81c041841b197002728cb74ab27e7b71f55efc6dd3f1e48b98a4abb482ea",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.45,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.c",
+            "type": "file",
+            "name": "bogl-pcfb.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8207,
+            "md5": "1e36439fb8546f224faddbbc442ea5d7",
+            "sha1": "3852b9d1fdeac5abccbb2150ee9218258ba750f3",
+            "sha256": "86a8fad12f1a6c71526a0716da671e66c1678d922e0e37d36acdf17d001eecd2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.08,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "author": "David Huggins-Daines <dhd@debian.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "dhd@debian.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.h",
+            "type": "file",
+            "name": "bogl-pcfb.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1531,
+            "md5": "04ba29ba0bde26785693c0a8ff1bf7c0",
+            "sha1": "3ccfe7aa65c3b05b8e03a5364c92992bbd75c4ee",
+            "sha256": "58f1ba4a875040669142d50f3cf6a03c492504347321a8477c1cf3799c5d7e02",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 42.01,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boglP.h",
+            "type": "file",
+            "name": "boglP.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1055,
+            "md5": "ef35b9c20ff5e4f4ae6245ae50a7f069",
+            "sha1": "6e33c67e5605fcc27915dfd38fe1e38a760d4ae0",
+            "sha256": "6ebb9d1deb11b0a9ff0e5d83020d225cae6424a527636192ba43ce866b36dae9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 70.62,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.c",
+            "type": "file",
+            "name": "bogl-tcfb.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8972,
+            "md5": "9dfc4204364abcb6ccbdba6113b10a9b",
+            "sha1": "19353d3a1da737d37e9c4f66214e462254a687f3",
+            "sha256": "56a721ee31b28eb0a000117f521e1f315486b053deb0dc9d781aed843a229fb2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.31,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "author": "David Huggins-Daines <dhd@debian.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "dhd@debian.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.h",
+            "type": "file",
+            "name": "bogl-tcfb.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1612,
+            "md5": "a8e1138753229b71d2919beaaecee56f",
+            "sha1": "bff0c96134d1be338aea11391a7e744e940114f6",
+            "sha256": "3ba8825f5f1f06b842ba01feaf83030957e370ab14549fd9c1bd318be34cbc48",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 39.93,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-term.c",
+            "type": "file",
+            "name": "bogl-term.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 23528,
+            "md5": "3d38fca8150ac26bd5bc712d0a2325ca",
+            "sha1": "ba81d2efb222b879b77d950d98eb633841d68295",
+            "sha256": "fd30547f82ca13a9ea1b04a6236afa81dc7b051119f1f588dba5e172de977020",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-term.h",
+            "type": "file",
+            "name": "bogl-term.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 853,
+            "md5": "869bdf5b1d63ae1e5ac9764cdb9f602a",
+            "sha1": "0ff147af11b9dd59791d717f5b89767d1eee844f",
+            "sha256": "c603678db7bf0ebcce77080b6735d392bd58d888b504678514317986ed783aa1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.c",
+            "type": "file",
+            "name": "bogl-vga16.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14886,
+            "md5": "ff2faf8b14e2b40b6275266b7cbb6190",
+            "sha1": "c8da70d9b9cfb725a19f75d50c4ab15392ffce51",
+            "sha256": "52349ce6fe86f8291a8ade3854074b0b9ec20b27f16e7909ee9b5ee04359e480",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 20,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.16,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "(c) Copyright Red Hat Inc 2002, <alan@redhat.com>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "alan@redhat.com",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.h",
+            "type": "file",
+            "name": "bogl-vga16.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1579,
+            "md5": "25bbaa0786fea9c27838df2ce62b4d7d",
+            "sha1": "d28ead26e423214ee473e7f32ea989464ba46e10",
+            "sha256": "997e39e3bd996a1f7ee64f1ab47951245f138bdad63bd0ade53f2638dfb59bc3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.24,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boml.c",
+            "type": "file",
+            "name": "boml.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 31766,
+            "md5": "0ff75f931546b4f43855230f596fafb7",
+            "sha1": "06a4910f54aba87963520136df291602ef5068c7",
+            "sha256": "b66b8bb3254743059f99cc0e2ccb5b5d6a06baddf29e4e31a914488de68ec4ca",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND gpl-1.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND GPL-1.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 839,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_19.RULE",
+                            "from_file": null,
+                            "start_line": 827,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; either version 2 of the License, or\n *   (at your option) any later version.\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 110,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_19.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-5b57f05e-2381-acc1-084e-f7d2806191f2",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 921,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-1.0-plus_142.RULE",
+                            "from_file": null,
+                            "start_line": 916,
+                            "matched_text": " * This software may be freely redistributed under the terms of the GNU\n * public license.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program; if not, write to the Free Software\n * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 45,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-1.0-plus_142.RULE",
+                            "license_expression": "gpl-1.0-plus",
+                            "spdx_license_expression": "GPL-1.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_1_0_plus-de51f181-9598-cb09-9e05-c01a2048991c",
+                    "license_expression": "gpl-1.0-plus",
+                    "license_expression_spdx": "GPL-1.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 824,
+                    "copyright": "Copyright 1993 ajh@gec-mrc.co.uk (Andrew Haylett)",
+                    "start_line": 824
+                },
+                {
+                    "end_line": 825,
+                    "copyright": "Copyright 1994-1998 rubini@linux.it (Alessandro Rubini)",
+                    "start_line": 825
+                },
+                {
+                    "end_line": 914,
+                    "copyright": "Copyright 1997 Red Hat Software",
+                    "start_line": 914
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Andrew Haylett",
+                    "end_line": 824,
+                    "start_line": 824
+                },
+                {
+                    "holder": "Alessandro Rubini",
+                    "end_line": 825,
+                    "start_line": 825
+                },
+                {
+                    "holder": "Red Hat Software",
+                    "end_line": 914,
+                    "start_line": 914
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/bf8ab059-858b-40c4-bcbf-9a888b090228"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "email": "ajh@gec-mrc.co.uk",
+                    "end_line": 824,
+                    "start_line": 824
+                },
+                {
+                    "email": "rubini@linux.it",
+                    "end_line": 825,
+                    "start_line": 825
+                },
+                {
+                    "email": "msf@redhat.com",
+                    "end_line": 912,
+                    "start_line": 912
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boml.h",
+            "type": "file",
+            "name": "boml.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1400,
+            "md5": "0453b0ce73af0010b63012adc44503bc",
+            "sha1": "ccf800615e1b2e0c3f7b350e14f2e30e73fcd5fa",
+            "sha256": "9a718fc7f4b66b5164625fa25d9004dd8f5a708f658eed0da30b81569aef5ea6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 51.83,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl-boxes.c",
+            "type": "file",
+            "name": "bowl-boxes.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11294,
+            "md5": "8dce8540176bef6b3bcc3cd6619cf3b9",
+            "sha1": "217744a6fa1e5c16d03a1d97d757fcbd4137daa7",
+            "sha256": "ea27bb6a6555b77a51ac0a149a0236fa2301e111e6adef004fb9cbf6d247785a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ISO-8859 text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.27,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl.c",
+            "type": "file",
+            "name": "bowl.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 44696,
+            "md5": "3dd2909d61e65e93d0f9c7c7d565b742",
+            "sha1": "38ff259baf5c0fbb7d469b894aa18ad2647b7502",
+            "sha256": "4726b8f06ebded43c17d38a829b38fb83865bf26797ad2a5e271f529b63f8edb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.78,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl.h",
+            "type": "file",
+            "name": "bowl.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1558,
+            "md5": "4a2c042fab97c793bc5da5f042db41e2",
+            "sha1": "04ab2d4cb063db8a07811df598a24ebafa45a6e5",
+            "sha256": "c23baf31cd806b342e838517bfaf9bfd809e588003c26fac71f074756b400aba",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n   \n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n   \n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 46.12,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boxes.h",
+            "type": "file",
+            "name": "boxes.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1836,
+            "md5": "a501a999d331e351edb927ce93a16889",
+            "sha1": "8c25d6b2ae0504724815dc2e4281a0b3ea8f3433",
+            "sha256": "c10468149f1ff84e03c134f9353ef3fd5a93fe252a8c366dc04b78c94c1269ab",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bterm.c",
+            "type": "file",
+            "name": "bterm.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8483,
+            "md5": "bd6ae4f89d433c8dad66497fe3853deb",
+            "sha1": "dd75c3789960b6121255445d29d3a89b2986f509",
+            "sha256": "4523650856874e0c17b883baf7be32d7b60f38c2e586aeb11217df93e1d98ec2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/pngtobogl.c",
+            "type": "file",
+            "name": "pngtobogl.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3997,
+            "md5": "e75570ceb14d3f0f028b658e85765537",
+            "sha1": "200dbefa4435a998e81072d52fc2f96a21f43cd7",
+            "sha256": "79982513f282778054bac49c8aca0f0ec579eaff0d1f7e7c8e21a8d9586e35ed",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/reduce-font.c",
+            "type": "file",
+            "name": "reduce-font.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5157,
+            "md5": "6bfc807d4edf47ccd28017659573f0ed",
+            "sha1": "81180bbe0d476a84e2a368fbb006727623f0c97e",
+            "sha256": "8c4ccc0bbf06a1e443572049554d0b5dcffa4ee54494c23e121e5aed9e14daed",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/symbol.c",
+            "type": "file",
+            "name": "symbol.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4103,
+            "md5": "2fd2084c575ce350435c8309f400f88e",
+            "sha1": "dac7607bd1e85dc4c1e63f42eabce6314ce57275",
+            "sha256": "7afc6c7fdd83401c2c0212c0a9ca7b61fcf3fc35447e2776bf4ae34582062489",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": "   This program is free software; you can redistribute it and/or\n   modify it under the terms of the GNU General Public License as\n   published by the Free Software Foundation; either version 2 of the\n   License, or (at your option) any later version.\n\n   This program is distributed in the hope that it will be useful, but\n   WITHOUT ANY WARRANTY; without even the implied warranty of\n   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n   General Public License for more details.\n\n   You should have received a copy of the GNU General Public License\n   along with this program; if not, write to the Free Software\n   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307\n   USA. */",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.31,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [
+                {
+                    "author": "Ben Pfaff <pfaffben@debian.org>",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/8f3579f8-fb21-4b6f-84af-10951aa180ee-60ca92ee/d1cceff9-6af8-48d7-b4af-de5854da82f6"
+            ],
+            "emails": [
+                {
+                    "email": "pfaffben@debian.org",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000028663001106d8680042032520d0121000",
+                "directory_structure": "000000020c4424080020854810a4088404880800"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000028663001106d8680042032520d0121000",
+                "directory_structure": "00000002a250480088201865032513884288020c"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000028663001106d8680042032520d0121000",
+                "directory_structure": "0000000208015003a020087521024c41c4c2889c"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000028663001106d8680042032520d0121000",
+                "directory_structure": "000000020968801620084a1611834410c1330168"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/a0",
+            "type": "directory",
+            "name": "a0",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "type": "file",
+            "name": "bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 28567,
+            "md5": "980aab7cdbcd9b365b93adf575dac797",
+            "sha1": "4e0a78c7fdc2ddae801ad40872183d909e618443",
+            "sha256": "8bb58338ea06c68693aad2284263159326789bb97c60dd313e928574253bc285",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=1ebcfe42c2b3b9e1c25966a96fc3a7bf9e649152, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/confname.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/ctype.h",
+                    "usr/include/linux/fb.h",
+                    "usr/include/linux/vt.h",
+                    "usr/include/locale.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/io.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/termios.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boglP.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/confname.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/select-decl.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/ctype.h",
+                    "usr/include/linux/fb.h",
+                    "usr/include/linux/vt.h",
+                    "usr/include/locale.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/io.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/termios.h",
+                    "usr/include/unistd.h",
+                    "usr/include/wchar.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 222664,
+            "md5": "9bb1eb1c6f54d72296b7ab52d49fbc9c",
+            "sha1": "b7c5c199d66509cb0807dbff8654feb9f585c0b0",
+            "sha256": "fc7b916dde6706442913922f39bc39915c730eeb256f2ea7ff2ab7feb736f27a",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=a00362e5557703b2af738574dee4fde0242a27ab, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/arrow.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/helvB10.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/helvB12.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/helvR10.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/symbol.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/timBI18.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/tux75.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/libintl.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/un.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/<built-in>",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boglP.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boml.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boml.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl-boxes.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boxes.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/<artificial>",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/helvB10.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/helvB12.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/helvR10.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/timBI18.c",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/tux75.c"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/fcntl.h",
+                    "usr/include/libintl.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/time.h",
+                    "usr/include/sys/un.h",
+                    "usr/include/unistd.h",
+                    "usr/src/debug/bogl-0.1.18-52.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/arrow.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-cfb.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-font.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-pcfb.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boglP.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boglP.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-tcfb.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/bogl-0.1.18-52.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bogl-vga16.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boml.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boml.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl-boxes.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/bowl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/boxes.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libbogl.so.0.1-0.1.18-52.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/bogl-0.1.18-52.fc40.x86_64/symbol.c"
+        }
+    ]
+}

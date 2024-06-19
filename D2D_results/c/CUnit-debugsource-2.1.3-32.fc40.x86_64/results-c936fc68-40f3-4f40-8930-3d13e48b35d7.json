@@ -1,0 +1,2228 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "c936fc68-40f3-4f40-8930-3d13e48b35d7",
+            "created_date": "2024-06-17T14:17:56.071Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "48d576eb-920f-49ee-9253-5f4d45318c14",
+                    "filename": "CUnit-debuginfo-2.1.3-32.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CUnit-debuginfo-2.1.3-32.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 60924,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "7915903a-dad7-4a66-bc06-a70509c716d3",
+                    "filename": "CUnit-debugsource-2.1.3-32.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CUnit-debugsource-2.1.3-32.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 57733,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "9cefc316-9042-4a38-9125-ea0f46da0678",
+                    "created_date": "2024-06-17T14:17:56.079878Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "9cefc316-9042-4a38-9125-ea0f46da0678",
+                    "task_start_date": "2024-06-17T14:17:56.103310Z",
+                    "task_end_date": "2024-06-17T14:18:23.832492Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 14:17:56.10 Pipeline [d2d] starting\n2024-06-17 14:17:56.11 Step [download_missing_inputs] starting\n2024-06-17 14:17:56.11 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CUnit-debugsource-2.1.3-32.fc40.x86_64.rpm#from\n2024-06-17 14:18:01.92 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CUnit-debuginfo-2.1.3-32.fc40.x86_64.rpm#to\n2024-06-17 14:18:03.43 Step [download_missing_inputs] completed in 7 seconds\n2024-06-17 14:18:03.43 Step [get_inputs] starting\n2024-06-17 14:18:03.44 Step [get_inputs] completed in 0 seconds\n2024-06-17 14:18:03.44 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 14:18:03.50 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 14:18:03.50 Step [extract_archives] starting\n2024-06-17 14:18:03.60 Step [extract_archives] completed in 0 seconds\n2024-06-17 14:18:03.61 Step [collect_and_create_codebase_resources] starting\n2024-06-17 14:18:03.71 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 14:18:03.71 Step [fingerprint_codebase_directories] starting\n2024-06-17 14:18:03.72 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 14:18:03.72 Step [flag_empty_files] starting\n2024-06-17 14:18:03.73 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 14:18:03.73 Step [flag_whitespace_files] starting\n2024-06-17 14:18:03.73 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 14:18:03.73 Step [flag_ignored_resources] starting\n2024-06-17 14:18:03.73 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 14:18:03.74 Step [map_about_files] starting\n2024-06-17 14:18:03.74 Step [map_about_files] completed in 0 seconds\n2024-06-17 14:18:03.74 Step [map_checksum] starting\n2024-06-17 14:18:03.74 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 14:18:03.75 Step [map_checksum] completed in 0 seconds\n2024-06-17 14:18:03.75 Step [match_archives_to_purldb] starting\n2024-06-17 14:18:03.75 PurlDB is not available. Skipping.\n2024-06-17 14:18:03.75 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 14:18:03.75 Step [find_java_packages] starting\n2024-06-17 14:18:03.76 Finding Java package for 0 .java resources.\n2024-06-17 14:18:03.76 Step [find_java_packages] completed in 0 seconds\n2024-06-17 14:18:03.76 Step [map_java_to_class] starting\n2024-06-17 14:18:03.76 Mapping 0 .class resources to .java\n2024-06-17 14:18:03.76 No .java resources to map.\n2024-06-17 14:18:03.77 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 14:18:03.77 Step [map_jar_to_source] starting\n2024-06-17 14:18:03.77 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 14:18:03.77 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 14:18:03.77 Step [map_elf] starting\n2024-06-17 14:18:03.87 Mapping 1 to/ resources using paths with 13 from/ resources.\n2024-06-17 14:18:03.87 Done building from/ resources index.\n2024-06-17 14:18:03.88 WARNING: #4 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug'\n2024-06-17 14:18:03.90 WARNING: #24 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug'\n2024-06-17 14:18:03.90 Created 20 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug'\n2024-06-17 14:18:03.90 Step [map_elf] completed in 0 seconds\n2024-06-17 14:18:03.91 Step [map_go] starting\n2024-06-17 14:18:03.91 Mapping 0 to/ resources using paths with 13 from/ resources.\n2024-06-17 14:18:03.92 Done building from/ resources index.\n2024-06-17 14:18:03.92 Step [map_go] completed in 0 seconds\n2024-06-17 14:18:03.92 Step [match_directories_to_purldb] starting\n2024-06-17 14:18:03.93 PurlDB is not available. Skipping.\n2024-06-17 14:18:03.93 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 14:18:03.93 Step [match_resources_to_purldb] starting\n2024-06-17 14:18:03.93 PurlDB is not available. Skipping.\n2024-06-17 14:18:03.93 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 14:18:03.93 Step [map_path] starting\n2024-06-17 14:18:03.94 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 14:18:03.94 Step [map_path] completed in 0 seconds\n2024-06-17 14:18:03.94 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 14:18:03.95 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 14:18:03.95 Step [perform_house_keeping_tasks] starting\n2024-06-17 14:18:03.96 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 14:18:03.96 Step [match_purldb_resources_post_process] starting\n2024-06-17 14:18:03.97 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 14:18:03.97 0 resource processed\n2024-06-17 14:18:03.97 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 14:18:03.97 Step [remove_packages_without_resources] starting\n2024-06-17 14:18:03.97 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 14:18:03.98 Step [scan_unmapped_to_files] starting\n2024-06-17 14:18:06.64 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 14:18:06.65 Step [scan_mapped_from_for_files] starting\n2024-06-17 14:18:19.13 Progress: 10% (2/20) ETA: 112 seconds (1.9 minutes)\n2024-06-17 14:18:19.48 Progress: 20% (4/20) ETA: 51 seconds\n2024-06-17 14:18:20.05 Progress: 30% (6/20) ETA: 31 seconds\n2024-06-17 14:18:20.21 Progress: 40% (8/20) ETA: 20 seconds\n2024-06-17 14:18:20.77 Progress: 50% (10/20) ETA: 14 seconds\n2024-06-17 14:18:20.80 Progress: 60% (12/20) ETA: 9 seconds\n2024-06-17 14:18:20.99 Progress: 70% (14/20) ETA: 6 seconds\n2024-06-17 14:18:21.45 Progress: 80% (16/20) ETA: 4 seconds\n2024-06-17 14:18:23.43 Progress: 90% (18/20) ETA: 2 seconds\n2024-06-17 14:18:23.58 Progress: 100% (20/20)\n2024-06-17 14:18:23.80 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-17 14:18:23.81 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 14:18:23.81 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 14:18:23.81 Step [create_local_files_packages] starting\n2024-06-17 14:18:23.82 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 14:18:23.83 Pipeline completed in 28 seconds\n",
+                    "execution_time": 27
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757",
+            "type": "local-files",
+            "namespace": "7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68",
+            "name": "a7b78689-02e1-4c20-add8-a69a69a89757",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2004-2006 Jerry\nCopyright (c) 2004-2006 Jerry St.Clair, Anil Kumar\nCopyright (c) 2001 Anil Kumar\nCopyright (c) 2004-2006 Anil Kumar, Jerry\nCopyright (c) 2004,2005,2006 Anil Kumar, Jerry\nCopyright (c) 2004 Aurema Pty Ltd.",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64",
+            "type": "directory",
+            "name": "CUnit-2.1.3-32.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit",
+            "type": "directory",
+            "name": "CUnit",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers",
+            "type": "directory",
+            "name": "Headers",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Basic.h",
+            "type": "file",
+            "name": "Basic.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3968,
+            "md5": "af66157b6bfa3a7fbb3a0f08c4f0d88e",
+            "sha1": "fbeb088fd935e1ba36011cc27804bdc7f0d906db",
+            "sha256": "5384652b78d38ff755ee6a38bff7aa6ca929ae437a46b999e8dc66dab27f43f0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.28,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004-2006 Jerry",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jerry",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/CUError.h",
+            "type": "file",
+            "name": "CUError.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 7733,
+            "md5": "3a46f79bd5b5dcdc3712178c1d55793f",
+            "sha1": "b2ecf3c401338ee92ba8f3cef587dc1e18b8cd2f",
+            "sha256": "9cbc1f2551ec7b8bf5397b6c2ebd956382bd2466148909d9f40c650b22d3411d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestDB.h",
+            "type": "file",
+            "name": "TestDB.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 42460,
+            "md5": "81be0776bbcd048e0fccc91613496e01",
+            "sha1": "6190d22c3b35e485734ebcd7162932cb9de244a8",
+            "sha256": "047e3a36084314e4b43d2dd0932050d805f9d349615816512b12311a5e675911",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 671,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 659,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 657,
+                    "copyright": "Copyright (c) 2004 Aurema Pty Ltd.",
+                    "start_line": 657
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Aurema Pty Ltd.",
+                    "end_line": 657,
+                    "start_line": 657
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestRun.h",
+            "type": "file",
+            "name": "TestRun.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 22526,
+            "md5": "da87ccc1ab52c08ce42c9fc4356387d7",
+            "sha1": "6c1908edfebba6195da725b7a71c4185154137af",
+            "sha256": "7f7bf3e54f4dd180ef9cec577584f433df77c60e7b121f76c1e56656ef3ad3f2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Util.h",
+            "type": "file",
+            "name": "Util.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5959,
+            "md5": "17fcf5a602f8f283a945735520f5f053",
+            "sha1": "1dc9eecf5003dd5faba8ad3b3d0098fee6b19ccf",
+            "sha256": "ed983b3004c582614bf9bb1f90ff8e29cad3f428d2f24f0ec8d8a556577409fb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.93,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources",
+            "type": "directory",
+            "name": "Sources",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated",
+            "type": "directory",
+            "name": "Automated",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated/Automated.c",
+            "type": "file",
+            "name": "Automated.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 28391,
+            "md5": "7d68667f777c44b871dd0890f354b6de",
+            "sha1": "9d26d4452c3f79a9cb4805a35e3b125b6080198b",
+            "sha256": "5db71225676c3e233a636422b24e45ef1e691cb090f83f211a0b5a7ace5ee1b9",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.06,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic",
+            "type": "directory",
+            "name": "Basic",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic/Basic.c",
+            "type": "file",
+            "name": "Basic.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11518,
+            "md5": "bd4de9942ecf919ae501bb09bea331e6",
+            "sha1": "dfff19bf316c1618d376f4418a44cd8fd8ba6cf5",
+            "sha256": "0b7866338062afdc0a64a6db04d088f773e9415909ee7e5409f5d0650d9b2ffd",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004-2006 Jerry St.Clair, Anil Kumar",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jerry St.Clair, Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://cunit.sourceforge.net/",
+                    "end_line": 165,
+                    "start_line": 165
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Console",
+            "type": "directory",
+            "name": "Console",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Console/Console.c",
+            "type": "file",
+            "name": "Console.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24927,
+            "md5": "15f5ca531e35bf6abc05e922ef3f2579",
+            "sha1": "c5f81426f38bfd61e5adb7397204e463145ce9c3",
+            "sha256": "9c5d1f6c1a96aded92954857b5e8b818036951af4c9d317a6ecd28a9e9ba5c97",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://cunit.sourceforge.net/",
+                    "end_line": 123,
+                    "start_line": 123
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework",
+            "type": "directory",
+            "name": "Framework",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/CUError.c",
+            "type": "file",
+            "name": "CUError.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7316,
+            "md5": "5324c5c4a58e9df4a7cd10e77233074c",
+            "sha1": "2a6a783c4f2a9bebdb5771a470a654b746110da2",
+            "sha256": "8d46abc04e4b8873227797a2266dc3108102fcfdcd3df35c1b6f11c53a81cab2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.39,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/MyMem.c",
+            "type": "file",
+            "name": "MyMem.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 18724,
+            "md5": "d5f326755b5770f1eecdfc8c4bbdd4a9",
+            "sha1": "c03bb4a307867dab01d0c52a7f1bc2bb37454068",
+            "sha256": "7de02e377153c12d6f6f4a7510f4ee8834fdc89dfc727448f7d72a9c64378d50",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestDB.c",
+            "type": "file",
+            "name": "TestDB.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 93635,
+            "md5": "80dc345821c179b73cb122788ebc6ed1",
+            "sha1": "bcc5505d1453a3ecd7f65bf8f220f8e16645e387",
+            "sha256": "b9bbf7f20516c6ef761e96a12c3dbc6a824fa26ed702c5bc563f43b2b2c85af6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 564,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 552,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004,2005,2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 550,
+                    "copyright": "Copyright (c) 2004 Aurema Pty Ltd.",
+                    "start_line": 550
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Aurema Pty Ltd.",
+                    "end_line": 550,
+                    "start_line": 550
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestRun.c",
+            "type": "file",
+            "name": "TestRun.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 102154,
+            "md5": "966260851cf54f998825bb1dd2863fe0",
+            "sha1": "a2f5d4a5ec5d8b81f3dff8fe91b1c0b075812ec1",
+            "sha256": "d7da25628506f34fc992daad3a4471827e1f81d811a4c7c81913d5bd92ee1c4a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.83,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/Util.c",
+            "type": "file",
+            "name": "Util.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17227,
+            "md5": "4483b02fb3344b41cdcf2c03c8bd1fbc",
+            "sha1": "c1ef064f25f6437e08b9114c107f0689a564dd20",
+            "sha256": "dbb2cdc980024baa71433284cae322f09fa1dd260db25a6420638cb102be9787",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_33.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This library is free software; you can redistribute it and/or\n *  modify it under the terms of the GNU Library General Public\n *  License as published by the Free Software Foundation; either\n *  version 2 of the License, or (at your option) any later version.\n *\n *  This library is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n *  Library General Public License for more details.\n *\n *  You should have received a copy of the GNU Library General Public\n *  License along with this library; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_33.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-68cda0c2-09f5-b318-967f-70b0f56677d4",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Anil Kumar",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2004-2006 Anil Kumar, Jerry",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Anil Kumar",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Anil Kumar, Jerry",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/7059d261-0265-46d4-8bc1-063e3a3bec52-c936fc68/a7b78689-02e1-4c20-add8-a69a69a89757"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/2b",
+            "type": "directory",
+            "name": "2b",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 148664,
+            "md5": "eb273d814e0b51f6156d77ca327a5008",
+            "sha1": "c70a22560f74c5daa6c1381f92c3eb08b6b21cea",
+            "sha256": "fdd627ad50b479952af082c093c036f4b1910094783adb1dfaa134fb0a475c0f",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=2b57dc493124068015ebe1e4a79a58e51353fa82, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/<artificial>",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated/Automated.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic/Basic.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Console/Console.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/CUError.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/MyMem.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestDB.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestRun.c",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/Util.c"
+                ],
+                "dwarf_included_paths": [
+                    "Automated/Automated.c",
+                    "Basic/Basic.c",
+                    "Console/Console.c",
+                    "Framework/CUError.c",
+                    "Framework/TestDB.c",
+                    "Framework/TestRun.c",
+                    "Framework/Util.c",
+                    "usr/include/assert.h",
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Basic.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/CUError.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/CUError.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/CUError.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/CUError.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestDB.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestDB.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestDB.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestDB.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestRun.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestRun.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestRun.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestRun.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Util.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Util.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Util.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/<built-in>",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/<artificial>",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/setjmp.h",
+                    "usr/include/bits/setjmp2.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct___jmp_buf_tag.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/ctype.h",
+                    "usr/include/setjmp.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/<built-in>",
+                    "usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Basic.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/CUError.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestDB.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/TestRun.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Headers/Util.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated/Automated.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Automated/Automated.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic/Basic.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Basic/Basic.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Console/Console.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Console/Console.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/CUError.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/CUError.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/MyMem.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestDB.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestDB.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestRun.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/TestRun.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/Util.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libcunit.so.1.0.1-2.1.3-32.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "8/7",
+            "from_resource": "from/usr/src/debug/CUnit-2.1.3-32.fc40.x86_64/CUnit/Sources/Framework/Util.c"
+        }
+    ]
+}

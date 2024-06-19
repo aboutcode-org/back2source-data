@@ -1,0 +1,2265 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "3d3333db-c573-4c39-8439-aa2ae27387a9",
+            "created_date": "2024-06-17T15:41:17.602Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "74c61b62-5be7-4cc5-8bea-b103ad98c93a",
+                    "filename": "clxclient-debuginfo-3.9.2-11.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clxclient-debuginfo-3.9.2-11.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 134960,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "7f6b7ced-7644-4a62-9b6a-51228629ced4",
+                    "filename": "clxclient-debugsource-3.9.2-11.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clxclient-debugsource-3.9.2-11.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 29824,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "2978d2d2-efe0-4f1c-9b0c-e98c8be092c8",
+                    "created_date": "2024-06-17T15:41:17.610579Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "2978d2d2-efe0-4f1c-9b0c-e98c8be092c8",
+                    "task_start_date": "2024-06-17T15:41:17.636121Z",
+                    "task_end_date": "2024-06-17T15:41:43.574265Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 15:41:17.63 Pipeline [d2d] starting\n2024-06-17 15:41:17.64 Step [download_missing_inputs] starting\n2024-06-17 15:41:17.64 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clxclient-debugsource-3.9.2-11.fc40.x86_64.rpm#from\n2024-06-17 15:41:19.34 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clxclient-debuginfo-3.9.2-11.fc40.x86_64.rpm#to\n2024-06-17 15:41:25.38 Step [download_missing_inputs] completed in 8 seconds\n2024-06-17 15:41:25.39 Step [get_inputs] starting\n2024-06-17 15:41:25.40 Step [get_inputs] completed in 0 seconds\n2024-06-17 15:41:25.40 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 15:41:25.45 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 15:41:25.46 Step [extract_archives] starting\n2024-06-17 15:41:25.53 Step [extract_archives] completed in 0 seconds\n2024-06-17 15:41:25.53 Step [collect_and_create_codebase_resources] starting\n2024-06-17 15:41:25.56 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 15:41:25.57 Step [fingerprint_codebase_directories] starting\n2024-06-17 15:41:25.58 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 15:41:25.58 Step [flag_empty_files] starting\n2024-06-17 15:41:25.58 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 15:41:25.58 Step [flag_whitespace_files] starting\n2024-06-17 15:41:25.59 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 15:41:25.59 Step [flag_ignored_resources] starting\n2024-06-17 15:41:25.59 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 15:41:25.59 Step [map_about_files] starting\n2024-06-17 15:41:25.60 Step [map_about_files] completed in 0 seconds\n2024-06-17 15:41:25.60 Step [map_checksum] starting\n2024-06-17 15:41:25.60 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 15:41:25.61 Step [map_checksum] completed in 0 seconds\n2024-06-17 15:41:25.62 Step [match_archives_to_purldb] starting\n2024-06-17 15:41:25.62 PurlDB is not available. Skipping.\n2024-06-17 15:41:25.62 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 15:41:25.62 Step [find_java_packages] starting\n2024-06-17 15:41:25.63 Finding Java package for 0 .java resources.\n2024-06-17 15:41:25.64 Step [find_java_packages] completed in 0 seconds\n2024-06-17 15:41:25.64 Step [map_java_to_class] starting\n2024-06-17 15:41:25.65 Mapping 0 .class resources to .java\n2024-06-17 15:41:25.65 No .java resources to map.\n2024-06-17 15:41:25.66 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 15:41:25.66 Step [map_jar_to_source] starting\n2024-06-17 15:41:25.66 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 15:41:25.67 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 15:41:25.68 Step [map_elf] starting\n2024-06-17 15:41:26.07 Mapping 1 to/ resources using paths with 15 from/ resources.\n2024-06-17 15:41:26.07 Done building from/ resources index.\n2024-06-17 15:41:26.08 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug'\n2024-06-17 15:41:26.09 WARNING: #37 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug'\n2024-06-17 15:41:26.09 Created 15 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug'\n2024-06-17 15:41:26.10 Step [map_elf] completed in 0 seconds\n2024-06-17 15:41:26.10 Step [map_go] starting\n2024-06-17 15:41:26.11 Mapping 0 to/ resources using paths with 15 from/ resources.\n2024-06-17 15:41:26.11 Done building from/ resources index.\n2024-06-17 15:41:26.11 Step [map_go] completed in 0 seconds\n2024-06-17 15:41:26.11 Step [match_directories_to_purldb] starting\n2024-06-17 15:41:26.12 PurlDB is not available. Skipping.\n2024-06-17 15:41:26.12 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 15:41:26.12 Step [match_resources_to_purldb] starting\n2024-06-17 15:41:26.12 PurlDB is not available. Skipping.\n2024-06-17 15:41:26.12 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 15:41:26.12 Step [map_path] starting\n2024-06-17 15:41:26.13 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 15:41:26.13 Step [map_path] completed in 0 seconds\n2024-06-17 15:41:26.13 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 15:41:26.14 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 15:41:26.15 Step [perform_house_keeping_tasks] starting\n2024-06-17 15:41:26.17 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 15:41:26.18 Step [match_purldb_resources_post_process] starting\n2024-06-17 15:41:26.18 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 15:41:26.18 0 resource processed\n2024-06-17 15:41:26.18 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 15:41:26.18 Step [remove_packages_without_resources] starting\n2024-06-17 15:41:26.19 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 15:41:26.19 Step [scan_unmapped_to_files] starting\n2024-06-17 15:41:29.60 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 15:41:29.60 Step [scan_mapped_from_for_files] starting\n2024-06-17 15:41:41.66 Progress: 13% (2/15) ETA: 81 seconds (1.4 minutes)\n2024-06-17 15:41:41.83 Progress: 26% (4/15) ETA: 35 seconds\n2024-06-17 15:41:42.07 Progress: 40% (6/15) ETA: 19 seconds\n2024-06-17 15:41:42.17 Progress: 53% (8/15) ETA: 11 seconds\n2024-06-17 15:41:42.36 Progress: 66% (10/15) ETA: 7 seconds\n2024-06-17 15:41:42.50 Progress: 80% (12/15) ETA: 3 seconds\n2024-06-17 15:41:42.92 Progress: 93% (14/15) ETA: 1 seconds\n2024-06-17 15:41:43.54 Step [scan_mapped_from_for_files] completed in 14 seconds\n2024-06-17 15:41:43.54 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 15:41:43.55 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 15:41:43.55 Step [create_local_files_packages] starting\n2024-06-17 15:41:43.56 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 15:41:43.57 Pipeline completed in 26 seconds\n",
+                    "execution_time": 25
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1",
+            "type": "local-files",
+            "namespace": "d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db",
+            "name": "9fa54cb0-9194-4d08-abe3-287b1ae106e1",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/e81f207f-c006-41b7-81cd-ea7a6d12e54a",
+            "type": "local-files",
+            "namespace": "d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db",
+            "name": "e81f207f-c006-41b7-81cd-ea7a6d12e54a",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64",
+            "type": "directory",
+            "name": "clxclient-3.9.2-11.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source",
+            "type": "directory",
+            "name": "source",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/button.cc",
+            "type": "file",
+            "name": "button.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 8146,
+            "md5": "3069cc044c9649d11e3c924a220baa20",
+            "sha1": "a455446a90b7458b05ade8d28d32c809758e1244",
+            "sha256": "d69e27d0f6dd9fb8222455136bd234e89b0aca564e0197142454d95c97d62f1c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.92,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/clxclient.h",
+            "type": "file",
+            "name": "clxclient.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 31310,
+            "md5": "0fbb7ee10c05c32e2d0f5852df20ccfb",
+            "sha1": "8e93767107a66b6fefc5b63e34b6ae6af32b042c",
+            "sha256": "4b70e178f4b310fc530dfaf593737c291838212652344f8345797bbc2ce68002",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.15,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.\n//\n//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 99.15,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-f1e3d81a-6ce8-a8de-8b50-b2c5fdfaabbd",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.13,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/e81f207f-c006-41b7-81cd-ea7a6d12e54a"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/enumip.cc",
+            "type": "file",
+            "name": "enumip.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 6351,
+            "md5": "456832a13755a945a123f502b97b90f1",
+            "sha1": "f4a0baee857f4ff5f2cefde81df8f2640daa3c01",
+            "sha256": "5637282225c553ac3993637c474825d3a2a41ea7319c077643b8742526d3bbf1",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.15,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.\n//\n//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 99.15,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-f1e3d81a-6ce8-a8de-8b50-b2c5fdfaabbd",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/e81f207f-c006-41b7-81cd-ea7a6d12e54a"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/mclist.cc",
+            "type": "file",
+            "name": "mclist.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 7029,
+            "md5": "131f7966c15645cc486cd0b60f04fb2b",
+            "sha1": "2295cde89983b1efd3f5916a522fe6a559534b03",
+            "sha256": "6d0e93b8c6482a80a792634bfb28213c554ef24b87bf67e4ac4f277111aafc6f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.62,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/menuwin.cc",
+            "type": "file",
+            "name": "menuwin.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 6785,
+            "md5": "785013ea64676ecde20da18014905040",
+            "sha1": "8942212da027c0c57685b610ad10aea18f6ecaf5",
+            "sha256": "dd327626118f25032a1048d1afd9c459eae040bb1481b5b605a53bce984fc37d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/meter.cc",
+            "type": "file",
+            "name": "meter.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 4355,
+            "md5": "9220334e6ff70dfaec15a24c81365ff0",
+            "sha1": "a7a4b7357f3825d8f838e72333820156527c8200",
+            "sha256": "ed4099b3ab11d90d657b170312a761949dd4ae2626e509432951cbf24b938d00",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.86,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/scale.cc",
+            "type": "file",
+            "name": "scale.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 4105,
+            "md5": "d6f300c6f61b263c3568b627b07b7909",
+            "sha1": "7b93641d72814fa5584aae6c672b7c079a8b3e91",
+            "sha256": "efcd6209e4de8c99fa091b501c0521ce2b5bab9ed1433927d42fc43629b89a23",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.48,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/scroll.cc",
+            "type": "file",
+            "name": "scroll.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 8523,
+            "md5": "f0af7bd4d45c2ba6b91731dd3a1971fd",
+            "sha1": "ad0fe136a7588558570499f7bf6413fcf070f67b",
+            "sha256": "2491141604abf9d8e97dc27d6a42fc17e5571d598ca839cc08aae10e68904796",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/slider.cc",
+            "type": "file",
+            "name": "slider.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 8717,
+            "md5": "767ecb2f02b43d6b3a0fe52444e6eb2c",
+            "sha1": "e406b16fe72fe483ace2b75f1aca5048ca20d5d5",
+            "sha256": "2e439a722f05b45c758366428f445ad1cbd5cf858494ea9f20eceefba7bf5d9a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.89,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/textip.cc",
+            "type": "file",
+            "name": "textip.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 14024,
+            "md5": "66af73ede719b175e6081bbe3d917cba",
+            "sha1": "d71ab488224271c5b7e569b843deb2c29f5128b0",
+            "sha256": "836c3ac2db2f9122774aa80a2c0483eecb63fcd2d702daacde90f7ce831ff13c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 99.15,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.\n//\n//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 99.15,
+                            "matched_length": 116,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-f1e3d81a-6ce8-a8de-8b50-b2c5fdfaabbd",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.78,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/e81f207f-c006-41b7-81cd-ea7a6d12e54a"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xdisplay.cc",
+            "type": "file",
+            "name": "xdisplay.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 5046,
+            "md5": "b902c37c86d4dd694f20049ebabfeb62",
+            "sha1": "3259470b0b23e78b92841d85302039e81991a093",
+            "sha256": "1d655a2755d62b6ee62eb2de526fcbdf880dae8b5c5f59c0c0ab6a6d22e0f4a6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.3,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xdraw.cc",
+            "type": "file",
+            "name": "xdraw.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 3285,
+            "md5": "439aa4ff18851b34c5f3ba8394c477e8",
+            "sha1": "d6e0f732973d07aea4bbc927f8c7f5a2df3dc331",
+            "sha256": "a939e2743f94bfe1a03cae52a70886790ef7bbffc59f960d8f15f9a7f45db08d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 26.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xhandler.cc",
+            "type": "file",
+            "name": "xhandler.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 1879,
+            "md5": "d093aa8facb2162af01cfdbdbef35878",
+            "sha1": "4f58b7568257497ae5e0b8f53b342d162bde9df2",
+            "sha256": "b118356faecc2a30254f6d133e407faa28f9bdce9b807a871bd5c49b87804a01",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 47.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xresman.cc",
+            "type": "file",
+            "name": "xresman.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 5043,
+            "md5": "07ab0939a085be4bb2e4e56bad2fc612",
+            "sha1": "9636ea06874c98fdb7343811f5546bc13d007179",
+            "sha256": "4bc6d32d1fc05a41d42c794abc74327edd8f4f4e753a6fee30b051a6364d1926",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.32,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xwindow.cc",
+            "type": "file",
+            "name": "xwindow.cc",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cc",
+            "size": 5651,
+            "md5": "e44aa381979b683e3a05f80752df3297",
+            "sha1": "c1311b87635c87205ba521f8371fd0a7915276b4",
+            "sha256": "9eea148fe280edbad3be0784c3dba6eb2913724c08cd8dcf143ad71ed29f0797",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_50.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": "//  This program is free software; you can redistribute it and/or modify\n//  it under the terms of the GNU Lesser General Public License as published\n//  by the Free Software Foundation; either version 2 of the License, or\n//  (at your option) any later version.\n//\n//  This program is distributed in the hope that it will be useful,\n//  but WITHOUT ANY WARRANTY; without even the implied warranty of\n//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n//  GNU Lesser General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 81,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_50.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_451.RULE",
+                            "from_file": null,
+                            "start_line": 15,
+                            "matched_text": "//  You should have received a copy of the GNU Lesser General Public\n//  License along with this program; if not, write to the Free Software\n//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 35,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_451.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-a9d86d81-1573-442c-d7fc-e58613ff16bc",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2003-2013 Fons Adriaensen <fons@linuxaudio.org>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Fons Adriaensen",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/d2fc9aac-3e12-43e1-bb71-23e111e1855f-3d3333db/9fa54cb0-9194-4d08-abe3-287b1ae106e1"
+            ],
+            "emails": [
+                {
+                    "email": "fons@linuxaudio.org",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/64",
+            "type": "directory",
+            "name": "64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 350936,
+            "md5": "3bc6adaf608b2282f392f539c9aefc70",
+            "sha1": "18c5c7e8963a3d6409396e0a2935754b2a2c7683",
+            "sha256": "08c7f6789beacf34c5046fa4af4cd39ee11dcdf1f0709f834fa5d9308da2d36b",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=6440ffb571737a34dd5af959676dd5a150cb4a4e, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xft/Xft.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/X11/Xresource.h",
+                    "usr/include/X11/Xutil.h",
+                    "usr/include/X11/extensions/Xrender.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/atomic_wide_counter.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/clthreads.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/fontconfig/fontconfig.h",
+                    "usr/include/pthread.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/poll.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/<built-in>",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/button.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/clxclient.h",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/enumip.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/mclist.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/menuwin.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/meter.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/scale.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/scroll.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/slider.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/textip.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xdisplay.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xdraw.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xhandler.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xresman.cc",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xwindow.cc"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xft/Xft.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/X11/Xresource.h",
+                    "usr/include/X11/Xutil.h",
+                    "usr/include/X11/extensions/Xrender.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/atomic_wide_counter.h",
+                    "usr/include/bits/poll2.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/stdlib.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/clthreads.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/fontconfig/fontconfig.h",
+                    "usr/include/pthread.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/sys/poll.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/button.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/clxclient.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/enumip.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/mclist.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/menuwin.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/meter.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/scale.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/scroll.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/slider.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/textip.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xdisplay.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xdraw.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xhandler.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xresman.cc"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclxclient.so.3.9.2-3.9.2-11.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clxclient-3.9.2-11.fc40.x86_64/source/xwindow.cc"
+        }
+    ]
+}

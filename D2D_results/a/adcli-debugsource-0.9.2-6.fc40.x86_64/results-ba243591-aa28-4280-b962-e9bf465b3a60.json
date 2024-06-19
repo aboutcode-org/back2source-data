@@ -1,0 +1,2948 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "ba243591-aa28-4280-b962-e9bf465b3a60",
+            "created_date": "2024-06-14T07:20:07.522Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "dba0eb7e-ef32-4cf8-943e-d079e5a7c3e4",
+                    "filename": "adcli-debuginfo-0.9.2-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adcli-debuginfo-0.9.2-6.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 197180,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "52edf575-a7c6-4f39-8c53-d23c4db2d0a5",
+                    "filename": "adcli-debugsource-0.9.2-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adcli-debugsource-0.9.2-6.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 70163,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "4a3e3db8-5756-4eec-a3c9-fc981f4ff121",
+                    "created_date": "2024-06-14T07:20:07.531235Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "4a3e3db8-5756-4eec-a3c9-fc981f4ff121",
+                    "task_start_date": "2024-06-14T07:20:07.553730Z",
+                    "task_end_date": "2024-06-14T07:20:36.734712Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 07:20:07.55 Pipeline [d2d] starting\n2024-06-14 07:20:07.56 Step [download_missing_inputs] starting\n2024-06-14 07:20:07.56 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adcli-debugsource-0.9.2-6.fc40.x86_64.rpm#from\n2024-06-14 07:20:09.08 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/adcli-debuginfo-0.9.2-6.fc40.x86_64.rpm#to\n2024-06-14 07:20:11.84 Step [download_missing_inputs] completed in 4 seconds\n2024-06-14 07:20:11.84 Step [get_inputs] starting\n2024-06-14 07:20:11.85 Step [get_inputs] completed in 0 seconds\n2024-06-14 07:20:11.85 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 07:20:11.89 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 07:20:11.90 Step [extract_archives] starting\n2024-06-14 07:20:11.97 Step [extract_archives] completed in 0 seconds\n2024-06-14 07:20:11.98 Step [collect_and_create_codebase_resources] starting\n2024-06-14 07:20:12.01 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 07:20:12.02 Step [fingerprint_codebase_directories] starting\n2024-06-14 07:20:12.02 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 07:20:12.03 Step [flag_empty_files] starting\n2024-06-14 07:20:12.03 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 07:20:12.03 Step [flag_whitespace_files] starting\n2024-06-14 07:20:12.03 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 07:20:12.04 Step [flag_ignored_resources] starting\n2024-06-14 07:20:12.04 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 07:20:12.04 Step [map_about_files] starting\n2024-06-14 07:20:12.04 Step [map_about_files] completed in 0 seconds\n2024-06-14 07:20:12.04 Step [map_checksum] starting\n2024-06-14 07:20:12.04 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-14 07:20:12.05 Step [map_checksum] completed in 0 seconds\n2024-06-14 07:20:12.05 Step [match_archives_to_purldb] starting\n2024-06-14 07:20:12.05 PurlDB is not available. Skipping.\n2024-06-14 07:20:12.05 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 07:20:12.05 Step [find_java_packages] starting\n2024-06-14 07:20:12.06 Finding Java package for 0 .java resources.\n2024-06-14 07:20:12.06 Step [find_java_packages] completed in 0 seconds\n2024-06-14 07:20:12.06 Step [map_java_to_class] starting\n2024-06-14 07:20:12.06 Mapping 0 .class resources to .java\n2024-06-14 07:20:12.07 No .java resources to map.\n2024-06-14 07:20:12.07 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 07:20:12.07 Step [map_jar_to_source] starting\n2024-06-14 07:20:12.07 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 07:20:12.07 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 07:20:12.08 Step [map_elf] starting\n2024-06-14 07:20:12.61 Mapping 1 to/ resources using paths with 22 from/ resources.\n2024-06-14 07:20:12.61 Done building from/ resources index.\n2024-06-14 07:20:12.62 WARNING: #3 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug'\n2024-06-14 07:20:12.64 WARNING: #59 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug'\n2024-06-14 07:20:12.65 Created 31 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug'\n2024-06-14 07:20:12.65 Step [map_elf] completed in 1 seconds\n2024-06-14 07:20:12.65 Step [map_go] starting\n2024-06-14 07:20:12.66 Mapping 0 to/ resources using paths with 22 from/ resources.\n2024-06-14 07:20:12.66 Done building from/ resources index.\n2024-06-14 07:20:12.66 Step [map_go] completed in 0 seconds\n2024-06-14 07:20:12.67 Step [match_directories_to_purldb] starting\n2024-06-14 07:20:12.67 PurlDB is not available. Skipping.\n2024-06-14 07:20:12.67 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 07:20:12.67 Step [match_resources_to_purldb] starting\n2024-06-14 07:20:12.67 PurlDB is not available. Skipping.\n2024-06-14 07:20:12.67 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 07:20:12.68 Step [map_path] starting\n2024-06-14 07:20:12.68 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 07:20:12.68 Step [map_path] completed in 0 seconds\n2024-06-14 07:20:12.68 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 07:20:12.69 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 07:20:12.69 Step [perform_house_keeping_tasks] starting\n2024-06-14 07:20:12.70 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 07:20:12.70 Step [match_purldb_resources_post_process] starting\n2024-06-14 07:20:12.71 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 07:20:12.71 0 resource processed\n2024-06-14 07:20:12.71 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 07:20:12.71 Step [remove_packages_without_resources] starting\n2024-06-14 07:20:12.71 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 07:20:12.72 Step [scan_unmapped_to_files] starting\n2024-06-14 07:20:16.31 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-14 07:20:16.31 Step [scan_mapped_from_for_files] starting\n2024-06-14 07:20:30.65 Progress: 12% (4/31) ETA: 105 seconds (1.8 minutes)\n2024-06-14 07:20:31.20 Progress: 22% (7/31) ETA: 53 seconds\n2024-06-14 07:20:31.64 Progress: 32% (10/31) ETA: 33 seconds\n2024-06-14 07:20:32.60 Progress: 45% (14/31) ETA: 20 seconds\n2024-06-14 07:20:32.74 Progress: 58% (18/31) ETA: 12 seconds\n2024-06-14 07:20:33.65 Progress: 70% (22/31) ETA: 7 seconds\n2024-06-14 07:20:33.91 Progress: 80% (25/31) ETA: 4 seconds\n2024-06-14 07:20:34.17 Progress: 90% (28/31) ETA: 2 seconds\n2024-06-14 07:20:36.43 Progress: 100% (31/31)\n2024-06-14 07:20:36.71 Step [scan_mapped_from_for_files] completed in 20 seconds\n2024-06-14 07:20:36.71 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 07:20:36.72 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 07:20:36.72 Step [create_local_files_packages] starting\n2024-06-14 07:20:36.73 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 07:20:36.73 Pipeline completed in 29 seconds\n",
+                    "execution_time": 29
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c",
+            "type": "local-files",
+            "namespace": "cd5239af-98fb-4663-8417-228177718732-ba243591",
+            "name": "7d97315e-b813-4706-8030-c94a98211b3c",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2012 Red Hat Inc.\nCopyright (c) 2013 Red Hat Inc.",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64",
+            "type": "directory",
+            "name": "adcli-0.9.2-6.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library",
+            "type": "directory",
+            "name": "library",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.c",
+            "type": "file",
+            "name": "adattrs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7853,
+            "md5": "c5723773edb80e8032b592467117970b",
+            "sha1": "f38d4e1eff2a1cf908351660c8e811ca8d410f6a",
+            "sha256": "180ab22563effb5aa33d2b0c22b5577b11fdf8794efa30d003f7f2a9bd9fdb4c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.56,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.h",
+            "type": "file",
+            "name": "adattrs.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2756,
+            "md5": "68cf0eee545fe06fc0b34a00f2c688d6",
+            "sha1": "176c4874808103837828dd2c8532bd32a46a37bf",
+            "sha256": "111a51214ade690eb6cf458de26da7c3b7938bc39e77097c253f46975a61cb22",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.c",
+            "type": "file",
+            "name": "adconn.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 43276,
+            "md5": "79e4d8ac92e0b906d77e022fd5f49883",
+            "sha1": "1f081d2692d19e162347b8ce94240982e697cab8",
+            "sha256": "587b6b0a1db49e08a87a4b3ce0cc0e00f1857d6194b3c204766873561dcf0e34",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.0,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.h",
+            "type": "file",
+            "name": "adconn.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 6818,
+            "md5": "ae482d2b35f1f38ad84a6e93ea6d1ebf",
+            "sha1": "36e8369e09952b90cf1d388d6564cd55f1fe4a81",
+            "sha256": "2f1cc57a83ac7afd6417a9471d5ea9ebc46a65a8a6eaf421b9df82c71fab1c1d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 14.75,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.c",
+            "type": "file",
+            "name": "addisco.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 23763,
+            "md5": "afb5157ea1286a5da272468967344342",
+            "sha1": "086e796769fc4550c3107235071b8ca0a735cfbc",
+            "sha256": "48b45c57515ea171ae6b81c1a40580f9ae7abec26bc56081a70d6f01eeb796f6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.6,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://msdn.microsoft.com/en-us/library/ff718294.aspx",
+                    "end_line": 644,
+                    "start_line": 644
+                },
+                {
+                    "url": "http://www.openldap.org/its/index.cgi/Incoming?id=7694",
+                    "end_line": 747,
+                    "start_line": 747
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.h",
+            "type": "file",
+            "name": "addisco.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2570,
+            "md5": "6a13ec28e798d2aa4bef8429034a5b73",
+            "sha1": "0d6dfc8b612e750fbe10f7333be6ce7b06db6cf7",
+            "sha256": "543441ba5bf9a3842919814ac60841949de4e6f5445d54d058a5d06fb89b885c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 36.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.c",
+            "type": "file",
+            "name": "adenroll.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 104157,
+            "md5": "ccbc3dbda824e904a1135f972ff85e54",
+            "sha1": "29a9848bbe1258f9c6e7c1503f725fe3c67f2385",
+            "sha256": "b5863514e995b0eac7fe7746b95119b1290a82756d1e596a146142077cce226c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.87,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.h",
+            "type": "file",
+            "name": "adenroll.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 9072,
+            "md5": "32cc160c56f5b90792a42bd7428415b5",
+            "sha1": "3030ac1515ba7dda60c16f430c486effe2725e8e",
+            "sha256": "27db7b915db441a67115aa2dcdd18869ba88e7c95b78f69049d950a5f69c2b14",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.81,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.c",
+            "type": "file",
+            "name": "adentry.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 18962,
+            "md5": "85e678b34b4668ab0635b36e7f0af516",
+            "sha1": "5cd457106e2d96b77aae45d3166a72c5a7f538fa",
+            "sha256": "2dce973c9e9458d56b8b3fbf6750b01e71f9feae0cd76ba8b59c3cde67f95879",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.72,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.h",
+            "type": "file",
+            "name": "adentry.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2634,
+            "md5": "e516160298542612f31b83af48d4ba1e",
+            "sha1": "22092f71706182df489beb431f22460f8ba2702e",
+            "sha256": "3e7366f3e7f06af2d3589b717dd6741f283c64418cc7dd533d68d2fbaa7fc975",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 39.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adkrb5.c",
+            "type": "file",
+            "name": "adkrb5.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14517,
+            "md5": "c58a9b5ff75bd88ff538ece5fb6a4da1",
+            "sha1": "4fa476d8a52dea5aa95eae7cb4cdc72a3be3cacd",
+            "sha256": "1a1b4513953fab69a14574a144074d072c2557e8d4ac13e0bdd9c81459993955",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adldap.c",
+            "type": "file",
+            "name": "adldap.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12663,
+            "md5": "6f8c4ee3ed0204c2806f1ecb46245ffa",
+            "sha1": "28a2f911c3c5face78603f18ff3d85c7c55c4078",
+            "sha256": "65898e4c98ac69c2bc6a75d9d6932b4c7517d6ae473fb9434021dc43a9ac107c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adprivate.h",
+            "type": "file",
+            "name": "adprivate.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 13437,
+            "md5": "db6d66008eeca918a07c699e8d0a5625",
+            "sha1": "e909af88e0e5fb2e189c034ffb8a247c5e670f11",
+            "sha256": "88391320b8c4d393314442d1e48343f18857852c8c43fda21f8f2439f6833cba",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.77,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://support.microsoft.com/en-us/help/305144/how-to-use-the-useraccountcontrol-flags-to-manipulate-user-account-pro",
+                    "end_line": 43,
+                    "start_line": 43
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.c",
+            "type": "file",
+            "name": "adutil.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 20089,
+            "md5": "de5db7b202e73bc684646095209a11e9",
+            "sha1": "16c9a44f898646f0f222a17a2ace63311a11ee95",
+            "sha256": "6da1a246cce6050e592196817b7bec59983505ef3a6ef53517db81fd20538583",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.1,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.h",
+            "type": "file",
+            "name": "adutil.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2577,
+            "md5": "9681f9ab069b53ac852b5551f7be2238",
+            "sha1": "78032344d4657ca378b3a4020667a53cc94782e6",
+            "sha256": "ee124af1369578b40a6a528a2e3be613de46518ea17296061660289b9f3db21c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 34.01,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.c",
+            "type": "file",
+            "name": "seq.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17242,
+            "md5": "075f03f7bbaa4c0dc40c6b36846f7e5e",
+            "sha1": "9ec37fd03c93ac3b8ffc84418d99f698131aa020",
+            "sha256": "a5db9eba37b0223cd7fe087b7dd2b9c00f9553ba4f3fed42513b7d0bf5f4bb86",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.45,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.h",
+            "type": "file",
+            "name": "seq.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3938,
+            "md5": "a510a4920ef5582c88cee3c2d123a5fd",
+            "sha1": "6996683738620ad063b0864ad3a3dc9c90285660",
+            "sha256": "7e346a516958f29d8902688384c743e3550791e18b1a343363e204f133505036",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 33.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools",
+            "type": "directory",
+            "name": "tools",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/computer.c",
+            "type": "file",
+            "name": "computer.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 38668,
+            "md5": "2a34adc489aff859207a38879220d485",
+            "sha1": "07684588cfb13a3d200ee6bcc46a0114a88b3ed9",
+            "sha256": "78b52c7393a568af7f0848f7c5cea1865d0a88df29638a29b8e50ac35f741254",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/entry.c",
+            "type": "file",
+            "name": "entry.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24749,
+            "md5": "e0405aaef860bcd879dacce8f01c77c8",
+            "sha1": "fcffd4000dceda7479ea859596f69431eef4de5d",
+            "sha256": "eeb1cd86af14b5206750b656deece3338cfc79315efbf58ea0fcbf809f6ef923",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/info.c",
+            "type": "file",
+            "name": "info.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5232,
+            "md5": "cab740540dab88d64a3020792e6290f9",
+            "sha1": "316e91ac70a567b1a3c1c8ed815ff60dd66dbfe3",
+            "sha256": "174dc3a5c2679819ef77a7697840b972b078d2db862ccb70771833ed96811a58",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 17.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/tools.c",
+            "type": "file",
+            "name": "tools.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14158,
+            "md5": "c48d31aa79cbd1b4939239f9aef092f8",
+            "sha1": "24d742ef346efb95f10489b7a8fc5f477e9fe9b1",
+            "sha256": "98a4284b78956e6873d360fabc868fe1bb8f219454e74eef16f542085a298613",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2012 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@gnome.org>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@gnome.org",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/tools.h",
+            "type": "file",
+            "name": "tools.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4589,
+            "md5": "e0698fc136b2f51ffa53adaf947030b4",
+            "sha1": "fa50ae3fe998f4081f205cfe3853fec81a6b3d40",
+            "sha256": "e23b7a6e593da545157ab47ac69fb56896ea4be4673f0d024ad5d1461730bc67",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1-plus",
+            "detected_license_expression_spdx": "LGPL-2.1-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1-plus_93.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as\n * published by the Free Software Foundation; either version 2.1 of\n * the License, or (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this program; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,\n * MA 02110-1301 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 117,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1-plus_93.RULE",
+                            "license_expression": "lgpl-2.1-plus",
+                            "spdx_license_expression": "LGPL-2.1-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_plus-77188973-7490-9f38-3c86-a676a40f12a6",
+                    "license_expression": "lgpl-2.1-plus",
+                    "license_expression_spdx": "LGPL-2.1-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.53,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2013 Red Hat Inc.",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat Inc.",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Stef Walter <stefw@redhat.com>",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd5239af-98fb-4663-8417-228177718732-ba243591/7d97315e-b813-4706-8030-c94a98211b3c"
+            ],
+            "emails": [
+                {
+                    "email": "stefw@redhat.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/11",
+            "type": "directory",
+            "name": "11",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/sbin",
+            "type": "directory",
+            "name": "sbin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "type": "file",
+            "name": "adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 514728,
+            "md5": "a62c410fc8b7acf600ab9aeeeeea5695",
+            "sha1": "0b70c065f6cc81f584d52d912d9d070618122df2",
+            "sha256": "bb75fafd1b08e5316096a3ef8a8617c01f6b4b8e1cfde89d4a7b70a2e3e9c117",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=110ec0b240b78eb9c046d4ce89857e3898b6b76d, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adkrb5.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adldap.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/arpa/nameser.h",
+                    "usr/include/arpa/nameser_compat.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/uintn-identity.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/err.h",
+                    "usr/include/errno.h",
+                    "usr/include/gssapi/gssapi.h",
+                    "usr/include/gssapi/gssapi_krb5.h",
+                    "usr/include/iconv.h",
+                    "usr/include/krb5/krb5.h",
+                    "usr/include/lber.h",
+                    "usr/include/lber_types.h",
+                    "usr/include/ldap.h",
+                    "usr/include/netdb.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/resolv.h",
+                    "usr/include/sasl/sasl.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/termios.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/<built-in>",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adkrb5.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adldap.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adprivate.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adprivate.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/<built-in>",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/computer.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/entry.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/info.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/tools.c",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/tools.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/arpa/nameser.h",
+                    "usr/include/arpa/nameser_compat.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/byteswap.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/termios-struct.h",
+                    "usr/include/bits/termios.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_timeval.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/uintn-identity.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/err.h",
+                    "usr/include/errno.h",
+                    "usr/include/gssapi/gssapi.h",
+                    "usr/include/gssapi/gssapi_krb5.h",
+                    "usr/include/iconv.h",
+                    "usr/include/krb5/krb5.h",
+                    "usr/include/lber.h",
+                    "usr/include/lber_types.h",
+                    "usr/include/ldap.h",
+                    "usr/include/netdb.h",
+                    "usr/include/netinet/in.h",
+                    "usr/include/resolv.h",
+                    "usr/include/sasl/sasl.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/select.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/sys/wait.h",
+                    "usr/include/termios.h",
+                    "usr/include/time.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/<built-in>",
+                    "usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adattrs.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adconn.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/addisco.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adenroll.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adentry.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adkrb5.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adkrb5.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adldap.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adldap.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adprivate.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/adutil.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/library/seq.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/computer.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/entry.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/info.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/tools.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/adcli-0.9.2-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/adcli-0.9.2-6.fc40.x86_64/tools/tools.h"
+        }
+    ]
+}

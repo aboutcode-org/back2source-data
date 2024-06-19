@@ -1,0 +1,1932 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "2a55b9c0-9cc6-4949-b911-ff4a0da5ae09",
+            "created_date": "2024-06-17T16:15:15.879Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "c1f4eb0c-287b-4a19-bd0c-f3b0e411de4b",
+                    "filename": "clutter-gtk-debuginfo-1.8.4-18.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clutter-gtk-debuginfo-1.8.4-18.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 89890,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "fe4154a5-0ffb-4cf5-8a9c-94bab8dd586a",
+                    "filename": "clutter-gtk-debugsource-1.8.4-18.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clutter-gtk-debugsource-1.8.4-18.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 29088,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "56c74662-46a7-40c8-87bd-a799d1d9472d",
+                    "created_date": "2024-06-17T16:15:15.887043Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "56c74662-46a7-40c8-87bd-a799d1d9472d",
+                    "task_start_date": "2024-06-17T16:15:15.904741Z",
+                    "task_end_date": "2024-06-17T16:15:34.582202Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 16:15:15.90 Pipeline [d2d] starting\n2024-06-17 16:15:15.91 Step [download_missing_inputs] starting\n2024-06-17 16:15:15.91 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clutter-gtk-debugsource-1.8.4-18.fc40.x86_64.rpm#from\n2024-06-17 16:15:17.72 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clutter-gtk-debuginfo-1.8.4-18.fc40.x86_64.rpm#to\n2024-06-17 16:15:19.97 Step [download_missing_inputs] completed in 4 seconds\n2024-06-17 16:15:19.98 Step [get_inputs] starting\n2024-06-17 16:15:19.99 Step [get_inputs] completed in 0 seconds\n2024-06-17 16:15:19.99 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 16:15:20.03 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 16:15:20.04 Step [extract_archives] starting\n2024-06-17 16:15:20.11 Step [extract_archives] completed in 0 seconds\n2024-06-17 16:15:20.12 Step [collect_and_create_codebase_resources] starting\n2024-06-17 16:15:20.15 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 16:15:20.15 Step [fingerprint_codebase_directories] starting\n2024-06-17 16:15:20.16 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 16:15:20.16 Step [flag_empty_files] starting\n2024-06-17 16:15:20.17 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 16:15:20.17 Step [flag_whitespace_files] starting\n2024-06-17 16:15:20.17 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 16:15:20.17 Step [flag_ignored_resources] starting\n2024-06-17 16:15:20.18 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 16:15:20.18 Step [map_about_files] starting\n2024-06-17 16:15:20.18 Step [map_about_files] completed in 0 seconds\n2024-06-17 16:15:20.18 Step [map_checksum] starting\n2024-06-17 16:15:20.19 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 16:15:20.20 Step [map_checksum] completed in 0 seconds\n2024-06-17 16:15:20.20 Step [match_archives_to_purldb] starting\n2024-06-17 16:15:20.20 PurlDB is not available. Skipping.\n2024-06-17 16:15:20.20 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 16:15:20.21 Step [find_java_packages] starting\n2024-06-17 16:15:20.21 Finding Java package for 0 .java resources.\n2024-06-17 16:15:20.22 Step [find_java_packages] completed in 0 seconds\n2024-06-17 16:15:20.22 Step [map_java_to_class] starting\n2024-06-17 16:15:20.23 Mapping 0 .class resources to .java\n2024-06-17 16:15:20.23 No .java resources to map.\n2024-06-17 16:15:20.24 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 16:15:20.24 Step [map_jar_to_source] starting\n2024-06-17 16:15:20.24 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 16:15:20.25 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 16:15:20.26 Step [map_elf] starting\n2024-06-17 16:15:20.52 Mapping 1 to/ resources using paths with 12 from/ resources.\n2024-06-17 16:15:20.52 Done building from/ resources index.\n2024-06-17 16:15:20.53 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug'\n2024-06-17 16:15:20.54 WARNING: #94 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug'\n2024-06-17 16:15:20.54 Created 12 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug'\n2024-06-17 16:15:20.54 Step [map_elf] completed in 0 seconds\n2024-06-17 16:15:20.55 Step [map_go] starting\n2024-06-17 16:15:20.55 Mapping 0 to/ resources using paths with 12 from/ resources.\n2024-06-17 16:15:20.56 Done building from/ resources index.\n2024-06-17 16:15:20.56 Step [map_go] completed in 0 seconds\n2024-06-17 16:15:20.56 Step [match_directories_to_purldb] starting\n2024-06-17 16:15:20.56 PurlDB is not available. Skipping.\n2024-06-17 16:15:20.56 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 16:15:20.57 Step [match_resources_to_purldb] starting\n2024-06-17 16:15:20.57 PurlDB is not available. Skipping.\n2024-06-17 16:15:20.57 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 16:15:20.57 Step [map_path] starting\n2024-06-17 16:15:20.57 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 16:15:20.58 Step [map_path] completed in 0 seconds\n2024-06-17 16:15:20.58 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 16:15:20.58 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 16:15:20.59 Step [perform_house_keeping_tasks] starting\n2024-06-17 16:15:20.59 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 16:15:20.60 Step [match_purldb_resources_post_process] starting\n2024-06-17 16:15:20.60 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 16:15:20.60 0 resource processed\n2024-06-17 16:15:20.60 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 16:15:20.60 Step [remove_packages_without_resources] starting\n2024-06-17 16:15:20.61 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 16:15:20.61 Step [scan_unmapped_to_files] starting\n2024-06-17 16:15:23.72 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 16:15:23.72 Step [scan_mapped_from_for_files] starting\n2024-06-17 16:15:31.60 Progress: 16% (2/12) ETA: 41 seconds\n2024-06-17 16:15:32.92 Progress: 33% (4/12) ETA: 19 seconds\n2024-06-17 16:15:33.48 Progress: 50% (6/12) ETA: 10 seconds\n2024-06-17 16:15:33.56 Progress: 66% (8/12) ETA: 5 seconds\n2024-06-17 16:15:33.79 Progress: 83% (10/12) ETA: 2 seconds\n2024-06-17 16:15:34.37 Progress: 100% (12/12)\n2024-06-17 16:15:34.55 Step [scan_mapped_from_for_files] completed in 11 seconds\n2024-06-17 16:15:34.55 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 16:15:34.56 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 16:15:34.56 Step [create_local_files_packages] starting\n2024-06-17 16:15:34.57 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 16:15:34.58 Pipeline completed in 19 seconds\n",
+                    "execution_time": 18
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45",
+            "type": "local-files",
+            "namespace": "2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0",
+            "name": "409a060f-0d01-40e6-b4c6-cc8d7c853e45",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2007 OpenedHand\nCopyright (c) 2009 Collabora Ltd.\nCopyright (c) 2010 Intel Corp.\nCopyright (c) 2009 Red Hat, Inc\nCopyright (c) 2010 Intel Corp\nCopyright (c) 2010 OpenedHand",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64",
+            "type": "directory",
+            "name": "clutter-gtk-1.8.4-18.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk",
+            "type": "directory",
+            "name": "clutter-gtk",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor.c",
+            "type": "file",
+            "name": "gtk-clutter-actor.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 21522,
+            "md5": "629ce1fd0441ace74fcf6b04c57331c7",
+            "sha1": "d2f393efbff2ba62bbd5e830fa914f19899965ba",
+            "sha256": "495f2ef195133aae869ad1cc4403c22c02e5ef89bae83e6b2c0b18cad32b1480",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.17,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2009 Red Hat, Inc",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2010 Intel Corp",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat, Inc",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Intel Corp",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Alexander Larsson <alexl@redhat.com> Danielle Madeley <danielle.madeley@collabora.co.uk>",
+                    "end_line": 21,
+                    "start_line": 19
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "alexl@redhat.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "danielle.madeley@collabora.co.uk",
+                    "end_line": 21,
+                    "start_line": 21
+                },
+                {
+                    "email": "ebassi@linux.intel.com",
+                    "end_line": 22,
+                    "start_line": 22
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor.h",
+            "type": "file",
+            "name": "gtk-clutter-actor.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3165,
+            "md5": "d235828941d7f34a2d275852464eb503",
+            "sha1": "da556cfbba6b8984df1e32277dd96d44d0f7913e",
+            "sha256": "c67773f697b3f5a71a06245a7be6923bb9b8fc9c4f4a0249cf2a28f04815cdba",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2009 Red Hat, Inc",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2010 Intel Corp",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat, Inc",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Intel Corp",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Alexander Larsson <alexl@redhat.com> Emmanuele Bassi <ebassi@linux.intel.com>",
+                    "end_line": 21,
+                    "start_line": 19
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "alexl@redhat.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "ebassi@linux.intel.com",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor-internal.h",
+            "type": "file",
+            "name": "gtk-clutter-actor-internal.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1339,
+            "md5": "d1101586f9024e336c8685cb6598f57c",
+            "sha1": "6564930e92e5043ad20cbf690ff48aed92d24971",
+            "sha256": "5cf7e68affcdf25bd7d94efea0c52f136d407ea77e159036a8d7d335d02b414d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 56.04,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2009 Red Hat, Inc",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2010 OpenedHand",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Red Hat, Inc",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "OpenedHand",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Alexander Larsson <alexl@redhat.com> Danielle Madeley <danielle.madeley@collabora.co.uk>",
+                    "end_line": 21,
+                    "start_line": 19
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "alexl@redhat.com",
+                    "end_line": 20,
+                    "start_line": 20
+                },
+                {
+                    "email": "danielle.madeley@collabora.co.uk",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 17,
+                    "start_line": 17
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-embed.c",
+            "type": "file",
+            "name": "gtk-clutter-embed.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 38890,
+            "md5": "08e937776640293534faf63b11ca6f15",
+            "sha1": "1c39ded0f1885cee3acc06bee3ed47b699767a26",
+            "sha256": "86ef346240ca760482b238e9a1bf7fb550f8c297978fcaa9405c3ff99c14f61a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.2,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007 OpenedHand",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "OpenedHand",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Iain Holmes <iain@openedhand.com> Emmanuele Bassi <ebassi@openedhand.com>",
+                    "end_line": 20,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "iain@openedhand.com",
+                    "end_line": 19,
+                    "start_line": 19
+                },
+                {
+                    "email": "ebassi@openedhand.com",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-embed.h",
+            "type": "file",
+            "name": "gtk-clutter-embed.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3379,
+            "md5": "e3aefea610a742866036567ecd30a12f",
+            "sha1": "9e9a8a1ec11be9036afe5be6b5339e85877989f1",
+            "sha256": "52d51b0509846a3360c4ff84840b7dffdf38af207d1714a5f709f34548e2acc6",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.78,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2007 OpenedHand",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "OpenedHand",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Iain Holmes <iain@openedhand.com> Emmanuele Bassi <ebassi@openedhand.com>",
+                    "end_line": 20,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "iain@openedhand.com",
+                    "end_line": 19,
+                    "start_line": 19
+                },
+                {
+                    "email": "ebassi@openedhand.com",
+                    "end_line": 20,
+                    "start_line": 20
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-offscreen.c",
+            "type": "file",
+            "name": "gtk-clutter-offscreen.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11241,
+            "md5": "8a15e3ebf372a5fd46fd7adff9d2c9ce",
+            "sha1": "9c8f899609bca94dbbb909d5ab7b6f88cc14f416",
+            "sha256": "67bbf28f1bd40462b5fc2dcee00d73462ee74d6782ef9d295892d2ce2c1cbec3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-offscreen.h",
+            "type": "file",
+            "name": "gtk-clutter-offscreen.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1809,
+            "md5": "d217c79e6340caa6c268d5d736db281f",
+            "sha1": "0f43a77877ceb25f2ec413eb10f8398c285aab62",
+            "sha256": "04c0d2ac3a50a481845e8174c0995ce3d04858b83b7e1edf2aba5dc51e9fc2eb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-texture.c",
+            "type": "file",
+            "name": "gtk-clutter-texture.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6784,
+            "md5": "ba06428e7d6fb49d0fcd9bf67df8413c",
+            "sha1": "c79c29132f972f2d7a82367207779803754a590d",
+            "sha256": "35ea0c9b3b7d76baef0374b8df6aa24385c672e204f4f1eca6521ef45c762256",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 12.94,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2010 Intel Corp.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corp.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Emmanuele Bassi <ebassi@linux.intel.com>",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "ebassi@linux.intel.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-texture.h",
+            "type": "file",
+            "name": "gtk-clutter-texture.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4380,
+            "md5": "0774d2d79f93a04741897575caf536a5",
+            "sha1": "767fb4ea9601d0a293704a5690ccfac79f3f6ad8",
+            "sha256": "e7107228842e7fb9b9db1b093664d50f129aa0d90f51c55789112cc70446a0c4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 21.7,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2010 Intel Corp.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corp.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Emmanuele Bassi <ebassi@linux.intel.com>",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "ebassi@linux.intel.com",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-util.c",
+            "type": "file",
+            "name": "gtk-clutter-util.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10388,
+            "md5": "b0753691fea28ffe4e48b5382f69c7b3",
+            "sha1": "8929e3b2b2d2694b660525a024cfb0dbfcf9ddbc",
+            "sha256": "5456715f18bdb9959758e53be2e2be62b25af9f3a9d5a3a1c4db7f3f5726ae9a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-window.c",
+            "type": "file",
+            "name": "gtk-clutter-window.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10702,
+            "md5": "f10a88b81d19aa23d79e55efc4cee9ba",
+            "sha1": "98cb155342c04328b9bb147aebeff03c74d2386a",
+            "sha256": "664089fd7b73081e0f374549e89a3cdeac2d47203d0497bd94e3060008e50ff4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 8.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2009 Collabora Ltd.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Collabora Ltd.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Danielle Madeley <danielle.madeley@collabora.co.uk>",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "danielle.madeley@collabora.co.uk",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-window.h",
+            "type": "file",
+            "name": "gtk-clutter-window.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3172,
+            "md5": "3084e40c43134d71b2ea496df5c02228",
+            "sha1": "006d7aa6dfcb486d6a5f438a12e3cc826d60f9ed",
+            "sha256": "7ce50d429901c16a90b8d9d09fb5b523116432180532d5e5b970d3016dbbba8a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.14,
+                            "matcher": "3-seq",
+                            "end_line": 16,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_97.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library. If not see <http://www.fsf.org/licensing>.",
+                            "match_coverage": 97.14,
+                            "matched_length": 102,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_97.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-09efca0e-d148-d6da-60c7-1b1d8480e662",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 25.56,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2009 Collabora Ltd.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Collabora Ltd.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Danielle Madeley <danielle.madeley@collabora.co.uk>",
+                    "end_line": 19,
+                    "start_line": 18
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/2f3a1aff-9074-430b-ab6c-73cd886078ef-2a55b9c0/409a060f-0d01-40e6-b4c6-cc8d7c853e45"
+            ],
+            "emails": [
+                {
+                    "email": "danielle.madeley@collabora.co.uk",
+                    "end_line": 19,
+                    "start_line": 19
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.fsf.org/licensing",
+                    "end_line": 16,
+                    "start_line": 16
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/8e",
+            "type": "directory",
+            "name": "8e",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64",
+            "type": "directory",
+            "name": "lib64",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "type": "file",
+            "name": "libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 230992,
+            "md5": "ccb423df681aecee97edc5bfe35cfbb1",
+            "sha1": "a216a44f45ba94b8596ab3a74c6f70b8fe38a4d0",
+            "sha256": "894f6ac9e8a65f0aebad9a97955fb835b39af65b2db068ade2897e2e88ea514d",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=8ea2d1a62d4c6106332e662d81f473953db0867a, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/X11/Xutil.h",
+                    "usr/include/atk-1.0/atk/atkobject.h",
+                    "usr/include/atk-1.0/atk/atkrelationset.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/cairo/cairo-xlib.h",
+                    "usr/include/cairo/cairo.h",
+                    "usr/include/clutter-1.0/clutter/clutter-actor-meta.h",
+                    "usr/include/clutter-1.0/clutter/clutter-actor.h",
+                    "usr/include/clutter-1.0/clutter/clutter-bind-constraint.h",
+                    "usr/include/clutter-1.0/clutter/clutter-canvas.h",
+                    "usr/include/clutter-1.0/clutter/clutter-color.h",
+                    "usr/include/clutter-1.0/clutter/clutter-constraint.h",
+                    "usr/include/clutter-1.0/clutter/clutter-content.h",
+                    "usr/include/clutter-1.0/clutter/clutter-device-manager.h",
+                    "usr/include/clutter-1.0/clutter/clutter-enums.h",
+                    "usr/include/clutter-1.0/clutter/clutter-event.h",
+                    "usr/include/clutter-1.0/clutter/clutter-group.h",
+                    "usr/include/clutter-1.0/clutter/clutter-layout-manager.h",
+                    "usr/include/clutter-1.0/clutter/clutter-main.h",
+                    "usr/include/clutter-1.0/clutter/clutter-settings.h",
+                    "usr/include/clutter-1.0/clutter/clutter-stage.h",
+                    "usr/include/clutter-1.0/clutter/clutter-texture.h",
+                    "usr/include/clutter-1.0/clutter/clutter-types.h",
+                    "usr/include/clutter-1.0/clutter/deprecated/clutter-texture.h",
+                    "usr/include/clutter-1.0/clutter/gdk/clutter-gdk.h",
+                    "usr/include/clutter-1.0/clutter/wayland/clutter-wayland.h",
+                    "usr/include/clutter-1.0/clutter/x11/clutter-x11-texture-pixmap.h",
+                    "usr/include/clutter-1.0/clutter/x11/clutter-x11.h",
+                    "usr/include/cogl/cogl/cogl-matrix.h",
+                    "usr/include/cogl/cogl/cogl1-context.h",
+                    "usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/glib/garray.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/genviron.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/goption.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gscanner.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/gtk-3.0/gdk/deprecated/gdkcolor.h",
+                    "usr/include/gtk-3.0/gdk/gdkdisplay.h",
+                    "usr/include/gtk-3.0/gdk/gdkevents.h",
+                    "usr/include/gtk-3.0/gdk/gdkkeys.h",
+                    "usr/include/gtk-3.0/gdk/gdkscreen.h",
+                    "usr/include/gtk-3.0/gdk/gdktypes.h",
+                    "usr/include/gtk-3.0/gdk/gdkwindow.h",
+                    "usr/include/gtk-3.0/gdk/wayland/gdkwaylanddisplay.h",
+                    "usr/include/gtk-3.0/gdk/wayland/gdkwaylandwindow.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11display.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11screen.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11visual.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11window.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkiconfactory.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkrc.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkstyle.h",
+                    "usr/include/gtk-3.0/gtk/gtkbin.h",
+                    "usr/include/gtk-3.0/gtk/gtkcontainer.h",
+                    "usr/include/gtk-3.0/gtk/gtkenums.h",
+                    "usr/include/gtk-3.0/gtk/gtkicontheme.h",
+                    "usr/include/gtk-3.0/gtk/gtkmain.h",
+                    "usr/include/gtk-3.0/gtk/gtksettings.h",
+                    "usr/include/gtk-3.0/gtk/gtkstylecontext.h",
+                    "usr/include/gtk-3.0/gtk/gtktypes.h",
+                    "usr/include/gtk-3.0/gtk/gtkwidget.h",
+                    "usr/include/gtk-3.0/gtk/gtkwindow.h",
+                    "usr/include/harfbuzz/hb-common.h",
+                    "usr/include/pango-1.0/pango/pango-font.h",
+                    "usr/include/string.h",
+                    "usr/include/wayland-client-core.h",
+                    "usr/include/wayland-client-protocol.h",
+                    "usr/include/wayland-util.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor-internal.h",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor.c",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor.h",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-embed.c",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-embed.h",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-offscreen.c",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-offscreen.h",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-texture.c",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-texture.h",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-util.c",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-window.c",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-window.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk",
+                    "usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/X11/X.h",
+                    "usr/include/X11/Xlib.h",
+                    "usr/include/X11/Xutil.h",
+                    "usr/include/atk-1.0/atk/atkobject.h",
+                    "usr/include/atk-1.0/atk/atkrelationset.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/cairo/cairo-xlib.h",
+                    "usr/include/cairo/cairo.h",
+                    "usr/include/clutter-1.0/clutter/clutter-actor-meta.h",
+                    "usr/include/clutter-1.0/clutter/clutter-actor.h",
+                    "usr/include/clutter-1.0/clutter/clutter-bind-constraint.h",
+                    "usr/include/clutter-1.0/clutter/clutter-canvas.h",
+                    "usr/include/clutter-1.0/clutter/clutter-color.h",
+                    "usr/include/clutter-1.0/clutter/clutter-constraint.h",
+                    "usr/include/clutter-1.0/clutter/clutter-content.h",
+                    "usr/include/clutter-1.0/clutter/clutter-device-manager.h",
+                    "usr/include/clutter-1.0/clutter/clutter-enums.h",
+                    "usr/include/clutter-1.0/clutter/clutter-event.h",
+                    "usr/include/clutter-1.0/clutter/clutter-group.h",
+                    "usr/include/clutter-1.0/clutter/clutter-layout-manager.h",
+                    "usr/include/clutter-1.0/clutter/clutter-main.h",
+                    "usr/include/clutter-1.0/clutter/clutter-settings.h",
+                    "usr/include/clutter-1.0/clutter/clutter-stage.h",
+                    "usr/include/clutter-1.0/clutter/clutter-texture.h",
+                    "usr/include/clutter-1.0/clutter/clutter-types.h",
+                    "usr/include/clutter-1.0/clutter/deprecated/clutter-texture.h",
+                    "usr/include/clutter-1.0/clutter/gdk/clutter-gdk.h",
+                    "usr/include/clutter-1.0/clutter/wayland/clutter-wayland.h",
+                    "usr/include/clutter-1.0/clutter/x11/clutter-x11-texture-pixmap.h",
+                    "usr/include/clutter-1.0/clutter/x11/clutter-x11.h",
+                    "usr/include/cogl/cogl/cogl-matrix.h",
+                    "usr/include/cogl/cogl/cogl1-context.h",
+                    "usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h",
+                    "usr/include/glib-2.0/gio/gioenums.h",
+                    "usr/include/glib-2.0/glib/garray.h",
+                    "usr/include/glib-2.0/glib/gdataset.h",
+                    "usr/include/glib-2.0/glib/genviron.h",
+                    "usr/include/glib-2.0/glib/gerror.h",
+                    "usr/include/glib-2.0/glib/ggettext.h",
+                    "usr/include/glib-2.0/glib/glist.h",
+                    "usr/include/glib-2.0/glib/gmem.h",
+                    "usr/include/glib-2.0/glib/gmessages.h",
+                    "usr/include/glib-2.0/glib/goption.h",
+                    "usr/include/glib-2.0/glib/gquark.h",
+                    "usr/include/glib-2.0/glib/gscanner.h",
+                    "usr/include/glib-2.0/glib/gslist.h",
+                    "usr/include/glib-2.0/glib/gtestutils.h",
+                    "usr/include/glib-2.0/glib/gthread.h",
+                    "usr/include/glib-2.0/glib/gtypes.h",
+                    "usr/include/glib-2.0/glib/gunicode.h",
+                    "usr/include/glib-2.0/gobject/gclosure.h",
+                    "usr/include/glib-2.0/gobject/gobject.h",
+                    "usr/include/glib-2.0/gobject/gparam.h",
+                    "usr/include/glib-2.0/gobject/gparamspecs.h",
+                    "usr/include/glib-2.0/gobject/gsignal.h",
+                    "usr/include/glib-2.0/gobject/gtype.h",
+                    "usr/include/glib-2.0/gobject/gvalue.h",
+                    "usr/include/glib-2.0/gobject/gvaluetypes.h",
+                    "usr/include/gtk-3.0/gdk/deprecated/gdkcolor.h",
+                    "usr/include/gtk-3.0/gdk/gdkdisplay.h",
+                    "usr/include/gtk-3.0/gdk/gdkevents.h",
+                    "usr/include/gtk-3.0/gdk/gdkkeys.h",
+                    "usr/include/gtk-3.0/gdk/gdkscreen.h",
+                    "usr/include/gtk-3.0/gdk/gdktypes.h",
+                    "usr/include/gtk-3.0/gdk/gdkwindow.h",
+                    "usr/include/gtk-3.0/gdk/wayland/gdkwaylanddisplay.h",
+                    "usr/include/gtk-3.0/gdk/wayland/gdkwaylandwindow.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11display.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11screen.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11visual.h",
+                    "usr/include/gtk-3.0/gdk/x11/gdkx11window.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkiconfactory.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkrc.h",
+                    "usr/include/gtk-3.0/gtk/deprecated/gtkstyle.h",
+                    "usr/include/gtk-3.0/gtk/gtkbin.h",
+                    "usr/include/gtk-3.0/gtk/gtkcontainer.h",
+                    "usr/include/gtk-3.0/gtk/gtkenums.h",
+                    "usr/include/gtk-3.0/gtk/gtkicontheme.h",
+                    "usr/include/gtk-3.0/gtk/gtkmain.h",
+                    "usr/include/gtk-3.0/gtk/gtksettings.h",
+                    "usr/include/gtk-3.0/gtk/gtkstylecontext.h",
+                    "usr/include/gtk-3.0/gtk/gtktypes.h",
+                    "usr/include/gtk-3.0/gtk/gtkwidget.h",
+                    "usr/include/gtk-3.0/gtk/gtkwindow.h",
+                    "usr/include/harfbuzz/hb-common.h",
+                    "usr/include/pango-1.0/pango/pango-font.h",
+                    "usr/include/string.h",
+                    "usr/include/wayland-client-core.h",
+                    "usr/include/wayland-client-protocol.h",
+                    "usr/include/wayland-util.h",
+                    "usr/lib64/glib-2.0/include/glibconfig.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-actor-internal.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-embed.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-embed.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-offscreen.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-offscreen.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-texture.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-texture.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-util.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-window.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/lib64/libclutter-gtk-1.0.so.0.800.4-1.8.4-18.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/clutter-gtk-1.8.4-18.fc40.x86_64/clutter-gtk/gtk-clutter-window.h"
+        }
+    ]
+}

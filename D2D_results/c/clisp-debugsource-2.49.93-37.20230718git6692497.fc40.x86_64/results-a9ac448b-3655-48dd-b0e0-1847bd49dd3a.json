@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "a9ac448b-3655-48dd-b0e0-1847bd49dd3a",
+            "created_date": "2024-06-17T15:34:13.873Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "0f9cf92c-5ed5-48a6-8a86-bf156928cb89",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clisp-debugsource-2.49.93-37.20230718git6692497.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "019d57d9-e9ce-48d6-a38c-af95b2e2b6c2",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clisp-debuginfo-2.49.93-37.20230718git6692497.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "9797f74b-2c1e-4cd4-811b-20e6f20995d9",
+                    "created_date": "2024-06-17T15:34:13.880877Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "9797f74b-2c1e-4cd4-811b-20e6f20995d9",
+                    "task_start_date": "2024-06-17T15:34:13.904750Z",
+                    "task_end_date": "2024-06-17T15:34:30.660102Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:34:13.90 Pipeline [d2d] starting\n2024-06-17 15:34:13.91 Step [download_missing_inputs] starting\n2024-06-17 15:34:13.91 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clisp-debugsource-2.49.93-37.20230718git6692497.fc40.x86_64.rpm#from\n2024-06-17 15:34:21.22 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clisp-debugsource-2.49.93-37.20230718git6692497.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:34:21.23 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clisp-debuginfo-2.49.93-37.20230718git6692497.fc40.x86_64.rpm#to\n2024-06-17 15:34:30.65 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clisp-debuginfo-2.49.93-37.20230718git6692497.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:34:30.65 Pipeline failed\n",
+                    "execution_time": 16
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

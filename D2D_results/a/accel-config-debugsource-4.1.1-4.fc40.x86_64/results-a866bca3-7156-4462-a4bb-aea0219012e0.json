@@ -1,0 +1,3477 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "a866bca3-7156-4462-a4bb-aea0219012e0",
+            "created_date": "2024-06-14T03:58:13.774Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "cd47b426-e1e2-4e71-b873-40da0c35a0ae",
+                    "filename": "accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 98249,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "996799ba-8d8c-445e-b237-842015bb4dcc",
+                    "filename": "accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 63260,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "72adedc4-0569-4d57-aa68-0d7d144c2ec6",
+                    "created_date": "2024-06-14T03:58:13.782009Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "72adedc4-0569-4d57-aa68-0d7d144c2ec6",
+                    "task_start_date": "2024-06-14T03:58:13.806695Z",
+                    "task_end_date": "2024-06-14T03:58:38.673378Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 03:58:13.80 Pipeline [d2d] starting\n2024-06-14 03:58:13.81 Step [download_missing_inputs] starting\n2024-06-14 03:58:13.81 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm#from\n2024-06-14 03:58:15.31 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm#to\n2024-06-14 03:58:17.46 Step [download_missing_inputs] completed in 4 seconds\n2024-06-14 03:58:17.46 Step [get_inputs] starting\n2024-06-14 03:58:17.47 Step [get_inputs] completed in 0 seconds\n2024-06-14 03:58:17.48 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 03:58:17.54 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 03:58:17.55 Step [extract_archives] starting\n2024-06-14 03:58:17.65 Step [extract_archives] completed in 0 seconds\n2024-06-14 03:58:17.65 Step [collect_and_create_codebase_resources] starting\n2024-06-14 03:58:17.69 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 03:58:17.70 Step [fingerprint_codebase_directories] starting\n2024-06-14 03:58:17.71 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 03:58:17.71 Step [flag_empty_files] starting\n2024-06-14 03:58:17.71 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 03:58:17.71 Step [flag_whitespace_files] starting\n2024-06-14 03:58:17.72 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 03:58:17.72 Step [flag_ignored_resources] starting\n2024-06-14 03:58:17.72 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 03:58:17.72 Step [map_about_files] starting\n2024-06-14 03:58:17.72 Step [map_about_files] completed in 0 seconds\n2024-06-14 03:58:17.73 Step [map_checksum] starting\n2024-06-14 03:58:17.73 Mapping 2 to/ resources using sha1 against from/ codebase\n2024-06-14 03:58:17.74 Step [map_checksum] completed in 0 seconds\n2024-06-14 03:58:17.74 Step [match_archives_to_purldb] starting\n2024-06-14 03:58:17.74 PurlDB is not available. Skipping.\n2024-06-14 03:58:17.74 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 03:58:17.75 Step [find_java_packages] starting\n2024-06-14 03:58:17.75 Finding Java package for 0 .java resources.\n2024-06-14 03:58:17.76 Step [find_java_packages] completed in 0 seconds\n2024-06-14 03:58:17.76 Step [map_java_to_class] starting\n2024-06-14 03:58:17.77 Mapping 0 .class resources to .java\n2024-06-14 03:58:17.77 No .java resources to map.\n2024-06-14 03:58:17.77 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 03:58:17.77 Step [map_jar_to_source] starting\n2024-06-14 03:58:17.78 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 03:58:17.79 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 03:58:17.79 Step [map_elf] starting\n2024-06-14 03:58:18.84 Mapping 2 to/ resources using paths with 29 from/ resources.\n2024-06-14 03:58:18.84 Done building from/ resources index.\n2024-06-14 03:58:18.85 WARNING: #16 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/accel-config-4.1.1-4.fc40.x86_64'\n2024-06-14 03:58:18.85 No mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/accel-config-4.1.1-4.fc40.x86_64'\n2024-06-14 03:58:18.86 WARNING: #3 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug'\n2024-06-14 03:58:18.88 WARNING: #23 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug'\n2024-06-14 03:58:18.89 Created 34 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug'\n2024-06-14 03:58:18.89 Step [map_elf] completed in 1 seconds\n2024-06-14 03:58:18.89 Step [map_go] starting\n2024-06-14 03:58:18.91 Can not parse PosixPath('/home/tg1999/Desktop/purldb/var/projects/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/codebase/to/usr/lib/debug/.dwz/accel-config-4.1.1-4.fc40.x86_64') Exception('')\n2024-06-14 03:58:18.91 Mapping 1 to/ resources using paths with 29 from/ resources.\n2024-06-14 03:58:18.91 Done building from/ resources index.\n2024-06-14 03:58:18.92 No mappings using go_file_paths for: 'to/usr/lib/debug/.dwz/accel-config-4.1.1-4.fc40.x86_64'\n2024-06-14 03:58:18.92 Step [map_go] completed in 0 seconds\n2024-06-14 03:58:18.92 Step [match_directories_to_purldb] starting\n2024-06-14 03:58:18.92 PurlDB is not available. Skipping.\n2024-06-14 03:58:18.92 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 03:58:18.93 Step [match_resources_to_purldb] starting\n2024-06-14 03:58:18.93 PurlDB is not available. Skipping.\n2024-06-14 03:58:18.93 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 03:58:18.93 Step [map_path] starting\n2024-06-14 03:58:18.94 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 03:58:18.95 Step [map_path] completed in 0 seconds\n2024-06-14 03:58:18.95 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 03:58:18.97 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 03:58:18.98 Step [perform_house_keeping_tasks] starting\n2024-06-14 03:58:19.01 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 03:58:19.01 Step [match_purldb_resources_post_process] starting\n2024-06-14 03:58:19.02 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 03:58:19.03 0 resource processed\n2024-06-14 03:58:19.03 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 03:58:19.03 Step [remove_packages_without_resources] starting\n2024-06-14 03:58:19.04 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 03:58:19.04 Step [scan_unmapped_to_files] starting\n2024-06-14 03:58:22.30 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-14 03:58:22.31 Step [scan_mapped_from_for_files] starting\n2024-06-14 03:58:36.00 Progress: 11% (4/34) ETA: 111 seconds (1.9 minutes)\n2024-06-14 03:58:36.32 Progress: 23% (8/34) ETA: 47 seconds\n2024-06-14 03:58:36.52 Progress: 35% (12/34) ETA: 26 seconds\n2024-06-14 03:58:36.73 Progress: 47% (16/34) ETA: 16 seconds\n2024-06-14 03:58:37.05 Progress: 58% (20/34) ETA: 11 seconds\n2024-06-14 03:58:37.21 Progress: 70% (24/34) ETA: 6 seconds\n2024-06-14 03:58:37.40 Progress: 82% (28/34) ETA: 3 seconds\n2024-06-14 03:58:37.56 Progress: 94% (32/34) ETA: 1 seconds\n2024-06-14 03:58:38.62 Step [scan_mapped_from_for_files] completed in 16 seconds\n2024-06-14 03:58:38.62 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 03:58:38.63 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 03:58:38.63 Step [create_local_files_packages] starting\n2024-06-14 03:58:38.66 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 03:58:38.67 Pipeline completed in 25 seconds\n",
+                    "execution_time": 24
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c",
+            "type": "local-files",
+            "namespace": "3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3",
+            "name": "6f7d2845-2c1a-498b-a64e-cfdca8974c8c",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2005 Junio C Hamano\nCopyright (c) 2005 Linus Torvalds\nCopyright (c) 2007 Pierre Habouzit\nCopyright (c) 2015-2017 Intel Corporation\nCopyright (c) 2015-2019 Intel Corporation\nCopyright (c) 2019 Intel Corporation\nCopyright (c) 2006 Linus Torvalds\nCopyright (c) 2008 Miklos Vajna",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/ccf57c23-d5ce-499a-87af-a74640b38a8a",
+            "type": "local-files",
+            "namespace": "3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3",
+            "name": "ccf57c23-d5ce-499a-87af-a74640b38a8a",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "",
+            "holder": "",
+            "declared_license_expression": "unknown-license-reference",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/ff58af2c-710a-442b-ad68-f934f78ec5de",
+            "type": "local-files",
+            "namespace": "3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3",
+            "name": "ff58af2c-710a-442b-ad68-f934f78ec5de",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2019 Intel Corporation",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64",
+            "type": "directory",
+            "name": "accel-config-4.1.1-4.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg",
+            "type": "directory",
+            "name": "accfg",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/accel-config.c",
+            "type": "file",
+            "name": "accel-config.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2524,
+            "md5": "71d6193e8263630fdeb7d208f354b483",
+            "sha1": "8573c164aebeff8b2fb0e055cf7cb87f1c0bfe0d",
+            "sha256": "14a92cb776e52dce10c191627d4890d511c4a0d9049a028ecda7c7d5317fcb09",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.63,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/config_attr.c",
+            "type": "file",
+            "name": "config_attr.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16056,
+            "md5": "90fb3378c2823a7a9841c9fa6c28fc94",
+            "sha1": "97f584f1b3c4500d6d53698c21827e21a72185db",
+            "sha256": "ad40501ce3d7320a47e494f62dec68981b53f857e84c94863f39d41736455b67",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: GPL-2.0",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-d3ce8df054364ca0ea612f6ca4bf9e1b1b0bf93b",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-a71a0fba-2f9b-6545-1eb4-211798624b40",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.25,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/config.c",
+            "type": "file",
+            "name": "config.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 40341,
+            "md5": "63efa50d18a04edacb183b4f867ee5c5",
+            "sha1": "d6b70a320865a2efe963b5f727045a7605b5c7e8",
+            "sha256": "a3dcf1ae242f48d51ab379df90ae7bac9ee33999c3d80b7576700a79a37a4b47",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 866,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 866,
+                    "matched_text": "\tint dpl, gpl;",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                },
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 913,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 913,
+                    "matched_text": "\tgpl = accfg_group_get_batch_progress_limit(group);",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                },
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 915,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 915,
+                    "matched_text": "\t\tjobj = json_object_new_int(gpl);",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                }
+            ],
+            "percentage_of_license_text": 0.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/enable.c",
+            "type": "file",
+            "name": "enable.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6747,
+            "md5": "7078bdf938777ef0cd7467afd713d1ad",
+            "sha1": "d3093872ddf1a4d98d65bfcdeea2335f39f8a61d",
+            "sha256": "4d4ec5c3df1dbdc8a36673729f653a3cf691b565b434b165a2a639a2946236c4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: GPL-2.0",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-d3ce8df054364ca0ea612f6ca4bf9e1b1b0bf93b",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-a71a0fba-2f9b-6545-1eb4-211798624b40",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.61,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/libaccel_config.h",
+            "type": "file",
+            "name": "libaccel_config.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 13818,
+            "md5": "3872fef6bdf533c0be8458fe4d8e2449",
+            "sha1": "873274bb49476938536ae52aaa8728075dce2a63",
+            "sha256": "6648541febfb8d5650ca9bd42bb7f7897ab98de42a55c1b19e9cda64da5d027b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1",
+            "detected_license_expression_spdx": "LGPL-2.1-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: LGPL-2.1",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1-bfd38781ec745d015792297308091366acb5b28f",
+                            "license_expression": "lgpl-2.1",
+                            "spdx_license_expression": "LGPL-2.1-only"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1-8e7f5dca-b6a3-d5fc-1ddd-aa287135d282",
+                    "license_expression": "lgpl-2.1",
+                    "license_expression_spdx": "LGPL-2.1-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.27,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/ff58af2c-710a-442b-ad68-f934f78ec5de"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/lib/libaccfg.c",
+            "type": "file",
+            "name": "libaccfg.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 59961,
+            "md5": "60cf78c6736a653d0db4704c212a07ce",
+            "sha1": "8deac024a446b1f5c5acc5c44ad0f78e16bd7f1c",
+            "sha256": "d6060a189d47fce4b4f0d34f3d7207f6ae19d27b64a236ecddc6608f55825f79",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/lib/private.h",
+            "type": "file",
+            "name": "private.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3462,
+            "md5": "93977111e9b6b25a48e18daace7920df",
+            "sha1": "96a77a3a6bfaea7e52d75e09713e7ace1fd80dd9",
+            "sha256": "0fe33634cfbb6473d6a95a20ef2bda7203fe91838769d9d35c9d05d116ea434e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1",
+            "detected_license_expression_spdx": "LGPL-2.1-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: LGPL-2.1",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-lgpl_2_1-bfd38781ec745d015792297308091366acb5b28f",
+                            "license_expression": "lgpl-2.1",
+                            "spdx_license_expression": "LGPL-2.1-only"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1-8e7f5dca-b6a3-d5fc-1ddd-aa287135d282",
+                    "license_expression": "lgpl-2.1",
+                    "license_expression_spdx": "LGPL-2.1-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.14,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/ff58af2c-710a-442b-ad68-f934f78ec5de"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/list.c",
+            "type": "file",
+            "name": "list.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17627,
+            "md5": "7d9e655af0f691888f76fe4c25e56dd0",
+            "sha1": "57a0034c72bd38dd5ea258886724513250ae9d85",
+            "sha256": "5d67bbad1539f1b6441ff96de4e3694f981479c0b488d30bdb67ecc34fdae8b3",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: GPL-2.0",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-d3ce8df054364ca0ea612f6ca4bf9e1b1b0bf93b",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-a71a0fba-2f9b-6545-1eb4-211798624b40",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 58,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 58,
+                    "matched_text": "\tint dpl, gpl;",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                },
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 111,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 111,
+                    "matched_text": "\tgpl = accfg_group_get_batch_progress_limit(group);",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                },
+                {
+                    "score": 50.0,
+                    "matcher": "2-aho",
+                    "end_line": 113,
+                    "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl_bare_word_only.RULE",
+                    "from_file": null,
+                    "start_line": 113,
+                    "matched_text": "\t\tjobj = json_object_new_int(gpl);",
+                    "match_coverage": 100.0,
+                    "matched_length": 1,
+                    "rule_relevance": 50,
+                    "rule_identifier": "gpl_bare_word_only.RULE",
+                    "license_expression": "gpl-1.0-plus",
+                    "spdx_license_expression": "GPL-1.0-or-later"
+                }
+            ],
+            "percentage_of_license_text": 0.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/builtin.h",
+            "type": "file",
+            "name": "builtin.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1525,
+            "md5": "cf684270cc5697e493ddb5f27311d75d",
+            "sha1": "51d0043960537495f81c86b97aebb01e1573d54a",
+            "sha256": "ebb61900ac368efbe3f6db2b83fd4b79405fd475dafaa999f677855001157b63",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 27.38,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2017 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/ccan",
+            "type": "directory",
+            "name": "ccan",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/ccan/list",
+            "type": "directory",
+            "name": "list",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/ccan/list/list.h",
+            "type": "file",
+            "name": "list.h",
+            "status": "unknown-license",
+            "tag": "from",
+            "extension": ".h",
+            "size": 19877,
+            "md5": "a90c991e862c4f06ed93af574cf8a36a",
+            "sha1": "8967fb8374eb14acf26c08be7c5ba28a043e7b50",
+            "sha256": "0edccb797aea2aacfc147561aff0ad04873bc17293773e0b33aa2dda43836eb5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "unknown-license-reference",
+            "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 50.0,
+                            "matcher": "2-aho",
+                            "end_line": 1,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_2.RULE",
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* Licensed under BSD-MIT - see LICENSE file for details */",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 50,
+                            "rule_identifier": "license-intro_2.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 1,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown_10.RULE",
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* Licensed under BSD-MIT - see LICENSE file for details */",
+                            "match_coverage": 100.0,
+                            "matched_length": 5,
+                            "rule_relevance": 100,
+                            "rule_identifier": "unknown_10.RULE",
+                            "license_expression": "unknown-license-reference",
+                            "spdx_license_expression": "LicenseRef-scancode-unknown-license-reference"
+                        }
+                    ],
+                    "identifier": "unknown_license_reference-25ed7148-8b73-f401-fd57-b4279aa6e04d",
+                    "license_expression": "unknown-license-reference",
+                    "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.23,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/ccf57c23-d5ce-499a-87af-a74640b38a8a"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util",
+            "type": "directory",
+            "name": "util",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/abspath.c",
+            "type": "file",
+            "name": "abspath.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 567,
+            "md5": "5c50fa6e0a278912a4b91a37075a65a1",
+            "sha1": "2d8ed45b24c9c84077ea9310890f2a62348a3cf9",
+            "sha256": "50d4830a2362eee65304dcda73657192e13d90382f5c189b1dbf1bab2357a86c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 7.5,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.c",
+            "type": "file",
+            "name": "filter.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 5264,
+            "md5": "d0bd56367c0849c4a90f3eb72244926e",
+            "sha1": "fc2c4035733c0277e6ee32a86d1777d4360eb9e2",
+            "sha256": "b2ce0484eb0e16e7965c24078247fc07d000a71353eb529dca3c8c08f131aedf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: GPL-2.0",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-d3ce8df054364ca0ea612f6ca4bf9e1b1b0bf93b",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-a71a0fba-2f9b-6545-1eb4-211798624b40",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.73,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.h",
+            "type": "file",
+            "name": "filter.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3591,
+            "md5": "8703c05e2df3fd243c1f88c6f5765477",
+            "sha1": "f318e9b62e971f7b2cc0d0ee091b352ba1e00a8c",
+            "sha256": "5891e683433045f3ad30246b6d5061500b59919015a95393e6852ef0be38f11d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.11,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/help.c",
+            "type": "file",
+            "name": "help.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3949,
+            "md5": "9f3ea6a3c3ae0f8606b322c3e8cabfca",
+            "sha1": "b8821fb99888d6cfe7d9c1f5f0636e0970140968",
+            "sha256": "739f6f9bc0cd7736ce294e707b56715c7ea8d34f975b91d70dd47bc162426055",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2008 Miklos Vajna",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2006 Linus Torvalds",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Miklos Vajna",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Linus Torvalds",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/json.c",
+            "type": "file",
+            "name": "json.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 13647,
+            "md5": "7f3b051c616b46b2525e38a2cc6d59a3",
+            "sha1": "4161fa1931a227416103429ec49ff7bb52368c79",
+            "sha256": "9579a4572e9aca8e90f583e4238c9a7f4059b2ef4a8fb2ff936a1a5d637bac2e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "// SPDX-License-Identifier: GPL-2.0",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-d3ce8df054364ca0ea612f6ca4bf9e1b1b0bf93b",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-a71a0fba-2f9b-6545-1eb4-211798624b40",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.28,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/json.h",
+            "type": "file",
+            "name": "json.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 972,
+            "md5": "f3d506972848b74821334d4046726fe3",
+            "sha1": "b0e4923333e7daee1edc805855b08a5c13d9fa92",
+            "sha256": "453bb5fb55dad3db39f72194baef91bab450cdd7fb01f91c5d041f3fa89d0b3a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.82,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/log.c",
+            "type": "file",
+            "name": "log.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1469,
+            "md5": "ab05d4399ec057b2a89912b8260fcfb7",
+            "sha1": "44e778344a11878ccb3b2ef7a63f882c966f5ad7",
+            "sha256": "f5c76d11052632956aabb8f6c59cd0d3da03ac38e67a0eef769bcca015da24ac",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/log.h",
+            "type": "file",
+            "name": "log.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2067,
+            "md5": "c56af84f1b771e0468bf31ca3be5202b",
+            "sha1": "d72b6fd4d5c08957a12fe87be2231d4e958f0537",
+            "sha256": "f5eb1b68faba000535443b9f1230e6cf346a293b6cc611c7c1a31d5db1e64ebc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "1-spdx-id",
+                            "end_line": 1,
+                            "rule_url": null,
+                            "from_file": null,
+                            "start_line": 1,
+                            "matched_text": "/* SPDX-License-Identifier: GPL-2.0 */",
+                            "match_coverage": 100.0,
+                            "matched_length": 6,
+                            "rule_relevance": 100,
+                            "rule_identifier": "spdx-license-identifier-gpl_2_0-226acdb64272d581803be46edea33eb815f4189c",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-1a405753-3ffa-bdb4-1327-9bf0edbb35a4",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.89,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.c",
+            "type": "file",
+            "name": "main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2319,
+            "md5": "70b275124b2b41a9702aec567e9f24ae",
+            "sha1": "dd77b84fc22787eb8b09ed457c93057dfd451fcf",
+            "sha256": "951288044b41d3a161337ea845dbc51e1f8d72653d5781bd6448975cc27e5d81",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2019 Intel Corporation",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2006 Linus Torvalds",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Linus Torvalds",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.h",
+            "type": "file",
+            "name": "main.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1018,
+            "md5": "ac3592fa29c0a63bc43ec928b9c67ec8",
+            "sha1": "a5760f61e622f1bac96d3d7786627935ffe28d02",
+            "sha256": "b696392b2e892884bcec57c18be195a1173c51192d88b609e64e99e8027eac29",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 43.67,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2015-2017 Intel Corporation",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2006 Linus Torvalds",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Intel Corporation",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Linus Torvalds",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.c",
+            "type": "file",
+            "name": "parse-options.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 18047,
+            "md5": "1e8e2b064e475dc127235f8049182633",
+            "sha1": "538d28ad078ea33f343d0a5a5caa04d811797ff3",
+            "sha256": "8ff88d72e082942b11f7513dd71f63c5dcc2c13edfa0e0b07e3ee8c052f22613",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Pierre Habouzit",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Pierre Habouzit",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.h",
+            "type": "file",
+            "name": "parse-options.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 9091,
+            "md5": "41f49f37546c8077c3148ebfe743f839",
+            "sha1": "acfa2aaf25ceb8cd215e5405ec26568c1245dc84",
+            "sha256": "0b87590ea3ad023b170543c7429402eb130b4f51860bfa9ff8e4854811a9f07b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.08,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2007 Pierre Habouzit",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Pierre Habouzit",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.c",
+            "type": "file",
+            "name": "strbuf.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3584,
+            "md5": "ec5d9178b738b7bc204cfa0b70c3fcfa",
+            "sha1": "b655ffefd64d282946cab5ff1ed1cd8cb7f2fab0",
+            "sha256": "2bcee02d9579ae394f698ee8e5371e71b7396409450ea4f285aeb129d7182993",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.69,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005 Junio C Hamano",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Junio C Hamano",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.h",
+            "type": "file",
+            "name": "strbuf.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3649,
+            "md5": "3e99d2028d04cfdc4f75ad605d93c369",
+            "sha1": "d3e3508447590fb390c2197ffc9d5999982d0774",
+            "sha256": "4d312154fbaba8a9680d0d90a01218de17add2d7d78f1faabbb4d41fb32412e5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.88,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005 Junio C Hamano",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Junio C Hamano",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/sysfs.c",
+            "type": "file",
+            "name": "sysfs.c",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2506,
+            "md5": "4e48e942779cd5bf6aab52aa963db218",
+            "sha1": "22a52dbd972149cf44d3db7b9267182c9054eac3",
+            "sha256": "bbbf7742b73d5851de5f6ec89b0d049fe8363011a0a4e6dba1871c2a6d7eb4da",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/sysfs.h",
+            "type": "file",
+            "name": "sysfs.h",
+            "status": "not-deployed",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1267,
+            "md5": "d6b7d687de2d02da93a7ad6e3836f961",
+            "sha1": "d3a05bf35405a514e8a7de845d7dfb60ef3be38b",
+            "sha256": "f0667e5d5260cd1b130d84bfb61b94c6c72ede83c25a870b0c693c39b7f1a695",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/usage.c",
+            "type": "file",
+            "name": "usage.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2214,
+            "md5": "de7ca40e19aed6704ada0ab1add00780",
+            "sha1": "753b9e6f09f02876655035be9077c4f817b69db4",
+            "sha256": "d801d6266beb8968d514aa3670d6511f32eada5bdd38ffd36b1e48ebfa284f7b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005 Linus Torvalds",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Linus Torvalds",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/util.h",
+            "type": "file",
+            "name": "util.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3106,
+            "md5": "531f43409d601205701985d19d7f8c90",
+            "sha1": "d33c9c4836589ef12d3ae71442362ad2fc74b488",
+            "sha256": "65d4b294442922cb7fd5b8dfbe7c58ee2020de3c6e26ed3fcd6934ead0bd9b40",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 16.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005 Junio C Hamano",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2005 Linus Torvalds",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Junio C Hamano",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Linus Torvalds",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/wrapper.c",
+            "type": "file",
+            "name": "wrapper.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1125,
+            "md5": "5635d637a866b8e19da4d6b3234f9866",
+            "sha1": "49dc96f477b507f843ac1e09c474f8a7e2a621f1",
+            "sha256": "442c10678ceed553d55e3d1d7235f92949e520b062fba8635c46ddbcf739af7f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_288.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of version 2 of the GNU General Public License as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful, but\n * WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * General Public License for more details.",
+                            "match_coverage": 100.0,
+                            "matched_length": 69,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_288.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-7e9b2517-e984-f771-6e3c-b63d87082cb5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2005 Junio C Hamano",
+                    "start_line": 2
+                },
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2005 Linus Torvalds",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Junio C Hamano",
+                    "end_line": 2,
+                    "start_line": 2
+                },
+                {
+                    "holder": "Linus Torvalds",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/3b3d56f4-97cc-4e80-8438-c85c11954a22-a866bca3/6f7d2845-2c1a-498b-a64e-cfdca8974c8c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000024410045a081810100165484210200405",
+                "directory_structure": "000000024dc329055b2061f80b013422c3608008"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000024410045a081810100165484210200405",
+                "directory_structure": "00000002890001c30c0e08588821080214811080"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000024410045a081810100165484210200405",
+                "directory_structure": "0000000200104410e40ca056b241c4240924d064"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "000000024410045a081810100165484210200405",
+                "directory_structure": "0000000230022b065408100a09203200101003e1"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/86",
+            "type": "directory",
+            "name": "86",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/accel-config-4.1.1-4.fc40.x86_64",
+            "type": "file",
+            "name": "accel-config-4.1.1-4.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 9351,
+            "md5": "5118dbbb84d9018304138d72fe275cb4",
+            "sha1": "b05bec8dae2028ebacbbeebd942d523dbc537485",
+            "sha256": "38be554d2a93152363c0a9f95eb6427f40bdfbfac5871482fa8464ba9aa17be5",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=13aa30033391bb9c7c6aab5b3e8b8020d8b4bfdf, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "type": "file",
+            "name": "accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 243440,
+            "md5": "8a931ec2a68bc3e22b20a3c9782333f2",
+            "sha1": "b062dfc80b88457276cffc5b6d6968540446547f",
+            "sha256": "38d1a8465eb783bfccceaa90efeba710f13f56fe1b77e9610c96c74c41c8155a",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=86d665eb2f00dc3f3cc3da34c45ac2d46be9fdb0, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/<artificial>",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/abspath.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/help.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/log.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/usage.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/wrapper.c"
+                ],
+                "dwarf_included_paths": [
+                    "accfg/lib/private.h",
+                    "accfg/libaccel_config.h",
+                    "ccan/list/list.h",
+                    "usr/include/assert.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/errno.h",
+                    "usr/include/json-c/json_object.h",
+                    "usr/include/json-c/json_tokener.h",
+                    "usr/include/json-c/json_types.h",
+                    "usr/include/json-c/linkhash.h",
+                    "usr/include/json-c/printbuf.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/<built-in>",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/<built-in>",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/accel-config.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/config.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/config_attr.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/enable.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/lib/private.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/libaccel_config.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/list.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/builtin.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/builtin.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/ccan/list/list.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/abspath.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/help.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/json.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/json.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/log.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/usage.c",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/util.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/wrapper.c",
+                    "util/abspath.c",
+                    "util/filter.c",
+                    "util/filter.h",
+                    "util/help.c",
+                    "util/log.h",
+                    "util/main.c",
+                    "util/main.h",
+                    "util/parse-options.c",
+                    "util/parse-options.h",
+                    "util/strbuf.c",
+                    "util/strbuf.h",
+                    "util/usage.c",
+                    "util/util.h",
+                    "util/wrapper.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/assert.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/errno.h",
+                    "usr/include/json-c/json_object.h",
+                    "usr/include/json-c/json_tokener.h",
+                    "usr/include/json-c/json_types.h",
+                    "usr/include/json-c/linkhash.h",
+                    "usr/include/json-c/printbuf.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/<built-in>",
+                    "usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/accel-config.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/config_attr.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/config.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/enable.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/libaccel_config.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/lib/private.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/accfg/list.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/builtin.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/ccan/list/list.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/abspath.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/abspath.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/filter.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/help.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/help.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/json.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/json.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/log.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/log.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/main.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/parse-options.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/strbuf.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/usage.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/usage.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/util.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/wrapper.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/accel-config-4.1.1-4.fc40.x86_64/util/wrapper.c"
+        }
+    ]
+}

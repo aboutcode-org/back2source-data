@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "2a103cd0-540b-4a11-bb67-59a6ebc81459",
+            "created_date": "2024-06-17T14:22:27.210Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "0a52c9db-35d5-4551-a0e9-1540a3378b93",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clthreads-debugsource-2.4.2-11.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "839d1898-4c6f-4ae6-bd73-5bd3821d742b",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clthreads-debuginfo-2.4.2-11.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "9c44444f-c8ed-46a0-9981-1a9c1b754ecf",
+                    "created_date": "2024-06-17T14:22:27.212301Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "9c44444f-c8ed-46a0-9981-1a9c1b754ecf",
+                    "task_start_date": "2024-06-17T14:22:27.220732Z",
+                    "task_end_date": "2024-06-17T14:22:39.087810Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out. (read timeout=5)\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 14:22:27.22 Pipeline [d2d] starting\n2024-06-17 14:22:27.22 Step [download_missing_inputs] starting\n2024-06-17 14:22:27.22 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clthreads-debugsource-2.4.2-11.fc40.x86_64.rpm#from\n2024-06-17 14:22:33.44 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clthreads-debugsource-2.4.2-11.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 14:22:33.44 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clthreads-debuginfo-2.4.2-11.fc40.x86_64.rpm#to\n2024-06-17 14:22:39.08 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/clthreads-debuginfo-2.4.2-11.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 14:22:39.08 Pipeline failed\n",
+                    "execution_time": 11
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

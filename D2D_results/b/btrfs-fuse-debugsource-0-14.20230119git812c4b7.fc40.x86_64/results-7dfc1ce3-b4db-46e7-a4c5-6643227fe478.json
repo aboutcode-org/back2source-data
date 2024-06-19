@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "7dfc1ce3-b4db-46e7-a4c5-6643227fe478",
+            "created_date": "2024-06-17T10:47:21.581Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "5dc32272-55b8-4ed6-8369-9d04f478da5f",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfs-fuse-debuginfo-0-14.20230119git812c4b7.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "0592cb9c-ed5a-4b5f-b6d2-834dbd3104b7",
+                    "filename": "btrfs-fuse-debugsource-0-14.20230119git812c4b7.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfs-fuse-debugsource-0-14.20230119git812c4b7.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 152769,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "a363596f-2c71-489c-8014-bb32d4b81b94",
+                    "created_date": "2024-06-17T10:47:21.589414Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "a363596f-2c71-489c-8014-bb32d4b81b94",
+                    "task_start_date": "2024-06-17T10:47:21.615440Z",
+                    "task_end_date": "2024-06-17T10:47:29.806104Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out. (read timeout=5)\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 10:47:21.61 Pipeline [d2d] starting\n2024-06-17 10:47:21.62 Step [download_missing_inputs] starting\n2024-06-17 10:47:21.62 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfs-fuse-debugsource-0-14.20230119git812c4b7.fc40.x86_64.rpm#from\n2024-06-17 10:47:23.85 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfs-fuse-debuginfo-0-14.20230119git812c4b7.fc40.x86_64.rpm#to\n2024-06-17 10:47:29.79 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/btrfs-fuse-debuginfo-0-14.20230119git812c4b7.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 10:47:29.80 Pipeline failed\n",
+                    "execution_time": 8
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

@@ -1,0 +1,2449 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "a48810ff-f2fe-4d0d-956e-14f7293b30b4",
+            "created_date": "2024-06-13T22:08:04.146Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "2b8eef74-7cda-47ac-acf2-4f9bf6290b63",
+                    "filename": "argon2-debuginfo-20190702-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debuginfo-20190702-5.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 63328,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "fffc9153-52f9-442b-8e06-6bd79c59ec66",
+                    "filename": "argon2-debugsource-20190702-5.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debugsource-20190702-5.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 34780,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "77d88e5d-add0-48bf-86f4-fde18d799364",
+                    "created_date": "2024-06-13T22:08:04.154316Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "77d88e5d-add0-48bf-86f4-fde18d799364",
+                    "task_start_date": "2024-06-13T22:08:04.178833Z",
+                    "task_end_date": "2024-06-13T22:08:27.751415Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 22:08:04.18 Pipeline [d2d] starting\n2024-06-13 22:08:04.18 Step [download_missing_inputs] starting\n2024-06-13 22:08:04.18 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debugsource-20190702-5.fc40.x86_64.rpm#from\n2024-06-13 22:08:05.79 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debuginfo-20190702-5.fc40.x86_64.rpm#to\n2024-06-13 22:08:07.29 Step [download_missing_inputs] completed in 3 seconds\n2024-06-13 22:08:07.29 Step [get_inputs] starting\n2024-06-13 22:08:07.30 Step [get_inputs] completed in 0 seconds\n2024-06-13 22:08:07.31 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 22:08:07.35 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 22:08:07.36 Step [extract_archives] starting\n2024-06-13 22:08:07.44 Step [extract_archives] completed in 0 seconds\n2024-06-13 22:08:07.44 Step [collect_and_create_codebase_resources] starting\n2024-06-13 22:08:07.48 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 22:08:07.48 Step [fingerprint_codebase_directories] starting\n2024-06-13 22:08:07.49 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 22:08:07.49 Step [flag_empty_files] starting\n2024-06-13 22:08:07.49 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 22:08:07.50 Step [flag_whitespace_files] starting\n2024-06-13 22:08:07.50 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 22:08:07.51 Step [flag_ignored_resources] starting\n2024-06-13 22:08:07.51 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 22:08:07.51 Step [map_about_files] starting\n2024-06-13 22:08:07.51 Step [map_about_files] completed in 0 seconds\n2024-06-13 22:08:07.52 Step [map_checksum] starting\n2024-06-13 22:08:07.52 Mapping 2 to/ resources using sha1 against from/ codebase\n2024-06-13 22:08:07.53 Step [map_checksum] completed in 0 seconds\n2024-06-13 22:08:07.53 Step [match_archives_to_purldb] starting\n2024-06-13 22:08:07.53 PurlDB is not available. Skipping.\n2024-06-13 22:08:07.53 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 22:08:07.54 Step [find_java_packages] starting\n2024-06-13 22:08:07.54 Finding Java package for 0 .java resources.\n2024-06-13 22:08:07.55 Step [find_java_packages] completed in 0 seconds\n2024-06-13 22:08:07.55 Step [map_java_to_class] starting\n2024-06-13 22:08:07.56 Mapping 0 .class resources to .java\n2024-06-13 22:08:07.56 No .java resources to map.\n2024-06-13 22:08:07.56 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 22:08:07.57 Step [map_jar_to_source] starting\n2024-06-13 22:08:07.57 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 22:08:07.58 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 22:08:07.58 Step [map_elf] starting\n2024-06-13 22:08:07.72 Mapping 2 to/ resources using paths with 14 from/ resources.\n2024-06-13 22:08:07.72 Done building from/ resources index.\n2024-06-13 22:08:07.73 WARNING: #12 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64'\n2024-06-13 22:08:07.74 Created 13 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64'\n2024-06-13 22:08:07.74 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug'\n2024-06-13 22:08:07.76 WARNING: #10 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug'\n2024-06-13 22:08:07.76 Created 21 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug'\n2024-06-13 22:08:07.76 Step [map_elf] completed in 0 seconds\n2024-06-13 22:08:07.76 Step [map_go] starting\n2024-06-13 22:08:07.77 Mapping 0 to/ resources using paths with 14 from/ resources.\n2024-06-13 22:08:07.77 Done building from/ resources index.\n2024-06-13 22:08:07.78 Step [map_go] completed in 0 seconds\n2024-06-13 22:08:07.79 Step [match_directories_to_purldb] starting\n2024-06-13 22:08:07.79 PurlDB is not available. Skipping.\n2024-06-13 22:08:07.79 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 22:08:07.79 Step [match_resources_to_purldb] starting\n2024-06-13 22:08:07.79 PurlDB is not available. Skipping.\n2024-06-13 22:08:07.79 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 22:08:07.80 Step [map_path] starting\n2024-06-13 22:08:07.80 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 22:08:07.80 Step [map_path] completed in 0 seconds\n2024-06-13 22:08:07.81 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 22:08:07.81 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 22:08:07.82 Step [perform_house_keeping_tasks] starting\n2024-06-13 22:08:07.82 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 22:08:07.83 Step [match_purldb_resources_post_process] starting\n2024-06-13 22:08:07.83 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 22:08:07.83 0 resource processed\n2024-06-13 22:08:07.83 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 22:08:07.83 Step [remove_packages_without_resources] starting\n2024-06-13 22:08:07.84 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 22:08:07.84 Step [scan_unmapped_to_files] starting\n2024-06-13 22:08:11.16 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-13 22:08:11.17 Step [scan_mapped_from_for_files] starting\n2024-06-13 22:08:25.47 Progress: 11% (4/34) ETA: 116 seconds (1.9 minutes)\n2024-06-13 22:08:25.83 Progress: 23% (8/34) ETA: 49 seconds\n2024-06-13 22:08:25.99 Progress: 35% (12/34) ETA: 28 seconds\n2024-06-13 22:08:26.45 Progress: 47% (16/34) ETA: 17 seconds\n2024-06-13 22:08:26.85 Progress: 58% (20/34) ETA: 11 seconds\n2024-06-13 22:08:27.12 Progress: 70% (24/34) ETA: 7 seconds\n2024-06-13 22:08:27.24 Progress: 82% (28/34) ETA: 4 seconds\n2024-06-13 22:08:27.29 Progress: 94% (32/34) ETA: 1 seconds\n2024-06-13 22:08:27.72 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-13 22:08:27.72 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 22:08:27.72 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 22:08:27.73 Step [create_local_files_packages] starting\n2024-06-13 22:08:27.74 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 22:08:27.75 Pipeline completed in 24 seconds\n",
+                    "execution_time": 23
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf",
+            "type": "local-files",
+            "namespace": "cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff",
+            "name": "bde98f78-d984-49fa-9ff3-4a260ebacfcf",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+            "holder": "",
+            "declared_license_expression": "cc0-1.0 OR apache-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/fce5978b-723c-48ab-b51e-199a72606996",
+            "type": "local-files",
+            "namespace": "cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff",
+            "name": "fce5978b-723c-48ab-b51e-199a72606996",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves\nCopyright (c) 2015 Thomas Pornin",
+            "holder": "",
+            "declared_license_expression": "(cc0-1.0 OR apache-2.0) AND public-domain AND (cc0-1.0 AND public-domain)",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64",
+            "type": "directory",
+            "name": "argon2-20190702-5.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/include",
+            "type": "directory",
+            "name": "include",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/include/argon2.h",
+            "type": "file",
+            "name": "argon2.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 16767,
+            "md5": "06325a873b454bf69c95d49adf23cf98",
+            "sha1": "5a6f601928d3baab7ed9bb49ae82344e442b2368",
+            "sha256": "df20cb726a2fe6bccc736b81ea0d86219766a0d17f1794c19e048a34830ca1cc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.5,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/argon2.c",
+            "type": "file",
+            "name": "argon2.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14471,
+            "md5": "6537b7cbc010dc01cffdf11cce7af4f3",
+            "sha1": "47f2b3e7fed22fdd6d57dde06bb59356575bd92e",
+            "sha256": "72a93deebc5fd76bec0c6d300a2d92b500fb354b26babbddbc6d8b88681e663d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.23,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2",
+            "type": "directory",
+            "name": "blake2",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2b.c",
+            "type": "file",
+            "name": "blake2b.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 12510,
+            "md5": "70d9b7f5b34c1ad214113a942d34c4cf",
+            "sha1": "aac3c4487ebe5cd383b69679c2de47a5ef64b8e4",
+            "sha256": "52519ccbc1e48f489ff444091f630d05dadcc8f1ee61c5b7361e3a9618299c9a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.91,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2.h",
+            "type": "file",
+            "name": "blake2.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2865,
+            "md5": "d3d419987b925a7d49dd020e85e2bd21",
+            "sha1": "12bcaec763ac701cbf13e7128ec285ef398d956b",
+            "sha256": "3c2de197dd23179f78c57deac7b73a6049778bf651c5db57e508b2cfce5e7559",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2-impl.h",
+            "type": "file",
+            "name": "blake2-impl.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 4088,
+            "md5": "bfa8c0ec7711f5653b17ef1591646923",
+            "sha1": "81ac157b95883fccea89b7eb3c5a025ad3fb7dfa",
+            "sha256": "8ac91f1f57d94235f8de0069b7809be1deb365c3b37adb8e30423cd364aff09a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blamka-round-opt.h",
+            "type": "file",
+            "name": "blamka-round-opt.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 21361,
+            "md5": "345545387c538ee86491e41b00e25cb0",
+            "sha1": "944ecdf2299d9867224bc8b963a794b717ead763",
+            "sha256": "ba5a9c1fef492cc6ce8d5b5217d6e7cd7983de10f16762f84e284d0ed9972e3b",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.c",
+            "type": "file",
+            "name": "core.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19800,
+            "md5": "ea91e17d13de31ebc132997812879347",
+            "sha1": "f16031cf4090fe7e99323c4291216794a2cb7ae2",
+            "sha256": "0f53eb2370f8971f04fcf043b8083bf81d1530c48b2ead71c0b6c4e22a01aeec",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.43,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.h",
+            "type": "file",
+            "name": "core.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 8453,
+            "md5": "8188330fafc68c5386881b6e2221a5de",
+            "sha1": "8dac6a179aece1fb2a552ee5bd3e7034be8e00b8",
+            "sha256": "c9665623cb3d306f63b6a3effd87bcfab971c28253c77e111445e42c1523235e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.65,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.c",
+            "type": "file",
+            "name": "encoding.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 16267,
+            "md5": "9b2edda46be1b507f808fecc16083200",
+            "sha1": "2d9b6874520fe8a68e4be3421cd9f3e00e7eaa19",
+            "sha256": "e20124ec0f780f88527e79cf00825e839624ed1f469c7e231596bf070f8c7b14",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "(cc0-1.0 OR apache-2.0) AND public-domain AND (cc0-1.0 AND public-domain)",
+            "detected_license_expression_spdx": "(CC0-1.0 OR Apache-2.0) AND LicenseRef-scancode-public-domain AND (CC0-1.0 AND LicenseRef-scancode-public-domain)",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 70.0,
+                            "matcher": "2-aho",
+                            "end_line": 44,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/public-domain_bare_words.RULE",
+                            "from_file": null,
+                            "start_line": 44,
+                            "matched_text": " * should amount to Public Domain or its closest equivalent; the",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 70,
+                            "rule_identifier": "public-domain_bare_words.RULE",
+                            "license_expression": "public-domain",
+                            "spdx_license_expression": "LicenseRef-scancode-public-domain"
+                        }
+                    ],
+                    "identifier": "public_domain-3dd945ae-65df-7d90-6467-60f8ecf2eb77",
+                    "license_expression": "public-domain",
+                    "license_expression_spdx": null
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 95.0,
+                            "matcher": "2-aho",
+                            "end_line": 49,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/spdx_license_id_cc0-1.0_for_cc0-1.0.RULE",
+                            "from_file": null,
+                            "start_line": 49,
+                            "matched_text": " * This file is provided under the terms of Creative Commons CC0 1.0",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 95,
+                            "rule_identifier": "spdx_license_id_cc0-1.0_for_cc0-1.0.RULE",
+                            "license_expression": "cc0-1.0",
+                            "spdx_license_expression": "CC0-1.0"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 50,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/public-domain_256.RULE",
+                            "from_file": null,
+                            "start_line": 50,
+                            "matched_text": " * Public Domain Dedication. To the extent possible under law, the",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 100,
+                            "rule_identifier": "public-domain_256.RULE",
+                            "license_expression": "public-domain",
+                            "spdx_license_expression": "LicenseRef-scancode-public-domain"
+                        },
+                        {
+                            "score": 88.89,
+                            "matcher": "3-seq",
+                            "end_line": 52,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/public-domain_168.RULE",
+                            "from_file": null,
+                            "start_line": 50,
+                            "matched_text": " * Public Domain Dedication. To the extent possible under law, the\n * author (Thomas Pornin) has waived all copyright and related or\n * neighboring rights to this file. This work is published from: Canada.",
+                            "match_coverage": 88.89,
+                            "matched_length": 24,
+                            "rule_relevance": 100,
+                            "rule_identifier": "public-domain_168.RULE",
+                            "license_expression": "public-domain",
+                            "spdx_license_expression": "LicenseRef-scancode-public-domain"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_and_public_domain-51de2e18-165c-a6e8-59d9-559306a16de3",
+                    "license_expression": "cc0-1.0 AND public-domain",
+                    "license_expression_spdx": "CC0-1.0 AND LicenseRef-scancode-public-domain"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.27,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 55,
+                    "copyright": "Copyright (c) 2015 Thomas Pornin",
+                    "start_line": 55
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Thomas Pornin",
+                    "end_line": 55,
+                    "start_line": 55
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Thomas Pornin <pornin@bolet.org>",
+                    "end_line": 42,
+                    "start_line": 42
+                },
+                {
+                    "author": "Thomas Pornin",
+                    "end_line": 51,
+                    "start_line": 51
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/fce5978b-723c-48ab-b51e-199a72606996"
+            ],
+            "emails": [
+                {
+                    "email": "pornin@bolet.org",
+                    "end_line": 42,
+                    "start_line": 42
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.h",
+            "type": "file",
+            "name": "encoding.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2089,
+            "md5": "b376ca1e095947a3ee7c24f162476903",
+            "sha1": "35caff1088b984b7efe8408ae2ec093c9ecb8787",
+            "sha256": "42f283d12ec445cfb423ac2f1f5a5d1a7f152ce2b9363f6ec3e1d5b61cd4ee6d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 23.44,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/opt.c",
+            "type": "file",
+            "name": "opt.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10179,
+            "md5": "95974d186f1c430059acf90e14a330d0",
+            "sha1": "6d48fe76040ea42548eff36434b31f13a5234c32",
+            "sha256": "cbebf3245500fd19461cbd475ba6d44b3145538866bdf74091114af471faef74",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.6,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/run.c",
+            "type": "file",
+            "name": "run.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10565,
+            "md5": "75044d2b315fa1c4a2ef72326c16d822",
+            "sha1": "356f36ae5c89ca37056daa00f2bbdc66ce94f65d",
+            "sha256": "7d8101cb5a16b3ba7794b2c7472ba6936ca6e259dd13658ca16a385517bc5e65",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.32,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.c",
+            "type": "file",
+            "name": "thread.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1556,
+            "md5": "b90f2f105f8511767060fd7869741df4",
+            "sha1": "84f0e4c4d35b2c6ce35c9105ad730771c47b6c24",
+            "sha256": "1402085e2f54b021ea31b0d301f4b689a8b300832e2d11901502e62835185e3e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 36.07,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.h",
+            "type": "file",
+            "name": "thread.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2376,
+            "md5": "f7e7765e0f347a0735dfafdcc52f31fe",
+            "sha1": "e2a955fb464a9571a852d13658b38decf5de9db4",
+            "sha256": "9eab7f9ff356862a00a3075478dd0059344953ed79daab8b29185be2010efe78",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "cc0-1.0 OR apache-2.0",
+            "detected_license_expression_spdx": "CC0-1.0 OR Apache-2.0",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.53,
+                            "matcher": "3-seq",
+                            "end_line": 15,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/cc0-1.0_or_apache-2.0_5.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " * You may use this work under the terms of a Creative Commons CC0 1.0\n * License/Waiver or the Apache Public License 2.0, at your option. The terms of\n * these licenses can be found at:\n *\n * - CC0 1.0 Universal : http://creativecommons.org/publicdomain/zero/1.0\n * - Apache 2.0        : http://www.apache.org/licenses/LICENSE-2.0\n *\n * You should have received a copy of both of these licenses along with this\n * software. If not, they may be obtained at the above URLs.",
+                            "match_coverage": 97.53,
+                            "matched_length": 79,
+                            "rule_relevance": 100,
+                            "rule_identifier": "cc0-1.0_or_apache-2.0_5.RULE",
+                            "license_expression": "cc0-1.0 OR apache-2.0",
+                            "spdx_license_expression": "CC0-1.0 OR Apache-2.0"
+                        }
+                    ],
+                    "identifier": "cc0_1_0_or_apache_2_0-720af278-5628-f7e0-6b8b-731e5f2e98ca",
+                    "license_expression": "cc0-1.0 OR apache-2.0",
+                    "license_expression_spdx": "CC0-1.0 OR Apache-2.0"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 22.32,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2015 Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Daniel Dinu, Dmitry Khovratovich, Jean-Philippe Aumasson, and Samuel Neves",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/cd2a3501-f4e2-40db-a21a-65cccb1feae1-a48810ff/bde98f78-d984-49fa-9ff3-4a260ebacfcf"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://creativecommons.org/publicdomain/zero/1.0",
+                    "end_line": 11,
+                    "start_line": 11
+                },
+                {
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0",
+                    "end_line": 12,
+                    "start_line": 12
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000240c42cc0004a0049a0c488020a505003",
+                "directory_structure": "00000002001a4b038a0302305660603484244a44"
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000240c42cc0004a0049a0c488020a505003",
+                "directory_structure": "0000000240314040c0000211020907902604c161"
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000240c42cc0004a0049a0c488020a505003",
+                "directory_structure": "00000002983e4300485200305810210298458000"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "0000000240c42cc0004a0049a0c488020a505003",
+                "directory_structure": "000000020480004401061a022d8000899002249c"
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/bd",
+            "type": "directory",
+            "name": "bd",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz",
+            "type": "directory",
+            "name": ".dwz",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "type": "file",
+            "name": "argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".x86_64",
+            "size": 17495,
+            "md5": "f4945251b2362ee11a94f41d1a852b70",
+            "sha1": "52cdc731b8a832c166abbed1f3f8a8db828493db",
+            "sha256": "f98f984b51732c44cbb65dedfc6995cf1d77561849789abec75062b1d58e9693",
+            "sha512": "",
+            "mime_type": "application/x-object",
+            "file_type": "ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=77e7d198779fd7d9053896b88e66458b6b01254d, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_included_paths": [
+                    "include/argon2.h",
+                    "src/argon2.c",
+                    "src/blake2/blake2-impl.h",
+                    "src/blake2/blake2.h",
+                    "src/blake2/blake2b.c",
+                    "src/blake2/blamka-round-opt.h",
+                    "src/core.c",
+                    "src/core.h",
+                    "src/encoding.c",
+                    "src/encoding.h",
+                    "src/opt.c",
+                    "src/thread.c",
+                    "src/thread.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/pthread.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/emmintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/pthread.h",
+                    "usr/include/stdint.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/emmintrin.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/<built-in>"
+                ]
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "type": "file",
+            "name": "argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 140568,
+            "md5": "d40bc8c869aa24a73b151b511b62fec4",
+            "sha1": "1917b370a35aef63f08f0ea9e3d85c7d16faff17",
+            "sha256": "50b444fe541de13cad3ab5ff1b06c3cc5a90e7ad730de3ec871f19f4ebdc809e",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=bd466f0299832179e0f34910f8329fc4c0c54a4c, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/<artificial>",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/argon2.c",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2b.c",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.c",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.c",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/opt.c",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/run.c",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.c"
+                ],
+                "dwarf_included_paths": [
+                    "include/argon2.h",
+                    "src/argon2.c",
+                    "src/blake2/blake2-impl.h",
+                    "src/blake2/blake2.h",
+                    "src/blake2/blake2b.c",
+                    "src/blake2/blamka-round-opt.h",
+                    "src/core.c",
+                    "src/core.h",
+                    "src/encoding.c",
+                    "src/encoding.h",
+                    "src/opt.c",
+                    "src/run.c",
+                    "src/thread.c",
+                    "src/thread.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64",
+                    "usr/src/debug/argon2-20190702-5.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/clock_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/time.h"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/include/argon2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/include/argon2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/argon2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/argon2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/argon2.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2b.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2b.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2b.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2-impl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blake2-impl.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blamka-round-opt.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/blake2/blamka-round-opt.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/core.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/encoding.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/opt.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/opt.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/opt.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/run.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/run.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/argon2-20190702-5.fc40.x86_64/src/thread.h"
+        }
+    ]
+}

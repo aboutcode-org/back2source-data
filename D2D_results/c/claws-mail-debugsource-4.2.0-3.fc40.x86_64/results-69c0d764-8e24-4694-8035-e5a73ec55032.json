@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "69c0d764-8e24-4694-8035-e5a73ec55032",
+            "created_date": "2024-06-17T15:47:32.993Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "18cc0039-4f5f-484f-a48f-df10c6c8d41b",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/claws-mail-debugsource-4.2.0-3.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "8d5cd943-12ca-4e0a-97eb-26cbd5b81ad5",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/claws-mail-debuginfo-4.2.0-3.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "8df15774-51e5-4770-90ee-fdee3ba63361",
+                    "created_date": "2024-06-17T15:47:32.995405Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "8df15774-51e5-4770-90ee-fdee3ba63361",
+                    "task_start_date": "2024-06-17T15:47:33.004345Z",
+                    "task_end_date": "2024-06-17T15:47:45.177261Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:47:33.00 Pipeline [d2d] starting\n2024-06-17 15:47:33.00 Step [download_missing_inputs] starting\n2024-06-17 15:47:33.01 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/claws-mail-debugsource-4.2.0-3.fc40.x86_64.rpm#from\n2024-06-17 15:47:39.23 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/claws-mail-debugsource-4.2.0-3.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:47:39.23 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/claws-mail-debuginfo-4.2.0-3.fc40.x86_64.rpm#to\n2024-06-17 15:47:45.16 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/claws-mail-debuginfo-4.2.0-3.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:47:45.17 Pipeline failed\n",
+                    "execution_time": 12
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

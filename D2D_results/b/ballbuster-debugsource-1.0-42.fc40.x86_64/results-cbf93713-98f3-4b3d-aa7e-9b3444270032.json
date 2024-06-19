@@ -1,0 +1,2868 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "cbf93713-98f3-4b3d-aa7e-9b3444270032",
+            "created_date": "2024-06-17T11:47:54.555Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "e234c1cd-9d7e-4d26-b209-65ffdbb1aa6d",
+                    "filename": "ballbuster-debuginfo-1.0-42.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/ballbuster-debuginfo-1.0-42.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 397447,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "fd6c4581-71ab-48a7-b964-6069817361da",
+                    "filename": "ballbuster-debugsource-1.0-42.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/ballbuster-debugsource-1.0-42.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 40383,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "4cbca768-667d-457c-b0a4-c2278c1c6b7c",
+                    "created_date": "2024-06-17T11:47:54.563696Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "4cbca768-667d-457c-b0a4-c2278c1c6b7c",
+                    "task_start_date": "2024-06-17T11:47:54.588313Z",
+                    "task_end_date": "2024-06-17T11:48:25.224512Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 11:47:54.59 Pipeline [d2d] starting\n2024-06-17 11:47:54.59 Step [download_missing_inputs] starting\n2024-06-17 11:47:54.59 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/ballbuster-debugsource-1.0-42.fc40.x86_64.rpm#from\n2024-06-17 11:47:57.90 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/ballbuster-debuginfo-1.0-42.fc40.x86_64.rpm#to\n2024-06-17 11:48:01.84 Step [download_missing_inputs] completed in 7 seconds\n2024-06-17 11:48:01.84 Step [get_inputs] starting\n2024-06-17 11:48:01.85 Step [get_inputs] completed in 0 seconds\n2024-06-17 11:48:01.85 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 11:48:01.92 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 11:48:01.92 Step [extract_archives] starting\n2024-06-17 11:48:02.00 Step [extract_archives] completed in 0 seconds\n2024-06-17 11:48:02.00 Step [collect_and_create_codebase_resources] starting\n2024-06-17 11:48:02.04 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 11:48:02.04 Step [fingerprint_codebase_directories] starting\n2024-06-17 11:48:02.05 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 11:48:02.06 Step [flag_empty_files] starting\n2024-06-17 11:48:02.06 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 11:48:02.06 Step [flag_whitespace_files] starting\n2024-06-17 11:48:02.06 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 11:48:02.07 Step [flag_ignored_resources] starting\n2024-06-17 11:48:02.07 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 11:48:02.07 Step [map_about_files] starting\n2024-06-17 11:48:02.07 Step [map_about_files] completed in 0 seconds\n2024-06-17 11:48:02.07 Step [map_checksum] starting\n2024-06-17 11:48:02.08 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 11:48:02.09 Step [map_checksum] completed in 0 seconds\n2024-06-17 11:48:02.09 Step [match_archives_to_purldb] starting\n2024-06-17 11:48:02.09 PurlDB is not available. Skipping.\n2024-06-17 11:48:02.09 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 11:48:02.10 Step [find_java_packages] starting\n2024-06-17 11:48:02.10 Finding Java package for 0 .java resources.\n2024-06-17 11:48:02.11 Step [find_java_packages] completed in 0 seconds\n2024-06-17 11:48:02.11 Step [map_java_to_class] starting\n2024-06-17 11:48:02.12 Mapping 0 .class resources to .java\n2024-06-17 11:48:02.12 No .java resources to map.\n2024-06-17 11:48:02.13 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 11:48:02.13 Step [map_jar_to_source] starting\n2024-06-17 11:48:02.14 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 11:48:02.14 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 11:48:02.15 Step [map_elf] starting\n2024-06-17 11:48:03.53 Mapping 1 to/ resources using paths with 23 from/ resources.\n2024-06-17 11:48:03.53 Done building from/ resources index.\n2024-06-17 11:48:03.54 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug'\n2024-06-17 11:48:03.56 WARNING: #144 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug'\n2024-06-17 11:48:03.56 Created 23 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug'\n2024-06-17 11:48:03.56 Step [map_elf] completed in 1 seconds\n2024-06-17 11:48:03.57 Step [map_go] starting\n2024-06-17 11:48:03.57 Mapping 0 to/ resources using paths with 23 from/ resources.\n2024-06-17 11:48:03.58 Done building from/ resources index.\n2024-06-17 11:48:03.58 Step [map_go] completed in 0 seconds\n2024-06-17 11:48:03.58 Step [match_directories_to_purldb] starting\n2024-06-17 11:48:03.58 PurlDB is not available. Skipping.\n2024-06-17 11:48:03.58 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 11:48:03.59 Step [match_resources_to_purldb] starting\n2024-06-17 11:48:03.59 PurlDB is not available. Skipping.\n2024-06-17 11:48:03.59 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 11:48:03.59 Step [map_path] starting\n2024-06-17 11:48:03.59 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 11:48:03.60 Step [map_path] completed in 0 seconds\n2024-06-17 11:48:03.60 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 11:48:03.61 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 11:48:03.61 Step [perform_house_keeping_tasks] starting\n2024-06-17 11:48:03.62 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 11:48:03.62 Step [match_purldb_resources_post_process] starting\n2024-06-17 11:48:03.62 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 11:48:03.62 0 resource processed\n2024-06-17 11:48:03.63 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 11:48:03.63 Step [remove_packages_without_resources] starting\n2024-06-17 11:48:03.63 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 11:48:03.63 Step [scan_unmapped_to_files] starting\n2024-06-17 11:48:07.77 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-17 11:48:07.77 Step [scan_mapped_from_for_files] starting\n2024-06-17 11:48:21.19 Progress: 13% (3/23) ETA: 90 seconds (1.5 minutes)\n2024-06-17 11:48:21.49 Progress: 26% (6/23) ETA: 39 seconds\n2024-06-17 11:48:21.52 Progress: 39% (9/23) ETA: 21 seconds\n2024-06-17 11:48:21.55 Progress: 52% (12/23) ETA: 13 seconds\n2024-06-17 11:48:21.59 Progress: 65% (15/23) ETA: 7 seconds\n2024-06-17 11:48:21.72 Progress: 78% (18/23) ETA: 4 seconds\n2024-06-17 11:48:21.95 Progress: 91% (21/23) ETA: 1 seconds\n2024-06-17 11:48:25.19 Step [scan_mapped_from_for_files] completed in 17 seconds\n2024-06-17 11:48:25.20 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 11:48:25.20 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 11:48:25.20 Step [create_local_files_packages] starting\n2024-06-17 11:48:25.21 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 11:48:25.22 Pipeline completed in 31 seconds\n",
+                    "execution_time": 30
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5",
+            "type": "local-files",
+            "namespace": "c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713",
+            "name": "fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2004 PatrickAvella\nCopyright (c) 2003 The ClanLib Team\nPatrick Avella (c) 2004\nErik Ylvisaker (c) 2004\nCopyright 2004 Patrick Avella",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64",
+            "type": "directory",
+            "name": "ballbuster-1.0-42.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ball.cpp",
+            "type": "file",
+            "name": "ball.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 4401,
+            "md5": "5b970970000cf0452a70f9873e432e45",
+            "sha1": "1c311bbbd216037542d0865138f930184fbb20a7",
+            "sha256": "06dfec1d305c99d4ef266bd0f3b9e83321147759ff395c7ae3a9ef881cc15180",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 20.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ball.h",
+            "type": "file",
+            "name": "ball.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1550,
+            "md5": "33bf3cb2c57a1cc142e3595be3b2d236",
+            "sha1": "8aab3cab9efa4f987c75668a41bb1b360d9a9179",
+            "sha256": "dbd08649a72a7af73a4338218d4bf96625cfe0045bfc4d42d1279d0974d3ec6f",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 58.47,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/BBUtility.cpp",
+            "type": "file",
+            "name": "BBUtility.cpp",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 3007,
+            "md5": "d101b6fe5e77acb73bf909cfa6997108",
+            "sha1": "d7227b4c2e5025ce669a8f0615d9f5ac3b8c408a",
+            "sha256": "fa9a6e8633f923be80d1d372d64e8c6ea5b98b8ecc3ec817d8f6ffe43ee6691c",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/BBUtility.h",
+            "type": "file",
+            "name": "BBUtility.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 852,
+            "md5": "cf925d02410b155ff85ada7b7ca31ae0",
+            "sha1": "84f175366d3be0582175181f072d0fb8b321c8e2",
+            "sha256": "26a84ce496a722b63ff7d2e17f6cd93027761d981c124be3f1ea5844806637c5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/block.cpp",
+            "type": "file",
+            "name": "block.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2135,
+            "md5": "08a82e3182da1791d7b423c5bf0183b3",
+            "sha1": "c055e408ec168588f788e691e71bb6ad60a486cb",
+            "sha256": "484b6b2960f49815022b7ba267cf8358e19ae9a0495cd3c88a8a81da940ae530",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 38.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/block.h",
+            "type": "file",
+            "name": "block.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1937,
+            "md5": "efd199fbbce07576d6e8cda8c4b480f5",
+            "sha1": "0bc1b55c3545c42dcffda42f5a7da0cfa75631b0",
+            "sha256": "aa21bcc23bc2e257d35f5e9d382023500b68a6a28cabd99729f1f5900b5a01f9",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 42.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/blockpart.cpp",
+            "type": "file",
+            "name": "blockpart.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 1985,
+            "md5": "cb3d06ceb2aef9b15bcc92e64c37a574",
+            "sha1": "af74b8bf720e55ca7bd375fb5ac3e116970d5d4b",
+            "sha256": "2f9f9aa2a4fac052d08d1a92d95920b34e8f371823bc4a15d6d586f1410733f0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 41.15,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/blockpart.h",
+            "type": "file",
+            "name": "blockpart.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1751,
+            "md5": "e5e41292f62cd968199f3f744f171598",
+            "sha1": "393f91c26698824888fd0875ef7ec54f4b180bc5",
+            "sha256": "c06af463a2d28602c65142b6dcd38f313e90031eea9e40d1ad3beaf303404008",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 46.93,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CImage.cpp",
+            "type": "file",
+            "name": "CImage.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 7507,
+            "md5": "40f3edfa345da8fdd385ebd8e0df0523",
+            "sha1": "aee9e3d36028e0b45ef63619bdf28b42d88eb9be",
+            "sha256": "2159bf4f54e1f1a24d638804c95f71ee619e556867b50c0da026d0bd1b3e95c5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.59,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CImage.h",
+            "type": "file",
+            "name": "CImage.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2017,
+            "md5": "219fe99ee6d9eb644738bac883d94614",
+            "sha1": "c43a3d3fa13d37a06abb37fc4e1eb28db6c97971",
+            "sha256": "37ac839d96b1874579e8934bcb7bd2cc40a17fb32bbb5020df26b5e3dd836857",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 46.93,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CSound.cpp",
+            "type": "file",
+            "name": "CSound.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 2408,
+            "md5": "608084d0a24f8146c6fa3dfcf9813981",
+            "sha1": "d607cd802802eb6205d40dcaa4e0d7f275c89146",
+            "sha256": "867d4b7b7fe0bdb7c1f3123e140cb0a5b28e52178052e87a7271a7af087a34f7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 34.19,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CSound.h",
+            "type": "file",
+            "name": "CSound.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1435,
+            "md5": "946cf6ad9e81a77c4cb732b100f48ba1",
+            "sha1": "229ecb535cd492c08345eca0667e370ad571acc0",
+            "sha256": "d9140f0f82ee34806f038e75c953389f63f1004df59960b9ef1d4f2daf511d01",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 62.21,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/flash.cpp",
+            "type": "file",
+            "name": "flash.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 1633,
+            "md5": "42a76278b0264ec28eab3f5531d3f246",
+            "sha1": "292c38b5c5996ecda6b44556eabe3e64fdc87e30",
+            "sha256": "7da2d071148375bc83a1ae88be5136f0201d01e05967aa3b3edb24cd5255e8b0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 50.95,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/flash.h",
+            "type": "file",
+            "name": "flash.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1376,
+            "md5": "cc9e61f73eb71910ee20857001599709",
+            "sha1": "fc358ae78ec3b103d59bb5c43d0b3dd224cab4fb",
+            "sha256": "661c98f8e49972daf395a7f6d2dae6b36893a8af85c9a655fa35677000eed9e8",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 62.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/headers.h",
+            "type": "file",
+            "name": "headers.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1612,
+            "md5": "99727138de4248a1c0efcc0f90f124af",
+            "sha1": "818ae24603b2f17c24c81934da8dbd0c82c47724",
+            "sha256": "03bc45b8853c428a83414237ab4c19c4be40562ab97fbe2f79951b6c358e5587",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 53.23,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/Highscores.cpp",
+            "type": "file",
+            "name": "Highscores.cpp",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 929,
+            "md5": "b9bfa4dd32c6d7c9fc7654c7a9455f70",
+            "sha1": "bd086bca9ca55bc945df9af36b0c4689f3166416",
+            "sha256": "33d2d3c0119411d176bbec9ac933f66b600156962da4af7b806ff96b6a9256ed",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/Highscores.h",
+            "type": "file",
+            "name": "Highscores.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 169,
+            "md5": "3c3189e61d7bacd136d45f96781a71b7",
+            "sha1": "675993099813ad3aeae7b2affe834bd9cb5acd9e",
+            "sha256": "a659fa83be3340820801a30486877945b49213f58b81a7654343e2ed75862ebd",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/main.cpp",
+            "type": "file",
+            "name": "main.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 79585,
+            "md5": "0f4730a908c0f7179b29a9f790b97e9d",
+            "sha1": "2d71aa43bc1a837d88f91c4b9f8d35ddc86dd140",
+            "sha256": "1db9e28606e99e9302f372871f5a55e734c3f4c27144fa0ae549689dbaece722",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.11,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                },
+                {
+                    "end_line": 2961,
+                    "copyright": "Patrick Avella (c) 2004",
+                    "start_line": 2961
+                },
+                {
+                    "end_line": 2962,
+                    "copyright": "Erik Ylvisaker (c) 2004",
+                    "start_line": 2962
+                },
+                {
+                    "end_line": 3294,
+                    "copyright": "Copyright 2004 Patrick Avella",
+                    "start_line": 3294
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                },
+                {
+                    "holder": "Patrick Avella",
+                    "end_line": 2961,
+                    "start_line": 2961
+                },
+                {
+                    "holder": "Erik Ylvisaker",
+                    "end_line": 2962,
+                    "start_line": 2962
+                },
+                {
+                    "holder": "Patrick Avella",
+                    "end_line": 3294,
+                    "start_line": 3294
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/main.h",
+            "type": "file",
+            "name": "main.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 5910,
+            "md5": "64214a5e0ddb379c16e8cf86cb31200c",
+            "sha1": "96a29dd2f1cf2526ad304a6678645aa7445dfeb6",
+            "sha256": "7cd2f641d5975db2756377e0da67dc81dfc7d230ca251a1fff14034378a34da8",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 16.51,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/powerup.cpp",
+            "type": "file",
+            "name": "powerup.cpp",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 4325,
+            "md5": "52c79f52b5df7d67aeca01d46c12ff06",
+            "sha1": "8ab93d48372d5155bf8a56ba96c8633bc596fd70",
+            "sha256": "869b25261f043fc35b63f068fe8138c0ad98bd42cf06cce8dc08506b0fa64066",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 19.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/powerup.h",
+            "type": "file",
+            "name": "powerup.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2615,
+            "md5": "d8d15d355ac4883e1e09e788a2d44ff0",
+            "sha1": "71d0a9094558c7cf9ca1ef81d39e385e60c43df6",
+            "sha256": "1ce65c50cbb4256f8bd77efd34bb5ece185bcd48998f6b84135e19e5cfe7b6d3",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 96.4,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_801.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": "    Ball: Buster is free software; you can redistribute it and/or modify\r\n    it under the terms of the GNU General Public License as published by\r\n    the Free Software Foundation; either version 2 of the License, or\r\n    (at your option) any later version.\r\n\r\n    Ball: Buster is distributed in the hope that it will be useful,\r\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n    GNU General Public License for more details.\r\n\r\n    You should have received a copy of the GNU General Public License\r\n    along with Ball: Buster; if not, write to the Free Software\r\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 107,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_801.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-11ef5a7c-ce1a-63cf-b5ed-140385aa3997",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 34.97,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2004 PatrickAvella",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 23,
+                    "copyright": "Copyright (c) 2003 The ClanLib Team",
+                    "start_line": 23
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "PatrickAvella",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "The ClanLib Team",
+                    "end_line": 23,
+                    "start_line": 23
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/c538d049-3108-4f5e-a92e-ffb66291ea46-cbf93713/fb0c8aa1-8e20-46d3-ae0f-69572b0b8cd5"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://clanlib.org/",
+                    "end_line": 21,
+                    "start_line": 21
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ScoreByte.cpp",
+            "type": "file",
+            "name": "ScoreByte.cpp",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".cpp",
+            "size": 443,
+            "md5": "4966bc757d2ebc0ec847542bb3d2cdfe",
+            "sha1": "c8ab65f6b3fee47aa02cb0da7ba3670cefe804ec",
+            "sha256": "1c5165c1dbdb6f7af59492dd1f1ec6195d94deef9e3400d6df27f0f6d77d342c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C++",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ScoreByte.h",
+            "type": "file",
+            "name": "ScoreByte.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 586,
+            "md5": "4cb56e7ba04e5bd039a4cf964b448648",
+            "sha1": "f59ec71614227eceee661a207fca25f62674207f",
+            "sha256": "aa04d785753ba6f95faee6c28ec604503e538f7930cf3fe0b7535b55f798b6df",
+            "sha512": "",
+            "mime_type": "text/x-c++",
+            "file_type": "C++ source, ASCII text, with CRLF, LF line terminators",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/61",
+            "type": "directory",
+            "name": "61",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "type": "file",
+            "name": "ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 1367056,
+            "md5": "3c02b3271facce8337117eaeb599db20",
+            "sha1": "2f50abeb9098bcdb5681bfb6b1bd18c2de58130b",
+            "sha256": "2d8947cc960356ea978b5b2cbc719a078e0059807b7e407eee774c73b2137e3f",
+            "sha512": "",
+            "mime_type": "application/x-executable",
+            "file_type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=61956c2e912579685e9bb143f5da6b7952604d73, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 76,
+                    "copyright": "(c) 2004 CBall Buster",
+                    "start_line": 75
+                },
+                {
+                    "end_line": 77,
+                    "copyright": "(c) 2004 Because Breaking Stuff",
+                    "start_line": 76
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "CBall Buster",
+                    "end_line": 76,
+                    "start_line": 76
+                },
+                {
+                    "holder": "Because Breaking Stuff",
+                    "end_line": 77,
+                    "start_line": 77
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/<artificial>",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ball.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/blockpart.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/flash.cpp"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/ClanLib-1.0/ClanLib/Application/clanapp.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/IOData/inputsource_provider.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/matrix4x4.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/origin.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/point.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/quad.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/rect.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/size.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Resources/resource_manager.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/mutex.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/mutexsharedptr.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/setupcore.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/sharedptr.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/system.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/color.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/display.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/display_mode.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/display_window.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/font.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/frameratecounter.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/gradient.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/input_context.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/input_device.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/input_event.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/keyboard.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/mouse.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/pixel_buffer.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/pixel_format.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/pixel_format_type.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/setupdisplay.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/sprite.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/surface.h",
+                    "usr/include/ClanLib-1.0/ClanLib/GL/setupgl.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/signal.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/signal_v0.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/signal_v1.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot_generic.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot_v0.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot_v1.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/setupsound.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/soundbuffer.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/soundbuffer_session.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/soundoutput.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Vorbis/setupvorbis.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocated_ptr.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/list.tcc",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/math.h",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/<built-in>",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/BBUtility.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/BBUtility.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CImage.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CImage.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CSound.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CSound.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/Highscores.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/Highscores.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ScoreByte.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ScoreByte.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ball.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/block.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/block.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/blockpart.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/flash.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/headers.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/main.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/main.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/powerup.cpp",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/powerup.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/ClanLib-1.0/ClanLib/Application/clanapp.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/IOData/inputsource_provider.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/matrix4x4.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/origin.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/point.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/quad.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/rect.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Math/size.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/Resources/resource_manager.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/mutex.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/mutexsharedptr.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/setupcore.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/sharedptr.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Core/System/system.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/color.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/display.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/display_mode.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/display_window.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/font.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/frameratecounter.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/gradient.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/input_context.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/input_device.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/input_event.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/keyboard.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/mouse.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/pixel_buffer.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/pixel_format.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/pixel_format_type.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/setupdisplay.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/sprite.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Display/surface.h",
+                    "usr/include/ClanLib-1.0/ClanLib/GL/setupgl.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/signal.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/signal_v0.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/signal_v1.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot_generic.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot_v0.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Signals/slot_v1.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/setupsound.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/soundbuffer.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/soundbuffer_session.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Sound/soundoutput.h",
+                    "usr/include/ClanLib-1.0/ClanLib/Vorbis/setupvorbis.h",
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/pthreadtypes.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-bsearch.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/stdlib.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_mutex.h",
+                    "usr/include/bits/thread-shared-types.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__FILE.h",
+                    "usr/include/bits/types/__fpos_t.h",
+                    "usr/include/bits/types/__mbstate_t.h",
+                    "usr/include/bits/types/mbstate_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/wint_t.h",
+                    "usr/include/bits/wchar2.h",
+                    "usr/include/bits/wctype-wchar.h",
+                    "usr/include/c++/14/bits/alloc_traits.h",
+                    "usr/include/c++/14/bits/allocated_ptr.h",
+                    "usr/include/c++/14/bits/allocator.h",
+                    "usr/include/c++/14/bits/basic_ios.h",
+                    "usr/include/c++/14/bits/basic_ios.tcc",
+                    "usr/include/c++/14/bits/basic_string.h",
+                    "usr/include/c++/14/bits/basic_string.tcc",
+                    "usr/include/c++/14/bits/char_traits.h",
+                    "usr/include/c++/14/bits/charconv.h",
+                    "usr/include/c++/14/bits/cpp_type_traits.h",
+                    "usr/include/c++/14/bits/exception_ptr.h",
+                    "usr/include/c++/14/bits/fstream.tcc",
+                    "usr/include/c++/14/bits/functexcept.h",
+                    "usr/include/c++/14/bits/ios_base.h",
+                    "usr/include/c++/14/bits/list.tcc",
+                    "usr/include/c++/14/bits/locale_classes.h",
+                    "usr/include/c++/14/bits/locale_facets.h",
+                    "usr/include/c++/14/bits/memory_resource.h",
+                    "usr/include/c++/14/bits/new_allocator.h",
+                    "usr/include/c++/14/bits/ostream.tcc",
+                    "usr/include/c++/14/bits/ostream_insert.h",
+                    "usr/include/c++/14/bits/postypes.h",
+                    "usr/include/c++/14/bits/predefined_ops.h",
+                    "usr/include/c++/14/bits/ptr_traits.h",
+                    "usr/include/c++/14/bits/std_abs.h",
+                    "usr/include/c++/14/bits/stl_algobase.h",
+                    "usr/include/c++/14/bits/stl_construct.h",
+                    "usr/include/c++/14/bits/stl_function.h",
+                    "usr/include/c++/14/bits/stl_iterator.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_funcs.h",
+                    "usr/include/c++/14/bits/stl_iterator_base_types.h",
+                    "usr/include/c++/14/bits/stl_list.h",
+                    "usr/include/c++/14/bits/stl_uninitialized.h",
+                    "usr/include/c++/14/bits/stl_vector.h",
+                    "usr/include/c++/14/bits/streambuf.tcc",
+                    "usr/include/c++/14/bits/stringfwd.h",
+                    "usr/include/c++/14/bits/vector.tcc",
+                    "usr/include/c++/14/clocale",
+                    "usr/include/c++/14/cmath",
+                    "usr/include/c++/14/cstddef",
+                    "usr/include/c++/14/cstdio",
+                    "usr/include/c++/14/cstdlib",
+                    "usr/include/c++/14/cstring",
+                    "usr/include/c++/14/cwchar",
+                    "usr/include/c++/14/cwctype",
+                    "usr/include/c++/14/debug/debug.h",
+                    "usr/include/c++/14/ext/aligned_buffer.h",
+                    "usr/include/c++/14/ext/alloc_traits.h",
+                    "usr/include/c++/14/fstream",
+                    "usr/include/c++/14/functional",
+                    "usr/include/c++/14/initializer_list",
+                    "usr/include/c++/14/iosfwd",
+                    "usr/include/c++/14/iostream",
+                    "usr/include/c++/14/istream",
+                    "usr/include/c++/14/math.h",
+                    "usr/include/c++/14/new",
+                    "usr/include/c++/14/ostream",
+                    "usr/include/c++/14/pstl/execution_defs.h",
+                    "usr/include/c++/14/streambuf",
+                    "usr/include/c++/14/string_view",
+                    "usr/include/c++/14/system_error",
+                    "usr/include/c++/14/type_traits",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h",
+                    "usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h",
+                    "usr/include/locale.h",
+                    "usr/include/math.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/wchar.h",
+                    "usr/include/wctype.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/ballbuster-1.0-42.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ball.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ball.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/BBUtility.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/BBUtility.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/block.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/block.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/blockpart.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/blockpart.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CImage.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CImage.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CSound.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/CSound.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/flash.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/flash.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/headers.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/Highscores.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/Highscores.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/main.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/main.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/powerup.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/powerup.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ScoreByte.cpp"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/ballbuster-1.0-42.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/ballbuster-1.0-42.fc40.x86_64/ScoreByte.h"
+        }
+    ]
+}

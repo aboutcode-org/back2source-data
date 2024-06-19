@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "008e3a75-ebf6-42a3-be78-edcb8fac5b83",
+            "created_date": "2024-06-14T07:20:40.307Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "4295ccf6-66b6-4e43-8422-69dc9e2b768a",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-calendar-debuginfo-24.02.1-1.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "3e385f61-ce3f-4104-9074-55d8a7758ac2",
+                    "filename": "akonadi-calendar-debugsource-24.02.1-1.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-calendar-debugsource-24.02.1-1.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 198147,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "9b11b72d-02f9-4fc1-9d40-45cf5b67738b",
+                    "created_date": "2024-06-14T07:20:40.315005Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "9b11b72d-02f9-4fc1-9d40-45cf5b67738b",
+                    "task_start_date": "2024-06-14T07:20:40.341889Z",
+                    "task_end_date": "2024-06-14T07:20:49.529935Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-14 07:20:40.34 Pipeline [d2d] starting\n2024-06-14 07:20:40.34 Step [download_missing_inputs] starting\n2024-06-14 07:20:40.35 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-calendar-debugsource-24.02.1-1.fc40.x86_64.rpm#from\n2024-06-14 07:20:43.35 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-calendar-debuginfo-24.02.1-1.fc40.x86_64.rpm#to\n2024-06-14 07:20:49.52 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/akonadi-calendar-debuginfo-24.02.1-1.fc40.x86_64.rpm#to could not be fetched.\n2024-06-14 07:20:49.52 Pipeline failed\n",
+                    "execution_time": 9
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

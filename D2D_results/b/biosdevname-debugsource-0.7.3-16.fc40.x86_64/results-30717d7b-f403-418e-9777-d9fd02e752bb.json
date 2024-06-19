@@ -1,0 +1,3296 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "30717d7b-f403-418e-9777-d9fd02e752bb",
+            "created_date": "2024-06-17T11:32:16.153Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "f016efa0-acb5-461e-9746-c70be776429d",
+                    "filename": "biosdevname-debuginfo-0.7.3-16.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biosdevname-debuginfo-0.7.3-16.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 70331,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "97a3ddf6-567b-4928-a7ca-0768689479ae",
+                    "filename": "biosdevname-debugsource-0.7.3-16.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biosdevname-debugsource-0.7.3-16.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 42784,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "5420fd15-2eed-4fc7-a38d-d256d266f791",
+                    "created_date": "2024-06-17T11:32:16.161411Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "5420fd15-2eed-4fc7-a38d-d256d266f791",
+                    "task_start_date": "2024-06-17T11:32:16.185554Z",
+                    "task_end_date": "2024-06-17T11:32:40.739673Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-17 11:32:16.18 Pipeline [d2d] starting\n2024-06-17 11:32:16.19 Step [download_missing_inputs] starting\n2024-06-17 11:32:16.19 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biosdevname-debugsource-0.7.3-16.fc40.x86_64.rpm#from\n2024-06-17 11:32:18.42 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biosdevname-debuginfo-0.7.3-16.fc40.x86_64.rpm#to\n2024-06-17 11:32:22.09 Step [download_missing_inputs] completed in 6 seconds\n2024-06-17 11:32:22.10 Step [get_inputs] starting\n2024-06-17 11:32:22.10 Step [get_inputs] completed in 0 seconds\n2024-06-17 11:32:22.11 Step [extract_inputs_to_codebase_directory] starting\n2024-06-17 11:32:22.14 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-17 11:32:22.15 Step [extract_archives] starting\n2024-06-17 11:32:22.25 Step [extract_archives] completed in 0 seconds\n2024-06-17 11:32:22.26 Step [collect_and_create_codebase_resources] starting\n2024-06-17 11:32:22.29 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-17 11:32:22.30 Step [fingerprint_codebase_directories] starting\n2024-06-17 11:32:22.31 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-17 11:32:22.31 Step [flag_empty_files] starting\n2024-06-17 11:32:22.31 Step [flag_empty_files] completed in 0 seconds\n2024-06-17 11:32:22.31 Step [flag_whitespace_files] starting\n2024-06-17 11:32:22.32 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-17 11:32:22.32 Step [flag_ignored_resources] starting\n2024-06-17 11:32:22.32 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-17 11:32:22.32 Step [map_about_files] starting\n2024-06-17 11:32:22.32 Step [map_about_files] completed in 0 seconds\n2024-06-17 11:32:22.32 Step [map_checksum] starting\n2024-06-17 11:32:22.33 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-17 11:32:22.33 Step [map_checksum] completed in 0 seconds\n2024-06-17 11:32:22.33 Step [match_archives_to_purldb] starting\n2024-06-17 11:32:22.33 PurlDB is not available. Skipping.\n2024-06-17 11:32:22.33 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-17 11:32:22.34 Step [find_java_packages] starting\n2024-06-17 11:32:22.34 Finding Java package for 0 .java resources.\n2024-06-17 11:32:22.34 Step [find_java_packages] completed in 0 seconds\n2024-06-17 11:32:22.34 Step [map_java_to_class] starting\n2024-06-17 11:32:22.35 Mapping 0 .class resources to .java\n2024-06-17 11:32:22.35 No .java resources to map.\n2024-06-17 11:32:22.35 Step [map_java_to_class] completed in 0 seconds\n2024-06-17 11:32:22.35 Step [map_jar_to_source] starting\n2024-06-17 11:32:22.35 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-17 11:32:22.36 Step [map_jar_to_source] completed in 0 seconds\n2024-06-17 11:32:22.36 Step [map_elf] starting\n2024-06-17 11:32:22.65 Mapping 1 to/ resources using paths with 26 from/ resources.\n2024-06-17 11:32:22.65 Done building from/ resources index.\n2024-06-17 11:32:22.66 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug'\n2024-06-17 11:32:22.69 WARNING: #35 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug'\n2024-06-17 11:32:22.69 Created 37 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug'\n2024-06-17 11:32:22.69 Step [map_elf] completed in 0 seconds\n2024-06-17 11:32:22.70 Step [map_go] starting\n2024-06-17 11:32:22.70 Mapping 0 to/ resources using paths with 26 from/ resources.\n2024-06-17 11:32:22.71 Done building from/ resources index.\n2024-06-17 11:32:22.71 Step [map_go] completed in 0 seconds\n2024-06-17 11:32:22.71 Step [match_directories_to_purldb] starting\n2024-06-17 11:32:22.71 PurlDB is not available. Skipping.\n2024-06-17 11:32:22.72 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-17 11:32:22.72 Step [match_resources_to_purldb] starting\n2024-06-17 11:32:22.72 PurlDB is not available. Skipping.\n2024-06-17 11:32:22.72 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-17 11:32:22.72 Step [map_path] starting\n2024-06-17 11:32:22.72 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-17 11:32:22.73 Step [map_path] completed in 0 seconds\n2024-06-17 11:32:22.73 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-17 11:32:22.74 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-17 11:32:22.74 Step [perform_house_keeping_tasks] starting\n2024-06-17 11:32:22.75 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-17 11:32:22.75 Step [match_purldb_resources_post_process] starting\n2024-06-17 11:32:22.75 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-17 11:32:22.75 0 resource processed\n2024-06-17 11:32:22.75 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-17 11:32:22.76 Step [remove_packages_without_resources] starting\n2024-06-17 11:32:22.76 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-17 11:32:22.76 Step [scan_unmapped_to_files] starting\n2024-06-17 11:32:25.48 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-17 11:32:25.48 Step [scan_mapped_from_for_files] starting\n2024-06-17 11:32:38.15 Progress: 10% (4/37) ETA: 114 seconds (1.9 minutes)\n2024-06-17 11:32:38.77 Progress: 21% (8/37) ETA: 50 seconds\n2024-06-17 11:32:39.04 Progress: 32% (12/37) ETA: 29 seconds\n2024-06-17 11:32:39.16 Progress: 43% (16/37) ETA: 18 seconds\n2024-06-17 11:32:39.32 Progress: 54% (20/37) ETA: 12 seconds\n2024-06-17 11:32:39.43 Progress: 64% (24/37) ETA: 8 seconds\n2024-06-17 11:32:39.65 Progress: 75% (28/37) ETA: 5 seconds\n2024-06-17 11:32:39.77 Progress: 86% (32/37) ETA: 2 seconds\n2024-06-17 11:32:40.46 Progress: 97% (36/37)\n2024-06-17 11:32:40.69 Step [scan_mapped_from_for_files] completed in 15 seconds\n2024-06-17 11:32:40.69 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-17 11:32:40.70 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-17 11:32:40.70 Step [create_local_files_packages] starting\n2024-06-17 11:32:40.73 Step [create_local_files_packages] completed in 0 seconds\n2024-06-17 11:32:40.73 Pipeline completed in 25 seconds\n",
+                    "execution_time": 24
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad",
+            "type": "local-files",
+            "namespace": "e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b",
+            "name": "92b3c491-b98b-4e86-9c20-287af0d690ad",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2006, 2007 Dell, Inc.\nCopyright (c) 2006-2010 Dell, Inc.\nCopyright (c) 2006 Dell, Inc.",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/9f9145e1-8ba7-45e9-b650-5189b675ee23",
+            "type": "local-files",
+            "namespace": "e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b",
+            "name": "9f9145e1-8ba7-45e9-b650-5189b675ee23",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.1 AND gpl-2.0",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/b8692072-6563-4082-94fd-2f25dcbd5316",
+            "type": "local-files",
+            "namespace": "e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b",
+            "name": "b8692072-6563-4082-94fd-2f25dcbd5316",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "(c) 2005-2007 Jean Delvare <khali@linux-fr.org>\n(c) 2007 Jean Delvare <khali@linux-fr.org>",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/e247d947-c1cf-4f16-ae94-8f8b1fad3bd9",
+            "type": "local-files",
+            "namespace": "e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b",
+            "name": "e247d947-c1cf-4f16-ae94-8f8b1fad3bd9",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "(c) 2002-2005 Jean Delvare\n(c) 2000-2002 Alan Cox <alan@redhat.com>\n(c) 2002-2007 Jean Delvare <khali@linux-fr.org>",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64",
+            "type": "directory",
+            "name": "biosdevname-0.7.3-16.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_device.c",
+            "type": "file",
+            "name": "bios_device.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 9190,
+            "md5": "4cacccdc443786514d5744e4415a6c67",
+            "sha1": "10a7b6954dd250ff0a03a01a73ffa8fcc1bee336",
+            "sha256": "c627b628618c07f3135547a67720f77a2c68afb784d261ba64b677c3010958fe",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.66,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_device.h",
+            "type": "file",
+            "name": "bios_device.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 621,
+            "md5": "6db1ccdb4615a755b559a0895c97f057",
+            "sha1": "25bf721fde2fcc1fb6d700c41636a04d20093d9f",
+            "sha256": "113ec3ad9261f351c70ba3c525f9de1296014eef7d83a79bcceb03b156f52b29",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 9.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_dev_name.c",
+            "type": "file",
+            "name": "bios_dev_name.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4365,
+            "md5": "71d2b5ade946cc9d9cdbc0b48cd2913d",
+            "sha1": "831be7f5b71a32a616e9a7ea20ff4b5a7ace84db",
+            "sha256": "4e5fe5f3c2266939ed7aa0c5a712e9c0ddb05b37734703bba789e0014ec600a0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.51,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1009458",
+                    "end_line": 126,
+                    "start_line": 126
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_dev_name.h",
+            "type": "file",
+            "name": "bios_dev_name.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 438,
+            "md5": "cd9c197620ffb7bf8d07afa963acd60c",
+            "sha1": "bf2f6c4203fdabf46a80719c37140ea8d40463b2",
+            "sha256": "5168708a0977dee31db0434922e83ff253898b6fc9e3cd20d3fa57addfc64596",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 13.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode",
+            "type": "directory",
+            "name": "dmidecode",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmidecode.c",
+            "type": "file",
+            "name": "dmidecode.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 10906,
+            "md5": "b9302af4fdafc6311485614dc71b0754",
+            "sha1": "c112a72b1c8e3a5334cdcdab89c209feedf10c94",
+            "sha256": "372dcc53f082cbcba7bb02af0f048d7c05318c021cf84d7f175e8801731d3159",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-crypto-keys-redistribution",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_and_crypto-keys-redistribution_1.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; either version 2 of the License, or\n *   (at your option) any later version.\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA\n *\n *   For the avoidance of doubt the \"preferred form\" of this code is one which\n *   is in an open unpatent encumbered format. Where cryptographic key signing\n *   forms part of the process of creating an executable the information\n *   including keys needed to generate an equivalently functional executable\n *   are deemed to be part of the source code.",
+                            "match_coverage": 100.0,
+                            "matched_length": 167,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_and_crypto-keys-redistribution_1.RULE",
+                            "license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+                            "spdx_license_expression": "GPL-2.0-or-later AND LicenseRef-scancode-crypto-keys-redistribution"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus_and_crypto_keys_redistribution-19b6480e-9b85-407a-9504-d051c1b13faf",
+                    "license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+                    "license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-crypto-keys-redistribution"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "(c) 2000-2002 Alan Cox <alan@redhat.com>",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "(c) 2002-2007 Jean Delvare <khali@linux-fr.org>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Alan Cox",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Jean Delvare",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/e247d947-c1cf-4f16-ae94-8f8b1fad3bd9"
+            ],
+            "emails": [
+                {
+                    "email": "alan@redhat.com",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "khali@linux-fr.org",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://savannah.nongnu.org/projects/dmidecode",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmidecode.h",
+            "type": "file",
+            "name": "dmidecode.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1673,
+            "md5": "17e9b3f82d64f1d6da86ebc4b9a53e20",
+            "sha1": "683ccc180302789fc7e073b0d8d023e47625258a",
+            "sha256": "08a4608651a1da6ce309f64465c19d6f73c09997b4946c9e3b18869c8489cfa5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; either version 2 of the License, or\n *   (at your option) any later version.\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.49,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "(c) 2005-2007 Jean Delvare <khali@linux-fr.org>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean Delvare",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/b8692072-6563-4082-94fd-2f25dcbd5316"
+            ],
+            "emails": [
+                {
+                    "email": "khali@linux-fr.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmioem.c",
+            "type": "file",
+            "name": "dmioem.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2463,
+            "md5": "ae1c42134e7d9dc84ce032f8e44f8db7",
+            "sha1": "05254931376be48e5ff133c49e242372feed68dd",
+            "sha256": "0527e547fc3516028e8e40a6897f3138d673c2cfd5ecb73d9dd62fe5edec8871",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; either version 2 of the License, or\n *   (at your option) any later version.\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 30.87,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "(c) 2007 Jean Delvare <khali@linux-fr.org>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean Delvare",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/b8692072-6563-4082-94fd-2f25dcbd5316"
+            ],
+            "emails": [
+                {
+                    "email": "khali@linux-fr.org",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmioem.h",
+            "type": "file",
+            "name": "dmioem.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1041,
+            "md5": "5884da27f6647e9549e543c1f16348cb",
+            "sha1": "f924acde4a2bb2cbff21afb25813a4de591a2884",
+            "sha256": "05ef43aa686e425c80a0b75c936e41a040b47038d0a9ca309c3d6ea63be6fecf",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; either version 2 of the License, or\n *   (at your option) any later version.\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 70.62,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "(c) 2007 Jean Delvare <khali@linux-fr.org>",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean Delvare",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/b8692072-6563-4082-94fd-2f25dcbd5316"
+            ],
+            "emails": [
+                {
+                    "email": "khali@linux-fr.org",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/types.h",
+            "type": "file",
+            "name": "types.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 767,
+            "md5": "4955f7928bc392cd40e824acbab825f9",
+            "sha1": "b758675c26b2eec1fa6a7f95793a5c0d2f32c48f",
+            "sha256": "fd5b56e05dfd446bfc25a5e4dee57f07338b41d890e402304c87777fe7b1c080",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/util.c",
+            "type": "file",
+            "name": "util.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3444,
+            "md5": "a70e6b188ead60e33ec5cdf6d1c5ef5b",
+            "sha1": "5423318653bbc49118f5dbff3fe67f27d072719c",
+            "sha256": "c4747b3df6cd0367fa3fec29445f3e6fb85fc804adff845240c5381cfaf50066",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-crypto-keys-redistribution",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 25,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_and_crypto-keys-redistribution_1.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *   This program is free software; you can redistribute it and/or modify\n *   it under the terms of the GNU General Public License as published by\n *   the Free Software Foundation; either version 2 of the License, or\n *   (at your option) any later version.\n *\n *   This program is distributed in the hope that it will be useful,\n *   but WITHOUT ANY WARRANTY; without even the implied warranty of\n *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *   GNU General Public License for more details.\n *\n *   You should have received a copy of the GNU General Public License\n *   along with this program; if not, write to the Free Software\n *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA\n *\n *   For the avoidance of doubt the \"preferred form\" of this code is one which\n *   is in an open unpatent encumbered format. Where cryptographic key signing\n *   forms part of the process of creating an executable the information \n *   including keys needed to generate an equivalently functional executable\n *   are deemed to be part of the source code.",
+                            "match_coverage": 100.0,
+                            "matched_length": 167,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_and_crypto-keys-redistribution_1.RULE",
+                            "license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+                            "spdx_license_expression": "GPL-2.0-or-later AND LicenseRef-scancode-crypto-keys-redistribution"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus_and_crypto_keys_redistribution-19b6480e-9b85-407a-9504-d051c1b13faf",
+                    "license_expression": "gpl-2.0-plus AND crypto-keys-redistribution",
+                    "license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-crypto-keys-redistribution"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 32.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "(c) 2002-2005 Jean Delvare",
+                    "start_line": 5
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean Delvare",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/e247d947-c1cf-4f16-ae94-8f8b1fad3bd9"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/util.h",
+            "type": "file",
+            "name": "util.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 197,
+            "md5": "7a2439c31b8d0cd145afe480162cf42b",
+            "sha1": "96c6b85fa9fbd754bb7aa05518dcbe6a0f6b7770",
+            "sha256": "b31b068d2f22ad56964f80fd9b23e1c29f6042fedeb5be9e4a312eb1b0e60890",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/eths.c",
+            "type": "file",
+            "name": "eths.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 7785,
+            "md5": "f53d372032dc44ef3cfb747bdda3efd7",
+            "sha1": "26c2ba339960f0d41788c14d46442380bd05a76d",
+            "sha256": "d895d6ae7962976ae8fd42bb69e851305e8cce99d4c39ad4a455ca2fe310de27",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.76,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/eths.h",
+            "type": "file",
+            "name": "eths.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1909,
+            "md5": "8383be23d86e78ca59e6671e098c52b8",
+            "sha1": "c064b836ba5834021c3d65f21525c9f7ce5ca1a5",
+            "sha256": "f3221f77df0fd3dab83e25413bfbcb0f123bc5e421a11d34aad4e69aafbae617",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.18,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/ethtool-copy.h",
+            "type": "file",
+            "name": "ethtool-copy.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 12205,
+            "md5": "8dbc209a686e23a4a46aa9d9b1141097",
+            "sha1": "c1fa150f12b2963c17325d4c0b751fcb8768309a",
+            "sha256": "731a3c02142132b58ca07bf237d3b007e175d4a6da36141bd841b7743ede788f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 1998 David S. Miller (davem@redhat.com)",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright 2001 Jeff Garzik <jgarzik@mandrakesoft.com>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 6,
+                    "copyright": "Portions Copyright 2001 Sun Microsystems (thockin@sun.com)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Portions Copyright 2002 Intel eli.kupermann@intel.com, christopher.leech@intel.com",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "David S. Miller",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Jeff Garzik",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Sun Microsystems",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Intel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [
+                {
+                    "email": "davem@redhat.com",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "jgarzik@mandrakesoft.com",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "email": "thockin@sun.com",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "email": "eli.kupermann@intel.com",
+                    "end_line": 7,
+                    "start_line": 7
+                },
+                {
+                    "email": "christopher.leech@intel.com",
+                    "end_line": 8,
+                    "start_line": 8
+                },
+                {
+                    "email": "scott.feldman@intel.com",
+                    "end_line": 9,
+                    "start_line": 9
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/libbiosdevname.h",
+            "type": "file",
+            "name": "libbiosdevname.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 606,
+            "md5": "84428230dd52c00239b142fdc13cd875",
+            "sha1": "c1720fda02335f17b8133ba7f0b2e105d0146d8a",
+            "sha256": "9884d38f27ce79397c158504c8a5abe90663009a04ef1acf1581b7e44f411423",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 10.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/list.h",
+            "type": "file",
+            "name": "list.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 12718,
+            "md5": "15be9fdc75505fca09b67fd4b78fcbda",
+            "sha1": "b705e5116b7bb466500654b91a9442e57a1ee6e7",
+            "sha256": "745ae808b1f011ccacf3a90dc5e689f3b589d3791333f1e9663d57e689d0d754",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.46,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/naming_policy.c",
+            "type": "file",
+            "name": "naming_policy.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 3174,
+            "md5": "e9e6183af102f715c08827e76bdacf9e",
+            "sha1": "6b0237f0203cd3fd500b7c996576a5943410d396",
+            "sha256": "3b4d95b34454cc9dfb5ebe5d646a4566722ec793c81bde63b9582473cc2e3256",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 2.04,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006, 2007 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/naming_policy.h",
+            "type": "file",
+            "name": "naming_policy.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 398,
+            "md5": "f5bd90c0887edf6d5f732974f1df3bf8",
+            "sha1": "696fee2e7695451f47276f9980e78f11a4d1c0f9",
+            "sha256": "e805871393e1e947584848e35024fc13c8105e0d7190e7ed13f54479f091a5b0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 16.36,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pci.c",
+            "type": "file",
+            "name": "pci.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 22613,
+            "md5": "dcbdea80cd37bb74e7a577c47ec9045c",
+            "sha1": "d2b670e8387fa98610eb87ef10225db2347f5b99",
+            "sha256": "7cbe3df5160d25740fefa0c3c90b533902eacd04043f4a7c18b02e50bd0691e2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006-2010 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pci.h",
+            "type": "file",
+            "name": "pci.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2878,
+            "md5": "0f434e7a09ef71f874cdd7744387f5d6",
+            "sha1": "3e9d1aff9b56edfb80bbb0fe8f87d7a571eefed2",
+            "sha256": "2fa98ad2032deae296cfb7ff3d53e28742cf3dcc8888763e8f01c9b57407c161",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.99,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pirq.c",
+            "type": "file",
+            "name": "pirq.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4882,
+            "md5": "bfe45810ba5cc2efff1b39aacfd4d819",
+            "sha1": "46d01da2aa8178d2ae7b31c36a3242908de72ca1",
+            "sha256": "36fbebc134a4406b77a3695dbdb413416d239da62e988941dcc1c606fb1c7fad",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 8,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.27,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.microsoft.com/hwdev/busbios/pciirq.htm",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pirq.h",
+            "type": "file",
+            "name": "pirq.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1336,
+            "md5": "b9aa47db91ff82c8394257499725480a",
+            "sha1": "ee9f3d9282748751de930f1754cc9e350c60590d",
+            "sha256": "02917e9a691a6b5a14c284706b7457eacc2e2f0f6d488ef9b2052ccf04f4d1e7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 11,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.62,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "urls": [
+                {
+                    "url": "http://www.microsoft.com/hwdev/busbios/pciirq.htm",
+                    "end_line": 10,
+                    "start_line": 10
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/read_proc.c",
+            "type": "file",
+            "name": "read_proc.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 2068,
+            "md5": "0e4b1099129b347d8756f65710d2dc0c",
+            "sha1": "7819372bcc7369ce1a37873898686bcb4f49fbf1",
+            "sha256": "d4dbb6a217e8280455a37c147e86eaa22686f1f5053929e44c6f630d65cd8eb2",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        },
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 5,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_223.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " *   Copied from from net-tools-1.60, also under the GNU GPL v2,",
+                            "match_coverage": 100.0,
+                            "matched_length": 3,
+                            "rule_relevance": 90,
+                            "rule_identifier": "gpl-2.0_223.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-b552a659-ae34-6ba2-33f0-6b46e7230ef5",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.33,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/state.h",
+            "type": "file",
+            "name": "state.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 543,
+            "md5": "69c7ade6c132ac8cf8fab17ed1f063ad",
+            "sha1": "067275ef05d003baece1abdb6046dd6804408685",
+            "sha256": "607380a2d6f771cbadd31e14c89becd3e880cf0783b93b0856162ec32f239c0e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0",
+            "detected_license_expression_spdx": "GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 4,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_822.RULE",
+                            "from_file": null,
+                            "start_line": 4,
+                            "matched_text": " *  Licensed under the GNU General Public license, version 2.",
+                            "match_coverage": 100.0,
+                            "matched_length": 9,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_822.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "gpl_2_0-9764c550-ab6f-5e42-cc53-c975ee8ce75b",
+                    "license_expression": "gpl-2.0",
+                    "license_expression_spdx": "GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 11.84,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 2,
+                    "copyright": "Copyright (c) 2006 Dell, Inc.",
+                    "start_line": 2
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Dell, Inc.",
+                    "end_line": 2,
+                    "start_line": 2
+                }
+            ],
+            "authors": [
+                {
+                    "author": "Matt Domsch <Matt_Domsch@dell.com>",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/92b3c491-b98b-4e86-9c20-287af0d690ad"
+            ],
+            "emails": [
+                {
+                    "email": "Matt_Domsch@dell.com",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/sysfs.c",
+            "type": "file",
+            "name": "sysfs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1336,
+            "md5": "35fd602cda20275a56760a39cb34cd0d",
+            "sha1": "b08bf8678fe3550574449328cb7533c77b5f7995",
+            "sha256": "a816b716cc8a33a806bedbfd0de768646c486d0441bac56769847ddc7cc71f25",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.1 AND gpl-2.0",
+            "detected_license_expression_spdx": "LGPL-2.1-only AND GPL-2.0-only",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.1_202.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " * Copied from sysfsutils-2.1.0 (which is LGPL2.1 or later), relicensed GPLv2 for use here.",
+                            "match_coverage": 100.0,
+                            "matched_length": 2,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.1_202.RULE",
+                            "license_expression": "lgpl-2.1",
+                            "spdx_license_expression": "LGPL-2.1-only"
+                        },
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0_bare_single_word.RULE",
+                            "from_file": null,
+                            "start_line": 13,
+                            "matched_text": " * Copied from sysfsutils-2.1.0 (which is LGPL2.1 or later), relicensed GPLv2 for use here.",
+                            "match_coverage": 100.0,
+                            "matched_length": 1,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0_bare_single_word.RULE",
+                            "license_expression": "gpl-2.0",
+                            "spdx_license_expression": "GPL-2.0-only"
+                        }
+                    ],
+                    "identifier": "lgpl_2_1_and_gpl_2_0-1e7bb6c2-66fa-0552-7aed-8e66f7f7c17b",
+                    "license_expression": "lgpl-2.1 AND gpl-2.0",
+                    "license_expression_spdx": "LGPL-2.1-only AND GPL-2.0-only"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.59,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e60a9d67-2bce-46c6-bd53-115c1830dc5b-30717d7b/9f9145e1-8ba7-45e9-b650-5189b675ee23"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/sysfs.h",
+            "type": "file",
+            "name": "sysfs.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 110,
+            "md5": "c4996feecca820493086bbe631ace1c3",
+            "sha1": "9dd478b3801c18e07831b97c0fb60397578e8fd6",
+            "sha256": "197b9c50c6f72f5cac0be33481afc8e04c5d26c45c6269e94a653ab935ee2bcd",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/34",
+            "type": "directory",
+            "name": "34",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/sbin",
+            "type": "directory",
+            "name": "sbin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "type": "file",
+            "name": "biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 157904,
+            "md5": "9f5ca1b4a4feb3e62982c7236d46c383",
+            "sha1": "b8de491b4529a1ae8696378ace948d94870ac1ac",
+            "sha256": "a280c8ceeb2d30c6261c6c6a5413e10d77bc9bf955f9390e6cbbbe4a56682d1e",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=34ebe3198ac0ffdec31712ab58e4dc0317f67de9, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/<artificial>",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_dev_name.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_device.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmidecode.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmioem.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/util.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/eths.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/naming_policy.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pci.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pirq.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/read_proc.c",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/sysfs.c"
+                ],
+                "dwarf_included_paths": [
+                    "src/bios_dev_name.c",
+                    "src/bios_dev_name.h",
+                    "src/bios_device.c",
+                    "src/bios_device.h",
+                    "src/dmidecode/dmidecode.c",
+                    "src/dmidecode/dmidecode.h",
+                    "src/dmidecode/dmioem.c",
+                    "src/dmidecode/dmioem.h",
+                    "src/dmidecode/types.h",
+                    "src/dmidecode/util.c",
+                    "src/dmidecode/util.h",
+                    "src/eths.c",
+                    "src/eths.h",
+                    "src/ethtool-copy.h",
+                    "src/libbiosdevname.h",
+                    "src/list.h",
+                    "src/list.h",
+                    "src/naming_policy.c",
+                    "src/naming_policy.h",
+                    "src/pci.c",
+                    "src/pci.h",
+                    "src/pci.h",
+                    "src/pirq.c",
+                    "src/pirq.h",
+                    "src/pirq.h",
+                    "src/read_proc.c",
+                    "src/state.h",
+                    "src/state.h",
+                    "src/sysfs.c",
+                    "src/sysfs.h",
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/bits/confname.h",
+                    "usr/include/bits/dirent.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/dirent.h",
+                    "usr/include/errno.h",
+                    "usr/include/net/if.h",
+                    "usr/include/pci/pci.h",
+                    "usr/include/pci/types.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/<built-in>"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/asm-generic/int-ll64.h",
+                    "usr/include/bits/confname.h",
+                    "usr/include/bits/dirent.h",
+                    "usr/include/bits/fcntl2.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/sockaddr.h",
+                    "usr/include/bits/socket.h",
+                    "usr/include/bits/socket_type.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/dirent.h",
+                    "usr/include/errno.h",
+                    "usr/include/net/if.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/ioctl.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/socket.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_device.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_device.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_device.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_dev_name.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_dev_name.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/bios_dev_name.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmidecode.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmidecode.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmidecode.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmioem.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmioem.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/dmioem.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/types.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "7/6",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/util.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/util.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "3/2",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/dmidecode/util.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/eths.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/eths.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/eths.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/ethtool-copy.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/libbiosdevname.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/list.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/naming_policy.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/naming_policy.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/naming_policy.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pci.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pci.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pci.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pirq.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pirq.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/pirq.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/read_proc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/read_proc.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/state.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/sysfs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/sysfs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/sbin/biosdevname-0.7.3-16.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "2/1",
+            "from_resource": "from/usr/src/debug/biosdevname-0.7.3-16.fc40.x86_64/src/sysfs.h"
+        }
+    ]
+}

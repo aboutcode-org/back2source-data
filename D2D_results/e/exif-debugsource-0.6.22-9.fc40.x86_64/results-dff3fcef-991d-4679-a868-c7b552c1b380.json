@@ -1,0 +1,1696 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "dff3fcef-991d-4679-a868-c7b552c1b380",
+            "created_date": "2024-06-18T05:02:56.765Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "1a0be6b4-a2fa-427c-b445-a26fdf60430b",
+                    "filename": "exif-debuginfo-0.6.22-9.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/exif-debuginfo-0.6.22-9.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 51038,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "ba851b00-520c-426a-aa04-5f46f7f65cd0",
+                    "filename": "exif-debugsource-0.6.22-9.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/exif-debugsource-0.6.22-9.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 24651,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "a892a28a-a746-4ba1-83f7-b99acb41885d",
+                    "created_date": "2024-06-18T05:02:56.773556Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "a892a28a-a746-4ba1-83f7-b99acb41885d",
+                    "task_start_date": "2024-06-18T05:02:56.797326Z",
+                    "task_end_date": "2024-06-18T05:03:15.191432Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-18 05:02:56.79 Pipeline [d2d] starting\n2024-06-18 05:02:56.80 Step [download_missing_inputs] starting\n2024-06-18 05:02:56.80 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/exif-debugsource-0.6.22-9.fc40.x86_64.rpm#from\n2024-06-18 05:02:57.99 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/exif-debuginfo-0.6.22-9.fc40.x86_64.rpm#to\n2024-06-18 05:02:59.55 Step [download_missing_inputs] completed in 3 seconds\n2024-06-18 05:02:59.55 Step [get_inputs] starting\n2024-06-18 05:02:59.56 Step [get_inputs] completed in 0 seconds\n2024-06-18 05:02:59.56 Step [extract_inputs_to_codebase_directory] starting\n2024-06-18 05:02:59.61 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-18 05:02:59.61 Step [extract_archives] starting\n2024-06-18 05:02:59.69 Step [extract_archives] completed in 0 seconds\n2024-06-18 05:02:59.69 Step [collect_and_create_codebase_resources] starting\n2024-06-18 05:02:59.72 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-18 05:02:59.72 Step [fingerprint_codebase_directories] starting\n2024-06-18 05:02:59.73 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-18 05:02:59.73 Step [flag_empty_files] starting\n2024-06-18 05:02:59.73 Step [flag_empty_files] completed in 0 seconds\n2024-06-18 05:02:59.74 Step [flag_whitespace_files] starting\n2024-06-18 05:02:59.74 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-18 05:02:59.74 Step [flag_ignored_resources] starting\n2024-06-18 05:02:59.74 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-18 05:02:59.74 Step [map_about_files] starting\n2024-06-18 05:02:59.74 Step [map_about_files] completed in 0 seconds\n2024-06-18 05:02:59.75 Step [map_checksum] starting\n2024-06-18 05:02:59.75 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-18 05:02:59.75 Step [map_checksum] completed in 0 seconds\n2024-06-18 05:02:59.75 Step [match_archives_to_purldb] starting\n2024-06-18 05:02:59.76 PurlDB is not available. Skipping.\n2024-06-18 05:02:59.76 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-18 05:02:59.76 Step [find_java_packages] starting\n2024-06-18 05:02:59.76 Finding Java package for 0 .java resources.\n2024-06-18 05:02:59.76 Step [find_java_packages] completed in 0 seconds\n2024-06-18 05:02:59.77 Step [map_java_to_class] starting\n2024-06-18 05:02:59.77 Mapping 0 .class resources to .java\n2024-06-18 05:02:59.77 No .java resources to map.\n2024-06-18 05:02:59.77 Step [map_java_to_class] completed in 0 seconds\n2024-06-18 05:02:59.77 Step [map_jar_to_source] starting\n2024-06-18 05:02:59.77 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-18 05:02:59.78 Step [map_jar_to_source] completed in 0 seconds\n2024-06-18 05:02:59.78 Step [map_elf] starting\n2024-06-18 05:02:59.86 Mapping 1 to/ resources using paths with 11 from/ resources.\n2024-06-18 05:02:59.86 Done building from/ resources index.\n2024-06-18 05:02:59.87 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug'\n2024-06-18 05:02:59.88 WARNING: #37 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug'\n2024-06-18 05:02:59.88 Created 12 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug'\n2024-06-18 05:02:59.88 Step [map_elf] completed in 0 seconds\n2024-06-18 05:02:59.89 Step [map_go] starting\n2024-06-18 05:02:59.89 Mapping 0 to/ resources using paths with 11 from/ resources.\n2024-06-18 05:02:59.89 Done building from/ resources index.\n2024-06-18 05:02:59.90 Step [map_go] completed in 0 seconds\n2024-06-18 05:02:59.90 Step [match_directories_to_purldb] starting\n2024-06-18 05:02:59.90 PurlDB is not available. Skipping.\n2024-06-18 05:02:59.90 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-18 05:02:59.91 Step [match_resources_to_purldb] starting\n2024-06-18 05:02:59.91 PurlDB is not available. Skipping.\n2024-06-18 05:02:59.91 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-18 05:02:59.91 Step [map_path] starting\n2024-06-18 05:02:59.91 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-18 05:02:59.92 Step [map_path] completed in 0 seconds\n2024-06-18 05:02:59.92 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-18 05:02:59.93 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-18 05:02:59.93 Step [perform_house_keeping_tasks] starting\n2024-06-18 05:02:59.94 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-18 05:02:59.94 Step [match_purldb_resources_post_process] starting\n2024-06-18 05:02:59.94 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-18 05:02:59.94 0 resource processed\n2024-06-18 05:02:59.95 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-18 05:02:59.95 Step [remove_packages_without_resources] starting\n2024-06-18 05:02:59.95 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-18 05:02:59.95 Step [scan_unmapped_to_files] starting\n2024-06-18 05:03:02.86 Step [scan_unmapped_to_files] completed in 3 seconds\n2024-06-18 05:03:02.86 Step [scan_mapped_from_for_files] starting\n2024-06-18 05:03:13.31 Progress: 16% (2/12) ETA: 55 seconds\n2024-06-18 05:03:14.08 Progress: 33% (4/12) ETA: 23 seconds\n2024-06-18 05:03:14.19 Progress: 50% (6/12) ETA: 11 seconds\n2024-06-18 05:03:14.31 Progress: 66% (8/12) ETA: 6 seconds\n2024-06-18 05:03:14.60 Progress: 83% (10/12) ETA: 2 seconds\n2024-06-18 05:03:14.99 Progress: 100% (12/12)\n2024-06-18 05:03:15.16 Step [scan_mapped_from_for_files] completed in 12 seconds\n2024-06-18 05:03:15.16 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-18 05:03:15.17 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-18 05:03:15.17 Step [create_local_files_packages] starting\n2024-06-18 05:03:15.18 Step [create_local_files_packages] completed in 0 seconds\n2024-06-18 05:03:15.18 Pipeline completed in 18 seconds\n",
+                    "execution_time": 18
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0",
+            "type": "local-files",
+            "namespace": "9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef",
+            "name": "4b747637-c6d6-4202-a419-9d38037215d0",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001-2008 Lutz Mueller <lutz@users.sourceforge.net>\nCopyright (c) 2001 Lutz Mueller <lutz@users.sourceforge.net>\nCopyright (c) 2002-2008 Lutz Mueller <lutz@users.sourceforge.net>\nCopyright (c) 2002 Lutz Mueller <lutz@users.sourceforge.net>",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64",
+            "type": "directory",
+            "name": "exif-0.6.22-9.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif",
+            "type": "directory",
+            "name": "exif",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/actions.c",
+            "type": "file",
+            "name": "actions.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19418,
+            "md5": "fa92353aa9e83b83780b02a095eaaa88",
+            "sha1": "b0d22493e08cb33f0b4aae94bfd5dfd1031e24e2",
+            "sha256": "6ea317b3847d3f3483fbea27eca4ae9f1100bfdf5ed4ba3bb0547b7c3efef333",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.29,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2002-2008 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/actions.h",
+            "type": "file",
+            "name": "actions.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1988,
+            "md5": "be1aa33dbbd751f11d02535db8bad18f",
+            "sha1": "e339d866fdb49bb880533de1bcc53a774015b357",
+            "sha256": "2567dd7289dce6dedd913af9857e8ea73c7dc6c1e752be4a057946986566a164",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.11,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2002 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/exif-i18n.c",
+            "type": "file",
+            "name": "exif-i18n.c",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1125,
+            "md5": "3d39eca484abc42843d422cab29cc9ad",
+            "sha1": "a5cdcbd9b1325bc86d1a2b7f6bafb52c956cd176",
+            "sha256": "3cfb29c5ba0652cd4838478b058a08abf368e197b7328bb0d6c491e6e6bf5a66",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/exif-i18n.h",
+            "type": "file",
+            "name": "exif-i18n.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1977,
+            "md5": "14842e5db8d3821feab9679acee77f3c",
+            "sha1": "23d9558d2446325bf05f8a15b4cf0513482a8a48",
+            "sha256": "ffe1957f45ad13c9e00ec72a6b85ffac6f16112607f1888c07da83a3072c390d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 40.99,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/main.c",
+            "type": "file",
+            "name": "main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 14042,
+            "md5": "da90318bb584a533d13af9a28296a378",
+            "sha1": "fd37aa7640b151cb7bd8c05ad3e3133b36c3eaf3",
+            "sha256": "a9d48562274aa0b60cb7c1b197ceaa67f721dd3680f81e198c21b3e7c77347ca",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 5.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2002 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/utils.c",
+            "type": "file",
+            "name": "utils.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4041,
+            "md5": "636ba5631e0dc4b0029f021f1235f8f2",
+            "sha1": "6bb94c8fcf7f84614941adda4c6efaead6f41022",
+            "sha256": "550064e0470f6ed9dd5acaf8081ba48525189fa680981bd7c8528524c07cec9e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.74,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2002 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/utils.h",
+            "type": "file",
+            "name": "utils.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1299,
+            "md5": "6e333a69fe61ab18f7efa48025ebade3",
+            "sha1": "b0dc7426aff0b4d2224173c74ee53130baa1d09c",
+            "sha256": "8ad38f2b79dbee3f65a04fd7c7be3fd326ab2033416700c9f0d94f678056046c",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 58.29,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2002 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg",
+            "type": "directory",
+            "name": "libjpeg",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.c",
+            "type": "file",
+            "name": "jpeg-data.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 11623,
+            "md5": "a568a46fdc275aff138080105b23fdeb",
+            "sha1": "3764c00ae4f79d057adc398d76819fbaaa47f552",
+            "sha256": "8c527ad056d744e8873872b2f93b14286c3bdeef3a8d67e892f2f07a7d7d8ebb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 6.9,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.h",
+            "type": "file",
+            "name": "jpeg-data.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2576,
+            "md5": "bc2206e8f0f665ca64fbf2d3acaa7ffa",
+            "sha1": "689ce5727aaeae1bde1e8330b2c172476dee64d4",
+            "sha256": "170d8a859d85de95679f45f33ebfabcf7a1572f3406bcf88af809a996fe11059",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 33.62,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.c",
+            "type": "file",
+            "name": "jpeg-marker.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 4889,
+            "md5": "56e10e04870488d5b4dff57f3a9d88fe",
+            "sha1": "1c028284dc9300d94dec72c0ebdf95d644f71d95",
+            "sha256": "d3fb0bcf6beb6868333b0433a77e9183551e9e4cc0a8e3838bc5ea20a5c8b4bb",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 18.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001-2008 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.h",
+            "type": "file",
+            "name": "jpeg-marker.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 3346,
+            "md5": "3eacbe5ddeb8b36ee769ee06eba11df7",
+            "sha1": "e0c162eb7c637febe05cc138ad69c7e8ad5e8039",
+            "sha256": "f7f539a8b34e7fbf2fe07b58db9609ebb1afbf5751d8a1207e987d4270b454c8",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 90.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_424.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful, \n * but WITHOUT ANY WARRANTY; without even the implied warranty of \n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details. \n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the\n * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,\n * Boston, MA  02110-1301  USA.",
+                            "match_coverage": 100.0,
+                            "matched_length": 116,
+                            "rule_relevance": 90,
+                            "rule_identifier": "lgpl-2.0-plus_424.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-821ae56a-35d0-360a-aa53-91c4db33b965",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 26.79,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Lutz Mueller <lutz@users.sourceforge.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Lutz Mueller",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/9b313413-0b7b-43f7-8ae8-c0151e15c9d4-dff3fcef/4b747637-c6d6-4202-a419-9d38037215d0"
+            ],
+            "emails": [
+                {
+                    "email": "lutz@users.sourceforge.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/9d",
+            "type": "directory",
+            "name": "9d",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "type": "file",
+            "name": "exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 114992,
+            "md5": "a1cc8366bbec46f4d5e79334a09d4786",
+            "sha1": "5b02051689685611fde280c5ea2832ebee9fc4b1",
+            "sha256": "1ba1aa059b4ac4c6e82bd16e36625a972361efe907c2c1d335af8228582ba67c",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=9da19802630c2c1e8c71b1bceedaf5c80258ca6c, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/<artificial>",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/exif-i18n.c",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.c",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/sigset_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/libexif/exif-byte-order.h",
+                    "usr/include/libexif/exif-content.h",
+                    "usr/include/libexif/exif-data-type.h",
+                    "usr/include/libexif/exif-data.h",
+                    "usr/include/libexif/exif-entry.h",
+                    "usr/include/libexif/exif-format.h",
+                    "usr/include/libexif/exif-ifd.h",
+                    "usr/include/libexif/exif-loader.h",
+                    "usr/include/libexif/exif-log.h",
+                    "usr/include/libexif/exif-mnote-data.h",
+                    "usr/include/libexif/exif-tag.h",
+                    "usr/include/libexif/exif-utils.h",
+                    "usr/include/libintl.h",
+                    "usr/include/locale.h",
+                    "usr/include/popt.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/<built-in>",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/actions.c",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/actions.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/exif-i18n.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/main.c",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/utils.c",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/utils.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.c",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.h"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/sigaction.h",
+                    "usr/include/bits/stdint-intn.h",
+                    "usr/include/bits/stdint-uintn.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/__sigset_t.h",
+                    "usr/include/bits/types/__sigval_t.h",
+                    "usr/include/bits/types/siginfo_t.h",
+                    "usr/include/bits/types/sigset_t.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/libexif/exif-byte-order.h",
+                    "usr/include/libexif/exif-content.h",
+                    "usr/include/libexif/exif-data-type.h",
+                    "usr/include/libexif/exif-data.h",
+                    "usr/include/libexif/exif-entry.h",
+                    "usr/include/libexif/exif-format.h",
+                    "usr/include/libexif/exif-ifd.h",
+                    "usr/include/libexif/exif-loader.h",
+                    "usr/include/libexif/exif-log.h",
+                    "usr/include/libexif/exif-mnote-data.h",
+                    "usr/include/libexif/exif-tag.h",
+                    "usr/include/libexif/exif-utils.h",
+                    "usr/include/libintl.h",
+                    "usr/include/locale.h",
+                    "usr/include/popt.h",
+                    "usr/include/signal.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/actions.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/actions.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/exif-i18n.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/exif-i18n.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/main.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/utils.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/exif/utils.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-data.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/exif-0.6.22-9.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "6/5",
+            "from_resource": "from/usr/src/debug/exif-0.6.22-9.fc40.x86_64/libjpeg/jpeg-marker.h"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "cea8e825-a455-4337-bb19-a3ab03618a47",
+            "created_date": "2024-06-17T14:24:57.435Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "8fd8f6aa-9323-4b7f-8417-68f108bdfdbb",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/centerim-debugsource-4.22.10-44.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "db3d405f-586f-4896-8978-fc10c62d047d",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/centerim-debuginfo-4.22.10-44.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "fa72695b-0747-4277-9e93-7bb35ed0ff42",
+                    "created_date": "2024-06-17T14:24:57.442772Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "fa72695b-0747-4277-9e93-7bb35ed0ff42",
+                    "task_start_date": "2024-06-17T14:24:57.463107Z",
+                    "task_end_date": "2024-06-17T14:25:11.145447Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 14:24:57.46 Pipeline [d2d] starting\n2024-06-17 14:24:57.47 Step [download_missing_inputs] starting\n2024-06-17 14:24:57.47 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/centerim-debugsource-4.22.10-44.fc40.x86_64.rpm#from\n2024-06-17 14:25:04.17 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/centerim-debugsource-4.22.10-44.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 14:25:04.17 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/centerim-debuginfo-4.22.10-44.fc40.x86_64.rpm#to\n2024-06-17 14:25:11.13 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/centerim-debuginfo-4.22.10-44.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 14:25:11.14 Pipeline failed\n",
+                    "execution_time": 13
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

@@ -1,0 +1,60 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "5ca13c8e-2706-46ba-82f4-0930d66b5b69",
+            "created_date": "2024-06-17T15:00:58.778Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "c633bcb3-4c3d-4f61-82ee-e62d4b1cf409",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cogl-debugsource-1.22.8-10.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                },
+                {
+                    "uuid": "6d2fcbcf-360e-4d46-81de-4a53d966e650",
+                    "filename": "",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cogl-debuginfo-1.22.8-10.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": null,
+                    "is_file": true,
+                    "exists": false
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "failure",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "3b085d63-2900-4db5-b0aa-bf0688b0a5ec",
+                    "created_date": "2024-06-17T15:00:58.786227Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "3b085d63-2900-4db5-b0aa-bf0688b0a5ec",
+                    "task_start_date": "2024-06-17T15:00:58.803107Z",
+                    "task_end_date": "2024-06-17T15:01:16.756503Z",
+                    "task_exitcode": 1,
+                    "task_output": "[ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\")), ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.fedoraproject.org', port=443): Read timed out.\"))]\n\nTraceback:\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 204, in execute\n    step(self)\n  File \"/home/tg1999/Desktop/purldb/venv/lib/python3.10/site-packages/scanpipe/pipelines/__init__.py\", line 243, in download_missing_inputs\n    raise InputFileError(errors)\n",
+                    "log": "2024-06-17 15:00:58.80 Pipeline [d2d] starting\n2024-06-17 15:00:58.81 Step [download_missing_inputs] starting\n2024-06-17 15:00:58.81 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cogl-debugsource-1.22.8-10.fc40.x86_64.rpm#from\n2024-06-17 15:01:08.13 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cogl-debugsource-1.22.8-10.fc40.x86_64.rpm#from could not be fetched.\n2024-06-17 15:01:08.13 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cogl-debuginfo-1.22.8-10.fc40.x86_64.rpm#to\n2024-06-17 15:01:16.74 https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cogl-debuginfo-1.22.8-10.fc40.x86_64.rpm#to could not be fetched.\n2024-06-17 15:01:16.75 Pipeline failed\n",
+                    "execution_time": 17
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [],
+    "dependencies": [],
+    "files": [],
+    "relations": []
+}

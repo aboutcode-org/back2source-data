@@ -1,0 +1,1258 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "7bdfad67-a817-4230-a828-3bf8f63dac33",
+            "created_date": "2024-06-13T10:57:21.974Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "5b7cda45-0497-49d9-9b03-3deebf73debb",
+                    "filename": "acpi-debuginfo-1.7-23.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/acpi-debuginfo-1.7-23.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 27872,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "dd6b3591-5b33-458a-907b-95876ac4c8e3",
+                    "filename": "acpi-debugsource-1.7-23.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/acpi-debugsource-1.7-23.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 14763,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "7ed82fec-31ee-4195-82cd-02bcb0e980dd",
+                    "created_date": "2024-06-13T10:57:21.981065Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "7ed82fec-31ee-4195-82cd-02bcb0e980dd",
+                    "task_start_date": "2024-06-13T10:57:22.003556Z",
+                    "task_end_date": "2024-06-13T10:57:35.920203Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-13 10:57:22.00 Pipeline [d2d] starting\n2024-06-13 10:57:22.01 Step [download_missing_inputs] starting\n2024-06-13 10:57:22.01 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/acpi-debugsource-1.7-23.fc40.x86_64.rpm#from\n2024-06-13 10:57:23.61 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/acpi-debuginfo-1.7-23.fc40.x86_64.rpm#to\n2024-06-13 10:57:24.84 Step [download_missing_inputs] completed in 3 seconds\n2024-06-13 10:57:24.85 Step [get_inputs] starting\n2024-06-13 10:57:24.85 Step [get_inputs] completed in 0 seconds\n2024-06-13 10:57:24.86 Step [extract_inputs_to_codebase_directory] starting\n2024-06-13 10:57:24.90 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-13 10:57:24.90 Step [extract_archives] starting\n2024-06-13 10:57:24.97 Step [extract_archives] completed in 0 seconds\n2024-06-13 10:57:24.97 Step [collect_and_create_codebase_resources] starting\n2024-06-13 10:57:24.99 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-13 10:57:24.99 Step [fingerprint_codebase_directories] starting\n2024-06-13 10:57:25.01 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-13 10:57:25.01 Step [flag_empty_files] starting\n2024-06-13 10:57:25.01 Step [flag_empty_files] completed in 0 seconds\n2024-06-13 10:57:25.01 Step [flag_whitespace_files] starting\n2024-06-13 10:57:25.02 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-13 10:57:25.02 Step [flag_ignored_resources] starting\n2024-06-13 10:57:25.02 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-13 10:57:25.02 Step [map_about_files] starting\n2024-06-13 10:57:25.02 Step [map_about_files] completed in 0 seconds\n2024-06-13 10:57:25.03 Step [map_checksum] starting\n2024-06-13 10:57:25.03 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-13 10:57:25.03 Step [map_checksum] completed in 0 seconds\n2024-06-13 10:57:25.04 Step [match_archives_to_purldb] starting\n2024-06-13 10:57:25.04 PurlDB is not available. Skipping.\n2024-06-13 10:57:25.04 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-13 10:57:25.04 Step [find_java_packages] starting\n2024-06-13 10:57:25.04 Finding Java package for 0 .java resources.\n2024-06-13 10:57:25.05 Step [find_java_packages] completed in 0 seconds\n2024-06-13 10:57:25.05 Step [map_java_to_class] starting\n2024-06-13 10:57:25.05 Mapping 0 .class resources to .java\n2024-06-13 10:57:25.06 No .java resources to map.\n2024-06-13 10:57:25.06 Step [map_java_to_class] completed in 0 seconds\n2024-06-13 10:57:25.06 Step [map_jar_to_source] starting\n2024-06-13 10:57:25.06 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-13 10:57:25.06 Step [map_jar_to_source] completed in 0 seconds\n2024-06-13 10:57:25.06 Step [map_elf] starting\n2024-06-13 10:57:25.10 Mapping 1 to/ resources using paths with 5 from/ resources.\n2024-06-13 10:57:25.10 Done building from/ resources index.\n2024-06-13 10:57:25.11 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug'\n2024-06-13 10:57:25.11 WARNING: #17 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug'\n2024-06-13 10:57:25.12 Created 5 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug'\n2024-06-13 10:57:25.12 Step [map_elf] completed in 0 seconds\n2024-06-13 10:57:25.12 Step [map_go] starting\n2024-06-13 10:57:25.13 Mapping 0 to/ resources using paths with 5 from/ resources.\n2024-06-13 10:57:25.13 Done building from/ resources index.\n2024-06-13 10:57:25.14 Step [map_go] completed in 0 seconds\n2024-06-13 10:57:25.14 Step [match_directories_to_purldb] starting\n2024-06-13 10:57:25.14 PurlDB is not available. Skipping.\n2024-06-13 10:57:25.14 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-13 10:57:25.14 Step [match_resources_to_purldb] starting\n2024-06-13 10:57:25.15 PurlDB is not available. Skipping.\n2024-06-13 10:57:25.15 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-13 10:57:25.15 Step [map_path] starting\n2024-06-13 10:57:25.15 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-13 10:57:25.16 Step [map_path] completed in 0 seconds\n2024-06-13 10:57:25.16 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-13 10:57:25.16 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-13 10:57:25.17 Step [perform_house_keeping_tasks] starting\n2024-06-13 10:57:25.18 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-13 10:57:25.18 Step [match_purldb_resources_post_process] starting\n2024-06-13 10:57:25.18 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-13 10:57:25.19 0 resource processed\n2024-06-13 10:57:25.19 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-13 10:57:25.19 Step [remove_packages_without_resources] starting\n2024-06-13 10:57:25.19 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-13 10:57:25.19 Step [scan_unmapped_to_files] starting\n2024-06-13 10:57:28.75 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-13 10:57:28.75 Step [scan_mapped_from_for_files] starting\n2024-06-13 10:57:35.89 Step [scan_mapped_from_for_files] completed in 7 seconds\n2024-06-13 10:57:35.89 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-13 10:57:35.90 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-13 10:57:35.90 Step [create_local_files_packages] starting\n2024-06-13 10:57:35.91 Step [create_local_files_packages] completed in 0 seconds\n2024-06-13 10:57:35.91 Pipeline completed in 14 seconds\n",
+                    "execution_time": 13
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/210a18ff-b29a-43d7-925d-a953932c32cc",
+            "type": "local-files",
+            "namespace": "56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67",
+            "name": "210a18ff-b29a-43d7-925d-a953932c32cc",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net>\nCopyright (c) 2008-2012 Michael Meskes <meskes@debian.org>\nCopyright (c) 2001 Grahame Bowland. 2008-2012 Michael Meskes",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus AND warranty-disclaimer",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/bf4d1c0d-f79c-4f30-9709-436c971388e9",
+            "type": "local-files",
+            "namespace": "56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67",
+            "name": "bf4d1c0d-f79c-4f30-9709-436c971388e9",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net>\nCopyright (c) 2001 Grahame Bowland <grahame@angrygoats.net> Michael Meskes <meskes@debian.org>\n(c) 2008-2012 Michael Meskes <meskes@debian.org>",
+            "holder": "",
+            "declared_license_expression": "gpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64",
+            "type": "directory",
+            "name": "acpi-1.7-23.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/acpi.c",
+            "type": "file",
+            "name": "acpi.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 17193,
+            "md5": "fe03297ebaa7160ed1071277af967a7c",
+            "sha1": "cb5eedf0f65576e5c02f0e4dab67acecd041a299",
+            "sha256": "06e1a7ab26523f1ba022fe7031375ab7c595c2bc65397a7d6dcb258d9d2d658e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 18,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 6,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 2 of the License, or\n *  (at your option) any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 4.98,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net>",
+                    "start_line": 3
+                },
+                {
+                    "end_line": 4,
+                    "copyright": "(c) 2008-2012 Michael Meskes <meskes@debian.org>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Grahame Bowland",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "holder": "Michael Meskes",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/bf4d1c0d-f79c-4f30-9709-436c971388e9"
+            ],
+            "emails": [
+                {
+                    "email": "grahame@angrygoats.net",
+                    "end_line": 3,
+                    "start_line": 3
+                },
+                {
+                    "email": "meskes@debian.org",
+                    "end_line": 4,
+                    "start_line": 4
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/acpi.h",
+            "type": "file",
+            "name": "acpi.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 2091,
+            "md5": "8e69de08c5b361e537aab50a9b1d096a",
+            "sha1": "ed71f980ee0ff92dc22011d30bb581175b487d3a",
+            "sha256": "41c5e06c935fb73ba87c992f096b5cdc2fbfe575b195d44a7af22cf98a839d0d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 2 of the License, or\n *  (at your option) any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 36.57,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net> Michael Meskes <meskes@debian.org>",
+                    "start_line": 4
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Grahame Bowland Michael Meskes",
+                    "end_line": 5,
+                    "start_line": 4
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/bf4d1c0d-f79c-4f30-9709-436c971388e9"
+            ],
+            "emails": [
+                {
+                    "email": "grahame@angrygoats.net",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "meskes@debian.org",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/list.c",
+            "type": "file",
+            "name": "list.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 1689,
+            "md5": "41c88171e2c1928675acb699dfbc6feb",
+            "sha1": "e55e4d91a10292a3cb58f0b17368fb63869edca1",
+            "sha256": "4a86f0846128d7a43a273bb7ccf390dfdbeb857358312e2713609434399d0f9a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 2 of the License, or\n *  (at your option) any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 45.93,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Grahame Bowland",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/bf4d1c0d-f79c-4f30-9709-436c971388e9"
+            ],
+            "emails": [
+                {
+                    "email": "grahame@angrygoats.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/list.h",
+            "type": "file",
+            "name": "list.h",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".h",
+            "size": 1771,
+            "md5": "e8f32dd8776b2b3d8ec7f9666cdc49c6",
+            "sha1": "51b7703bf9017d8a2cbd313e4fe27225c1225f11",
+            "sha256": "fa6e999888d0fc90d20977bfe760be9aaca4dcfc665497f27ac358923c6a74fc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus",
+            "detected_license_expression_spdx": "GPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 17,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 5,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 2 of the License, or\n *  (at your option) any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 44.31,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 3,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net>",
+                    "start_line": 3
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Grahame Bowland",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/bf4d1c0d-f79c-4f30-9709-436c971388e9"
+            ],
+            "emails": [
+                {
+                    "email": "grahame@angrygoats.net",
+                    "end_line": 3,
+                    "start_line": 3
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/main.c",
+            "type": "file",
+            "name": "main.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 6827,
+            "md5": "969ff0e6818efed4cc04a4f8bb6731b1",
+            "sha1": "c24eb128fe78b5feb7c5d06ea45befc50d776410",
+            "sha256": "8e515b2001504e1b403c6f0307349142d87fb5613892806c11bdd096d2a5f1fc",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "gpl-2.0-plus AND warranty-disclaimer",
+            "detected_license_expression_spdx": "GPL-2.0-or-later AND LicenseRef-scancode-warranty-disclaimer",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 19,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-2.0-plus_85.RULE",
+                            "from_file": null,
+                            "start_line": 7,
+                            "matched_text": " *  This program is free software; you can redistribute it and/or modify\n *  it under the terms of the GNU General Public License as published by\n *  the Free Software Foundation; either version 2 of the License, or\n *  (at your option) any later version.\n *\n *  This program is distributed in the hope that it will be useful,\n *  but WITHOUT ANY WARRANTY; without even the implied warranty of\n *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n *  GNU General Public License for more details.\n *\n *  You should have received a copy of the GNU General Public License\n *  along with this program; if not, write to the Free Software\n *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA",
+                            "match_coverage": 100.0,
+                            "matched_length": 113,
+                            "rule_relevance": 100,
+                            "rule_identifier": "gpl-2.0-plus_85.RULE",
+                            "license_expression": "gpl-2.0-plus",
+                            "spdx_license_expression": "GPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "gpl_2_0_plus-2930056d-0989-b68b-d378-38505a18a8fe",
+                    "license_expression": "gpl-2.0-plus",
+                    "license_expression_spdx": "GPL-2.0-or-later"
+                },
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 76,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/warranty-disclaimer_1001.RULE",
+                            "from_file": null,
+                            "start_line": 75,
+                            "matched_text": "\"This is free software; see the source for copying conditions.  There is NO \"\n\"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. \"",
+                            "match_coverage": 100.0,
+                            "matched_length": 23,
+                            "rule_relevance": 100,
+                            "rule_identifier": "warranty-disclaimer_1001.RULE",
+                            "license_expression": "warranty-disclaimer",
+                            "spdx_license_expression": "LicenseRef-scancode-warranty-disclaimer"
+                        }
+                    ],
+                    "identifier": "warranty_disclaimer-40c7cc7c-e0bf-89d5-fbc1-4b2e3d70ab69",
+                    "license_expression": "warranty-disclaimer",
+                    "license_expression_spdx": "LicenseRef-scancode-warranty-disclaimer"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 15.09,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 4,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland <grahame@angrygoats.net>",
+                    "start_line": 4
+                },
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 2008-2012 Michael Meskes <meskes@debian.org>",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 74,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland. 2008-2012 Michael Meskes",
+                    "start_line": 73
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Grahame Bowland",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "holder": "Michael Meskes",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Grahame Bowland. Michael Meskes",
+                    "end_line": 74,
+                    "start_line": 73
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/56f602fc-3ec0-4901-ab16-b7c7ce606230-7bdfad67/210a18ff-b29a-43d7-925d-a953932c32cc"
+            ],
+            "emails": [
+                {
+                    "email": "grahame@angrygoats.net",
+                    "end_line": 4,
+                    "start_line": 4
+                },
+                {
+                    "email": "meskes@debian.org",
+                    "end_line": 5,
+                    "start_line": 5
+                }
+            ],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/6c",
+            "type": "directory",
+            "name": "6c",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug",
+            "type": "file",
+            "name": "acpi-1.7-23.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 56328,
+            "md5": "88ab1406b9797960a5d66a8d330fac07",
+            "sha1": "3c3e2be60c368b0b3ff7b58b8c3c8daf8a66f6d6",
+            "sha256": "f0b2008972b4749be3ce6cff389416f9a29f52fabe6efc5192cd94f056fd6ab8",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=6cd0d611efcac4dba1b338320f7d86b5fd0626c7, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "warranty-disclaimer",
+            "detected_license_expression_spdx": "LicenseRef-scancode-warranty-disclaimer",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 49,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/warranty-disclaimer_1001.RULE",
+                            "from_file": null,
+                            "start_line": 48,
+                            "matched_text": "This is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+                            "match_coverage": 100.0,
+                            "matched_length": 23,
+                            "rule_relevance": 100,
+                            "rule_identifier": "warranty-disclaimer_1001.RULE",
+                            "license_expression": "warranty-disclaimer",
+                            "spdx_license_expression": "LicenseRef-scancode-warranty-disclaimer"
+                        }
+                    ],
+                    "identifier": "warranty_disclaimer-40c7cc7c-e0bf-89d5-fbc1-4b2e3d70ab69",
+                    "license_expression": "warranty-disclaimer",
+                    "license_expression_spdx": "LicenseRef-scancode-warranty-disclaimer"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.8,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 47,
+                    "copyright": "Copyright (c) 2001 Grahame Bowland. 2008-2012 Michael Meskes",
+                    "start_line": 46
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Grahame Bowland. Michael Meskes",
+                    "end_line": 47,
+                    "start_line": 46
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [
+                {
+                    "email": "meskes@debian.org",
+                    "end_line": 44,
+                    "start_line": 44
+                }
+            ],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/dirent.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/dirent.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/<built-in>",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/acpi.c",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/acpi.h",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/list.c",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/list.h",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/main.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/dirent.h",
+                    "usr/include/bits/getopt_core.h",
+                    "usr/include/bits/getopt_ext.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/dirent.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/unistd.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/acpi-1.7-23.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/acpi.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/acpi.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/list.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/list.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/acpi-1.7-23.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/acpi-1.7-23.fc40.x86_64/main.c"
+        }
+    ]
+}

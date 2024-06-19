@@ -1,0 +1,2002 @@
+{
+    "headers": [
+        {
+            "tool_name": "scanpipe",
+            "tool_version": "v5.0.0-40-g124e022",
+            "other_tools": [
+                "pkg:pypi/scancode-toolkit@32.1.0"
+            ],
+            "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+            "uuid": "b101197e-e6ea-4075-ba8d-34749a08f173",
+            "created_date": "2024-06-14T07:21:09.872Z",
+            "notes": "",
+            "settings": {},
+            "input_sources": [
+                {
+                    "uuid": "ab4e9a5b-509c-4b6a-aaa2-d3720779e0f0",
+                    "filename": "abcm2ps-debuginfo-8.14.13-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcm2ps-debuginfo-8.14.13-6.fc40.x86_64.rpm#to",
+                    "is_uploaded": false,
+                    "tag": "to",
+                    "size": 368341,
+                    "is_file": true,
+                    "exists": true
+                },
+                {
+                    "uuid": "cdec6f06-53a7-4dd3-97bd-875a79bf444e",
+                    "filename": "abcm2ps-debugsource-8.14.13-6.fc40.x86_64.rpm",
+                    "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcm2ps-debugsource-8.14.13-6.fc40.x86_64.rpm#from",
+                    "is_uploaded": false,
+                    "tag": "from",
+                    "size": 178205,
+                    "is_file": true,
+                    "exists": true
+                }
+            ],
+            "runs": [
+                {
+                    "pipeline_name": "d2d",
+                    "status": "success",
+                    "description": "Establish relationships between two code trees: deployment and development.",
+                    "uuid": "f796ce9e-1b94-4204-990f-7421aa5b3aac",
+                    "created_date": "2024-06-14T07:21:09.890718Z",
+                    "scancodeio_version": "v5.0.0-40-g124e022",
+                    "task_id": "f796ce9e-1b94-4204-990f-7421aa5b3aac",
+                    "task_start_date": "2024-06-14T07:21:09.900811Z",
+                    "task_end_date": "2024-06-14T07:21:45.136085Z",
+                    "task_exitcode": 0,
+                    "task_output": "",
+                    "log": "2024-06-14 07:21:09.90 Pipeline [d2d] starting\n2024-06-14 07:21:09.90 Step [download_missing_inputs] starting\n2024-06-14 07:21:09.90 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcm2ps-debugsource-8.14.13-6.fc40.x86_64.rpm#from\n2024-06-14 07:21:17.01 Fetching input from https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/abcm2ps-debuginfo-8.14.13-6.fc40.x86_64.rpm#to\n2024-06-14 07:21:19.27 Step [download_missing_inputs] completed in 9 seconds\n2024-06-14 07:21:19.27 Step [get_inputs] starting\n2024-06-14 07:21:19.28 Step [get_inputs] completed in 0 seconds\n2024-06-14 07:21:19.29 Step [extract_inputs_to_codebase_directory] starting\n2024-06-14 07:21:19.35 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2024-06-14 07:21:19.35 Step [extract_archives] starting\n2024-06-14 07:21:19.44 Step [extract_archives] completed in 0 seconds\n2024-06-14 07:21:19.44 Step [collect_and_create_codebase_resources] starting\n2024-06-14 07:21:19.56 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2024-06-14 07:21:19.56 Step [fingerprint_codebase_directories] starting\n2024-06-14 07:21:19.57 Step [fingerprint_codebase_directories] completed in 0 seconds\n2024-06-14 07:21:19.57 Step [flag_empty_files] starting\n2024-06-14 07:21:19.58 Step [flag_empty_files] completed in 0 seconds\n2024-06-14 07:21:19.58 Step [flag_whitespace_files] starting\n2024-06-14 07:21:19.58 Step [flag_whitespace_files] completed in 0 seconds\n2024-06-14 07:21:19.58 Step [flag_ignored_resources] starting\n2024-06-14 07:21:19.58 Step [flag_ignored_resources] completed in 0 seconds\n2024-06-14 07:21:19.59 Step [map_about_files] starting\n2024-06-14 07:21:19.59 Step [map_about_files] completed in 0 seconds\n2024-06-14 07:21:19.59 Step [map_checksum] starting\n2024-06-14 07:21:19.60 Mapping 1 to/ resources using sha1 against from/ codebase\n2024-06-14 07:21:19.61 Step [map_checksum] completed in 0 seconds\n2024-06-14 07:21:19.61 Step [match_archives_to_purldb] starting\n2024-06-14 07:21:19.61 PurlDB is not available. Skipping.\n2024-06-14 07:21:19.61 Step [match_archives_to_purldb] completed in 0 seconds\n2024-06-14 07:21:19.61 Step [find_java_packages] starting\n2024-06-14 07:21:19.62 Finding Java package for 0 .java resources.\n2024-06-14 07:21:19.63 Step [find_java_packages] completed in 0 seconds\n2024-06-14 07:21:19.63 Step [map_java_to_class] starting\n2024-06-14 07:21:19.63 Mapping 0 .class resources to .java\n2024-06-14 07:21:19.64 No .java resources to map.\n2024-06-14 07:21:19.64 Step [map_java_to_class] completed in 0 seconds\n2024-06-14 07:21:19.64 Step [map_jar_to_source] starting\n2024-06-14 07:21:19.65 Mapping 0 .jar resources using map_jar_to_source against from/ codebase\n2024-06-14 07:21:19.65 Step [map_jar_to_source] completed in 0 seconds\n2024-06-14 07:21:19.66 Step [map_elf] starting\n2024-06-14 07:21:20.32 Mapping 1 to/ resources using paths with 14 from/ resources.\n2024-06-14 07:21:20.32 Done building from/ resources index.\n2024-06-14 07:21:20.32 WARNING: #2 dwarf_compiled_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug'\n2024-06-14 07:21:20.33 WARNING: #28 dwarf_included_paths paths NOT mapped for: 'to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug'\n2024-06-14 07:21:20.34 Created 14 mappings using dwarf_compiled_paths, dwarf_included_paths for: 'to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug'\n2024-06-14 07:21:20.34 Step [map_elf] completed in 1 seconds\n2024-06-14 07:21:20.34 Step [map_go] starting\n2024-06-14 07:21:20.35 Mapping 0 to/ resources using paths with 14 from/ resources.\n2024-06-14 07:21:20.35 Done building from/ resources index.\n2024-06-14 07:21:20.35 Step [map_go] completed in 0 seconds\n2024-06-14 07:21:20.36 Step [match_directories_to_purldb] starting\n2024-06-14 07:21:20.36 PurlDB is not available. Skipping.\n2024-06-14 07:21:20.36 Step [match_directories_to_purldb] completed in 0 seconds\n2024-06-14 07:21:20.36 Step [match_resources_to_purldb] starting\n2024-06-14 07:21:20.36 PurlDB is not available. Skipping.\n2024-06-14 07:21:20.36 Step [match_resources_to_purldb] completed in 0 seconds\n2024-06-14 07:21:20.37 Step [map_path] starting\n2024-06-14 07:21:20.37 Mapping 0 to/ resources using path map against from/ codebase\n2024-06-14 07:21:20.37 Step [map_path] completed in 0 seconds\n2024-06-14 07:21:20.37 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2024-06-14 07:21:20.38 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 0 seconds\n2024-06-14 07:21:20.38 Step [perform_house_keeping_tasks] starting\n2024-06-14 07:21:20.39 Step [perform_house_keeping_tasks] completed in 0 seconds\n2024-06-14 07:21:20.39 Step [match_purldb_resources_post_process] starting\n2024-06-14 07:21:20.39 Refining matching for 0 matched-to-purldb-resource archives.\n2024-06-14 07:21:20.40 0 resource processed\n2024-06-14 07:21:20.40 Step [match_purldb_resources_post_process] completed in 0 seconds\n2024-06-14 07:21:20.40 Step [remove_packages_without_resources] starting\n2024-06-14 07:21:20.40 Step [remove_packages_without_resources] completed in 0 seconds\n2024-06-14 07:21:20.41 Step [scan_unmapped_to_files] starting\n2024-06-14 07:21:24.05 Step [scan_unmapped_to_files] completed in 4 seconds\n2024-06-14 07:21:24.05 Step [scan_mapped_from_for_files] starting\n2024-06-14 07:21:38.12 Progress: 14% (2/14) ETA: 86 seconds (1.4 minutes)\n2024-06-14 07:21:39.06 Progress: 28% (4/14) ETA: 39 seconds\n2024-06-14 07:21:39.29 Progress: 42% (6/14) ETA: 21 seconds\n2024-06-14 07:21:39.95 Progress: 57% (8/14) ETA: 12 seconds\n2024-06-14 07:21:41.22 Progress: 71% (10/14) ETA: 7 seconds\n2024-06-14 07:21:43.83 Progress: 85% (12/14) ETA: 3 seconds\n2024-06-14 07:21:44.79 Progress: 100% (14/14)\n2024-06-14 07:21:45.05 Step [scan_mapped_from_for_files] completed in 21 seconds\n2024-06-14 07:21:45.07 Step [flag_deployed_from_resources_with_missing_license] starting\n2024-06-14 07:21:45.09 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2024-06-14 07:21:45.09 Step [create_local_files_packages] starting\n2024-06-14 07:21:45.12 Step [create_local_files_packages] completed in 0 seconds\n2024-06-14 07:21:45.13 Pipeline completed in 35 seconds\n",
+                    "execution_time": 35
+                }
+            ],
+            "extra_data": {}
+        }
+    ],
+    "packages": [
+        {
+            "purl": "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/2e4cc402-4e93-40b9-98a3-0a67c9d8f38f",
+            "type": "local-files",
+            "namespace": "e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e",
+            "name": "2e4cc402-4e93-40b9-98a3-0a67c9d8f38f",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 2000-2021 Jean-Francois Moine (http://moinejf.free.fr)\nCopyright (c) 2011-2019 Jean-Francois Moine\nCopyright (c) 2011-2019 Jean-Francois Moine (http://moinejf.free.fr)\nCopyright (c) 1998-2019 Jean-Francois Moine (http://moinejf.free.fr)\nCopyright (c) 1996-1998 Michael Methfessel (https://github.com/methf/abc2ps/)",
+            "holder": "",
+            "declared_license_expression": "lgpl-3.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        },
+        {
+            "purl": "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c",
+            "type": "local-files",
+            "namespace": "e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e",
+            "name": "4db1325f-4714-4a0d-9c08-bb6e2bce3c9c",
+            "version": "",
+            "qualifiers": "",
+            "subpath": "",
+            "tag": "",
+            "primary_language": "",
+            "description": "",
+            "release_date": null,
+            "parties": [],
+            "keywords": [],
+            "homepage_url": "",
+            "download_url": "",
+            "bug_tracking_url": "",
+            "code_view_url": "",
+            "vcs_url": "",
+            "repository_homepage_url": "",
+            "repository_download_url": "",
+            "api_data_url": "",
+            "size": null,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "copyright": "Copyright (c) 1998-2019 Jean-Francois Moine (http://moinejf.free.fr)\nCopyright (c) 1996-1998 Michael Methfessel\nCopyright (c) 1998-2020 Jean-Francois Moine (http://moinejf.free.fr)\nCopyright (c) 1998-2021 Jean-Francois Moine (http://moinejf.free.fr)\nCopyright (c) 1998-2019 Jean-Francois Moine Adapted",
+            "holder": "",
+            "declared_license_expression": "lgpl-2.0-plus",
+            "declared_license_expression_spdx": "",
+            "license_detections": [],
+            "other_license_expression": "",
+            "other_license_expression_spdx": "",
+            "other_license_detections": [],
+            "extracted_license_statement": "",
+            "compliance_alert": "",
+            "notice_text": "",
+            "source_packages": [],
+            "extra_data": {},
+            "package_uid": "",
+            "datasource_ids": [],
+            "datafile_paths": [],
+            "file_references": [],
+            "missing_resources": [],
+            "modified_resources": [],
+            "affected_by_vulnerabilities": []
+        }
+    ],
+    "dependencies": [],
+    "files": [
+        {
+            "path": "from",
+            "type": "directory",
+            "name": "from",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src",
+            "type": "directory",
+            "name": "src",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64",
+            "type": "directory",
+            "name": "abcm2ps-8.14.13-6.fc40.x86_64",
+            "status": "ignored-directory",
+            "tag": "from",
+            "extension": ".x86_64",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcm2ps.c",
+            "type": "file",
+            "name": "abcm2ps.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 24628,
+            "md5": "a96ae519d040c8752ce2cb9ae689eeeb",
+            "sha1": "edd88291e5a82fe3093ca4843956420e0054d9ec",
+            "sha256": "7d62e923261e945e39ccc5aac2d5d546af19a57a93f71b229fc1199f47ac43ae",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 13,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-3.0-plus_116.RULE",
+                            "from_file": null,
+                            "start_line": 10,
+                            "matched_text": " * abcm2ps is free software: you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 41,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-3.0-plus_116.RULE",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-181922ea-7012-9ce1-2aeb-8dae0a1eef43",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 5,
+                    "copyright": "Copyright (c) 1998-2019 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 5
+                },
+                {
+                    "end_line": 8,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel (https://github.com/methf/abc2ps/)",
+                    "start_line": 8
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/2e4cc402-4e93-40b9-98a3-0a67c9d8f38f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 5,
+                    "start_line": 5
+                },
+                {
+                    "url": "https://github.com/methf/abc2ps",
+                    "end_line": 8,
+                    "start_line": 8
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcm2ps.h",
+            "type": "file",
+            "name": "abcm2ps.h",
+            "status": "no-licenses",
+            "tag": "from",
+            "extension": ".h",
+            "size": 30019,
+            "md5": "fb14c813f199407df566743ed7984bbf",
+            "sha1": "c4ff8498ce6333f2258f6b0a2c4f675a0d855b12",
+            "sha256": "d0d4873d5985dc3e5a6b3eed78f0acbc14fcb25e4e635e1061dd6d342bacf145",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, ASCII text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcparse.c",
+            "type": "file",
+            "name": "abcparse.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 56644,
+            "md5": "be7493a64a5ebe8b113135e8cb19693c",
+            "sha1": "486bc94800ae86f707b6c61506924cd93392db8d",
+            "sha256": "ac538dd49e57d8af7dc33935e7187c13e04ec4fb6be8c66eeb812902e32bf6d7",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.52,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2021 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/buffer.c",
+            "type": "file",
+            "name": "buffer.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 22844,
+            "md5": "3b36a1b9d2b4d34f6079786e970f47dc",
+            "sha1": "471f1f524bb0a819baf36ec0ecd1041cbd917dc9",
+            "sha256": "b40ae9fe63ead0712c3b692ac790852b01b32b30b4b23e11efdf8e25e7ddace5",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.35,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1998-2019 Jean-Francois Moine Adapted",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine Adapted",
+                    "end_line": 7,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/deco.c",
+            "type": "file",
+            "name": "deco.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 56566,
+            "md5": "96d3b1a8ce3f121c7fab2e14871375dc",
+            "sha1": "3d9fef565450160333f9c5217f37710804fef9aa",
+            "sha256": "8dc4f1c7eaa4d944114da755c9aed2d475970841f13472566f0dae5b8ac1c043",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-3.0-plus_116.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 41,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-3.0-plus_116.RULE",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-181922ea-7012-9ce1-2aeb-8dae0a1eef43",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.44,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2000-2021 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/2e4cc402-4e93-40b9-98a3-0a67c9d8f38f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/draw.c",
+            "type": "file",
+            "name": "draw.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 112483,
+            "md5": "03b3a7714a6af0f43cb0915d14bbbbba",
+            "sha1": "abdbe842930b7dea381a19dd11157556ed7776d5",
+            "sha256": "3bcbf73f000f2cba0ce4d107d81803261cfac6968c5fdcbf373b86a0bc90f4c4",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2020 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "url": "http://moinejf.free.fr/abcm2ps-doc/tuplets.xhtml",
+                    "end_line": 2564,
+                    "start_line": 2564
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/format.c",
+            "type": "file",
+            "name": "format.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 36301,
+            "md5": "bc550106822e0ab29a0c97a87e8996a8",
+            "sha1": "d64ca28c1f64029ac0e1d9808e7938a38f27d9b0",
+            "sha256": "049a391d5f73f54651f3d038e19fa1ff73ab0765577582f630fc7dbb97abd92e",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.85,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2019 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/front.c",
+            "type": "file",
+            "name": "front.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 19584,
+            "md5": "6aeedc9588873192f4e61a4e558f9810",
+            "sha1": "ceaa98dec086c8b2daf1cf6685a6bae590e3a93a",
+            "sha256": "b8454b128835d3243da3c6fc2685495616683e7251fd082a3c1aac5dd59f20ac",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-3.0-plus_116.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 41,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-3.0-plus_116.RULE",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-181922ea-7012-9ce1-2aeb-8dae0a1eef43",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 1.68,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2011-2019 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/2e4cc402-4e93-40b9-98a3-0a67c9d8f38f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/glyph.c",
+            "type": "file",
+            "name": "glyph.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 8284,
+            "md5": "feacc08e5565599526e3ed131a19d754",
+            "sha1": "1b0414ddeda3db5aaa1cc2c34c880c45c40cd52c",
+            "sha256": "4770da01e77e19b37d2fe37e3cac1af004c23040efebc61ab438076b2bd3808f",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-3.0-plus_116.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 41,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-3.0-plus_116.RULE",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-181922ea-7012-9ce1-2aeb-8dae0a1eef43",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 3.71,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2011-2019 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/2e4cc402-4e93-40b9-98a3-0a67c9d8f38f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/music.c",
+            "type": "file",
+            "name": "music.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 113709,
+            "md5": "9863f157888346e562a58ce293bac17d",
+            "sha1": "56aada6704ae52bc691aa4d7005ef532013876ae",
+            "sha256": "4e040d4b0bb65b7adb596dcef5e00ea7f8da08a5d5432f3bd9e2d1a435ac1c9d",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.24,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2021 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/parse.c",
+            "type": "file",
+            "name": "parse.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 135331,
+            "md5": "503b20c17029e1e5d010f5afff45791d",
+            "sha1": "1d5cc562933f2c6ad9c225fada6f3165d1226daa",
+            "sha256": "f9aed235e85873e5b9c14b08ee6db4a28200a03ba02cbd37f8b0ada0f0361ed0",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.22,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2021 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/subs.c",
+            "type": "file",
+            "name": "subs.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 40285,
+            "md5": "b6357f4edf6ec677e8f43cbc446b9af6",
+            "sha1": "170f0e60699e5ca2641bc4bf2bfb67a12fc881a4",
+            "sha256": "a2f08de9b5253918ce93f4a0f57276316fe0c802aee6ccb4c899ee1b28c4fb91",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.75,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2019 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/svg.c",
+            "type": "file",
+            "name": "svg.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 101044,
+            "md5": "e861b959700c1cf4f0faaaf003aa3969",
+            "sha1": "d269413953f3e547a68f5a641832ebd50f9afddb",
+            "sha256": "611c0685206cd24e6789587118d3d954077b4ad9249f9e55870f169d12d95064",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-3.0-plus",
+            "detected_license_expression_spdx": "LGPL-3.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 100.0,
+                            "matcher": "2-aho",
+                            "end_line": 11,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-3.0-plus_116.RULE",
+                            "from_file": null,
+                            "start_line": 8,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 100.0,
+                            "matched_length": 41,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-3.0-plus_116.RULE",
+                            "license_expression": "lgpl-3.0-plus",
+                            "spdx_license_expression": "LGPL-3.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_3_0_plus-181922ea-7012-9ce1-2aeb-8dae0a1eef43",
+                    "license_expression": "lgpl-3.0-plus",
+                    "license_expression_spdx": "LGPL-3.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.26,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 2011-2019 Jean-Francois Moine",
+                    "start_line": 6
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/2e4cc402-4e93-40b9-98a3-0a67c9d8f38f"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://www.w3.org/1999/xlink",
+                    "end_line": 1145,
+                    "start_line": 1145
+                },
+                {
+                    "url": "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd",
+                    "end_line": 1227,
+                    "start_line": 1227
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/syms.c",
+            "type": "file",
+            "name": "syms.c",
+            "status": "scanned",
+            "tag": "from",
+            "extension": ".c",
+            "size": 29941,
+            "md5": "cd0988151c10947a50d033bdc85d5ecc",
+            "sha1": "212b2ad6476bdb24a306d75be9aa9869974130d2",
+            "sha256": "cc0bbc95d07b9d718f43c6f9a9920007b162bcb352f685de218e7dee10d99f0a",
+            "sha512": "",
+            "mime_type": "text/x-c",
+            "file_type": "C source, UTF-8 Unicode text",
+            "programming_language": "C",
+            "is_binary": false,
+            "is_text": true,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "lgpl-2.0-plus",
+            "detected_license_expression_spdx": "LGPL-2.0-or-later",
+            "license_detections": [
+                {
+                    "matches": [
+                        {
+                            "score": 97.67,
+                            "matcher": "3-seq",
+                            "end_line": 12,
+                            "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/lgpl-2.0-plus_42.RULE",
+                            "from_file": null,
+                            "start_line": 9,
+                            "matched_text": " * This program is free software; you can redistribute it and/or modify it\n * under the terms of the GNU Lesser General Public License as published\n * by the Free Software Foundation; either version 3 of the License, or\n * (at your option) any later version.",
+                            "match_coverage": 97.67,
+                            "matched_length": 42,
+                            "rule_relevance": 100,
+                            "rule_identifier": "lgpl-2.0-plus_42.RULE",
+                            "license_expression": "lgpl-2.0-plus",
+                            "spdx_license_expression": "LGPL-2.0-or-later"
+                        }
+                    ],
+                    "identifier": "lgpl_2_0_plus-7b6befa4-a214-e368-bfe2-dea202f63a67",
+                    "license_expression": "lgpl-2.0-plus",
+                    "license_expression_spdx": "LGPL-2.0-or-later"
+                }
+            ],
+            "license_clues": [],
+            "percentage_of_license_text": 0.76,
+            "compliance_alert": "",
+            "copyrights": [
+                {
+                    "end_line": 6,
+                    "copyright": "Copyright (c) 1998-2019 Jean-Francois Moine (http://moinejf.free.fr)",
+                    "start_line": 6
+                },
+                {
+                    "end_line": 7,
+                    "copyright": "Copyright (c) 1996-1998 Michael Methfessel",
+                    "start_line": 7
+                }
+            ],
+            "holders": [
+                {
+                    "holder": "Jean-Francois Moine",
+                    "end_line": 6,
+                    "start_line": 6
+                },
+                {
+                    "holder": "Michael Methfessel",
+                    "end_line": 7,
+                    "start_line": 7
+                }
+            ],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [
+                "pkg:local-files/e8f6eead-a662-4976-a53d-8bda6d19112e-b101197e/4db1325f-4714-4a0d-9c08-bb6e2bce3c9c"
+            ],
+            "emails": [],
+            "urls": [
+                {
+                    "url": "http://moinejf.free.fr/",
+                    "end_line": 6,
+                    "start_line": 6
+                }
+            ],
+            "extra_data": {}
+        },
+        {
+            "path": "to",
+            "type": "directory",
+            "name": "to",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib",
+            "type": "directory",
+            "name": "lib",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug",
+            "type": "directory",
+            "name": "debug",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id",
+            "type": "directory",
+            "name": ".build-id",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/.build-id/f1",
+            "type": "directory",
+            "name": "f1",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr",
+            "type": "directory",
+            "name": "usr",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin",
+            "type": "directory",
+            "name": "bin",
+            "status": "ignored-directory",
+            "tag": "to",
+            "extension": "",
+            "size": 4096,
+            "md5": "",
+            "sha1": "",
+            "sha256": "",
+            "sha512": "",
+            "mime_type": "",
+            "file_type": "",
+            "programming_language": "",
+            "is_binary": false,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "directory_content": "",
+                "directory_structure": ""
+            }
+        },
+        {
+            "path": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "type": "file",
+            "name": "abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "tag": "to",
+            "extension": ".debug",
+            "size": 875008,
+            "md5": "e55bf043bd3174efbfdd60a24c09c653",
+            "sha1": "2a8e096d848a6babe270eeb2f5841c48a161b70c",
+            "sha256": "402456ab036275ee944154cbc441b0c81ea8c9e1d7367541fefb0939f49c5f08",
+            "sha512": "",
+            "mime_type": "application/x-sharedlib",
+            "file_type": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter \\004, BuildID[sha1]=f10faa60dadbcb7b86fef33ddecf546e10cd5221, for GNU/Linux 3.2.0, with debug_info, not stripped",
+            "programming_language": "",
+            "is_binary": true,
+            "is_text": false,
+            "is_archive": false,
+            "is_media": false,
+            "is_key_file": false,
+            "detected_license_expression": "",
+            "detected_license_expression_spdx": "",
+            "license_detections": [],
+            "license_clues": [],
+            "percentage_of_license_text": null,
+            "compliance_alert": "",
+            "copyrights": [],
+            "holders": [],
+            "authors": [],
+            "package_data": [],
+            "for_packages": [],
+            "emails": [],
+            "urls": [],
+            "extra_data": {
+                "dwarf_compiled_paths": [
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/<artificial>",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/glyph.c"
+                ],
+                "dwarf_included_paths": [
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/regex.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/<built-in>",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcm2ps.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcm2ps.h",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcparse.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/buffer.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/deco.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/draw.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/format.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/front.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/music.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/parse.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/subs.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/svg.c",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/syms.c"
+                ],
+                "dwarf_compiled_paths_not_mapped": [
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/<artificial>"
+                ],
+                "dwarf_included_paths_not_mapped": [
+                    "usr/include/bits/mathcalls.h",
+                    "usr/include/bits/stdio2-decl.h",
+                    "usr/include/bits/stdio2.h",
+                    "usr/include/bits/stdlib-float.h",
+                    "usr/include/bits/string_fortified.h",
+                    "usr/include/bits/struct_stat.h",
+                    "usr/include/bits/types.h",
+                    "usr/include/bits/types/FILE.h",
+                    "usr/include/bits/types/struct_FILE.h",
+                    "usr/include/bits/types/struct_timespec.h",
+                    "usr/include/bits/types/struct_tm.h",
+                    "usr/include/bits/types/time_t.h",
+                    "usr/include/bits/unistd-decl.h",
+                    "usr/include/bits/unistd.h",
+                    "usr/include/ctype.h",
+                    "usr/include/errno.h",
+                    "usr/include/regex.h",
+                    "usr/include/stdio.h",
+                    "usr/include/stdlib.h",
+                    "usr/include/string.h",
+                    "usr/include/strings.h",
+                    "usr/include/sys/mman.h",
+                    "usr/include/sys/stat.h",
+                    "usr/include/sys/types.h",
+                    "usr/include/time.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h",
+                    "usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h",
+                    "usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/<built-in>"
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcm2ps.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcm2ps.h"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/abcparse.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/buffer.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/deco.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/draw.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/format.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/front.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_compiled_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/glyph.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/music.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/parse.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/subs.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/svg.c"
+        },
+        {
+            "to_resource": "to/usr/lib/debug/usr/bin/abcm2ps-8.14.13-6.fc40.x86_64.debug",
+            "status": "requires-review",
+            "map_type": "dwarf_included_paths",
+            "score": "5/4",
+            "from_resource": "from/usr/src/debug/abcm2ps-8.14.13-6.fc40.x86_64/syms.c"
+        }
+    ]
+}

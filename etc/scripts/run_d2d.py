@@ -1,3 +1,4 @@
+import os
 import requests
 from purldb_toolkit.purlcli import d2d
 
@@ -29,6 +30,16 @@ for from_to_url in from_to_urls:
     to_size = r.headers.get('content-length')
     to_size = int(to_size) if to_size else None
 
+    url_path = from_url.split('#')[0]
+    folder_name = url_path.split('/')[-1]
+    folder_name_parts = folder_name.split('.')
+    if folder_name_parts[-1] == 'rpm':
+        folder_name = '.'.join(folder_name_parts[:-1])
+    directory_path = os.path.dirname(url_path.replace('https://', ''))
+    directory_path = "data/" + directory_path + "/" + folder_name
+    os.makedirs(directory_path, exist_ok=True)
+    file_path = os.path.join(directory_path, 'd2d-summary.json')
+
     if to_size and to_size > 10000000:
         continue
     try:
@@ -36,7 +47,7 @@ for from_to_url in from_to_urls:
         purls=[
             from_url, to_url
         ], 
-        output=f"{from_to_url['from'].split('/')[-1]}-{from_to_url['to'].split('/')[-1]}.txt", 
+        output=file_path, 
         purldb_api_url=None, 
         matchcode_api_url="http://127.0.0.1:8002/api/"
         )

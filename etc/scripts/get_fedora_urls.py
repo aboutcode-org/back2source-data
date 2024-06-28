@@ -44,12 +44,16 @@ def scrape_and_extract_pairs(url):
 
     return pairs
 
-# Get pairs
-pairs = scrape_and_extract_pairs(base_url)
 
-# Write pairs to a CSV file
-with open('pairs.csv', 'w', newline='') as csvfile:
-    csvwriter = csv.writer(csvfile)
-    for debuginfo, debugsource in pairs:
-        print(debuginfo, debugsource)
-        csvwriter.writerow([debuginfo, debugsource])
+def generate_csv():
+    # Get pairs
+    pairs = scrape_and_extract_pairs(base_url)
+
+    # Write pairs to a CSV file
+    with open('pairs.csv', 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        for debuginfo, debugsource in pairs:
+            print(debuginfo, debugsource)
+            csvwriter.writerow([debuginfo, debugsource])
+
+generate_csv()

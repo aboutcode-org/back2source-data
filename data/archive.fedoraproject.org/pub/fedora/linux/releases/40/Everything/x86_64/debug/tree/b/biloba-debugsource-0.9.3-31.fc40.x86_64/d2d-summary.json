@@ -1,56 +1,73 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/7c6924f2-dd3f-4f76-b135-254675bc6997/",
-    "uuid": "7c6924f2-dd3f-4f76-b135-254675bc6997",
-    "created_date": "2024-06-17T10:25:19.349630Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/biloba-0.9.3-31.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 35
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/biloba-0.9.3-31.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 33
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/biloba-server-0.9.3-31.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "a22361b8-260d-4568-9ee3-c1f69e9d8848",
-            "filename": "biloba-debuginfo-0.9.3-31.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biloba-debuginfo-0.9.3-31.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 175304,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "a22361b8-260d-4568-9ee3-c1f69e9d8848", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biloba-debuginfo-0.9.3-31.fc40.x86_64.rpm#to", 
+            "filename": "biloba-debuginfo-0.9.3-31.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 175304
+        }, 
         {
-            "uuid": "688435dd-254f-4350-bd57-07b7f60d43f7",
-            "filename": "biloba-debugsource-0.9.3-31.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biloba-debugsource-0.9.3-31.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 63225,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "688435dd-254f-4350-bd57-07b7f60d43f7", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/biloba-debugsource-0.9.3-31.fc40.x86_64.rpm#from", 
+            "filename": "biloba-debugsource-0.9.3-31.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 63225
         }
-    ],
+    ], 
+    "uuid": "7c6924f2-dd3f-4f76-b135-254675bc6997", 
+    "resource_count": 64, 
+    "url": "http://127.0.0.1:8002/api/d2d/7c6924f2-dd3f-4f76-b135-254675bc6997/", 
+    "package_count": 1, 
     "runs": [
         "84f9888e-4c42-44b3-a91b-d2f11ace2411"
-    ],
-    "resource_count": 64,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 62,
-    "codebase_resources_summary": {
-        "ignored-directory": 16,
-        "requires-review": 3,
-        "scanned": 45
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 62
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 16, 
+        "scanned": 45, 
+        "requires-review": 3
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 62, 
+    "created_date": "2024-06-17T10:25:19.349630Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 62
     }
 }

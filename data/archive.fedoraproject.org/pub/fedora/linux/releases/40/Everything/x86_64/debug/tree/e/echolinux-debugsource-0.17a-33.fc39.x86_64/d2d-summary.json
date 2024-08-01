@@ -1,58 +1,80 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/083d6535-cc18-43ef-89a5-0f5966bbfd80/",
-    "uuid": "083d6535-cc18-43ef-89a5-0f5966bbfd80",
-    "created_date": "2024-06-18T05:24:44.512982Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/echolinux-0.17a-33.fc39.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 33
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/echoaudio-0.17a-33.fc39.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 11
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/echogui-0.17a-33.fc39.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 27
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/echolinux-0.17a-33.fc39.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 10
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "3bb592c3-b2b8-4c7e-a7ea-e947b28e8e54",
-            "filename": "echolinux-debuginfo-0.17a-33.fc39.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/echolinux-debuginfo-0.17a-33.fc39.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 75560,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "3bb592c3-b2b8-4c7e-a7ea-e947b28e8e54", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/echolinux-debuginfo-0.17a-33.fc39.x86_64.rpm#to", 
+            "filename": "echolinux-debuginfo-0.17a-33.fc39.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 75560
+        }, 
         {
-            "uuid": "d4222944-69cf-44fd-b445-7e036e468686",
-            "filename": "echolinux-debugsource-0.17a-33.fc39.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/echolinux-debugsource-0.17a-33.fc39.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 28908,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "d4222944-69cf-44fd-b445-7e036e468686", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/echolinux-debugsource-0.17a-33.fc39.x86_64.rpm#from", 
+            "filename": "echolinux-debugsource-0.17a-33.fc39.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 28908
         }
-    ],
+    ], 
+    "uuid": "083d6535-cc18-43ef-89a5-0f5966bbfd80", 
+    "resource_count": 36, 
+    "url": "http://127.0.0.1:8002/api/d2d/083d6535-cc18-43ef-89a5-0f5966bbfd80/", 
+    "package_count": 1, 
     "runs": [
         "f32d8f0c-0e95-4017-a4bc-6126095ce19d"
-    ],
-    "resource_count": 36,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 15,
-    "codebase_resources_summary": {
-        "ignored-directory": 18,
-        "no-licenses": 9,
-        "requires-review": 4,
-        "scanned": 5
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 1,
-        "dwarf_included_paths": 14
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 18, 
+        "scanned": 5, 
+        "requires-review": 4, 
+        "no-licenses": 9
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 15, 
+    "created_date": "2024-06-18T05:24:44.512982Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 1, 
+        "dwarf_included_paths": 14
     }
 }

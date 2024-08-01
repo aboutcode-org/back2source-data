@@ -1,57 +1,74 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/1100a5b8-f1aa-4776-8c73-a5717c0be0f8/",
-    "uuid": "1100a5b8-f1aa-4776-8c73-a5717c0be0f8",
-    "created_date": "2024-06-17T12:14:52.304130Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/bzip2-1.0.8-18.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 12
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/bzip2-1.0.8-18.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 12
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/bzip2recover-1.0.8-18.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 4
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "db5a780b-bf56-4d64-bbf5-e3eab12444a6",
-            "filename": "bzip2-debuginfo-1.0.8-18.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bzip2-debuginfo-1.0.8-18.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 46868,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "db5a780b-bf56-4d64-bbf5-e3eab12444a6", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bzip2-debuginfo-1.0.8-18.fc40.x86_64.rpm#to", 
+            "filename": "bzip2-debuginfo-1.0.8-18.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 46868
+        }, 
         {
-            "uuid": "3d0d8e58-7819-4726-9271-036deca35d11",
-            "filename": "bzip2-debugsource-1.0.8-18.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bzip2-debugsource-1.0.8-18.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 53639,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "3d0d8e58-7819-4726-9271-036deca35d11", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bzip2-debugsource-1.0.8-18.fc40.x86_64.rpm#from", 
+            "filename": "bzip2-debugsource-1.0.8-18.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 53639
         }
-    ],
+    ], 
+    "uuid": "1100a5b8-f1aa-4776-8c73-a5717c0be0f8", 
+    "resource_count": 29, 
+    "url": "http://127.0.0.1:8002/api/d2d/1100a5b8-f1aa-4776-8c73-a5717c0be0f8/", 
+    "package_count": 1, 
     "runs": [
         "34565a42-2c6c-4418-b281-7aa9e8f0ca18"
-    ],
-    "resource_count": 29,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 4,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "not-deployed": 8,
-        "requires-review": 3,
-        "scanned": 3
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 4
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 3, 
+        "requires-review": 3, 
+        "not-deployed": 8
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 4, 
+    "created_date": "2024-06-17T12:14:52.304130Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 4
     }
 }

@@ -1,59 +1,81 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/b7d600cd-4881-4add-a099-7b23e78dcca7/",
-    "uuid": "b7d600cd-4881-4add-a099-7b23e78dcca7",
-    "created_date": "2024-06-14T04:17:05.629560Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/anjuta-3.34.0-23.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 200
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/anjuta-3.34.0-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 47
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/anjuta-launcher-3.34.0-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/anjuta-tags-3.34.0-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 29
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "6f7d9f59-77b9-445a-a633-74cae8447608",
-            "filename": "anjuta-debuginfo-3.34.0-23.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anjuta-debuginfo-3.34.0-23.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 551374,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "6f7d9f59-77b9-445a-a633-74cae8447608", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anjuta-debuginfo-3.34.0-23.fc40.x86_64.rpm#to", 
+            "filename": "anjuta-debuginfo-3.34.0-23.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 551374
+        }, 
         {
-            "uuid": "383d6b23-8546-4795-9c6b-0a08cf3ea77f",
-            "filename": "anjuta-debugsource-3.34.0-23.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anjuta-debugsource-3.34.0-23.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 1506394,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "383d6b23-8546-4795-9c6b-0a08cf3ea77f", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/anjuta-debugsource-3.34.0-23.fc40.x86_64.rpm#from", 
+            "filename": "anjuta-debugsource-3.34.0-23.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 1506394
         }
-    ],
+    ], 
+    "uuid": "b7d600cd-4881-4add-a099-7b23e78dcca7", 
+    "resource_count": 1087, 
+    "url": "http://127.0.0.1:8002/api/d2d/b7d600cd-4881-4add-a099-7b23e78dcca7/", 
+    "package_count": 13, 
     "runs": [
         "725d4411-7abb-482e-b8c3-f444ddc8e1c8"
-    ],
-    "resource_count": 1087,
-    "package_count": 13,
-    "dependency_count": 0,
-    "relation_count": 191,
-    "codebase_resources_summary": {
-        "ignored-directory": 63,
-        "no-licenses": 6,
-        "not-deployed": 854,
-        "requires-review": 4,
-        "scanned": 160
-    },
-    "discovered_packages_summary": {
-        "total": 13,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 6,
-        "dwarf_included_paths": 185
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 63, 
+        "scanned": 160, 
+        "requires-review": 4, 
+        "not-deployed": 854, 
+        "no-licenses": 6
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 191, 
+    "created_date": "2024-06-14T04:17:05.629560Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 13, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 6, 
+        "dwarf_included_paths": 185
     }
 }

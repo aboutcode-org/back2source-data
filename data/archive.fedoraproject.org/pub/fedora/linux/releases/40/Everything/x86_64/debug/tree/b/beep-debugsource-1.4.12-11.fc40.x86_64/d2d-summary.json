@@ -1,58 +1,65 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/faf06546-1b81-4d1f-944a-b1591753e91a/",
-    "uuid": "faf06546-1b81-4d1f-944a-b1591753e91a",
-    "created_date": "2024-06-17T12:05:03.894463Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/beep-1.4.12-11.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 32
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "1cc7339a-40c6-4eaf-bfd8-0838052838ac",
-            "filename": "beep-debuginfo-1.4.12-11.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debuginfo-1.4.12-11.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 28155,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "1cc7339a-40c6-4eaf-bfd8-0838052838ac", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debuginfo-1.4.12-11.fc40.x86_64.rpm#to", 
+            "filename": "beep-debuginfo-1.4.12-11.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 28155
+        }, 
         {
-            "uuid": "e43a9981-6941-4d3d-abfe-27b348a1b480",
-            "filename": "beep-debugsource-1.4.12-11.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debugsource-1.4.12-11.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 21716,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "e43a9981-6941-4d3d-abfe-27b348a1b480", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/beep-debugsource-1.4.12-11.fc40.x86_64.rpm#from", 
+            "filename": "beep-debugsource-1.4.12-11.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 21716
         }
-    ],
+    ], 
+    "uuid": "faf06546-1b81-4d1f-944a-b1591753e91a", 
+    "resource_count": 27, 
+    "url": "http://127.0.0.1:8002/api/d2d/faf06546-1b81-4d1f-944a-b1591753e91a/", 
+    "package_count": 1, 
     "runs": [
         "bb1c9bab-ec5d-49a2-9dbe-9cd872ee8b19"
-    ],
-    "resource_count": 27,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 13,
-    "codebase_resources_summary": {
-        "ignored-directory": 13,
-        "no-licenses": 1,
-        "requires-review": 1,
-        "scanned": 12
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 1,
-        "dwarf_included_paths": 12
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 13, 
+        "scanned": 12, 
+        "requires-review": 1, 
+        "no-licenses": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 13, 
+    "created_date": "2024-06-17T12:05:03.894463Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 1, 
+        "dwarf_included_paths": 12
     }
 }

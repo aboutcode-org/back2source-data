@@ -1,58 +1,75 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/f3a25ff1-d293-47fe-b871-d2d999db9bad/",
-    "uuid": "f3a25ff1-d293-47fe-b871-d2d999db9bad",
-    "created_date": "2024-06-18T07:28:47.882605Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/fcitx-libpinyin-0.5.4-10.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 44
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/fcitx/fcitx-libpinyin.so-0.5.4-10.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 81
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/fcitx/qt/libfcitx-libpinyin-dictmanager.so-0.5.4-10.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 175
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "ba7ce3dc-5926-458b-a876-3b4bb8aad3fb",
-            "filename": "fcitx-libpinyin-debuginfo-0.5.4-10.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fcitx-libpinyin-debuginfo-0.5.4-10.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 921655,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "ba7ce3dc-5926-458b-a876-3b4bb8aad3fb", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fcitx-libpinyin-debuginfo-0.5.4-10.fc40.x86_64.rpm#to", 
+            "filename": "fcitx-libpinyin-debuginfo-0.5.4-10.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 921655
+        }, 
         {
-            "uuid": "85fc7c6c-df88-4672-b964-52e0474c249f",
-            "filename": "fcitx-libpinyin-debugsource-0.5.4-10.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fcitx-libpinyin-debugsource-0.5.4-10.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 44953,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "85fc7c6c-df88-4672-b964-52e0474c249f", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fcitx-libpinyin-debugsource-0.5.4-10.fc40.x86_64.rpm#from", 
+            "filename": "fcitx-libpinyin-debugsource-0.5.4-10.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 44953
         }
-    ],
+    ], 
+    "uuid": "f3a25ff1-d293-47fe-b871-d2d999db9bad", 
+    "resource_count": 66, 
+    "url": "http://127.0.0.1:8002/api/d2d/f3a25ff1-d293-47fe-b871-d2d999db9bad/", 
+    "package_count": 2, 
     "runs": [
         "3f820519-61ed-4318-8d37-8af8a7f50121"
-    ],
-    "resource_count": 66,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 41,
-    "codebase_resources_summary": {
-        "ignored-directory": 25,
-        "no-licenses": 16,
-        "requires-review": 3,
-        "scanned": 22
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 3,
-        "dwarf_included_paths": 38
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 25, 
+        "scanned": 22, 
+        "requires-review": 3, 
+        "no-licenses": 16
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 41, 
+    "created_date": "2024-06-18T07:28:47.882605Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 3, 
+        "dwarf_included_paths": 38
     }
 }

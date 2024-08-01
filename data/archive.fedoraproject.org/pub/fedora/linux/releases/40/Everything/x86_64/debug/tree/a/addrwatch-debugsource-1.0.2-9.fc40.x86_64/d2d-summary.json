@@ -1,57 +1,84 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/af8479ef-702b-4ec2-8b21-fc822cc5b228/",
-    "uuid": "af8479ef-702b-4ec2-8b21-fc822cc5b228",
-    "created_date": "2024-06-13T10:30:04.523855Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/addrwatch-1.0.2-9.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 29
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/addrwatch-1.0.2-9.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 29
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/addrwatch_mysql-1.0.2-9.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/addrwatch_stdout-1.0.2-9.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/addrwatch_syslog-1.0.2-9.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "ed8a99bc-eeb4-4f18-abdb-9d060d764caf",
-            "filename": "addrwatch-debuginfo-1.0.2-9.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/addrwatch-debuginfo-1.0.2-9.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 72424,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "ed8a99bc-eeb4-4f18-abdb-9d060d764caf", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/addrwatch-debuginfo-1.0.2-9.fc40.x86_64.rpm#to", 
+            "filename": "addrwatch-debuginfo-1.0.2-9.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 72424
+        }, 
         {
-            "uuid": "fc17393a-1f89-417c-a206-aead601d1c97",
-            "filename": "addrwatch-debugsource-1.0.2-9.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/addrwatch-debugsource-1.0.2-9.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 30646,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "fc17393a-1f89-417c-a206-aead601d1c97", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/addrwatch-debugsource-1.0.2-9.fc40.x86_64.rpm#from", 
+            "filename": "addrwatch-debugsource-1.0.2-9.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 30646
         }
-    ],
+    ], 
+    "uuid": "af8479ef-702b-4ec2-8b21-fc822cc5b228", 
+    "resource_count": 52, 
+    "url": "http://127.0.0.1:8002/api/d2d/af8479ef-702b-4ec2-8b21-fc822cc5b228/", 
+    "package_count": 0, 
     "runs": [
         "71410ae9-c5a7-4f30-af11-f774baa0b7a5"
-    ],
-    "resource_count": 52,
-    "package_count": 0,
-    "dependency_count": 0,
-    "relation_count": 39,
-    "codebase_resources_summary": {
-        "ignored-directory": 18,
-        "no-licenses": 29,
-        "requires-review": 5
-    },
-    "discovered_packages_summary": {
-        "total": 0,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 1,
-        "dwarf_included_paths": 38
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 18, 
+        "requires-review": 5, 
+        "no-licenses": 29
+    }, 
     "codebase_resources_discrepancies": {
         "total": 5
+    }, 
+    "relation_count": 39, 
+    "created_date": "2024-06-13T10:30:04.523855Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 0, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 1, 
+        "dwarf_included_paths": 38
     }
 }

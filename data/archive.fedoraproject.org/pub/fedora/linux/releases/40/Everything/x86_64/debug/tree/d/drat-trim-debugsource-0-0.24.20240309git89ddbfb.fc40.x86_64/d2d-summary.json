@@ -1,57 +1,69 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/fb520c77-203b-4cab-b8ce-c34843f3c2f9/",
-    "uuid": "fb520c77-203b-4cab-b8ce-c34843f3c2f9",
-    "created_date": "2024-06-17T16:36:06.192841Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/drat-trim-0-0.24.20240309git89ddbfb.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 13
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libdrat-trim.so.0.0.0-0-0.24.20240309git89ddbfb.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "5bcfdee1-99da-4500-95e4-77c119c01ddb",
-            "filename": "drat-trim-debuginfo-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/drat-trim-debuginfo-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 54081,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "5bcfdee1-99da-4500-95e4-77c119c01ddb", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/drat-trim-debuginfo-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm#to", 
+            "filename": "drat-trim-debuginfo-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 54081
+        }, 
         {
-            "uuid": "5be4c373-9f50-4df0-8bf3-653203d0d6fc",
-            "filename": "drat-trim-debugsource-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/drat-trim-debugsource-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 28658,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "5be4c373-9f50-4df0-8bf3-653203d0d6fc", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/d/drat-trim-debugsource-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm#from", 
+            "filename": "drat-trim-debugsource-0-0.24.20240309git89ddbfb.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 28658
         }
-    ],
+    ], 
+    "uuid": "fb520c77-203b-4cab-b8ce-c34843f3c2f9", 
+    "resource_count": 23, 
+    "url": "http://127.0.0.1:8002/api/d2d/fb520c77-203b-4cab-b8ce-c34843f3c2f9/", 
+    "package_count": 1, 
     "runs": [
         "88f6cf84-a30b-465c-8c70-e8c24218752f"
-    ],
-    "resource_count": 23,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 1,
-    "codebase_resources_summary": {
-        "ignored-directory": 14,
-        "not-deployed": 6,
-        "requires-review": 2,
-        "scanned": 1
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 1
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 14, 
+        "scanned": 1, 
+        "requires-review": 2, 
+        "not-deployed": 6
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 1, 
+    "created_date": "2024-06-17T16:36:06.192841Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 1
     }
 }

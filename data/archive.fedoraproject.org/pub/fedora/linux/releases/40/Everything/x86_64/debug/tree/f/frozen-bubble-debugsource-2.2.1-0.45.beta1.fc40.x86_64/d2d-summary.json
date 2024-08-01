@@ -1,58 +1,70 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/a842ebe3-4c56-4a61-b375-1d0b989a2b6c/",
-    "uuid": "a842ebe3-4c56-4a61-b375-1d0b989a2b6c",
-    "created_date": "2024-06-18T07:45:04.615444Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/frozen-bubble-2.2.1-0.45.beta1.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 16
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/perl5/vendor_perl/auto/Games/FrozenBubble/CStuff/CStuff.so-2.2.1-0.45.beta1.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 64
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "b5bfed73-bf6b-4966-8fd3-c1ea2ebb4790",
-            "filename": "frozen-bubble-debuginfo-2.2.1-0.45.beta1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/frozen-bubble-debuginfo-2.2.1-0.45.beta1.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 104155,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "b5bfed73-bf6b-4966-8fd3-c1ea2ebb4790", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/frozen-bubble-debuginfo-2.2.1-0.45.beta1.fc40.x86_64.rpm#to", 
+            "filename": "frozen-bubble-debuginfo-2.2.1-0.45.beta1.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 104155
+        }, 
         {
-            "uuid": "ca9eafa0-799b-42e8-b8ba-692610c2cb29",
-            "filename": "frozen-bubble-debugsource-2.2.1-0.45.beta1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/frozen-bubble-debugsource-2.2.1-0.45.beta1.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 42879,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "ca9eafa0-799b-42e8-b8ba-692610c2cb29", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/frozen-bubble-debugsource-2.2.1-0.45.beta1.fc40.x86_64.rpm#from", 
+            "filename": "frozen-bubble-debugsource-2.2.1-0.45.beta1.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 42879
         }
-    ],
+    ], 
+    "uuid": "a842ebe3-4c56-4a61-b375-1d0b989a2b6c", 
+    "resource_count": 37, 
+    "url": "http://127.0.0.1:8002/api/d2d/a842ebe3-4c56-4a61-b375-1d0b989a2b6c/", 
+    "package_count": 1, 
     "runs": [
         "68b1fbd3-8148-4bac-8140-522096f9cc3f"
-    ],
-    "resource_count": 37,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 3,
-    "codebase_resources_summary": {
-        "ignored-directory": 24,
-        "not-deployed": 9,
-        "requires-review": 2,
-        "scanned": 2
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 1,
-        "dwarf_included_paths": 2
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 24, 
+        "scanned": 2, 
+        "requires-review": 2, 
+        "not-deployed": 9
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 3, 
+    "created_date": "2024-06-18T07:45:04.615444Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 1, 
+        "dwarf_included_paths": 2
     }
 }

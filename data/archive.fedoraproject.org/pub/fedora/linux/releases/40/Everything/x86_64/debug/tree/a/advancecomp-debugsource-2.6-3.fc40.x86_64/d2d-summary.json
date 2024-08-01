@@ -1,59 +1,86 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/c73f8239-ad24-4906-8277-68155c47a4cb/",
-    "uuid": "c73f8239-ad24-4906-8277-68155c47a4cb",
-    "created_date": "2024-06-13T10:24:34.277697Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/advancecomp-2.6-3.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 99
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/advdef-2.6-3.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 30
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/advmng-2.6-3.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 37
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/advpng-2.6-3.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 29
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/advzip-2.6-3.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 47
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "a4d27897-be6e-4a68-9b1f-26dae80d2578",
-            "filename": "advancecomp-debuginfo-2.6-3.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/advancecomp-debuginfo-2.6-3.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 796167,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "a4d27897-be6e-4a68-9b1f-26dae80d2578", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/advancecomp-debuginfo-2.6-3.fc40.x86_64.rpm#to", 
+            "filename": "advancecomp-debuginfo-2.6-3.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 796167
+        }, 
         {
-            "uuid": "d7d44e2d-5703-431e-84ab-11c4326cda3d",
-            "filename": "advancecomp-debugsource-2.6-3.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/advancecomp-debugsource-2.6-3.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 115741,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "d7d44e2d-5703-431e-84ab-11c4326cda3d", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/advancecomp-debugsource-2.6-3.fc40.x86_64.rpm#from", 
+            "filename": "advancecomp-debugsource-2.6-3.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 115741
         }
-    ],
+    ], 
+    "uuid": "c73f8239-ad24-4906-8277-68155c47a4cb", 
+    "resource_count": 109, 
+    "url": "http://127.0.0.1:8002/api/d2d/c73f8239-ad24-4906-8277-68155c47a4cb/", 
+    "package_count": 5, 
     "runs": [
         "b2a2ce59-d477-4c11-b67a-b9d8f21be3ce"
-    ],
-    "resource_count": 109,
-    "package_count": 5,
-    "dependency_count": 0,
-    "relation_count": 448,
-    "codebase_resources_summary": {
-        "ignored-directory": 19,
-        "no-licenses": 48,
-        "requires-review": 5,
-        "scanned": 36,
-        "unknown-license": 1
-    },
-    "discovered_packages_summary": {
-        "total": 5,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 108,
-        "dwarf_included_paths": 340
-    },
+    }, 
+    "codebase_resources_summary": {
+        "unknown-license": 1, 
+        "ignored-directory": 19, 
+        "scanned": 36, 
+        "requires-review": 5, 
+        "no-licenses": 48
+    }, 
     "codebase_resources_discrepancies": {
         "total": 5
+    }, 
+    "relation_count": 448, 
+    "created_date": "2024-06-13T10:24:34.277697Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 5, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 108, 
+        "dwarf_included_paths": 340
     }
 }

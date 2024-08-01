@@ -1,58 +1,75 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/66b2864b-c201-4334-9f57-68931660646c/",
-    "uuid": "66b2864b-c201-4334-9f57-68931660646c",
-    "created_date": "2024-06-14T04:41:37.944948Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/arpage-0.3.3-38.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 90
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/arpage-0.3.3-38.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 130
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/zonage-0.3.3-38.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 70
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "4f604e7b-70ab-4805-955e-74e78ad2aadd",
-            "filename": "arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 285870,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "4f604e7b-70ab-4805-955e-74e78ad2aadd", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm#to", 
+            "filename": "arpage-debuginfo-0.3.3-38.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 285870
+        }, 
         {
-            "uuid": "64bb14b8-68a5-4929-b9c8-ddfecbb66965",
-            "filename": "arpage-debugsource-0.3.3-38.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debugsource-0.3.3-38.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 26405,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "64bb14b8-68a5-4929-b9c8-ddfecbb66965", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arpage-debugsource-0.3.3-38.fc40.x86_64.rpm#from", 
+            "filename": "arpage-debugsource-0.3.3-38.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 26405
         }
-    ],
+    ], 
+    "uuid": "66b2864b-c201-4334-9f57-68931660646c", 
+    "resource_count": 37, 
+    "url": "http://127.0.0.1:8002/api/d2d/66b2864b-c201-4334-9f57-68931660646c/", 
+    "package_count": 1, 
     "runs": [
         "c1f7f995-42d6-4dda-b5b3-727d5bc47dd6"
-    ],
-    "resource_count": 37,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 22,
-    "codebase_resources_summary": {
-        "ignored-directory": 16,
-        "no-licenses": 2,
-        "requires-review": 3,
-        "scanned": 16
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 2,
-        "dwarf_included_paths": 20
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 16, 
+        "scanned": 16, 
+        "requires-review": 3, 
+        "no-licenses": 2
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 22, 
+    "created_date": "2024-06-14T04:41:37.944948Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 2, 
+        "dwarf_included_paths": 20
     }
 }

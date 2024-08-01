@@ -1,58 +1,70 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/d54f342f-969a-4aee-aec4-1efec4237883/",
-    "uuid": "d54f342f-969a-4aee-aec4-1efec4237883",
-    "created_date": "2024-06-13T21:54:09.588578Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/authselect-1.5.0-5.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 15
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/authselect-1.5.0-5.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 15
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "84b56dad-3d5a-4f0c-b599-0b4fa92ecf44",
-            "filename": "authselect-debuginfo-1.5.0-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/authselect-debuginfo-1.5.0-5.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 39511,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "84b56dad-3d5a-4f0c-b599-0b4fa92ecf44", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/authselect-debuginfo-1.5.0-5.fc40.x86_64.rpm#to", 
+            "filename": "authselect-debuginfo-1.5.0-5.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 39511
+        }, 
         {
-            "uuid": "00341ab1-bcb7-4a4b-97ea-64eb054b2821",
-            "filename": "authselect-debugsource-1.5.0-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/authselect-debugsource-1.5.0-5.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 59331,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "00341ab1-bcb7-4a4b-97ea-64eb054b2821", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/authselect-debugsource-1.5.0-5.fc40.x86_64.rpm#from", 
+            "filename": "authselect-debugsource-1.5.0-5.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 59331
         }
-    ],
+    ], 
+    "uuid": "d54f342f-969a-4aee-aec4-1efec4237883", 
+    "resource_count": 64, 
+    "url": "http://127.0.0.1:8002/api/d2d/d54f342f-969a-4aee-aec4-1efec4237883/", 
+    "package_count": 1, 
     "runs": [
         "86a0c8fa-32af-4fc2-8ee3-a52f12372799"
-    ],
-    "resource_count": 64,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 14,
-    "codebase_resources_summary": {
-        "ignored-directory": 22,
-        "not-deployed": 31,
-        "requires-review": 2,
-        "scanned": 9
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 2,
-        "dwarf_included_paths": 12
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 22, 
+        "scanned": 9, 
+        "requires-review": 2, 
+        "not-deployed": 31
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 14, 
+    "created_date": "2024-06-13T21:54:09.588578Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 2, 
+        "dwarf_included_paths": 12
     }
 }

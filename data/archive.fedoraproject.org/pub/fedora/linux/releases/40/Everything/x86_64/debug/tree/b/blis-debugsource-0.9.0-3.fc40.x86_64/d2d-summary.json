@@ -1,58 +1,75 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/1fe45404-c4a2-4345-941a-bcb821e4a3f6/",
-    "uuid": "1fe45404-c4a2-4345-941a-bcb821e4a3f6",
-    "created_date": "2024-06-17T12:10:34.854341Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/blis-0.9.0-3.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 34
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/usr/lib64/blisblas/libblas.so.3-0.9.0-3.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 0
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libblis.so.2.1.0-0.9.0-3.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 2
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "759e3684-4cfe-481c-944a-bee7e756286a",
-            "filename": "blis-debuginfo-0.9.0-3.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blis-debuginfo-0.9.0-3.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 4705041,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "759e3684-4cfe-481c-944a-bee7e756286a", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blis-debuginfo-0.9.0-3.fc40.x86_64.rpm#to", 
+            "filename": "blis-debuginfo-0.9.0-3.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 4705041
+        }, 
         {
-            "uuid": "9df79a75-6dca-43ce-bb6d-0add8f1d2bf2",
-            "filename": "blis-debugsource-0.9.0-3.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blis-debugsource-0.9.0-3.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 620728,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "9df79a75-6dca-43ce-bb6d-0add8f1d2bf2", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/blis-debugsource-0.9.0-3.fc40.x86_64.rpm#from", 
+            "filename": "blis-debugsource-0.9.0-3.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 620728
         }
-    ],
+    ], 
+    "uuid": "1fe45404-c4a2-4345-941a-bcb821e4a3f6", 
+    "resource_count": 704, 
+    "url": "http://127.0.0.1:8002/api/d2d/1fe45404-c4a2-4345-941a-bcb821e4a3f6/", 
+    "package_count": 1, 
     "runs": [
         "9cc19751-cc11-49eb-b0b8-a2b4e41857e6"
-    ],
-    "resource_count": 704,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 1229,
-    "codebase_resources_summary": {
-        "ignored-directory": 107,
-        "no-licenses": 158,
-        "requires-review": 3,
-        "scanned": 436
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 575,
-        "dwarf_included_paths": 654
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 107, 
+        "scanned": 436, 
+        "requires-review": 3, 
+        "no-licenses": 158
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 1229, 
+    "created_date": "2024-06-17T12:10:34.854341Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 575, 
+        "dwarf_included_paths": 654
     }
 }

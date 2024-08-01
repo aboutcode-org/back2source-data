@@ -1,59 +1,91 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/380baebb-fddf-4136-8bcf-947cc5cd4882/",
-    "uuid": "380baebb-fddf-4136-8bcf-947cc5cd4882",
-    "created_date": "2024-06-13T22:09:14.699747Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/alpine-2.26-8.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 94
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 9, 
+            "path": "to/usr/lib/debug/usr/bin/alpine-2.26-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 43
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 5, 
+            "path": "to/usr/lib/debug/usr/bin/pico-2.26-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 2
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 5, 
+            "path": "to/usr/lib/debug/usr/bin/pilot-2.26-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 2
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/usr/bin/rpdump-2.26-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/usr/bin/rpload-2.26-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "0b0e4714-dace-4466-8578-aef078a7fcdb",
-            "filename": "alpine-debuginfo-2.26-8.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alpine-debuginfo-2.26-8.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 5549957,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "0b0e4714-dace-4466-8578-aef078a7fcdb", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alpine-debuginfo-2.26-8.fc40.x86_64.rpm#to", 
+            "filename": "alpine-debuginfo-2.26-8.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 5549957
+        }, 
         {
-            "uuid": "3fd487d5-024c-4a1a-aa3d-b8bdc4ff382c",
-            "filename": "alpine-debugsource-2.26-8.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alpine-debugsource-2.26-8.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 2323909,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "3fd487d5-024c-4a1a-aa3d-b8bdc4ff382c", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alpine-debugsource-2.26-8.fc40.x86_64.rpm#from", 
+            "filename": "alpine-debugsource-2.26-8.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 2323909
         }
-    ],
+    ], 
+    "uuid": "380baebb-fddf-4136-8bcf-947cc5cd4882", 
+    "resource_count": 512, 
+    "url": "http://127.0.0.1:8002/api/d2d/380baebb-fddf-4136-8bcf-947cc5cd4882/", 
+    "package_count": 3, 
     "runs": [
         "f01fd59f-d423-4c0c-8baa-8117fd2a4e97"
-    ],
-    "resource_count": 512,
-    "package_count": 3,
-    "dependency_count": 0,
-    "relation_count": 1154,
-    "codebase_resources_summary": {
-        "ignored-directory": 28,
-        "no-licenses": 15,
-        "not-deployed": 1,
-        "requires-review": 6,
-        "scanned": 462
-    },
-    "discovered_packages_summary": {
-        "total": 3,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 281,
-        "dwarf_included_paths": 873
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 28, 
+        "scanned": 462, 
+        "requires-review": 6, 
+        "not-deployed": 1, 
+        "no-licenses": 15
+    }, 
     "codebase_resources_discrepancies": {
         "total": 6
+    }, 
+    "relation_count": 1154, 
+    "created_date": "2024-06-13T22:09:14.699747Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 3, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 281, 
+        "dwarf_included_paths": 873
     }
 }

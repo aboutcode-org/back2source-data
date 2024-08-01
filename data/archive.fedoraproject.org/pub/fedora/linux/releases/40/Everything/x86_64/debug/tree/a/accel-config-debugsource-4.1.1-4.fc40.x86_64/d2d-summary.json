@@ -1,59 +1,71 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/a866bca3-7156-4462-a4bb-aea0219012e0/",
-    "uuid": "a866bca3-7156-4462-a4bb-aea0219012e0",
-    "created_date": "2024-06-14T03:58:13.774193Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/accel-config-4.1.1-4.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 16
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/usr/bin/accel-config-4.1.1-4.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 23
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "cd47b426-e1e2-4e71-b873-40da0c35a0ae",
-            "filename": "accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 98249,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "cd47b426-e1e2-4e71-b873-40da0c35a0ae", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm#to", 
+            "filename": "accel-config-debuginfo-4.1.1-4.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 98249
+        }, 
         {
-            "uuid": "996799ba-8d8c-445e-b237-842015bb4dcc",
-            "filename": "accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 63260,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "996799ba-8d8c-445e-b237-842015bb4dcc", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm#from", 
+            "filename": "accel-config-debugsource-4.1.1-4.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 63260
         }
-    ],
+    ], 
+    "uuid": "a866bca3-7156-4462-a4bb-aea0219012e0", 
+    "resource_count": 50, 
+    "url": "http://127.0.0.1:8002/api/d2d/a866bca3-7156-4462-a4bb-aea0219012e0/", 
+    "package_count": 3, 
     "runs": [
         "72adedc4-0569-4d57-aa68-0d7d144c2ec6"
-    ],
-    "resource_count": 50,
-    "package_count": 3,
-    "dependency_count": 0,
-    "relation_count": 34,
-    "codebase_resources_summary": {
-        "ignored-directory": 19,
-        "not-deployed": 3,
-        "requires-review": 2,
-        "scanned": 25,
-        "unknown-license": 1
-    },
-    "discovered_packages_summary": {
-        "total": 3,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 9,
-        "dwarf_included_paths": 25
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 19, 
+        "scanned": 25, 
+        "requires-review": 2, 
+        "not-deployed": 3, 
+        "unknown-license": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 34, 
+    "created_date": "2024-06-14T03:58:13.774193Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 3, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 9, 
+        "dwarf_included_paths": 25
     }
 }

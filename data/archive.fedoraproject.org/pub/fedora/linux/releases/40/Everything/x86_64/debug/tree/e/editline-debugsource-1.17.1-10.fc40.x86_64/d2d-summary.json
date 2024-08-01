@@ -1,56 +1,63 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/07ff071a-d0b9-468e-a94e-8b792a7676a1/",
-    "uuid": "07ff071a-d0b9-468e-a94e-8b792a7676a1",
-    "created_date": "2024-06-18T05:18:13.152633Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libeditline.so.1.0.2-1.17.1-10.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 27
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "e70edea5-8caf-4bac-930f-dda98c16df1c",
-            "filename": "editline-debuginfo-1.17.1-10.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/editline-debuginfo-1.17.1-10.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 47508,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "e70edea5-8caf-4bac-930f-dda98c16df1c", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/editline-debuginfo-1.17.1-10.fc40.x86_64.rpm#to", 
+            "filename": "editline-debuginfo-1.17.1-10.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 47508
+        }, 
         {
-            "uuid": "ab75d44f-1cb4-4df7-9914-fc341c46d8a3",
-            "filename": "editline-debugsource-1.17.1-10.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/editline-debugsource-1.17.1-10.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 23849,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "ab75d44f-1cb4-4df7-9914-fc341c46d8a3", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/e/editline-debugsource-1.17.1-10.fc40.x86_64.rpm#from", 
+            "filename": "editline-debugsource-1.17.1-10.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 23849
         }
-    ],
+    ], 
+    "uuid": "07ff071a-d0b9-468e-a94e-8b792a7676a1", 
+    "resource_count": 22, 
+    "url": "http://127.0.0.1:8002/api/d2d/07ff071a-d0b9-468e-a94e-8b792a7676a1/", 
+    "package_count": 1, 
     "runs": [
         "59fd218c-1fe2-4228-b683-3bb2ada1ce6b"
-    ],
-    "resource_count": 22,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 6,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "requires-review": 1,
-        "scanned": 6
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 6
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 6, 
+        "requires-review": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 6, 
+    "created_date": "2024-06-18T05:18:13.152633Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 6
     }
 }

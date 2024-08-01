@@ -1,58 +1,85 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/9516d38d-855b-4198-9111-faa7df493b01/",
-    "uuid": "9516d38d-855b-4198-9111-faa7df493b01",
-    "created_date": "2024-06-13T10:21:21.964932Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/augeas-1.13.0-7.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 47
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/augmatch-1.13.0-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/augparse-1.13.0-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/augtool-1.13.0-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 23
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/fadot-1.13.0-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 8
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "e05caa35-cdfd-409d-a215-723e73d836b1",
-            "filename": "augeas-debuginfo-1.13.0-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/augeas-debuginfo-1.13.0-7.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 88282,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "e05caa35-cdfd-409d-a215-723e73d836b1", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/augeas-debuginfo-1.13.0-7.fc40.x86_64.rpm#to", 
+            "filename": "augeas-debuginfo-1.13.0-7.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 88282
+        }, 
         {
-            "uuid": "f892a1f7-0d2f-41c6-81ae-a77b03a77b1e",
-            "filename": "augeas-debugsource-1.13.0-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/augeas-debugsource-1.13.0-7.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 373813,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "f892a1f7-0d2f-41c6-81ae-a77b03a77b1e", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/augeas-debugsource-1.13.0-7.fc40.x86_64.rpm#from", 
+            "filename": "augeas-debugsource-1.13.0-7.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 373813
         }
-    ],
+    ], 
+    "uuid": "9516d38d-855b-4198-9111-faa7df493b01", 
+    "resource_count": 130, 
+    "url": "http://127.0.0.1:8002/api/d2d/9516d38d-855b-4198-9111-faa7df493b01/", 
+    "package_count": 2, 
     "runs": [
         "7a6bf541-2556-4de6-95b3-3a78b3a85feb"
-    ],
-    "resource_count": 130,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 74,
-    "codebase_resources_summary": {
-        "ignored-directory": 23,
-        "not-deployed": 39,
-        "requires-review": 5,
-        "scanned": 63
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 1,
-        "dwarf_included_paths": 73
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 23, 
+        "scanned": 63, 
+        "requires-review": 5, 
+        "not-deployed": 39
+    }, 
     "codebase_resources_discrepancies": {
         "total": 5
+    }, 
+    "relation_count": 74, 
+    "created_date": "2024-06-13T10:21:21.964932Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 1, 
+        "dwarf_included_paths": 73
     }
 }

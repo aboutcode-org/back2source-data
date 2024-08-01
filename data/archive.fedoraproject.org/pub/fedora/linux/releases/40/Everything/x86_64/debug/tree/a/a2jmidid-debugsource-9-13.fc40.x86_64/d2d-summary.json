@@ -1,57 +1,79 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/7f5020b7-49e8-4a6e-a959-d7574a8698e3/",
-    "uuid": "7f5020b7-49e8-4a6e-a959-d7574a8698e3",
-    "created_date": "2024-06-14T04:19:32.473808Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/a2jmidid-9-13.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 21
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/a2jmidi_bridge-9-13.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/a2jmidid-9-13.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 50
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/j2amidi_bridge-9-13.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "9cfdb859-db07-450c-a5b6-3620db2f7369",
-            "filename": "a2jmidid-debuginfo-9-13.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debuginfo-9-13.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 75429,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "9cfdb859-db07-450c-a5b6-3620db2f7369", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debuginfo-9-13.fc40.x86_64.rpm#to", 
+            "filename": "a2jmidid-debuginfo-9-13.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 75429
+        }, 
         {
-            "uuid": "490dd968-1185-433e-9c4b-76e61aa0055e",
-            "filename": "a2jmidid-debugsource-9-13.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debugsource-9-13.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 44165,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "490dd968-1185-433e-9c4b-76e61aa0055e", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/a2jmidid-debugsource-9-13.fc40.x86_64.rpm#from", 
+            "filename": "a2jmidid-debugsource-9-13.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 44165
         }
-    ],
+    ], 
+    "uuid": "7f5020b7-49e8-4a6e-a959-d7574a8698e3", 
+    "resource_count": 49, 
+    "url": "http://127.0.0.1:8002/api/d2d/7f5020b7-49e8-4a6e-a959-d7574a8698e3/", 
+    "package_count": 3, 
     "runs": [
         "bca382c8-6fa9-4b4c-bad9-0ac59a90bdd8"
-    ],
-    "resource_count": 49,
-    "package_count": 3,
-    "dependency_count": 0,
-    "relation_count": 29,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "no-licenses": 1,
-        "requires-review": 4,
-        "scanned": 27
-    },
-    "discovered_packages_summary": {
-        "total": 3,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 29
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "scanned": 27, 
+        "requires-review": 4, 
+        "no-licenses": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 29, 
+    "created_date": "2024-06-14T04:19:32.473808Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 3, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 29
     }
 }

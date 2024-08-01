@@ -1,58 +1,65 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/552869e5-10a2-4a31-906d-955226b41aba/",
-    "uuid": "552869e5-10a2-4a31-906d-955226b41aba",
-    "created_date": "2024-06-13T10:12:09.921708Z",
     "input_sources": [
         {
-            "uuid": "c89626b0-b9d0-45d5-9b77-3e64d85903d2",
-            "filename": "4diac-forte-debuginfo-2.0.1-8.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4diac-forte-debuginfo-2.0.1-8.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 2289553,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "c89626b0-b9d0-45d5-9b77-3e64d85903d2", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4diac-forte-debuginfo-2.0.1-8.fc40.x86_64.rpm#to", 
+            "filename": "4diac-forte-debuginfo-2.0.1-8.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 2289553
+        }, 
         {
-            "uuid": "ccaa604d-f77b-493a-81a5-b65785d16d65",
-            "filename": "4diac-forte-debugsource-2.0.1-8.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4diac-forte-debugsource-2.0.1-8.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 696333,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "ccaa604d-f77b-493a-81a5-b65785d16d65", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/4/4diac-forte-debugsource-2.0.1-8.fc40.x86_64.rpm#from", 
+            "filename": "4diac-forte-debugsource-2.0.1-8.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 696333
         }
-    ],
+    ], 
+    "uuid": "552869e5-10a2-4a31-906d-955226b41aba", 
+    "resource_count": 1592, 
+    "codebase_resources_summary": {
+        "ignored-directory": 72, 
+        "scanned": 1518, 
+        "requires-review": 1, 
+        "no-licenses": 1
+    }, 
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/forte-2.0.1-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 138
+        }
+    ], 
+    "package_count": 1, 
     "runs": [
         "4b7ca485-9119-4bc6-a495-bb141967110d"
-    ],
-    "resource_count": 1592,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 1519,
-    "codebase_resources_summary": {
-        "ignored-directory": 72,
-        "no-licenses": 1,
-        "requires-review": 1,
-        "scanned": 1518
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_optional": 0, 
+        "total": 0, 
+        "is_runtime": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 26,
-        "dwarf_included_paths": 1493
-    },
+    }, 
+    "url": "http://127.0.0.1:8002/api/d2d/552869e5-10a2-4a31-906d-955226b41aba/", 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 1519, 
+    "created_date": "2024-06-13T10:12:09.921708Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 26, 
+        "dwarf_included_paths": 1493
     }
 }

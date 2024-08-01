@@ -1,58 +1,80 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/e45dadcd-328b-4784-bc1a-44778f6d6a30/",
-    "uuid": "e45dadcd-328b-4784-bc1a-44778f6d6a30",
-    "created_date": "2024-06-13T22:24:59.859385Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/alsa-lib-1.2.11-2.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 36
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/aserver-1.2.11-2.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 17
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 10, 
+            "path": "to/usr/lib/debug/usr/lib64/libasound.so.2.0.0-1.2.11-2.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 80
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libatopology.so.2.0.0-1.2.11-2.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 15
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "34e2cf64-c94e-4441-9115-8929ed279286",
-            "filename": "alsa-lib-debuginfo-1.2.11-2.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alsa-lib-debuginfo-1.2.11-2.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 1316790,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "34e2cf64-c94e-4441-9115-8929ed279286", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alsa-lib-debuginfo-1.2.11-2.fc40.x86_64.rpm#to", 
+            "filename": "alsa-lib-debuginfo-1.2.11-2.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 1316790
+        }, 
         {
-            "uuid": "9aeafb8c-575a-447b-9a89-66a2ce916890",
-            "filename": "alsa-lib-debugsource-1.2.11-2.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alsa-lib-debugsource-1.2.11-2.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 520440,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "9aeafb8c-575a-447b-9a89-66a2ce916890", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/alsa-lib-debugsource-1.2.11-2.fc40.x86_64.rpm#from", 
+            "filename": "alsa-lib-debugsource-1.2.11-2.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 520440
         }
-    ],
+    ], 
+    "uuid": "e45dadcd-328b-4784-bc1a-44778f6d6a30", 
+    "resource_count": 205, 
+    "url": "http://127.0.0.1:8002/api/d2d/e45dadcd-328b-4784-bc1a-44778f6d6a30/", 
+    "package_count": 7, 
     "runs": [
         "2dbb71d9-f6fd-489a-88c1-ab22fa18f16b"
-    ],
-    "resource_count": 205,
-    "package_count": 7,
-    "dependency_count": 0,
-    "relation_count": 283,
-    "codebase_resources_summary": {
-        "ignored-directory": 32,
-        "no-licenses": 6,
-        "requires-review": 4,
-        "scanned": 163
-    },
-    "discovered_packages_summary": {
-        "total": 7,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 90,
-        "dwarf_included_paths": 193
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 32, 
+        "scanned": 163, 
+        "requires-review": 4, 
+        "no-licenses": 6
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 283, 
+    "created_date": "2024-06-13T22:24:59.859385Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 7, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 90, 
+        "dwarf_included_paths": 193
     }
 }

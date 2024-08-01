@@ -1,58 +1,75 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/aab8971b-b74c-443f-986e-906951a3de8e/",
-    "uuid": "aab8971b-b74c-443f-986e-906951a3de8e",
-    "created_date": "2024-06-14T04:06:08.411995Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/airtsp-1.01.11-1.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 152
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/airtsp-1.01.11-1.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 219
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libairtsp.so.1.01.11-1.01.11-1.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 439
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "27a8653d-5b50-44cd-b130-cc077da82a77",
-            "filename": "airtsp-debuginfo-1.01.11-1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/airtsp-debuginfo-1.01.11-1.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 2974125,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "27a8653d-5b50-44cd-b130-cc077da82a77", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/airtsp-debuginfo-1.01.11-1.fc40.x86_64.rpm#to", 
+            "filename": "airtsp-debuginfo-1.01.11-1.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 2974125
+        }, 
         {
-            "uuid": "e70ff521-458f-4b3e-8860-4ae8d70fc4aa",
-            "filename": "airtsp-debugsource-1.01.11-1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/airtsp-debugsource-1.01.11-1.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 69393,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "e70ff521-458f-4b3e-8860-4ae8d70fc4aa", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/airtsp-debugsource-1.01.11-1.fc40.x86_64.rpm#from", 
+            "filename": "airtsp-debugsource-1.01.11-1.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 69393
         }
-    ],
+    ], 
+    "uuid": "aab8971b-b74c-443f-986e-906951a3de8e", 
+    "resource_count": 98, 
+    "url": "http://127.0.0.1:8002/api/d2d/aab8971b-b74c-443f-986e-906951a3de8e/", 
+    "package_count": 1, 
     "runs": [
         "80963c5c-fc65-4c7c-8bea-9b3fdd9fc3b8"
-    ],
-    "resource_count": 98,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 72,
-    "codebase_resources_summary": {
-        "ignored-directory": 25,
-        "no-licenses": 69,
-        "requires-review": 3,
-        "scanned": 1
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 4,
-        "dwarf_included_paths": 68
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 25, 
+        "scanned": 1, 
+        "requires-review": 3, 
+        "no-licenses": 69
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 72, 
+    "created_date": "2024-06-14T04:06:08.411995Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 4, 
+        "dwarf_included_paths": 68
     }
 }

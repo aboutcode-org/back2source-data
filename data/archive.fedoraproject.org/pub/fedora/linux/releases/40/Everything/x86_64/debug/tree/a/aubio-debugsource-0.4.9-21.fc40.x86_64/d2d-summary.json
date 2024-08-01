@@ -1,57 +1,94 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/8cccdba4-fc7c-4d8f-8e21-4725503db389/",
-    "uuid": "8cccdba4-fc7c-4d8f-8e21-4725503db389",
-    "created_date": "2024-06-13T21:45:34.215671Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/aubio-0.4.9-21.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 18
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aubiomfcc-0.4.9-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aubionotes-0.4.9-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aubioonset-0.4.9-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aubiopitch-0.4.9-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aubioquiet-0.4.9-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aubiotrack-0.4.9-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "dd1051fb-1bb5-4454-8f85-29909f73a9d3",
-            "filename": "aubio-debuginfo-0.4.9-21.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aubio-debuginfo-0.4.9-21.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 70601,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "dd1051fb-1bb5-4454-8f85-29909f73a9d3", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aubio-debuginfo-0.4.9-21.fc40.x86_64.rpm#to", 
+            "filename": "aubio-debuginfo-0.4.9-21.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 70601
+        }, 
         {
-            "uuid": "3fa12cc2-c53e-4709-a757-985692b43e15",
-            "filename": "aubio-debugsource-0.4.9-21.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aubio-debugsource-0.4.9-21.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 183631,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "3fa12cc2-c53e-4709-a757-985692b43e15", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aubio-debugsource-0.4.9-21.fc40.x86_64.rpm#from", 
+            "filename": "aubio-debugsource-0.4.9-21.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 183631
         }
-    ],
+    ], 
+    "uuid": "8cccdba4-fc7c-4d8f-8e21-4725503db389", 
+    "resource_count": 186, 
+    "url": "http://127.0.0.1:8002/api/d2d/8cccdba4-fc7c-4d8f-8e21-4725503db389/", 
+    "package_count": 1, 
     "runs": [
         "1c3bfb2a-c474-454f-a1c6-066016389672"
-    ],
-    "resource_count": 186,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 105,
-    "codebase_resources_summary": {
-        "ignored-directory": 34,
-        "not-deployed": 119,
-        "requires-review": 7,
-        "scanned": 26
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 105
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 34, 
+        "scanned": 26, 
+        "requires-review": 7, 
+        "not-deployed": 119
+    }, 
     "codebase_resources_discrepancies": {
         "total": 7
+    }, 
+    "relation_count": 105, 
+    "created_date": "2024-06-13T21:45:34.215671Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 105
     }
 }

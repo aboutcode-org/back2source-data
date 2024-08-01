@@ -1,57 +1,64 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/300ca886-9a74-4aaf-86ea-bd06c81668e6/",
-    "uuid": "300ca886-9a74-4aaf-86ea-bd06c81668e6",
-    "created_date": "2024-06-17T16:05:27.329857Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/catimg-2.7.0-11.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 23
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "7df9769d-96f8-4db1-8953-ea8e96e6f513",
-            "filename": "catimg-debuginfo-2.7.0-11.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/catimg-debuginfo-2.7.0-11.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 133756,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "7df9769d-96f8-4db1-8953-ea8e96e6f513", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/catimg-debuginfo-2.7.0-11.fc40.x86_64.rpm#to", 
+            "filename": "catimg-debuginfo-2.7.0-11.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 133756
+        }, 
         {
-            "uuid": "e6937848-4174-4249-939e-57369c3beb8f",
-            "filename": "catimg-debugsource-2.7.0-11.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/catimg-debugsource-2.7.0-11.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 77977,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "e6937848-4174-4249-939e-57369c3beb8f", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/catimg-debugsource-2.7.0-11.fc40.x86_64.rpm#from", 
+            "filename": "catimg-debugsource-2.7.0-11.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 77977
         }
-    ],
+    ], 
+    "uuid": "300ca886-9a74-4aaf-86ea-bd06c81668e6", 
+    "resource_count": 25, 
+    "url": "http://127.0.0.1:8002/api/d2d/300ca886-9a74-4aaf-86ea-bd06c81668e6/", 
+    "package_count": 2, 
     "runs": [
         "b16f0acd-6e67-444c-973b-b72000e785ab"
-    ],
-    "resource_count": 25,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 9,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "no-licenses": 7,
-        "requires-review": 1,
-        "scanned": 2
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 9
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 2, 
+        "requires-review": 1, 
+        "no-licenses": 7
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 9, 
+    "created_date": "2024-06-17T16:05:27.329857Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 9
     }
 }

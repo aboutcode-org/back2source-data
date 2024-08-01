@@ -1,56 +1,78 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/b4123f78-39e6-41a8-bde6-fab5ca13b0e7/",
-    "uuid": "b4123f78-39e6-41a8-bde6-fab5ca13b0e7",
-    "created_date": "2024-06-14T07:19:45.247465Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/apmd-3.2.2-41.fc38.i386", 
+            "dwarf_included_paths_not_mapped_count": 27
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/apm-3.2.2-41.fc38.i386.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/apmsleep-3.2.2-41.fc38.i386.debug", 
+            "dwarf_included_paths_not_mapped_count": 7
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/sbin/apmd-3.2.2-41.fc38.i386.debug", 
+            "dwarf_included_paths_not_mapped_count": 10
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "da445b7d-c167-41f1-813e-43d0856ecd26",
-            "filename": "apmd-debuginfo-3.2.2-41.fc38.i686.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apmd-debuginfo-3.2.2-41.fc38.i686.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 46787,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "da445b7d-c167-41f1-813e-43d0856ecd26", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apmd-debuginfo-3.2.2-41.fc38.i686.rpm#to", 
+            "filename": "apmd-debuginfo-3.2.2-41.fc38.i686.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 46787
+        }, 
         {
-            "uuid": "52b4c977-73a8-4e16-93eb-e137208b1b9d",
-            "filename": "apmd-debugsource-3.2.2-41.fc38.i686.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apmd-debugsource-3.2.2-41.fc38.i686.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 24832,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "52b4c977-73a8-4e16-93eb-e137208b1b9d", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apmd-debugsource-3.2.2-41.fc38.i686.rpm#from", 
+            "filename": "apmd-debugsource-3.2.2-41.fc38.i686.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 24832
         }
-    ],
+    ], 
+    "uuid": "b4123f78-39e6-41a8-bde6-fab5ca13b0e7", 
+    "resource_count": 26, 
+    "url": "http://127.0.0.1:8002/api/d2d/b4123f78-39e6-41a8-bde6-fab5ca13b0e7/", 
+    "package_count": 3, 
     "runs": [
         "42798c00-526e-482c-9643-a1f8da51d5f0"
-    ],
-    "resource_count": 26,
-    "package_count": 3,
-    "dependency_count": 0,
-    "relation_count": 10,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "requires-review": 4,
-        "scanned": 5
-    },
-    "discovered_packages_summary": {
-        "total": 3,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 10
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "scanned": 5, 
+        "requires-review": 4
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 10, 
+    "created_date": "2024-06-14T07:19:45.247465Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 3, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 10
     }
 }

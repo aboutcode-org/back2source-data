@@ -1,57 +1,69 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/e7ead036-9f6d-4630-831e-02d29c1657de/",
-    "uuid": "e7ead036-9f6d-4630-831e-02d29c1657de",
-    "created_date": "2024-06-17T14:42:33.923508Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/cliquer-1.22-8.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/cliquer-1.22-8.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "b492204e-9d18-4be8-afbe-f6f27c6d87ac",
-            "filename": "cliquer-debuginfo-1.22-8.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cliquer-debuginfo-1.22-8.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 21051,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "b492204e-9d18-4be8-afbe-f6f27c6d87ac", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cliquer-debuginfo-1.22-8.fc40.x86_64.rpm#to", 
+            "filename": "cliquer-debuginfo-1.22-8.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 21051
+        }, 
         {
-            "uuid": "5539aca2-ace5-4e81-8103-a829c5cb8c7e",
-            "filename": "cliquer-debugsource-1.22-8.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cliquer-debugsource-1.22-8.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 28480,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "5539aca2-ace5-4e81-8103-a829c5cb8c7e", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cliquer-debugsource-1.22-8.fc40.x86_64.rpm#from", 
+            "filename": "cliquer-debugsource-1.22-8.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 28480
         }
-    ],
+    ], 
+    "uuid": "e7ead036-9f6d-4630-831e-02d29c1657de", 
+    "resource_count": 28, 
+    "url": "http://127.0.0.1:8002/api/d2d/e7ead036-9f6d-4630-831e-02d29c1657de/", 
+    "package_count": 0, 
     "runs": [
         "5a1d2bd8-7004-40c1-b95d-e42a0b6f0140"
-    ],
-    "resource_count": 28,
-    "package_count": 0,
-    "dependency_count": 0,
-    "relation_count": 9,
-    "codebase_resources_summary": {
-        "ignored-directory": 18,
-        "no-licenses": 5,
-        "not-deployed": 3,
-        "requires-review": 2
-    },
-    "discovered_packages_summary": {
-        "total": 0,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 9
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 18, 
+        "requires-review": 2, 
+        "not-deployed": 3, 
+        "no-licenses": 5
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 9, 
+    "created_date": "2024-06-17T14:42:33.923508Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 0, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 9
     }
 }

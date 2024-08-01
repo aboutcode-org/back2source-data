@@ -1,56 +1,78 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/bc810eb3-2eed-46d5-b2f5-c48aa8b9dcf1/",
-    "uuid": "bc810eb3-2eed-46d5-b2f5-c48aa8b9dcf1",
-    "created_date": "2024-06-17T12:30:15.328458Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/bitmap-1.0.9-12.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 11
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/atobm-1.0.9-12.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/bitmap-1.0.9-12.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 31
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/bmtoa-1.0.9-12.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "1cde05d9-2411-4180-9b9e-41240064546d",
-            "filename": "bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 113374,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "1cde05d9-2411-4180-9b9e-41240064546d", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm#to", 
+            "filename": "bitmap-debuginfo-1.0.9-12.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 113374
+        }, 
         {
-            "uuid": "b0e046cc-2aa7-464d-8424-aa4032a5848b",
-            "filename": "bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 38071,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "b0e046cc-2aa7-464d-8424-aa4032a5848b", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm#from", 
+            "filename": "bitmap-debugsource-1.0.9-12.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 38071
         }
-    ],
+    ], 
+    "uuid": "bc810eb3-2eed-46d5-b2f5-c48aa8b9dcf1", 
+    "resource_count": 33, 
+    "url": "http://127.0.0.1:8002/api/d2d/bc810eb3-2eed-46d5-b2f5-c48aa8b9dcf1/", 
+    "package_count": 1, 
     "runs": [
         "e50eafba-c75f-49b3-b9b4-f5b89898d29c"
-    ],
-    "resource_count": 33,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 13,
-    "codebase_resources_summary": {
-        "ignored-directory": 16,
-        "requires-review": 4,
-        "scanned": 13
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 13
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 16, 
+        "scanned": 13, 
+        "requires-review": 4
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 13, 
+    "created_date": "2024-06-17T12:30:15.328458Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 13
     }
 }

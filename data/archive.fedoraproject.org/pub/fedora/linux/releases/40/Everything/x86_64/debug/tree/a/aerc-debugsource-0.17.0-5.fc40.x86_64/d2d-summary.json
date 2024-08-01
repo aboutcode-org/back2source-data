@@ -1,59 +1,76 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/01c5dc93-3f36-472e-9c6f-3a52f4f726d7/",
-    "uuid": "01c5dc93-3f36-472e-9c6f-3a52f4f726d7",
-    "created_date": "2024-06-14T06:55:15.200416Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 367, 
+            "path": "to/usr/lib/debug/usr/bin/aerc-0.17.0-5.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 605
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/libexec/aerc/filters/colorize-0.17.0-5.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 16
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/libexec/aerc/filters/wrap-0.17.0-5.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 21
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "3044a0eb-3abd-4875-bb8a-8a1ac642058e",
-            "filename": "aerc-debuginfo-0.17.0-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aerc-debuginfo-0.17.0-5.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 4411876,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "3044a0eb-3abd-4875-bb8a-8a1ac642058e", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aerc-debuginfo-0.17.0-5.fc40.x86_64.rpm#to", 
+            "filename": "aerc-debuginfo-0.17.0-5.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 4411876
+        }, 
         {
-            "uuid": "d85e401d-0364-4cb7-b326-a5ed1947d934",
-            "filename": "aerc-debugsource-0.17.0-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aerc-debugsource-0.17.0-5.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 2030763,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "d85e401d-0364-4cb7-b326-a5ed1947d934", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aerc-debugsource-0.17.0-5.fc40.x86_64.rpm#from", 
+            "filename": "aerc-debugsource-0.17.0-5.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 2030763
         }
-    ],
+    ], 
+    "uuid": "01c5dc93-3f36-472e-9c6f-3a52f4f726d7", 
+    "resource_count": 1248, 
+    "url": "http://127.0.0.1:8002/api/d2d/01c5dc93-3f36-472e-9c6f-3a52f4f726d7/", 
+    "package_count": 8, 
     "runs": [
         "dab5054b-43f2-4c76-aab4-a7edbe95cb58"
-    ],
-    "resource_count": 1248,
-    "package_count": 8,
-    "dependency_count": 0,
-    "relation_count": 749,
-    "codebase_resources_summary": {
-        "ignored-directory": 290,
-        "no-licenses": 551,
-        "not-deployed": 208,
-        "requires-review": 3,
-        "scanned": 196
-    },
-    "discovered_packages_summary": {
-        "total": 8,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 2,
-        "dwarf_included_paths": 747
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 290, 
+        "scanned": 196, 
+        "requires-review": 3, 
+        "not-deployed": 208, 
+        "no-licenses": 551
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 749, 
+    "created_date": "2024-06-14T06:55:15.200416Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 8, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 2, 
+        "dwarf_included_paths": 747
     }
 }

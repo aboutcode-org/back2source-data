@@ -1,58 +1,80 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/fb96966c-df36-4aa4-8da0-c173ee3bbe9f/",
-    "uuid": "fb96966c-df36-4aa4-8da0-c173ee3bbe9f",
-    "created_date": "2024-06-13T11:06:27.868404Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/apg-2.3.0b-46.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 17
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/apg-2.3.0b-46.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 3
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/apgbfm-2.3.0b-46.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 2
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/sbin/apgd-2.3.0b-46.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 17
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "9649be44-c80c-4a64-9933-72af3a23f55c",
-            "filename": "apg-debuginfo-2.3.0b-46.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apg-debuginfo-2.3.0b-46.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 82678,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "9649be44-c80c-4a64-9933-72af3a23f55c", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apg-debuginfo-2.3.0b-46.fc40.x86_64.rpm#to", 
+            "filename": "apg-debuginfo-2.3.0b-46.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 82678
+        }, 
         {
-            "uuid": "5a96ca02-d58c-44ea-b76d-7ac3d0150625",
-            "filename": "apg-debugsource-2.3.0b-46.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apg-debugsource-2.3.0b-46.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 61209,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "5a96ca02-d58c-44ea-b76d-7ac3d0150625", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apg-debugsource-2.3.0b-46.fc40.x86_64.rpm#from", 
+            "filename": "apg-debugsource-2.3.0b-46.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 61209
         }
-    ],
+    ], 
+    "uuid": "fb96966c-df36-4aa4-8da0-c173ee3bbe9f", 
+    "resource_count": 48, 
+    "url": "http://127.0.0.1:8002/api/d2d/fb96966c-df36-4aa4-8da0-c173ee3bbe9f/", 
+    "package_count": 3, 
     "runs": [
         "8ea1f786-cacd-4bcf-ab1a-b36da36a1a0a"
-    ],
-    "resource_count": 48,
-    "package_count": 3,
-    "dependency_count": 0,
-    "relation_count": 66,
-    "codebase_resources_summary": {
-        "ignored-directory": 19,
-        "no-licenses": 1,
-        "requires-review": 4,
-        "scanned": 24
-    },
-    "discovered_packages_summary": {
-        "total": 3,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 4,
-        "dwarf_included_paths": 62
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 19, 
+        "scanned": 24, 
+        "requires-review": 4, 
+        "no-licenses": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 66, 
+    "created_date": "2024-06-13T11:06:27.868404Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 3, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 4, 
+        "dwarf_included_paths": 62
     }
 }

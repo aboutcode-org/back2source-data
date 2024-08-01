@@ -1,59 +1,86 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/bae238b3-2e8a-47f4-9ee1-abc8421512ad/",
-    "uuid": "bae238b3-2e8a-47f4-9ee1-abc8421512ad",
-    "created_date": "2024-06-13T10:23:23.072418Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/apcupsd-3.14.14-31.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 83
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/sbin/apcaccess-3.14.14-31.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 13, 
+            "path": "to/usr/lib/debug/sbin/apctest-3.14.14-31.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 17
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 13, 
+            "path": "to/usr/lib/debug/sbin/apcupsd-3.14.14-31.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 18
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/sbin/smtp-3.14.14-31.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "539bbf4b-781a-4874-b316-65bd56a3f768",
-            "filename": "apcupsd-debuginfo-3.14.14-31.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apcupsd-debuginfo-3.14.14-31.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 498977,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "539bbf4b-781a-4874-b316-65bd56a3f768", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apcupsd-debuginfo-3.14.14-31.fc40.x86_64.rpm#to", 
+            "filename": "apcupsd-debuginfo-3.14.14-31.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 498977
+        }, 
         {
-            "uuid": "6e04de77-a1a1-45f6-831d-eccaa7891771",
-            "filename": "apcupsd-debugsource-3.14.14-31.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apcupsd-debugsource-3.14.14-31.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 235703,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "6e04de77-a1a1-45f6-831d-eccaa7891771", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/apcupsd-debugsource-3.14.14-31.fc40.x86_64.rpm#from", 
+            "filename": "apcupsd-debugsource-3.14.14-31.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 235703
         }
-    ],
+    ], 
+    "uuid": "bae238b3-2e8a-47f4-9ee1-abc8421512ad", 
+    "resource_count": 135, 
+    "url": "http://127.0.0.1:8002/api/d2d/bae238b3-2e8a-47f4-9ee1-abc8421512ad/", 
+    "package_count": 4, 
     "runs": [
         "b8e996db-360b-4027-9255-65301fd8856f"
-    ],
-    "resource_count": 135,
-    "package_count": 4,
-    "dependency_count": 0,
-    "relation_count": 319,
-    "codebase_resources_summary": {
-        "ignored-directory": 31,
-        "no-licenses": 6,
-        "not-deployed": 9,
-        "requires-review": 5,
-        "scanned": 84
-    },
-    "discovered_packages_summary": {
-        "total": 4,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 99,
-        "dwarf_included_paths": 220
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 31, 
+        "scanned": 84, 
+        "requires-review": 5, 
+        "not-deployed": 9, 
+        "no-licenses": 6
+    }, 
     "codebase_resources_discrepancies": {
         "total": 5
+    }, 
+    "relation_count": 319, 
+    "created_date": "2024-06-13T10:23:23.072418Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 4, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 99, 
+        "dwarf_included_paths": 220
     }
 }

@@ -1,56 +1,63 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/deb32805-2c04-4ce9-8e4f-d590ab4d9364/",
-    "uuid": "deb32805-2c04-4ce9-8e4f-d590ab4d9364",
-    "created_date": "2024-06-17T14:31:44.177687Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/ccd2iso-0.3-34.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "f823b616-e89f-4559-8ccf-8360c43c60b5",
-            "filename": "ccd2iso-debuginfo-0.3-34.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ccd2iso-debuginfo-0.3-34.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 15424,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "f823b616-e89f-4559-8ccf-8360c43c60b5", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ccd2iso-debuginfo-0.3-34.fc40.x86_64.rpm#to", 
+            "filename": "ccd2iso-debuginfo-0.3-34.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 15424
+        }, 
         {
-            "uuid": "cf08775b-8379-4c53-a98f-3eb4199250d6",
-            "filename": "ccd2iso-debugsource-0.3-34.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ccd2iso-debugsource-0.3-34.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 9968,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "cf08775b-8379-4c53-a98f-3eb4199250d6", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/ccd2iso-debugsource-0.3-34.fc40.x86_64.rpm#from", 
+            "filename": "ccd2iso-debugsource-0.3-34.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 9968
         }
-    ],
+    ], 
+    "uuid": "deb32805-2c04-4ce9-8e4f-d590ab4d9364", 
+    "resource_count": 17, 
+    "url": "http://127.0.0.1:8002/api/d2d/deb32805-2c04-4ce9-8e4f-d590ab4d9364/", 
+    "package_count": 1, 
     "runs": [
         "18533d12-b16e-4621-8c36-7ea683f9c44b"
-    ],
-    "resource_count": 17,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 2,
-    "codebase_resources_summary": {
-        "ignored-directory": 14,
-        "requires-review": 1,
-        "scanned": 2
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 2
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 14, 
+        "scanned": 2, 
+        "requires-review": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 2, 
+    "created_date": "2024-06-17T14:31:44.177687Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 2
     }
 }

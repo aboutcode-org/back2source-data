@@ -1,58 +1,75 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/7eada013-13e1-483d-98aa-e75ade73c372/",
-    "uuid": "7eada013-13e1-483d-98aa-e75ade73c372",
-    "created_date": "2024-06-14T07:21:49.141365Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/aprsd-2.2.5-15.6.fc40.34.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 66
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aprsd-2.2.5-15.6.fc40.34.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 118
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/aprspass-2.2.5-15.6.fc40.34.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 25
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "a20b2344-da8d-481f-b605-ec8f0a528338",
-            "filename": "aprsd-debuginfo-2.2.5-15.6.fc40.34.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aprsd-debuginfo-2.2.5-15.6.fc40.34.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 609723,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "a20b2344-da8d-481f-b605-ec8f0a528338", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aprsd-debuginfo-2.2.5-15.6.fc40.34.x86_64.rpm#to", 
+            "filename": "aprsd-debuginfo-2.2.5-15.6.fc40.34.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 609723
+        }, 
         {
-            "uuid": "f79f8798-b786-402b-81dd-f57a71aa0c07",
-            "filename": "aprsd-debugsource-2.2.5-15.6.fc40.34.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aprsd-debugsource-2.2.5-15.6.fc40.34.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 106098,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "f79f8798-b786-402b-81dd-f57a71aa0c07", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/aprsd-debugsource-2.2.5-15.6.fc40.34.x86_64.rpm#from", 
+            "filename": "aprsd-debugsource-2.2.5-15.6.fc40.34.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 106098
         }
-    ],
+    ], 
+    "uuid": "7eada013-13e1-483d-98aa-e75ade73c372", 
+    "resource_count": 63, 
+    "url": "http://127.0.0.1:8002/api/d2d/7eada013-13e1-483d-98aa-e75ade73c372/", 
+    "package_count": 2, 
     "runs": [
         "7f2ef181-6d9a-4005-8d99-82510f87b8c7"
-    ],
-    "resource_count": 63,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 45,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "no-licenses": 2,
-        "requires-review": 3,
-        "scanned": 41
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 4,
-        "dwarf_included_paths": 41
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "scanned": 41, 
+        "requires-review": 3, 
+        "no-licenses": 2
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 45, 
+    "created_date": "2024-06-14T07:21:49.141365Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 4, 
+        "dwarf_included_paths": 41
     }
 }

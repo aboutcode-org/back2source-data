@@ -1,56 +1,78 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/2004fb9f-5bee-4db0-872f-88ed1084aa86/",
-    "uuid": "2004fb9f-5bee-4db0-872f-88ed1084aa86",
-    "created_date": "2024-06-13T21:33:28.090235Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/arptools-1.0.2-24.20230218git2cf523f.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 25
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/sbin/arpdiscover-1.0.2-24.20230218git2cf523f.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/sbin/arpflood-1.0.2-24.20230218git2cf523f.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 2
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/sbin/arppoison-1.0.2-24.20230218git2cf523f.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "1651a2e4-9148-4316-a5f6-df051f15c99c",
-            "filename": "arptools-debuginfo-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arptools-debuginfo-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 30607,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "1651a2e4-9148-4316-a5f6-df051f15c99c", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arptools-debuginfo-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm#to", 
+            "filename": "arptools-debuginfo-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 30607
+        }, 
         {
-            "uuid": "e1913c6c-cad6-470d-8b3c-5bd75272d36e",
-            "filename": "arptools-debugsource-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arptools-debugsource-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 12006,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "e1913c6c-cad6-470d-8b3c-5bd75272d36e", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arptools-debugsource-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm#from", 
+            "filename": "arptools-debugsource-1.0.2-24.20230218git2cf523f.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 12006
         }
-    ],
+    ], 
+    "uuid": "2004fb9f-5bee-4db0-872f-88ed1084aa86", 
+    "resource_count": 26, 
+    "url": "http://127.0.0.1:8002/api/d2d/2004fb9f-5bee-4db0-872f-88ed1084aa86/", 
+    "package_count": 1, 
     "runs": [
         "f072bf4b-6b24-4717-ac83-b393dd7e4d2c"
-    ],
-    "resource_count": 26,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 9,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "requires-review": 4,
-        "scanned": 5
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 9
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "scanned": 5, 
+        "requires-review": 4
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 9, 
+    "created_date": "2024-06-13T21:33:28.090235Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 9
     }
 }

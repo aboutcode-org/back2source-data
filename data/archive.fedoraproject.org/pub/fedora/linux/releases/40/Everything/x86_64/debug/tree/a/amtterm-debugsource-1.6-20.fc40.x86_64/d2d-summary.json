@@ -1,57 +1,74 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/a4bf1cd4-dbf4-47e3-a20f-76fe9d4ce222/",
-    "uuid": "a4bf1cd4-dbf4-47e3-a20f-76fe9d4ce222",
-    "created_date": "2024-06-14T07:22:24.319116Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/amtterm-1.6-20.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 24
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/amtterm-1.6-20.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 13
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/gamt-1.6-20.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 66
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "1ee1865a-6299-4205-913f-6096514ee77a",
-            "filename": "amtterm-debuginfo-1.6-20.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtterm-debuginfo-1.6-20.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 75584,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "1ee1865a-6299-4205-913f-6096514ee77a", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtterm-debuginfo-1.6-20.fc40.x86_64.rpm#to", 
+            "filename": "amtterm-debuginfo-1.6-20.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 75584
+        }, 
         {
-            "uuid": "1afd193a-c223-44b2-8710-4f980e87d046",
-            "filename": "amtterm-debugsource-1.6-20.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtterm-debugsource-1.6-20.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 26732,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "1afd193a-c223-44b2-8710-4f980e87d046", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/amtterm-debugsource-1.6-20.fc40.x86_64.rpm#from", 
+            "filename": "amtterm-debugsource-1.6-20.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 26732
         }
-    ],
+    ], 
+    "uuid": "a4bf1cd4-dbf4-47e3-a20f-76fe9d4ce222", 
+    "resource_count": 28, 
+    "url": "http://127.0.0.1:8002/api/d2d/a4bf1cd4-dbf4-47e3-a20f-76fe9d4ce222/", 
+    "package_count": 1, 
     "runs": [
         "0a63cc50-fa55-4395-9665-4cfdecebb5af"
-    ],
-    "resource_count": 28,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 15,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "no-licenses": 5,
-        "requires-review": 3,
-        "scanned": 5
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 15
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 5, 
+        "requires-review": 3, 
+        "no-licenses": 5
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 15, 
+    "created_date": "2024-06-14T07:22:24.319116Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 15
     }
 }

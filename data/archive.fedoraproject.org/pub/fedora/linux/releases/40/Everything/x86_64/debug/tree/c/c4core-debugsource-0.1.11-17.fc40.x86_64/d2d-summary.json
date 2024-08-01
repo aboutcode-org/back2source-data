@@ -1,58 +1,65 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/2f1e2c0d-e070-4890-b5ef-1b82e4f6f501/",
-    "uuid": "2f1e2c0d-e070-4890-b5ef-1b82e4f6f501",
-    "created_date": "2024-06-17T12:34:17.588464Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libc4core.so.0.1.11-0.1.11-17.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 74
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "39b33fc7-9f80-42e5-85f2-d18797745eb5",
-            "filename": "c4core-debuginfo-0.1.11-17.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c4core-debuginfo-0.1.11-17.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 66711,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "39b33fc7-9f80-42e5-85f2-d18797745eb5", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c4core-debuginfo-0.1.11-17.fc40.x86_64.rpm#to", 
+            "filename": "c4core-debuginfo-0.1.11-17.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 66711
+        }, 
         {
-            "uuid": "7b0903e5-ad16-469b-a218-536c6737e9de",
-            "filename": "c4core-debugsource-0.1.11-17.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c4core-debugsource-0.1.11-17.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 95246,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "7b0903e5-ad16-469b-a218-536c6737e9de", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/c4core-debugsource-0.1.11-17.fc40.x86_64.rpm#from", 
+            "filename": "c4core-debugsource-0.1.11-17.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 95246
         }
-    ],
+    ], 
+    "uuid": "2f1e2c0d-e070-4890-b5ef-1b82e4f6f501", 
+    "resource_count": 39, 
+    "url": "http://127.0.0.1:8002/api/d2d/2f1e2c0d-e070-4890-b5ef-1b82e4f6f501/", 
+    "package_count": 1, 
     "runs": [
         "6c73e4c9-b6ad-492e-94e9-935f1d47e366"
-    ],
-    "resource_count": 39,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 21,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "no-licenses": 20,
-        "requires-review": 1,
-        "scanned": 1
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 2,
-        "dwarf_included_paths": 19
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "scanned": 1, 
+        "requires-review": 1, 
+        "no-licenses": 20
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 21, 
+    "created_date": "2024-06-17T12:34:17.588464Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 2, 
+        "dwarf_included_paths": 19
     }
 }

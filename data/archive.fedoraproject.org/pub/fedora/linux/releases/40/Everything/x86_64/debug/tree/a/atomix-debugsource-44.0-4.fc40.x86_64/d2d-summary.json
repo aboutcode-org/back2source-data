@@ -1,57 +1,64 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/2a2d15d3-e5fe-497c-a161-805920efb4ff/",
-    "uuid": "2a2d15d3-e5fe-497c-a161-805920efb4ff",
-    "created_date": "2024-06-13T21:23:47.788242Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/atomix-44.0-4.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 91
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "8a9feaa6-53a0-47c2-86c9-4e21f24eb310",
-            "filename": "atomix-debuginfo-44.0-4.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/atomix-debuginfo-44.0-4.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 126132,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "8a9feaa6-53a0-47c2-86c9-4e21f24eb310", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/atomix-debuginfo-44.0-4.fc40.x86_64.rpm#to", 
+            "filename": "atomix-debuginfo-44.0-4.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 126132
+        }, 
         {
-            "uuid": "c9608cc6-c1a7-4104-8ad8-cef910673866",
-            "filename": "atomix-debugsource-44.0-4.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/atomix-debugsource-44.0-4.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 43248,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "c9608cc6-c1a7-4104-8ad8-cef910673866", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/atomix-debugsource-44.0-4.fc40.x86_64.rpm#from", 
+            "filename": "atomix-debugsource-44.0-4.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 43248
         }
-    ],
+    ], 
+    "uuid": "2a2d15d3-e5fe-497c-a161-805920efb4ff", 
+    "resource_count": 47, 
+    "url": "http://127.0.0.1:8002/api/d2d/2a2d15d3-e5fe-497c-a161-805920efb4ff/", 
+    "package_count": 1, 
     "runs": [
         "3ea468ca-ccb0-425f-8f10-11afdaa4cb91"
-    ],
-    "resource_count": 47,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 31,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "requires-review": 1,
-        "scanned": 31
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 3,
-        "dwarf_included_paths": 28
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 31, 
+        "requires-review": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 31, 
+    "created_date": "2024-06-13T21:23:47.788242Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 3, 
+        "dwarf_included_paths": 28
     }
 }

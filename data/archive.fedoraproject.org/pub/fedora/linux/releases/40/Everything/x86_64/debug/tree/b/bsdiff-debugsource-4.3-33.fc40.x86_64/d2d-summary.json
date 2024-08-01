@@ -1,56 +1,73 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/bbaea335-bb25-446e-961b-3d2458b78e55/",
-    "uuid": "bbaea335-bb25-446e-961b-3d2458b78e55",
-    "created_date": "2024-06-17T10:49:23.340558Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/bsdiff-4.3-33.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 12
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/bsdiff-4.3-33.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 7
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/bspatch-4.3-33.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 7
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "a83be48f-c08c-47b3-89ca-d2088a6f243b",
-            "filename": "bsdiff-debuginfo-4.3-33.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bsdiff-debuginfo-4.3-33.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 25574,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "a83be48f-c08c-47b3-89ca-d2088a6f243b", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bsdiff-debuginfo-4.3-33.fc40.x86_64.rpm#to", 
+            "filename": "bsdiff-debuginfo-4.3-33.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 25574
+        }, 
         {
-            "uuid": "00796967-2b2a-4856-8bce-e2d30bbe7e41",
-            "filename": "bsdiff-debugsource-4.3-33.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bsdiff-debugsource-4.3-33.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 12411,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "00796967-2b2a-4856-8bce-e2d30bbe7e41", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bsdiff-debugsource-4.3-33.fc40.x86_64.rpm#from", 
+            "filename": "bsdiff-debugsource-4.3-33.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 12411
         }
-    ],
+    ], 
+    "uuid": "bbaea335-bb25-446e-961b-3d2458b78e55", 
+    "resource_count": 20, 
+    "url": "http://127.0.0.1:8002/api/d2d/bbaea335-bb25-446e-961b-3d2458b78e55/", 
+    "package_count": 1, 
     "runs": [
         "10e2d8ce-1fb6-42d5-bd88-6126fc7026e5"
-    ],
-    "resource_count": 20,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 2,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "requires-review": 3,
-        "scanned": 2
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 2
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 2, 
+        "requires-review": 3
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 2, 
+    "created_date": "2024-06-17T10:49:23.340558Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 2
     }
 }

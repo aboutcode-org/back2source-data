@@ -1,57 +1,69 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/a48810ff-f2fe-4d0d-956e-14f7293b30b4/",
-    "uuid": "a48810ff-f2fe-4d0d-956e-14f7293b30b4",
-    "created_date": "2024-06-13T22:08:04.146422Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/argon2-20190702-5.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 12
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/argon2-20190702-5.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 10
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "2b8eef74-7cda-47ac-acf2-4f9bf6290b63",
-            "filename": "argon2-debuginfo-20190702-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debuginfo-20190702-5.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 63328,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "2b8eef74-7cda-47ac-acf2-4f9bf6290b63", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debuginfo-20190702-5.fc40.x86_64.rpm#to", 
+            "filename": "argon2-debuginfo-20190702-5.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 63328
+        }, 
         {
-            "uuid": "fffc9153-52f9-442b-8e06-6bd79c59ec66",
-            "filename": "argon2-debugsource-20190702-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debugsource-20190702-5.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 34780,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "fffc9153-52f9-442b-8e06-6bd79c59ec66", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/argon2-debugsource-20190702-5.fc40.x86_64.rpm#from", 
+            "filename": "argon2-debugsource-20190702-5.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 34780
         }
-    ],
+    ], 
+    "uuid": "a48810ff-f2fe-4d0d-956e-14f7293b30b4", 
+    "resource_count": 33, 
+    "url": "http://127.0.0.1:8002/api/d2d/a48810ff-f2fe-4d0d-956e-14f7293b30b4/", 
+    "package_count": 2, 
     "runs": [
         "77d88e5d-add0-48bf-86f4-fde18d799364"
-    ],
-    "resource_count": 33,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 34,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "requires-review": 2,
-        "scanned": 14
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 7,
-        "dwarf_included_paths": 27
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "scanned": 14, 
+        "requires-review": 2
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 34, 
+    "created_date": "2024-06-13T22:08:04.146422Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 7, 
+        "dwarf_included_paths": 27
     }
 }

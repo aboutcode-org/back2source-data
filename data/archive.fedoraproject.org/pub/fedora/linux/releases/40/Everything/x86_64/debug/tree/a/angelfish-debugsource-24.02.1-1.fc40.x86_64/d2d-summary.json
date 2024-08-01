@@ -1,58 +1,75 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/702c44c5-cbe0-4734-ba53-130df57f18a1/",
-    "uuid": "702c44c5-cbe0-4734-ba53-130df57f18a1",
-    "created_date": "2024-06-13T22:21:08.840317Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/angelfish-24.02.1-1.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 275
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 54, 
+            "path": "to/usr/lib/debug/usr/bin/angelfish-24.02.1-1.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 991
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/usr/bin/angelfish-webapp-24.02.1-1.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 240
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "85f6ab19-a94d-42d6-8f13-39be16cc18dd",
-            "filename": "angelfish-debuginfo-24.02.1-1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/angelfish-debuginfo-24.02.1-1.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 9276817,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "85f6ab19-a94d-42d6-8f13-39be16cc18dd", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/angelfish-debuginfo-24.02.1-1.fc40.x86_64.rpm#to", 
+            "filename": "angelfish-debuginfo-24.02.1-1.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 9276817
+        }, 
         {
-            "uuid": "904a1757-b03f-44ab-960b-e8a3c794a394",
-            "filename": "angelfish-debugsource-24.02.1-1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/angelfish-debugsource-24.02.1-1.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 209950,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "904a1757-b03f-44ab-960b-e8a3c794a394", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/angelfish-debugsource-24.02.1-1.fc40.x86_64.rpm#from", 
+            "filename": "angelfish-debugsource-24.02.1-1.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 209950
         }
-    ],
+    ], 
+    "uuid": "702c44c5-cbe0-4734-ba53-130df57f18a1", 
+    "resource_count": 118, 
+    "url": "http://127.0.0.1:8002/api/d2d/702c44c5-cbe0-4734-ba53-130df57f18a1/", 
+    "package_count": 4, 
     "runs": [
         "42e74bd3-bacc-487c-8246-1eb8a3409d48"
-    ],
-    "resource_count": 118,
-    "package_count": 4,
-    "dependency_count": 0,
-    "relation_count": 128,
-    "codebase_resources_summary": {
-        "ignored-directory": 47,
-        "no-licenses": 26,
-        "requires-review": 3,
-        "scanned": 42
-    },
-    "discovered_packages_summary": {
-        "total": 4,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 2,
-        "dwarf_included_paths": 126
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 47, 
+        "scanned": 42, 
+        "requires-review": 3, 
+        "no-licenses": 26
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 128, 
+    "created_date": "2024-06-13T22:21:08.840317Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 4, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 2, 
+        "dwarf_included_paths": 126
     }
 }

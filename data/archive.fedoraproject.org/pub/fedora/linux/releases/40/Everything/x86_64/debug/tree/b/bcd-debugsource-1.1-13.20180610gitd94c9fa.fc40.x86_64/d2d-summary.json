@@ -1,57 +1,74 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/2b576dba-dc23-4e1b-9323-d0b16802a1dc/",
-    "uuid": "2b576dba-dc23-4e1b-9323-d0b16802a1dc",
-    "created_date": "2024-06-17T11:44:45.939375Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/bcd-1.1-13.20180610gitd94c9fa.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 100
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libbcdcore.so.0.0.0-1.1-13.20180610gitd94c9fa.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 177
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libbcdio.so.0.0.0-1.1-13.20180610gitd94c9fa.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 130
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "9d7f1c59-2139-40ce-aa7b-9ca62cff1481",
-            "filename": "bcd-debuginfo-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bcd-debuginfo-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 2397096,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "9d7f1c59-2139-40ce-aa7b-9ca62cff1481", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bcd-debuginfo-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm#to", 
+            "filename": "bcd-debuginfo-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 2397096
+        }, 
         {
-            "uuid": "f72539aa-2edb-4e0e-80ed-e21f8c442e56",
-            "filename": "bcd-debugsource-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bcd-debugsource-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 47953,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "f72539aa-2edb-4e0e-80ed-e21f8c442e56", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bcd-debugsource-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm#from", 
+            "filename": "bcd-debugsource-1.1-13.20180610gitd94c9fa.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 47953
         }
-    ],
+    ], 
+    "uuid": "2b576dba-dc23-4e1b-9323-d0b16802a1dc", 
+    "resource_count": 61, 
+    "url": "http://127.0.0.1:8002/api/d2d/2b576dba-dc23-4e1b-9323-d0b16802a1dc/", 
+    "package_count": 2, 
     "runs": [
         "ec067fee-e519-4e01-94f3-ba19284d99f9"
-    ],
-    "resource_count": 61,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 32,
-    "codebase_resources_summary": {
-        "ignored-directory": 31,
-        "not-deployed": 2,
-        "requires-review": 3,
-        "scanned": 25
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 32
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 31, 
+        "scanned": 25, 
+        "requires-review": 3, 
+        "not-deployed": 2
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 32, 
+    "created_date": "2024-06-17T11:44:45.939375Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 32
     }
 }

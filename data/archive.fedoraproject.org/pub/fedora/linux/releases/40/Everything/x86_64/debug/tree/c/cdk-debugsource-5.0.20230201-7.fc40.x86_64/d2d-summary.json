@@ -1,58 +1,65 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/d68df7ff-998f-40a2-9ca2-77bd622f829d/",
-    "uuid": "d68df7ff-998f-40a2-9ca2-77bd622f829d",
-    "created_date": "2024-06-17T15:23:15.154651Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libcdk.so.5.0-5.0.20230201-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 31
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "14afa6c6-5497-40ed-a728-f7346ff61f27",
-            "filename": "cdk-debuginfo-5.0.20230201-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cdk-debuginfo-5.0.20230201-7.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 280232,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "14afa6c6-5497-40ed-a728-f7346ff61f27", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cdk-debuginfo-5.0.20230201-7.fc40.x86_64.rpm#to", 
+            "filename": "cdk-debuginfo-5.0.20230201-7.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 280232
+        }, 
         {
-            "uuid": "7da3dce2-1684-4783-a420-c2019f57eaaa",
-            "filename": "cdk-debugsource-5.0.20230201-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cdk-debugsource-5.0.20230201-7.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 139051,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "7da3dce2-1684-4783-a420-c2019f57eaaa", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cdk-debugsource-5.0.20230201-7.fc40.x86_64.rpm#from", 
+            "filename": "cdk-debugsource-5.0.20230201-7.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 139051
         }
-    ],
+    ], 
+    "uuid": "d68df7ff-998f-40a2-9ca2-77bd622f829d", 
+    "resource_count": 101, 
+    "url": "http://127.0.0.1:8002/api/d2d/d68df7ff-998f-40a2-9ca2-77bd622f829d/", 
+    "package_count": 1, 
     "runs": [
         "55a21c8e-0cba-4098-902d-b9c4b1e5ed8f"
-    ],
-    "resource_count": 101,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 86,
-    "codebase_resources_summary": {
-        "ignored-directory": 14,
-        "no-licenses": 48,
-        "requires-review": 1,
-        "scanned": 38
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 11,
-        "dwarf_included_paths": 75
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 14, 
+        "scanned": 38, 
+        "requires-review": 1, 
+        "no-licenses": 48
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 86, 
+    "created_date": "2024-06-17T15:23:15.154651Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 11, 
+        "dwarf_included_paths": 75
     }
 }

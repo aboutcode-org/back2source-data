@@ -1,56 +1,73 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/648fd0a4-7b90-42fa-83ce-581c7b34d7b6/",
-    "uuid": "648fd0a4-7b90-42fa-83ce-581c7b34d7b6",
-    "created_date": "2024-06-17T15:16:29.541147Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/coin-or-Vol-1.5.4-13.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 36
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libOsiVol.so.1.5.4-1.5.4-13.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 83
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libVol.so.1.5.4-1.5.4-13.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 31
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "883fdc04-f0d2-4ff1-a4c1-fb41440451b4",
-            "filename": "coin-or-Vol-debuginfo-1.5.4-13.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Vol-debuginfo-1.5.4-13.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 217176,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "883fdc04-f0d2-4ff1-a4c1-fb41440451b4", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Vol-debuginfo-1.5.4-13.fc40.x86_64.rpm#to", 
+            "filename": "coin-or-Vol-debuginfo-1.5.4-13.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 217176
+        }, 
         {
-            "uuid": "cffe5f33-38de-416c-ab15-d701f564a396",
-            "filename": "coin-or-Vol-debugsource-1.5.4-13.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Vol-debugsource-1.5.4-13.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 31271,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "cffe5f33-38de-416c-ab15-d701f564a396", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/coin-or-Vol-debugsource-1.5.4-13.fc40.x86_64.rpm#from", 
+            "filename": "coin-or-Vol-debugsource-1.5.4-13.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 31271
         }
-    ],
+    ], 
+    "uuid": "648fd0a4-7b90-42fa-83ce-581c7b34d7b6", 
+    "resource_count": 24, 
+    "url": "http://127.0.0.1:8002/api/d2d/648fd0a4-7b90-42fa-83ce-581c7b34d7b6/", 
+    "package_count": 2, 
     "runs": [
         "bb0df549-8121-4203-a702-2446088b1e85"
-    ],
-    "resource_count": 24,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 6,
-    "codebase_resources_summary": {
-        "ignored-directory": 16,
-        "requires-review": 3,
-        "scanned": 5
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 6
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 16, 
+        "scanned": 5, 
+        "requires-review": 3
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 6, 
+    "created_date": "2024-06-17T15:16:29.541147Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 6
     }
 }

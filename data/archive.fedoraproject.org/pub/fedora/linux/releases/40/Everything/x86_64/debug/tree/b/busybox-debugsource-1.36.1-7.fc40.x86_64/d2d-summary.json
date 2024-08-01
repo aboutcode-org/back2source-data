@@ -1,60 +1,72 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/91e5b607-4640-4e63-bc1a-cfbe7a92a3b5/",
-    "uuid": "91e5b607-4640-4e63-bc1a-cfbe7a92a3b5",
-    "created_date": "2024-06-17T11:38:05.387933Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/busybox-1.36.1-7.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 44
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 3, 
+            "path": "to/usr/lib/debug/usr/sbin/busybox-1.36.1-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 68
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "d5c21a77-a5a2-41bf-a30a-6474c4f91e06",
-            "filename": "busybox-debuginfo-1.36.1-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/busybox-debuginfo-1.36.1-7.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 1751396,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "d5c21a77-a5a2-41bf-a30a-6474c4f91e06", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/busybox-debuginfo-1.36.1-7.fc40.x86_64.rpm#to", 
+            "filename": "busybox-debuginfo-1.36.1-7.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 1751396
+        }, 
         {
-            "uuid": "3afb86aa-95c3-4ace-a46a-506a5f85ec98",
-            "filename": "busybox-debugsource-1.36.1-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/busybox-debugsource-1.36.1-7.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 1872440,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "3afb86aa-95c3-4ace-a46a-506a5f85ec98", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/busybox-debugsource-1.36.1-7.fc40.x86_64.rpm#from", 
+            "filename": "busybox-debugsource-1.36.1-7.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 1872440
         }
-    ],
+    ], 
+    "uuid": "91e5b607-4640-4e63-bc1a-cfbe7a92a3b5", 
+    "resource_count": 717, 
+    "url": "http://127.0.0.1:8002/api/d2d/91e5b607-4640-4e63-bc1a-cfbe7a92a3b5/", 
+    "package_count": 44, 
     "runs": [
         "fa7ffffe-3f60-4106-9e74-53fef69eff4a"
-    ],
-    "resource_count": 717,
-    "package_count": 44,
-    "dependency_count": 0,
-    "relation_count": 1677,
-    "codebase_resources_summary": {
-        "ignored-directory": 51,
-        "no-licenses": 20,
-        "not-deployed": 11,
-        "requires-review": 2,
-        "scanned": 631,
-        "unknown-license": 2
-    },
-    "discovered_packages_summary": {
-        "total": 44,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 554,
-        "dwarf_included_paths": 1123
-    },
+    }, 
+    "codebase_resources_summary": {
+        "no-licenses": 20, 
+        "unknown-license": 2, 
+        "requires-review": 2, 
+        "ignored-directory": 51, 
+        "scanned": 631, 
+        "not-deployed": 11
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 1677, 
+    "created_date": "2024-06-17T11:38:05.387933Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 44, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 554, 
+        "dwarf_included_paths": 1123
     }
 }

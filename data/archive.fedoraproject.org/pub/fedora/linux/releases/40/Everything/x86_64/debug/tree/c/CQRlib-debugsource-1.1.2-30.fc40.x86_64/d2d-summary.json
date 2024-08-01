@@ -1,56 +1,63 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/6549cd03-7ec4-4ff3-99f2-8bf86b46289b/",
-    "uuid": "6549cd03-7ec4-4ff3-99f2-8bf86b46289b",
-    "created_date": "2024-06-17T16:19:12.944784Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libCQRlib.so.2.1.0-1.1.2-30.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 3
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "c61a5664-30f1-4c6c-9dd8-4f8c76137b86",
-            "filename": "CQRlib-debuginfo-1.1.2-30.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CQRlib-debuginfo-1.1.2-30.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 27818,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "c61a5664-30f1-4c6c-9dd8-4f8c76137b86", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CQRlib-debuginfo-1.1.2-30.fc40.x86_64.rpm#to", 
+            "filename": "CQRlib-debuginfo-1.1.2-30.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 27818
+        }, 
         {
-            "uuid": "5def7192-0db5-45c0-a13a-eab52265f9bb",
-            "filename": "CQRlib-debugsource-1.1.2-30.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CQRlib-debugsource-1.1.2-30.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 19192,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "5def7192-0db5-45c0-a13a-eab52265f9bb", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CQRlib-debugsource-1.1.2-30.fc40.x86_64.rpm#from", 
+            "filename": "CQRlib-debugsource-1.1.2-30.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 19192
         }
-    ],
+    ], 
+    "uuid": "6549cd03-7ec4-4ff3-99f2-8bf86b46289b", 
+    "resource_count": 16, 
+    "url": "http://127.0.0.1:8002/api/d2d/6549cd03-7ec4-4ff3-99f2-8bf86b46289b/", 
+    "package_count": 1, 
     "runs": [
         "19b6589c-7397-42c1-a2b4-83ec2c0c9b03"
-    ],
-    "resource_count": 16,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 2,
-    "codebase_resources_summary": {
-        "ignored-directory": 13,
-        "requires-review": 1,
-        "scanned": 2
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 2
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 13, 
+        "scanned": 2, 
+        "requires-review": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 2, 
+    "created_date": "2024-06-17T16:19:12.944784Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 2
     }
 }

@@ -1,58 +1,80 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/36d7c739-8a73-484f-b15c-6685a49be32c/",
-    "uuid": "36d7c739-8a73-484f-b15c-6685a49be32c",
-    "created_date": "2024-06-17T10:17:18.114906Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/BitchX-1.2.1-36.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 47
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/BitchX-1.2.1-1.2.1-36.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 47
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/scr-bx-1.2.1-36.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 15
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/bx/wserv-1.2.1-36.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 8
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "c27b0ccd-6b9b-4984-9153-6d4fdaeae322",
-            "filename": "BitchX-debuginfo-1.2.1-36.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/BitchX-debuginfo-1.2.1-36.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 1231508,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "c27b0ccd-6b9b-4984-9153-6d4fdaeae322", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/BitchX-debuginfo-1.2.1-36.fc40.x86_64.rpm#to", 
+            "filename": "BitchX-debuginfo-1.2.1-36.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 1231508
+        }, 
         {
-            "uuid": "d71e8734-b2f8-4462-8ca9-4ab8cde581ee",
-            "filename": "BitchX-debugsource-1.2.1-36.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/BitchX-debugsource-1.2.1-36.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 641970,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "d71e8734-b2f8-4462-8ca9-4ab8cde581ee", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/BitchX-debugsource-1.2.1-36.fc40.x86_64.rpm#from", 
+            "filename": "BitchX-debugsource-1.2.1-36.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 641970
         }
-    ],
+    ], 
+    "uuid": "36d7c739-8a73-484f-b15c-6685a49be32c", 
+    "resource_count": 156, 
+    "url": "http://127.0.0.1:8002/api/d2d/36d7c739-8a73-484f-b15c-6685a49be32c/", 
+    "package_count": 4, 
     "runs": [
         "61167387-a97c-4168-a1ed-07ba40c74d7a"
-    ],
-    "resource_count": 156,
-    "package_count": 4,
-    "dependency_count": 0,
-    "relation_count": 160,
-    "codebase_resources_summary": {
-        "ignored-directory": 20,
-        "no-licenses": 127,
-        "requires-review": 4,
-        "scanned": 5
-    },
-    "discovered_packages_summary": {
-        "total": 4,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 7,
-        "dwarf_included_paths": 153
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 20, 
+        "scanned": 5, 
+        "requires-review": 4, 
+        "no-licenses": 127
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 160, 
+    "created_date": "2024-06-17T10:17:18.114906Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 4, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 7, 
+        "dwarf_included_paths": 153
     }
 }

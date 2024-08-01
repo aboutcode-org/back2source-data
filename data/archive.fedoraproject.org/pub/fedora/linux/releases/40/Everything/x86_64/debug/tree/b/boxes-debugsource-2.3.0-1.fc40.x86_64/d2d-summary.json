@@ -1,58 +1,65 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/6fad9cbe-c443-4acf-914b-bf93f092844e/",
-    "uuid": "6fad9cbe-c443-4acf-914b-bf93f092844e",
-    "created_date": "2024-06-17T11:37:05.038466Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/boxes-2.3.0-1.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 33
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "a04f9123-e65f-49fa-b9dd-6f1c27e4b2a0",
-            "filename": "boxes-debuginfo-2.3.0-1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/boxes-debuginfo-2.3.0-1.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 216972,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "a04f9123-e65f-49fa-b9dd-6f1c27e4b2a0", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/boxes-debuginfo-2.3.0-1.fc40.x86_64.rpm#to", 
+            "filename": "boxes-debuginfo-2.3.0-1.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 216972
+        }, 
         {
-            "uuid": "85c8f70b-b8a6-46c3-b120-3a43f556b496",
-            "filename": "boxes-debugsource-2.3.0-1.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/boxes-debugsource-2.3.0-1.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 116252,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "85c8f70b-b8a6-46c3-b120-3a43f556b496", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/boxes-debugsource-2.3.0-1.fc40.x86_64.rpm#from", 
+            "filename": "boxes-debugsource-2.3.0-1.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 116252
         }
-    ],
+    ], 
+    "uuid": "6fad9cbe-c443-4acf-914b-bf93f092844e", 
+    "resource_count": 55, 
+    "url": "http://127.0.0.1:8002/api/d2d/6fad9cbe-c443-4acf-914b-bf93f092844e/", 
+    "package_count": 4, 
     "runs": [
         "2ad601e7-d2a6-41fc-a34f-086359a1709e"
-    ],
-    "resource_count": 55,
-    "package_count": 4,
-    "dependency_count": 0,
-    "relation_count": 38,
-    "codebase_resources_summary": {
-        "ignored-directory": 15,
-        "not-deployed": 1,
-        "requires-review": 1,
-        "scanned": 38
-    },
-    "discovered_packages_summary": {
-        "total": 4,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 1,
-        "dwarf_included_paths": 37
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 15, 
+        "scanned": 38, 
+        "requires-review": 1, 
+        "not-deployed": 1
+    }, 
     "codebase_resources_discrepancies": {
         "total": 1
+    }, 
+    "relation_count": 38, 
+    "created_date": "2024-06-17T11:37:05.038466Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 4, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 1, 
+        "dwarf_included_paths": 37
     }
 }

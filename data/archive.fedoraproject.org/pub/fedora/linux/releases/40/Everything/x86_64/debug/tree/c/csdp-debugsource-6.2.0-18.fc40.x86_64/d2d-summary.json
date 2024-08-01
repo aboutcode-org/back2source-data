@@ -1,58 +1,70 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/1d14f765-a9ef-497d-92f8-31d0b368b374/",
-    "uuid": "1d14f765-a9ef-497d-92f8-31d0b368b374",
-    "created_date": "2024-06-17T16:02:19.685520Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/csdp-6.2.0-18.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 10
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libsdp.so.6.2.0-6.2.0-18.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 10
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "60fce3d0-a44f-4bf8-b24e-1a5101bbd1a5",
-            "filename": "csdp-debuginfo-6.2.0-18.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/csdp-debuginfo-6.2.0-18.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 97530,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "60fce3d0-a44f-4bf8-b24e-1a5101bbd1a5", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/csdp-debuginfo-6.2.0-18.fc40.x86_64.rpm#to", 
+            "filename": "csdp-debuginfo-6.2.0-18.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 97530
+        }, 
         {
-            "uuid": "84023b02-448b-4cb0-acc9-50387c4d5ca5",
-            "filename": "csdp-debugsource-6.2.0-18.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/csdp-debugsource-6.2.0-18.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 58612,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "84023b02-448b-4cb0-acc9-50387c4d5ca5", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/csdp-debugsource-6.2.0-18.fc40.x86_64.rpm#from", 
+            "filename": "csdp-debugsource-6.2.0-18.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 58612
         }
-    ],
+    ], 
+    "uuid": "1d14f765-a9ef-497d-92f8-31d0b368b374", 
+    "resource_count": 65, 
+    "url": "http://127.0.0.1:8002/api/d2d/1d14f765-a9ef-497d-92f8-31d0b368b374/", 
+    "package_count": 0, 
     "runs": [
         "d19b04ab-174f-4634-9f13-d028ab79f260"
-    ],
-    "resource_count": 65,
-    "package_count": 0,
-    "dependency_count": 0,
-    "relation_count": 42,
-    "codebase_resources_summary": {
-        "ignored-directory": 18,
-        "no-licenses": 40,
-        "not-deployed": 5,
-        "requires-review": 2
-    },
-    "discovered_packages_summary": {
-        "total": 0,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 8,
-        "dwarf_included_paths": 34
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 18, 
+        "requires-review": 2, 
+        "not-deployed": 5, 
+        "no-licenses": 40
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 42, 
+    "created_date": "2024-06-17T16:02:19.685520Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 0, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 8, 
+        "dwarf_included_paths": 34
     }
 }

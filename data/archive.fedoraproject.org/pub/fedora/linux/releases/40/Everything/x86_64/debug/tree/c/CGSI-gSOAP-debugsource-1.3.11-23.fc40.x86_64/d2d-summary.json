@@ -1,56 +1,83 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/5f36c56e-8534-4031-9f16-95936c5e0e72/",
-    "uuid": "5f36c56e-8534-4031-9f16-95936c5e0e72",
-    "created_date": "2024-06-17T12:36:17.691408Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/CGSI-gSOAP-1.3.11-23.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 103
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libcgsi_plugin_cpp.so.1.3.11-1.3.11-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 8
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libcgsi_plugin.so.1.3.11-1.3.11-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 1
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libcgsi_plugin_voms_cpp.so.1.3.11-1.3.11-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 13
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libcgsi_plugin_voms.so.1.3.11-1.3.11-23.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "684b0e5b-e2c9-4763-9857-c480ea65165e",
-            "filename": "CGSI-gSOAP-debuginfo-1.3.11-23.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CGSI-gSOAP-debuginfo-1.3.11-23.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 133804,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "684b0e5b-e2c9-4763-9857-c480ea65165e", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CGSI-gSOAP-debuginfo-1.3.11-23.fc40.x86_64.rpm#to", 
+            "filename": "CGSI-gSOAP-debuginfo-1.3.11-23.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 133804
+        }, 
         {
-            "uuid": "72982562-e881-4d48-ab2a-1e1cd08a75e9",
-            "filename": "CGSI-gSOAP-debugsource-1.3.11-23.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CGSI-gSOAP-debugsource-1.3.11-23.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 25921,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "72982562-e881-4d48-ab2a-1e1cd08a75e9", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/CGSI-gSOAP-debugsource-1.3.11-23.fc40.x86_64.rpm#from", 
+            "filename": "CGSI-gSOAP-debugsource-1.3.11-23.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 25921
         }
-    ],
+    ], 
+    "uuid": "5f36c56e-8534-4031-9f16-95936c5e0e72", 
+    "resource_count": 27, 
+    "url": "http://127.0.0.1:8002/api/d2d/5f36c56e-8534-4031-9f16-95936c5e0e72/", 
+    "package_count": 1, 
     "runs": [
         "4a275b4c-07cb-4280-9558-b20de4d3cb21"
-    ],
-    "resource_count": 27,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 8,
-    "codebase_resources_summary": {
-        "ignored-directory": 18,
-        "requires-review": 5,
-        "scanned": 4
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 8
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 18, 
+        "scanned": 4, 
+        "requires-review": 5
+    }, 
     "codebase_resources_discrepancies": {
         "total": 5
+    }, 
+    "relation_count": 8, 
+    "created_date": "2024-06-17T12:36:17.691408Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 8
     }
 }

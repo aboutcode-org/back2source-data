@@ -1,57 +1,69 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/4a65e82a-2b2c-4469-a439-b27cc13a267b/",
-    "uuid": "4a65e82a-2b2c-4469-a439-b27cc13a267b",
-    "created_date": "2024-06-17T14:57:53.681212Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/cmark-0.30.3-5.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 9
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/cmark-0.30.3-5.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 6
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "b7e5c53e-6299-4228-a2d5-907884b07b72",
-            "filename": "cmark-debuginfo-0.30.3-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cmark-debuginfo-0.30.3-5.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 19085,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "b7e5c53e-6299-4228-a2d5-907884b07b72", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cmark-debuginfo-0.30.3-5.fc40.x86_64.rpm#to", 
+            "filename": "cmark-debuginfo-0.30.3-5.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 19085
+        }, 
         {
-            "uuid": "b52ed214-c546-4e63-a569-b65d0946ff85",
-            "filename": "cmark-debugsource-0.30.3-5.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cmark-debugsource-0.30.3-5.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 91957,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "b52ed214-c546-4e63-a569-b65d0946ff85", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/cmark-debugsource-0.30.3-5.fc40.x86_64.rpm#from", 
+            "filename": "cmark-debugsource-0.30.3-5.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 91957
         }
-    ],
+    ], 
+    "uuid": "4a65e82a-2b2c-4469-a439-b27cc13a267b", 
+    "resource_count": 54, 
+    "url": "http://127.0.0.1:8002/api/d2d/4a65e82a-2b2c-4469-a439-b27cc13a267b/", 
+    "package_count": 0, 
     "runs": [
         "8ed9258e-978b-42d7-b24d-106217bc7fca"
-    ],
-    "resource_count": 54,
-    "package_count": 0,
-    "dependency_count": 0,
-    "relation_count": 5,
-    "codebase_resources_summary": {
-        "ignored-directory": 17,
-        "no-licenses": 4,
-        "not-deployed": 31,
-        "requires-review": 2
-    },
-    "discovered_packages_summary": {
-        "total": 0,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 5
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 17, 
+        "requires-review": 2, 
+        "not-deployed": 31, 
+        "no-licenses": 4
+    }, 
     "codebase_resources_discrepancies": {
         "total": 2
+    }, 
+    "relation_count": 5, 
+    "created_date": "2024-06-17T14:57:53.681212Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 0, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 5
     }
 }

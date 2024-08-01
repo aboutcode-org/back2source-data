@@ -1,58 +1,80 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/6475f7f5-595a-462d-b7cc-12e2d07e6991/",
-    "uuid": "6475f7f5-595a-462d-b7cc-12e2d07e6991",
-    "created_date": "2024-06-13T11:01:28.114101Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/arprec-2.2.19-21.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 51
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/lib64/libarprec_f_main.so.0.0.0-2.2.19-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 0
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libarprecmod.so.0.0.0-2.2.19-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 17
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libarprec.so.0.0.0-2.2.19-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 76
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "efe26e2c-85c7-4fca-8d25-273bb0583c0b",
-            "filename": "arprec-debuginfo-2.2.19-21.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arprec-debuginfo-2.2.19-21.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 685792,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "efe26e2c-85c7-4fca-8d25-273bb0583c0b", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arprec-debuginfo-2.2.19-21.fc40.x86_64.rpm#to", 
+            "filename": "arprec-debuginfo-2.2.19-21.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 685792
+        }, 
         {
-            "uuid": "dc47c0db-b171-4cc0-8dda-636992f9bb88",
-            "filename": "arprec-debugsource-2.2.19-21.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arprec-debugsource-2.2.19-21.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 152820,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "dc47c0db-b171-4cc0-8dda-636992f9bb88", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/arprec-debugsource-2.2.19-21.fc40.x86_64.rpm#from", 
+            "filename": "arprec-debugsource-2.2.19-21.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 152820
         }
-    ],
+    ], 
+    "uuid": "6475f7f5-595a-462d-b7cc-12e2d07e6991", 
+    "resource_count": 130, 
+    "url": "http://127.0.0.1:8002/api/d2d/6475f7f5-595a-462d-b7cc-12e2d07e6991/", 
+    "package_count": 0, 
     "runs": [
         "4ce24634-2805-4a9c-9748-ddaf7f10788d"
-    ],
-    "resource_count": 130,
-    "package_count": 0,
-    "dependency_count": 0,
-    "relation_count": 104,
-    "codebase_resources_summary": {
-        "ignored-directory": 22,
-        "no-licenses": 98,
-        "not-deployed": 6,
-        "requires-review": 4
-    },
-    "discovered_packages_summary": {
-        "total": 0,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 8,
-        "dwarf_included_paths": 96
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 22, 
+        "requires-review": 4, 
+        "not-deployed": 6, 
+        "no-licenses": 98
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 104, 
+    "created_date": "2024-06-13T11:01:28.114101Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 0, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 8, 
+        "dwarf_included_paths": 96
     }
 }

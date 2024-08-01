@@ -1,56 +1,73 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/95162d98-60bd-4bfa-a291-5aae9155deb5/",
-    "uuid": "95162d98-60bd-4bfa-a291-5aae9155deb5",
-    "created_date": "2024-06-17T12:41:51.552683Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/chordii-4.5.3b-21.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 14
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/a2crd-4.5.3b-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/chordii-4.5.3b-21.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 7
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "330c09f8-9c5d-4f02-9b2c-921b226f7829",
-            "filename": "chordii-debuginfo-4.5.3b-21.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/chordii-debuginfo-4.5.3b-21.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 77430,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "330c09f8-9c5d-4f02-9b2c-921b226f7829", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/chordii-debuginfo-4.5.3b-21.fc40.x86_64.rpm#to", 
+            "filename": "chordii-debuginfo-4.5.3b-21.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 77430
+        }, 
         {
-            "uuid": "4f321a4c-cde7-4936-89a5-28120da637ad",
-            "filename": "chordii-debugsource-4.5.3b-21.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/chordii-debugsource-4.5.3b-21.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 30930,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "4f321a4c-cde7-4936-89a5-28120da637ad", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/c/chordii-debugsource-4.5.3b-21.fc40.x86_64.rpm#from", 
+            "filename": "chordii-debugsource-4.5.3b-21.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 30930
         }
-    ],
+    ], 
+    "uuid": "95162d98-60bd-4bfa-a291-5aae9155deb5", 
+    "resource_count": 27, 
+    "url": "http://127.0.0.1:8002/api/d2d/95162d98-60bd-4bfa-a291-5aae9155deb5/", 
+    "package_count": 1, 
     "runs": [
         "1e485871-ccc5-4591-9d99-4ccbe18a0dde"
-    ],
-    "resource_count": 27,
-    "package_count": 1,
-    "dependency_count": 0,
-    "relation_count": 12,
-    "codebase_resources_summary": {
-        "ignored-directory": 16,
-        "requires-review": 3,
-        "scanned": 8
-    },
-    "discovered_packages_summary": {
-        "total": 1,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_included_paths": 12
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 16, 
+        "scanned": 8, 
+        "requires-review": 3
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 12, 
+    "created_date": "2024-06-17T12:41:51.552683Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 1, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_included_paths": 12
     }
 }

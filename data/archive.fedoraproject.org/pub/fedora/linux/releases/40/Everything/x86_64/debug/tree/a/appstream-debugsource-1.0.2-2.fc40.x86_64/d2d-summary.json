@@ -1,61 +1,78 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/d348e7ff-138c-448c-9fdc-4a8775b713f5/",
-    "uuid": "d348e7ff-138c-448c-9fdc-4a8775b713f5",
-    "created_date": "2024-06-14T07:03:22.155829Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/appstream-1.0.2-2.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 59
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/appstreamcli-1.0.2-2.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 18
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libappstream.so.1.0.2-1.0.2-2.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 115
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "3d3ab20b-f8bc-43c1-99ec-88d6c4441d03",
-            "filename": "appstream-debuginfo-1.0.2-2.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/appstream-debuginfo-1.0.2-2.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 955185,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "3d3ab20b-f8bc-43c1-99ec-88d6c4441d03", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/appstream-debuginfo-1.0.2-2.fc40.x86_64.rpm#to", 
+            "filename": "appstream-debuginfo-1.0.2-2.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 955185
+        }, 
         {
-            "uuid": "6368ba29-3ef1-43ed-9a41-aa0b3d372737",
-            "filename": "appstream-debugsource-1.0.2-2.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/appstream-debugsource-1.0.2-2.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 425213,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "6368ba29-3ef1-43ed-9a41-aa0b3d372737", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/a/appstream-debugsource-1.0.2-2.fc40.x86_64.rpm#from", 
+            "filename": "appstream-debugsource-1.0.2-2.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 425213
         }
-    ],
+    ], 
+    "uuid": "d348e7ff-138c-448c-9fdc-4a8775b713f5", 
+    "resource_count": 279, 
+    "url": "http://127.0.0.1:8002/api/d2d/d348e7ff-138c-448c-9fdc-4a8775b713f5/", 
+    "package_count": 9, 
     "runs": [
         "8fd18743-e0ad-48e3-8528-76baea10a0f7"
-    ],
-    "resource_count": 279,
-    "package_count": 9,
-    "dependency_count": 0,
-    "relation_count": 236,
-    "codebase_resources_summary": {
-        "ignored-directory": 25,
-        "ignored-empty-file": 4,
-        "no-licenses": 5,
-        "not-deployed": 97,
-        "requires-review": 3,
-        "scanned": 141,
-        "unknown-license": 4
-    },
-    "discovered_packages_summary": {
-        "total": 9,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 6,
-        "dwarf_included_paths": 230
-    },
+    }, 
+    "codebase_resources_summary": {
+        "no-licenses": 5, 
+        "unknown-license": 4, 
+        "requires-review": 3, 
+        "ignored-directory": 25, 
+        "scanned": 141, 
+        "not-deployed": 97, 
+        "ignored-empty-file": 4
+    }, 
     "codebase_resources_discrepancies": {
         "total": 3
+    }, 
+    "relation_count": 236, 
+    "created_date": "2024-06-14T07:03:22.155829Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 9, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 6, 
+        "dwarf_included_paths": 230
     }
 }

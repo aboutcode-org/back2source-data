@@ -1,59 +1,81 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/9d25e152-e2c5-4136-8d79-152dc793f5cd/",
-    "uuid": "9d25e152-e2c5-4136-8d79-152dc793f5cd",
-    "created_date": "2024-06-17T11:36:09.741442Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/bicon-0.5-22.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 2
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/bicon.bin-0.5-22.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 38
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/bicon/libbconsole.so.0.0.0-0.5-22.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 5
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/bicon/libbjoining.so.0.0.0-0.5-22.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 8
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "53d85c5b-3bca-49e4-8a81-49a274d70c13",
-            "filename": "bicon-debuginfo-0.5-22.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bicon-debuginfo-0.5-22.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 39918,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "53d85c5b-3bca-49e4-8a81-49a274d70c13", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bicon-debuginfo-0.5-22.fc40.x86_64.rpm#to", 
+            "filename": "bicon-debuginfo-0.5-22.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 39918
+        }, 
         {
-            "uuid": "1b17bfbd-84b7-4c05-a43b-3100d66ee3f8",
-            "filename": "bicon-debugsource-0.5-22.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bicon-debugsource-0.5-22.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 23321,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "1b17bfbd-84b7-4c05-a43b-3100d66ee3f8", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bicon-debugsource-0.5-22.fc40.x86_64.rpm#from", 
+            "filename": "bicon-debugsource-0.5-22.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 23321
         }
-    ],
+    ], 
+    "uuid": "9d25e152-e2c5-4136-8d79-152dc793f5cd", 
+    "resource_count": 44, 
+    "url": "http://127.0.0.1:8002/api/d2d/9d25e152-e2c5-4136-8d79-152dc793f5cd/", 
+    "package_count": 2, 
     "runs": [
         "17cd57dd-c179-4b0c-9576-85b41611928b"
-    ],
-    "resource_count": 44,
-    "package_count": 2,
-    "dependency_count": 0,
-    "relation_count": 23,
-    "codebase_resources_summary": {
-        "ignored-directory": 21,
-        "no-licenses": 17,
-        "requires-review": 4,
-        "scanned": 1,
-        "unknown-license": 1
-    },
-    "discovered_packages_summary": {
-        "total": 2,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 3,
-        "dwarf_included_paths": 20
-    },
+    }, 
+    "codebase_resources_summary": {
+        "unknown-license": 1, 
+        "ignored-directory": 21, 
+        "scanned": 1, 
+        "requires-review": 4, 
+        "no-licenses": 17
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 23, 
+    "created_date": "2024-06-17T11:36:09.741442Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 2, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 3, 
+        "dwarf_included_paths": 20
     }
 }

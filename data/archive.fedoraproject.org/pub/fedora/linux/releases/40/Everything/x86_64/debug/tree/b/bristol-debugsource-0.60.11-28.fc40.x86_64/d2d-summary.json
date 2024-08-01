@@ -1,58 +1,85 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/2de1d767-378a-42f4-bc92-af18fb0abee8/",
-    "uuid": "2de1d767-378a-42f4-bc92-af18fb0abee8",
-    "created_date": "2024-06-17T10:28:29.723180Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/bristol-0.60.11-28.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 36
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 4, 
+            "path": "to/usr/lib/debug/usr/bin/brighton-0.60.11-28.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 45
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 4, 
+            "path": "to/usr/lib/debug/usr/bin/bristol-0.60.11-28.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 45
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 1, 
+            "path": "to/usr/lib/debug/usr/bin/bristoljackstats-0.60.11-28.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 3
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libbristolmidi.so.0.0.611-0.60.11-28.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 35
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "6083ad1e-8eb6-4f1d-b9c6-6ad0f5bbebb3",
-            "filename": "bristol-debuginfo-0.60.11-28.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bristol-debuginfo-0.60.11-28.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 1028916,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "6083ad1e-8eb6-4f1d-b9c6-6ad0f5bbebb3", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bristol-debuginfo-0.60.11-28.fc40.x86_64.rpm#to", 
+            "filename": "bristol-debuginfo-0.60.11-28.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 1028916
+        }, 
         {
-            "uuid": "b8e18798-abd0-4cee-8c2d-77681763d1b5",
-            "filename": "bristol-debugsource-0.60.11-28.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bristol-debugsource-0.60.11-28.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 733052,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "b8e18798-abd0-4cee-8c2d-77681763d1b5", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/b/bristol-debugsource-0.60.11-28.fc40.x86_64.rpm#from", 
+            "filename": "bristol-debugsource-0.60.11-28.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 733052
         }
-    ],
+    ], 
+    "uuid": "2de1d767-378a-42f4-bc92-af18fb0abee8", 
+    "resource_count": 326, 
+    "url": "http://127.0.0.1:8002/api/d2d/2de1d767-378a-42f4-bc92-af18fb0abee8/", 
+    "package_count": 5, 
     "runs": [
         "0618f8dd-b404-4962-8f9b-badf0b34a1f9"
-    ],
-    "resource_count": 326,
-    "package_count": 5,
-    "dependency_count": 0,
-    "relation_count": 348,
-    "codebase_resources_summary": {
-        "ignored-directory": 32,
-        "no-licenses": 5,
-        "requires-review": 5,
-        "scanned": 284
-    },
-    "discovered_packages_summary": {
-        "total": 5,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 57,
-        "dwarf_included_paths": 291
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 32, 
+        "scanned": 284, 
+        "requires-review": 5, 
+        "no-licenses": 5
+    }, 
     "codebase_resources_discrepancies": {
         "total": 5
+    }, 
+    "relation_count": 348, 
+    "created_date": "2024-06-17T10:28:29.723180Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 5, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 57, 
+        "dwarf_included_paths": 291
     }
 }

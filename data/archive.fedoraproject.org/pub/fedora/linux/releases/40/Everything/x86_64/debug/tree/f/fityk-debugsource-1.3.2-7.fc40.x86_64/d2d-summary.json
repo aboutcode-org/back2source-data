@@ -1,59 +1,81 @@
 {
-    "url": "http://127.0.0.1:8002/api/d2d/ed8c9057-da07-401a-bb51-d56285dfe136/",
-    "uuid": "ed8c9057-da07-401a-bb51-d56285dfe136",
-    "created_date": "2024-06-18T07:41:58.642416Z",
+    "resources_with_discrepancy": [
+        {
+            "dwarf_compiled_paths_not_mapped_count": 0, 
+            "path": "to/usr/lib/debug/.dwz/fityk-1.3.2-7.fc40.x86_64", 
+            "dwarf_included_paths_not_mapped_count": 97
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/cfityk-1.3.2-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 40
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/bin/fityk-1.3.2-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 299
+        }, 
+        {
+            "dwarf_compiled_paths_not_mapped_count": 2, 
+            "path": "to/usr/lib/debug/usr/lib64/libfityk.so.4.0.0-1.3.2-7.fc40.x86_64.debug", 
+            "dwarf_included_paths_not_mapped_count": 197
+        }
+    ], 
     "input_sources": [
         {
-            "uuid": "cbc390b0-b20d-4d8a-aba7-69ba3e2f4b88",
-            "filename": "fityk-debuginfo-1.3.2-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fityk-debuginfo-1.3.2-7.fc40.x86_64.rpm#to",
-            "is_uploaded": false,
-            "tag": "to",
-            "size": 9565793,
-            "is_file": true,
-            "exists": true
-        },
+            "is_uploaded": false, 
+            "uuid": "cbc390b0-b20d-4d8a-aba7-69ba3e2f4b88", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fityk-debuginfo-1.3.2-7.fc40.x86_64.rpm#to", 
+            "filename": "fityk-debuginfo-1.3.2-7.fc40.x86_64.rpm", 
+            "tag": "to", 
+            "is_file": true, 
+            "size": 9565793
+        }, 
         {
-            "uuid": "2519ca90-8134-410c-affc-56757d41c67f",
-            "filename": "fityk-debugsource-1.3.2-7.fc40.x86_64.rpm",
-            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fityk-debugsource-1.3.2-7.fc40.x86_64.rpm#from",
-            "is_uploaded": false,
-            "tag": "from",
-            "size": 461197,
-            "is_file": true,
-            "exists": true
+            "is_uploaded": false, 
+            "uuid": "2519ca90-8134-410c-affc-56757d41c67f", 
+            "exists": true, 
+            "download_url": "https://archive.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/debug/tree/Packages/f/fityk-debugsource-1.3.2-7.fc40.x86_64.rpm#from", 
+            "filename": "fityk-debugsource-1.3.2-7.fc40.x86_64.rpm", 
+            "tag": "from", 
+            "is_file": true, 
+            "size": 461197
         }
-    ],
+    ], 
+    "uuid": "ed8c9057-da07-401a-bb51-d56285dfe136", 
+    "resource_count": 250, 
+    "url": "http://127.0.0.1:8002/api/d2d/ed8c9057-da07-401a-bb51-d56285dfe136/", 
+    "package_count": 6, 
     "runs": [
         "8c454682-9f04-400b-b343-963162a87388"
-    ],
-    "resource_count": 250,
-    "package_count": 6,
-    "dependency_count": 0,
-    "relation_count": 254,
-    "codebase_resources_summary": {
-        "ignored-directory": 23,
-        "ignored-media-file": 42,
-        "no-licenses": 43,
-        "requires-review": 4,
-        "scanned": 138
-    },
-    "discovered_packages_summary": {
-        "total": 6,
-        "with_missing_resources": 0,
-        "with_modified_resources": 0
-    },
+    ], 
     "discovered_dependencies_summary": {
-        "total": 0,
-        "is_runtime": 0,
-        "is_optional": 0,
+        "is_runtime": 0, 
+        "is_optional": 0, 
+        "total": 0, 
         "is_resolved": 0
-    },
-    "codebase_relations_summary": {
-        "dwarf_compiled_paths": 4,
-        "dwarf_included_paths": 250
-    },
+    }, 
+    "codebase_resources_summary": {
+        "ignored-directory": 23, 
+        "scanned": 138, 
+        "requires-review": 4, 
+        "ignored-media-file": 42, 
+        "no-licenses": 43
+    }, 
     "codebase_resources_discrepancies": {
         "total": 4
+    }, 
+    "relation_count": 254, 
+    "created_date": "2024-06-18T07:41:58.642416Z", 
+    "dependency_count": 0, 
+    "discovered_packages_summary": {
+        "with_missing_resources": 0, 
+        "total": 6, 
+        "with_modified_resources": 0
+    }, 
+    "codebase_relations_summary": {
+        "dwarf_compiled_paths": 4, 
+        "dwarf_included_paths": 250
     }
 }

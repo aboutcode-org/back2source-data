@@ -16,11 +16,17 @@ def create_csv_from_json(json_files, csv_file):
             "codebase_relations_dwarf_compiled_paths", "codebase_relations_dwarf_included_paths",
             "codebase_resources_discrepancies_total",
             "from_filename", "from_download_url", "from_is_uploaded", "from_size", "from_is_file", "from_exists",
-            "to_filename", "to_download_url", "to_is_uploaded", "to_size", "to_is_file", "to_exists"
+            "to_filename", "to_download_url", "to_is_uploaded", "to_size", "to_is_file", "to_exists", "dwarf_compiled_paths_not_mapped_total", "dwarf_included_paths_not_mapped_total"
         ]
         writer.writerow(header)
         for json_file in json_files:
             data = json.load(open(json_file))
+            dwarf_compiled_paths_not_mapped_total = 0
+            dwarf_included_paths_not_mapped_total = 0
+            resources_with_discrepancy = data["resources_with_discrepancy"]
+            for resource in resources_with_discrepancy:
+                dwarf_compiled_paths_not_mapped_total += resource["dwarf_compiled_paths_not_mapped_count"]
+                dwarf_included_paths_not_mapped_total += resource["dwarf_included_paths_not_mapped_count"]
             input_sources = data["input_sources"]
             input_sources_dict = {}
             for input_source in input_sources:
@@ -39,7 +45,7 @@ def create_csv_from_json(json_files, csv_file):
                 data["codebase_relations_summary"].get("dwarf_compiled_paths") or "", data["codebase_relations_summary"].get("dwarf_included_paths") or "",
                 data["codebase_resources_discrepancies"]["total"],
                 input_sources_dict.get("from_filename", ""), input_sources_dict.get("from_download_url", ""), input_sources_dict.get("from_is_uploaded", ""), input_sources_dict.get("from_size", ""), input_sources_dict.get("from_is_file", ""), input_sources_dict.get("from_exists", ""),
-                input_sources_dict.get("to_filename", ""), input_sources_dict.get("to_download_url", ""), input_sources_dict.get("to_is_uploaded", ""), input_sources_dict.get("to_size", ""), input_sources_dict.get("to_is_file", ""), input_sources_dict.get("to_exists", "")
+                input_sources_dict.get("to_filename", ""), input_sources_dict.get("to_download_url", ""), input_sources_dict.get("to_is_uploaded", ""), input_sources_dict.get("to_size", ""), input_sources_dict.get("to_is_file", ""), input_sources_dict.get("to_exists", ""), dwarf_compiled_paths_not_mapped_total, dwarf_included_paths_not_mapped_total
             ]
             writer.writerow(row)
 

@@ -120,3 +120,13 @@ The ScanCode.io and PurlDB software is licensed under the Apache License version
 Data generated with ScanCode.io is provided as-is without warranties.
 ScanCode is a trademark of nexB Inc.
 
+
+Funding
+-----------
+
+This project is funded through NGI0 Entrust - https://nlnet.nl/entrust, a fund established by
+NLnet - https://nlnet.nl with financial support from the European Commission's Next Generation
+Internet https://ngi.eu program. Learn more at the NLnet project page
+https://nlnet.nl/project/Back2source
+
+It also receives ongoing support from nexB and other contributors.

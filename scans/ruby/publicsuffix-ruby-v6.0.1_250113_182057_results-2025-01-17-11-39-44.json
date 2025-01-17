@@ -1,0 +1,6878 @@
+{
+"headers": [
+{
+  "tool_name": "scanpipe",
+  "tool_version": "34.9.3",
+  "other_tools": [
+    "pkg:pypi/scancode-toolkit@32.3.0"
+  ],
+  "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+  "uuid": "bd68c609-a597-49a3-90b9-790e415b8787",
+  "created_date": "2025-01-13T18:23:04.412Z",
+  "notes": "",
+  "settings": {},
+  "input_sources": [
+    {
+      "uuid": "6db857a1-aefc-437e-9b05-fb4d26dbf29a",
+      "filename": "public_suffix-6.0.1.gem",
+      "download_url": "https://rubygems.org/downloads/public_suffix-6.0.1.gem#to",
+      "is_uploaded": false,
+      "tag": "to",
+      "size": 105472,
+      "is_file": true,
+      "exists": true
+    },
+    {
+      "uuid": "329d820c-3d2a-4c28-984f-dfd84108802d",
+      "filename": "publicsuffix-ruby-6.0.1.zip",
+      "download_url": "https://github.com/weppos/publicsuffix-ruby/archive/refs/tags/v6.0.1.zip#from",
+      "is_uploaded": false,
+      "tag": "from",
+      "size": 129169,
+      "is_file": true,
+      "exists": true
+    }
+  ],
+  "runs": [
+    {
+      "pipeline_name": "map_deploy_to_develop",
+      "status": "success",
+      "description": "Establish relationships between two code trees: deployment and development.",
+      "selected_groups": null,
+      "selected_steps": null,
+      "uuid": "b70533e4-972c-4de9-97cb-5306534340fa",
+      "created_date": "2025-01-13T18:23:04.417507Z",
+      "scancodeio_version": "34.9.3",
+      "task_id": "b70533e4-972c-4de9-97cb-5306534340fa",
+      "task_start_date": "2025-01-13T18:41:38.673448Z",
+      "task_end_date": "2025-01-13T18:42:42.492376Z",
+      "task_exitcode": 0,
+      "task_output": "",
+      "log": "2025-01-13 18:41:38.676 Pipeline [map_deploy_to_develop] starting\n2025-01-13 18:41:38.679 Step [download_missing_inputs] starting\n2025-01-13 18:41:38.682 Step [download_missing_inputs] completed in 0 seconds\n2025-01-13 18:41:38.685 Step [get_inputs] starting\n2025-01-13 18:41:38.689 Step [get_inputs] completed in 0 seconds\n2025-01-13 18:41:38.693 Step [extract_inputs_to_codebase_directory] starting\n2025-01-13 18:41:38.761 Step [extract_inputs_to_codebase_directory] completed in 0 seconds\n2025-01-13 18:41:38.765 Step [extract_archives] starting\n2025-01-13 18:41:39.220 Step [extract_archives] completed in 0 seconds\n2025-01-13 18:41:39.224 Step [collect_and_create_codebase_resources] starting\n2025-01-13 18:41:39.462 Step [collect_and_create_codebase_resources] completed in 0 seconds\n2025-01-13 18:41:39.466 Step [fingerprint_codebase_directories] starting\n2025-01-13 18:41:39.492 Step [fingerprint_codebase_directories] completed in 0 seconds\n2025-01-13 18:41:39.495 Step [flag_empty_files] starting\n2025-01-13 18:41:39.505 Step [flag_empty_files] completed in 0 seconds\n2025-01-13 18:41:39.508 Step [flag_whitespace_files] starting\n2025-01-13 18:41:39.583 Step [flag_whitespace_files] completed in 0 seconds\n2025-01-13 18:41:39.593 Step [flag_ignored_resources] starting\n2025-01-13 18:41:39.599 Step [flag_ignored_resources] completed in 0 seconds\n2025-01-13 18:41:39.605 Step [map_about_files] starting\n2025-01-13 18:41:39.608 Step [map_about_files] completed in 0 seconds\n2025-01-13 18:41:39.611 Step [map_checksum] starting\n2025-01-13 18:41:39.651 Mapping 17 to/ resources using sha1 against from/ codebase\n2025-01-13 18:41:39.659 Progress: 11% (2/17)\n2025-01-13 18:41:39.664 Progress: 23% (4/17)\n2025-01-13 18:41:39.673 Progress: 35% (6/17)\n2025-01-13 18:41:39.681 Progress: 47% (8/17)\n2025-01-13 18:41:39.691 Progress: 58% (10/17)\n2025-01-13 18:41:39.700 Progress: 70% (12/17)\n2025-01-13 18:41:39.709 Progress: 82% (14/17)\n2025-01-13 18:41:39.718 Progress: 94% (16/17)\n2025-01-13 18:41:39.723 Step [map_checksum] completed in 0 seconds\n2025-01-13 18:41:39.726 Step [match_archives_to_purldb] starting\n2025-01-13 18:41:39.766 Skipping matching for .jar, .war, .zip resources, as there are 0\n2025-01-13 18:41:39.777 0 resources matched in PurlDB using 0 SHA1s\n2025-01-13 18:41:39.779 Step [match_archives_to_purldb] completed in 0 seconds\n2025-01-13 18:41:39.782 Step [match_directories_to_purldb] starting\n2025-01-13 18:41:39.796 Matching 7 directories from to/ in PurlDB\n2025-01-13 18:41:39.894 0 directories matched in PurlDB\n2025-01-13 18:41:39.895 Step [match_directories_to_purldb] completed in 0 seconds\n2025-01-13 18:41:39.898 Step [match_resources_to_purldb] starting\n2025-01-13 18:41:39.913 Skipping matching for .map, .js, .mjs, .ts, .d.ts, .jsx, .tsx, .css, .scss, .less, .sass, .soy, .class resources, as there are 0\n2025-01-13 18:41:39.918 0 resources matched in PurlDB using 0 SHA1s\n2025-01-13 18:41:39.920 Step [match_resources_to_purldb] completed in 0 seconds\n2025-01-13 18:41:39.923 Step [map_path] starting\n2025-01-13 18:41:39.959 Mapping 5 to/ resources using path map against from/ codebase\n2025-01-13 18:41:39.967 Step [map_path] completed in 0 seconds\n2025-01-13 18:41:39.971 Step [flag_mapped_resources_archives_and_ignored_directories] starting\n2025-01-13 18:41:40.485 Step [flag_mapped_resources_archives_and_ignored_directories] completed in 1 seconds\n2025-01-13 18:41:40.489 Step [perform_house_keeping_tasks] starting\n2025-01-13 18:41:40.507 Mapping 4 to/ resources with empty status in PurlDB using SHA1\n2025-01-13 18:41:40.526 0 resources matched in PurlDB using 4 SHA1s\n2025-01-13 18:41:40.543 Step [perform_house_keeping_tasks] completed in 0 seconds\n2025-01-13 18:41:40.547 Step [match_purldb_resources_post_process] starting\n2025-01-13 18:41:40.551 Refining matching for 3 matched-to-purldb-resource archives.\n2025-01-13 18:41:40.615 0 resource processed\n2025-01-13 18:41:40.618 Step [match_purldb_resources_post_process] completed in 0 seconds\n2025-01-13 18:41:40.622 Step [remove_packages_without_resources] starting\n2025-01-13 18:41:40.626 Step [remove_packages_without_resources] completed in 0 seconds\n2025-01-13 18:41:40.629 Step [scan_unmapped_to_files] starting\n2025-01-13 18:41:48.618 Step [scan_unmapped_to_files] completed in 8 seconds\n2025-01-13 18:41:48.622 Step [scan_mapped_from_for_files] starting\n2025-01-13 18:41:50.054 Progress: 16% (2/12) ETA: 7 seconds\n2025-01-13 18:41:50.218 Progress: 33% (4/12) ETA: 3 seconds\n2025-01-13 18:41:50.886 Progress: 50% (6/12) ETA: 2 seconds\n2025-01-13 18:41:51.942 Progress: 66% (8/12) ETA: 2 seconds\n2025-01-13 18:41:52.278 Progress: 83% (10/12) ETA: 1 seconds\n2025-01-13 18:42:42.211 Progress: 100% (12/12)\n2025-01-13 18:42:42.318 Step [scan_mapped_from_for_files] completed in 54 seconds\n2025-01-13 18:42:42.322 Step [flag_deployed_from_resources_with_missing_license] starting\n2025-01-13 18:42:42.427 Step [flag_deployed_from_resources_with_missing_license] completed in 0 seconds\n2025-01-13 18:42:42.430 Step [create_local_files_packages] starting\n2025-01-13 18:42:42.487 Step [create_local_files_packages] completed in 0 seconds\n2025-01-13 18:42:42.490 Pipeline completed in 64 seconds (1.1 minutes)\n",
+      "execution_time": 63
+    }
+  ],
+  "extra_data": {}
+}],
+"packages": [
+{
+  "purl": "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/69d769fe-66f0-4442-bf16-da9800796b92",
+  "type": "local-files",
+  "namespace": "publicsuffix-ruby-v601-250113_182057-bd68c609",
+  "name": "69d769fe-66f0-4442-bf16-da9800796b92",
+  "version": "",
+  "qualifiers": "",
+  "subpath": "",
+  "tag": "",
+  "primary_language": "",
+  "description": "",
+  "notes": "",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "",
+  "download_url": "",
+  "bug_tracking_url": "",
+  "code_view_url": "",
+  "vcs_url": "",
+  "repository_homepage_url": "",
+  "repository_download_url": "",
+  "api_data_url": "",
+  "size": null,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "copyright": "",
+  "holder": "",
+  "declared_license_expression": "mpl-2.0",
+  "declared_license_expression_spdx": "",
+  "license_detections": [],
+  "other_license_expression": "",
+  "other_license_expression_spdx": "",
+  "other_license_detections": [],
+  "extracted_license_statement": "",
+  "compliance_alert": "warning",
+  "notice_text": "",
+  "source_packages": [],
+  "extra_data": {},
+  "package_uid": "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/69d769fe-66f0-4442-bf16-da9800796b92?uuid=913dfdc3-ccde-49bd-b198-6569111a6455",
+  "is_private": false,
+  "is_virtual": false,
+  "datasource_ids": [],
+  "datafile_paths": [],
+  "file_references": [],
+  "missing_resources": [],
+  "modified_resources": [],
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/8744753a-c0ac-4a9a-a0f9-2f949bea69a9",
+  "type": "local-files",
+  "namespace": "publicsuffix-ruby-v601-250113_182057-bd68c609",
+  "name": "8744753a-c0ac-4a9a-a0f9-2f949bea69a9",
+  "version": "",
+  "qualifiers": "",
+  "subpath": "",
+  "tag": "",
+  "primary_language": "",
+  "description": "",
+  "notes": "",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "",
+  "download_url": "",
+  "bug_tracking_url": "",
+  "code_view_url": "",
+  "vcs_url": "",
+  "repository_homepage_url": "",
+  "repository_download_url": "",
+  "api_data_url": "",
+  "size": null,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "copyright": "Copyright (c) 2009-2024 Simone Carletti",
+  "holder": "",
+  "declared_license_expression": "mit AND mpl-2.0",
+  "declared_license_expression_spdx": "",
+  "license_detections": [],
+  "other_license_expression": "",
+  "other_license_expression_spdx": "",
+  "other_license_detections": [],
+  "extracted_license_statement": "",
+  "compliance_alert": "warning",
+  "notice_text": "",
+  "source_packages": [],
+  "extra_data": {},
+  "package_uid": "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/8744753a-c0ac-4a9a-a0f9-2f949bea69a9?uuid=9eb71187-b003-418d-b5e3-6018d2ae903c",
+  "is_private": false,
+  "is_virtual": false,
+  "datasource_ids": [],
+  "datafile_paths": [],
+  "file_references": [],
+  "missing_resources": [],
+  "modified_resources": [],
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/b3a9d4e9-290f-4368-87fc-20e4a1434199",
+  "type": "local-files",
+  "namespace": "publicsuffix-ruby-v601-250113_182057-bd68c609",
+  "name": "b3a9d4e9-290f-4368-87fc-20e4a1434199",
+  "version": "",
+  "qualifiers": "",
+  "subpath": "",
+  "tag": "",
+  "primary_language": "",
+  "description": "",
+  "notes": "",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "",
+  "download_url": "",
+  "bug_tracking_url": "",
+  "code_view_url": "",
+  "vcs_url": "",
+  "repository_homepage_url": "",
+  "repository_download_url": "",
+  "api_data_url": "",
+  "size": null,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+  "holder": "",
+  "declared_license_expression": "mit",
+  "declared_license_expression_spdx": "",
+  "license_detections": [],
+  "other_license_expression": "",
+  "other_license_expression_spdx": "",
+  "other_license_detections": [],
+  "extracted_license_statement": "",
+  "compliance_alert": "ok",
+  "notice_text": "",
+  "source_packages": [],
+  "extra_data": {},
+  "package_uid": "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/b3a9d4e9-290f-4368-87fc-20e4a1434199?uuid=80a0fd0f-ec4e-460b-b0bb-ce4e6f987783",
+  "is_private": false,
+  "is_virtual": false,
+  "datasource_ids": [],
+  "datafile_paths": [],
+  "file_references": [],
+  "missing_resources": [],
+  "modified_resources": [],
+  "affected_by_vulnerabilities": []
+}],
+"dependencies": [
+],
+"files": [
+{
+  "path": "from",
+  "type": "directory",
+  "name": "from",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1",
+  "type": "directory",
+  "name": "publicsuffix-ruby-6.0.1",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".1",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/bin",
+  "type": "directory",
+  "name": "bin",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/bin/console",
+  "type": "file",
+  "name": "console",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 368,
+  "md5": "60108ee577889fe661a6c56d148599a6",
+  "sha1": "8f236a1dcf289b6e171da7c712092765a6c03c80",
+  "sha256": "7ddff785fe5f10e2963347ab630a74780ce312f11e92747d2bb43f6a070fda50",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text executable",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/CHANGELOG.md",
+  "type": "file",
+  "name": "CHANGELOG.md",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".md",
+  "size": 9701,
+  "md5": "a43c477dccdde02413cc3a7cb38ad9ae",
+  "sha1": "2ee5e3148898e85561d2d23bf427c754198439f2",
+  "sha256": "7049b54d646f6d334944d0290ff12f9e24e43c3752169c0ed79f987379badfd8",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://semver.org/",
+      "end_line": 3,
+      "start_line": 3
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/data",
+  "type": "directory",
+  "name": "data",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/data/list.txt",
+  "type": "file",
+  "name": "list.txt",
+  "status": "scanned",
+  "for_packages": [
+    "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/69d769fe-66f0-4442-bf16-da9800796b92?uuid=913dfdc3-ccde-49bd-b198-6569111a6455"
+  ],
+  "tag": "from",
+  "extension": ".txt",
+  "size": 316433,
+  "md5": "84a057445b3bed64e2451033a812fc1e",
+  "sha1": "dfd8d1ecbb508fb39266b41debdf792a98efa21e",
+  "sha256": "a098eb7f923c02bfa463b33ba59e5205e130e1588d20e30b43851fbd515d062e",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "Public Suffix List data, UTF-8 Unicode text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mpl-2.0",
+  "detected_license_expression_spdx": "MPL-2.0",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 3,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mpl-2.0_18.RULE",
+          "from_file": null,
+          "start_line": 1,
+          "matched_text": "// This Source Code Form is subject to the terms of the Mozilla Public\n// License, v. 2.0. If a copy of the MPL was not distributed with this\n// file, You can obtain one at https://mozilla.org/MPL/2.0/.",
+          "match_coverage": 100.0,
+          "matched_length": 39,
+          "rule_relevance": 100,
+          "rule_identifier": "mpl-2.0_18.RULE",
+          "license_expression": "mpl-2.0",
+          "license_expression_spdx": "MPL-2.0"
+        }
+      ],
+      "identifier": "mpl_2_0-43686214-29b1-9159-c524-d359d530f213",
+      "license_expression": "mpl-2.0",
+      "license_expression_spdx": "MPL-2.0"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 0.08,
+  "compliance_alert": "warning",
+  "copyrights": [],
+  "holders": [],
+  "authors": [
+    {
+      "author": "uognoc@triton.uog.edu",
+      "end_line": 1190,
+      "start_line": 1190
+    },
+    {
+      "author": "George Georgievsky <gug@cctld.ru>",
+      "end_line": 5450,
+      "start_line": 5450
+    },
+    {
+      "author": "George Georgievsky <gug@cctld.ru>",
+      "end_line": 6596,
+      "start_line": 6596
+    },
+    {
+      "author": "Amazon Registry Services, Inc. https://www.iana.org/domains/root/db/author.html",
+      "end_line": 6989,
+      "start_line": 6988
+    },
+    {
+      "author": "Kenny Niehage <psl@12chars.com>",
+      "end_line": 11190,
+      "start_line": 11190
+    },
+    {
+      "author": "Kirill Rezraf <admin@aaa.vodka>",
+      "end_line": 11205,
+      "start_line": 11205
+    },
+    {
+      "author": "Tyler Hall <sysadmin@a2hosting.com>",
+      "end_line": 11209,
+      "start_line": 11209
+    },
+    {
+      "author": "Aaron Marais <its_me@aaronleem.co.za>",
+      "end_line": 11214,
+      "start_line": 11214
+    },
+    {
+      "author": "Craig Jellick <domains@acorn.io>",
+      "end_line": 11222,
+      "start_line": 11222
+    },
+    {
+      "author": "Ofer Kalaora <postmaster@activetrail.com>",
+      "end_line": 11226,
+      "start_line": 11226
+    },
+    {
+      "author": "Mark Terrel <support@adaptable.io>",
+      "end_line": 11230,
+      "start_line": 11230
+    },
+    {
+      "author": "Jesse MacFadyen <jessem@adobe.com>",
+      "end_line": 11245,
+      "start_line": 11245
+    },
+    {
+      "author": "Przemyslaw Plewa <it-admin@domena.pl>",
+      "end_line": 11250,
+      "start_line": 11250
+    },
+    {
+      "author": "Grant Cooksey <security@airkit.com>",
+      "end_line": 11254,
+      "start_line": 11254
+    },
+    {
+      "author": "Etienne Stalmans <security@aiven.io>",
+      "end_line": 11260,
+      "start_line": 11260
+    },
+    {
+      "author": "Anton Avramov <avramov@alboto.ca>",
+      "end_line": 11282,
+      "start_line": 11282
+    },
+    {
+      "author": "Mark J. Titorenko <mark.titorenko@alces-software.com>",
+      "end_line": 11286,
+      "start_line": 11286
+    },
+    {
+      "author": "Werner Kaltofen <wk@all-inkl.com>",
+      "end_line": 11291,
+      "start_line": 11291
+    },
+    {
+      "author": "Carlo Cannas <tech_staff@altervista.it>",
+      "end_line": 11295,
+      "start_line": 11295
+    },
+    {
+      "author": "Domain Admin <domainadmin@amaze.co>",
+      "end_line": 11303,
+      "start_line": 11303
+    },
+    {
+      "author": "Donavan Miller <donavanm@amazon.com>",
+      "end_line": 11348,
+      "start_line": 11348
+    },
+    {
+      "author": "Luke Wells <psl-maintainers@amazon.com>",
+      "end_line": 11391,
+      "start_line": 11391
+    },
+    {
+      "author": "Luke Wells <psl-maintainers@amazon.com>",
+      "end_line": 12059,
+      "start_line": 12059
+    },
+    {
+      "author": "Daniel Massaguer <psl-maintainers@amazon.com>",
+      "end_line": 12065,
+      "start_line": 12065
+    },
+    {
+      "author": "Yue Kang <eero-dynamic-dns@amazon.com>",
+      "end_line": 12075,
+      "start_line": 12075
+    },
+    {
+      "author": "Matt Saladna <matt@apisnetworks.com>",
+      "end_line": 12092,
+      "start_line": 12092
+    },
+    {
+      "author": "Alexander Selivanov <alex@apphud.com>",
+      "end_line": 12096,
+      "start_line": 12096
+    },
+    {
+      "author": "Alexander Hochbaum <admin@appudo.com>",
+      "end_line": 12105,
+      "start_line": 12105
+    },
+    {
+      "author": "Thomas Orozco <thomas@aptible.com>",
+      "end_line": 12109,
+      "start_line": 12109
+    },
+    {
+      "author": "Aki Ueno <admin@aquapal.net>",
+      "end_line": 12113,
+      "start_line": 12113
+    },
+    {
+      "author": "Asei SEKIGUCHI <mail@aseinet.com>",
+      "end_line": 12117,
+      "start_line": 12117
+    },
+    {
+      "author": "Hector Martin <marcan@euskalencounter.org>",
+      "end_line": 12123,
+      "start_line": 12123
+    },
+    {
+      "author": "Vincent Tseng <vincenttseng@asustor.com>",
+      "end_line": 12134,
+      "start_line": 12134
+    },
+    {
+      "author": "Sam Smyth <devloop@atlassian.com>",
+      "end_line": 12138,
+      "start_line": 12138
+    },
+    {
+      "author": "Lukas Reschke <lukas@authentick.net>",
+      "end_line": 12142,
+      "start_line": 12142
+    },
+    {
+      "author": "Jacob Lee <jacob@autocode.com>",
+      "end_line": 12146,
+      "start_line": 12146
+    },
+    {
+      "author": "Andreas Weise <a.weise@avm.de> myfritz.link myfritz.net",
+      "end_line": 12152,
+      "start_line": 12150
+    },
+    {
+      "author": "Jasper Hugo <jasper@avstack.io>",
+      "end_line": 12155,
+      "start_line": 12155
+    },
+    {
+      "author": "James Kennedy <domains@advisorwebsites.com>",
+      "end_line": 12159,
+      "start_line": 12159
+    },
+    {
+      "author": "Krzysztof Wolski <krzysztof.wolski@home.eu>",
+      "end_line": 12164,
+      "start_line": 12164
+    },
+    {
+      "author": "Olivier Benz <olivier.benz@b-data.ch>",
+      "end_line": 12168,
+      "start_line": 12168
+    },
+    {
+      "author": "Anthony Voutas <anthony@backplane.io>",
+      "end_line": 12172,
+      "start_line": 12172
+    },
+    {
+      "author": "Petros Angelatos <petrosagg@balena.io>",
+      "end_line": 12176,
+      "start_line": 12176
+    },
+    {
+      "author": "Marko Ivanovic <kormang@hotmail.rs>",
+      "end_line": 12181,
+      "start_line": 12181
+    },
+    {
+      "author": "Janos Matyas <info@banzaicloud.com> .banzai.cloud app.banzaicloud.io",
+      "end_line": 12187,
+      "start_line": 12185
+    },
+    {
+      "author": "Yuya NAGASAWA <public-suffix-list@binc.jp>",
+      "end_line": 12191,
+      "start_line": 12191
+    },
+    {
+      "author": "Jason Kridner <jkridner@beagleboard.org>",
+      "end_line": 12204,
+      "start_line": 12204
+    },
+    {
+      "author": "Lev Nekrasov <lnekrasov@beget.com>",
+      "end_line": 12208,
+      "start_line": 12208
+    },
+    {
+      "author": "Hazel Cora <hazy@besties.house>",
+      "end_line": 12212,
+      "start_line": 12212
+    },
+    {
+      "author": "Nathan O'Sullivan <nathan@mammoth.com.au>",
+      "end_line": 12224,
+      "start_line": 12224
+    },
+    {
+      "author": "Andy Ortlieb <aortlieb@atlassian.com>",
+      "end_line": 12228,
+      "start_line": 12228
+    },
+    {
+      "author": "Paul Crowder <paul.crowder@blackbaud.com>",
+      "end_line": 12232,
+      "start_line": 12232
+    },
+    {
+      "author": "Luke Bratch <luke@bratch.co.uk>",
+      "end_line": 12236,
+      "start_line": 12236
+    },
+    {
+      "author": "Joshua Weiss <admin.engineering@bluebite.com>",
+      "end_line": 12240,
+      "start_line": 12240
+    },
+    {
+      "author": "Tibor Halter <thalter@boomla.com>",
+      "end_line": 12244,
+      "start_line": 12244
+    },
+    {
+      "author": "Axel Fontaine <axel@boxfuse.com>",
+      "end_line": 12252,
+      "start_line": 12252
+    },
+    {
+      "author": "Miroslav Bozic <security@bplaced.net>",
+      "end_line": 12256,
+      "start_line": 12256
+    },
+    {
+      "author": "Andrea Brancaleoni <abrancaleoni@brave.com>",
+      "end_line": 12265,
+      "start_line": 12265
+    },
+    {
+      "author": "Dusan Radovanovic <administracija@brendly.rs>",
+      "end_line": 12269,
+      "start_line": 12269
+    },
+    {
+      "author": "Dave Tharp <browsersafetymark.io@quicinc.com>",
+      "end_line": 12274,
+      "start_line": 12274
+    },
+    {
+      "author": "Paul Cammish <paul.cammish@bytemark.co.uk>",
+      "end_line": 12278,
+      "start_line": 12278
+    },
+    {
+      "author": "Antonio Lain <antlai@cafjs.com>",
+      "end_line": 12284,
+      "start_line": 12284
+    },
+    {
+      "author": "Marcus Popp <admin@callidomus.com>",
+      "end_line": 12288,
+      "start_line": 12288
+    },
+    {
+      "author": "Joel Aquilina <publicsuffixlist@canva.com>",
+      "end_line": 12292,
+      "start_line": 12292
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12330,
+      "start_line": 12330
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12339,
+      "start_line": 12339
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12343,
+      "start_line": 12343
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com> web.in in.net",
+      "end_line": 12349,
+      "start_line": 12347
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12352,
+      "start_line": 12352
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12356,
+      "start_line": 12356
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12360,
+      "start_line": 12360
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 12365,
+      "start_line": 12365
+    },
+    {
+      "author": "B. Blechschmidt <hostmaster@certmgr.org>",
+      "end_line": 12370,
+      "start_line": 12370
+    },
+    {
+      "author": "Maksym Rivtin <support@cityhost.net.ua>",
+      "end_line": 12374,
+      "start_line": 12374
+    },
+    {
+      "author": "Rishabh Nambiar & Michael Brown <team@discourse.org>",
+      "end_line": 12378,
+      "start_line": 12378
+    },
+    {
+      "author": "Quentin Adam <noc@clever-cloud.com> cleverapps.cc .services.clever-cloud.com",
+      "end_line": 12385,
+      "start_line": 12383
+    },
+    {
+      "author": "Colin Sidoti <systems@clerk.dev>",
+      "end_line": 12390,
+      "start_line": 12390
+    },
+    {
+      "author": "Umut Gumeli <infrastructure-publicsuffixlist@clickrising.com>",
+      "end_line": 12399,
+      "start_line": 12399
+    },
+    {
+      "author": "Khash Sajadi <khash@cloud66.com>",
+      "end_line": 12403,
+      "start_line": 12403
+    },
+    {
+      "author": "Pawel Panek <noc@cloudaccess.net>",
+      "end_line": 12409,
+      "start_line": 12409
+    },
+    {
+      "author": "Tobias Wilken <tw@cloudcontrol.com>",
+      "end_line": 12417,
+      "start_line": 12417
+    },
+    {
+      "author": "Kedarnath Waikar <security@cloudera.com>",
+      "end_line": 12422,
+      "start_line": 12422
+    },
+    {
+      "author": "Gaudenz Steinlin <support@cloudscale.ch>",
+      "end_line": 12440,
+      "start_line": 12440
+    },
+    {
+      "author": "Patrick Nielsen <patrick@clovyr.io>",
+      "end_line": 12446,
+      "start_line": 12446
+    },
+    {
+      "author": "Govert Versluis <govert@co-co.nl>",
+      "end_line": 12453,
+      "start_line": 12453
+    },
+    {
+      "author": "Martin Semrad <semrad@i-registry.cz>",
+      "end_line": 12457,
+      "start_line": 12457
+    },
+    {
+      "author": "Jan Krpes <jan.krpes@cdn77.com>",
+      "end_line": 12461,
+      "start_line": 12461
+    },
+    {
+      "author": "Angelo Gladding <angelo@lahacker.net>",
+      "end_line": 12494,
+      "start_line": 12494
+    },
+    {
+      "author": "Moritz Marquardt <git@momar.de>",
+      "end_line": 12498,
+      "start_line": 12498
+    },
+    {
+      "author": "Ives van Hoorne <abuse@codesandbox.io>",
+      "end_line": 12502,
+      "start_line": 12502
+    },
+    {
+      "author": "Thomas Wouters <thomas.wouters@combellgroup.com>",
+      "end_line": 12511,
+      "start_line": 12511
+    },
+    {
+      "author": "James Cowling <security@convex.dev>",
+      "end_line": 12516,
+      "start_line": 12516
+    },
+    {
+      "author": "George Georgievsky <gug@cctld.ru>",
+      "end_line": 12520,
+      "start_line": 12520
+    },
+    {
+      "author": "Rene Marticke <rmarticke@cosimo.de>",
+      "end_line": 12529,
+      "start_line": 12529
+    },
+    {
+      "author": "Zsombor Fuszenecker <security@craft.do>",
+      "end_line": 12541,
+      "start_line": 12541
+    },
+    {
+      "author": "Ales Krajnik <ales.krajnik@craynic.com>",
+      "end_line": 12545,
+      "start_line": 12545
+    },
+    {
+      "author": "Baptiste Jamin <hostmaster@crisp.chat>",
+      "end_line": 12549,
+      "start_line": 12549
+    },
+    {
+      "author": "Andrew Cady <public-suffix-list@cryptonomic.net>",
+      "end_line": 12553,
+      "start_line": 12553
+    },
+    {
+      "author": "Jonathan Rudenberg <jonathan@cupcake.io>",
+      "end_line": 12557,
+      "start_line": 12557
+    },
+    {
+      "author": "Marvin Wiesner <Marvin@curv-labs.de>",
+      "end_line": 12561,
+      "start_line": 12561
+    },
+    {
+      "author": "Gregory Drake <support@dyn.com>",
+      "end_line": 12565,
+      "start_line": 12565
+    },
+    {
+      "author": "Bartlomiej Kida <security@cyberfolks.pl>",
+      "end_line": 12573,
+      "start_line": 12573
+    },
+    {
+      "author": "Kam Lasater <dns-admin@cyclic.sh>",
+      "end_line": 12577,
+      "start_line": 12577
+    },
+    {
+      "author": "Dominic Luechinger <dol@cyon.ch>",
+      "end_line": 12584,
+      "start_line": 12584
+    },
+    {
+      "author": "Skylar MacDonald <skylar@dangerscience.com>",
+      "end_line": 12589,
+      "start_line": 12589
+    },
+    {
+      "author": "Philipp Heckel <ph@datto.com>",
+      "end_line": 12600,
+      "start_line": 12600
+    },
+    {
+      "author": "Anani Voule <digital@digital.co.dk>",
+      "end_line": 12609,
+      "start_line": 12609
+    },
+    {
+      "author": "Daniil Burdakov <icqkill@gmail.com>",
+      "end_line": 12621,
+      "start_line": 12621
+    },
+    {
+      "author": "Paul Biggar <ops@darklang.com>",
+      "end_line": 12626,
+      "start_line": 12626
+    },
+    {
+      "author": "Andrew Banchich <abanchich@sceven.com>",
+      "end_line": 12631,
+      "start_line": 12631
+    },
+    {
+      "author": "Richard Li <secalert@datawire.io>",
+      "end_line": 12636,
+      "start_line": 12636
+    },
+    {
+      "author": "Cameron Elliott <cameron@cameronelliott.com>",
+      "end_line": 12640,
+      "start_line": 12640
+    },
+    {
+      "author": "Luca Casonato <hostmaster@deno.com>",
+      "end_line": 12648,
+      "start_line": 12648
+    },
+    {
+      "author": "Peter Thomassen <peter@desec.io>",
+      "end_line": 12653,
+      "start_line": 12653
+    },
+    {
+      "author": "Aavash Shrestha <aavash@deta.sh> deta.app deta.dev",
+      "end_line": 12659,
+      "start_line": 12657
+    },
+    {
+      "author": "Michal Kokoszkiewicz <bok@dhosting.pl>",
+      "end_line": 12662,
+      "start_line": 12662
+    },
+    {
+      "author": "Sahn Lam <slam@discordapp.com>",
+      "end_line": 12673,
+      "start_line": 12673
+    },
+    {
+      "author": "Norbert Auler <mail@dnshome.de>",
+      "end_line": 12682,
+      "start_line": 12682
+    },
+    {
+      "author": "Atsadawat Netcharadsang <atsadawat@dotarai.co.th>",
+      "end_line": 12686,
+      "start_line": 12686
+    },
+    {
+      "author": "Paul Fang <mis@draytek.com>",
+      "end_line": 12691,
+      "start_line": 12691
+    },
+    {
+      "author": "Konrad Kotarba <konrad.kotarba@dreamcommerce.com>",
+      "end_line": 12695,
+      "start_line": 12695
+    },
+    {
+      "author": "Andrew Farmer <andrew.farmer@dreamhost.com>",
+      "end_line": 12699,
+      "start_line": 12699
+    },
+    {
+      "author": "Ricardo Padilha <rpadilha@drobo.com>",
+      "end_line": 12707,
+      "start_line": 12707
+    },
+    {
+      "author": "Kevin Bridges <kevin@drud.com>",
+      "end_line": 12711,
+      "start_line": 12711
+    },
+    {
+      "author": "Richard Harper <richard@duckdns.org>",
+      "end_line": 12716,
+      "start_line": 12716
+    },
+    {
+      "author": "Joel Kennedy <joel@bip.sh>",
+      "end_line": 12720,
+      "start_line": 12720
+    },
+    {
+      "author": "Craig Welch, abeliidev@gmail.com",
+      "end_line": 12723,
+      "start_line": 12723
+    },
+    {
+      "author": "Heikki Hannikainen <hessu@hes.iki.fi> dy.fi tunk.org",
+      "end_line": 12729,
+      "start_line": 12727
+    },
+    {
+      "author": "Robert Niedziela <webmaster@ddnss.de>",
+      "end_line": 13013,
+      "start_line": 13013
+    },
+    {
+      "author": "Maxence Bitterli <maxence@definima.com>",
+      "end_line": 13025,
+      "start_line": 13025
+    },
+    {
+      "author": "Braxton Huggins <psl-maintainers@digitalocean.com>",
+      "end_line": 13030,
+      "start_line": 13030
+    },
+    {
+      "author": "Robin H. Johnson <psl-maintainers@digitalocean.com>",
+      "end_line": 13034,
+      "start_line": 13034
+    },
+    {
+      "author": "Edward Hsing <contact@digitalplat.org>",
+      "end_line": 13038,
+      "start_line": 13038
+    },
+    {
+      "author": "Chris Partridge <chris@partridge.tech>",
+      "end_line": 13042,
+      "start_line": 13042
+    },
+    {
+      "author": "Sue Ye <sue@dynu.com>",
+      "end_line": 13046,
+      "start_line": 13046
+    },
+    {
+      "author": "Dominik Menke <dom@digineo.de>",
+      "end_line": 13066,
+      "start_line": 13066
+    },
+    {
+      "author": "Vladimir Dudr <info@e4you.cz>",
+      "end_line": 13070,
+      "start_line": 13070
+    },
+    {
+      "author": "Andrei Canta <andrei@easypanel.io>",
+      "end_line": 13074,
+      "start_line": 13074
+    },
+    {
+      "author": "<infracloudteam@namecheap.com>",
+      "end_line": 13079,
+      "start_line": 13079
+    },
+    {
+      "author": "<noc@emfcamp.org>",
+      "end_line": 13091,
+      "start_line": 13091
+    },
+    {
+      "author": "Cetin Sert <domains@elefunc.com>",
+      "end_line": 13095,
+      "start_line": 13095
+    },
+    {
+      "author": "Anton Barkan <antonb@elementor.com>",
+      "end_line": 13099,
+      "start_line": 13099
+    },
+    {
+      "author": "Emmanuel Raviart <emmanuel@raviart.com>",
+      "end_line": 13104,
+      "start_line": 13104
+    },
+    {
+      "author": "Andre Eriksson <andre@encore.dev> encr.app encoreapi.com",
+      "end_line": 13115,
+      "start_line": 13113
+    },
+    {
+      "author": "<frc1533@ecgrobotics.org>",
+      "end_line": 13118,
+      "start_line": 13118
+    },
+    {
+      "author": "Marcel Daus <cloudops@encoway.de>",
+      "end_line": 13123,
+      "start_line": 13123
+    },
+    {
+      "author": "Pierre Beyssac <hostmaster@eu.org>",
+      "end_line": 13127,
+      "start_line": 13127
+    },
+    {
+      "author": "Evgeniy Subbotin <e.subbotin@eurobyte.ru>",
+      "end_line": 13186,
+      "start_line": 13186
+    },
+    {
+      "author": "Michal Kralik <support@evennode.com>",
+      "end_line": 13190,
+      "start_line": 13190
+    },
+    {
+      "author": "Hannah Neary <engineering@evervault.com> relay.evervault.app relay.evervault.dev",
+      "end_line": 13203,
+      "start_line": 13201
+    },
+    {
+      "author": "James Ide <psl@expo.dev>",
+      "end_line": 13206,
+      "start_line": 13206
+    },
+    {
+      "author": "Eric Jiang <eric@fabrica.dev>",
+      "end_line": 13211,
+      "start_line": 13211
+    },
+    {
+      "author": "Maxim Alzoba <tech.contact@faitid.org>",
+      "end_line": 13215,
+      "start_line": 13215
+    },
+    {
+      "author": "Aman Gupta <aman@getchannels.com>",
+      "end_line": 13291,
+      "start_line": 13291
+    },
+    {
+      "author": "Fastly Security <security@fastly.com> edgecompute.app fastly-edge.com",
+      "end_line": 13298,
+      "start_line": 13296
+    },
+    {
+      "author": "Marc Bradshaw <marc@fastmailteam.com>",
+      "end_line": 13311,
+      "start_line": 13311
+    },
+    {
+      "author": "Likhachev Vasiliy <lihachev@fastvps.ru>",
+      "end_line": 13315,
+      "start_line": 13315
+    },
+    {
+      "author": "Patrick Uiterwijk <puiterwijk@fedoraproject.org>",
+      "end_line": 13323,
+      "start_line": 13323
+    },
+    {
+      "author": "Keith Fairley <domains@fearworksmedia.co.uk>",
+      "end_line": 13331,
+      "start_line": 13331
+    },
+    {
+      "author": "Koen Van Isterdael <k.vanisterdael@fermax.be>",
+      "end_line": 13337,
+      "start_line": 13337
+    },
+    {
+      "author": "Robin Naundorf <r.naundorf@fh-muenster.de>",
+      "end_line": 13341,
+      "start_line": 13341
+    },
+    {
+      "author": "Jason Zhu <jason@owtware.com>",
+      "end_line": 13345,
+      "start_line": 13345
+    },
+    {
+      "author": "Chris Raynor <chris@firebase.com>",
+      "end_line": 13355,
+      "start_line": 13355
+    },
+    {
+      "author": "Majid Qureshi <mqureshi@amrayn.com>",
+      "end_line": 13359,
+      "start_line": 13359
+    },
+    {
+      "author": "Louis Chemineau <louis@chmn.me>",
+      "end_line": 13363,
+      "start_line": 13363
+    },
+    {
+      "author": "Eric Chan <support@flashdrive.io> onflashdrive.app fldrv.com",
+      "end_line": 13369,
+      "start_line": 13367
+    },
+    {
+      "author": "Anton Emelyanov <anton@flutterflow.io>",
+      "end_line": 13372,
+      "start_line": 13372
+    },
+    {
+      "author": "Kurt Mackey <kurt@fly.io>",
+      "end_line": 13376,
+      "start_line": 13376
+    },
+    {
+      "author": "Jonathan Rudenberg <jonathan@flynn.io>",
+      "end_line": 13382,
+      "start_line": 13382
+    },
+    {
+      "author": "Roderick Parr <roderick.parr@forgerock.com>",
+      "end_line": 13386,
+      "start_line": 13386
+    },
+    {
+      "author": "Koen Rouwhorst <security@framer.com>",
+      "end_line": 13391,
+      "start_line": 13391
+    },
+    {
+      "author": "Victor Pupynin <hallo@frusky.de>",
+      "end_line": 13401,
+      "start_line": 13401
+    },
+    {
+      "author": "Roni Horowitz <roni@responder.co.il>",
+      "end_line": 13405,
+      "start_line": 13405
+    },
+    {
+      "author": "Frederik Braun <fb@frederik-braun.com>",
+      "end_line": 13409,
+      "start_line": 13409
+    },
+    {
+      "author": "Romain Fliedel <rfliedel@freebox.fr>",
+      "end_line": 13413,
+      "start_line": 13413
+    },
+    {
+      "author": "Daniel Stone <daniel@fooishbar.org>",
+      "end_line": 13422,
+      "start_line": 13422
+    },
+    {
+      "author": "Daniel A. Maierhofer <vorstand@funkfeuer.at>",
+      "end_line": 13430,
+      "start_line": 13430
+    },
+    {
+      "author": "Andreas Schnederle-Wagner <schnederle@futureweb.at>",
+      "end_line": 13452,
+      "start_line": 13452
+    },
+    {
+      "author": "Leo Julius <support@gcom.net.au>",
+      "end_line": 13463,
+      "start_line": 13463
+    },
+    {
+      "author": "Stephen Ford <hostmaster@digital.cabinet-office.gov.uk>",
+      "end_line": 13467,
+      "start_line": 13467
+    },
+    {
+      "author": "Jamie Tanna <jamie.tanna@digital.cabinet-office.gov.uk>",
+      "end_line": 13479,
+      "start_line": 13479
+    },
+    {
+      "author": "Kohei YOSHIDA <tech@gehirn.co.jp>",
+      "end_line": 13483,
+      "start_line": 13483
+    },
+    {
+      "author": "Tom Klein <tom@gentlent.com>",
+      "end_line": 13488,
+      "start_line": 13488
+    },
+    {
+      "author": "Robert Alexander <support@getlocalcert.net>",
+      "end_line": 13495,
+      "start_line": 13495
+    },
+    {
+      "author": "Patrick Toomey <security@github.com>",
+      "end_line": 13505,
+      "start_line": 13505
+    },
+    {
+      "author": "Alex Hanselka <alex@gitlab.com>",
+      "end_line": 13511,
+      "start_line": 13511
+    },
+    {
+      "author": "Aljaz Starc <me@aljaxus.eu>",
+      "end_line": 13515,
+      "start_line": 13515
+    },
+    {
+      "author": "Mads Hartmann <mads@glitch.com>",
+      "end_line": 13520,
+      "start_line": 13520
+    },
+    {
+      "author": "Sander Steffann <sander@nogalliance.org>",
+      "end_line": 13524,
+      "start_line": 13524
+    },
+    {
+      "author": "Gavin Brown <gavin.brown@centralnic.com>",
+      "end_line": 13528,
+      "start_line": 13528
+    },
+    {
+      "author": "Hosting Div <admin@pepabo.com>",
+      "end_line": 13533,
+      "start_line": 13533
+    },
+    {
+      "author": "Tom Whitwell <gov-uk-paas-support@digital.cabinet-office.gov.uk>",
+      "end_line": 13647,
+      "start_line": 13647
+    },
+    {
+      "author": "Richard Baker <richard.baker@digital.cabinet-office.gov.uk>",
+      "end_line": 13652,
+      "start_line": 13652
+    },
+    {
+      "author": "Christian Poulter <milchstrasse@goip.de>",
+      "end_line": 13656,
+      "start_line": 13656
+    },
+    {
+      "author": "Shannon McCabe <public-suffix-editors@google.com>",
+      "end_line": 13660,
+      "start_line": 13660
+    },
+    {
+      "author": "Niels Martignene <hello@goupile.fr>",
+      "end_line": 13755,
+      "start_line": 13755
+    },
+    {
+      "author": "<domeinnaam@minaz.nl>",
+      "end_line": 13759,
+      "start_line": 13759
+    },
+    {
+      "author": "Matt Yamkowy <info@grayjaysports.ca>",
+      "end_line": 13763,
+      "start_line": 13763
+    },
+    {
+      "author": "Tyler Todd <noc@nova53.net>",
+      "end_line": 13767,
+      "start_line": 13767
+    },
+    {
+      "author": "Furkan Akkoc <info@hendelzon.de>",
+      "end_line": 13771,
+      "start_line": 13771
+    },
+    {
+      "author": "Arseniy Sokolov <security@hakaran.cz>",
+      "end_line": 13776,
+      "start_line": 13776
+    },
+    {
+      "author": "Mike Damm <md@md.vc>",
+      "end_line": 13784,
+      "start_line": 13784
+    },
+    {
+      "author": "Shahidh K Muhammed <shahidh@hasura.io> hasura.app hasura-app.io",
+      "end_line": 13794,
+      "start_line": 13792
+    },
+    {
+      "author": "Masato Nakamura <blog-developers@hatena.ne.jp>",
+      "end_line": 13797,
+      "start_line": 13797
+    },
+    {
+      "author": "Richard Zowalla <mi-admin@hs-heilbronn.de>",
+      "end_line": 13806,
+      "start_line": 13806
+    },
+    {
+      "author": "Ben Frede <admin@heliohost.org> helioho.st heliohost.us",
+      "end_line": 13812,
+      "start_line": 13810
+    },
+    {
+      "author": "Xia Bin <admin@lazycat.cloud>",
+      "end_line": 13815,
+      "start_line": 13815
+    },
+    {
+      "author": "David Grellscheid <admin@hepforge.org>",
+      "end_line": 13819,
+      "start_line": 13819
+    },
+    {
+      "author": "Tom Maher <tmaher@heroku.com>",
+      "end_line": 13823,
+      "start_line": 13823
+    },
+    {
+      "author": "Oren Eini <oren@ravendb.net>",
+      "end_line": 13828,
+      "start_line": 13828
+    },
+    {
+      "author": "Krzysztof Wolski <krzysztof.wolski@home.eu>",
+      "end_line": 13835,
+      "start_line": 13835
+    },
+    {
+      "author": "Jason Babo <info@homebase.id>",
+      "end_line": 13839,
+      "start_line": 13839
+    },
+    {
+      "author": "Danilo De Franco <info@hoplix.shop>",
+      "end_line": 13849,
+      "start_line": 13849
+    },
+    {
+      "author": "Atanunu Igbunuroghene <publicsuffixlist@hostbip.com>",
+      "end_line": 13854,
+      "start_line": 13854
+    },
+    {
+      "author": "Bohdan Dub <support@hostfly.com.ua>",
+      "end_line": 13866,
+      "start_line": 13866
+    },
+    {
+      "author": "Eero Hakkinen Eero+psl@Hakkinen.fi",
+      "end_line": 13877,
+      "start_line": 13877
+    },
+    {
+      "author": "Simon Morvan <simon@icilalune.com>",
+      "end_line": 13881,
+      "start_line": 13881
+    },
+    {
+      "author": "Hannu Aronsson <haa@iki.fi>",
+      "end_line": 13886,
+      "start_line": 13886
+    },
+    {
+      "author": "Marios Makassikis <mmakassikis@freebox.fr>",
+      "end_line": 13890,
+      "start_line": 13890
+    },
+    {
+      "author": "Zhixiang Zhao <csuite@impertrix.com>",
+      "end_line": 13895,
+      "start_line": 13895
+    },
+    {
+      "author": "Aaron Edwards <sysadmins@incsub.com>",
+      "end_line": 13900,
+      "start_line": 13900
+    },
+    {
+      "author": "Christian Seitz <chris@in-berlin.de>",
+      "end_line": 13908,
+      "start_line": 13908
+    },
+    {
+      "author": "June Slater <whois@igloo.to>",
+      "end_line": 13925,
+      "start_line": 13925
+    },
+    {
+      "author": "Gabriel Ferreira <registrobr@interlegis.leg.br>",
+      "end_line": 13929,
+      "start_line": 13929
+    },
+    {
+      "author": "Wolfgang Schwarz <admin@intermetrics.de>",
+      "end_line": 13959,
+      "start_line": 13959
+    },
+    {
+      "author": "Vasiliy Sheredeko <piphon@gmail.com>",
+      "end_line": 13963,
+      "start_line": 13963
+    },
+    {
+      "author": "Roman Azarenko <roman.azarenko@iopsys.eu>",
+      "end_line": 13967,
+      "start_line": 13967
+    },
+    {
+      "author": "Matthew Hardeman <mhardeman@ipifony.com>",
+      "end_line": 13971,
+      "start_line": 13971
+    },
+    {
+      "author": "William Harrison <admin@maintainers.is-a.dev>",
+      "end_line": 13975,
+      "start_line": 13975
+    },
+    {
+      "author": "Ali Soizi <info@nic.ir.md>",
+      "end_line": 13979,
+      "start_line": 13979
+    },
+    {
+      "author": "Mario Hoberg <info@iserv.de>",
+      "end_line": 13983,
+      "start_line": 13983
+    },
+    {
+      "author": "Yuji Minagawa <domains-admin@iodata.jp>",
+      "end_line": 13992,
+      "start_line": 13992
+    },
+    {
+      "author": "Ihor Kolodyuk <ik@jelastic.com>",
+      "end_line": 13996,
+      "start_line": 13996
+    },
+    {
+      "author": "Sergey Ulyashin <ulyashin@jino.ru>",
+      "end_line": 14079,
+      "start_line": 14079
+    },
+    {
+      "author": "Daniel Farina <ingenieria@jotelulu.com>",
+      "end_line": 14087,
+      "start_line": 14087
+    },
+    {
+      "author": "Camilo Sperberg <tech@webador.com>",
+      "end_line": 14091,
+      "start_line": 14091
+    },
+    {
+      "author": "Brian Bennett <brian.bennett@joyent.com>",
+      "end_line": 14096,
+      "start_line": 14096
+    },
+    {
+      "author": "Stefan Keim <admin@js.org>",
+      "end_line": 14101,
+      "start_line": 14101
+    },
+    {
+      "author": "Wouter Bakker <hostmaster@kaashosting.nl> kaas.gg khplay.nl",
+      "end_line": 14107,
+      "start_line": 14105
+    },
+    {
+      "author": "JaeYoong Lee <cec@kakaocorp.com>",
+      "end_line": 14110,
+      "start_line": 14110
+    },
+    {
+      "author": "Tomi Juntunen <erani@kapsi.fi>",
+      "end_line": 14114,
+      "start_line": 14114
+    },
+    {
+      "author": "Martin Dannehl <postmaster@keymachine.de>",
+      "end_line": 14118,
+      "start_line": 14118
+    },
+    {
+      "author": "Felipe Keller Braz <felipebraz@kinghost.com.br>",
+      "end_line": 14122,
+      "start_line": 14122
+    },
+    {
+      "author": "Roy Keene <rkeene@knightpoint.com>",
+      "end_line": 14127,
+      "start_line": 14127
+    },
+    {
+      "author": "Ivan Oliva <ivan.oliva@koobin.com>",
+      "end_line": 14131,
+      "start_line": 14131
+    },
+    {
+      "author": "Abuse KU Leuven <abuse@kuleuven.be>",
+      "end_line": 14139,
+      "start_line": 14139
+    },
+    {
+      "author": "Ben Francis <ben@krellian.com>",
+      "end_line": 14148,
+      "start_line": 14148
+    },
+    {
+      "author": "Lars Laehn <info@lcube.de>",
+      "end_line": 14153,
+      "start_line": 14153
+    },
+    {
+      "author": "Greg Dallavalle <domains@leadpages.net>",
+      "end_line": 14159,
+      "start_line": 14159
+    },
+    {
+      "author": "Lelux Admin <publisuffix@lelux.site>",
+      "end_line": 14165,
+      "start_line": 14165
+    },
+    {
+      "author": "Tomas Maggio <support@libre.nz>",
+      "end_line": 14169,
+      "start_line": 14169
+    },
+    {
+      "author": "Mario Siegenthaler <mario.siegenthaler@linkyard.ch>",
+      "end_line": 14183,
+      "start_line": 14183
+    },
+    {
+      "author": "<security@linode.com>",
+      "end_line": 14188,
+      "start_line": 14188
+    },
+    {
+      "author": "Victor Velchev <admin@liquidnetlimited.com>",
+      "end_line": 14195,
+      "start_line": 14195
+    },
+    {
+      "author": "Lann Martin <security@localcert.dev>",
+      "end_line": 14199,
+      "start_line": 14199
+    },
+    {
+      "author": "Kenny Niehage <hello@yahe.sh>",
+      "end_line": 14203,
+      "start_line": 14203
+    },
+    {
+      "author": "Remi Mach <remi.mach@loginline.com> loginline.app loginline.dev",
+      "end_line": 14209,
+      "start_line": 14207
+    },
+    {
+      "author": "Noah Taheij <noah@lokalized.nl>",
+      "end_line": 14215,
+      "start_line": 14215
+    },
+    {
+      "author": "Ireneusz Maliszewski <ireneusz.maliszewski@lubman.pl>",
+      "end_line": 14223,
+      "start_line": 14223
+    },
+    {
+      "author": "Jon Spriggs <admin@lug.org.uk>",
+      "end_line": 14232,
+      "start_line": 14232
+    },
+    {
+      "author": "Anton Avramov <register@lukanet.com>",
+      "end_line": 14238,
+      "start_line": 14238
+    },
+    {
+      "author": "Damien Tournoud <dtournoud@magento.cloud>",
+      "end_line": 14271,
+      "start_line": 14271
+    },
+    {
+      "author": "Jamie McClelland <info@mayfirst.org> mayfirst.info mayfirst.org",
+      "end_line": 14277,
+      "start_line": 14275
+    },
+    {
+      "author": "Ilya Zaretskiy <zaretskiy@corp.mail.ru>",
+      "end_line": 14280,
+      "start_line": 14280
+    },
+    {
+      "author": "Adam Humpherys <adam@mws.dev>",
+      "end_line": 14284,
+      "start_line": 14284
+    },
+    {
+      "author": "Noa Heyl <hi@noa.dev>",
+      "end_line": 14288,
+      "start_line": 14288
+    },
+    {
+      "author": "Evgeniy Subbotin <e.subbotin@mchost.ru>",
+      "end_line": 14292,
+      "start_line": 14292
+    },
+    {
+      "author": "Evgeniy Kozhuhovskiy <ugenk@mediatech.by>",
+      "end_line": 14299,
+      "start_line": 14299
+    },
+    {
+      "author": "Michael Olson <molson@medicomhealth.com>",
+      "end_line": 14304,
+      "start_line": 14304
+    },
+    {
+      "author": "Tom Whitwell <domains@memset.com>",
+      "end_line": 14308,
+      "start_line": 14308
+    },
+    {
+      "author": "Ruben Schmidmeister <psl-maintainers@messerli.ch>",
+      "end_line": 14313,
+      "start_line": 14313
+    },
+    {
+      "author": "Jacob Cordero <public-suffix@meta.com>",
+      "end_line": 14317,
+      "start_line": 14317
+    },
+    {
+      "author": "Zdenek Sustr <zdenek.sustr@cesnet.cz>",
+      "end_line": 14322,
+      "start_line": 14322
+    },
+    {
+      "author": "Radim Janca <janca@cesnet.cz>",
+      "end_line": 14327,
+      "start_line": 14327
+    },
+    {
+      "author": "Pierre Carrier <pierre@meteor.com>",
+      "end_line": 14332,
+      "start_line": 14332
+    },
+    {
+      "author": "Ben Aubin <security@mintere.com>",
+      "end_line": 14372,
+      "start_line": 14372
+    },
+    {
+      "author": "Grayson Martin <grayson.martin@mobileeducation.us>",
+      "end_line": 14376,
+      "start_line": 14376
+    },
+    {
+      "author": "Elizabeth Southwell <elizabeth@modx.com>",
+      "end_line": 14380,
+      "start_line": 14380
+    },
+    {
+      "author": "Ben Francis <bfrancis@mozilla.com>",
+      "end_line": 14384,
+      "start_line": 14384
+    },
+    {
+      "author": "Khannanov Roman <r.khannanov@msk-ix.ru>",
+      "end_line": 14392,
+      "start_line": 14392
+    },
+    {
+      "author": "Paul Cammish <kelduum@mythic-beasts.com>",
+      "end_line": 14398,
+      "start_line": 14398
+    },
+    {
+      "author": "Paulus Schoutsen <infra@nabucasa.com>",
+      "end_line": 14414,
+      "start_line": 14414
+    },
+    {
+      "author": "Jan Jaeschke <jan.jaeschke@netatwork.de>",
+      "end_line": 14418,
+      "start_line": 14418
+    },
+    {
+      "author": "Suranga Ranasinghe <security@mavicsoft.com>",
+      "end_line": 14422,
+      "start_line": 14422
+    },
+    {
+      "author": "Jessica Parsons <jessica@netlify.com>",
+      "end_line": 14426,
+      "start_line": 14426
+    },
+    {
+      "author": "Trung Tran <Trung.Tran@neustar.biz>",
+      "end_line": 14430,
+      "start_line": 14430
+    },
+    {
+      "author": "Alan Shreve <alan@ngrok.com>",
+      "end_line": 14438,
+      "start_line": 14438
+    },
+    {
+      "author": "Nicholas Ford <dev@nimbushosting.co.uk>",
+      "end_line": 14458,
+      "start_line": 14458
+    },
+    {
+      "author": "Jeff Wheelhouse <support@nearlyfreespeech.net>",
+      "end_line": 14463,
+      "start_line": 14463
+    },
+    {
+      "author": "Vasco Santos <vasco.santos@protocol.ai>",
+      "end_line": 14467,
+      "start_line": 14467
+    },
+    {
+      "author": "Nathaniel Schweinberg <noop@rearc.io>",
+      "end_line": 14471,
+      "start_line": 14471
+    },
+    {
+      "author": "Marco Suter <marco@northflank.com>",
+      "end_line": 14476,
+      "start_line": 14476
+    },
+    {
+      "author": "Laurent Pellegrino <security@noticeable.io>",
+      "end_line": 14484,
+      "start_line": 14484
+    },
+    {
+      "author": "Jess Yao <trust-core-team@makenotion.com>",
+      "end_line": 14488,
+      "start_line": 14488
+    },
+    {
+      "author": "Steve Russell <steve@now-dns.com>",
+      "end_line": 14492,
+      "start_line": 14492
+    },
+    {
+      "author": "Thomas Waldmann <info@nsupdate.info>",
+      "end_line": 14520,
+      "start_line": 14520
+    },
+    {
+      "author": "Deven Reza <publicsuffixlist@noip.com>",
+      "end_line": 14525,
+      "start_line": 14525
+    },
+    {
+      "author": "Konstantin Nosov <Nosov@nodeart.io>",
+      "end_line": 14613,
+      "start_line": 14613
+    },
+    {
+      "author": "Piotr Zduniak <piotr@nucleos.com>",
+      "end_line": 14617,
+      "start_line": 14617
+    },
+    {
+      "author": "Matthew Brown <mattbrown@nyc.mn>",
+      "end_line": 14621,
+      "start_line": 14621
+    },
+    {
+      "author": "Reese Armstrong <team@obl.ong>",
+      "end_line": 14629,
+      "start_line": 14629
+    },
+    {
+      "author": "Mike Bostock <dns@observablehq.com> observablehq.cloud static.observableusercontent.com",
+      "end_line": 14635,
+      "start_line": 14633
+    },
+    {
+      "author": "Andrew Sampson <andrew@ulterius.io>",
+      "end_line": 14638,
+      "start_line": 14638
+    },
+    {
+      "author": "Adam Newbold <adam@omg.lol>",
+      "end_line": 14642,
+      "start_line": 14642
+    },
+    {
+      "author": "Cole Estep <cole@omnibond.com>",
+      "end_line": 14646,
+      "start_line": 14646
+    },
+    {
+      "author": "Vicary Archangel <vicary@omniwe.com>",
+      "end_line": 14650,
+      "start_line": 14650
+    },
+    {
+      "author": "Jacob Bunk Nielsen <jbn@one.com> 123webseite.at 123website.be",
+      "end_line": 14656,
+      "start_line": 14654
+    },
+    {
+      "author": "Eddie Jones <eddie@onefoldmedia.com>",
+      "end_line": 14676,
+      "start_line": 14676
+    },
+    {
+      "author": "William Harrison <admin@open-domains.net>",
+      "end_line": 14680,
+      "start_line": 14680
+    },
+    {
+      "author": "Alexander Varwijk <security@getopensocial.com>",
+      "end_line": 14687,
+      "start_line": 14687
+    },
+    {
+      "author": "Sven Marnach <sven@opencraft.com>",
+      "end_line": 14691,
+      "start_line": 14691
+    },
+    {
+      "author": "Philipp Schmid <ops@openresearch.com>",
+      "end_line": 14695,
+      "start_line": 14695
+    },
+    {
+      "author": "Yngve Pettersen <yngve@opera.com>",
+      "end_line": 14699,
+      "start_line": 14699
+    },
+    {
+      "author": "Alexandre Linte <alexandre.linte@orange.com>",
+      "end_line": 14703,
+      "start_line": 14703
+    },
+    {
+      "author": "Duarte Santos <domain-admin@outsystemscloud.com>",
+      "end_line": 14718,
+      "start_line": 14718
+    },
+    {
+      "author": "Vincent Casse <vincent.casse@ovhcloud.com>",
+      "end_line": 14722,
+      "start_line": 14722
+    },
+    {
+      "author": "Jan Moennich <jan.moennich@ownprovider.com>",
+      "end_line": 14727,
+      "start_line": 14727
+    },
+    {
+      "author": "Dean Sheather <dean@deansheather.com>",
+      "end_line": 14732,
+      "start_line": 14732
+    },
+    {
+      "author": "Adam Grand <webmaster@mail.ox.rs>",
+      "end_line": 14736,
+      "start_line": 14736
+    },
+    {
+      "author": "Charly Coste <changaco@changaco.oy.lc>",
+      "end_line": 14740,
+      "start_line": 14740
+    },
+    {
+      "author": "Derek Myers <derek@pagefog.com>",
+      "end_line": 14744,
+      "start_line": 14744
+    },
+    {
+      "author": "Jason Kriss <jason@pagefronthq.com>",
+      "end_line": 14748,
+      "start_line": 14748
+    },
+    {
+      "author": "Yann Guichard <yann@pagexl.com>",
+      "end_line": 14752,
+      "start_line": 14752
+    },
+    {
+      "author": "Daniel Netzer <dan@paywhirl.com>",
+      "end_line": 14756,
+      "start_line": 14756
+    },
+    {
+      "author": "Pierre Carrier <pc@rrier.ca> .xmit.co xmit.dev",
+      "end_line": 14762,
+      "start_line": 14760
+    },
+    {
+      "author": "Gary Dylina <gary@pantheon.io>",
+      "end_line": 14777,
+      "start_line": 14777
+    },
+    {
+      "author": "Steve Leung <steveleung@peplink.com>",
+      "end_line": 14782,
+      "start_line": 14782
+    },
+    {
+      "author": "Kenneth Van Alstyne <kvanalstyne@perspecta.com>",
+      "end_line": 14786,
+      "start_line": 14786
+    },
+    {
+      "author": "Kirill Ulyanov <k.ulyanov@airy.host>",
+      "end_line": 14790,
+      "start_line": 14790
+    },
+    {
+      "author": "Frederic VANNIERE <f.vanniere@planet-work.com>",
+      "end_line": 14794,
+      "start_line": 14794
+    },
+    {
+      "author": "Nikola Kotur <nikola@platform.sh> .upsun.app upsunapp.com",
+      "end_line": 14800,
+      "start_line": 14798
+    },
+    {
+      "author": "Patrick Flor <patrick@platter.dev>",
+      "end_line": 14808,
+      "start_line": 14808
+    },
+    {
+      "author": "Henning Pohl <infra@pley.com>",
+      "end_line": 14814,
+      "start_line": 14814
+    },
+    {
+      "author": "Maximilian Schieder <maxi@zeug.co>",
+      "end_line": 14818,
+      "start_line": 14818
+    },
+    {
+      "author": "Rudraksh MK <rudi@porter.run>",
+      "end_line": 14822,
+      "start_line": 14822
+    },
+    {
+      "author": "Rahul Dhawan <security@postman.com>",
+      "end_line": 14830,
+      "start_line": 14830
+    },
+    {
+      "author": "Sarah Newman <owner@prgmr.com>",
+      "end_line": 14841,
+      "start_line": 14841
+    },
+    {
+      "author": "Michael Burns <noc@protocol.ai>",
+      "end_line": 14849,
+      "start_line": 14849
+    },
+    {
+      "author": "Martin Meier <admin@protonet.io>",
+      "end_line": 14853,
+      "start_line": 14853
+    },
+    {
+      "author": "Yaacov Akiba Slama <admin@chirurgiens-dentistes-en-france.fr>",
+      "end_line": 14857,
+      "start_line": 14857
+    },
+    {
+      "author": "Kor Nielsen <kor@pubtls.org>",
+      "end_line": 14862,
+      "start_line": 14862
+    },
+    {
+      "author": "Giles Thomas <giles@pythonanywhere.com>",
+      "end_line": 14866,
+      "start_line": 14866
+    },
+    {
+      "author": "Jeffrey Phillips Freeman <jeffrey.freeman@qoto.org>",
+      "end_line": 14871,
+      "start_line": 14871
+    },
+    {
+      "author": "Xavier De Cock <xdecock@gmail.com>",
+      "end_line": 14875,
+      "start_line": 14875
+    },
+    {
+      "author": "Vasyl Tsalko <vtsalko@qualityunit.com>",
+      "end_line": 14879,
+      "start_line": 14879
+    },
+    {
+      "author": "Dani Biro <dani@pymet.com>",
+      "end_line": 14883,
+      "start_line": 14883
+    },
+    {
+      "author": "Scott Claeys <s.claeys@radwebhosting.com> cloudsite.builders myradweb.net",
+      "end_line": 14889,
+      "start_line": 14887
+    },
+    {
+      "author": "Auke Tembrink <hostmaster@raidboxes.de>",
+      "end_line": 14893,
+      "start_line": 14893
+    },
+    {
+      "author": "Andrew Farries <andrew.farries@red-gate.com>",
+      "end_line": 14898,
+      "start_line": 14898
+    },
+    {
+      "author": "Cassandra Beelen <cassandra@beelen.one>",
+      "end_line": 14910,
+      "start_line": 14910
+    },
+    {
+      "author": "Nick Chang <cloudadmin@qnap.com> myqnapcloud.cn alpha-myqnapcloud.com",
+      "end_line": 14917,
+      "start_line": 14915
+    },
+    {
+      "author": "Jonas Schwartz <jonas@qutheory.io> vapor.cloud vaporcloud.io",
+      "end_line": 14930,
+      "start_line": 14928
+    },
+    {
+      "author": "Kirill Pertsev <kika@rackmaze.com>",
+      "end_line": 14933,
+      "start_line": 14933
+    },
+    {
+      "author": "Vincent Fiduccia <domains@rancher.com> .on-rancher.cloud .on-k3s.io",
+      "end_line": 14940,
+      "start_line": 14938
+    },
+    {
+      "author": "David Fischer <team@readthedocs.org>",
+      "end_line": 14944,
+      "start_line": 14944
+    },
+    {
+      "author": "Tim Kramer <tkramer@rhcloud.com>",
+      "end_line": 14948,
+      "start_line": 14948
+    },
+    {
+      "author": "Anurag Goel <dev@render.com>",
+      "end_line": 14952,
+      "start_line": 14952
+    },
+    {
+      "author": "Lincoln Bergeson <psl@repl.it>",
+      "end_line": 14957,
+      "start_line": 14957
+    },
+    {
+      "author": "Tim Perry <tim@resin.io>",
+      "end_line": 14994,
+      "start_line": 14994
+    },
+    {
+      "author": "Chris Kastorff <info@rethinkdb.com>",
+      "end_line": 14999,
+      "start_line": 14999
+    },
+    {
+      "author": "Jack Price <jack@revitalised.co.uk>",
+      "end_line": 15003,
+      "start_line": 15003
+    },
+    {
+      "author": "Colin Brown <hello@adimo.co>",
+      "end_line": 15008,
+      "start_line": 15008
+    },
+    {
+      "author": "Micah Anderson <micah@riseup.net>",
+      "end_line": 15012,
+      "start_line": 15012
+    },
+    {
+      "author": "Jennifer Herting <jchits@rit.edu>",
+      "end_line": 15016,
+      "start_line": 15016
+    },
+    {
+      "author": "Neil Hanlon <neil@resf.org>",
+      "end_line": 15020,
+      "start_line": 15020
+    },
+    {
+      "author": "Sergey Zotov <admin@rusnames.ru>",
+      "end_line": 15024,
+      "start_line": 15024
+    },
+    {
+      "author": "Internet Service Department <rs-vendor-ml@sakura.ad.jp>",
+      "end_line": 15037,
+      "start_line": 15037
+    },
+    {
+      "author": "Asheesh Laroia <asheesh@sandstorm.io>",
+      "end_line": 15102,
+      "start_line": 15102
+    },
+    {
+      "author": "Norman Meilick <nm@sbe.de>",
+      "end_line": 15106,
+      "start_line": 15106
+    },
+    {
+      "author": "Remy Leone <rleone@scaleway.com>",
+      "end_line": 15111,
+      "start_line": 15111
+    },
+    {
+      "author": "Hanno Bock <hanno@schokokeks.org>",
+      "end_line": 15142,
+      "start_line": 15142
+    },
+    {
+      "author": "Martin Ellis <martin.ellis@gov.scot>",
+      "end_line": 15146,
+      "start_line": 15146
+    },
+    {
+      "author": "Shante Adam <shante@skyhat.io>",
+      "end_line": 15151,
+      "start_line": 15151
+    },
+    {
+      "author": "Koushik Dutta <public-suffix-list@scrypted.app>",
+      "end_line": 15155,
+      "start_line": 15155
+    },
+    {
+      "author": "Erik Anders <erik.anders@securepoint.de>",
+      "end_line": 15159,
+      "start_line": 15159
+    },
+    {
+      "author": "Artem Kondratev <accounts@seidat.com>",
+      "end_line": 15172,
+      "start_line": 15172
+    },
+    {
+      "author": "Yuriy Romadin <contact@sellfy.com>",
+      "end_line": 15176,
+      "start_line": 15176
+    },
+    {
+      "author": "Felix Monckemeyer <f.moenckemeyer@senseering.de>",
+      "end_line": 15180,
+      "start_line": 15180
+    },
+    {
+      "author": "Assaf Stern <domains@comstar.co.il>",
+      "end_line": 15184,
+      "start_line": 15184
+    },
+    {
+      "author": "Daniel Kjeserud <cloudops@servebolt.com>",
+      "end_line": 15188,
+      "start_line": 15188
+    },
+    {
+      "author": "Dave Sanders <dave@myservicemagnet.com>",
+      "end_line": 15192,
+      "start_line": 15192
+    },
+    {
+      "author": "Serhii Bulakh <support@drs.ua>",
+      "end_line": 15196,
+      "start_line": 15196
+    },
+    {
+      "author": "Adam Jimenez <adam@shiftcreate.com>",
+      "end_line": 15215,
+      "start_line": 15215
+    },
+    {
+      "author": "Alex Bowers <alex@shopblocks.com>",
+      "end_line": 15219,
+      "start_line": 15219
+    },
+    {
+      "author": "Alex Richter <alex.richter@shopify.com>",
+      "end_line": 15223,
+      "start_line": 15223
+    },
+    {
+      "author": "Craig McMahon <craig@shopitcommerce.com>",
+      "end_line": 15227,
+      "start_line": 15227
+    },
+    {
+      "author": "Jens Kuper <cloud@shopware.com>",
+      "end_line": 15231,
+      "start_line": 15231
+    },
+    {
+      "author": "Oliver Graebner <security@mo-siemens.io>",
+      "end_line": 15235,
+      "start_line": 15235
+    },
+    {
+      "author": "Skylar Challand <support@siteleaf.com>",
+      "end_line": 15247,
+      "start_line": 15247
+    },
+    {
+      "author": "Shante Adam <shante@skyhat.io>",
+      "end_line": 15251,
+      "start_line": 15251
+    },
+    {
+      "author": "Jerome Lipowicz <support@promopixel.com>",
+      "end_line": 15258,
+      "start_line": 15258
+    },
+    {
+      "author": "Aral Balkan <aral@small-tech.org>",
+      "end_line": 15271,
+      "start_line": 15271
+    },
+    {
+      "author": "Dan Kozak <dan@smoove.io>",
+      "end_line": 15275,
+      "start_line": 15275
+    },
+    {
+      "author": "Sam Haar <psl@snowflake.com>",
+      "end_line": 15279,
+      "start_line": 15279
+    },
+    {
+      "author": "Ian Streeter <ian@snowplowanalytics.com>",
+      "end_line": 15286,
+      "start_line": 15286
+    },
+    {
+      "author": "Drew DeVault <sir@cmpwn.com>",
+      "end_line": 15290,
+      "start_line": 15290
+    },
+    {
+      "author": "Anant Pandey <info@sparrowhost.in>",
+      "end_line": 15294,
+      "start_line": 15294
+    },
+    {
+      "author": "Dominic Elm <hello@stackblitz.com>",
+      "end_line": 15298,
+      "start_line": 15298
+    },
+    {
+      "author": "Adrien Gillon <adrien+public-suffix-list@stackhero.io>",
+      "end_line": 15304,
+      "start_line": 15304
+    },
+    {
+      "author": "Matthias Merkel <matthias.merkel@staclar.com>",
+      "end_line": 15317,
+      "start_line": 15317
+    },
+    {
+      "author": "Seth Vincent <sethvincent@gmail.com>",
+      "end_line": 15322,
+      "start_line": 15322
+    },
+    {
+      "author": "Tony Schirmer <tony@storebase.io>",
+      "end_line": 15328,
+      "start_line": 15328
+    },
+    {
+      "author": "Florent Baldino <security@strapi.io>",
+      "end_line": 15332,
+      "start_line": 15332
+    },
+    {
+      "author": "Alex Oancea <aoancea@cloudscale365.com>",
+      "end_line": 15337,
+      "start_line": 15337
+    },
+    {
+      "author": "David Coles <david.coles@sony.com>",
+      "end_line": 15344,
+      "start_line": 15344
+    },
+    {
+      "author": "Antonis Kalipetis <akalipetis@sourcelair.com>",
+      "end_line": 15348,
+      "start_line": 15348
+    },
+    {
+      "author": "Reza Akhavan <spacekit.io@gmail.com>",
+      "end_line": 15353,
+      "start_line": 15353
+    },
+    {
+      "author": "Stefan Neufeind <info@speedpartner.de>",
+      "end_line": 15357,
+      "start_line": 15357
+    },
+    {
+      "author": "Martin Breest <security@spreadshop.com> myspreadshop.at myspreadshop.com.au",
+      "end_line": 15363,
+      "start_line": 15361
+    },
+    {
+      "author": "Jacob Lee <jacob@stdlib.com>",
+      "end_line": 15383,
+      "start_line": 15383
+    },
+    {
+      "author": "Florian Burmann <publicsuffix@involve.me>",
+      "end_line": 15387,
+      "start_line": 15387
+    },
+    {
+      "author": "Benno Liu <benno@storipress.com>",
+      "end_line": 15400,
+      "start_line": 15400
+    },
+    {
+      "author": "Philip Hutchins <hostmaster@storj.io>",
+      "end_line": 15404,
+      "start_line": 15404
+    },
+    {
+      "author": "Blake Kadatz <eng@streak.com>",
+      "end_line": 15408,
+      "start_line": 15408
+    },
+    {
+      "author": "Silke Hofstra <syscom@snt.utwente.nl>",
+      "end_line": 15414,
+      "start_line": 15414
+    },
+    {
+      "author": "Edwin Balani <sysadmins@srcf.net>",
+      "end_line": 15418,
+      "start_line": 15418
+    },
+    {
+      "author": "Dan Miller <dm@sub6.com>",
+      "end_line": 15423,
+      "start_line": 15423
+    },
+    {
+      "author": "Inian Parameshwaran <security@supabase.io>",
+      "end_line": 15427,
+      "start_line": 15427
+    },
+    {
+      "author": "Fabien Potencier <fabien@symfony.com> .sensiosite.cloud .s5y.io",
+      "end_line": 15435,
+      "start_line": 15433
+    },
+    {
+      "author": "Boris Rybalkin <syncloud@syncloud.it>",
+      "end_line": 15438,
+      "start_line": 15438
+    },
+    {
+      "author": "Rony Weng <ronyweng@synology.com>",
+      "end_line": 15442,
+      "start_line": 15442
+    },
+    {
+      "author": "Oren Agiv <oren@tabit.cloud>",
+      "end_line": 15461,
+      "start_line": 15461
+    },
+    {
+      "author": "Bjoern Henke <dev-server@taifun-software.de>",
+      "end_line": 15467,
+      "start_line": 15467
+    },
+    {
+      "author": "David Anderson <danderson@tailscale.com>",
+      "end_line": 15471,
+      "start_line": 15471
+    },
+    {
+      "author": "Cedric Dubois <cedric.dubois@team.blue>",
+      "end_line": 15489,
+      "start_line": 15489
+    },
+    {
+      "author": "Dominik George <dominik.george@teckids.org>",
+      "end_line": 15493,
+      "start_line": 15493
+    },
+    {
+      "author": "Adrian Imboden <adi@thingdust.com>",
+      "end_line": 15504,
+      "start_line": 15504
+    },
+    {
+      "author": "Christian Franke <it@ticket.io>",
+      "end_line": 15518,
+      "start_line": 15518
+    },
+    {
+      "author": "Mark Staarink <mark@tlon.io>",
+      "end_line": 15522,
+      "start_line": 15522
+    },
+    {
+      "author": "Antoine Beaupre <anarcat@torproject.org>",
+      "end_line": 15528,
+      "start_line": 15528
+    },
+    {
+      "author": "Dustin Ward <dward@townnews.com>",
+      "end_line": 15533,
+      "start_line": 15533
+    },
+    {
+      "author": "Phillipp Roll <phillipp.roell@trafficplex.de>",
+      "end_line": 15538,
+      "start_line": 15538
+    },
+    {
+      "author": "Rory Breuk <rbreuk@transip.nl>",
+      "end_line": 15560,
+      "start_line": 15560
+    },
+    {
+      "author": "Cedric Dubois <cedric.dubois@team.blue>",
+      "end_line": 15566,
+      "start_line": 15566
+    },
+    {
+      "author": "Putri Karunia <putri@typedream.com>",
+      "end_line": 15590,
+      "start_line": 15590
+    },
+    {
+      "author": "Sergi Ferriz <sergi.ferriz@typeform.com>",
+      "end_line": 15594,
+      "start_line": 15594
+    },
+    {
+      "author": "Moritz Werner <mwerner@jonaspasche.com>",
+      "end_line": 15598,
+      "start_line": 15598
+    },
+    {
+      "author": "Simon Hojberg <security@unison.cloud>",
+      "end_line": 15614,
+      "start_line": 15614
+    },
+    {
+      "author": "Atanunu Igbunuroghene <publicsuffixlist@udr.org.yt>",
+      "end_line": 15619,
+      "start_line": 15619
+    },
+    {
+      "author": "Stefan Schwarz <sysadm@united-gameserver.de>",
+      "end_line": 15627,
+      "start_line": 15627
+    },
+    {
+      "author": "Lenny Bakkalian <lenny.bakkalian@gmail.com>",
+      "end_line": 15632,
+      "start_line": 15632
+    },
+    {
+      "author": "Tom MacWright <security@val.town>",
+      "end_line": 15645,
+      "start_line": 15645
+    },
+    {
+      "author": "Danko Aleksejevs <danko@very.lv>",
+      "end_line": 15650,
+      "start_line": 15650
+    },
+    {
+      "author": "Connor Davis <security@vercel.com> vercel.app vercel.dev",
+      "end_line": 15656,
+      "start_line": 15654
+    },
+    {
+      "author": "Simon Kissel <hostmaster@viprinet.com>",
+      "end_line": 15660,
+      "start_line": 15660
+    },
+    {
+      "author": "Nathan van Bakel <info@voorloper.com>",
+      "end_line": 15668,
+      "start_line": 15668
+    },
+    {
+      "author": "Serhii Rostilo <sergey@rostilo.kiev.ua>",
+      "end_line": 15672,
+      "start_line": 15672
+    },
+    {
+      "author": "Niels Maumenee <storage@vultr.com>",
+      "end_line": 15676,
+      "start_line": 15676
+    },
+    {
+      "author": "Arnold Hendriks <info@webhare.com>",
+      "end_line": 15689,
+      "start_line": 15689
+    },
+    {
+      "author": "Apostolos Tsakpinis <apostolos.tsakpinis@gmail.com> bookonline.app hotelwithflight.com reserve-online.com reserve-online.net",
+      "end_line": 15697,
+      "start_line": 15693
+    },
+    {
+      "author": "Nicolas Rochelemagne <public.suffix@webpros.com>",
+      "end_line": 15700,
+      "start_line": 15700
+    },
+    {
+      "author": "Merlin Glander <hostmaster@webwaddle.com>",
+      "end_line": 15709,
+      "start_line": 15709
+    },
+    {
+      "author": "Henrique Vicente <security@wedeploy.com>",
+      "end_line": 15713,
+      "start_line": 15713
+    },
+    {
+      "author": "Jung Jin <jungseok.jin@wdc.com>",
+      "end_line": 15719,
+      "start_line": 15719
+    },
+    {
+      "author": "Anthony Ryan <servers@whatbox.ca>",
+      "end_line": 15723,
+      "start_line": 15723
+    },
+    {
+      "author": "Kidd Hustle <kiddhustle@wiardweb.com>",
+      "end_line": 15727,
+      "start_line": 15727
+    },
+    {
+      "author": "Arturo Borrero Gonzalez <aborrero@wikimedia.org>",
+      "end_line": 15731,
+      "start_line": 15731
+    },
+    {
+      "author": "Stepan Fedotov <stepan@wisp.gg>",
+      "end_line": 15737,
+      "start_line": 15737
+    },
+    {
+      "author": "Julia Evans <julia@wizardzines.com>",
+      "end_line": 15750,
+      "start_line": 15750
+    },
+    {
+      "author": "Tim Dusterhus <security@woltlab.cloud>",
+      "end_line": 15754,
+      "start_line": 15754
+    },
+    {
+      "author": "Chris Whittle <chris.whittle@woodsvalldata.co.uk>",
+      "end_line": 15763,
+      "start_line": 15763
+    },
+    {
+      "author": "Michael Smith <michael.smith@wpengine.com>",
+      "end_line": 15769,
+      "start_line": 15769
+    },
+    {
+      "author": "Brandon DuRette <brandon.durette@wpengine.com>",
+      "end_line": 15770,
+      "start_line": 15770
+    },
+    {
+      "author": "Julian Uphoff <publicsuffixlist@xenoncloud.net>",
+      "end_line": 15775,
+      "start_line": 15775
+    },
+    {
+      "author": "XnBay Developer <developer.xncloud@gmail.com>",
+      "end_line": 15779,
+      "start_line": 15779
+    },
+    {
+      "author": "Daniel Mostertman <unixbeheer+publicsuffix@xs4all.net>",
+      "end_line": 15785,
+      "start_line": 15785
+    },
+    {
+      "author": "Alexander Lodin <security+psl@yandex-team.ru>",
+      "end_line": 15791,
+      "start_line": 15791
+    },
+    {
+      "author": "Atul Bhouraskar <atul@yescourse.com>",
+      "end_line": 15797,
+      "start_line": 15797
+    },
+    {
+      "author": "Stefano Rivera <stefano@yola.com>",
+      "end_line": 15801,
+      "start_line": 15801
+    },
+    {
+      "author": "Mitch Schwenk <mitch@yombo.net>",
+      "end_line": 15805,
+      "start_line": 15805
+    },
+    {
+      "author": "Valentin Grimaud <security@yunohost.org>",
+      "end_line": 15815,
+      "start_line": 15815
+    },
+    {
+      "author": "Julian Alker <security@zap-hosting.com>",
+      "end_line": 15826,
+      "start_line": 15826
+    },
+    {
+      "author": "Martin Angelov <martin@zine.bg>",
+      "end_line": 15834,
+      "start_line": 15834
+    },
+    {
+      "author": "Emil Stahl <esp@zitcom.dk>",
+      "end_line": 15838,
+      "start_line": 15838
+    }
+  ],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "iana-questions@icann.org",
+      "end_line": 206,
+      "start_line": 206
+    },
+    {
+      "email": "it@nic.at",
+      "end_line": 223,
+      "start_line": 223
+    },
+    {
+      "email": "Shae.Donelan@services.nsw.gov.au",
+      "end_line": 267,
+      "start_line": 267
+    },
+    {
+      "email": "Greg.Connors@nt.gov.au",
+      "end_line": 268,
+      "start_line": 268
+    },
+    {
+      "email": "tech@dns.be",
+      "end_line": 326,
+      "start_line": 326
+    },
+    {
+      "email": "contact@nic.bj",
+      "end_line": 395,
+      "start_line": 395
+    },
+    {
+      "email": "fneves@registro.br",
+      "end_line": 480,
+      "start_line": 480
+    },
+    {
+      "email": "jarle@uninett.no",
+      "end_line": 669,
+      "start_line": 669
+    },
+    {
+      "email": "hsalgado@nic.cl",
+      "end_line": 766,
+      "start_line": 766
+    },
+    {
+      "email": "tanyaling@cnnic.cn",
+      "end_line": 781,
+      "start_line": 781
+    },
+    {
+      "email": "tecnico@uniandes.edu.co",
+      "end_line": 830,
+      "start_line": 830
+    },
+    {
+      "email": "registry@una.net",
+      "end_line": 881,
+      "start_line": 881
+    },
+    {
+      "email": "cydns@ucy.ac.cy",
+      "end_line": 894,
+      "start_line": 894
+    },
+    {
+      "email": "ops@denic.de",
+      "end_line": 914,
+      "start_line": 914
+    },
+    {
+      "email": "robert@dk-hostmaster.dk",
+      "end_line": 922,
+      "start_line": 922
+    },
+    {
+      "email": "vabboud@nic.ec",
+      "end_line": 960,
+      "start_line": 960
+    },
+    {
+      "email": "garth.miller@cocca.org.nz",
+      "end_line": 1037,
+      "start_line": 1037
+    },
+    {
+      "email": "Damien.Shaw@ja.net",
+      "end_line": 1081,
+      "start_line": 1081
+    },
+    {
+      "email": "nigel@channelisles.net",
+      "end_line": 1103,
+      "start_line": 1103
+    },
+    {
+      "email": "randy@psg.com",
+      "end_line": 1142,
+      "start_line": 1142
+    },
+    {
+      "email": "segred@ics.forth.gr",
+      "end_line": 1167,
+      "start_line": 1167
+    },
+    {
+      "email": "uognoc@triton.uog.edu",
+      "end_line": 1190,
+      "start_line": 1190
+    },
+    {
+      "email": "hk.tech@hkirc.hk",
+      "end_line": 1216,
+      "start_line": 1216
+    },
+    {
+      "email": "pasztor@iszt.hu",
+      "end_line": 1280,
+      "start_line": 1280
+    },
+    {
+      "email": "info@nic.im",
+      "end_line": 1357,
+      "start_line": 1357
+    },
+    {
+      "email": "tech-team@nic.ir",
+      "end_line": 1440,
+      "start_line": 1440
+    },
+    {
+      "email": "marius@isgate.is",
+      "end_line": 1455,
+      "start_line": 1455
+    },
+    {
+      "email": "info@jprs.jp",
+      "end_line": 1903,
+      "start_line": 1903
+    },
+    {
+      "email": "nic.tech@citra.gov.kw",
+      "end_line": 3810,
+      "start_line": 3810
+    },
+    {
+      "email": "kysupport@perimeterusa.com",
+      "end_line": 3821,
+      "start_line": 3821
+    },
+    {
+      "email": "gavin.brown@nic.la",
+      "end_line": 3839,
+      "start_line": 3839
+    },
+    {
+      "email": "lsadmin@nic.ls",
+      "end_line": 3900,
+      "start_line": 3900
+    },
+    {
+      "email": "dcamacho@saipan.com",
+      "end_line": 4034,
+      "start_line": 4034
+    },
+    {
+      "email": "help@nic.org.mt",
+      "end_line": 4053,
+      "start_line": 4053
+    },
+    {
+      "email": "farias@nic.mx",
+      "end_line": 4106,
+      "start_line": 4106
+    },
+    {
+      "email": "antonio@uem.mz",
+      "end_line": 4127,
+      "start_line": 4127
+    },
+    {
+      "email": "technician@cenpac.net.nr",
+      "end_line": 4992,
+      "start_line": 4992
+    },
+    {
+      "email": "jay@nzrs.net.nz",
+      "end_line": 5006,
+      "start_line": 5006
+    },
+    {
+      "email": "jed@email.com.ph",
+      "end_line": 5079,
+      "start_line": 5079
+    },
+    {
+      "email": "gug@cctld.ru",
+      "end_line": 5450,
+      "start_line": 5450
+    },
+    {
+      "email": "lee.humphries@telekom.com.sb",
+      "end_line": 5475,
+      "start_line": 5475
+    },
+    {
+      "email": "admin@isoc.sd",
+      "end_line": 5492,
+      "start_line": 5492
+    },
+    {
+      "email": "patrik.wallstrom@iis.se",
+      "end_line": 5504,
+      "start_line": 5504
+    },
+    {
+      "email": "adam@neoip.com",
+      "end_line": 5575,
+      "start_line": 5575
+    },
+    {
+      "email": "technical@nic.ss",
+      "end_line": 5609,
+      "start_line": 5609
+    },
+    {
+      "email": "jcvignes@openregistry.com",
+      "end_line": 5646,
+      "start_line": 5646
+    },
+    {
+      "email": "krit@thains.co.th",
+      "end_line": 5685,
+      "start_line": 5685
+    },
+    {
+      "email": "egullich@colo.to",
+      "end_line": 5749,
+      "start_line": 5749
+    },
+    {
+      "email": "manager@tznic.or.tz",
+      "end_line": 5830,
+      "start_line": 5830
+    },
+    {
+      "email": "dk@cctld.ua",
+      "end_line": 5846,
+      "start_line": 5846
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://mozilla.org/MPL/2.0",
+      "end_line": 3,
+      "start_line": 3
+    },
+    {
+      "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+      "end_line": 5,
+      "start_line": 5
+    },
+    {
+      "url": "https://publicsuffix.org/list",
+      "end_line": 8,
+      "start_line": 8
+    },
+    {
+      "url": "http://nic.ac/rules.htm",
+      "end_line": 12,
+      "start_line": 12
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.ad",
+      "end_line": 21,
+      "start_line": 21
+    },
+    {
+      "url": "https://tdra.gov.ae/en/aeda/ae-policies",
+      "end_line": 25,
+      "start_line": 25
+    },
+    {
+      "url": "https://information.aero/registration/policies/dmp",
+      "end_line": 35,
+      "start_line": 35
+    },
+    {
+      "url": "http://www.nic.af/help.jsp",
+      "end_line": 135,
+      "start_line": 135
+    },
+    {
+      "url": "http://www.nic.ag/prices.htm",
+      "end_line": 143,
+      "start_line": 143
+    },
+    {
+      "url": "http://nic.com.ai/",
+      "end_line": 151,
+      "start_line": 151
+    },
+    {
+      "url": "http://www.ert.gov.al/ert_alb/faq_det.html?Id=31",
+      "end_line": 158,
+      "start_line": 158
+    },
+    {
+      "url": "https://www.amnic.net/policy/en/Policy_EN.pdf",
+      "end_line": 167,
+      "start_line": 167
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.ao",
+      "end_line": 175,
+      "start_line": 175
+    },
+    {
+      "url": "http://www.dns.ao/REGISTR.DOC",
+      "end_line": 176,
+      "start_line": 176
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.aq",
+      "end_line": 185,
+      "start_line": 185
+    },
+    {
+      "url": "https://nic.ar/es/nic-argentina/normativa",
+      "end_line": 188,
+      "start_line": 188
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.arpa",
+      "end_line": 205,
+      "start_line": 205
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.as",
+      "end_line": 215,
+      "start_line": 215
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.asia",
+      "end_line": 219,
+      "start_line": 219
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.at",
+      "end_line": 222,
+      "start_line": 222
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.au",
+      "end_line": 231,
+      "start_line": 231
+    },
+    {
+      "url": "http://www.auda.org.au/",
+      "end_line": 232,
+      "start_line": 232
+    },
+    {
+      "url": "http://www.cgdn.org.au/",
+      "end_line": 246,
+      "start_line": 246
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.aw",
+      "end_line": 278,
+      "start_line": 278
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.ax",
+      "end_line": 282,
+      "start_line": 282
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.az",
+      "end_line": 285,
+      "start_line": 285
+    },
+    {
+      "url": "http://nic.ba/users_data/files/pravilnik_o_registraciji.pdf",
+      "end_line": 300,
+      "start_line": 300
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bb",
+      "end_line": 309,
+      "start_line": 309
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bd",
+      "end_line": 322,
+      "start_line": 322
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.be",
+      "end_line": 325,
+      "start_line": 325
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bf",
+      "end_line": 330,
+      "start_line": 330
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bg",
+      "end_line": 334,
+      "start_line": 334
+    },
+    {
+      "url": "https://www.register.bg/user/static/rules/en/index.html",
+      "end_line": 335,
+      "start_line": 335
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bh",
+      "end_line": 374,
+      "start_line": 374
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bi",
+      "end_line": 382,
+      "start_line": 382
+    },
+    {
+      "url": "http://whois.nic.bi/",
+      "end_line": 383,
+      "start_line": 383
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.biz",
+      "end_line": 391,
+      "start_line": 391
+    },
+    {
+      "url": "https://nic.bj/bj-suffixes.txt",
+      "end_line": 394,
+      "start_line": 394
+    },
+    {
+      "url": "http://www.bermudanic.bm/dnr-text.txt",
+      "end_line": 418,
+      "start_line": 418
+    },
+    {
+      "url": "http://www.bnnic.bn/faqs",
+      "end_line": 426,
+      "start_line": 426
+    },
+    {
+      "url": "https://nic.bo/delegacion2015.php#h-1.10",
+      "end_line": 434,
+      "start_line": 434
+    },
+    {
+      "url": "http://registro.br/dominio/categoria.html",
+      "end_line": 479,
+      "start_line": 479
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/States_of_Brazil",
+      "end_line": 546,
+      "start_line": 546
+    },
+    {
+      "url": "http://www.nic.bs/rules.html",
+      "end_line": 652,
+      "start_line": 652
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bt",
+      "end_line": 660,
+      "start_line": 660
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.bw",
+      "end_line": 672,
+      "start_line": 672
+    },
+    {
+      "url": "http://www.gobin.info/domainname/bw.doc",
+      "end_line": 673,
+      "start_line": 673
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/.by",
+      "end_line": 679,
+      "start_line": 679
+    },
+    {
+      "url": "http://tld.by/rules_2006_en.html",
+      "end_line": 680,
+      "start_line": 680
+    },
+    {
+      "url": "http://www.google.com.by/",
+      "end_line": 686,
+      "start_line": 686
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/Gemfile",
+  "type": "file",
+  "name": "Gemfile",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 226,
+  "md5": "2a64b326b38ee0476a02ceb1f0494a90",
+  "sha1": "d523c9d1c4daeab85e2adf5889bfdb6f180c41f5",
+  "sha256": "dbced90671ee6cd419c71d4b30ef4e4f405e3d50bca2febebe0920fe83a75cd0",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github",
+  "type": "directory",
+  "name": ".github",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github/dependabot.yml",
+  "type": "file",
+  "name": "dependabot.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 376,
+  "md5": "68fb03f442d34b333bda84a508c3dcff",
+  "sha1": "56e2cdde6601913a104b53d434ea2d9e90b64679",
+  "sha256": "bb69949a307e4a96f0f50f59ab6f05568843b5437ba31a18a2a461fa266055ae",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github/FUNDING.yml",
+  "type": "file",
+  "name": "FUNDING.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 566,
+  "md5": "2ad0cab17abe007696c43c117c48919d",
+  "sha1": "30abd5efb9170d62381a4d78eaa26096b9b9165d",
+  "sha256": "6df36dd0f11d03cb0a17044afd9bbdb60ce1ed0b03a858e17daa0160c0254401",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github/workflows",
+  "type": "directory",
+  "name": "workflows",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github/workflows/psl-update.yml",
+  "type": "file",
+  "name": "psl-update.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 944,
+  "md5": "e77d970c82a937c0291683974f343132",
+  "sha1": "4d06d3b3e01f42e81cb9bea4167caad55bc900f4",
+  "sha256": "56eeedc9f47083a11a0ab8a189d55ab7f85c0a486036118ab09a83198a144ef1",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github/workflows/release.yml",
+  "type": "file",
+  "name": "release.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 392,
+  "md5": "8a44c78f7a635e63979115f46fc8126c",
+  "sha1": "f5e22bf57d1cdb2a2c270ae189d747a38695fa3a",
+  "sha256": "caaf5df1ed38115f682ffb5422931345903470df049e9b82c14c9cd593494559",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.github/workflows/tests.yml",
+  "type": "file",
+  "name": "tests.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 567,
+  "md5": "42ee3a494b8910772063a32a8d9dfa43",
+  "sha1": "269a93c200c44167a6a6ce9d5365e36d700ff9e6",
+  "sha256": "e7041c8a9a3728412f43e3211fbeef4a820a04cc1a9ae4ea13d41a233a058e8e",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.gitignore",
+  "type": "file",
+  "name": ".gitignore",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 66,
+  "md5": "c833ac80af45d6d3a0d5f3cb3e1e56ea",
+  "sha1": "1a3c32e59b4ea554e01b615304dab6d4a941932f",
+  "sha256": "186f47f91bd7643f2108af86d245733217ee7096ca5c29fc73c4eca86e7bb6d1",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib",
+  "type": "directory",
+  "name": "lib",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix",
+  "type": "directory",
+  "name": "public_suffix",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/domain.rb",
+  "type": "file",
+  "name": "domain.rb",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 6758,
+  "md5": "a9b63efc66fd5a2106ad73a54f92773f",
+  "sha1": "92d5ff90689629a5ad6fc768e0e78993f7a2ddbd",
+  "sha256": "be902b696def6cad3ae83fe71900fad6a902b727bcd43dcf07c551ab85b2ec90",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 7,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 7
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [
+    {
+      "url": "http://www.google.com/",
+      "end_line": 86,
+      "start_line": 86
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/errors.rb",
+  "type": "file",
+  "name": "errors.rb",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 874,
+  "md5": "54e233bb9136cb9b0909bff715191f23",
+  "sha1": "be17154e6e1af1370b32b33edc942c0d40edbb1e",
+  "sha256": "03c7502182d13521b49ea6259157f85ab4f4c2b30d457bf2bc22f94eff651414",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 7,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 7
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [
+    {
+      "url": "http://www.nic.it/",
+      "end_line": 22,
+      "start_line": 22
+    },
+    {
+      "url": "http://www.nic.do/",
+      "end_line": 35,
+      "start_line": 35
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/list.rb",
+  "type": "file",
+  "name": "list.rb",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 6763,
+  "md5": "73e3377e0f57b1a65b5cb0a81ff1bf02",
+  "sha1": "99c0202fecc71ae097cdc038dd8a179b5cf4dee6",
+  "sha256": "c985040a1e65aaa361fa152052a524d9d396ac49daff7a25cc4e42ebbb93ecf1",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 7,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 7
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [
+    {
+      "url": "http://publicsuffix.org/format/",
+      "end_line": 64,
+      "start_line": 64
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix.rb",
+  "type": "file",
+  "name": "public_suffix.rb",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 6362,
+  "md5": "d059c731e203d42a98aca3692dae05f5",
+  "sha1": "34ab170a5707e2ebb61647bd80b10604c222bf02",
+  "sha256": "a676cfa022b4706a83bc68a8dc1ba29bc3393bce1ee1941a28fa41dd5a3d3f48",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 7,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 7
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://publicsuffix.org/",
+      "end_line": 17,
+      "start_line": 17
+    },
+    {
+      "url": "http://www.google.com/",
+      "end_line": 36,
+      "start_line": 36
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/rule.rb",
+  "type": "file",
+  "name": "rule.rb",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 10422,
+  "md5": "6054addcbe47ac17cdd09bcffc6f6233",
+  "sha1": "028de434d533c78b97a8ce5cd4559dd38547c171",
+  "sha256": "241108e8bc41911e5e4f08b29a985668b1c6a439e229eac60f6324eb67d7084a",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 7,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 7
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://publicsuffix.org/",
+      "end_line": 30,
+      "start_line": 30
+    },
+    {
+      "url": "http://publicsuffix.org/format/",
+      "end_line": 87,
+      "start_line": 87
+    },
+    {
+      "url": "http://www.google.com/",
+      "end_line": 97,
+      "start_line": 97
+    },
+    {
+      "url": "http://www.google/",
+      "end_line": 98,
+      "start_line": 98
+    },
+    {
+      "url": "https://publicsuffix.org/list/",
+      "end_line": 153,
+      "start_line": 153
+    },
+    {
+      "url": "http://publicsuffix.org/format",
+      "end_line": 296,
+      "start_line": 296
+    },
+    {
+      "url": "https://publicsuffix.org/list",
+      "end_line": 339,
+      "start_line": 339
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/version.rb",
+  "type": "file",
+  "name": "version.rb",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 265,
+  "md5": "61732c09c83b0939f37a145afb42166f",
+  "sha1": "6d66bc90a9d1a00dc2d9d2db70c4fac17992f60e",
+  "sha256": "34644c832a3deeb11efb55be185d2bc8efd3fd80177998f5d41e2f0bbb4d9baa",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 7,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 7
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/LICENSE.txt",
+  "type": "file",
+  "name": "LICENSE.txt",
+  "status": "scanned",
+  "for_packages": [
+    "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/b3a9d4e9-290f-4368-87fc-20e4a1434199?uuid=80a0fd0f-ec4e-460b-b0bb-ce4e6f987783"
+  ],
+  "tag": "from",
+  "extension": ".txt",
+  "size": 1097,
+  "md5": "4c532fd2136825efffd71dd019e3dc91",
+  "sha1": "9c4faea0e2956f37abbd5dc12afd26b6e14df2f4",
+  "sha256": "5dee528f09c56cba4ee0a7339a921e3b50cab754bee53db3b605c2590ffba198",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 3,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_14.RULE",
+          "from_file": null,
+          "start_line": 3,
+          "matched_text": "MIT License",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_14.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        },
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 22,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/mit.LICENSE",
+          "from_file": null,
+          "start_line": 5,
+          "matched_text": "Permission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+          "match_coverage": 100.0,
+          "matched_length": 161,
+          "rule_relevance": 100,
+          "rule_identifier": "mit.LICENSE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-ac40beba-5702-f54d-755f-333441314bb0",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 94.77,
+  "compliance_alert": "ok",
+  "copyrights": [
+    {
+      "end_line": 1,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti <weppos@weppos.net>",
+      "start_line": 1
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/public_suffix.gemspec",
+  "type": "file",
+  "name": "public_suffix.gemspec",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".gemspec",
+  "size": 1235,
+  "md5": "ea55167c8d40be9b89e7d2588fe95a07",
+  "sha1": "11342c427eca3fbf9d3f96e2611b489f2986e8e1",
+  "sha256": "22e1e4261c7bb48af761ea24fd364b993a765e0805fbfb5f06c1362bd1d0619a",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/Rakefile",
+  "type": "file",
+  "name": "Rakefile",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 1083,
+  "md5": "cfc506e4b972feaa386ef9122c3b7a18",
+  "sha1": "f83d940c7058ac9b205ab1d9a93dbbb83886d357",
+  "sha256": "9384c9d8a9975185a308b7a45b4eec9c6796ee09f4fc694518ce748c7cac7c84",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/README.md",
+  "type": "file",
+  "name": "README.md",
+  "status": "scanned",
+  "for_packages": [
+    "pkg:local-files/publicsuffix-ruby-v601-250113_182057-bd68c609/8744753a-c0ac-4a9a-a0f9-2f949bea69a9?uuid=9eb71187-b003-418d-b5e3-6018d2ae903c"
+  ],
+  "tag": "from",
+  "extension": ".md",
+  "size": 8339,
+  "md5": "30c95c6d178dd5f73e2a56a3d739316f",
+  "sha1": "d0210b14ccbba046b1fbea9b7ee3b95508ead6ad",
+  "sha256": "07c880e9f99fd9a743eb43a7079bcf55ceb823d34065c7bb0fd48f1ff9a4fb4d",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit AND mpl-2.0",
+  "detected_license_expression_spdx": "MIT AND MPL-2.0",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 210,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_52.RULE",
+          "from_file": null,
+          "start_line": 210,
+          "matched_text": "distributed under the MIT license.",
+          "match_coverage": 100.0,
+          "matched_length": 5,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_52.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        },
+        {
+          "score": 92.86,
+          "matcher": "3-seq",
+          "end_line": 212,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mpl-2.0_125.RULE",
+          "from_file": null,
+          "start_line": 212,
+          "matched_text": "is subject to the terms of the Mozilla Public License, v. 2.0.",
+          "match_coverage": 92.86,
+          "matched_length": 13,
+          "rule_relevance": 100,
+          "rule_identifier": "mpl-2.0_125.RULE",
+          "license_expression": "mpl-2.0",
+          "license_expression_spdx": "MPL-2.0"
+        }
+      ],
+      "identifier": "mit_and_mpl_2_0-10624e53-da76-ea14-b6d5-e1facca50edf",
+      "license_expression": "mit AND mpl-2.0",
+      "license_expression_spdx": "MIT AND MPL-2.0"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 1.49,
+  "compliance_alert": "warning",
+  "copyrights": [
+    {
+      "end_line": 210,
+      "copyright": "Copyright (c) 2009-2024 Simone Carletti",
+      "start_line": 210
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Simone Carletti",
+      "end_line": 210,
+      "start_line": 210
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://publicsuffix.org/",
+      "end_line": 3,
+      "start_line": 3
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/actions/workflows/tests.yml/badge.svg",
+      "end_line": 5,
+      "start_line": 5
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/actions/workflows/tests.yml",
+      "end_line": 5,
+      "start_line": 5
+    },
+    {
+      "url": "https://tidelift.com/badges/package/rubygems/public_suffix",
+      "end_line": 6,
+      "start_line": 6
+    },
+    {
+      "url": "https://tidelift.com/subscription/pkg/rubygems-public-suffix?utm_source=rubygems-public-suffix&utm_medium=referral&utm_campaign=enterprise",
+      "end_line": 6,
+      "start_line": 6
+    },
+    {
+      "url": "https://simonecarletti.com/code/publicsuffix-ruby",
+      "end_line": 11,
+      "start_line": 11
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby",
+      "end_line": 12,
+      "start_line": 12
+    },
+    {
+      "url": "https://rubydoc.info/gems/public_suffix",
+      "end_line": 13,
+      "start_line": 13
+    },
+    {
+      "url": "https://simonecarletti.com/blog/2010/06/public-suffix-list-library-for-ruby",
+      "end_line": 14,
+      "start_line": 14
+    },
+    {
+      "url": "http://www.google.com/",
+      "end_line": 43,
+      "start_line": 43
+    },
+    {
+      "url": "http://www.google.co.uk/",
+      "end_line": 45,
+      "start_line": 45
+    },
+    {
+      "url": "https://wiki.mozilla.org/Public_Suffix_List",
+      "end_line": 178,
+      "start_line": 178
+    },
+    {
+      "url": "https://stackoverflow.com/q/288810/123527",
+      "end_line": 180,
+      "start_line": 180
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/blob/master/README.md",
+      "end_line": 190,
+      "start_line": 190
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/issues",
+      "end_line": 192,
+      "start_line": 192
+    },
+    {
+      "url": "https://tidelift.com/subscription/pkg/rubygems-public-suffix?utm_source=rubygems-public-suffix&utm_medium=referral&utm_campaign=readme",
+      "end_line": 195,
+      "start_line": 195
+    },
+    {
+      "url": "https://publicsuffix.org/list",
+      "end_line": 212,
+      "start_line": 212
+    },
+    {
+      "url": "https://www.mozilla.org/en-US",
+      "end_line": 218,
+      "start_line": 218
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.rubocop_opinionated.yml",
+  "type": "file",
+  "name": ".rubocop_opinionated.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 3347,
+  "md5": "d596bff8fde6c69583e58c73f22c48e6",
+  "sha1": "7dd9b93b0eb18a74ae3443e38d6fcb2e68481446",
+  "sha256": "9baa565b23df6eff8a654dbfb1227ce7b54ebf05275ff24e9dc28206ac1a2009",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.rubocop.yml",
+  "type": "file",
+  "name": ".rubocop.yml",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".yml",
+  "size": 749,
+  "md5": "75ec31cb29c316c91f5509e99163978a",
+  "sha1": "df361e6615aa9ad7fed6684661a30a8dea6ece2e",
+  "sha256": "c64f7c9dfa413de18557fe909cc95cf83696f5d8a14224912ddc612a03fcc5a8",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/SECURITY.md",
+  "type": "file",
+  "name": "SECURITY.md",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".md",
+  "size": 1022,
+  "md5": "81e93b41efa797898a695530f1801960",
+  "sha1": "5d87374da51d350122cb3421cae1d1badc43d049",
+  "sha256": "c9cf05e2926a3cfd149a4eb1d19e0d49d6103f87e03a5af3fa86acdca45c786a",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 16,
+      "start_line": 16
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://semver.org/",
+      "end_line": 7,
+      "start_line": 7
+    },
+    {
+      "url": "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x420da82a989398df",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/security/advisories",
+      "end_line": 24,
+      "start_line": 24
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test",
+  "type": "directory",
+  "name": "test",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/acceptance_test.rb",
+  "type": "file",
+  "name": "acceptance_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 3945,
+  "md5": "072c93a62706c6bf857185a3353575a6",
+  "sha1": "1fc932376b946df1fc788b8d7bc67692490adebb",
+  "sha256": "7c95b0c590d9c8c6047acbc7cf4a90a2752b81b5568928d14f68e7b60bf3b068",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks",
+  "type": "directory",
+  "name": "benchmarks",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks/bm_find_all.rb",
+  "type": "file",
+  "name": "bm_find_all.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 3178,
+  "md5": "900bd44216fe788f297224ace74232bf",
+  "sha1": "9063dbd4d3a1d73e277c297897a081c2f5de9ed0",
+  "sha256": "808a37652c3aee5e4b94fcb0c25b4b5ad64870cdcf2f83a37ed209bb773d1b13",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks/bm_find.rb",
+  "type": "file",
+  "name": "bm_find.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 1728,
+  "md5": "3332eb4135d14e8e84846baecbf09b25",
+  "sha1": "6766fb230156c8571f6dad1752f88284dcf3a782",
+  "sha256": "ef9f631856f0f721ad5d1cbbe31e9ba8a9f32d39b0327446bc3f4a73b38cc07c",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks/bm_names.rb",
+  "type": "file",
+  "name": "bm_names.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 1690,
+  "md5": "bc0a1ef3d756a188bf9cc0f482f3a450",
+  "sha1": "7a02f84b60e3d4393369d8005bcac0118415b043",
+  "sha256": "3c3a280fd4707e71036d3464c5287424fc703a7e6adc19b3a543ecfa600686ee",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks/bm_select_incremental.rb",
+  "type": "file",
+  "name": "bm_select_incremental.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 603,
+  "md5": "761cc58ee4bfc80a8b824220e517d75c",
+  "sha1": "1b7f56835b271bcca17181c9d721012e9c9fea43",
+  "sha256": "39be7d439cfdea9045bef9c565dfa9550df0e39070af9d6ae94f4b0067d59499",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks/bm_select.rb",
+  "type": "file",
+  "name": "bm_select.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 627,
+  "md5": "f93d2b75b454c4981704dc0de25fe275",
+  "sha1": "c2ca8367c5843887734620ea41e5f0c8a232151c",
+  "sha256": "e3c9ef1fa39544f636c2905eb3dd4c92f92eb8e8b6d301b473e5e099cb7adf00",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/benchmarks/bm_valid.rb",
+  "type": "file",
+  "name": "bm_valid.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 3106,
+  "md5": "471183a8b08707befbcc9024811a3ecf",
+  "sha1": "5b841352ff7e170a1a4425ef16a233290e33798e",
+  "sha256": "5a0a4acaf0f9aca6f3b739d9b40089b68b2f8abf81ea357e85408a3e1856f0bd",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/.empty",
+  "type": "file",
+  "name": ".empty",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 92,
+  "md5": "860c400cc9d81ab690e40d6484681cf6",
+  "sha1": "f7d1ca48a1dd184cf042346f8c20322d5b85dfed",
+  "sha256": "e27c270c3c5ceb525791b18dd2806e78fddbb6c31b00ac578110eda2984e4455",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers",
+  "type": "directory",
+  "name": "profilers",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers/domain_profiler.rb",
+  "type": "file",
+  "name": "domain_profiler.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 238,
+  "md5": "439ed7a0f6c5e245c8e4603e76c3b009",
+  "sha1": "3eef751790ab2ab03c7b6637875a9270ed2170c3",
+  "sha256": "77cb0206de6efcbd7a2fc9234ec172b7aee242dfcd041a35d0c88621da39bda0",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers/find_profiler_jp.rb",
+  "type": "file",
+  "name": "find_profiler_jp.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 251,
+  "md5": "1d5ab4e8dbd3219f72bcc113a41ed9fe",
+  "sha1": "6053dcd1035dd6a8779e9fb40c6c308e29d3fa8b",
+  "sha256": "44de280d679d06ad9ffb97624ed84cd559bb780a963afa78c4dd45a861be7690",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers/find_profiler.rb",
+  "type": "file",
+  "name": "find_profiler.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 250,
+  "md5": "6a1d614e9976c147653a543c922338e5",
+  "sha1": "31c2924d2e188828461b6222540663f0d9c1c769",
+  "sha256": "67b21029b1779ca1066d75b16eef794b64cdb8e3b7c45786879092c5a3eeede6",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers/initialization_profiler.rb",
+  "type": "file",
+  "name": "initialization_profiler.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 278,
+  "md5": "44da48af4becbdc31cb4bef700982699",
+  "sha1": "7189f6d53d5545473eef824ec503edd84fd39dc7",
+  "sha256": "e977c727365c6aaddb4eb242a1a16afc289aae0c53d0147a726ca406b19ed7de",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers/list_profsize.rb",
+  "type": "file",
+  "name": "list_profsize.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 374,
+  "md5": "497509ff037258083bdd5e0eeae3c135",
+  "sha1": "4ecd93a1b3f6bf99d2f89081598b3ddbf83caf62",
+  "sha256": "aa55af0c1c6838555ac8c30311adba79c25fd5a4c267c601278237c109975d21",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/profilers/object_binsize.rb",
+  "type": "file",
+  "name": "object_binsize.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 1504,
+  "md5": "38087e9e552aa75fdb780c191b4985f4",
+  "sha1": "d4b32232aa43d340773539154bafde356135c2bc",
+  "sha256": "c75c1d8dec5de5364af8facaa38034dc4976f59d93afdab6e66ec93c5b23021e",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/psl_test.rb",
+  "type": "file",
+  "name": "psl_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 1451,
+  "md5": "83e0656feb60001df22f5a27f90c7def",
+  "sha1": "85f38bf2555673921f839671b469641e45cfad5e",
+  "sha256": "64feaac4ea97233460df3b137b112741cef201966769498736b58da238fef468",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/test_helper.rb",
+  "type": "file",
+  "name": "test_helper.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 272,
+  "md5": "bf986c0bab97adcc894265c8de8423e4",
+  "sha1": "ace3be3f8e1f9280d3b3b24ecedd9f359df21c6e",
+  "sha256": "f9cc3743b12659ce7f73d4c2f00d7afaad62534077ec97085473d5bf9b19ee2d",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/tests.txt",
+  "type": "file",
+  "name": "tests.txt",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".txt",
+  "size": 2654,
+  "md5": "9b81ba0e7f9adc336d6406d631f21762",
+  "sha1": "f94e8506711046d4140bd3bc7941a5af5d0d3109",
+  "sha256": "60b8e1d01d2ebdd76f55b3b9c27efc78c96fad15293ddcb41823bc9809063b81",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "UTF-8 Unicode text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/unit",
+  "type": "directory",
+  "name": "unit",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/unit/domain_test.rb",
+  "type": "file",
+  "name": "domain_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 3330,
+  "md5": "f2d4b02b5742d8f34464446c320beea6",
+  "sha1": "2874bc2d6d90dab4203c022edc5400d61f8cc7b7",
+  "sha256": "26d21bba571164eff96e2ccecaaf87023375e30031e8f594d97fa9fb89377705",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/unit/errors_test.rb",
+  "type": "file",
+  "name": "errors_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 615,
+  "md5": "a285fc646f5ea01def0dcb751845fa6e",
+  "sha1": "801438ad125b6482970b95060fb51cae19c6fb2c",
+  "sha256": "ed269c7f9075777251dde7f78dc119a727666be5ef9e56d1248c6f887f8a7a5a",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/unit/list_test.rb",
+  "type": "file",
+  "name": "list_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 6490,
+  "md5": "e29b7bfbea008c983ecb294803ba918e",
+  "sha1": "7d54a3fb19eea60f132545999a25afb5207c24ff",
+  "sha256": "097c5132543df297f77686d495c39238bb33c2fec2135b46a933b2705e3c552c",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/unit/public_suffix_test.rb",
+  "type": "file",
+  "name": "public_suffix_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 5875,
+  "md5": "fd6f78273f0c24507d448436364673cf",
+  "sha1": "3494a2c65ca2c52f6f421b45101e25daff0b9a29",
+  "sha256": "faba7d5f9109cefe24b307312a4fb612289c277ce59f78ccb6a806bd95fdc38f",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/test/unit/rule_test.rb",
+  "type": "file",
+  "name": "rule_test.rb",
+  "status": "not-deployed",
+  "for_packages": [],
+  "tag": "from",
+  "extension": ".rb",
+  "size": 6750,
+  "md5": "ce6049ea804343342529776f2bffff29",
+  "sha1": "1c77439c852d4cff6d1f10da2c7f6c3482af9a28",
+  "sha256": "b48a6682ba3a1c859e1754e73ecb1d9dc3a57e503121ea2209513f404b00acbf",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "from/publicsuffix-ruby-6.0.1/.yardopts",
+  "type": "file",
+  "name": ".yardopts",
+  "status": "no-licenses",
+  "for_packages": [],
+  "tag": "from",
+  "extension": "",
+  "size": 47,
+  "md5": "4e9147ea91c449442fcc83b037174485",
+  "sha1": "545c63731880b9e7d8a36dee485cef84aadbb456",
+  "sha256": "c7398bc8cfd8663d94c6d720a500eca9d3fce465aa50e5f82dfd3fb3ce1f3630",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to",
+  "type": "directory",
+  "name": "to",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "000000110f561eaf644d1910d6346a8d9c04a998",
+    "directory_structure": "000000117400c28a5026ecfbbafbf1c629f9cd24"
+  }
+},
+{
+  "path": "to/checksums.yaml.gz",
+  "type": "file",
+  "name": "checksums.yaml.gz",
+  "status": "requires-review",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".gz",
+  "size": 296,
+  "md5": "af312d08e7becd334c3b8fb4b2d37201",
+  "sha1": "aeb59ff69a13bbe6991c2d48dcf76bfe957f857d",
+  "sha256": "e46e9c1b7f472a56183328cf17a572f8772593ebe9a38235c1dc5a4d464d2dba",
+  "sha512": "",
+  "mime_type": "application/gzip",
+  "file_type": "gzip compressed data, last modified: Tue Jul 23 07:25:14 2024, max compression, from Unix, original size modulo 2^32 468",
+  "programming_language": "",
+  "is_binary": true,
+  "is_text": false,
+  "is_archive": true,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/checksums.yaml.gz-extract",
+  "type": "directory",
+  "name": "checksums.yaml.gz-extract",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".gz-extract",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "",
+    "directory_structure": ""
+  }
+},
+{
+  "path": "to/checksums.yaml.gz-extract/checksums.yaml.gz-extract",
+  "type": "file",
+  "name": "checksums.yaml.gz-extract",
+  "status": "requires-review",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".gz-extract",
+  "size": 468,
+  "md5": "05a11c526e4b3780ff134a5ce39d6b8d",
+  "sha1": "81872233dacc58077ad401c25da171fe8243092c",
+  "sha256": "8b5c77974c4cb1ccc78fd04e3e3ff16cde1e2c88398b3b69edd63bfe5e4c6051",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz",
+  "type": "file",
+  "name": "data.tar.gz",
+  "status": "archive-processed",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".tar.gz",
+  "size": 100914,
+  "md5": "feb52389b99c58df4ba269e573d846f0",
+  "sha1": "a64c986ae9facf09b1b975ef703213b76f6f0538",
+  "sha256": "5f82beeeff336ce23cf9128ca2c9c8280fb1b5334ab42ed8a76afcf462e2a39b",
+  "sha512": "",
+  "mime_type": "application/gzip",
+  "file_type": "gzip compressed data, last modified: Tue Jul 23 07:25:14 2024, max compression, from Unix, original size modulo 2^32 378880",
+  "programming_language": "",
+  "is_binary": true,
+  "is_text": false,
+  "is_archive": true,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract",
+  "type": "directory",
+  "name": "data.tar.gz-extract",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".tar.gz-extract",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "0000000c01720a29644c0912c6048a048ca4ac98",
+    "directory_structure": "0000000c6248c8e2c354e0c92c096898747e8734"
+  }
+},
+{
+  "path": "to/data.tar.gz-extract/CHANGELOG.md",
+  "type": "file",
+  "name": "CHANGELOG.md",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".md",
+  "size": 9701,
+  "md5": "a43c477dccdde02413cc3a7cb38ad9ae",
+  "sha1": "2ee5e3148898e85561d2d23bf427c754198439f2",
+  "sha256": "7049b54d646f6d334944d0290ff12f9e24e43c3752169c0ed79f987379badfd8",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/data",
+  "type": "directory",
+  "name": "data",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "",
+    "directory_structure": ""
+  }
+},
+{
+  "path": "to/data.tar.gz-extract/data/list.txt",
+  "type": "file",
+  "name": "list.txt",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".txt",
+  "size": 316433,
+  "md5": "84a057445b3bed64e2451033a812fc1e",
+  "sha1": "dfd8d1ecbb508fb39266b41debdf792a98efa21e",
+  "sha256": "a098eb7f923c02bfa463b33ba59e5205e130e1588d20e30b43851fbd515d062e",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "Public Suffix List data, UTF-8 Unicode text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/lib",
+  "type": "directory",
+  "name": "lib",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "000000060c720e0024480902ca241010dca89880",
+    "directory_structure": "00000006a845c930a00d15588e27a04ae9d30386"
+  }
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix",
+  "type": "directory",
+  "name": "public_suffix",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": "",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "000000050cf24e0bac6c0943ee241210dde89880",
+    "directory_structure": "000000056f58d37aeef8741f61fe198bfaad8696"
+  }
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix/domain.rb",
+  "type": "file",
+  "name": "domain.rb",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".rb",
+  "size": 6758,
+  "md5": "a9b63efc66fd5a2106ad73a54f92773f",
+  "sha1": "92d5ff90689629a5ad6fc768e0e78993f7a2ddbd",
+  "sha256": "be902b696def6cad3ae83fe71900fad6a902b727bcd43dcf07c551ab85b2ec90",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix/errors.rb",
+  "type": "file",
+  "name": "errors.rb",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".rb",
+  "size": 874,
+  "md5": "54e233bb9136cb9b0909bff715191f23",
+  "sha1": "be17154e6e1af1370b32b33edc942c0d40edbb1e",
+  "sha256": "03c7502182d13521b49ea6259157f85ab4f4c2b30d457bf2bc22f94eff651414",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix/list.rb",
+  "type": "file",
+  "name": "list.rb",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".rb",
+  "size": 6763,
+  "md5": "73e3377e0f57b1a65b5cb0a81ff1bf02",
+  "sha1": "99c0202fecc71ae097cdc038dd8a179b5cf4dee6",
+  "sha256": "c985040a1e65aaa361fa152052a524d9d396ac49daff7a25cc4e42ebbb93ecf1",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix.rb",
+  "type": "file",
+  "name": "public_suffix.rb",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".rb",
+  "size": 6362,
+  "md5": "d059c731e203d42a98aca3692dae05f5",
+  "sha1": "34ab170a5707e2ebb61647bd80b10604c222bf02",
+  "sha256": "a676cfa022b4706a83bc68a8dc1ba29bc3393bce1ee1941a28fa41dd5a3d3f48",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix/rule.rb",
+  "type": "file",
+  "name": "rule.rb",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".rb",
+  "size": 10422,
+  "md5": "6054addcbe47ac17cdd09bcffc6f6233",
+  "sha1": "028de434d533c78b97a8ce5cd4559dd38547c171",
+  "sha256": "241108e8bc41911e5e4f08b29a985668b1c6a439e229eac60f6324eb67d7084a",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/lib/public_suffix/version.rb",
+  "type": "file",
+  "name": "version.rb",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".rb",
+  "size": 265,
+  "md5": "61732c09c83b0939f37a145afb42166f",
+  "sha1": "6d66bc90a9d1a00dc2d9d2db70c4fac17992f60e",
+  "sha256": "34644c832a3deeb11efb55be185d2bc8efd3fd80177998f5d41e2f0bbb4d9baa",
+  "sha512": "",
+  "mime_type": "text/x-ruby",
+  "file_type": "Ruby script, ASCII text",
+  "programming_language": "Ruby",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/LICENSE.txt",
+  "type": "file",
+  "name": "LICENSE.txt",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".txt",
+  "size": 1097,
+  "md5": "4c532fd2136825efffd71dd019e3dc91",
+  "sha1": "9c4faea0e2956f37abbd5dc12afd26b6e14df2f4",
+  "sha256": "5dee528f09c56cba4ee0a7339a921e3b50cab754bee53db3b605c2590ffba198",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/README.md",
+  "type": "file",
+  "name": "README.md",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".md",
+  "size": 8339,
+  "md5": "30c95c6d178dd5f73e2a56a3d739316f",
+  "sha1": "d0210b14ccbba046b1fbea9b7ee3b95508ead6ad",
+  "sha256": "07c880e9f99fd9a743eb43a7079bcf55ceb823d34065c7bb0fd48f1ff9a4fb4d",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/SECURITY.md",
+  "type": "file",
+  "name": "SECURITY.md",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".md",
+  "size": 1022,
+  "md5": "81e93b41efa797898a695530f1801960",
+  "sha1": "5d87374da51d350122cb3421cae1d1badc43d049",
+  "sha256": "c9cf05e2926a3cfd149a4eb1d19e0d49d6103f87e03a5af3fa86acdca45c786a",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/data.tar.gz-extract/.yardopts",
+  "type": "file",
+  "name": ".yardopts",
+  "status": "mapped",
+  "for_packages": [],
+  "tag": "to",
+  "extension": "",
+  "size": 47,
+  "md5": "4e9147ea91c449442fcc83b037174485",
+  "sha1": "545c63731880b9e7d8a36dee485cef84aadbb456",
+  "sha256": "c7398bc8cfd8663d94c6d720a500eca9d3fce465aa50e5f82dfd3fb3ce1f3630",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/metadata.gz",
+  "type": "file",
+  "name": "metadata.gz",
+  "status": "requires-review",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".gz",
+  "size": 694,
+  "md5": "0fbb5535c8a69bc9a168f91e2ff6571d",
+  "sha1": "400a78e1e2cc757f2f82ed840ba4c4740448e9be",
+  "sha256": "7daed8b8dcf4faa015547a85c042814a06b5cb35d1068fc49bc586d3950e6fd3",
+  "sha512": "",
+  "mime_type": "application/gzip",
+  "file_type": "gzip compressed data, last modified: Tue Jul 23 07:25:14 2024, max compression, from Unix, original size modulo 2^32 1643",
+  "programming_language": "",
+  "is_binary": true,
+  "is_text": false,
+  "is_archive": true,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "to/metadata.gz-extract",
+  "type": "directory",
+  "name": "metadata.gz-extract",
+  "status": "ignored-directory",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".gz-extract",
+  "size": 4096,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": null,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {
+    "directory_content": "",
+    "directory_structure": ""
+  }
+},
+{
+  "path": "to/metadata.gz-extract/metadata.gz-extract",
+  "type": "file",
+  "name": "metadata.gz-extract",
+  "status": "requires-review",
+  "for_packages": [],
+  "tag": "to",
+  "extension": ".gz-extract",
+  "size": 1643,
+  "md5": "c0fdd699f1cc5aadb2bb6653d9be0f5c",
+  "sha1": "b4e38e57966e1f722debb414adce2db7c06b209a",
+  "sha256": "c7df83750a90d3283bf8c40432d896d3f6ae6a04fcdd6e51b8fefc21bfb1b50e",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 36,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1165.RULE",
+          "from_file": null,
+          "start_line": 35,
+          "matched_text": "licenses:\n- MIT",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_1165.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-4f59919c-5d20-b428-c940-a60192a6f516",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 0.88,
+  "compliance_alert": "ok",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "emails": [
+    {
+      "email": "weppos@weppos.net",
+      "end_line": 16,
+      "start_line": 16
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://simonecarletti.com/code/publicsuffix-ruby",
+      "end_line": 34,
+      "start_line": 34
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/issues",
+      "end_line": 38,
+      "start_line": 38
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/blob/master/CHANGELOG.md",
+      "end_line": 39,
+      "start_line": 39
+    },
+    {
+      "url": "https://rubydoc.info/gems/public_suffix/6.0.1",
+      "end_line": 40,
+      "start_line": 40
+    },
+    {
+      "url": "https://github.com/weppos/publicsuffix-ruby/tree/v6.0.1",
+      "end_line": 42,
+      "start_line": 42
+    }
+  ],
+  "extra_data": {}
+}],
+"relations": [
+{
+  "to_resource": "to/data.tar.gz-extract/CHANGELOG.md",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/CHANGELOG.md"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/data/list.txt",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/data/list.txt"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/lib/public_suffix/domain.rb",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/domain.rb"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/lib/public_suffix/errors.rb",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/errors.rb"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/lib/public_suffix/list.rb",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/list.rb"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/lib/public_suffix.rb",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/lib/public_suffix.rb"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/lib/public_suffix/rule.rb",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/rule.rb"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/lib/public_suffix/version.rb",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/lib/public_suffix/version.rb"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/LICENSE.txt",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/LICENSE.txt"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/README.md",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/README.md"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/SECURITY.md",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/SECURITY.md"
+},
+{
+  "to_resource": "to/data.tar.gz-extract/.yardopts",
+  "status": "mapped",
+  "map_type": "sha1",
+  "score": "",
+  "from_resource": "from/publicsuffix-ruby-6.0.1/.yardopts"
+}]
+}
